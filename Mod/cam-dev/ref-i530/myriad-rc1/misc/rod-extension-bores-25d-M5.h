@@ -1,0 +1,39 @@
+0  BEGIN PGM rod-extension-bores-25d-M5 MM 
+1  BLK FORM 0.1 Z  X+0  Y-25  Z-25
+2  BLK FORM 0.2  X+130  Y+0  Z+0
+3  ;-------------------------------------
+4  ;Tools
+5  ;  #2 D=5 TAPER=118deg - ZMIN=-16.502 - ZMAX=+15 - drill
+6  ;-------------------------------------
+7  ;
+8  * - Drill1
+9  M5
+10 TOOL CALL 2 Z S5136
+11 L M140 MB MAX
+12 M3
+13 L  X+4  Y-12.5 R0 FMAX
+14 L  Z+15 R0 FMAX
+15 M8
+16 CYCL DEF 32.0 TOLERANCE
+17 CYCL DEF 32.1
+18 CYCL DEF 203 UNIVERSAL DRILLING ~
+    Q200=+5    ;SET-UP CLEARANCE ~
+    Q201=-27   ;DEPTH ~
+    Q206=+131  ;FEED RATE FOR PLNGNG ~
+    Q202=+7    ;PLUNGING DEPTH ~
+    Q210=+0    ;DWELL TIME AT TOP ~
+    Q203=+0    ;SURFACE COORDINATE ~
+    Q204=+5    ;2ND SET-UP CLEARANCE ~
+    Q212=+0    ;DECREMENT ~
+    Q213=+1    ;NR OF BREAKS ~
+    Q205=+7    ;MIN. PLUNGING DEPTH ~
+    Q211=+0    ;DWELL TIME AT DEPTH ~
+    Q208= MAX ;RETRACTION FEED RATE ~
+    Q256=+0.1  ;DIST FOR CHIP BRKNG
+19 L FMAX M99
+20 L  Z+15 FMAX
+21 M9
+22 M5
+23 L M140 MB MAX
+24 M30
+25 END PGM rod-extension-bores-25d-M5 MM 

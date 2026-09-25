@@ -1,0 +1,26 @@
+{
+    "description": "Stainless Steel",
+    "category": "Metal",
+    "uuid": "589ce272-8020-4bef-925f-96f9bc2b4957",
+    "designators": [],
+    "physicalMaterials": [
+        "PrismMaterial-017",
+        "PrismMaterial-415",
+        "PrismMaterial-300",
+        "PrismMaterial-147",
+        "PrismMaterial-148",
+        "PrismMaterial-046",
+        "PrismMaterial-149",
+        "PrismMaterial-150",
+        "PrismMaterial-151",
+        "PrismMaterial-152",
+        "PrismMaterial-099",
+        "PrismMaterial-153",
+        "PrismMaterial-092",
+        "PrismMaterial-154",
+        "PrismMaterial-093",
+        "PrismMaterial-049",
+        "PrismMaterial-048"
+    ],
+    "version": 1.0
+}

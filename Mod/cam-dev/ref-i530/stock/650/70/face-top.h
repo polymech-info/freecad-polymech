@@ -1,0 +1,49 @@
+0  BEGIN PGM face-top MM 
+1  BLK FORM 0.1 Z  X+0  Y-60  Z+0
+2  BLK FORM 0.2  X+650  Y+0  Z+70
+3  ;-------------------------------------
+4  ;Tools
+5  ;  #23 D=80 - ZMIN=+71.5 - ZMAX=+90 - face mill
+6  ;-------------------------------------
+7  ;
+8  * - Face-Top (3)
+9  M5
+10 TOOL CALL 23 Z S5000
+11 L M140 MB MAX
+12 M3
+13 L  X-47.57  Y+19.233 R0 FMAX
+14 L  Z+90 R0 FMAX
+15 M8
+16 CYCL DEF 32.0 TOLERANCE
+17 CYCL DEF 32.1
+18 L  Z+79.5 FMAX
+19 CC  X-39.57  Z+79.5
+20 CP IPA-90 DR- F1000
+21 L  X+0  Z+71.5
+22 L  X+650
+23 CC  X+650  Z+79.5
+24 CP IPA-90 DR-
+25 L  X+658  Z+80 FMAX
+26 L  X+702  Y-1.233 FMAX
+27 L  Z+79.5 FMAX
+28 CC  X+694  Z+79.5
+29 CP IPA+90 DR+ F1000
+30 L  X+650  Z+71.5
+31 L  X+0
+32 CC  X+0  Z+79.5
+33 CP IPA+90 DR+
+34 L  X-8  Z+80 FMAX
+35 L  X-52  Y-21.7 FMAX
+36 L  Z+79.5 FMAX
+37 CC  X-44  Z+79.5
+38 CP IPA-90 DR- F1000
+39 L  X+0  Z+71.5
+40 L  X+650
+41 CC  X+650  Z+79.5
+42 CP IPA-90 DR-
+43 L  X+658  Z+90 FMAX
+44 M9
+45 M5
+46 L M140 MB MAX
+47 M30
+48 END PGM face-top MM 

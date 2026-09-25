@@ -1,0 +1,20 @@
+{
+    "description": "Aluminum medium",
+    "category": "Metal",
+    "uuid": "a6276d4c-303c-47fe-9430-31067754fa3a",
+    "designators": [
+        "Aluminium medium"
+    ],
+    "physicalMaterials": [
+        "PrismMaterial-064",
+        "PrismMaterial-104",
+        "PrismMaterial-105",
+        "PrismMaterial-106",
+        "PrismMaterial-065",
+        "PrismMaterial-116",
+        "PrismMaterial-117",
+        "PrismMaterial-113",
+        "PrismMaterial-121"
+    ],
+    "version": 1.0
+}

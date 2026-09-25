@@ -1,0 +1,60 @@
+/**
+  Copyright (c) 2007-2008 by HSMWorks ApS
+  http://www.hsmworks.com
+  All rights reserved
+
+  $Revision: 1271 $
+  $Date: 2004-11-06 20:46:49 +0100 (Sat, 06 Nov 2004) $
+*/
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	font-size: 15pt;
+}
+
+h2 {
+	font-size: 13pt;
+}
+
+h3 {
+	font-size: 11pt;
+}
+
+h3.section {
+	text-decoration: underline;
+}
+
+table {
+	border-top: 1px solid #aaaaaa;
+	border-left: 1px solid #aaaaaa;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	font-size: 8pt;
+}
+
+table tr {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+table td {
+	border-color: #aaaaaa;
+	margin: 0px 0px 0px 0px;
+	padding: 3px 5px 3px 5px;
+	border-bottom: 1px solid #aaaaaa;
+	border-right: 1px solid #aaaaaa;
+}
+
+td.description {
+	font-weight: bolder;
+	width: 200px;
+	background-color: #e0e0ff;
+}
+
+td.value {
+	width: 120px;
+	background-color: #f7f7ff;
+}

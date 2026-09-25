@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<template-document xmlns="http://www.hsmworks.com/namespace/hsmworks/document/template" version="1.0">
+  <localizationNameID id="115"/>
+  <localizationDescriptionID id="115"/>
+
+  <iconID id="0"/>
+
+  <template description="Automatic Orientation - SLA" strategy="additive_optimize_orientation" unit="millimeters" version="107">
+    <parameter expression="false" name="advancedMode"/>
+    <parameter expression="false" name="betaMode"/>
+    <parameter expression="false" name="alphaMode"/>
+    <parameter expression="false" name="isXpress"/>
+    <parameter expression="true" name="licenseMultiaxis"/>
+    <parameter expression="true" name="license3D"/>
+    <parameter expression="true" name="metric"/>
+    <parameter expression="true" name="isAssemblyDocument"/>
+    <parameter expression="'operation'" name="context"/>
+    <parameter expression="'additive_optimize_orientation'" name="strategy"/>
+    <parameter expression="''" name="operation_description"/>
+    <parameter expression="'none'" name="featureOperationId"/>
+    <parameter expression="28.16895814046058" name="surfaceZHigh"/>
+    <parameter expression="7." name="surfaceZLow"/>
+    <parameter expression="62.52499525189287" name="surfaceXLow"/>
+    <parameter expression="81.13500474810714" name="surfaceXHigh"/>
+    <parameter expression="55.98116898553863" name="surfaceYLow"/>
+    <parameter expression="87.67883101446135" name="surfaceYHigh"/>
+    <parameter expression="184.99000000000001" name="stockZHigh"/>
+    <parameter expression="0.0" name="stockZLow"/>
+    <parameter expression="0.0" name="stockXLow"/>
+    <parameter expression="143.66" name="stockXHigh"/>
+    <parameter expression="0.0" name="stockYLow"/>
+    <parameter expression="143.66" name="stockYHigh"/>
+    <parameter expression="false" name="tab_optimizeorientation_parameters"/>
+    <parameter expression="true" name="group_optimization_orientation_part"/>
+    <parameter expression="true" name="optimizeOrientationTarget"/>
+    <parameter expression="180 deg" name="optimizeOrientationSmallestRotation"/>
+    <parameter expression="true" name="group_optimization_orientation_support"/>
+    <parameter expression="true" name="optimizeOrientationUsePreciseCalculation"/>
+    <parameter expression="35 deg" name="optimizeOrientationCriticalAngle"/>
+    <parameter expression="true" name="group_optimization_orientation_spacing"/>
+    <parameter expression="7 mm " name="optimizeOrientationDistanceToPlatform"/>
+    <parameter expression="true" name="optimizeOrientationMoveToCenter"/>
+    <parameter expression="2 mm" name="optimizeOrientationFrameWidth"/>
+    <parameter expression="2mm" name="optimizeOrientationCeilingClearance"/>
+    <parameter expression="false" name="tab_optimizeorientation_ranking"/>
+    <parameter expression="true" name="group_optimization_orientation_ranking"/>
+    <parameter expression="'2'" name="optimizeOrientationRankingSupportVolume"/>
+    <parameter expression="'10'" name="optimizeOrientationRankingSupportArea"/>
+    <parameter expression="'0'" name="optimizeOrientationRankingBoundingBoxVolume"/>
+    <parameter expression="'0'" name="optimizeOrientationRankingPartHeight"/>
+    <parameter expression="'0'" name="optimizeOrientationRankingCOGHeight"/>
+    <parameter expression="3." name="platform_clearance_machinevalue"/>
+    <parameter expression="false" name="associatedView"/>
+  </template>
+
+</template-document>

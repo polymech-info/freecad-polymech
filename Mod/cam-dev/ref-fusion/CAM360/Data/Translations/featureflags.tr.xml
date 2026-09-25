@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><locale xmlns="http://www.hsmworks.com/xml/2008/locale">
+
+  <description>Turkish</description>
+  <country>tr</country>
+
+  <!--
+	The entries in this file are used for localized text for feature flags,
+	as exposed in the Fusion preferences dialog.
+
+	The formats used for the entries should be in the form shown here,
+	where in this case the feature flag name would be 'feature-flag'.
+	  <message name="feature-flag-name">English Feature Flag Name</message>
+	  <message name="feature-flag-desc">English Feature Flag Description</message>
+   	  <message name="feature-flag-contextid">English Feature Flag Info Link</message>
+	  OR
+	  <message name="feature-flag-contextid">CONTEXT_ID</message>
+
+	If a context id is specified, a URL will be constructed, along the lines of:
+	https://help.autodesk.com/view/fusion360/<LANG>/?contextId=<CONTEXT_ID>
+	with the language code filled in based on the active language.
+  -->
+  <message name="additive-angled-volume-support-name">Ek Açılı Hacim Destekleri</message>
+  <message name="additive-angled-volume-support-desc">Katmanlı üretim kurulumu sırasında oluşturulan hacim destekleri, yapı plakasına doğru bir vektör izler. Bu ön izleme özelliği, bu vektörü ikiye bölme seçeneği sunar. İki vektör arasında bir açı kullanarak, Alt Tabaka bölgelerini parçalarınızın Üst Tabaka bölgelerine bağlayan destekler oluşturmaktan kaçınabilirsiniz. Bu, Üst Tabaka bölgeleri için daha iyi yüzey kalitesi ve daha kısa işlem sonrası süre ile sonuçlanacaktır.</message>
+  <message name="additive-angled-volume-support-contextid">MFG-KATMANLI-AÇILI-HACİM-DESTEKLER-ÖN İZLEME</message>
+
+  <message name="Additive-Lateral-Support-name">Katmanlı Yanal Destek</message>
+  <message name="Additive-Lateral-Support-desc">Karmaşık geometrilere veya hassas ince duvarlara sahip parçalar için 3B baskılı yumuşak çeneler oluşturun. Yanal destekler, frezeleme gibi işleme işlemleri sırasında bu parçaları tutmak için tasarlanmıştır.</message>
+
+  <message name="Additive-General-name">Katmanlı İmalat</message>
+  <message name="Additive-General-desc">Baskı parametrelerini seçin, parçaları otomatik olarak yapı başarısı için yönlendirin ve destek yapıları ve takım yolları oluşturun. Toz yatağı makinelerini seçmek için doğrudan dışa aktarın veya bir 3MF dosyasını dışa aktarın.</message>
+  <message name="Additive-General-contextid">EXT-MFG-ADDITIVE-START</message>
+
+  <message name="Additive-Tech-DED-name">Katmanlı Çok Eksenli Yığma</message>
+  <message name="Additive-Tech-DED-desc">Çok eksenli yığma teknolojilerini kullanarak özellikler oluşturmak için bir katmanlı takım yolu oluşturur. Örneğin, DED (yönlendirilmiş enerji yığma).</message>
+  <message name="Additive-Tech-DED-contextid">MFG-AM-FEATURE-CONSTRUCTION</message>
+
+  <message name="Additive-Tech-SLM-name">Katmanlı İmalat</message>
+  <message name="Additive-Tech-SLM-desc">Bir Metal Toz Yatak Füzyonu (MPBF) işlemi seçmenizi, parçaları platform üzerinde düzenleyip yönlendirmenizi, tamamen ilişkili destek yapıları oluşturmanızı ve modelleri bölmenizi sağlar. Çıktı olarak lazer parametrelerini içeren bir yerel yapı dosyası veya bir 3MF dosyası verir.</message>
+  <message name="Additive-Tech-SLM-contextid">MFG-AM-WORKFLOW-PREPARE-PARTS-FOR-ADDITIVE-MANUFACTURE</message>
+
+  <message name="advanced-direct-selection-name">Gelişmiş Doğrudan Seçim</message>
+  <message name="advanced-direct-selection-desc">Enables the advanced direct selection mode for surface selections.</message>
+
+  <message name="configurable-tolerance-colors-name">Tolerans Renkleri</message>
+  <message name="configurable-tolerance-colors-desc">Denetim sonuçları ve stok simülasyonu için tolerans renklerini birbiriyle eşleşecek şekilde ayarlar. Tercihler'e iki renk kuralı arasında seçim yapmanızı sağlayan bir ayar ekler. Ek olarak, kanvasta Prob Geometrisi, Prob WCS'si ve Manuel Denetimden elde edilen tolerans dışı denetim sonuçlarını turuncu ile, Manuel Denetim için nominal değerleri siyah ile görüntüler.</message>
+  <message name="configurable-tolerance-colors-contextid">MFG-TOLERANCE-COLORS</message>
+
+  <message name="drilling-collision-avoidance-name">Delme Sırasında Çarpışmalardan Kaçın</message>
+  <message name="drilling-collision-avoidance-desc">Şaft ve tutucu boşluklarını belirleyerek delme işlemlerinin daha güvenli olmasını sağlar. Kesim yaparken olası çarpışmalara neden olabilecek delikleri atlayabilirsiniz. Bağlarken herhangi bir engelden kaçınmak için geri çekilme yüksekliğini otomatik olarak ayarlayabilirsiniz.</message>
+
+  <message name="drilling-through-hole-flipper-name">Çok Eksenli Delmede Delikten Geçiş Yönü Kontrolü</message>
+  <message name="drilling-through-hole-flipper-desc">Çok eksenli delme için, herhangi bir açık delik için bir yön ayarlayın, takım yolu seçilen yöne uyacaktır.</message>
+
+  <message name="cutting-force-analysis-name">Kesme Kuvveti Analizi</message>
+  <message name="cutting-force-analysis-desc">Simülasyon sırasında kesme kuvveti verilerini toplayın.</message>
+
+  <message name="hig-styled-qt-name">Güncellenmiş Stil</message>
+  <message name="hig-styled-qt-desc">Fusion Manufacturing Dialogs için sürmekte olan stil güncellemesine bir göz atın.</message>
+
+  <message name="import-macro-results-name">Makro Baskı Sonuçlarını İçe Aktar</message>
+  <message name="import-macro-results-desc">Prob WCS'si veya Prob Geometrisi işlemleri tarafından takım tezgahı kontrolöründe oluşturulan "Baskı Sonuçları"nı içe aktarın.</message>
+  <message name="import-macro-results-contextid">MFG-IMPORT-MACRO-RESULTS</message>
+
+  <message name="inspection-results-projection-name">Yüzey CAD Projeksiyonunu Denetle</message>
+  <message name="inspection-results-projection-desc">Parça biçiminin veya konumunun CAD dosyasından farklı olduğu problanan noktaları değerlendirirken daha doğru sonuçlar sağlar. Yüzeyi Denetle stratejisi için ölçülen noktanın beklenen nokta yerine CAD yüzeyine göre sapmasını hesaplar.</message>
+  <message name="inspection-results-projection-contextid">MFG-PROBE-PROJECT-POINTS</message>
+
+  <message name="fusion-mfg-assistant-name">Üretim Asistanı</message>
+  <message name="fusion-mfg-assistant-desc">Üretim için Fusion kullanımıyla ilgili sorular sormanızı sağlar. Cevaplar, Autodesk ve web kaynakları kullanılarak Yapay Zeka (AI) tarafından sağlanır.</message>
+
+  <message name="invalid-parameter-error-name">Geçersiz Parametre Hatası</message>
+  <message name="invalid-parameter-error-desc">Takım yolu oluşturma zamanında ilave parametre doğrulama kontrolleri ekler.</message>
+
+  <message name="live-machine-connection-name">Canlı Makine Veri Bağlantısı</message>
+  <message name="live-machine-connection-desc">Yüzeyi Denetle, Prob Geometrisi ve Prob WCS'si stratejileri için Haas Kontrollerinden problanan noktalar için canlı veri toplama aracılığıyla sonuçları gerçek zamanlı olarak değerlendirin.</message>
+  <message name="live-machine-connection-contextid">MFG-PROBE-LIVE-CONNECTION</message>
+
+  <message name="live-part-alignment-name">Canlı Makine Parçası Hizalama</message>
+  <message name="live-part-alignment-desc">Canlı Makine Veri Bağlantısı üzerinden Parça Hizalamanın kullanımını etkinleştirin.</message>
+  <message name="live-part-alignment-contextid">MFG-LIVE-PART-ALIGNMENT-PREVIEW</message>
+
+  <message name="simulation-disable-visualization-collisions-on-name">Görsel Stok Simülasyonu İçin Çarpışma Algılamayı Atla</message>
+  <message name="simulation-disable-visualization-collisions-on-desc">Simülasyon sırasında görsel stoku hesaplarken ek çarpışma algılamayı atlar. Bu, özellikle çok sayıda işlemi simüle ederken, bir makineyle simüle ederken veya her ikisini birden yaparken kanvastaki stokun görsel simülasyonunun hızlandırılmasına yardımcı olur. Çarpışma algılama, doğrulama işleminin bir parçası olarak gerçekleştirilmeye devam eder.</message>
+
+  <message name="simulation-mode-name">Simülasyon görüntüleme seçenekleri ve bilgileri</message>
+  <message name="simulation-mode-desc">Simülasyon iletişim kutusunu iki yeni iletişim kutusuyla değiştirir, böylece kanvasta görüntülenenleri kontrol eden ayarlar, simülasyonla ilgili önemli bilgilerin özetinden ayrılmış olur. Simülasyon bağlamsal ortamının araç çubuğundan görüntüleme seçeneklerine ve bilgi özetine erişebilirsiniz.</message>
+
+  <message name="geometry-simulator-use-GPU-name">Daha hızlı IPS işleme (GPU)</message>
+  <message name="geometry-simulator-use-GPU-desc">Grafik işlemcisini (GPU) kullanarak daha hızlı işlem sağlar. Bilgisayar işlemcisini (CPU) kullanan standart Simülasyon aracına daha hızlı bir alternatif olarak üretim operasyonlarının simülasyonunu yapmak için bir Daha Hızlı Simülasyon (GPU) aracı ekler. Ayrıca, Tercihler&amp;apos;e bir IPS ve Kalan Stok &amp;gt; İşleme Modu seçeneği ekler. Bu yeni seçenek, işlemdeki ve kalan (geri kalan) stoku oluşturmak için Standart (bilgisayar işlemcisi) ve Daha Hızlı (grafik işlemcisi) modları arasında seçim yapmanızı sağlar. Yeni araç ve seçenek için daha hızlı işleme, grafik işlemcisi kalitesine bağlıdır.</message>
+  <message name="geometry-simulator-use-GPU-contextid">MFG-DAHA-HIZLI-SİMÜLE-ET-GPU</message>
+  
+  <message name="gpu-machine-simulation-name">Makine simülasyonu sırasında Daha Hızlı (GPU) stok simülasyonu kullan</message>
+  <message name="gpu-machine-simulation-desc">Grafik işlemcisini (GPU) kullanarak makine simülasyonu sırasında daha hızlı stok simülasyonu sağlar. Bilgisayar işlemcisini (CPU) kullanmaya daha hızlı bir alternatif olarak Simülasyon bağlamsal ortamına Mod &gt; Daha Hızlı Simüle Et (GPU) seçeneği ekler. GPU kullanılırken makine çarpışma algılamasını içeren makine doğrulaması CPU'da devam eder ve daha uzun sürebilir. Makine, stoka göre değil modele göre kontrol edilir. Daha hızlı işleme, grafik işlemcisinin kalitesine bağlıdır.</message>
+  <message name="gpu-machine-simulation-contextid">MFG-SİMÜLASYON-MAKİNE-GPU</message>
+
+  <message name="gpu-stock-per-pixel-refinement-name">Stok simülasyonu (GPU) için iyileştirilmiş görseller</message>
+  <message name="gpu-stock-per-pixel-refinement-desc">Daha Hızlı Simüle Et (GPU) seçeneği kullanılırken özellikle duraklatılmış simülasyon sırasında simüle edilen stokun görsel kalitesini artırır. Fusion, stok mesh'i iyileştirir ve ardından görünür her piksel için ayrıntıyı geliştirir. Her görünüm değişikliğinden sonra (döndürme, kaydırma, yakınlaştırma), iyileştirme yeniden hesaplanır ve bu da ek süre alabilir.</message>
+
+  <message name="simulation-auto-machine-part-ghosting-name">Makine otomatik şeffaflığı ile simüle et</message>
+  <message name="simulation-auto-machine-part-ghosting-desc">Makine simülasyonu sırasında takımın ucunun görünümünü engelleyen herhangi bir makine öğesinin içini otomatik olarak saydam hale getirir. Bu, siz kaydırma yaparken ve görünümleri değiştirirken takımın ucunun net bir şekilde görülmesini sağlar.</message>
+
+  <message name="manual-inspect-measure-method-name">Manuel Denetim İçin Merkezden Merkeze Mesafe</message>
+  <message name="manual-inspect-measure-method-desc">Manuel incelemede iki deliğin veya çıkıntıların merkezleri arasındaki mesafenin nasıl ölçüleceğini seçmenizi sağlar. Ölçüm cihazınız merkezden merkeze mesafe ölçümlerini desteklemiyorsa Fusion, deliklerin veya çıkıntıların çaplarını ve aralarındaki maksimum veya minimum mesafeyi kullanarak mesafeyi hesaplayabilir.</message>
+  <message name="manual-inspect-measure-method-contextid">MFG-MANUAL-INSPECTION-CENTERS-PREVIEW</message>
+
+  <message name="manual-measure-name">Manuel Denetim</message>
+  <message name="manual-measure-desc">Pergel, mikrometre veya yükseklik ölçer gibi bir manuel denetim cihazı kullanarak fiziksel olarak ölçülecek özelliklerin bir listesini oluşturun. Ölçümleri kaydederek belirtilen toleranslarla karşılaştırın ve isterseniz sonuçları denetim raporu olarak kaydedin.</message>
+  <message name="manual-measure-contextid">MFG-CREATE-MANUAL-INSPECTION</message>
+
+  <message name="legacy-mesh-silhouette-name">Eski Ağ Silüeti</message>
+  <message name="legacy-mesh-silhouette-desc">Ağ verileri için eski silüeti etkinleştirin.</message>
+
+  <message name="legacy-chaining-name">Eski Zincirleme</message>
+  <message name="legacy-chaining-desc">İmalat çalışma alanındaki kenar seçimleri için eski zincirleme altyapısını etkinleştirin.</message>
+
+  <message name="legacy-drilling-name">Eski Delme</message>
+  <message name="legacy-drilling-desc">Üretim çalışma alanında eski delme işlemini etkinleştirin.</message>
+
+  <message name="new_import_results-name">Denetim Sonuçlarını İçe Aktar</message>
+  <message name="new_import_results-desc">Denetim sonuçlarını içe aktarırken problanan noktaların yansıtılacağı gövdeleri seçin.</message>
+  <message name="new_import_results-contextid">MFG-PROBE-IMPORT-RESULTS</message>
+
+  <message name="old-turning-profile-strategy-name">Eski Profil Tornalama</message>
+  <message name="old-turning-profile-strategy-desc">Eski profil tornalama stratejilerini etkinleştirir. Bu, sınırlı bir süre için kullanılabilir olacaktır.</message>
+
+  <message name="old-pocket-detector-name">2B Çukur Eski Algılama</message>
+  <message name="old-pocket-detector-desc">Bu bayrak ayarlanırsa, 2B açık çukurların algılanması için eski algoritma kullanılır.</message>
+
+  <message name="probe-angle-measure-name">Problama: Eksen Dışı Açı Ölçümü</message>
+  <message name="probe-angle-measure-desc">Prob Geometrisinin dikey yüzlerin dönüş açısını ölçmesine olanak tanır.</message>
+
+  <message name="probe-geometry-strategy-name">Makro Tabanlı Denetim</message>
+  <message name="probe-geometry-strategy-desc">Makinenizdeki problama döngüleri ile işlem içi özellikleri ölçün. Kritik geometrik özelliklerin boyutlarını ve konumlarını doğrulayın, araç aşınma parametrelerini güncelleyin ve tolerans dışı özellikleri ele almak için programlarınızı duraklatın veya durdurun. &lt;i&gt;Şunları içerir: Prob Geometrisi, Denetim Raporları ve daha fazlası.&lt;/i&gt;</message>
+  <message name="probe-geometry-strategy-contextid">EXT-MANUFACTURING</message>
+
+  <message name="pmi-inspection-plan-name">PMI Denetim Planı</message>
+  <message name="pmi-inspection-plan-desc">Mevcut PMI'ya dayalı bir denetim planını otomatik olarak oluşturma olanağı sağlar.</message>
+  <message name="pmi-inspection-plan-contextid">MFG-PMI-DENETİM-PLANI-ÖN İZLEMESİ</message>
+
+  <message name="probe-on-pcd-name">PCD'de Prob Delikleri ve Göbekleri</message>
+  <message name="probe-on-pcd-desc">Prob WCS'si ve Prob Geometrisi stratejilerinde, bir PCD'de deliklerin ve göbeklerin problanmasına olanak tanıyan ek seçeneklere izin verir.</message>
+
+  <message name="hide-warnings-name">Uyarıları Gizle</message>
+  <message name="hide-warnings-desc">İşlemleri programlarken uyarılarla karşılaşırsanız, bunları okuduktan ve daha fazla dikkat gerektirmediğine karar verdikten sonra ayrı işlemler için uyarıları gizlemeyi seçebilirsiniz. Uyarılar siz işlemi yeniden oluşturana kadar gizli kalır.</message>
+
+  <message name="ignore-warnings-name">Uyarıları Yok Say</message>
+  <message name="ignore-warnings-desc">Bir işlemin uyarılarını yok saymanıza olanak tanır. Uyarılar sadece oturum için veya her zaman için yok sayılabilir.</message>
+
+  <message name="improved-form-mill-approximation-name">İyileştirilmiş Form Frezesi Yaklaşımı</message>
+  <message name="improved-form-mill-approximation-desc">Yaklaşıklar, frezeleri bir parmak freze yerine bir yuvarlak dış açı olarak oluşturur.</message>
+	
+  <message name="post-processing-with-legacy-dialog-off-name">Eski işlem sonrası iletişim kutusuyla İşlem Sonrası NC kodu</message>
+  <message name="post-processing-with-legacy-dialog-off-desc">Yeni NC Programı işlem sonrası arayüzüyle ilgili sorunlar yaşıyorsanız, eski tarzdaki işlem sonrası iletişim kutusuna geri dönün.</message>
+  <message name="post-processing-with-legacy-dialog-off-contextid">MFG-İŞLEM-SONRASI-İŞLEMLERİ</message>
+
+  <message name="4-axis-machining-type-name">3B Takım Yolları İçin 4 Eksenli İşleme</message>
+  <message name="4-axis-machining-type-desc">3B takım yollarına daha fazla 4 eksenli işleme seçeneği ekler. 4 ve 5 eksenli harekette uygun hızlı bağlantılar için Açıklık ve Geri Çekilme yüksekliklerini silindir, küre veya eğimli düzlem olarak ayarlayabilirsiniz.</message>
+
+  <message name="restrict-to-4-axis-name">4 Eksenle Sınırla</message>
+  <message name="restrict-to-4-axis-desc">En az 4 eksenli bir takım tezgahında kullanmak üzere 5 eksenli bir stratejiden 4 eksenli bir takım yolu oluşturur. Şu anda yalnızca Akış stratejisi içindir.</message>
+  <message name="restrict-to-4-axis-contextid">DIŞ ÜRETİM</message>
+
+  <message name="roughing-form-tools-name">Roughing Form Tools</message>
+  <message name="roughing-form-tools-desc">Enables calculation of 3D Pocket and 3D Adaptive operations to use actual Form Mill shape for toolpath calculation, instead of an approximated regular mill.</message>
+
+  <message name="moduleworks-three-plus-two-name">3+2 Takas Stratejisi (gelecekteki genişleme özelliği)</message>
+  <message name="moduleworks-three-plus-two-desc">Birden fazla takım yönlendirmesi kullanarak büyük miktarlarda malzemeyi çıkarmak için kullanılabilecek bir kaba işleme stratejisi. Alttan kesim gibi alanları işlemek için daha sert olan daha kısa takımları kullanabilirsiniz.</message>
+  <message name="moduleworks-three-plus-two-contextid">DIŞ ÜRETİM</message>
+
+  <message name="setup-sheet-configurations-name">Kurulum Sayfası Yapılandırmaları</message>
+  <message name="setup-sheet-configurations-desc">Özel kurulum sayfası yapılandırmalarının oluşturulmasını sağlar.</message>
+
+  <message name="spun-profile-dmk-name">Bükümlü Profil</message>
+  <message name="spun-profile-dmk-desc">Yeni bir Bükümlü Profil algoritması kullanarak Bükümlü Profil özelliğinin stabilitesini ve performansını iyileştirin. Bu özellik, tornalama işlemleri için seçilen bir modeli döndürerek bir profil eğrisi oluşturmanıza olanak sağlar.</message>
+
+  <message name="stock-drag-handles-name">Stok Sürükleme Kolları</message>
+  <message name="stock-drag-handles-desc">Stok boyutunu ayarlamak için sürükleme kollarını etkinleştirir.</message>
+
+  <message name="strategy-inspect-surface-name">Yüzey Denetimi</message>
+  <message name="strategy-inspect-surface-desc">Mile monte edilmiş bir prob ile karmaşık yüzey geometrisinin doğruluğunu ölçmek için CAD tabanlı problama özelliğini kullanın. Dövme ve döküm gibi prizmatik olmayan parçaların kurulumunu ve işlenmesini otomatikleştirmek için akıllı parça hizalamasını kullanın. &lt;i&gt;Şunları içerir: Yüzeyi Denetle, Denetim Raporları, Otomatik Parça Hizalama ve daha fazlası.&lt;/i&gt;</message>
+  <message name="strategy-inspect-surface-contextid">EXT-MANUFACTURING</message>
+
+  <message name="customize-inspection-report-name">Özelleştirilmiş Denetim Raporları</message>
+  <message name="customize-inspection-report-desc">Bir denetim raporu oluştururken önceden tanımlanmış şablonlar arasından seçim yapmanıza ve bunları düzenlemenize olanak sağlar.</message>
+
+  <message name="strategy-rotary-name">Döner Stratejisi</message>
+  <message name="strategy-rotary-desc">4 eksenli frezeleme için Döner stratejisiyle karmaşık, geometrik olmayan şekilleri işleyin.</message>
+  <message name="strategy-rotary-contextid">MFG-MULTI-AXIS-ROTARY</message>
+
+  <message name="extension-3-axis-name">Otomatikleştirilmiş 3 Eksenli İşleme</message>
+  <message name="extension-3-axis-desc">Daha hızlı CAM programlama için tüm parçaya uygulanabilen bir dizi akıllı 3 eksenli stratejiyle karmaşık, zengin özelliklere sahip parçaların delinmesini ve frezelenmesini basitleştirin. &lt;i&gt;Şunları içerir: 3 Eksenli Delik Tanıma ile 3 Eksenli Dik ve Sığ.&lt;/i&gt;</message>
+  <message name="extension-3-axis-contextid">EXT-MANUFACTURING</message>
+
+  <message name="extension-3-plus-2-name">Otomatikleştirilmiş 3+2 İşleme</message>
+  <message name="extension-3-plus-2-desc">3+2 (konumsal) işleme ile tüm parçaları delmek ve frezelemek için CNC makinenizin döner eksenlerini kullanabilen ek stratejilere ve takım ekseni kontrollerine erişin. &lt;i&gt;Şunları içerir: 3+2 Delik Tanıma.&lt;/i&gt;</message>
+  <message name="extension-3-plus-2-contextid">EXT-MANUFACTURING</message>
+
+  <message name="template-library-name">Şablon Kitaplığı</message>
+  <message name="template-library-desc">Şablonlar için yepyeni arayüz. Şablonları yeni bir kitaplıkta depolayın, yeniden kullanın veya onlara göz atın.</message>
+
+  <message name="toolpath-modifications-name">Takım Yolu Değişiklikleri</message>
+  <message name="toolpath-modifications-desc">Tam bir yeniden hesaplama yapmaya gerek kalmadan takım yollarında küresel veya yerel değişiklikler yapmak için bir dizi güçlü değişiklik aracına erişin. Değişiklikler daha fazla esneklik elde etmek amacıyla düzenlenebilir. &lt;i&gt;Şunları içerir: Takım Yolu Kırpma, Geçişleri Sil, Aracı Değiştir ve daha fazlası.&lt;/i&gt;</message>
+  <message name="toolpath-modifications-contextid">EXT-MANUFACTURING</message>
+
+  <message name="tool-library-v4-dynamic-tool-preview-release-name">Takım Kitaplığı - 3B Ön İzleme</message>
+  <message name="tool-library-v4-dynamic-tool-preview-release-desc">Takım Kitaplığında 3B araç ön izlemesini etkinleştirir.</message>
+
+  <message name="tool-library-v4-fusionmake-parser-name">Takım Kitaplığı - Fusion Ayrıştırıcısı</message>
+  <message name="tool-library-v4-fusionmake-parser-desc">Kullanıcı ifadelerinde daha iyi tutarlılık için Fusion ayrıştırıcısının Takım Kitaplığı'nda kullanımına olanak sağlar.</message>
+
+  <message name="tool-library-v4-tool-orientation-name">Takım Kitaplığı - Takım Yönlendirmesi</message>
+  <message name="tool-library-v4-tool-orientation-desc">Tornalama takımının yönünü ayarlamak için daha sezgisel etkileşimler ekler. Ayrıca, iş mili yönünü takım yönünden bağımsız olarak kontrol etme yeteneği ekler, bu da kodu manuel olarak düzenleme ihtiyacını ortadan kaldırır ancak çarpışma riskini artırabilir. Bu ön izleme özelliğini etkinleştirip ayarları değiştirirseniz, tekrar kapatmanız halinde işlemleri geçersiz kılmadan takım yönünü ayarlarken ayarlanmış olan iş mili yönünü korunacağını unutmayın. Ayrıca, simülasyon sırasında olası çarpışmaların vurgulanmayabileceğini unutmayın.&lt;br/&gt;&lt;i&gt;Önemli: CNC kodunu çalıştırmadan önce daima simülasyon sonuçlarını gözle onaylayın ve son işlem çıktısındaki iş mili M kodlarını kontrol edin.&lt;/i&gt;</message>
+
+  <message name="tool-gtc-import-name">Takım Kitaplığı – GTC Paketlerini İçe Aktar</message>
+  <message name="tool-gtc-import-desc">Bir GTC (Genel Takım Kataloğu) paketinden bir veya daha fazla takımı Takım Kitaplığına içe aktarmanızı sağlar. GTC paketleri, genellikle hem takımın modelini (STEP dosyası) hem de takımın geometrisini (P21 dosyası) tanımlamaya yarayan özellikleri içeren zip dosyalarıdır. GTC paketleri genellikle takım satıcılarından veya üreticilerinden indirilebilir.</message>
+
+  <message name="tool-p21-import-name">Takım Kitaplığı – P21 Dosyalarını İçe Aktar</message>
+  <message name="tool-p21-import-desc">P21 dosyasından Takım Kitaplığına bir takım içe aktarmanızı sağlar. P21 dosyası, bir takımın geometrisini tanımlayan özellikler içerir ve bunlar, içe aktarma işlemi sırasında Fusion'ın takım parametreleriyle eşlenir. P21 dosyaları genellikle takım satıcılarından veya üreticilerinden indirilebilir.</message>
+
+  <message name="extension-multi-axis-name">4 Eksenli ve 5 Eksenli Eş Zamanlı İşleme</message>
+  <message name="extension-multi-axis-desc">En karmaşık şekilleri güvenli ve verimli bir şekilde işlemek amacıyla CNC makinenizin doğrusal ve döner eksenlerini aynı anda çalıştırmak için çok eksenli stratejiler ve takım ekseni seçeneklerinin kilidini açın. &lt;i&gt;Şunları içerir: Talaş, Çok Eksenli Dik ve Sığ, Çok Eksenli Kontur ve daha fazlası.&lt;/i&gt;</message>
+  <message name="extension-multi-axis-contextid">EXT-MANUFACTURING</message>
+
+  <message name="mfg-working-model-name">Üretim Çalışma Modeli</message>
+  <message name="mfg-working-model-desc">Üretim çalışma alanında üretim modellerini etkinleştirir. Yerleştirme ve Düzenleme işlevlerini kullanmak için gereklidir.</message>
+  <message name="mfg-working-model-contextid">MFG-MANUFACTURING-MODEL-OVERVIEW</message>
+
+  <message name="strategy-old-flow-name">Akış (Eski)</message>
+  <message name="strategy-old-flow-desc">Kavisli yüzeyleri işlemenizi sağlar. Akış (Eski), bir yüzeyi işlerken gereken atlama sayısının belirtilmesini gerektirir. 3B takım yolları açılır menüsünde bulunan yeni Akış stratejisi, gerekli atlamaları otomatik olarak hesaplar. Bu önizleme özelliğini etkinleştirmek, iş akışlarınızı yeni Akış stratejisini kullanacak şekilde ayarlamadan önce hâlâ kullanmanız gerekiyorsa Akış (Eski)'ye erişmenizi sağlar.</message>
+
+  <message name="skip-ruled-alignment-name">Eski yüzey mozaikleme</message>
+  <message name="skip-ruled-alignment-desc">Belirli frezeleme stratejilerini kullanarak takım yolları oluştururken yüzeyleri bölmek için eski yöntemi kullanın. Bu, yeni yöntem kurallı yüzeylerde takım yolu sorunlarına neden oluyorsa yardımcı olabilir.</message>
+
+  <message name="online-system-library-name">En yeni Son İşlemcileri, Makineleri ve Yazdırma Ayarlarını otomatik olarak al</message>
+  <message name="online-system-library-desc">Gönderi Kitaplığı, Makine Kitaplığı ve Yazdırma Ayarı Kitaplığı'nın Füzyon Kitaplığı bölümü, kullanılabilir olduklarında gönderilerin, makinelerin ve yazdırma ayarlarının en son sürümleri ve eklemeleriyle güncellenir. Fusion'ı her yeniden başlattığınızda güncelleme kontrolleri yapılır.</message>
+
+  <message name="secondary-spindle-pull-name">Çubuk Çekme</message>
+  <message name="secondary-spindle-pull-desc">Çubuk Çekme stratejisini etkinleştirir.</message>
+
+  <message name="import-pmi-name">PMI Verilerini Dosya Yüklemede İçe Aktar</message>
+  <message name="import-pmi-desc">Veri Panelinden açıldığında başka bir CAD uygulamasında oluşturulan bir tasarımdan PMI'nin (Ürün İmalat Bilgileri) içe aktarılmasını mümkün kılar.</message>
+  <message name="import-pmi-contextid">MFG-PMI-FOR-INSPECTION-PREVIEW</message>
+
+  <message name="un-cached-dependency-analyzer-name">Eski bağımlılık analizini etkinleştir</message>
+  <message name="un-cached-dependency-analyzer-desc">Bağımlılık analizi için eski algoritmayı kullanır. Bu, performansın düşmesine neden olur ve yalnızca geçersiz kılma dengesizlikleri meydana gelirse son çare olarak etkinleştirilmelidir.</message>
+
+  <message name="blend-entry-exit-passes-name">Karışım: Giriş ve Çıkış Geçişleri</message>
+  <message name="blend-entry-exit-passes-desc">İşlenen alanı genişletmek ve sırasıyla takımın parçaya doğru ve parçadan uzağa hareketini kontrol etmek için başlangıç ve bitiş tahrik eğrilerinden önce ve sonra geçişler ekleyin. Yalnızca Atlama Hesaplaması "Takımın ucundan" olarak ayarlandığında geçerlidir.</message>
+
+  <message name="blend-intermediate-curves-name">Karışım: Ara Tahrik Eğrileri</message>
+  <message name="blend-intermediate-curves-desc">Karışımın nasıl ilerlemesi gerektiğini kontrol etmek için başlangıç ve bitiş tahrik eğrileri arasında tahrik eğrileri tanımlayın. Yalnızca karışım açık eğri seçimlerinden olduğunda ve Atlama Hesaplaması "Takımın ucundan' olarak ayarlandığında geçerlidir.</message>
+
+  <message name="dmk-leadslinks-improvements-name">İyileştirilmiş giriş ve çıkış hareketleri</message>
+  <message name="dmk-leadslinks-improvements-desc">Kesme geçişlerinin uçlarını kırpıp yer açarak belirtilen giriş ve çıkışın eklenmesini sağlar. Sarkan yüzeylerin altından giriş ve çıkış hareketlerini uzatarak yaklaşma ve geri çekilme hareketlerinin güvenliğini artırır. Yalnızca Dik ve Sığ ile Döner stratejiler için geçerlidir.</message>
+
+  <message name="modifications-areaclear-toolpaths-name">3B Uyarlamalı Temizleme ve 3B Çukur Temizlemeye Yönelik Değişiklikler</message>
+  <message name="modifications-areaclear-toolpaths-desc">İstenmeyen hareketleri kaldırın, yolları ve bağlantıları ayarlayarak takım yolunu optimize edin. Stokta beklenmeyen hareketler olup olmadığını görmek için düzenlenen tüm takım yollarını kontrol edin.</message>
+
+  <message name="toolpath-trimming-turning-name">Tornalama Takım Yolları İçin Geçişleri Kırpma ve Silme Modifikasyonları (Gelecekte Genişletme Olanağı)</message>
+  <message name="toolpath-trimming-turning-desc">Takım yollarını optimize etmek için Geçişleri Kırpma ve Silme modifikasyonlarını uygulayın. Profil Bitirme, Oluk Bitirme ve Tornalama İzleme takım yolları için kullanılabilir.</message>
+
+  <message name="polar-machining-ui-name">Kutup İşleme</message>
+  <message name="polar-machining-ui-desc">Aracı bir takım yolu boyunca hareket ettirirken dönme ve doğrusal hareketlerin bir kombinasyonunu kullanmak için takım yolu işlemleri içinde seçenekler sağlar.</message>
+
+  <message name="dmk-projection-finishing-name">Proje stratejisi için ek seçenekler.</message>
+  <message name="dmk-projection-finishing-desc">Alttan kesimleri, desenleri belirlenmiş bir nokta veya eğriden veya bu nokta veya eğriye yansıtarak işler.</message>
+
+  <message name="exclude-inclined-flats-name">Eğimli düz yüzeyleri hariç tutun (gelecekteki uzatma özelliği)</message>
+  <message name="exclude-inclined-flats-desc">Eğimli düz yüzeyleri işlemekten kaçınmak için otomatik olarak hariç tutun. Bilya uçlu freze ile yalnızca organik yüzeyleri hedeflemek istediğinizde kullanışlıdır. Dik ve Sığ stratejide kullanılabilir.</message>
+
+  <message name="use-machine-geometry-in-toolpath-generation-name">Takım yollarını hesaplarken makine mili ve tablo ile çarpışma olup olmadığını kontrol edin</message>
+  <message name="use-machine-geometry-in-toolpath-generation-desc">Şaft ve tutucu ile çarpışmaları kontrol ederken isteğe bağlı olarak makine mili ve tablo ile de çarpışma olup olmadığını kontrol edin. Kullanılması gereken geometriyi tanımlamak için Makine Oluşturucuyu kullanın.</message>
+
+  <message name="multi-axis-walls-name">Duvar Stratejisi İçin Çok Eksenli İşleme</message>
+  <message name="multi-axis-walls-desc">Tek bir işlemde bir parçanın daha fazla alanına ulaşmak için çok eksenli işlemeyi kullanmanızı sağlar.</message>
+
+  <message name="inclined-wall-finishing-name">Duvar Stratejisi</message>
+  <message name="inclined-wall-finishing-desc">Dikey duvarları otomatik olarak algılamak ve işlemek için kullanılabilecek bir bitirme stratejisi.</message>
+
+  <message name="in-control-radius-compensation-name">Kontrol İçi Yarıçap Telafisi</message>
+  <message name="in-control-radius-compensation-desc">Telafi Türü'nün Kontrol İçi olarak ayarlandığı takım yolları için daha yeni, daha kararlı algoritmayı kullanır. Bu yeni algoritma çoğu durumda zaten kullanılmaktadır ve bu seçenek belirlendiğinde her durumda kullanılır.</message>
+
+  <message name="dual-spindle-machines-enabled-name">Torna tezgahları ve torna freze makineleri</message>
+  <message name="dual-spindle-machines-enabled-desc">Çift milli torna tezgahları ve torna freze makineleri için makine tanımları oluşturmanızı sağlar. Makine Kitaplığı'nda, canlı takımlarla tornaların ortak yapılandırmalarını hızlı bir şekilde oluşturmanıza yardımcı olmak için birden fazla torna tezgahı seçeneği ekler. Bir makine tanımı oluştururken kinematik ağacında taretleri ve iğneleri belirtmenizi sağlar.</message>
+
+  <message name="stock-materials-name">Stok Malzemeleri</message>
+  <message name="stock-materials-desc">Atölyede sahip olduklarınızla eşleşmesi için stok malzemelerle doldurabileceğiniz bir kitaplık ekler. Stok malzemeleri kurulumlara ve takımlarınız için kesim değerleri ön ayarlarına atamanızı sağlar. Bir işlem için bir takım seçtiğinizde işlenecek malzemeye göre ön ayarları seçin.</message>
+
+  <message name="cyclic-wrapped-name">Sarılı takım yolları için döngüsel konturlar</message>
+  <message name="cyclic-wrapped-desc">Sarılı onay kutusu etkinleştirildiğinde döngüsel konturlara izin verir. Bu, HSM Çekirdeğinin sarılı takım yolları için bağlamayı iyileştirmesini de sağlar.</message>
+
+  <message name="probe-geometry-surface-fitting-name">Prob Geometrisinde yüzey geometrisini denetle</message>
+  <message name="probe-geometry-surface-fitting-desc">Standart problama döngüleri (makrolar) tarafından desteklenmeyen problanmış noktaları kullanarak daireler ve düzlemler gibi geometrik özellikleri sığdırmak ve incelemek için Prob Geometrisi stratejisine işlevsellik ekler. Bir yüzeyin tamamında kabul edilebilir varyasyonları tanımlamak için yüzey toleranslarını ayarlayın ve seçilen yüzey türüne özgü toleransları belirleyin.</message>
+
+  <message name="inspection-in-pim-name">Denetim Verileri Depolaması</message>
+  <message name="inspection-in-pim-desc">Tarayıcıda ve kanvasta tam erişilebilirliği ve işlevselliği korurken, denetim verilerini Fusion belgesine ek olarak Üretim Verileri Modeli (MFGDM) içinde saklar.</message>
+
+  <message name="shaft-and-holder-for-2d-chamfer-name">2B Oluk İçin Şaft ve Tutucu</message>
+  <message name="shaft-and-holder-for-2d-chamfer-desc">Şaft ve tutucu açıklıklarını belirlemenize ve olası çarpışmaları nasıl önleyeceğinizi seçmenize olanak tanıyarak takım yolu güvenliğini artırır.</message>
+
+  <message name="even-stepdowns-in-2d-adaptive-name">2B Adaptif işlem için Eşit Adım Derinlikleri</message>
+  <message name="even-stepdowns-in-2d-adaptive-desc">Geçişler arasında eşit mesafelere sahip olarak daha tutarlı kesme koşulları oluşturmaya yardımcı olur.</message>
+
+  <message name="reusable-selections-name">Seçimleri ve araç yönlendirmelerini yeniden kullanma</message>
+  <message name="reusable-selections-desc">Araç oryantasyonundan bağımsız olarak diğer işlemlerden yapılan geometri seçimlerinin yeniden kullanılmasını sağlar. Araç yönlendirmesi etkinleştirildiğinde, Tarayıcıdaki her işlemin altına seçilebilir bir Araç Yönlendirme modu ekler ve birden çok işlemde yeniden kullanıma izin verir.</message>
+
+  <message name="mill-auto-thread-name">Frezeleme Otomatik Diş Algılama</message>
+  <message name="mill-auto-thread-desc">Seçtiğiniz geometri üzerinde Fusion tarafından oluşturulan dişleri algılar ve Frezeleme Diş stratejisi için diş tanımını otomatik olarak girer.</message>
+
+  <message name="reusable-tool-orientations-name">Takım Yönlendirmelerini Yeniden Kullan</message>
+  <message name="reusable-tool-orientations-desc">Bir işlem için bir takım yönlendirmesi ayarlarken Tarayıcı'daki işleme seçilebilir bir Takım Yönlendirmesi düğümü ekler. Bu, gelecekteki işlemler için takım yönlendirmesini yeniden kullanmanıza olanak tanır, her seferinde yön belirleme ihtiyacını ortadan kaldırır ve birden fazla işlemde aynı anda ayarlamayı mümkün kılar.</message>
+
+  <message name="machine-management-workflow-improvements-name">Makine yönetimi geliştirmeleri</message>
+  <message name="machine-management-workflow-improvements-desc">Makine tanımlarını değiştirmek veya kaldırmak için Tarayıcıya sağ tıklama seçenekleri ekleyerek makine yönetimi iş akışlarınızı kolaylaştırır. Bu seçenekler, mevcut kurulumdaki veya NC programları da dahil olmak üzere tüm kurulumlardaki makine tanımlarını değiştirmenize ve makine tanımlarını aynı alanlardan ve belgeden kaldırmanıza olanak tanır.</message>
+
+  <message name="machine-rotary-angles-settings-name">Takım Yönlendirme İçin Makine Açıları</message>
+  <message name="machine-rotary-angles-settings-desc">2B stratejiler (3+2 işleme) için makine açılarını ayarlamanıza ve 3B stratejiler (3 eksenli işleme) için geleneksel döndürme ve eğme veya makine açıları arasında seçim yapmanıza olanak tanır. Makine açılarını belirlerken, makine modelini tuval üzerinde görüntüleyerek görselleştirmenin geliştirilmesine yardımcı olur. Bir makine modeline bağlı makine tanımına sahip bir kurulum gerektirir.</message>
+
+  <message name="patterns-rotation-preference-name">Desenler için Döner Tercihi</message>
+  <message name="patterns-rotation-preference-desc">Desenlerde döndürme hareketi tercihini ayarlamanızı sağlar. Tüm örnekler için orijinal yönü korumaya, her örneği döndürmeye veya 3 eksenli hareketleri zorlamaya olanak tanır. Bu seçenek yalnızca araç yönü döner eksenle hizalandığında yapılan işlemlerde çalışır.</message>
+
+  <message name="mill-standard-thread-name">Frezeleme Standart Diş Tanımı</message>
+  <message name="mill-standard-thread-desc">Frezeleme operasyonlarında standart diş tanımına izin verin.</message>
+
+  <message name="Turn-and-tilt-tool-orientation-2D-name">2B Stratejiler İçin Döndürme ve Eğme Takımı Yönü</message>
+  <message name="Turn-and-tilt-tool-orientation-2D-desc">2B stratejiler için takım yönünü ayarlamak üzere ek kontrolleri kullanarak tek bir işlemde bir parçanın daha fazla alanına erişin. Döndür ve Eğ manipülatörlerini kullanın, takım yönünü geçerli görünümünüze hizalayın veya tek bir tıklama ile takım yönünü herhangi bir yüzeye normal olarak ayarlayın.</message>
+
+  <message name="disable-cadref-pruning-name">Kullanılmayan CAD referanslarının atılmasını devre dışı bırak</message>
+  <message name="disable-cadref-pruning-desc">Normalde bir belge açılırken gerçekleşen başvuruda bulunulmayan CAD geometri öğelerini atma adımını devre dışı bırakır. Bu, yalnızca bu mekanizma nedeniyle şüpheli sorunlar varsa açılmalıdır.</message>
+
+  <message name="chain-face-compression-name">Zincirlerin sıkışmasını geri yükler</message>
+  <message name="chain-face-compression-desc">Zincirlerin sıkışmasını geri yükler. Bu, çalışma alanını değiştirirken ve belge yükleme sırasında performansı artırmak için uygulandı, ancak model değişikliklerinden sonra seçimlerin doğru şekilde geri yüklenmeme riski arttı. Bildirilen sorunlara yanıt olarak zincirlerin sıkıştırılması kaldırılmıştır, ancak bu tercih gerekirse geri yüklemenize olanak tanır.</message>
+
+  <message name="machine-positioning-name">Çubuk Çekme Görünürlüğü</message>
+  <message name="machine-positioning-desc">Makine ve fikstür bileşenlerinin, gerçekleştirilen çubuk çekme hareketlerine göre doğru şekilde konumlandırılmasını sağlar</message>
+
+  <message name="turn-groove-roughing-cusp-cleanup-name">Artımlı Tepe Temizleme tornalama</message>
+  <message name="turn-groove-roughing-cusp-cleanup-desc">Kaba çalışma geçişlerinin bıraktığı uç noktalarını kademeli olarak temizleyin.</message>
+
+  <message name="turn-profile-roughing-rest-area-undercuts-name">Tornalama Profili Kaba İşleme Kalan Alan Alttan Kesimi</message>
+  <message name="turn-profile-roughing-rest-area-undercuts-desc">Profil Kaba İşleme'de kalan işleme kullanılırken alttan kesimlere erişin.</message>
+
+  <message name="legacy-dxf-export-name">Yerleştirme İçin Eski DXF Dışa Aktarma</message>
+  <message name="legacy-dxf-export-desc">Yerleştirmede ve imalatta eski DXF dışa aktarma motorunu etkinleştirin. Bu seçeneği yalnızca yeni dışa aktarma yöntemi sorunlara veya kararsızlıklara neden oluyorsa kullanın.</message>
+
+  <message name="tool-call-strategy-name">Takım Çağırma Stratejisi</message>
+  <message name="tool-call-strategy-desc">Alt mil hareket etmeden, parçalamadan veya aktarma operasyonlarından önce bunu önceden konumlandırmak için bir takımı veya boş istasyonu çağırır. Takım seçimini optimize etmek, operasyonlar arasında zamandan tasarruf etmek ve çarpışma riskini azaltmak için Takım Çağırmayı kullanın.</message>
+
+  <message name="relaxed-multiple-reference-matches-handling-name">Belirsiz referansların eski şekilde ele alınması</message>
+  <message name="relaxed-multiple-reference-matches-handling-desc">Normalde, belirsiz seçimler (yani belgeden güvenilir bir şekilde yüklenemeyen seçimler) eksik olarak işaretlenir ve yeniden seçilmesi gerekir. Bu seçenek etkinleştirildiğinde, belirsiz seçimler eksik olarak işaretlenmez. Doğru şekilde geri yüklenmeme riskiyle yükleneceklerdir.</message>
+
+  <message name="toolpath-feedrate-edit-name">Takım Yolu Besleme Hızı Değişikliği</message>
+  <message name="toolpath-feedrate-edit-desc">Takım Yolu Besleme Hızı değiştirme stratejisini etkinleştirin.</message>
+
+  <message name="setup-groups-name">Kurulum Grupları</message>
+  <message name="setup-groups-desc">Kurulum Grupları stratejisini etkinleştirin.</message>
+  
+  <message name="subspindle-fixture-positioning-name">Alt Mil Fikstür Konumlandırma</message>
+  <message name="subspindle-fixture-positioning-desc">Alt mil fikstür bileşenlerinin mevcut tutma konumuna göre doğru şekilde konumlandırılmasını sağlar.</message>
+
+  <message name="enable-optimized-flats-name">İyileştirilmiş Cep Temizleme</message>
+  <message name="enable-optimized-flats-desc">Düz alanların hemen üzerindeki stokların işlenmesini sağlar.</message>
+
+  <message name="add-produce-contact-normal-name">Ek 5 eksenli destek</message>
+  <message name="add-produce-contact-normal-desc">Ek durumlarda, ör. küresel olmayan takımlar veya eksenel ve radyal ofsetler için farklı değerler kullanırken 5 eksenli eğmenin kullanılmasını sağlar.
+  </message>
+
+  <message name="slice-containment-name">Dilim muhafazası</message>
+  <message name="slice-containment-desc">Cep için dilim muhafazasını etkinleştirir.</message>
+
+  <message name="evenly-spaced-points-and-polar-links-hsm-name">Eşit Aralıklı Noktalar</message>
+  <message name="evenly-spaced-points-and-polar-links-hsm-desc">Bir takım yolundaki kesme hareketleri boyunca noktaların dağılımını düzenler. Orijinal noktaları kaldırır ve mümkün olan her yerde eşit aralıklı yenilerini ekler. Bu, hareket düzgünlüğünü iyileştirir, makinelerin programlanmış besleme hızlarını daha yakından takip etmesine yardımcı olur ve daha iyi yüzey kalitesi ve daha hızlı döngü süreleri sağlar. Artık Kontur, Paralel, Akış, Jeodezik ve Çapak Alma dahil olmak üzere daha fazla stratejide kullanılabilir.</message>
+  
+</locale>

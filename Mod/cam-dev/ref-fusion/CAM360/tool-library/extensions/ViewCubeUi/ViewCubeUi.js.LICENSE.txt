@@ -1,0 +1,99 @@
+/*!
+ * LMV v7.76.0
+ *
+ * Copyright 2022 Autodesk, Inc.
+ * All rights reserved.
+ *
+ * This computer source code and related instructions and comments are the
+ * unpublished confidential and proprietary information of Autodesk, Inc.
+ * and are protected under Federal copyright and state trade secret law.
+ * They may not be disclosed to, copied or used by any third party without
+ * the prior written consent of Autodesk, Inc.
+ *
+ * Autodesk Forge Viewer Usage Limitations:
+ *
+ * The Autodesk Forge Viewer JavaScript must be delivered from an
+ * Autodesk-hosted URL.
+ */
+
+/*! !!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[5].use[2]!../../node_modules/sass-loader/dist/cjs.js!./ViewCubeUi.css */
+
+/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */
+
+/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */
+
+/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */
+
+/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */
+
+/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */
+
+/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */
+
+/*! ../../node_modules/css-loader/dist/runtime/api.js */
+
+/*! ../../node_modules/css-loader/dist/runtime/noSourceMaps.js */
+
+/*! ./ViewCube */
+
+/*! ./ViewCubeShader */
+
+/*! ./ViewCubeUi.css */
+
+/*! three */
+
+/*!************************!*\
+  !*** external "THREE" ***!
+  \************************/
+
+/*!*******************************************!*\
+  !*** ./extensions/ViewCubeUi/ViewCube.js ***!
+  \*******************************************/
+
+/*!*********************************************!*\
+  !*** ./extensions/ViewCubeUi/ViewCubeUi.js ***!
+  \*********************************************/
+
+/*!**********************************************!*\
+  !*** ./extensions/ViewCubeUi/ViewCubeUi.css ***!
+  \**********************************************/
+
+/*!*************************************************!*\
+  !*** ./extensions/ViewCubeUi/ViewCubeShader.js ***!
+  \*************************************************/
+
+/*!*****************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
+  \*****************************************************/
+
+/*!**************************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/noSourceMaps.js ***!
+  \**************************************************************/
+
+/*!***************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/styleDomAPI.js ***!
+  \***************************************************************/
+
+/*!********************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/insertBySelector.js ***!
+  \********************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/styleTagTransform.js ***!
+  \*********************************************************************/
+
+/*!**********************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/insertStyleElement.js ***!
+  \**********************************************************************/
+
+/*!****************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
+  \****************************************************************************/
+
+/*!**********************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js ***!
+  \**********************************************************************************/
+
+/*!*****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[5].use[2]!./node_modules/sass-loader/dist/cjs.js!./extensions/ViewCubeUi/ViewCubeUi.css ***!
+  \*****************************************************************************************************************************************************************************************************************************/

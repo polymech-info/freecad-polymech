@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><locale xmlns="http://www.hsmworks.com/xml/2008/locale">
+
+  <description>Korean</description>
+  <country>kr</country>
+
+  <!--
+	The entries in this file are used for localized text for feature flags,
+	as exposed in the Fusion preferences dialog.
+
+	The formats used for the entries should be in the form shown here,
+	where in this case the feature flag name would be 'feature-flag'.
+	  <message name="feature-flag-name">English Feature Flag Name</message>
+	  <message name="feature-flag-desc">English Feature Flag Description</message>
+   	  <message name="feature-flag-contextid">English Feature Flag Info Link</message>
+	  OR
+	  <message name="feature-flag-contextid">CONTEXT_ID</message>
+
+	If a context id is specified, a URL will be constructed, along the lines of:
+	https://help.autodesk.com/view/fusion360/<LANG>/?contextId=<CONTEXT_ID>
+	with the language code filled in based on the active language.
+  -->
+  <message name="additive-angled-volume-support-name">적층 각진 볼륨 서포트</message>
+  <message name="additive-angled-volume-support-desc">적층 제조 설정 중에 작성된 볼륨 서포트는 빌드 플레이트 방향의 벡터를 따릅니다. 이 미리보기 기능에서는 해당 벡터를 두 개로 분할하는 옵션을 제공합니다. 두 벡터 사이의 각도를 사용하면 부품의 위쪽 스킨 영역과 아래쪽 스킨 영역을 연결하는 서포트를 작성할 필요가 없습니다. 따라서 곡면 품질이 향상되고 위쪽 스킨 영역의 후가공 시간이 단축됩니다.</message>
+  <message name="additive-angled-volume-support-contextid">MFG-ADDITIVE-ANGLED-VOLUME-SUPPORTS-PREVIEW</message>
+
+  <message name="Additive-Lateral-Support-name">적층 측면 지지</message>
+  <message name="Additive-Lateral-Support-desc">복잡한 형상 또는 섬세하고 얇은 벽이 있는 부품에 대해 3D 인쇄된 소프트 죠를 생성합니다. 측면 지지는 밀링과 같은 기계가공 프로세스 중에 이러한 부품을 고정하도록 디자인되었습니다.</message>
+
+  <message name="Additive-General-name">적층 제조</message>
+  <message name="Additive-General-desc">프린트 매개변수를 선택하고, 빌드 성공을 위해 부품 방향을 자동으로 지정하고, 지지 구조 및 툴패스를 자동으로 생성합니다. 직접 내보내 분말 베드 기계를 선택하거나 3MF 파일을 내보냅니다.</message>
+  <message name="Additive-General-contextid">EXT-MFG-ADDITIVE-START</message>
+
+  <message name="Additive-Tech-DED-name">적층 다중 축 적층</message>
+  <message name="Additive-Tech-DED-desc">다중 축 적층 기술을 사용하여 피쳐 만들기를 위한 적층 툴패스를 작성합니다. 예: DED(Directed Energy Deposition).</message>
+  <message name="Additive-Tech-DED-contextid">MFG-AM-FEATURE-CONSTRUCTION</message>
+
+  <message name="Additive-Tech-SLM-name">적층 제조</message>
+  <message name="Additive-Tech-SLM-desc">MPBF(Metal Powder Bed Fusion) 기계를 선택하고, 플랫폼에서 부품을 정렬 및 방향 조정하고, 완전히 연관된 지지 구조물을 작성하고, 모형을 슬라이스할 수 있습니다. 레이저 매개변수 또는 3MF 파일을 포함하는 기본 빌드 파일을 출력합니다.</message>
+  <message name="Additive-Tech-SLM-contextid">MFG-AM-WORKFLOW-PREPARE-PARTS-FOR-ADDITIVE-MANUFACTURE</message>
+
+  <message name="advanced-direct-selection-name">고급 직접 선택</message>
+  <message name="advanced-direct-selection-desc">Enables the advanced direct selection mode for surface selections.</message>
+
+  <message name="configurable-tolerance-colors-name">공차 색상</message>
+  <message name="configurable-tolerance-colors-desc">측정 결과 및 스톡 시뮬레이션의 공차 색상을 일치하도록 설정합니다. 두 개의 색상 규칙 중에서 선택할 수 있는 설정을 기본 설정에 추가합니다. 또한 캔버스에서는 프로브 형상, 프로브 WCS 및 메뉴얼 측정에서 허용 오차를 벗어나는 모든 측정 결과를 주황색으로 표시하고 메뉴얼 측정의 공칭 값은 검은색으로 표시합니다.</message>
+  <message name="configurable-tolerance-colors-contextid">MFG-TOLERANCE-COLORS</message>
+
+  <message name="drilling-collision-avoidance-name">드릴 시 충돌 방지</message>
+  <message name="drilling-collision-avoidance-desc">샤프트 및 홀더 틈새를 지정하여 드릴링 작업의 안전을 향상시킵니다. 절단 시 가능한 충돌을 일으킬 수 있는 홀을 건너뛰도록 선택할 수 있습니다. 링크 시 장애물을 피하기 위해 이송 높이를 자동으로 조정하도록 선택할 수 있습니다.</message>
+
+  <message name="drilling-through-hole-flipper-name">다중축 드릴링의 관통 홀 방향 제어</message>
+  <message name="drilling-through-hole-flipper-desc">다중축 드릴링의 경우 관통 홀의 방향을 설정하면 툴패스가 선택한 방향을 따릅니다.</message>
+
+  <message name="cutting-force-analysis-name">절단력 분석</message>
+  <message name="cutting-force-analysis-desc">시뮬레이션 중에 절단력 데이터를 수집합니다.</message>
+
+  <message name="hig-styled-qt-name">스타일 업데이트</message>
+  <message name="hig-styled-qt-desc">Fusion Manufactured 대화상자를 위해 진행 중인 스타일 업데이트를 살짝 살펴보겠습니다.</message>
+
+  <message name="import-macro-results-name">매크로 프린트 결과 가져오기</message>
+  <message name="import-macro-results-desc">프로브 WCS 또는 프로브 형상 작업에 의해 기계 공구 제어기에서 작성된 '프린트 결과'를 가져옵니다.</message>
+  <message name="import-macro-results-contextid">MFG-IMPORT-MACRO-RESULTS</message>
+
+  <message name="inspection-results-projection-name">곡면 CAD 형상 투영 측정</message>
+  <message name="inspection-results-projection-desc">부품 폼 또는 위치가 CAD 파일과 다른 프로브된 점을 평가할 때 보다 정확한 결과를 제공합니다. 곡면 측정 가공법의 예상 점이 아닌 CAD 곡면을 기준으로 측정된 점의 편차를 계산합니다.</message>
+  <message name="inspection-results-projection-contextid">MFG-PROBE-PROJECT-POINTS</message>
+
+  <message name="fusion-mfg-assistant-name">제조 보조 도구</message>
+  <message name="fusion-mfg-assistant-desc">제조에 Fusion을 사용하는 것과 관련된 질문을 할 수 있습니다. Autodesk 및 웹 소스를 사용하는 AI(인공 지능)가 답변을 제공합니다.</message>
+
+  <message name="invalid-parameter-error-name">잘못된 매개변수 오류</message>
+  <message name="invalid-parameter-error-desc">툴패스 생성 시간에 매개변수 확인 검사를 추가합니다.</message>
+
+  <message name="live-machine-connection-name">라이브 기계 데이터 연결</message>
+  <message name="live-machine-connection-desc">곡면 측정, 프로브 형상 및 프로브 WCS 가공법에 대한 Haas 컨트롤에서 프로빙된 점의 라이브 데이터 획득을 통해 실시간으로 결과를 평가합니다.</message>
+  <message name="live-machine-connection-contextid">MFG-PROBE-LIVE-CONNECTION</message>
+
+  <message name="live-part-alignment-name">라이브 기계 부품 정렬</message>
+  <message name="live-part-alignment-desc">라이브 기계 데이터 연결을 통해 부품 정렬을 사용할 수 있습니다.</message>
+  <message name="live-part-alignment-contextid">MFG-LIVE-PART-ALIGNMENT-PREVIEW</message>
+
+  <message name="simulation-disable-visualization-collisions-on-name">시각적 스톡 시뮬레이션을 위한 충돌 탐지 건너뛰기</message>
+  <message name="simulation-disable-visualization-collisions-on-desc">시뮬레이션 중에 시각적 스톡을 계산하는 동안 추가 충돌 탐지를 건너뜁니다. 그러면 특히 여러 작업을 시뮬레이션하거나, 기계로 시뮬레이션하거나, 둘 다 수행하는 경우 캔버스에서 스톡의 시각적 시뮬레이션 속도가 빨라집니다. 충돌 탐지는 검증 프로세스의 일부로 계속 수행됩니다.</message>
+
+  <message name="simulation-mode-name">시뮬레이션 표시 옵션 및 정보</message>
+  <message name="simulation-mode-desc">시뮬레이션 대화상자를 두 개의 새 대화상자로 바꾸므로 캔버스에 표시되는 내용을 제어하는 설정은 시뮬레이션에 대한 주요 정보 요약과 별개입니다. 시뮬레이션 상황별 환경의 도구막대에서 표시 옵션 및 정보 요약에 액세스하십시오.</message>
+
+  <message name="geometry-simulator-use-GPU-name">더 빠른 IPS 처리(GPU)</message>
+  <message name="geometry-simulator-use-GPU-desc">그래픽 프로세서(GPU)를 사용하여 더 빠르게 처리합니다. 기본 설정에서 IPS 및 나머지 스톡 &gt; 처리 모드 옵션을 추가합니다. 이 새 옵션을 사용하면 진행 중인 스톡과 잔여(잔여) 스톡을 생성하기 위해 표준(컴퓨터 프로세서) 모드와 빠르게(그래픽 프로세서) 모드 중에서 선택할 수 있습니다. 새 옵션의 경우 처리 속도가 빨라지는 방식은 그래픽 프로세서 품질에 따라 달라집니다.</message>
+  <message name="geometry-simulator-use-GPU-contextid">MFG-SIMULATE-FASTER-GPU</message>
+  
+  <message name="gpu-machine-simulation-name">기계 시뮬레이션 중에 더 빠른(GPU) 스톡 시뮬레이션 사용</message>
+  <message name="gpu-machine-simulation-desc">그래픽 프로세서(GPU)를 사용하여 기계 시뮬레이션 중에 스톡 시뮬레이션 속도를 향상시킵니다. 시뮬레이션 상황별 환경의 모드 메뉴에 더 빠른 시뮬레이션(GPU) 옵션이 추가되어, 컴퓨터 프로세서(CPU)를 사용하는 방식보다 더 빠르게 시뮬레이션할 수 있습니다. GPU를 사용하는 경우 기계 충돌 탐지를 포함하는 기계 검증이 CPU에서 계속 수행되므로 시간이 더 오래 걸릴 수 있습니다. 기계는 스톡이 아닌 모형을 기준으로 검사됩니다. 처리 속도는 그래픽 프로세서의 품질에 따라 달라집니다.</message>
+  <message name="gpu-machine-simulation-contextid">MFG-SIMULATE-MACHINE-GPU</message>
+
+  <message name="gpu-stock-per-pixel-refinement-name">스톡 시뮬레이션(GPU)의 시각 효과가 개선되었습니다.</message>
+  <message name="gpu-stock-per-pixel-refinement-desc">특히 시뮬레이션이 일시 중지된 상태에서 더 빠른 시뮬레이션(GPU) 옵션을 사용할 때 시뮬레이션된 스톡의 시각적 품질이 개선됩니다. Fusion은 스톡 메쉬를 미세 조정한 뒤, 표시되는 모든 픽셀의 세부 정보를 향상시킵니다. 뷰를 변경(회전, 초점이동, 줌)할 때마다 미세 조정이 다시 계산되며, 시간이 추가로 소요될 수 있습니다.</message>
+
+  <message name="simulation-auto-machine-part-ghosting-name">기계 자동 투명도를 사용하여 시뮬레이션</message>
+  <message name="simulation-auto-machine-part-ghosting-desc">기계 시뮬레이션 중에 공구 팁의 뷰를 차단하는 모든 기계 항목이 자동으로 투명해집니다. 이렇게 하면 뷰를 초점이동 및 변경할 때 공구 팁이 명확하게 표시됩니다.</message>
+
+  <message name="manual-inspect-measure-method-name">수동 측정을 위한 중심 간 거리</message>
+  <message name="manual-inspect-measure-method-desc">수동 측정에서 두 홀 또는 보스의 중심 간 거리를 측정하는 방법을 선택할 수 있습니다. 측정 기기에서 중심 간 거리를 측정하지 않을 경우 Fusion은 홀 또는 보스의 지름과 홀 사이의 최대값 또는 최소값 거리를 사용하여 거리를 계산할 수 있습니다.</message>
+  <message name="manual-inspect-measure-method-contextid">MFG-MANUAL-INSPECTION-CENTERS-PREVIEW</message>
+
+  <message name="manual-measure-name">메뉴얼 측정</message>
+  <message name="manual-measure-desc">캘리퍼, 마이크로미터 또는 높이 게이지와 같은 메뉴얼 측정 장치를 사용하여 물리적으로 측정할 피쳐 리스트를 작성합니다. 측정값을 기록하여 지정된 공차와 비교하고 필요에 따라 결과를 측정 보고서로 저장합니다.</message>
+  <message name="manual-measure-contextid">MFG-CREATE-MANUAL-INSPECTION</message>
+
+  <message name="legacy-mesh-silhouette-name">기존 메쉬 윤곽</message>
+  <message name="legacy-mesh-silhouette-desc">메쉬 데이터에 대해 기존 윤곽을 사용합니다.</message>
+
+  <message name="legacy-chaining-name">기존 체인</message>
+  <message name="legacy-chaining-desc">제조 작업공간에서 모서리 선택을 위해 이전의 기존 체인 엔진을 활성화합니다.</message>
+
+  <message name="legacy-drilling-name">기존 드릴링</message>
+  <message name="legacy-drilling-desc">제조 작업공간에서 기존 드릴링을 사용으로 설정합니다.</message>
+
+  <message name="new_import_results-name">측정 결과 가져오기</message>
+  <message name="new_import_results-desc">측정 결과를 가져올 때 프로브된 점이 형상 투영되는 바디를 선택합니다.</message>
+  <message name="new_import_results-contextid">MFG-PROBE-IMPORT-RESULTS</message>
+
+  <message name="old-turning-profile-strategy-name">이전 프로파일 터닝</message>
+  <message name="old-turning-profile-strategy-desc">이전 프로파일 터닝 가공법을 사용으로 설정합니다. 제한된 시간 동안 사용할 수 있습니다.</message>
+
+  <message name="old-pocket-detector-name">2D 포켓 기존 탐지</message>
+  <message name="old-pocket-detector-desc">이 플래그가 설정되면 2D 열린 포켓의 탐지를 위한 기존 알고리즘이 사용됩니다.</message>
+
+  <message name="probe-angle-measure-name">프로빙: 축 각도 측정 해제</message>
+  <message name="probe-angle-measure-desc">프로브 형상이 수직 면의 회전 각도를 측정할 수 있도록 허용합니다.</message>
+
+  <message name="probe-geometry-strategy-name">매크로 기반 측정</message>
+  <message name="probe-geometry-strategy-desc">기계에서 프로빙 주기를 통해 진행 중 피쳐를 측정합니다. 중요한 형상 피쳐의 치수와 위치를 확인하고, 공구 마모 매개변수를 업데이트하고, 공차를 벗어난 피쳐를 해결하기 위해 프로그램을 일시정지하거나 중지합니다. &lt;i&gt;포함: 프로브 형상, 측정 보고서 등.&lt;/i&gt;</message>
+  <message name="probe-geometry-strategy-contextid">EXT-MANUFACTURING</message>
+
+  <message name="pmi-inspection-plan-name">PMI 측정 계획</message>
+  <message name="pmi-inspection-plan-desc">기존 PMI를 기반으로 측정 계획을 자동으로 생성하는 기능을 사용하도록 설정합니다.</message>
+  <message name="pmi-inspection-plan-contextid">MFG-PMI-INSPECTION-PLAN-PREVIEW</message>
+
+  <message name="probe-on-pcd-name">PCD의 홀 및 보스 프로브</message>
+  <message name="probe-on-pcd-desc">프로브 WCS 및 프로브 형상 가공법의 추가 옵션을 통해 PCD에서 홀 및 보스의 프로브를 허용할 수 있습니다.</message>
+
+  <message name="hide-warnings-name">경고 숨기기</message>
+  <message name="hide-warnings-desc">프로그래밍 작업 시 경고가 발생하는 경우 개별 작업을 읽고 추가 주의가 필요하지 않다고 판단하면 개별 작업에 대한 경고를 숨길 수 있습니다. 이 경고는 작업을 재생성할 때까지 숨겨진 상태로 유지됩니다.</message>
+
+  <message name="ignore-warnings-name">경고 무시</message>
+  <message name="ignore-warnings-desc">작업에 대한 경고를 무시할 수 있습니다. 경고는 세션에 대해서만 또는 항상 무시할 수 있습니다.</message>
+
+  <message name="improved-form-mill-approximation-name">향상된 특수 공구 근사화</message>
+  <message name="improved-form-mill-approximation-desc">특수 공구를 엔드밀이 아닌 불노즈로 근사화합니다.</message>
+	
+  <message name="post-processing-with-legacy-dialog-off-name">기존 후가공 대화상자가 있는 후가공 NC 코드</message>
+  <message name="post-processing-with-legacy-dialog-off-desc">새 NC 프로그램 후가공 인터페이스에서 문제가 발생하는 경우 이전 스타일 후가공 대화상자로 되돌립니다.</message>
+  <message name="post-processing-with-legacy-dialog-off-contextid">MFG-POST-PROCESS-OPERATIONS</message>
+
+  <message name="4-axis-machining-type-name">3D 툴패스를 위한 4축 기계가공</message>
+  <message name="4-axis-machining-type-desc">3D 툴패스에 4축 기계가공 옵션을 더 추가합니다. 4축 및 5축 모션의 적합한 빠른 링크를 위해 원통, 구 또는 경사진 평면으로 틈새 및 후퇴 높이를 설정할 수 있습니다.</message>
+
+  <message name="restrict-to-4-axis-name">4축으로 제한</message>
+  <message name="restrict-to-4-axis-desc">적어도 4개의 축이 있는 기계 공구에 사용하기 위해 5축 가공법에서 4축 툴패스를 생성합니다. 현재는 플로우 가공법에만 사용됩니다.</message>
+  <message name="restrict-to-4-axis-contextid">외부 제조</message>
+
+  <message name="roughing-form-tools-name">Roughing Form Tools</message>
+  <message name="roughing-form-tools-desc">Enables calculation of 3D Pocket and 3D Adaptive operations to use actual Form Mill shape for toolpath calculation, instead of an approximated regular mill.</message>
+
+  <message name="moduleworks-three-plus-two-name">3+2 클리어링 가공법(향후 확장 기능)</message>
+  <message name="moduleworks-three-plus-two-desc">여러 공구 방향을 사용하여 대량의 재료를 제거하는 데 사용할 수 있는 황삭 전략입니다. 언더컷과 같은 영역을 기계가공하는 데 더 단단한 더 짧은 공구를 사용할 수 있습니다.</message>
+  <message name="moduleworks-three-plus-two-contextid">외부 제조</message>
+
+  <message name="setup-sheet-configurations-name">작업 시트 구성</message>
+  <message name="setup-sheet-configurations-desc">사용자 설정 작업 시트 구성을 작성할 수 있습니다.</message>
+
+  <message name="spun-profile-dmk-name">스펀 프로파일</message>
+  <message name="spun-profile-dmk-desc">새로운 스펀 프로파일 알고리즘을 사용하여 스펀 프로파일 기능의 안정성과 성능을 향상시킵니다. 이 기능을 사용하면 회전 작업을 위해 선택한 모형을 회전시켜 프로파일 곡선을 작성할 수 있습니다.</message>
+
+  <message name="stock-drag-handles-name">스톡 끌기 핸들</message>
+  <message name="stock-drag-handles-desc">스톡 크기 조정에 끌기 핸들을 사용합니다.</message>
+
+  <message name="strategy-inspect-surface-name">곡면 측정</message>
+  <message name="strategy-inspect-surface-desc">CAD 기반 프로빙 기능을 사용하여 스핀들 장착 프로브로 복잡한 곡면 형상의 정확성을 측정합니다. 지능형 부품 정렬을 사용하여 단조 및 주조와 같은 각기둥 이외 부품의 설정 및 기계가공을 자동화합니다. &lt;i&gt;포함: 곡면 측정, 측정 보고서, 자동 부품 정렬 등.&lt;/i&gt;</message>
+  <message name="strategy-inspect-surface-contextid">EXT-MANUFACTURING</message>
+
+  <message name="customize-inspection-report-name">사용자화된 측정 보고서</message>
+  <message name="customize-inspection-report-desc">측정 보고서를 작성할 때 미리 정의된 템플릿 중에서 선택하여 편집할 수 있습니다.</message>
+
+  <message name="strategy-rotary-name">회전 가공법</message>
+  <message name="strategy-rotary-desc">4축 밀링을 위한 회전 가공법을 사용하여 복잡한 비기하학적 형상을 기계가공할 수 있습니다.</message>
+  <message name="strategy-rotary-contextid">MFG-MULTI-AXIS-ROTARY</message>
+
+  <message name="extension-3-axis-name">자동화된 3축 기계가공</message>
+  <message name="extension-3-axis-desc">CAM 프로그래밍 속도를 높이기 위해 전체 부품에 적용할 수 있는 다양한 지능형 3축 가공법으로 피쳐가 풍부한 복잡한 부품의 드릴링과 밀링을 간소화합니다. &lt;i&gt;포함: 3축 홀 인식 및 3축 스팁 앤 쉘로우.&lt;/i&gt;</message>
+  <message name="extension-3-axis-contextid">EXT-MANUFACTURING</message>
+
+  <message name="extension-3-plus-2-name">자동화된 3+2 기계가공</message>
+  <message name="extension-3-plus-2-desc">3+2(위치) 기계가공을 통해 전체 부품을 드릴 가공 및 밀링할 수 있도록 CNC 기계의 회전 축을 사용할 수 있는 추가 가공법 및 공구 축 컨트롤에 액세스합니다. &lt;i&gt;포함: 3+2 홀 인식.&lt;/i&gt;</message>
+  <message name="extension-3-plus-2-contextid">EXT-MANUFACTURING</message>
+
+  <message name="template-library-name">템플릿 라이브러리</message>
+  <message name="template-library-desc">템플릿을 위한 완전히 새로운 인터페이스입니다. 템플릿을 저장하거나, 찾아보거나, 다시 사용할 수 있습니다.</message>
+
+  <message name="toolpath-modifications-name">툴패스 수정 사항</message>
+  <message name="toolpath-modifications-desc">다양하고 강력한 수정 공구에 액세스하여 완벽한 재계산을 수행할 필요 없이 툴패스를 전역 또는 로컬로 편집할 수 있습니다. 수정 사항은 그 자체로 편집해 유연성을 높일 수 있습니다. &lt;i&gt;포함: 툴패스 자르기, 패스 삭제, 공구 대체 등.&lt;/i&gt;</message>
+  <message name="toolpath-modifications-contextid">EXT-MANUFACTURING</message>
+
+  <message name="tool-library-v4-dynamic-tool-preview-release-name">공구 라이브러리 - 3D 미리보기</message>
+  <message name="tool-library-v4-dynamic-tool-preview-release-desc">공구 라이브러리에서 3D 공구 미리보기를 사용으로 설정합니다.</message>
+
+  <message name="tool-library-v4-fusionmake-parser-name">공구 라이브러리 - Fusion 파서</message>
+  <message name="tool-library-v4-fusionmake-parser-desc">사용자 표현식의 일관성을 높이기 위해 공구 라이브러리에서 Fusion 구문 분석기를 사용하도록 설정합니다.</message>
+
+  <message name="tool-library-v4-tool-orientation-name">도구 라이브러리 - 도구 방향</message>
+  <message name="tool-library-v4-tool-orientation-desc">터닝 공구 방향 설정을 위한 더욱 직관적인 상호작용을 추가합니다. 또한 공구 방향과 독립적으로 스핀들 방향을 제어하는 기능을 추가합니다. 이에 따라 코드를 수동으로 편집할 필요가 없어지지만 충돌의 위험이 증가할 수 있습니다. 이 미리보기 기능을 활성화하고 설정을 조정하는 경우, 이 기능을 다시 꺼도 작업이 무효화되지 않고 공구 방향을 조정하는 동안 설정된 스핀들 방향이 유지됩니다. 또한 시뮬레이션 중에 잠재적 충돌이 강조 표시되지 않을 수도 있다는 점을 알아 두십시오.&lt;br/&gt;&lt;i&gt;중요: CNC 코드를 실행하기 전에 항상 시뮬레이션 결과를 시각적으로 확인하고 사후 처리된 출력에서 스핀들 M 코드를 확인하십시오.&lt;/i&gt;</message>
+
+  <message name="tool-gtc-import-name">도구 라이브러리 - GTC 패키지 가져오기</message>
+  <message name="tool-gtc-import-desc">GTC(일반 도구 카탈로그) 패키지에서 하나 이상의 도구를 도구 라이브러리로 가져올 수 있습니다. GTC 패키지는 일반적으로 도구의 모형(STEP 파일)과 도구의 형상(P21 파일)을 정의하기 위한 특성이 모두 포함된 zip 파일입니다. GTC 패키지는 도구 공급자나 제조업체에서 다운로드할 수 있는 경우가 많습니다.</message>
+
+  <message name="tool-p21-import-name">도구 라이브러리 - P21 파일 가져오기</message>
+  <message name="tool-p21-import-desc">P21 파일에서 도구 라이브러리로 도구를 가져올 수 있습니다. P21 파일에는 도구 형상을 정의하는 특성이 포함되어 있으며 가져오기 프로세스 중에 이러한 특성이 Fusion의 도구 매개변수에 매핑됩니다. P21 파일은 도구 공급업체나 제조업체에서 다운로드할 수 있는 경우가 많습니다.</message>
+
+  <message name="extension-multi-axis-name">4축 및 5축 동시 기계가공</message>
+  <message name="extension-multi-axis-desc">가장 복잡한 형상을 안전하고 효율적으로 기계가공하기 위해 다축 가공법과 공구 축 옵션을 활용해 CNC 기계의 직선 축 및 회전축을 동시에 구동합니다. &lt;i&gt;포함: 스와프, 다중축 스팁 및 쉘로우, 다중축 컨투어 등.&lt;/i&gt;</message>
+  <message name="extension-multi-axis-contextid">EXT-MANUFACTURING</message>
+
+  <message name="mfg-working-model-name">제조 작업 모형</message>
+  <message name="mfg-working-model-desc">제조 작업공간에서 제조 모형을 사용으로 설정합니다. 네스팅 및 정렬 기능을 사용하는 데 필요합니다.</message>
+  <message name="mfg-working-model-contextid">MFG-MANUFACTURING-MODEL-OVERVIEW</message>
+
+  <message name="strategy-old-flow-name">흐름(이전)</message>
+  <message name="strategy-old-flow-desc">곡면을 기계가공할 수 있습니다. 흐름(이전)에는 곡면을 가공하는 데 필요한 스텝오버 수를 지정해야 합니다. 3D 툴패스 드롭다운 메뉴에 있는 새로운 흐름 가공법은 필요한 스텝오버를 자동으로 계산합니다. 이 미리보기 기능을 사용하면 최신 흐름 가공법을 사용하도록 워크플로우를 조정하기 전에 흐름을 계속 사용해야 하는 경우 흐름(이전)에 액세스할 수 있습니다.</message>
+
+  <message name="skip-ruled-alignment-name">기존 곡면 다듬기</message>
+  <message name="skip-ruled-alignment-desc">특정 밀링 전략을 사용하여 툴패스를 생성할 때 곡면을 분할하는 이전 방법을 사용합니다. 이 기능은 새 방법으로 인해 직선보간 곡면에서 툴패스 문제가 발생하는 경우 유용할 수 있습니다.</message>
+
+  <message name="online-system-library-name">최신 게시물, 기계 및 프린트 설정을 자동으로 가져오기</message>
+  <message name="online-system-library-desc">게시물 라이브러리, 기계 라이브러리 및 프린팅 설정 라이브러리의 Fusion 라이브러리 섹션은 게시물, 기계 및 인쇄 설정의 최신 버전 및 추가 항목이 사용 가능해지면 업데이트됩니다. Fusion을 다시 시작할 때마다 업데이트가 있는지 확인됩니다.</message>
+
+  <message name="secondary-spindle-pull-name">막대 당기기</message>
+  <message name="secondary-spindle-pull-desc">막대 당기기 가공법을 활성화합니다.</message>
+
+  <message name="import-pmi-name">파일 업로드 시 PMI 데이터 가져오기</message>
+  <message name="import-pmi-desc">데이터 패널에서 열 때 다른 CAD 응용프로그램에서 작성된 디자인에서 PMI(제품 제조 정보)를 가져올 수 있습니다.</message>
+  <message name="import-pmi-contextid">MFG-PMI-FOR-INSPECTION-PREVIEW</message>
+
+  <message name="un-cached-dependency-analyzer-name">기존 종속성 해석 사용</message>
+  <message name="un-cached-dependency-analyzer-desc">종속성 해석에 기존 알고리즘을 사용합니다. 이로 인해 성능이 저하되므로 불안정해질 경우 마지막 수단으로만 사용하도록 설정해야 합니다.</message>
+
+  <message name="blend-entry-exit-passes-name">혼합: 진입 및 출구 패스</message>
+  <message name="blend-entry-exit-passes-desc">시작 및 끝 드라이브 곡선 전후에 패스를 추가하여 기계가공된 영역을 확장하고 부품 방향으로의 공구 이동 및 부품으로부터 멀어지는 방향을 각각 제어합니다. 스텝오버 계산이 '공구의 팁에서'로 설정된 경우에만 적용됩니다.</message>
+
+  <message name="blend-intermediate-curves-name">혼합: 중간 드라이브 곡선</message>
+  <message name="blend-intermediate-curves-desc">시작과 끝 드라이브 곡선 사이의 드라이브 곡선을 정의하여 혼합의 진행 방식을 제어합니다. 혼합이 명시적 곡선 선택에서 이루어지고 스텝오버 계산이 '공구의 팁에서'로 설정된 경우에만 적용됩니다.</message>
+
+  <message name="dmk-leadslinks-improvements-name">향상된 리드인 및 리드아웃 이동</message>
+  <message name="dmk-leadslinks-improvements-desc">절단 패스의 끝을 잘라 지정된 리드인 및 리드아웃을 추가해 수용할 수 있습니다. 돌출된 곡면 아래에서 리 인 및 리드아웃 이동을 연장하여 접근 및 후퇴 이동의 안전성이 향상됩니다. 스팁 앤 쉘로우 및 회전 가공법에만 적용됩니다.</message>
+
+  <message name="modifications-areaclear-toolpaths-name">3D 어댑티브 클리어링 및 3D 포켓 클리어링(황삭) 수정</message>
+  <message name="modifications-areaclear-toolpaths-desc">원치 않는 이동을 제거하고 리드와 링크를 조정하여 툴패스를 최적화합니다. 스톡을 관통한 예기치 않은 이동에 대해 편집된 모든 툴패스를 확인하십시오.</message>
+
+  <message name="toolpath-trimming-turning-name">터닝 툴패스에 대한 패스 수정 자르기 및 삭제(향후 확장 기능)</message>
+  <message name="toolpath-trimming-turning-desc">패스 수정을 적용, 자르기 및 삭제하여 툴패스를 최적화합니다. 프로파일 정삭, 그루브 정삭 및 터닝 추적 툴패스에 사용할 수 있습니다.</message>
+
+  <message name="polar-machining-ui-name">극좌표 가공</message>
+  <message name="polar-machining-ui-desc">툴패스를 따라 공구를 이동할 때 회전 및 선형 이동의 조합을 사용하기 위한 툴패스 작업 내의 옵션을 제공합니다.</message>
+
+  <message name="dmk-projection-finishing-name">형상 투영 가공법에 대한 추가 옵션.</message>
+  <message name="dmk-projection-finishing-desc">지정된 점이나 곡선 간에 패턴을 투영하여 언더컷을 기계가공합니다.</message>
+
+  <message name="exclude-inclined-flats-name">경사진 플랫 곡면 제외(향후 확장 기능)</message>
+  <message name="exclude-inclined-flats-desc">경사진 플랫 곡면을 자동으로 제외하여 기계가공하지 않도록 합니다. 볼 엔드밀을 사용하여 유기적 곡면만 대상으로 지정하려는 경우에 유용합니다. 스팁 앤 쉘로우 가공법에서 사용할 수 있습니다.</message>
+
+  <message name="use-machine-geometry-in-toolpath-generation-name">툴패스를 계산할 때 기계 스핀들 및 테이블과의 충돌을 확인하십시오.</message>
+  <message name="use-machine-geometry-in-toolpath-generation-desc">샤프트 및 홀더와의 충돌을 확인할 때 선택적으로 기계 스핀들 및 테이블과의 충돌도 확인합니다. 기계 빌더를 사용하여 사용해야 하는 형상을 정의합니다.</message>
+
+  <message name="multi-axis-walls-name">벽 전략에 대한 다중축 가공</message>
+  <message name="multi-axis-walls-desc">다중축 가공을 사용하여 단일 작업으로 부품의 더 많은 영역에 도달할 수 있습니다.</message>
+
+  <message name="inclined-wall-finishing-name">벽 전략</message>
+  <message name="inclined-wall-finishing-desc">수직 벽을 자동으로 탐지하고 가공하는 데 사용할 수 있는 정삭 전략입니다.</message>
+
+  <message name="in-control-radius-compensation-name">제어 반지름 보정</message>
+  <message name="in-control-radius-compensation-desc">제어방법이 제어로 설정된 툴패스에 대한 보다 안정적인 최신 알고리즘을 사용합니다. 이 최신 알고리즘은 대부분의 경우에 이미 사용되고 있으며, 이 옵션을 선택하면 모든 경우에 사용됩니다.</message>
+
+  <message name="dual-spindle-machines-enabled-name">선반 및 턴-밀 기계</message>
+  <message name="dual-spindle-machines-enabled-desc">이중 스핀들 선반 및 턴-밀 기계에 대한 기계 정의를 작성할 수 있습니다. 기계 라이브러리에서, 라이브 공구를 사용하여 선반의 공통 구성을 빠르게 작성하는 데 도움이 되는 다중 턴-밀 옵션을 추가합니다. 기계 정의를 작성할 때 운동학 트리에서 터릿 및 스핀들을 지정할 수 있습니다.</message>
+
+  <message name="stock-materials-name">스톡 재질</message>
+  <message name="stock-materials-desc">생산 현장에 있는 것과 일치하는 스톡 재질로 채울 수 있는 라이브러리를 추가합니다. 스톡 재질을 공구의 설정 및 절삭 데이터 사전 설정에 지정할 수 있습니다. 작업에 사용할 공구 선택 시 기계가공할 재질에 따라 사전 설정을 선택합니다.</message>
+
+  <message name="cyclic-wrapped-name">감싼 툴패스에 대한 순환 윤곽</message>
+  <message name="cyclic-wrapped-desc">감싼 확인란이 사용하도록 설정된 경우 순환 윤곽을 허용합니다. 또한 HSM 커널을 사용하여 감싼 툴패스에 대한 링크를 향상시킬 수 있습니다.</message>
+
+  <message name="probe-geometry-surface-fitting-name">프로브 형상에서 곡면 형상 검사</message>
+  <message name="probe-geometry-surface-fitting-desc">프로브 형상 가공법에 표준 프로브 주기(매크로)에서 지원하지 않는 프로빙된 점을 사용하여 원 및 평면과 같은 형상 피쳐를 맞춤 및 검사하기 위한 기능을 추가합니다. 곡면 공차를 설정하여 전체 곡면의 허용 가능한 변형을 정의하고, 선택한 곡면 유형에 해당하는 피쳐 공차를 설정할 수 있습니다.</message>
+
+  <message name="inspection-in-pim-name">측정 데이터 저장소</message>
+  <message name="inspection-in-pim-desc">브라우저와 캔버스에서 완전한 접근성과 기능을 유지하면서 측정 데이터를 Fusion 문서와 더불어 제조 데이터 모형(MFGDM)에도 저장합니다.</message>
+
+  <message name="shaft-and-holder-for-2d-chamfer-name">2D 모따기를 위한 샤프트 및 홀더</message>
+  <message name="shaft-and-holder-for-2d-chamfer-desc">샤프트 및 홀더 틈새를 지정하고 가능한 충돌을 방지하는 방법을 선택할 수 있어 툴패스 안전이 향상되었습니다.</message>
+
+  <message name="even-stepdowns-in-2d-adaptive-name">2D 어댑티브를 위한 균일한 스텝다운</message>
+  <message name="even-stepdowns-in-2d-adaptive-desc">패스 간 거리를 일정하게 하여 더 일관된 절단 조건을 작성할 수 있습니다.</message>
+
+  <message name="reusable-selections-name">선택 및 공구 방향 재사용</message>
+  <message name="reusable-selections-desc">공구 방향에 관계없이 다른 작업에서 형상 선택을 재사용할 수 있습니다. 공구 방향이 사용으로 설정되면 브라우저의 각 작업 아래에 선택 가능한 공구 방향 노드를 추가하여 여러 작업에서 재사용할 수 있도록 합니다.</message>
+
+  <message name="mill-auto-thread-name">자동 스레드 밀링 탐지</message>
+  <message name="mill-auto-thread-desc">선택한 형상에서 Fusion에서 생성된 스레드를 탐지하고 스레드 밀링 전략에 대한 스레드 정의를 자동으로 입력합니다.</message>
+
+  <message name="reusable-tool-orientations-name">공구 방향 재사용</message>
+  <message name="reusable-tool-orientations-desc">작업에 대한 공구 방향을 설정할 때 선택 가능한 공구 방향 노드를 브라우저의 작업에 추가합니다. 이렇게 하면 공구 방향을 나중에 작업에 다시 사용할 수 있습니다. 따라서 매번 방향을 지정할 필요가 없으며 여러 작업에서 동시에 조정을 수행할 수 있습니다.</message>
+
+  <message name="machine-management-workflow-improvements-name">기계 관리 개선 사항</message>
+  <message name="machine-management-workflow-improvements-desc">브라우저에서 마우스 오른쪽 버튼 클릭 옵션을 추가하여 기계 정의를 교체하거나 제거하면 관리 워크플로우를 간소화할 수 있습니다. 이러한 옵션을 사용하면 현재 설정에서 또는 NC 프로그램을 포함한 모든 설정에서 기계 정의를 대체할 수 있으며, 동일한 영역과 문서에서 기계 정의를 제거할 수 있습니다.</message>
+
+  <message name="machine-rotary-angles-settings-name">공구 방향에 대한 기계 각도</message>
+  <message name="machine-rotary-angles-settings-desc">2D 전략(3+2 기계가공)에 대한 기계 각도를 설정하고 기존 터닝 및 기울기 중에서 선택하거나 3D 전략(3축 기계가공)에 대한 기계 각도를 설정할 수 있습니다. 기계 각도를 지정할 때 캔버스에 기계 모형이 표시되어 시각적으로 더 잘 확인할 수 있습니다. 기계 모형에 링크된 기계 정의가 포함된 설정이 필요합니다.</message>
+
+  <message name="patterns-rotation-preference-name">패턴에 대한 회전 기본 설정</message>
+  <message name="patterns-rotation-preference-desc">패턴에서 회전 동작에 대한 기본 설정을 설정할 수 있습니다. 이를 통해 모든 복제의 원래 방향 유지, 각 복제 회전 또는 강제로 3축 이동을 수행할 수 있습니다. 이 옵션은 공구 방향이 회전축에 맞춰 정렬된 작업에만 작동합니다.</message>
+
+  <message name="mill-standard-thread-name">밀링 표준 스레드 정의</message>
+  <message name="mill-standard-thread-desc">밀링 작업에서 표준 스레드 정의를 허용합니다.</message>
+
+  <message name="Turn-and-tilt-tool-orientation-2D-name">2D 전략을 위한 턴 및 기울기 공구 방향</message>
+  <message name="Turn-and-tilt-tool-orientation-2D-desc">2D 전략을 위한 공구 방향을 설정하는 추가 컨트롤을 사용하여 단일 작업으로 부품의 더 많은 영역에 도달할 수 있습니다. 턴 및 기울기 조작기를 사용하여 공구 방향을 현재 뷰에 맞춰 정렬하거나 클릭 한 번으로 공구 방향을 모든 곡면에 수직으로 설정합니다.</message>
+
+  <message name="disable-cadref-pruning-name">사용하지 않는 CAD 참조 취소 비활성화</message>
+  <message name="disable-cadref-pruning-desc">일반적으로 문서를 열 때 발생하는 참조되지 않은 CAD 형상 요소를 취소하는 단계를 비활성화합니다. 이 메커니즘으로 인해 문제가 의심되는 경우에만 이 옵션을 켜야 합니다.</message>
+
+  <message name="chain-face-compression-name">체인 압축 복원</message>
+  <message name="chain-face-compression-desc">체인의 압축을 복원합니다. 이 기능은 작업공간을 변경할 때와 문서 로드 시 성능을 향상시키기 위해 구현되었지만 모델 변경 후 선택 항목이 올바르게 복원되지 않을 위험이 증가합니다. 보고된 문제에 대한 대응으로 체인 압축이 제거되었지만 이 기본 설정을 사용하면 필요한 경우 복원할 수 있습니다.</message>
+
+  <message name="machine-positioning-name">막대 당기기 가시성</message>
+  <message name="machine-positioning-desc">수행된 막대 당기기와 관련하여 기계 및 고정구 구성요소가 올바르게 배치되도록 합니다.</message>
+
+  <message name="turn-groove-roughing-cusp-cleanup-name">터닝 증분 커스프 정리</message>
+  <message name="turn-groove-roughing-cusp-cleanup-desc">황삭 멀티플 툴패스에 의해 남은 커스프를 점진적으로 지웁니다.</message>
+
+  <message name="turn-profile-roughing-rest-area-undercuts-name">터닝 프로파일 황삭 레스트 영역 언더컷</message>
+  <message name="turn-profile-roughing-rest-area-undercuts-desc">프로파일 황삭에서 레스트 가공을 사용할 때 언더컷에 액세스합니다.</message>
+
+  <message name="legacy-dxf-export-name">네스팅을 위해 이전 DXF 내보내기</message>
+  <message name="legacy-dxf-export-desc">네스팅 및 제작에서 이전 DXF 내보내기 엔진을 활성화합니다. 이 옵션은 새 내보내기 방법으로 인해 문제가 발생하거나 불안정해질 경우에만 사용합니다.</message>
+
+  <message name="tool-call-strategy-name">공구 호출 전략</message>
+  <message name="tool-call-strategy-desc">부분 스핀들 이동, 부품 분할 또는 전송 작업 전에 공구 또는 빈 스테이션을 호출하여 사전 배치합니다. 공구 호출을 사용하여 공구 선택을 최적화하고, 작업 간 시간을 절약하고, 충돌 위험을 줄일 수 있습니다.</message>
+
+  <message name="relaxed-multiple-reference-matches-handling-name">모호한 참조의 레거시 처리</message>
+  <message name="relaxed-multiple-reference-matches-handling-desc">일반적으로 모호한 선택 항목(즉, 문서에서 안정적으로 로드할 수 없는 선택 항목)은 누락된 것으로 표시되므로 다시 선택해야 합니다. 이 옵션을 활성화하면 모호한 선택 항목이 누락된 것으로 표시되지 않습니다. 복원되지 않을 위험이 있는 상태로 해당 항목이 로드됩니다.</message>
+
+  <message name="toolpath-feedrate-edit-name">툴패스 피드 속도 수정</message>
+  <message name="toolpath-feedrate-edit-desc">툴패스 피드 속도 수정 전략을 사용하도록 설정합니다.</message>
+
+  <message name="setup-groups-name">그룹 설정</message>
+  <message name="setup-groups-desc">그룹 설정 전략을 활성화합니다.</message>
+  
+  <message name="subspindle-fixture-positioning-name">부분 스핀들 고정구 위치 지정</message>
+  <message name="subspindle-fixture-positioning-desc">부분 스핀들 고정구 구성요소를 현재 잡고 있는 위치를 기준으로 올바르게 배치할 수 있습니다.</message>
+
+  <message name="enable-optimized-flats-name">개선된 포켓 클리어링(황삭)</message>
+  <message name="enable-optimized-flats-desc">플랫 영역 바로 위의 스톡을 기계가공할 수 있습니다.</message>
+
+  <message name="add-produce-contact-normal-name">추가 5축 지원</message>
+  <message name="add-produce-contact-normal-desc">비구형 공구를 사용하거나 축 및 방사형 간격띄우기에 다른 값을 사용하는 경우와 같이 추가적인 경우에는 5축 기울기를 사용할 수 있습니다.
+  </message>
+
+  <message name="slice-containment-name">슬라이스 제약</message>
+  <message name="slice-containment-desc">포켓에 대해 슬라이스 제약을 사용으로 설정합니다.</message>
+
+  <message name="evenly-spaced-points-and-polar-links-hsm-name">균등 간격의 점</message>
+  <message name="evenly-spaced-points-and-polar-links-hsm-desc">툴패스에서 절단 이동을 따라 점의 분포를 편집합니다. 원래 점을 제거하고 가능한 한 균일한 간격으로 새 점을 삽입합니다. 이렇게 하면 동작의 부드러움이 개선되고, 기계가 프로그래밍된 이송 속도를 더 정확히 따르는 데 도움이 되며, 결과적으로 곡면 마감이 향상되고 주기 시간이 단축됩니다. 이제 윤곽선, 평행, 흐름, 측지선 및 디버링을 포함하여 더 많은 전략에서 사용할 수 있습니다.</message>
+  
+</locale>

@@ -1,0 +1,53 @@
+0  BEGIN PGM power-plug MM 
+1  BLK FORM 0.1 Z  X+0  Y-145  Z-2
+2  BLK FORM 0.2  X+474  Y+0  Z+0
+3  ;-------------------------------------
+4  ;Tools
+5  ;  #12 D=10 - ZMIN=-4 - ZMAX=+15 - flat end mill
+6  ;-------------------------------------
+7  ;
+8  * - 2D Contour1 (4)
+9  M5
+10 TOOL CALL 12 Z S1617
+11 L M140 MB MAX
+12 M3
+13 L  X+58.441  Y-69.236 R0 FMAX
+14 L  Z+15 R0 FMAX
+15 M8
+16 CYCL DEF 32.0 TOLERANCE
+17 CYCL DEF 32.1
+18 L  Z+5 FMAX
+19 L  Z+3.5 F361
+20 CC  X+59.441  Z+3.5
+21 CP IPA-90 DR- F182
+22 L  X+60.441  Z+2.5
+23 CC  X+60.441  Y-68.236
+24 CP IPA+90 DR+
+25 L  X+61.441  Y-53.9  Z+1.999
+26 L  X+44.241  Z+1.399
+27 L  Y-91.1  Z+0.1
+28 L  X+61.441  Z-0.501
+29 L  Y-53.9  Z-1.8
+30 L  X+44.241  Z-2.401
+31 L  Y-91.1  Z-3.7
+32 L  X+52.841  Z-4
+33 L  X+59.441
+34 L  X+61.441 F45
+35 L  Y-55.9 F182
+36 L  Y-53.9 F45
+37 L  X+46.241 F182
+38 L  X+44.241 F45
+39 L  Y-89.1 F182
+40 L  Y-91.1 F45
+41 L  X+52.841 F182
+42 CC  X+52.841  Y-90.1
+43 CP IPA+90 DR+
+44 L  X+53.841  Y-89.1
+45 CC  Y-89.1  Z-3
+46 CP IPA+90 DR+
+47 L  Y-88.1  Z+15 FMAX
+48 M9
+49 M5
+50 L M140 MB MAX
+51 M30
+52 END PGM power-plug MM 

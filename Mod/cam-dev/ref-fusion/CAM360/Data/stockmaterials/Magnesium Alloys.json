@@ -1,0 +1,15 @@
+{
+    "description": "Magnesium Alloys",
+    "category": "Metal",
+    "uuid": "34c5fa93-e19e-4706-aeaf-c7b5aa3d014a",
+    "designators": [
+        "ISO N2",
+        "A91050"
+    ],
+    "physicalMaterials": [
+        "PrismMaterial-215",
+        "PrismMaterial-238",
+        "PrismMaterial-302"
+    ],
+    "version": 1.0
+}

@@ -1,0 +1,2788 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet type='text/xsl' href='tool-library.xsl'?>
+<!--Use a standards compliant web browser to view this file-->
+<tool-library xmlns="http://www.hsmworks.com/xml/2004/cnc/tool-library" version="1.0" guid="{630fecd7-e191-4916-8232-b78cae02af41}">
+  <holder version="1.1" unit="inches" guid="{6d75a366-9906-4781-923a-49427a0b8cfa}">
+    <description>Maritool CAT40-FMA.500-1.5M</description>
+    <comment>Maritool CAT40-FMA.500-1.5M</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-FMA.500-1.5M</product-id>
+    <holder>
+      <section diameter="1.47638" length="0"/>
+      <section diameter="1.47638" length="0.6712598"/>
+      <section diameter="1.63386" length="0.0787402"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{2254af41-59fc-4ec4-8418-8e03313df776}">
+    <description>Maritool CAT40-FMA.500-2.0M</description>
+    <comment>Maritool CAT40-FMA.500-2.0M</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-FMA.500-2.0M</product-id>
+    <holder>
+      <section diameter="1.47638" length="0"/>
+      <section diameter="1.47638" length="1.17126"/>
+      <section diameter="1.63386" length="0.0787402"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{3401ee15-09c7-4ea3-a3cf-9c374b5de51e}">
+    <description>Maritool CAT40-FMA.750-1.5</description>
+    <comment>Maritool CAT40-FMA.750-1.5</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-FMA.750-1.5</product-id>
+    <holder>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.6712598"/>
+      <section diameter="1.90787" length="0.0787402"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{c92866b0-dff9-4392-ac70-5cdb7b9ca1a6}">
+    <description>Maritool CAT40-FMA.750-1.5M</description>
+    <comment>Maritool CAT40-FMA.750-1.5M</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-FMA.750-1.5M</product-id>
+    <holder>
+      <section diameter="1.48" length="0"/>
+      <section diameter="1.48" length="0.6712598"/>
+      <section diameter="1.6374" length="0.0787402"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{056ac0fd-ddc6-40ca-a36e-b1ec0326550e}">
+    <description>Maritool CAT40-FMA.750-2.0</description>
+    <comment>Maritool CAT40-FMA.750-2.0</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-FMA.750-2.0</product-id>
+    <holder>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="1.17126"/>
+      <section diameter="1.90787" length="0.0787402"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{1636f96d-dd46-4128-9886-685feb00f58b}">
+    <description>Maritool CAT40-FMA.750-2.0M</description>
+    <comment>Maritool CAT40-FMA.750-2.0M</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-FMA.750-2.0M</product-id>
+    <holder>
+      <section diameter="1.48" length="0"/>
+      <section diameter="1.48" length="1.17126"/>
+      <section diameter="1.6374" length="0.0787402"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{cc64ce07-c98b-471b-83f3-dcc11d338995}">
+    <description>Maritool CAT40-FMA.750-2.5</description>
+    <comment>Maritool CAT40-FMA.750-2.5</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-FMA.750-2.5</product-id>
+    <holder>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="1.67126"/>
+      <section diameter="1.90787" length="0.0787402"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{6ea6a1c4-3645-4092-8101-fb08b387dcc7}">
+    <description>Maritool CAT40-FMA.750-2.75</description>
+    <comment>Maritool CAT40-FMA.750-2.75</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-FMA.750-2.75</product-id>
+    <holder>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="1.92126"/>
+      <section diameter="1.90787" length="0.0787402"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{93c961d8-0d69-485b-9000-9d94cbd811d4}">
+    <description>Maritool CAT40-FMA.750-3.0</description>
+    <comment>Maritool CAT40-FMA.750-3.0</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-FMA.750-3.0</product-id>
+    <holder>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="2.17126"/>
+      <section diameter="1.90787" length="0.0787402"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{09624808-da2e-4f7a-8829-f972c206c1c4}">
+    <description>Maritool CAT40-FMA.750-3.0M</description>
+    <comment>Maritool CAT40-FMA.750-3.0M</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-FMA.750-3.0M</product-id>
+    <holder>
+      <section diameter="1.48" length="0"/>
+      <section diameter="1.48" length="2.17126"/>
+      <section diameter="1.6374" length="0.0787402"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{e67dc1fe-48c8-4ecc-b579-41876eafab05}">
+    <description>Maritool CAT40-FMA1.0-1.5</description>
+    <comment>Maritool CAT40-FMA1.0-1.5</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-FMA1.0-1.5</product-id>
+    <holder>
+      <section diameter="2.18" length="0"/>
+      <section diameter="2.18" length="0.71875"/>
+      <section diameter="2.2425" length="0.03125"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{ce5a1068-e359-4acc-92da-e35a793da906}">
+    <description>Maritool CAT40-FMA1.0-1.5M</description>
+    <comment>Maritool CAT40-FMA1.0-1.5M</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-FMA1.0-1.5M</product-id>
+    <holder>
+      <section diameter="1.85" length="0"/>
+      <section diameter="1.85" length="0.6875"/>
+      <section diameter="1.975" length="0.0625"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{3fd314d6-ac97-4156-9f27-7cc3ec9364fc}">
+    <description>Maritool CAT40-FMA1.0-2.0</description>
+    <comment>Maritool CAT40-FMA1.0-2.0</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-FMA1.0-2.0</product-id>
+    <holder>
+      <section diameter="2.16" length="0"/>
+      <section diameter="2.18" length="0.01"/>
+      <section diameter="2.18" length="0.5992126"/>
+      <section diameter="2.14882" length="0.015748"/>
+      <section diameter="1.7811" length="0"/>
+      <section diameter="1.75" length="0.015748"/>
+      <section diameter="1.75" length="0.59375"/>
+      <section diameter="0.8905512" length="0.015748"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{d7f1eb73-a348-4817-9a56-591cebe19b70}">
+    <description>Maritool CAT40-FMA1.0-2.0M</description>
+    <comment>Maritool CAT40-FMA1.0-2.0M</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-FMA1.0-2.0M</product-id>
+    <holder>
+      <section diameter="1.83" length="0"/>
+      <section diameter="1.85" length="0.01"/>
+      <section diameter="1.85" length="0.5992126"/>
+      <section diameter="1.83" length="0.015748"/>
+      <section diameter="1.77" length="0"/>
+      <section diameter="1.75" length="0.01"/>
+      <section diameter="1.75" length="0.605"/>
+      <section diameter="0.885" length="0.015748"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{aba2a1f6-bff1-494b-8e3c-271bdb09f814}">
+    <description>Maritool CAT40-FMA1.0-3.0</description>
+    <comment>Maritool CAT40-FMA1.0-3.0</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-FMA1.0-3.0</product-id>
+    <holder>
+      <section diameter="2.16" length="0"/>
+      <section diameter="2.18" length="0.01"/>
+      <section diameter="2.18" length="1.59921"/>
+      <section diameter="2.14882" length="0.015748"/>
+      <section diameter="1.7811" length="0"/>
+      <section diameter="1.75" length="0.015748"/>
+      <section diameter="1.75" length="0.59375"/>
+      <section diameter="0.8905512" length="0.015748"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{cc6408d7-851c-4e2f-ad8a-1385ec570e5a}">
+    <description>Maritool CAT40-FMA1.0-4.0</description>
+    <comment>Maritool CAT40-FMA1.0-4.0</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-FMA1.0-4.0</product-id>
+    <holder>
+      <section diameter="2.16" length="0"/>
+      <section diameter="2.18" length="0.01"/>
+      <section diameter="2.18" length="2.59921"/>
+      <section diameter="2.14882" length="0.015748"/>
+      <section diameter="1.7811" length="0"/>
+      <section diameter="1.75" length="0.015748"/>
+      <section diameter="1.75" length="0.59375"/>
+      <section diameter="0.8905512" length="0.015748"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{fcedb885-2ea8-492c-a618-e6d545bfa9da}">
+    <description>Maritool CAT40-FMA1.25-1.5</description>
+    <comment>Maritool CAT40-FMA1.25-1.5</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-FMA1.25-1.5</product-id>
+    <holder>
+      <section diameter="2.42" length="0"/>
+      <section diameter="2.44" length="0.01"/>
+      <section diameter="2.44" length="0.74"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{7179f67f-e28f-4ac1-acb6-a1b1436d29cf}">
+    <description>Maritool CAT40-FMA1.25-2.0</description>
+    <comment>Maritool CAT40-FMA1.25-2.0</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-FMA1.25-2.0</product-id>
+    <holder>
+      <section diameter="2.42" length="0"/>
+      <section diameter="2.44" length="0.01"/>
+      <section diameter="2.44" length="0.5992126"/>
+      <section diameter="2.42" length="0.015748"/>
+      <section diameter="1.7811" length="0"/>
+      <section diameter="1.75" length="0.015748"/>
+      <section diameter="1.75" length="0.59375"/>
+      <section diameter="0.8905512" length="0.015748"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{c97f0d3f-56b9-4efa-b8f1-f4a6cc6baa70}">
+    <description>Maritool CAT40-FMA1.5-1.5</description>
+    <comment>Maritool CAT40-FMA1.5-1.5</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-FMA1.5-1.5</product-id>
+    <holder>
+      <section diameter="2.47" length="0"/>
+      <section diameter="2.49" length="0.01"/>
+      <section diameter="2.49" length="0.77"/>
+      <section diameter="2.502" length="0"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{84632983-8867-48df-9154-370d322d9575}">
+    <description>Maritool CAT40-FMA1.5-2.0</description>
+    <comment>Maritool CAT40-FMA1.5-2.0</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-FMA1.5-2.0</product-id>
+    <holder>
+      <section diameter="2.47" length="0"/>
+      <section diameter="2.49" length="0.01"/>
+      <section diameter="2.49" length="0.5992126"/>
+      <section diameter="2.47" length="0.015748"/>
+      <section diameter="1.7811" length="0"/>
+      <section diameter="1.75" length="0.015748"/>
+      <section diameter="1.75" length="0.59375"/>
+      <section diameter="0.8905512" length="0.015748"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{0be289a5-fd48-4c02-a142-362117f08537}">
+    <description>Maritool CAT40-ER32-1.85</description>
+    <comment>Maritool CAT40-ER32-1.85</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER32-1.85</product-id>
+    <holder>
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.97" length="0.148"/>
+      <section diameter="1.97" length="0.836"/>
+      <section diameter="1.57" length="0"/>
+      <section diameter="1.57" length="0.151"/>
+      <section diameter="1.75" length="0.09"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{6d38a02f-4ce3-45d1-8bc0-81e4b80998f3}">
+    <description>Maritool CAT40-ER16-2.5M</description>
+    <comment>Maritool CAT40-ER16-2.5M</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER16-2.5M</product-id>
+    <holder>
+      <section diameter="0.8661417" length="0"/>
+      <section diameter="0.8661417" length="0.674"/>
+      <section diameter="0.7480315" length="0"/>
+      <section diameter="0.7480315" length="0.1375"/>
+      <section diameter="0.8661417" length="0.0590551"/>
+      <section diameter="0.8661417" length="0.8543307"/>
+      <section diameter="0.9661417" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{a9fa5373-f8b9-4591-8e6e-ebd9bf5d38d0}">
+    <description>Maritool CAT40-ER20-1.75</description>
+    <comment>Maritool CAT40-ER20-1.75</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER20-1.75</product-id>
+    <holder>
+      <section diameter="1.1811" length="0"/>
+      <section diameter="1.33071" length="0.0787402"/>
+      <section diameter="1.33071" length="0.7677165"/>
+      <section diameter="0.984252" length="0"/>
+      <section diameter="0.984252" length="0.132"/>
+      <section diameter="1.22638" length="0.1220472"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{872d383b-dec3-4de3-b8fb-44458d2e6457}">
+    <description>Maritool CAT40-ER25-1.85</description>
+    <comment>Maritool CAT40-ER25-1.85</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER25-1.85</product-id>
+    <holder>
+      <section diameter="1.1875" length="0"/>
+      <section diameter="1.66" length="0.16"/>
+      <section diameter="1.66" length="0.71"/>
+      <section diameter="1.25984" length="0"/>
+      <section diameter="1.25984" length="0.07"/>
+      <section diameter="1.57992" length="0.16"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{1a644722-cba6-445b-821c-bf16729d0d1d}">
+    <description>Maritool CAT40-ER40-3.0</description>
+    <comment>Maritool CAT40-ER40-3.0</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER40-3.0</product-id>
+    <holder>
+      <section diameter="1.9" length="0"/>
+      <section diameter="2.48" length="0.2417323"/>
+      <section diameter="2.48" length="0.9"/>
+      <section diameter="1.9685" length="0"/>
+      <section diameter="1.9685" length="0.4992126"/>
+      <section diameter="1.75" length="0.1066929"/>
+      <section diameter="1.75" length="0.575"/>
+      <section diameter="1.85" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{027467d4-4d0e-4a1a-8833-f32cab366327}">
+    <description>Maritool CAT40-ER11-2.5</description>
+    <comment>Maritool CAT40-ER11-2.5</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER11-2.5</product-id>
+    <holder>
+      <section diameter="0.5625" length="0"/>
+      <section diameter="0.75" length="0.026"/>
+      <section diameter="0.75" length="0.4464567"/>
+      <section diameter="0.5511811" length="0"/>
+      <section diameter="0.5511811" length="0.16"/>
+      <section diameter="0.75" length="0.4375"/>
+      <section diameter="0.75" length="0.6326772"/>
+      <section diameter="0.875" length="0.0625"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{3c79a86d-39d1-4411-91c2-db0f172775cc}">
+    <description>Maritool CAT40-ER11-3.0</description>
+    <comment>Maritool CAT40-ER11-3.0</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER11-3.0</product-id>
+    <holder>
+      <section diameter="0.5625" length="0"/>
+      <section diameter="0.75" length="0.026"/>
+      <section diameter="0.75" length="0.4464567"/>
+      <section diameter="0.5511811" length="0"/>
+      <section diameter="0.5511811" length="0.16"/>
+      <section diameter="0.75" length="0.4375"/>
+      <section diameter="0.75" length="1.14252"/>
+      <section diameter="0.875" length="0.0625"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{08b379da-013e-48b2-aa8c-464de6253955}">
+    <description>Maritool CAT40-ER11-4.0</description>
+    <comment>Maritool CAT40-ER11-4.0</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER11-4.0</product-id>
+    <holder>
+      <section diameter="0.5625" length="0"/>
+      <section diameter="0.75" length="0.026"/>
+      <section diameter="0.75" length="0.4464567"/>
+      <section diameter="0.5511811" length="0"/>
+      <section diameter="0.5511811" length="0.16"/>
+      <section diameter="0.75" length="0.4375"/>
+      <section diameter="0.75" length="1.51772"/>
+      <section diameter="0.875" length="0.0625"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.625"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{048f6d2b-235d-426c-8462-981cebffbda5}">
+    <description>Maritool CAT40-ER16-2.0</description>
+    <comment>Maritool CAT40-ER16-2.0</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER16-2.0</product-id>
+    <holder>
+      <section diameter="0.984252" length="0"/>
+      <section diameter="1.10236" length="0.0625"/>
+      <section diameter="1.10236" length="0.6575"/>
+      <section diameter="0.8661417" length="0"/>
+      <section diameter="0.8661417" length="0.129"/>
+      <section diameter="1.11" length="0.1220472"/>
+      <section diameter="1.11" length="0.253937"/>
+      <section diameter="1.21" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{ef25b190-199e-4309-b599-b2b645e55bea}">
+    <description>Maritool CAT40-ER16-2.5</description>
+    <comment>Maritool CAT40-ER16-2.5</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER16-2.5</product-id>
+    <holder>
+      <section diameter="0.984252" length="0"/>
+      <section diameter="1.10236" length="0.0625"/>
+      <section diameter="1.10236" length="0.6575"/>
+      <section diameter="0.8661417" length="0"/>
+      <section diameter="0.8661417" length="0.129"/>
+      <section diameter="1.11" length="0.1220472"/>
+      <section diameter="1.11" length="0.053937"/>
+      <section diameter="1.36" length="0.125"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.575"/>
+      <section diameter="1.85" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{37a5938b-2d98-45b9-a81d-eca9e24d16b5}">
+    <description>Maritool CAT40-ER16-3.0</description>
+    <comment>Maritool CAT40-ER16-3.0</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER16-3.0</product-id>
+    <holder>
+      <section diameter="0.984252" length="0"/>
+      <section diameter="1.10236" length="0.0625"/>
+      <section diameter="1.10236" length="0.6575"/>
+      <section diameter="0.8661417" length="0"/>
+      <section diameter="0.8661417" length="0.129"/>
+      <section diameter="1.11" length="0.1220472"/>
+      <section diameter="1.11" length="0.6566929"/>
+      <section diameter="1.235" length="0.0625"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.575"/>
+      <section diameter="1.85" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{4e64f3f4-f9cc-4855-b521-cd9df24d2c52}">
+    <description>Maritool CAT40-ER16-3.5</description>
+    <comment>Maritool CAT40-ER16-3.5</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER16-3.5</product-id>
+    <holder>
+      <section diameter="0.984252" length="0"/>
+      <section diameter="1.10236" length="0.0625"/>
+      <section diameter="1.10236" length="0.6575"/>
+      <section diameter="0.8661417" length="0"/>
+      <section diameter="0.8661417" length="0.129"/>
+      <section diameter="1.11" length="0.1220472"/>
+      <section diameter="1.11" length="1.75394"/>
+      <section diameter="1.21" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{d0cfd2fe-5e8d-4b5d-810a-e19ad7c6852c}">
+    <description>Maritool CAT40-ER16-3.5M</description>
+    <comment>Maritool CAT40-ER16-3.5M</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER16-3.5M</product-id>
+    <holder>
+      <section diameter="0.8661417" length="0"/>
+      <section diameter="0.8661417" length="0.674"/>
+      <section diameter="0.7480315" length="0"/>
+      <section diameter="0.7480315" length="0.1375"/>
+      <section diameter="0.8661417" length="0.0590551"/>
+      <section diameter="0.8661417" length="1.85433"/>
+      <section diameter="0.9661417" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{7d27d5b0-4d45-4bfb-ad23-7de59d780b0e}">
+    <description>Maritool CAT40-ER16-4.0</description>
+    <comment>Maritool CAT40-ER16-4.0</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER16-4.0</product-id>
+    <holder>
+      <section diameter="0.984252" length="0"/>
+      <section diameter="1.10236" length="0.0625"/>
+      <section diameter="1.10236" length="0.6575"/>
+      <section diameter="0.8661417" length="0"/>
+      <section diameter="0.8661417" length="0.129"/>
+      <section diameter="1.11" length="0.1220472"/>
+      <section diameter="1.11" length="1.65669"/>
+      <section diameter="1.235" length="0.0625"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.575"/>
+      <section diameter="1.85" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{d61cb113-b516-4148-88e9-23d27e509c05}">
+    <description>Maritool CAT40-ER16-4.0M</description>
+    <comment>Maritool CAT40-ER16-4.0M</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER16-4.0M</product-id>
+    <holder>
+      <section diameter="0.8661417" length="0"/>
+      <section diameter="0.8661417" length="0.674"/>
+      <section diameter="0.7480315" length="0"/>
+      <section diameter="0.7480315" length="0.1375"/>
+      <section diameter="0.8661417" length="0.0590551"/>
+      <section diameter="0.8661417" length="1.72953"/>
+      <section diameter="0.9661417" length="0.05"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.575"/>
+      <section diameter="1.85" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{ce23aa4c-cfc2-4af8-b7e0-75bfc796d950}">
+    <description>Maritool CAT40-ER16-5.0</description>
+    <comment>Maritool CAT40-ER16-5.0</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER16-5.0</product-id>
+    <holder>
+      <section diameter="0.984252" length="0"/>
+      <section diameter="1.10236" length="0.0625"/>
+      <section diameter="1.10236" length="0"/>
+      <section diameter="1.10236" length="0.6575"/>
+      <section diameter="0.8661417" length="0"/>
+      <section diameter="0.8661417" length="0.129"/>
+      <section diameter="1.11" length="0.1220472"/>
+      <section diameter="1.11" length="2.65669"/>
+      <section diameter="1.235" length="0.0625"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.575"/>
+      <section diameter="1.85" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{c33ad3b5-a203-4a42-ae8d-97f2b6b2a9f9}">
+    <description>Maritool CAT40-ER16-5.0M</description>
+    <comment>Maritool CAT40-ER16-5.0M</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER16-5.0M</product-id>
+    <holder>
+      <section diameter="0.8661417" length="0"/>
+      <section diameter="0.8661417" length="0.674"/>
+      <section diameter="0.7480315" length="0"/>
+      <section diameter="0.7480315" length="0.1375"/>
+      <section diameter="0.8661417" length="0.0590551"/>
+      <section diameter="0.8661417" length="2.72953"/>
+      <section diameter="0.9661417" length="0.05"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.575"/>
+      <section diameter="1.85" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{2afbc862-34c6-4857-92a0-e30d874c4ab1}">
+    <description>Maritool CAT40-ER16-6.0</description>
+    <comment>Maritool CAT40-ER16-6.0</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER16-6.0</product-id>
+    <holder>
+      <section diameter="0.984252" length="0"/>
+      <section diameter="1.10236" length="0.0625"/>
+      <section diameter="1.10236" length="0.6575"/>
+      <section diameter="0.8661417" length="0"/>
+      <section diameter="0.8661417" length="0.129"/>
+      <section diameter="1.11" length="0.1220472"/>
+      <section diameter="1.11" length="3.65669"/>
+      <section diameter="1.235" length="0.0625"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.575"/>
+      <section diameter="1.85" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{151c55b9-5dc0-48d5-aeec-d1161af711a9}">
+    <description>Maritool CAT40-ER16-6.0M</description>
+    <comment>Maritool CAT40-ER16-6.0M</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER16-6.0M</product-id>
+    <holder>
+      <section diameter="0.8661417" length="0"/>
+      <section diameter="0.8661417" length="0.674"/>
+      <section diameter="0.7480315" length="0"/>
+      <section diameter="0.7480315" length="0.1375"/>
+      <section diameter="0.8661417" length="0.0590551"/>
+      <section diameter="0.8661417" length="3.72953"/>
+      <section diameter="0.9661417" length="0.05"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.575"/>
+      <section diameter="1.85" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{77d3a8fd-ac3a-4c6c-a4f7-f67be4a1804c}">
+    <description>Maritool CAT40-ER20-2.5</description>
+    <comment>Maritool CAT40-ER20-2.5</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER20-2.5</product-id>
+    <holder>
+      <section diameter="1.1811" length="0"/>
+      <section diameter="1.33071" length="0.0787402"/>
+      <section diameter="1.33071" length="0.7677165"/>
+      <section diameter="0.984252" length="0"/>
+      <section diameter="0.984252" length="0.132"/>
+      <section diameter="1.325" length="0.1704724"/>
+      <section diameter="1.325" length="0.6204724"/>
+      <section diameter="1.48268" length="0.0787402"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{0fd589d6-fd77-4e96-84df-16817de04ffa}">
+    <description>Maritool CAT40-ER20-2.5M</description>
+    <comment>Maritool CAT40-ER20-2.5M</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER20-2.5M</product-id>
+    <holder>
+      <section diameter="1.1189" length="0"/>
+      <section diameter="1.1189" length="0.7559055"/>
+      <section diameter="0.9448819" length="0"/>
+      <section diameter="0.9448819" length="0.25"/>
+      <section diameter="1.09843" length="0"/>
+      <section diameter="1.09843" length="0.7602362"/>
+      <section diameter="1.25591" length="0.0787402"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{da783c10-bfc4-410c-bbb0-18dff104ae71}">
+    <description>Maritool CAT40-ER20-3.0</description>
+    <comment>Maritool CAT40-ER20-3.0</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER20-3.0</product-id>
+    <holder>
+      <section diameter="1.1811" length="0"/>
+      <section diameter="1.33071" length="0.0787402"/>
+      <section diameter="1.33071" length="0.7677165"/>
+      <section diameter="0.984252" length="0"/>
+      <section diameter="0.984252" length="0.132"/>
+      <section diameter="1.325" length="0.1704724"/>
+      <section diameter="1.325" length="0.5216535"/>
+      <section diameter="1.45" length="0.0625"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.555"/>
+      <section diameter="1.88976" length="0.07"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{ad8039d6-8d00-47c6-a428-d39ed4eb8b09}">
+    <description>Maritool CAT40-ER20-3.0M</description>
+    <comment>Maritool CAT40-ER20-3.0M</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER20-3.0M</product-id>
+    <holder>
+      <section diameter="1.1189" length="0"/>
+      <section diameter="1.1189" length="0.7559055"/>
+      <section diameter="0.9448819" length="0"/>
+      <section diameter="0.9448819" length="0.25"/>
+      <section diameter="1.09843" length="0"/>
+      <section diameter="1.09843" length="0.6515748"/>
+      <section diameter="1.09843" length="0"/>
+      <section diameter="1.22362" length="0.0625"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.555"/>
+      <section diameter="1.88976" length="0.07"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{e445a1fd-5d97-477e-b6ca-bae5784d9362}">
+    <description>Maritool CAT40-ER20-3.5</description>
+    <comment>Maritool CAT40-ER20-3.5</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER20-3.5</product-id>
+    <holder>
+      <section diameter="1.1811" length="0"/>
+      <section diameter="1.33071" length="0.0787402"/>
+      <section diameter="1.33071" length="0.7677165"/>
+      <section diameter="0.984252" length="0"/>
+      <section diameter="0.984252" length="0.132"/>
+      <section diameter="1.325" length="0.1704724"/>
+      <section diameter="1.325" length="1.62047"/>
+      <section diameter="1.48268" length="0.0787402"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{68cf751f-35b3-44d3-b852-d3ed5af3c5a7}">
+    <description>Maritool CAT40-ER20-3.5M</description>
+    <comment>Maritool CAT40-ER20-3.5M</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER20-3.5M</product-id>
+    <holder>
+      <section diameter="1.1189" length="0"/>
+      <section diameter="1.1189" length="0.7559055"/>
+      <section diameter="0.9448819" length="0"/>
+      <section diameter="0.9448819" length="0.25"/>
+      <section diameter="1.09843" length="0"/>
+      <section diameter="1.09843" length="1.76024"/>
+      <section diameter="1.25591" length="0.0787402"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{dc8fb23c-8a95-472b-a8d1-a70e745e6428}">
+    <description>Maritool CAT40-ER20-4.0</description>
+    <comment>Maritool CAT40-ER20-4.0</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER20-4.0</product-id>
+    <holder>
+      <section diameter="1.1811" length="0"/>
+      <section diameter="1.33071" length="0.0787402"/>
+      <section diameter="1.33071" length="0.7677165"/>
+      <section diameter="0.984252" length="0"/>
+      <section diameter="0.984252" length="0.132"/>
+      <section diameter="1.325" length="0.1704724"/>
+      <section diameter="1.325" length="1.52165"/>
+      <section diameter="1.45" length="0.0625"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.555"/>
+      <section diameter="1.88976" length="0.07"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{ae7ebae2-dd9b-418a-84dc-5f8901b9fc8e}">
+    <description>Maritool CAT40-ER20-4.0M</description>
+    <comment>Maritool CAT40-ER20-4.0M</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER20-4.0M</product-id>
+    <holder>
+      <section diameter="1.1189" length="0"/>
+      <section diameter="1.1189" length="0.7559055"/>
+      <section diameter="0.9448819" length="0"/>
+      <section diameter="0.9448819" length="0.25"/>
+      <section diameter="1.09843" length="0"/>
+      <section diameter="1.09843" length="1.65157"/>
+      <section diameter="1.22362" length="0.0625"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.555"/>
+      <section diameter="1.88976" length="0.07"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{74dd734e-7f33-4fc7-a2f1-430f88f51cf9}">
+    <description>Maritool CAT40-ER20-5.0</description>
+    <comment>Maritool CAT40-ER20-5.0</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER20-5.0</product-id>
+    <holder>
+      <section diameter="1.1811" length="0"/>
+      <section diameter="1.33071" length="0.0787402"/>
+      <section diameter="1.33071" length="0.7677165"/>
+      <section diameter="0.984252" length="0"/>
+      <section diameter="0.984252" length="0.132"/>
+      <section diameter="1.325" length="0.1704724"/>
+      <section diameter="1.325" length="2.52165"/>
+      <section diameter="1.45" length="0.0625"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.555"/>
+      <section diameter="1.88976" length="0.07"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{3479898c-f857-4463-a687-8393c899467a}">
+    <description>Maritool CAT40-ER20-5.0M</description>
+    <comment>Maritool CAT40-ER20-5.0M</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER20-5.0M</product-id>
+    <holder>
+      <section diameter="1.1189" length="0"/>
+      <section diameter="1.1189" length="0.7559055"/>
+      <section diameter="0.9448819" length="0"/>
+      <section diameter="0.9448819" length="0.25"/>
+      <section diameter="1.09843" length="0"/>
+      <section diameter="1.09843" length="2.65157"/>
+      <section diameter="1.22362" length="0.0625"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.555"/>
+      <section diameter="1.88976" length="0.07"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{147cf63e-393d-41bf-87a4-a26e8f73bece}">
+    <description>Maritool CAT40-ER25-2.5</description>
+    <comment>Maritool CAT40-ER25-2.5</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER25-2.5</product-id>
+    <holder>
+      <section diameter="1.1875" length="0"/>
+      <section diameter="1.66" length="0.16"/>
+      <section diameter="1.66" length="0.71"/>
+      <section diameter="1.25984" length="0"/>
+      <section diameter="1.25984" length="0.1"/>
+      <section diameter="1.75" length="0.16"/>
+      <section diameter="1.75" length="0.49"/>
+      <section diameter="1.925" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{865a81ea-4703-4be8-9c40-5bd1d48219b0}">
+    <description>Maritool CAT40-ER25-3.0</description>
+    <comment>Maritool CAT40-ER25-3.0</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER25-3.0</product-id>
+    <holder>
+      <section diameter="1.1875" length="0"/>
+      <section diameter="1.66" length="0.16"/>
+      <section diameter="1.66" length="0.71"/>
+      <section diameter="1.25984" length="0"/>
+      <section diameter="1.25984" length="0.1"/>
+      <section diameter="1.75" length="0.16"/>
+      <section diameter="1.75" length="0.99"/>
+      <section diameter="1.925" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{f5e9f1ae-a6ee-4e97-85ab-a02854d4325a}">
+    <description>Maritool CAT40-ER25-3.0M</description>
+    <comment>Maritool CAT40-ER25-3.0M</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER25-3.0M</product-id>
+    <holder>
+      <section diameter="1.377" length="0"/>
+      <section diameter="1.377" length="0.787"/>
+      <section diameter="1.187" length="0"/>
+      <section diameter="1.187" length="0.1"/>
+      <section diameter="1.377" length="0.095"/>
+      <section diameter="1.377" length="1.183"/>
+      <section diameter="1.547" length="0.085"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{b26158ac-6838-418b-8033-dab50a753049}">
+    <description>Maritool CAT40-ER25-3.5</description>
+    <comment>Maritool CAT40-ER25-3.5</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER25-3.5</product-id>
+    <holder>
+      <section diameter="1.1875" length="0"/>
+      <section diameter="1.66" length="0.16"/>
+      <section diameter="1.66" length="0.71"/>
+      <section diameter="1.25984" length="0"/>
+      <section diameter="1.25984" length="0.1"/>
+      <section diameter="1.75" length="0.16"/>
+      <section diameter="1.75" length="1.49"/>
+      <section diameter="1.925" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{45a5bcc2-5c33-445b-ad2d-7c4f493adc15}">
+    <description>Maritool CAT40-ER25-4.0</description>
+    <comment>Maritool CAT40-ER25-4.0</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER25-4.0</product-id>
+    <holder>
+      <section diameter="1.1875" length="0"/>
+      <section diameter="1.66" length="0.16"/>
+      <section diameter="1.66" length="0.71"/>
+      <section diameter="1.25984" length="0"/>
+      <section diameter="1.25984" length="0.1"/>
+      <section diameter="1.75" length="0.16"/>
+      <section diameter="1.75" length="1.99"/>
+      <section diameter="1.925" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{01ac5fc3-708a-4bf3-aea7-191b948abc66}">
+    <description>Maritool CAT40-ER25-4.0M</description>
+    <comment>Maritool CAT40-ER25-4.0M</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER25-4.0M</product-id>
+    <holder>
+      <section diameter="1.377" length="0"/>
+      <section diameter="1.377" length="0.787"/>
+      <section diameter="1.187" length="0"/>
+      <section diameter="1.187" length="0.1"/>
+      <section diameter="1.377" length="0.095"/>
+      <section diameter="1.377" length="2.183"/>
+      <section diameter="1.547" length="0.085"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{e800051b-e2d6-4699-a2b6-dad6466a0a0c}">
+    <description>Maritool CAT40-ER32-2.35</description>
+    <comment>Maritool CAT40-ER32-2.35</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER32-2.35</product-id>
+    <holder>
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.97" length="0.148"/>
+      <section diameter="1.97" length="0.836"/>
+      <section diameter="1.57" length="0"/>
+      <section diameter="1.57" length="0.176"/>
+      <section diameter="1.75" length="0.09"/>
+      <section diameter="1.75" length="0.425"/>
+      <section diameter="1.85" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{b8aa601e-618f-4e0c-9f46-f71d60e419bf}">
+    <description>Maritool CAT40-ER32-3.0</description>
+    <comment>Maritool CAT40-ER32-3.0</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER32-3.0</product-id>
+    <holder>
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.97" length="0.148"/>
+      <section diameter="1.97" length="0.836"/>
+      <section diameter="1.57" length="0"/>
+      <section diameter="1.57" length="0.176"/>
+      <section diameter="1.75" length="0.09"/>
+      <section diameter="1.75" length="1.075"/>
+      <section diameter="1.85" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{b3cfb512-4f26-4422-83ae-e3abb1686f03}">
+    <description>Maritool CAT40-ER32-4.0</description>
+    <comment>Maritool CAT40-ER32-4.0</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER32-4.0</product-id>
+    <holder>
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.97" length="0.148"/>
+      <section diameter="1.97" length="0.836"/>
+      <section diameter="1.57" length="0"/>
+      <section diameter="1.57" length="0.176"/>
+      <section diameter="1.75" length="0.09"/>
+      <section diameter="1.75" length="2.075"/>
+      <section diameter="1.85" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{c302cd10-8534-437d-ad6a-257eef1260dd}">
+    <description>Maritool CAT40-ER32-5.0</description>
+    <comment>Maritool CAT40-ER32-5.0</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER32-5.0</product-id>
+    <holder>
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.97" length="0.148"/>
+      <section diameter="1.97" length="0.836"/>
+      <section diameter="1.57" length="0"/>
+      <section diameter="1.57" length="0.176"/>
+      <section diameter="1.75" length="0.09"/>
+      <section diameter="1.75" length="3.075"/>
+      <section diameter="1.85" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{757328e1-d339-4f5a-a880-7f8dcb13c73d}">
+    <description>Maritool CAT40-ER32-6.0</description>
+    <comment>Maritool CAT40-ER32-6.0</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER32-6.0</product-id>
+    <holder>
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.97" length="0.148"/>
+      <section diameter="1.97" length="0.836"/>
+      <section diameter="1.57" length="0"/>
+      <section diameter="1.57" length="0.176"/>
+      <section diameter="1.75" length="0.09"/>
+      <section diameter="1.75" length="4.075"/>
+      <section diameter="1.85" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{ea309d32-2f49-4b70-a936-eef5cecd47b3}">
+    <description>Maritool CAT40-ER40-4.0</description>
+    <comment>Maritool CAT40-ER40-4.0</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-ER40-4.0</product-id>
+    <holder>
+      <section diameter="1.9" length="0"/>
+      <section diameter="2.48" length="0.2417323"/>
+      <section diameter="2.48" length="0.9"/>
+      <section diameter="1.9685" length="0"/>
+      <section diameter="1.9685" length="1.49921"/>
+      <section diameter="1.75" length="0.1066929"/>
+      <section diameter="1.75" length="0.575"/>
+      <section diameter="1.85" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{e7026b6e-ef04-457f-b689-c922099fb4be}">
+    <description>Maritool CAT40-APU08 Drill Chuck</description>
+    <comment>Maritool CAT40-APU08</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-APU08</product-id>
+    <holder>
+      <section diameter="0.3937008" length="0"/>
+      <section diameter="0.5511811" length="0.29"/>
+      <section diameter="0.984252" length="0"/>
+      <section diameter="1.49606" length="0.6889764"/>
+      <section diameter="1.49606" length="0.7480315"/>
+      <section diameter="1.41732" length="0.0393701"/>
+      <section diameter="1.41732" length="0.492126"/>
+      <section diameter="1.1811" length="0"/>
+      <section diameter="1.1811" length="0.1377953"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{1e890cc9-d747-4918-ab7c-138183bbdec2}">
+    <description>Maritool CAT40-APU13 Drill Chuck</description>
+    <comment>Maritool CAT40-APU13</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-APU13</product-id>
+    <holder>
+      <section diameter="0.53" length="0"/>
+      <section diameter="0.9" length="0.5"/>
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.94094" length="0.7874016"/>
+      <section diameter="1.94094" length="0.1952756"/>
+      <section diameter="1.98819" length="0.023622"/>
+      <section diameter="1.98819" length="0.8720472"/>
+      <section diameter="1.88976" length="0.0492126"/>
+      <section diameter="1.88976" length="0.6496063"/>
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.5" length="0.1377953"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{88e60996-7883-4c9c-81c0-63b3999a4cec}">
+    <description>Maritool CAT40-EM.125-2.25</description>
+    <comment>Maritool CAT40-EM.125-2.25</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-EM.125-2.25</product-id>
+    <holder>
+      <section diameter="0.25" length="0"/>
+      <section diameter="0.725" length="0.1562992"/>
+      <section diameter="0.725" length="0.6811024"/>
+      <section diameter="0.85" length="0.0625"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.625"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{503e2d4b-48db-4349-8a6e-1dd65e089433}">
+    <description>Maritool CAT40-EM.125-3.0</description>
+    <comment>Maritool CAT40-EM.125-3.0</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-EM.125-3.0</product-id>
+    <holder>
+      <section diameter="0.25" length="0"/>
+      <section diameter="0.725" length="0.1562992"/>
+      <section diameter="0.725" length="1.4313"/>
+      <section diameter="0.85" length="0.0625"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.625"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{4da777b8-cf37-4e99-b046-2dda56a5f324}">
+    <description>Maritool CAT40-EM.1875-2.25</description>
+    <comment>Maritool CAT40-EM.1875-2.25</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-EM.1875-2.25</product-id>
+    <holder>
+      <section diameter="0.4375" length="0"/>
+      <section diameter="0.875" length="0.325"/>
+      <section diameter="0.875" length="0.525"/>
+      <section diameter="1" length="0.0625"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.625"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{08fd72e3-5555-4371-88bd-73363a81a8b0}">
+    <description>Maritool CAT40-EM.1875-2.75</description>
+    <comment>Maritool CAT40-EM.1875-2.75</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-EM.1875-2.75</product-id>
+    <holder>
+      <section diameter="0.4375" length="0"/>
+      <section diameter="0.875" length="0.3125"/>
+      <section diameter="0.875" length="1.6338"/>
+      <section diameter="1.0325" length="0.0787"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{2f108240-53aa-4fbd-b5b1-ad9af423def9}">
+    <description>Maritool CAT40-EM.1875-3.0</description>
+    <comment>Maritool CAT40-EM.1875-3.0</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-EM.1875-3.0</product-id>
+    <holder>
+      <section diameter="0.4375" length="0"/>
+      <section diameter="0.875" length="0.325"/>
+      <section diameter="0.875" length="1.275"/>
+      <section diameter="1" length="0.0625"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.625"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{94b20d9c-b977-4872-ab29-2533f29f9561}">
+    <description>Maritool CAT40-EM.250-1.75</description>
+    <comment>Maritool CAT40-EM.250-1.75</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-EM.250-1.75</product-id>
+    <holder>
+      <section diameter="0.47" length="0"/>
+      <section diameter="0.875" length="0.3125"/>
+      <section diameter="0.875" length="0.6238"/>
+      <section diameter="1.0325" length="0.0787"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{3d71353c-3072-4b68-827b-8865803611fc}">
+    <description>Maritool CAT40-EM.250-2.5</description>
+    <comment>Maritool CAT40-EM.250-2.5</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-EM.250-2.5</product-id>
+    <holder>
+      <section diameter="0.47" length="0"/>
+      <section diameter="0.875" length="0.3125"/>
+      <section diameter="0.875" length="0.765"/>
+      <section diameter="1" length="0.0625"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.625"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{be393622-3348-48fc-8ff2-3a4560934769}">
+    <description>Maritool CAT40-EM.250-3.0</description>
+    <comment>Maritool CAT40-EM.250-3.0</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-EM.250-3.0</product-id>
+    <holder>
+      <section diameter="0.47" length="0"/>
+      <section diameter="0.875" length="0.3125"/>
+      <section diameter="0.875" length="1.275"/>
+      <section diameter="1" length="0.0625"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.625"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{66329e1a-313a-43fe-badc-6aa69a05b629}">
+    <description>Maritool CAT40-EM.3125-1.75</description>
+    <comment>Maritool CAT40-EM.3125-1.75</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-EM.3125-1.75</product-id>
+    <holder>
+      <section diameter="0.47" length="0"/>
+      <section diameter="0.875" length="0.3125"/>
+      <section diameter="0.875" length="0.6238"/>
+      <section diameter="1.0325" length="0.0787"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{5abca15b-9e29-42eb-8969-f1ef9de3bb95}">
+    <description>Maritool CAT40-EM.3125-2.5</description>
+    <comment>Maritool CAT40-EM.3125-2.5</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-EM.3125-2.5</product-id>
+    <holder>
+      <section diameter="0.47" length="0"/>
+      <section diameter="0.875" length="0.3125"/>
+      <section diameter="0.875" length="0.765"/>
+      <section diameter="1" length="0.0625"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.625"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{53b2e9e7-b4ca-4ee5-b715-952b1ad2acd4}">
+    <description>Maritool CAT40-EM.3125-3.0</description>
+    <comment>Maritool CAT40-EM.3125-3.0</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-EM.3125-3.0</product-id>
+    <holder>
+      <section diameter="0.47" length="0"/>
+      <section diameter="0.875" length="0.3125"/>
+      <section diameter="0.875" length="1.265"/>
+      <section diameter="1" length="0.0625"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.625"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{bf8d8c9c-b5f2-417e-a279-b8fc58c16671}">
+    <description>Maritool CAT40-EM.375-1.75</description>
+    <comment>Maritool CAT40-EM.375-1.75</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-EM.375-1.75</product-id>
+    <holder>
+      <section diameter="0.6" length="0"/>
+      <section diameter="1" length="0.4"/>
+      <section diameter="1" length="0.5863"/>
+      <section diameter="1.1575" length="0.0787"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{859162e8-9b2d-4849-83ec-516f53b15713}">
+    <description>Maritool CAT40-EM.375-2.25</description>
+    <comment>Maritool CAT40-EM.375-2.25</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-EM.375-2.25</product-id>
+    <holder>
+      <section diameter="0.6" length="0"/>
+      <section diameter="1" length="0.4"/>
+      <section diameter="1" length="1.0363"/>
+      <section diameter="1.1575" length="0.0787"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{fa120722-8d2a-450d-bbf4-f1fea32cc58d}">
+    <description>Maritool CAT40-EM.375-2.5</description>
+    <comment>Maritool CAT40-EM.375-2.5</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-EM.375-2.5</product-id>
+    <holder>
+      <section diameter="0.6" length="0"/>
+      <section diameter="1" length="0.4"/>
+      <section diameter="1" length="1.2863"/>
+      <section diameter="1.1575" length="0.0787"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{21c23794-a50f-4dad-b08f-d8b7b52c0957}">
+    <description>Maritool CAT40-EM.375-3.0</description>
+    <comment>Maritool CAT40-EM.375-3.0</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-EM.375-3.0</product-id>
+    <holder>
+      <section diameter="0.6" length="0"/>
+      <section diameter="1" length="0.4"/>
+      <section diameter="1" length="1.1775"/>
+      <section diameter="1.1575" length="0.0625"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.625"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{b74efa00-b259-4e0a-b1d7-916d7db0f7c8}">
+    <description>Maritool CAT40-EM.375-3.0</description>
+    <comment>Maritool CAT40-EM.375-3.0</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-EM.375-3.0</product-id>
+    <holder>
+      <section diameter="0.6" length="0"/>
+      <section diameter="1" length="0.4"/>
+      <section diameter="1" length="1.1775"/>
+      <section diameter="1.1575" length="0.0625"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.625"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{23c38a24-6a46-4369-af75-c0092be59436}">
+    <description>Maritool CAT40-EM.500-1.2</description>
+    <comment>Maritool CAT40-EM.500-1.2</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-EM.500-1.2</product-id>
+    <holder>
+      <section diameter="0.83" length="0"/>
+      <section diameter="1.37" length="0.455"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{bd9d55c4-0b7f-40be-8af3-d903db109d8d}">
+    <description>Maritool CAT40-EM.500-1.75</description>
+    <comment>Maritool CAT40-EM.500-1.75</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-EM.500-1.75</product-id>
+    <holder>
+      <section diameter="0.83" length="0"/>
+      <section diameter="1.37" length="0.4918"/>
+      <section diameter="1.37" length="0.5163"/>
+      <section diameter="1.5275" length="0.0787"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{3ab0ba6c-a633-4c27-897e-1899074633dc}">
+    <description>Maritool CAT40-EM.500-2.25</description>
+    <comment>Maritool CAT40-EM.500-2.25</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-EM.500-2.25</product-id>
+    <holder>
+      <section diameter="0.83" length="0"/>
+      <section diameter="1.37" length="0.5"/>
+      <section diameter="1.37" length="0.9263"/>
+      <section diameter="1.5275" length="0.0787"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{9bf27523-a803-4e7f-b162-0b9dd3f67706}">
+    <description>Maritool CAT40-EM.500-2.75</description>
+    <comment>Maritool CAT40-EM.500-2.75</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-EM.500-2.75</product-id>
+    <holder>
+      <section diameter="0.83" length="0"/>
+      <section diameter="1.37" length="0.5"/>
+      <section diameter="1.37" length="1.4263"/>
+      <section diameter="1.5275" length="0.0787"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{dc1826ee-b6f7-40fe-8a95-d42571903884}">
+    <description>Maritool CAT40-EM.500-3.0</description>
+    <comment>Maritool CAT40-EM.500-3.0</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-EM.500-3.0</product-id>
+    <holder>
+      <section diameter="0.83" length="0"/>
+      <section diameter="1.37" length="0.5"/>
+      <section diameter="1.37" length="1.0775"/>
+      <section diameter="1.495" length="0.0625"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.625"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{457fab20-b388-41c7-9983-cda609f7cc0e}">
+    <description>Maritool CAT40-EM.625-1.75</description>
+    <comment>Maritool CAT40-EM.625-1.75</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-EM.625-1.75</product-id>
+    <holder>
+      <section diameter="0.9" length="0"/>
+      <section diameter="1.5" length="0.4"/>
+      <section diameter="1.5" length="0.5863"/>
+      <section diameter="1.65748" length="0.0787"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{70f0b008-b067-46b8-9322-c35148e6a174}">
+    <description>Maritool CAT40-EM.625-2.5</description>
+    <comment>Maritool CAT40-EM.625-2.5</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-EM.625-2.5</product-id>
+    <holder>
+      <section diameter="0.9" length="0"/>
+      <section diameter="1.5" length="0.4"/>
+      <section diameter="1.5" length="1.2863"/>
+      <section diameter="1.65748" length="0.0787"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{34150566-bf5c-4709-a2f6-0b57eb62609d}">
+    <description>Maritool CAT40-EM.625-3.0</description>
+    <comment>Maritool CAT40-EM.625-3.0</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-EM.625-3.0</product-id>
+    <holder>
+      <section diameter="0.9" length="0"/>
+      <section diameter="1.5" length="0.4"/>
+      <section diameter="1.5" length="1.1775"/>
+      <section diameter="1.625" length="0.0625"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.625"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{4f358561-62f8-43eb-b005-b411e582060b}">
+    <description>Maritool CAT40-EM.750-1.75</description>
+    <comment>Maritool CAT40-EM.750-1.75</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-EM.750-1.75</product-id>
+    <holder>
+      <section diameter="1.1" length="0"/>
+      <section diameter="1.75" length="0.375"/>
+      <section diameter="1.75" length="0.6113"/>
+      <section diameter="1.9074" length="0.0787"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{e8542988-8a94-4b74-96e9-98f3ae588997}">
+    <description>Maritool CAT40-EM.750-2.5</description>
+    <comment>Maritool CAT40-EM.750-2.5</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-EM.750-2.5</product-id>
+    <holder>
+      <section diameter="1.1" length="0"/>
+      <section diameter="1.7" length="0.375"/>
+      <section diameter="1.7" length="1.225"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.1113"/>
+      <section diameter="1.8574" length="0.0537402"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{6e7fd2c5-152d-4169-ab26-af14f71b1176}">
+    <description>Maritool CAT40-EM.750-3.0</description>
+    <comment>Maritool CAT40-EM.750-3.0</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-EM.750-3.0</product-id>
+    <holder>
+      <section diameter="1.1" length="0"/>
+      <section diameter="1.7" length="0.375"/>
+      <section diameter="1.7" length="1.265"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.5713"/>
+      <section diameter="1.8574" length="0.0537402"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{b6d8c50e-d785-4604-8038-cbd90956bdda}">
+    <description>Maritool CAT40-EM.875-1.75</description>
+    <comment>Maritool CAT40-EM.875-1.75</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-EM.875-1.75</product-id>
+    <holder>
+      <section diameter="1.1" length="0"/>
+      <section diameter="1.75" length="0.375"/>
+      <section diameter="1.75" length="0.6113"/>
+      <section diameter="1.9074" length="0.0787"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{6fbdc446-1459-449e-82a1-daedeaca4b7e}">
+    <description>Maritool CAT40-EM.875-3.0</description>
+    <comment>Maritool CAT40-EM.875-3.0</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-EM.875-3.0</product-id>
+    <holder>
+      <section diameter="1.1" length="0"/>
+      <section diameter="1.75" length="0.375"/>
+      <section diameter="1.75" length="1.8113"/>
+      <section diameter="1.9074" length="0.0787"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{0447c839-9ab0-4966-87e8-95bffe422667}">
+    <description>Maritool CAT40-EM1.0-1.25</description>
+    <comment>Maritool CAT40-EM1.0-1.25</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-EM1.0-1.25</product-id>
+    <holder>
+      <section diameter="1.25" length="0"/>
+      <section diameter="1.75" length="0.51"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{f1cbd2a7-ffc9-41fb-99ed-60b477cb596e}">
+    <description>Maritool CAT40-EM1.0-1.75</description>
+    <comment>Maritool CAT40-EM1.0-1.75</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-EM1.0-1.75</product-id>
+    <holder>
+      <section diameter="1.25" length="0"/>
+      <section diameter="1.75" length="0.375"/>
+      <section diameter="1.75" length="0.6113"/>
+      <section diameter="1.9074" length="0.0787402"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{9b1f3cc2-58b7-4e8f-91d4-6fb39cb25f69}">
+    <description>Maritool CAT40-EM1.0-3.0</description>
+    <comment>Maritool CAT40-EM1.0-3.0</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-EM1.0-3.0</product-id>
+    <holder>
+      <section diameter="1.375" length="0"/>
+      <section diameter="2" length="0.45"/>
+      <section diameter="2" length="1"/>
+      <section diameter="1.75" length="0.125"/>
+      <section diameter="1.75" length="0.6113"/>
+      <section diameter="1.9074" length="0.0787402"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{451f39e9-3d9a-4238-b32b-ab7e15130ecf}">
+    <description>Maritool CAT40-EM1.25-2.5</description>
+    <comment>Maritool CAT40-EM1.25-2.5</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-EM1.25-2.5</product-id>
+    <holder>
+      <section diameter="1.5" length="0"/>
+      <section diameter="2.5" length="0.28"/>
+      <section diameter="2.5" length="0.849"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.636"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="inches" guid="{3ab0999c-73d9-496e-bf7f-4d63e702fa83}">
+    <description>Maritool CAT40-EM1.5-4.0</description>
+    <comment>Maritool CAT40-EM1.5-4.0</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>CAT40-EM1.5-4.0</product-id>
+    <holder>
+      <section diameter="1.875" length="0"/>
+      <section diameter="2.61" length="0.28"/>
+      <section diameter="2.61" length="2.395"/>
+      <section diameter="2.502" length="0.055"/>
+      <section diameter="2.502" length="0.7225"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="millimeters" guid="{61143083-14c3-4a6f-8e85-4ce13e5b9264}">
+    <description>Maritool BT30-ER11-50</description>
+    <comment>Maritool BT30-ER11-50</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>BT30-ER11-50</product-id>
+    <holder>
+      <section diameter="14.2875" length="0"/>
+      <section diameter="19.05" length="0.6604"/>
+      <section diameter="19.05" length="11.3386"/>
+      <section diameter="14" length="0"/>
+      <section diameter="14" length="4.064"/>
+      <section diameter="19.05" length="4.7625"/>
+      <section diameter="19.05" length="15.586"/>
+      <section diameter="22.225" length="1.5875"/>
+      <section diameter="46" length="0"/>
+      <section diameter="46" length="4"/>
+      <section diameter="37.9" length="2.3383"/>
+      <section diameter="37.9" length="3.3235"/>
+      <section diameter="46" length="2.3383"/>
+      <section diameter="46" length="7.6"/>
+      <section diameter="45.2" length="0.4"/>
+      <section diameter="31.75" length="0"/>
+      <section diameter="31.75" length="2"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="millimeters" guid="{84f6c7cf-6e05-4f62-bbfb-3326a80f6a74}">
+    <description>Maritool BT30-ER11-60</description>
+    <comment>Maritool BT30-ER11-60</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>BT30-ER11-60</product-id>
+    <holder>
+      <section diameter="14.2875" length="0"/>
+      <section diameter="19.05" length="0.6604"/>
+      <section diameter="19.05" length="11.3386"/>
+      <section diameter="14" length="0"/>
+      <section diameter="14" length="4.064"/>
+      <section diameter="19.05" length="4.7625"/>
+      <section diameter="19.05" length="25.586"/>
+      <section diameter="22.225" length="1.5875"/>
+      <section diameter="46" length="0"/>
+      <section diameter="46" length="4"/>
+      <section diameter="37.9" length="2.3383"/>
+      <section diameter="37.9" length="3.3235"/>
+      <section diameter="46" length="2.3383"/>
+      <section diameter="46" length="7.6"/>
+      <section diameter="45.2" length="0.4"/>
+      <section diameter="31.75" length="0"/>
+      <section diameter="31.75" length="2"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="millimeters" guid="{cb0273fc-0ff4-497c-9fd6-b8e97da08f03}">
+    <description>Maritool BT30-ER11-80</description>
+    <comment>Maritool BT30-ER11-80</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>BT30-ER11-80</product-id>
+    <holder>
+      <section diameter="14.2875" length="0"/>
+      <section diameter="19.05" length="0.6604"/>
+      <section diameter="19.05" length="11.3386"/>
+      <section diameter="14" length="0"/>
+      <section diameter="14" length="4.064"/>
+      <section diameter="19.05" length="4.7625"/>
+      <section diameter="19.05" length="35.586"/>
+      <section diameter="22.225" length="1.5875"/>
+      <section diameter="46" length="0"/>
+      <section diameter="46" length="4"/>
+      <section diameter="37.9" length="2.3383"/>
+      <section diameter="37.9" length="3.3235"/>
+      <section diameter="46" length="2.3383"/>
+      <section diameter="46" length="7.6"/>
+      <section diameter="45.2" length="0.4"/>
+      <section diameter="31.75" length="0"/>
+      <section diameter="31.75" length="2"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="millimeters" guid="{1bfe30b4-da3c-4477-82f8-9c2c23044703}">
+    <description>Maritool BT30-ER16-110</description>
+    <comment>Maritool BT30-ER16-110</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>BT30-ER16-110</product-id>
+    <holder>
+      <section diameter="25" length="0"/>
+      <section diameter="28" length="1.5875"/>
+      <section diameter="28" length="16.7005"/>
+      <section diameter="22" length="0"/>
+      <section diameter="22" length="6.35"/>
+      <section diameter="28.321" length="3.175"/>
+      <section diameter="28.321" length="58.5995"/>
+      <section diameter="31.496" length="1.5875"/>
+      <section diameter="46" length="0"/>
+      <section diameter="46" length="4"/>
+      <section diameter="37.9" length="2.3383"/>
+      <section diameter="37.9" length="3.3235"/>
+      <section diameter="46" length="2.3383"/>
+      <section diameter="46" length="7.6"/>
+      <section diameter="45.2" length="0.4"/>
+      <section diameter="31.75" length="0"/>
+      <section diameter="31.75" length="2"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="millimeters" guid="{fa89673e-f93b-4fc0-b951-efa3ec325694}">
+    <description>Maritool BT30-ER16-50</description>
+    <comment>Maritool BT30-ER16-50</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>BT30-ER16-50</product-id>
+    <holder>
+      <section diameter="25" length="0"/>
+      <section diameter="28" length="1.5875"/>
+      <section diameter="28" length="16.7005"/>
+      <section diameter="22" length="0"/>
+      <section diameter="22" length="6.35"/>
+      <section diameter="28.3371" length="3.616"/>
+      <section diameter="46" length="0"/>
+      <section diameter="46" length="4"/>
+      <section diameter="37.9" length="2.3383"/>
+      <section diameter="37.9" length="3.3235"/>
+      <section diameter="46" length="2.3383"/>
+      <section diameter="46" length="7.6"/>
+      <section diameter="45.2" length="0.4"/>
+      <section diameter="31.75" length="0"/>
+      <section diameter="31.75" length="2"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="millimeters" guid="{7f98c1b3-16da-474d-9595-922cd661dea2}">
+    <description>Maritool BT30-ER16-60</description>
+    <comment>Maritool BT30-ER16-60</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>BT30-ER16-60</product-id>
+    <holder>
+      <section diameter="25" length="0"/>
+      <section diameter="28" length="1.5875"/>
+      <section diameter="28" length="16.7005"/>
+      <section diameter="22" length="0"/>
+      <section diameter="22" length="6.35"/>
+      <section diameter="28.321" length="3.175"/>
+      <section diameter="28.321" length="8.5995"/>
+      <section diameter="31.496" length="1.5875"/>
+      <section diameter="46" length="0"/>
+      <section diameter="46" length="4"/>
+      <section diameter="37.9" length="2.3383"/>
+      <section diameter="37.9" length="3.3235"/>
+      <section diameter="46" length="2.3383"/>
+      <section diameter="46" length="7.6"/>
+      <section diameter="45.2" length="0.4"/>
+      <section diameter="31.75" length="0"/>
+      <section diameter="31.75" length="2"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="millimeters" guid="{26161fbf-34f3-4e87-bc6e-aa9f606bfafd}">
+    <description>Maritool BT30-ER16-60M</description>
+    <comment>Maritool BT30-ER16-60M</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>BT30-ER16-60M</product-id>
+    <holder>
+      <section diameter="22" length="0"/>
+      <section diameter="22" length="17.1196"/>
+      <section diameter="19" length="0"/>
+      <section diameter="19" length="6.35"/>
+      <section diameter="22.225" length="1.0668"/>
+      <section diameter="22.225" length="11.8745"/>
+      <section diameter="25.4" length="1.5875"/>
+      <section diameter="46" length="0"/>
+      <section diameter="46" length="4"/>
+      <section diameter="37.9" length="2.3383"/>
+      <section diameter="37.9" length="3.3235"/>
+      <section diameter="46" length="2.3383"/>
+      <section diameter="46" length="7.6"/>
+      <section diameter="45.2" length="0.4"/>
+      <section diameter="31.75" length="0"/>
+      <section diameter="31.75" length="2"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="millimeters" guid="{89cacb9e-a6b8-459c-91a0-d1cb0103b5e6}">
+    <description>Maritool BT30-ER16-80</description>
+    <comment>Maritool BT30-ER16-80</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>BT30-ER16-80</product-id>
+    <holder>
+      <section diameter="25" length="0"/>
+      <section diameter="28" length="1.5875"/>
+      <section diameter="28" length="16.7005"/>
+      <section diameter="22" length="0"/>
+      <section diameter="22" length="6.35"/>
+      <section diameter="28.321" length="3.175"/>
+      <section diameter="28.321" length="28.5995"/>
+      <section diameter="31.496" length="1.5875"/>
+      <section diameter="46" length="0"/>
+      <section diameter="46" length="4"/>
+      <section diameter="37.9" length="2.3383"/>
+      <section diameter="37.9" length="3.3235"/>
+      <section diameter="46" length="2.3383"/>
+      <section diameter="46" length="7.6"/>
+      <section diameter="45.2" length="0.4"/>
+      <section diameter="31.75" length="0"/>
+      <section diameter="31.75" length="2"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="millimeters" guid="{25c8c1a3-0258-4e34-88aa-6b3e4f7707db}">
+    <description>Maritool BT30-ER16-80M</description>
+    <comment>Maritool BT30-ER16-80M</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>BT30-ER16-80M</product-id>
+    <holder>
+      <section diameter="22" length="0"/>
+      <section diameter="22" length="17.1196"/>
+      <section diameter="19" length="0"/>
+      <section diameter="19" length="6.35"/>
+      <section diameter="22.225" length="1.0668"/>
+      <section diameter="22.225" length="31.8745"/>
+      <section diameter="25.4" length="1.5875"/>
+      <section diameter="46" length="0"/>
+      <section diameter="46" length="4"/>
+      <section diameter="37.9" length="2.3383"/>
+      <section diameter="37.9" length="3.3235"/>
+      <section diameter="46" length="2.3383"/>
+      <section diameter="46" length="7.6"/>
+      <section diameter="45.2" length="0.4"/>
+      <section diameter="31.75" length="0"/>
+      <section diameter="31.75" length="2"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="millimeters" guid="{1d00a7e3-d76d-47ad-8ea3-31a7ce557563}">
+    <description>Maritool BT30-ER20-60</description>
+    <comment>Maritool BT30-ER20-60</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>BT30-ER20-60</product-id>
+    <holder>
+      <section diameter="30" length="0"/>
+      <section diameter="33.8" length="2"/>
+      <section diameter="33.8" length="19.9456"/>
+      <section diameter="25" length="0"/>
+      <section diameter="25" length="2.2724"/>
+      <section diameter="33.782" length="4.3688"/>
+      <section diameter="33.782" length="8.5995"/>
+      <section diameter="37.0332" length="1.5875"/>
+      <section diameter="46" length="0"/>
+      <section diameter="46" length="4"/>
+      <section diameter="37.9" length="2.3383"/>
+      <section diameter="37.9" length="3.3235"/>
+      <section diameter="46" length="2.3383"/>
+      <section diameter="46" length="7.6"/>
+      <section diameter="45.2" length="0.4"/>
+      <section diameter="31.75" length="0"/>
+      <section diameter="31.75" length="2"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="millimeters" guid="{ae8f5878-4071-4ec6-9cda-d8097c8cec65}">
+    <description>Maritool BT30-ER20-80</description>
+    <comment>Maritool BT30-ER20-80</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>BT30-ER20-80</product-id>
+    <holder>
+      <section diameter="30" length="0"/>
+      <section diameter="33.8" length="2"/>
+      <section diameter="33.8" length="19.9456"/>
+      <section diameter="25" length="0"/>
+      <section diameter="25" length="2.2724"/>
+      <section diameter="33.782" length="4.3688"/>
+      <section diameter="33.782" length="28.5995"/>
+      <section diameter="37.0332" length="1.5875"/>
+      <section diameter="46" length="0"/>
+      <section diameter="46" length="4"/>
+      <section diameter="37.9" length="2.3383"/>
+      <section diameter="37.9" length="3.3235"/>
+      <section diameter="46" length="2.3383"/>
+      <section diameter="46" length="7.6"/>
+      <section diameter="45.2" length="0.4"/>
+      <section diameter="31.75" length="0"/>
+      <section diameter="31.75" length="2"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="millimeters" guid="{532874d5-ced4-4d6a-b4ab-61054b97a184}">
+    <description>Maritool BT30-ER25-50</description>
+    <comment>Maritool BT30-ER25-50</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>BT30-ER25-50</product-id>
+    <holder>
+      <section diameter="30" length="0"/>
+      <section diameter="41.148" length="1.5"/>
+      <section diameter="41.148" length="23.5"/>
+      <section diameter="30" length="0"/>
+      <section diameter="30" length="3"/>
+      <section diameter="46" length="0"/>
+      <section diameter="46" length="4"/>
+      <section diameter="37.9" length="2.3383"/>
+      <section diameter="37.9" length="3.3235"/>
+      <section diameter="46" length="2.3383"/>
+      <section diameter="46" length="7.6"/>
+      <section diameter="45.2" length="0.4"/>
+      <section diameter="31.75" length="0"/>
+      <section diameter="31.75" length="2"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="millimeters" guid="{932c8de7-2a2c-4c33-8790-49185b65434d}">
+    <description>Maritool BT30-ER25-60</description>
+    <comment>Maritool BT30-ER25-60</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>BT30-ER25-60</product-id>
+    <holder>
+      <section diameter="30" length="0"/>
+      <section diameter="41.148" length="1.5"/>
+      <section diameter="41.148" length="23.5"/>
+      <section diameter="32" length="0"/>
+      <section diameter="32" length="0.742"/>
+      <section diameter="41.148" length="5.08"/>
+      <section diameter="41.148" length="7.178"/>
+      <section diameter="46" length="0"/>
+      <section diameter="46" length="4"/>
+      <section diameter="37.9" length="2.3383"/>
+      <section diameter="37.9" length="3.3235"/>
+      <section diameter="46" length="2.3383"/>
+      <section diameter="46" length="7.6"/>
+      <section diameter="45.2" length="0.4"/>
+      <section diameter="31.75" length="0"/>
+      <section diameter="31.75" length="2"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="millimeters" guid="{d737b400-9cdd-4166-8843-c8e146373364}">
+    <description>Maritool BT30-ER25-80</description>
+    <comment>Maritool BT30-ER25-80</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>BT30-ER25-80</product-id>
+    <holder>
+      <section diameter="30" length="0"/>
+      <section diameter="41.148" length="1.5"/>
+      <section diameter="41.148" length="23.5"/>
+      <section diameter="32" length="0"/>
+      <section diameter="32" length="0.742"/>
+      <section diameter="41.148" length="5.08"/>
+      <section diameter="41.148" length="27.178"/>
+      <section diameter="46" length="0"/>
+      <section diameter="46" length="4"/>
+      <section diameter="37.9" length="2.3383"/>
+      <section diameter="37.9" length="3.3235"/>
+      <section diameter="46" length="2.3383"/>
+      <section diameter="46" length="7.6"/>
+      <section diameter="45.2" length="0.4"/>
+      <section diameter="31.75" length="0"/>
+      <section diameter="31.75" length="2"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="millimeters" guid="{477ed781-261a-48f4-9f7a-b73491eb500a}">
+    <description>Maritool BT30-ER32-110</description>
+    <comment>Maritool BT30-ER32-110</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>BT30-ER32-110</product-id>
+    <holder>
+      <section diameter="38.1" length="0"/>
+      <section diameter="50.038" length="3.7656"/>
+      <section diameter="50.038" length="21.2344"/>
+      <section diameter="40" length="0"/>
+      <section diameter="40" length="1.212"/>
+      <section diameter="44.45" length="2.921"/>
+      <section diameter="44.45" length="58.867"/>
+      <section diameter="46" length="0"/>
+      <section diameter="46" length="4"/>
+      <section diameter="37.9" length="2.3383"/>
+      <section diameter="37.9" length="3.3235"/>
+      <section diameter="46" length="2.3383"/>
+      <section diameter="46" length="7.6"/>
+      <section diameter="45.2" length="0.4"/>
+      <section diameter="31.75" length="0"/>
+      <section diameter="31.75" length="2"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="millimeters" guid="{926a883d-e98e-421d-9560-50ddc8fc7b49}">
+    <description>Maritool BT30-ER32-52</description>
+    <comment>Maritool BT30-ER32-52</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>BT30-ER32-52</product-id>
+    <holder>
+      <section diameter="38.1" length="0"/>
+      <section diameter="50.038" length="3.7656"/>
+      <section diameter="50.038" length="21.2344"/>
+      <section diameter="40" length="0"/>
+      <section diameter="40" length="3.283"/>
+      <section diameter="46" length="3.429"/>
+      <section diameter="46" length="4"/>
+      <section diameter="37.9" length="2.3383"/>
+      <section diameter="37.9" length="3.3235"/>
+      <section diameter="46" length="2.3383"/>
+      <section diameter="46" length="7.6"/>
+      <section diameter="45.2" length="0.4"/>
+      <section diameter="31.75" length="0"/>
+      <section diameter="31.75" length="2"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="millimeters" guid="{5c2729a4-befd-4fd4-9088-34ed67e00083}">
+    <description>Maritool BT30-ER32-60</description>
+    <comment>Maritool BT30-ER32-60</comment>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>BT30-ER32-60</product-id>
+    <holder>
+      <section diameter="38.1" length="0"/>
+      <section diameter="50.038" length="3.7656"/>
+      <section diameter="50.038" length="21.2344"/>
+      <section diameter="40" length="0"/>
+      <section diameter="40" length="3.3582"/>
+      <section diameter="44.45" length="2.921"/>
+      <section diameter="44.45" length="6.7208"/>
+      <section diameter="46" length="0"/>
+      <section diameter="46" length="4"/>
+      <section diameter="37.9" length="2.3383"/>
+      <section diameter="37.9" length="3.3235"/>
+      <section diameter="46" length="2.3383"/>
+      <section diameter="46" length="7.6"/>
+      <section diameter="45.2" length="0.4"/>
+      <section diameter="31.75" length="0"/>
+      <section diameter="31.75" length="2"/>
+    </holder>
+  </holder>
+</tool-library>

@@ -1,0 +1,68 @@
+0  BEGIN PGM fixture_bottom MM 
+1  BLK FORM 0.1 Z  X+0  Y-139  Z-40
+2  BLK FORM 0.2  X+38.6  Y+0  Z+0
+3  ;-------------------------------------
+4  ;Tools
+5  ;  #4 D=12 - ZMIN=-34.8 - ZMAX=+10 - flat end mill
+6  ;-------------------------------------
+7  ;
+8  * - 2D Contour1
+9  M5
+10 TOOL CALL 4 Z S1617
+11 L M140 MB MAX
+12 M3
+13 L  X+49.6  Y+1.2 R0 FMAX
+14 L  Z+10 R0 FMAX
+15 M8
+16 M19 ;
+17 TCH PROBE 562 TOOL SETTING L ~
+    Q350=+0    ;MEASURING TYPE ~
+    Q361=+2    ;NUMBER OF MEASUREMEN ~
+    Q362=+0.005 ;DISPERSION TOLERANCE
+18 L  Z+5 FMAX
+19 L  Z-33.6 F77
+20 CC  X+48.4  Z-33.6
+21 CP IPA+90 DR+ F232
+22 L  X+47.2  Z-34.8
+23 CC  X+47.2  Y+0
+24 CP IPA+90 DR+
+25 L  X+46  Y-139
+26 CC  X+38.6  Y-139
+27 CP IPA-90 DR-
+28 L  X+0  Y-146.4
+29 CC  X+0  Y-139
+30 CP IPA-90 DR-
+31 L  X-7.4  Y+0
+32 CC  X+0  Y+0
+33 CP IPA-90 DR-
+34 L  X+38.6  Y+7.4
+35 CC  X+38.6  Y+0
+36 CP IPA-90 DR-
+37 CC  X+45.025  Y+0
+38 CP IPA-67.38 DR-
+39 CC  X+45.775  Y-1.8
+40 CP IPA+67.38 DR+
+41 L  X+44.8  Y-139
+42 CC  X+38.6  Y-139
+43 CP IPA-90 DR-
+44 L  X+0  Y-145.2
+45 CC  X+0  Y-139
+46 CP IPA-90 DR-
+47 L  X-6.2  Y+0
+48 CC  X+0  Y+0
+49 CP IPA-90 DR-
+50 L  X+38.6  Y+6.2
+51 CC  X+38.6  Y+0
+52 CP IPA-90 DR-
+53 L  X+44.8  Y-1.8
+54 CC  X+46  Y-1.8
+55 CP IPA+90 DR+
+56 L  X+47.2  Y-3
+57 CC  X+47.2  Z-33.6
+58 CP IPA-90 DR-
+59 L  X+48.4  Z+10 FMAX
+60 M9
+61 M5
+62 L M140 MB MAX
+63 M30
+64 END PGM fixture_bottom MM 

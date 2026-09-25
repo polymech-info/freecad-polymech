@@ -1,0 +1,4 @@
+version: 1.537.2
+hsmkernel: 3.239.0
+dcamcomponents: 1.343.2
+camkernelstub: 3.1.42716

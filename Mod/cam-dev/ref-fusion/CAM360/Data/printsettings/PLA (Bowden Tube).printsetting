@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<printsetting xmlns="http://www.autodesk.com/xml/2019/printsetting" id="-1">
+
+  <solution_uuid>d15a081f-d0aa-4410-873f-c76f0f53617a</solution_uuid>
+
+  <workspace_uuid>f88b3912-f79c-409d-9058-ee95efa6a4aa</workspace_uuid>
+
+  <name>PLA (Bowden Tube)</name>
+
+  <description>This is a default material print setting and has been tailored for a Bowden tube printer and a 0.4mm diameter nozzle. Bowden tube printers have the filament feeder gear mounted onto the printer body, and use the Bowden tube to feed the filament to the extruder. This requires specific retraction settings.
+
+If you wish to customize these settings, please copy this print setting to your "My print settings" folder. Here you can customize it to make it suitable for your specific printer and material.</description>
+
+  <layer_thickness>0.150000</layer_thickness>
+
+  <technology>FFF</technology>
+
+  <vendor/>
+
+  <machine_model/>
+
+  <build_strategy_name>Normal</build_strategy_name>
+
+  <additional_parameters strategy="Normal">
+    <parameter_group exclusive_subgroups="false" group_enable_flag="true" group_id="prm_body_options" group_optional_flag="false" group_platform_flag="false" orig_group_id="prm_body_options">
+      <parameter parameter_id="prm_body_preset_name" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="" parameter_real_selected="0" parameter_string_value="Normal" parameter_type="5" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_body_preset_description" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="" parameter_real_selected="0" parameter_string_value="This 'Normal' body preset can be used for the general printing of bodies." parameter_type="7" parameter_unit_multiplier="1"/>
+    </parameter_group>
+    <parameter_group exclusive_subgroups="false" group_enable_flag="true" group_id="prm_grp_extrusion" group_optional_flag="false" group_platform_flag="false" orig_group_id="grp_Extrusion">
+      <parameter parameter_id="prm_extruder_id" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="Extruder 1" parameter_orig_id="extruder_id" parameter_real_selected="0" parameter_string_value="" parameter_type="3" parameter_unit_multiplier="1">
+        <options parameter_option="Extruder 1"/>
+      </parameter>
+      <parameter parameter_id="prm_extrusion_width_first_layer" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="extrusion_width_first_layer" parameter_real_selected="0.40000000000000002" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_extrusion_width" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="extrusion_width" parameter_real_selected="0.40000000000000002" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_extrusion_width_perimeters" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="extrusion_width_perimeters" parameter_real_selected="0.40000000000000002" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_extrusion_width_infill" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="extrusion_width_infill" parameter_real_selected="0.40000000000000002" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_extrusion_width_bridge" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="extrusion_width_bridge" parameter_real_selected="0.40000000000000002" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_extrusion_width_tp_support" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="extrusion_width_tp_support" parameter_real_selected="0.40000000000000002" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+    </parameter_group>
+    <parameter_group exclusive_subgroups="false" group_enable_flag="true" group_id="prm_grp_extrusion_extruder_1" group_optional_flag="false" group_platform_flag="false" orig_group_id="grp_Extrusion\Extruder 1">
+      <parameter parameter_id="prm_extrusion_flows_0" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="extrusion_flows_0" parameter_real_selected="100" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_extruder_temps_0" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="extruder_temps_0" parameter_real_selected="215" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_standby_temps_0" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="standby_temps_0" parameter_real_selected="100" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_retraction_lengths_0" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="retraction_lengths_0" parameter_real_selected="7" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_retraction_speeds_0" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="retraction_speeds_0" parameter_real_selected="25" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_tool_change_retract_lengths_0" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="tool_change_retract_lengths_0" parameter_real_selected="19" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_tool_change_retract_speeds_0" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="tool_change_retract_speeds_0" parameter_real_selected="7.5" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_tool_change_extra_restart_lengths_0" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="tool_change_extra_restart_lengths_0" parameter_real_selected="-0.10000000000000001" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+    </parameter_group>
+    <parameter_group exclusive_subgroups="false" group_enable_flag="true" group_id="prm_grp_shell" group_optional_flag="false" group_platform_flag="false" orig_group_id="grp_Shell">
+      <parameter parameter_id="prm_num_perimeters" parameter_int_selected="2" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="num_perimeters" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_num_top_shells" parameter_int_selected="4" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="num_top_shells" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_num_bottom_shells" parameter_int_selected="3" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="num_bottom_shells" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_randomize_starting_point" parameter_int_selected="0" parameter_option_bool="true" parameter_option_selected="" parameter_orig_id="randomize_starting_point" parameter_real_selected="0" parameter_string_value="" parameter_type="4" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_solid_infill_angle" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="solid_infill_angle" parameter_real_selected="45" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="57.295827908797776"/>
+      <parameter parameter_id="prm_perimeters_inner_first" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="perimeters_inner_first" parameter_real_selected="0" parameter_string_value="" parameter_type="4" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_perimeter_overlap_ratio" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="perimeter_overlap_ratio" parameter_real_selected="0.10000000000000001" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_bridging_enabled" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="bridging_enabled" parameter_real_selected="0" parameter_string_value="" parameter_type="4" parameter_unit_multiplier="1"/>
+    </parameter_group>
+    <parameter_group exclusive_subgroups="false" group_enable_flag="true" group_id="prm_grp_infill" group_optional_flag="false" group_platform_flag="false" orig_group_id="grp_Infill">
+      <parameter parameter_id="prm_sparse_infill_density" parameter_int_selected="25" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="sparse_infill_density" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_sparse_infill_pattern" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="Gyroid" parameter_orig_id="sparse_infill_pattern" parameter_real_selected="0" parameter_string_value="" parameter_type="3" parameter_unit_multiplier="1">
+        <options parameter_option="Gyroid"/>
+        <options parameter_option="Rectilinear"/>
+        <options parameter_option="Star"/>
+        <options parameter_option="Honeycomb"/>
+        <options parameter_option="Squares"/>
+        <options parameter_option="Spherical"/>
+        <options parameter_option="RhombicDodecahedron"/>
+        <options parameter_option="ElongatedDodecahedron"/>
+        <options parameter_option="TruncatedOctahedron"/>
+        <options parameter_option="Flower"/>
+        <options parameter_option="Rhombus3D"/>
+        <options parameter_option="Rhombille"/>
+        <options parameter_option="Auxetic"/>
+        <options parameter_option="None"/>
+      </parameter>
+      <parameter parameter_id="prm_sparse_infill_angle" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="sparse_infill_angle" parameter_real_selected="45" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="57.295827908797776"/>
+      <parameter parameter_id="prm_min_fill_length" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="min_fill_length" parameter_real_selected="0.10000000000000001" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_perimeter_infill_overlap_ratio" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="perimeter_infill_overlap_ratio" parameter_real_selected="0.20000000000000001" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="1"/>
+    </parameter_group>
+    <parameter_group exclusive_subgroups="true" group_enable_flag="true" group_id="prm_grp_print_bed_adhesion" group_optional_flag="true" group_platform_flag="false" orig_group_id="grp_Print Bed Adhesion">
+      <parameter parameter_id="prm_disable_fan_first_layers" parameter_int_selected="1" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="disable_fan_first_layers" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_grp_print_bed_adhesion_mutex_subgroups" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="Skirt" parameter_orig_id="" parameter_real_selected="0" parameter_string_value="" parameter_type="3" parameter_unit_multiplier="1">
+        <options parameter_option="Skirt"/>
+        <options parameter_option="Brim"/>
+        <options parameter_option="Raft"/>
+      </parameter>
+    </parameter_group>
+    <parameter_group exclusive_subgroups="false" group_enable_flag="true" group_id="prm_grp_print_bed_adhesion_skirt" group_optional_flag="false" group_platform_flag="false" orig_group_id="grp_Print Bed Adhesion\Skirt">
+      <parameter parameter_id="prm_skirt_layers" parameter_int_selected="1" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="skirt_layers" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_skirt_loops" parameter_int_selected="2" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="skirt_loops" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_skirt_distance" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="skirt_distance" parameter_real_selected="5" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+    </parameter_group>
+    <parameter_group exclusive_subgroups="false" group_enable_flag="false" group_id="prm_grp_print_bed_adhesion_brim" group_optional_flag="false" group_platform_flag="false" orig_group_id="grp_Print Bed Adhesion\Brim">
+      <parameter parameter_id="prm_brim_layers" parameter_int_selected="1" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="brim_layers" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_brim_loops" parameter_int_selected="2" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="brim_loops" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+    </parameter_group>
+    <parameter_group exclusive_subgroups="false" group_enable_flag="false" group_id="prm_grp_print_bed_adhesion_raft" group_optional_flag="false" group_platform_flag="false" orig_group_id="grp_Print Bed Adhesion\Raft">
+      <parameter parameter_id="prm_raft_extruder_id" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="Extruder 1" parameter_orig_id="raft_extruder_id" parameter_real_selected="0" parameter_string_value="" parameter_type="3" parameter_unit_multiplier="1">
+        <options parameter_option="Extruder 1"/>
+      </parameter>
+      <parameter parameter_id="prm_raft_base_num_layers" parameter_int_selected="1" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="raft_base_num_layers" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_raft_interface_num_layers" parameter_int_selected="1" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="raft_interface_num_layers" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_raft_surface_num_layers" parameter_int_selected="1" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="raft_surface_num_layers" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_raft_base_density" parameter_int_selected="40" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="raft_base_density" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_raft_interface_density" parameter_int_selected="60" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="raft_interface_density" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_raft_surface_density" parameter_int_selected="100" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="raft_surface_density" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_raft_outer_border" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="raft_outer_border" parameter_real_selected="5" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_raft_zbump" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="raft_zbump" parameter_real_selected="0.20000000000000001" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+    </parameter_group>
+    <parameter_group exclusive_subgroups="false" group_enable_flag="true" group_id="prm_grp_support" group_optional_flag="false" group_platform_flag="false" orig_group_id="grp_Support">
+      <parameter parameter_id="prm_tp_support_extruder_id" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="Extruder 1" parameter_orig_id="tp_support_extruder_id" parameter_real_selected="0" parameter_string_value="" parameter_type="3" parameter_unit_multiplier="1">
+        <options parameter_option="Extruder 1"/>
+      </parameter>
+    </parameter_group>
+    <parameter_group exclusive_subgroups="false" group_enable_flag="true" group_id="prm_grp_support_volume" group_optional_flag="false" group_platform_flag="false" orig_group_id="grp_Support\Volume">
+      <parameter parameter_id="prm_ms_num_perimeters" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_num_perimeters" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_ms_num_top_shells" parameter_int_selected="1" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_num_top_shells" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_ms_num_bottom_shells" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_num_bottom_shells" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_ms_sparse_infill_density" parameter_int_selected="15" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_sparse_infill_density" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_ms_sparse_infill_angle" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_sparse_infill_angle" parameter_real_selected="30" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="57.295827908797776"/>
+      <parameter parameter_id="prm_ms_solid_infill_density" parameter_int_selected="60" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_solid_infill_density" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_ms_solid_infill_angle" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_solid_infill_angle" parameter_real_selected="120" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="57.295827908797776"/>
+      <parameter parameter_id="prm_ms_solid_infill_alternate_angles_enabled" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_solid_infill_alternate_angles_enabled" parameter_real_selected="0" parameter_string_value="" parameter_type="4" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_tp_support_object_margin" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="tp_support_object_margin" parameter_real_selected="0.25" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+    </parameter_group>
+    <parameter_group exclusive_subgroups="false" group_enable_flag="true" group_id="prm_grp_support_bar" group_optional_flag="false" group_platform_flag="false" orig_group_id="grp_Support\Bar">
+      <parameter parameter_id="prm_ms_bar_num_perimeters" parameter_int_selected="1" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_bar_num_perimeters" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_ms_bar_num_top_shells" parameter_int_selected="3" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_bar_num_top_shells" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_ms_bar_num_bottom_shells" parameter_int_selected="3" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_bar_num_bottom_shells" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_ms_bar_sparse_infill_density" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_bar_sparse_infill_density" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_ms_bar_sparse_infill_angle" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_bar_sparse_infill_angle" parameter_real_selected="0" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="57.295827908797776"/>
+      <parameter parameter_id="prm_ms_bar_solid_infill_density" parameter_int_selected="100" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_bar_solid_infill_density" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_ms_bar_solid_infill_angle" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_bar_solid_infill_angle" parameter_real_selected="0" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="57.295827908797776"/>
+      <parameter parameter_id="prm_ms_bar_solid_infill_alternate_angles_enabled" parameter_int_selected="0" parameter_option_bool="true" parameter_option_selected="" parameter_orig_id="ms_bar_solid_infill_alternate_angles_enabled" parameter_real_selected="0" parameter_string_value="" parameter_type="4" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_tp_bar_support_object_margin" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="tp_bar_support_object_margin" parameter_real_selected="0.25" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+    </parameter_group>
+    <parameter_group exclusive_subgroups="false" group_enable_flag="true" group_id="prm_grp_support_setter" group_optional_flag="false" group_platform_flag="false" orig_group_id="grp_Support\Setter">
+      <parameter parameter_id="prm_ms_setter_num_perimeters" parameter_int_selected="1" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_setter_num_perimeters" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_ms_setter_num_top_shells" parameter_int_selected="1" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_setter_num_top_shells" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_ms_setter_num_bottom_shells" parameter_int_selected="1" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_setter_num_bottom_shells" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_ms_setter_sparse_infill_density" parameter_int_selected="100" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_setter_sparse_infill_density" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_ms_setter_sparse_infill_angle" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_setter_sparse_infill_angle" parameter_real_selected="30" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="57.295827908797776"/>
+      <parameter parameter_id="prm_ms_setter_solid_infill_density" parameter_int_selected="100" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_setter_solid_infill_density" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_ms_setter_solid_infill_angle" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_setter_solid_infill_angle" parameter_real_selected="120" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="57.295827908797776"/>
+      <parameter parameter_id="prm_ms_setter_solid_infill_alternate_angles_enabled" parameter_int_selected="0" parameter_option_bool="true" parameter_option_selected="" parameter_orig_id="ms_setter_solid_infill_alternate_angles_enabled" parameter_real_selected="0" parameter_string_value="" parameter_type="4" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_tp_setter_support_object_margin" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="tp_setter_support_object_margin" parameter_real_selected="0.25" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+    </parameter_group>
+    <parameter_group exclusive_subgroups="false" group_enable_flag="true" group_id="prm_grp_speed" group_optional_flag="false" group_platform_flag="false" orig_group_id="grp_Speed">
+      <parameter parameter_id="prm_speed_first_layer_multiplier" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="speed_first_layer_multiplier" parameter_real_selected="0.5" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_speed_perimeters_internal" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="speed_perimeters_internal" parameter_real_selected="40" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_speed_perimeters_external" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="speed_perimeters_external" parameter_real_selected="30" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_speed_sparse_infill" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="speed_sparse_infill" parameter_real_selected="60" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_speed_solid_infill" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="speed_solid_infill" parameter_real_selected="30" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_speed_support_material" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="speed_support_material" parameter_real_selected="60" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_speed_bridge" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="speed_bridge" parameter_real_selected="40" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_raft_speed" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="raft_speed" parameter_real_selected="25" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_min_layer_time" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="min_layer_time" parameter_real_selected="10" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="1"/>
+    </parameter_group>
+    <parameter_group exclusive_subgroups="false" group_enable_flag="true" group_id="prm_grp_speed_acceleration" group_optional_flag="false" group_platform_flag="false" orig_group_id="grp_Speed\Acceleration">
+      <parameter parameter_id="prm_enable_acceleration" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="enable_acceleration" parameter_real_selected="0" parameter_string_value="" parameter_type="4" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_acceleration_travel" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="acceleration_travel" parameter_real_selected="3000" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_acceleration_print" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="acceleration_print" parameter_real_selected="3000" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+    </parameter_group>
+    <parameter_group exclusive_subgroups="false" group_enable_flag="true" group_id="prm_grp_speed_jerk" group_optional_flag="false" group_platform_flag="false" orig_group_id="grp_Speed\Jerk">
+      <parameter parameter_id="prm_enable_jerk" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="enable_jerk" parameter_real_selected="0" parameter_string_value="" parameter_type="4" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_jerk_print" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="jerk_print" parameter_real_selected="7" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+    </parameter_group>
+    <parameter_group exclusive_subgroups="false" group_enable_flag="true" group_id="prm_grp_travel" group_optional_flag="false" group_platform_flag="false" orig_group_id="grp_Travel">
+      <parameter parameter_id="prm_connect_single_pass_only" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="connect_single_pass_only" parameter_real_selected="0" parameter_string_value="" parameter_type="4" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_connect_fill_wet_move" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="connect_fill_wet_move" parameter_real_selected="0" parameter_string_value="" parameter_type="4" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_rapid_z_lift_enabled" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="rapid_z_lift_enabled" parameter_real_selected="0" parameter_string_value="" parameter_type="4" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_rapid_z_lift_distance" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="rapid_z_lift_distance" parameter_real_selected="0.20000000000000001" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_rapid_lift_diagonal" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="rapid_lift_diagonal" parameter_real_selected="0" parameter_string_value="" parameter_type="4" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_rapid_lift_between_layers" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="rapid_lift_between_layers" parameter_real_selected="0" parameter_string_value="" parameter_type="4" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_nozzle_wipe_enabled" parameter_int_selected="0" parameter_option_bool="true" parameter_option_selected="" parameter_orig_id="nozzle_wipe_enabled" parameter_real_selected="0" parameter_string_value="" parameter_type="4" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_nozzle_wipe_distance" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="nozzle_wipe_distance" parameter_real_selected="0.80000000000000004" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+    </parameter_group>
+    <parameter_group exclusive_subgroups="false" group_enable_flag="true" group_id="prm_mesh_options" group_optional_flag="false" group_platform_flag="false" orig_group_id="prm_mesh_options">
+      <parameter parameter_id="prm_mesh_refinement_option" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="High" parameter_orig_id="" parameter_real_selected="0" parameter_string_value="" parameter_type="3" parameter_unit_multiplier="1">
+        <options parameter_option="High"/>
+        <options parameter_option="Medium"/>
+        <options parameter_option="Low"/>
+        <options parameter_option="Custom"/>
+      </parameter>
+      <parameter parameter_id="prm_mesh_tolerance" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="" parameter_real_selected="0.0050000000000000001" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_mesh_normal_tolerance" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="" parameter_real_selected="10" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_mesh_max_edge_length" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="" parameter_real_selected="50" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_mesh_grid_aspect_ratio" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="" parameter_real_selected="20" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="1"/>
+    </parameter_group>
+  </additional_parameters>
+
+  <additional_parameters strategy="Strong">
+    <parameter_group exclusive_subgroups="false" group_enable_flag="true" group_id="prm_body_options" group_optional_flag="false" group_platform_flag="false" orig_group_id="prm_body_options">
+      <parameter parameter_id="prm_body_preset_name" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="" parameter_real_selected="0" parameter_string_value="Strong" parameter_type="5" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_body_preset_description" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="" parameter_real_selected="0" parameter_string_value="This 'Strong' body preset is for bodies that need more strength when printed.&#xA;&#xA;The following settings have been changed:&#xA;Number of Perimeters:&#xA;&#x9;Normal = 2, Strong = 5&#xA;Number of Top Layers:&#xA;&#x9;Normal = 4, Strong = 6&#xA;Number of Bottom Layers:&#xA;&#x9; Normal = 3, Strong = 6&#xA;Infill Density (%):&#xA;&#x9;Normal =25, Strong = 50&#xA;" parameter_type="7" parameter_unit_multiplier="1"/>
+    </parameter_group>
+    <parameter_group exclusive_subgroups="false" group_enable_flag="true" group_id="prm_grp_extrusion" group_optional_flag="false" group_platform_flag="false" orig_group_id="grp_Extrusion">
+      <parameter parameter_id="prm_extruder_id" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="Extruder 1" parameter_orig_id="extruder_id" parameter_real_selected="0" parameter_string_value="" parameter_type="3" parameter_unit_multiplier="1">
+        <options parameter_option="Extruder 1"/>
+      </parameter>
+      <parameter parameter_id="prm_extrusion_width_first_layer" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="extrusion_width_first_layer" parameter_real_selected="0.40000000000000002" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_extrusion_width" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="extrusion_width" parameter_real_selected="0.40000000000000002" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_extrusion_width_perimeters" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="extrusion_width_perimeters" parameter_real_selected="0.40000000000000002" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_extrusion_width_infill" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="extrusion_width_infill" parameter_real_selected="0.40000000000000002" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_extrusion_width_bridge" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="extrusion_width_bridge" parameter_real_selected="0.40000000000000002" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_extrusion_width_tp_support" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="extrusion_width_tp_support" parameter_real_selected="0.40000000000000002" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+    </parameter_group>
+    <parameter_group exclusive_subgroups="false" group_enable_flag="true" group_id="prm_grp_extrusion_extruder_1" group_optional_flag="false" group_platform_flag="false" orig_group_id="grp_Extrusion\Extruder 1">
+      <parameter parameter_id="prm_extrusion_flows_0" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="extrusion_flows_0" parameter_real_selected="100" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_extruder_temps_0" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="extruder_temps_0" parameter_real_selected="215" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_standby_temps_0" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="standby_temps_0" parameter_real_selected="100" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_retraction_lengths_0" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="retraction_lengths_0" parameter_real_selected="7" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_retraction_speeds_0" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="retraction_speeds_0" parameter_real_selected="25" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_tool_change_retract_lengths_0" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="tool_change_retract_lengths_0" parameter_real_selected="19" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_tool_change_retract_speeds_0" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="tool_change_retract_speeds_0" parameter_real_selected="7.5" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_tool_change_extra_restart_lengths_0" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="tool_change_extra_restart_lengths_0" parameter_real_selected="-0.10000000000000001" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+    </parameter_group>
+    <parameter_group exclusive_subgroups="false" group_enable_flag="true" group_id="prm_grp_shell" group_optional_flag="false" group_platform_flag="false" orig_group_id="grp_Shell">
+      <parameter parameter_id="prm_num_perimeters" parameter_int_selected="5" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="num_perimeters" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_num_top_shells" parameter_int_selected="6" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="num_top_shells" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_num_bottom_shells" parameter_int_selected="6" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="num_bottom_shells" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_randomize_starting_point" parameter_int_selected="0" parameter_option_bool="true" parameter_option_selected="" parameter_orig_id="randomize_starting_point" parameter_real_selected="0" parameter_string_value="" parameter_type="4" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_solid_infill_angle" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="solid_infill_angle" parameter_real_selected="45" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="57.295827908797776"/>
+      <parameter parameter_id="prm_perimeters_inner_first" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="perimeters_inner_first" parameter_real_selected="0" parameter_string_value="" parameter_type="4" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_perimeter_overlap_ratio" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="perimeter_overlap_ratio" parameter_real_selected="0.10000000000000001" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_bridging_enabled" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="bridging_enabled" parameter_real_selected="0" parameter_string_value="" parameter_type="4" parameter_unit_multiplier="1"/>
+    </parameter_group>
+    <parameter_group exclusive_subgroups="false" group_enable_flag="true" group_id="prm_grp_infill" group_optional_flag="false" group_platform_flag="false" orig_group_id="grp_Infill">
+      <parameter parameter_id="prm_sparse_infill_density" parameter_int_selected="50" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="sparse_infill_density" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_sparse_infill_pattern" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="Gyroid" parameter_orig_id="sparse_infill_pattern" parameter_real_selected="0" parameter_string_value="" parameter_type="3" parameter_unit_multiplier="1">
+        <options parameter_option="Gyroid"/>
+        <options parameter_option="Rectilinear"/>
+        <options parameter_option="Star"/>
+        <options parameter_option="Honeycomb"/>
+        <options parameter_option="Squares"/>
+        <options parameter_option="Spherical"/>
+        <options parameter_option="RhombicDodecahedron"/>
+        <options parameter_option="ElongatedDodecahedron"/>
+        <options parameter_option="TruncatedOctahedron"/>
+        <options parameter_option="Flower"/>
+        <options parameter_option="Rhombus3D"/>
+        <options parameter_option="Rhombille"/>
+        <options parameter_option="Auxetic"/>
+        <options parameter_option="None"/>
+      </parameter>
+      <parameter parameter_id="prm_sparse_infill_angle" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="sparse_infill_angle" parameter_real_selected="45" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="57.295827908797776"/>
+      <parameter parameter_id="prm_min_fill_length" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="min_fill_length" parameter_real_selected="0.10000000000000001" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_perimeter_infill_overlap_ratio" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="perimeter_infill_overlap_ratio" parameter_real_selected="0.20000000000000001" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="1"/>
+    </parameter_group>
+    <parameter_group exclusive_subgroups="true" group_enable_flag="true" group_id="prm_grp_print_bed_adhesion" group_optional_flag="true" group_platform_flag="false" orig_group_id="grp_Print Bed Adhesion">
+      <parameter parameter_id="prm_disable_fan_first_layers" parameter_int_selected="1" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="disable_fan_first_layers" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_grp_print_bed_adhesion_mutex_subgroups" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="Skirt" parameter_orig_id="" parameter_real_selected="0" parameter_string_value="" parameter_type="3" parameter_unit_multiplier="1">
+        <options parameter_option="Skirt"/>
+        <options parameter_option="Brim"/>
+        <options parameter_option="Raft"/>
+      </parameter>
+    </parameter_group>
+    <parameter_group exclusive_subgroups="false" group_enable_flag="true" group_id="prm_grp_print_bed_adhesion_skirt" group_optional_flag="false" group_platform_flag="false" orig_group_id="grp_Print Bed Adhesion\Skirt">
+      <parameter parameter_id="prm_skirt_layers" parameter_int_selected="1" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="skirt_layers" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_skirt_loops" parameter_int_selected="2" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="skirt_loops" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_skirt_distance" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="skirt_distance" parameter_real_selected="5" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+    </parameter_group>
+    <parameter_group exclusive_subgroups="false" group_enable_flag="false" group_id="prm_grp_print_bed_adhesion_brim" group_optional_flag="false" group_platform_flag="false" orig_group_id="grp_Print Bed Adhesion\Brim">
+      <parameter parameter_id="prm_brim_layers" parameter_int_selected="1" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="brim_layers" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_brim_loops" parameter_int_selected="2" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="brim_loops" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+    </parameter_group>
+    <parameter_group exclusive_subgroups="false" group_enable_flag="false" group_id="prm_grp_print_bed_adhesion_raft" group_optional_flag="false" group_platform_flag="false" orig_group_id="grp_Print Bed Adhesion\Raft">
+      <parameter parameter_id="prm_raft_extruder_id" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="Extruder 1" parameter_orig_id="raft_extruder_id" parameter_real_selected="0" parameter_string_value="" parameter_type="3" parameter_unit_multiplier="1">
+        <options parameter_option="Extruder 1"/>
+      </parameter>
+      <parameter parameter_id="prm_raft_base_num_layers" parameter_int_selected="1" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="raft_base_num_layers" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_raft_interface_num_layers" parameter_int_selected="1" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="raft_interface_num_layers" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_raft_surface_num_layers" parameter_int_selected="1" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="raft_surface_num_layers" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_raft_base_density" parameter_int_selected="40" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="raft_base_density" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_raft_interface_density" parameter_int_selected="60" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="raft_interface_density" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_raft_surface_density" parameter_int_selected="100" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="raft_surface_density" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_raft_outer_border" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="raft_outer_border" parameter_real_selected="5" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_raft_zbump" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="raft_zbump" parameter_real_selected="0.20000000000000001" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+    </parameter_group>
+    <parameter_group exclusive_subgroups="false" group_enable_flag="true" group_id="prm_grp_support" group_optional_flag="false" group_platform_flag="false" orig_group_id="grp_Support">
+      <parameter parameter_id="prm_tp_support_extruder_id" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="Extruder 1" parameter_orig_id="tp_support_extruder_id" parameter_real_selected="0" parameter_string_value="" parameter_type="3" parameter_unit_multiplier="1">
+        <options parameter_option="Extruder 1"/>
+      </parameter>
+    </parameter_group>
+    <parameter_group exclusive_subgroups="false" group_enable_flag="true" group_id="prm_grp_support_volume" group_optional_flag="false" group_platform_flag="false" orig_group_id="grp_Support\Volume">
+      <parameter parameter_id="prm_ms_num_perimeters" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_num_perimeters" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_ms_num_top_shells" parameter_int_selected="1" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_num_top_shells" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_ms_num_bottom_shells" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_num_bottom_shells" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_ms_sparse_infill_density" parameter_int_selected="15" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_sparse_infill_density" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_ms_sparse_infill_angle" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_sparse_infill_angle" parameter_real_selected="30" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="57.295827908797776"/>
+      <parameter parameter_id="prm_ms_solid_infill_density" parameter_int_selected="60" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_solid_infill_density" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_ms_solid_infill_angle" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_solid_infill_angle" parameter_real_selected="120" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="57.295827908797776"/>
+      <parameter parameter_id="prm_ms_solid_infill_alternate_angles_enabled" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_solid_infill_alternate_angles_enabled" parameter_real_selected="0" parameter_string_value="" parameter_type="4" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_tp_support_object_margin" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="tp_support_object_margin" parameter_real_selected="0.25" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+    </parameter_group>
+    <parameter_group exclusive_subgroups="false" group_enable_flag="true" group_id="prm_grp_support_bar" group_optional_flag="false" group_platform_flag="false" orig_group_id="grp_Support\Bar">
+      <parameter parameter_id="prm_ms_bar_num_perimeters" parameter_int_selected="1" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_bar_num_perimeters" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_ms_bar_num_top_shells" parameter_int_selected="3" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_bar_num_top_shells" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_ms_bar_num_bottom_shells" parameter_int_selected="3" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_bar_num_bottom_shells" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_ms_bar_sparse_infill_density" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_bar_sparse_infill_density" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_ms_bar_sparse_infill_angle" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_bar_sparse_infill_angle" parameter_real_selected="0" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="57.295827908797776"/>
+      <parameter parameter_id="prm_ms_bar_solid_infill_density" parameter_int_selected="100" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_bar_solid_infill_density" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_ms_bar_solid_infill_angle" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_bar_solid_infill_angle" parameter_real_selected="0" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="57.295827908797776"/>
+      <parameter parameter_id="prm_ms_bar_solid_infill_alternate_angles_enabled" parameter_int_selected="0" parameter_option_bool="true" parameter_option_selected="" parameter_orig_id="ms_bar_solid_infill_alternate_angles_enabled" parameter_real_selected="0" parameter_string_value="" parameter_type="4" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_tp_bar_support_object_margin" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="tp_bar_support_object_margin" parameter_real_selected="0.25" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+    </parameter_group>
+    <parameter_group exclusive_subgroups="false" group_enable_flag="true" group_id="prm_grp_support_setter" group_optional_flag="false" group_platform_flag="false" orig_group_id="grp_Support\Setter">
+      <parameter parameter_id="prm_ms_setter_num_perimeters" parameter_int_selected="1" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_setter_num_perimeters" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_ms_setter_num_top_shells" parameter_int_selected="1" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_setter_num_top_shells" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_ms_setter_num_bottom_shells" parameter_int_selected="1" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_setter_num_bottom_shells" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_ms_setter_sparse_infill_density" parameter_int_selected="100" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_setter_sparse_infill_density" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_ms_setter_sparse_infill_angle" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_setter_sparse_infill_angle" parameter_real_selected="30" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="57.295827908797776"/>
+      <parameter parameter_id="prm_ms_setter_solid_infill_density" parameter_int_selected="100" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_setter_solid_infill_density" parameter_real_selected="0" parameter_string_value="" parameter_type="2" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_ms_setter_solid_infill_angle" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="ms_setter_solid_infill_angle" parameter_real_selected="120" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="57.295827908797776"/>
+      <parameter parameter_id="prm_ms_setter_solid_infill_alternate_angles_enabled" parameter_int_selected="0" parameter_option_bool="true" parameter_option_selected="" parameter_orig_id="ms_setter_solid_infill_alternate_angles_enabled" parameter_real_selected="0" parameter_string_value="" parameter_type="4" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_tp_setter_support_object_margin" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="tp_setter_support_object_margin" parameter_real_selected="0.25" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+    </parameter_group>
+    <parameter_group exclusive_subgroups="false" group_enable_flag="true" group_id="prm_grp_speed" group_optional_flag="false" group_platform_flag="false" orig_group_id="grp_Speed">
+      <parameter parameter_id="prm_speed_first_layer_multiplier" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="speed_first_layer_multiplier" parameter_real_selected="0.5" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_speed_perimeters_internal" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="speed_perimeters_internal" parameter_real_selected="40" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_speed_perimeters_external" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="speed_perimeters_external" parameter_real_selected="30" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_speed_sparse_infill" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="speed_sparse_infill" parameter_real_selected="60" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_speed_solid_infill" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="speed_solid_infill" parameter_real_selected="30" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_speed_support_material" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="speed_support_material" parameter_real_selected="60" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_speed_bridge" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="speed_bridge" parameter_real_selected="40" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_raft_speed" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="raft_speed" parameter_real_selected="25" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_min_layer_time" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="min_layer_time" parameter_real_selected="10" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="1"/>
+    </parameter_group>
+    <parameter_group exclusive_subgroups="false" group_enable_flag="true" group_id="prm_grp_speed_acceleration" group_optional_flag="false" group_platform_flag="false" orig_group_id="grp_Speed\Acceleration">
+      <parameter parameter_id="prm_enable_acceleration" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="enable_acceleration" parameter_real_selected="0" parameter_string_value="" parameter_type="4" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_acceleration_travel" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="acceleration_travel" parameter_real_selected="3000" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_acceleration_print" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="acceleration_print" parameter_real_selected="3000" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+    </parameter_group>
+    <parameter_group exclusive_subgroups="false" group_enable_flag="true" group_id="prm_grp_speed_jerk" group_optional_flag="false" group_platform_flag="false" orig_group_id="grp_Speed\Jerk">
+      <parameter parameter_id="prm_enable_jerk" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="enable_jerk" parameter_real_selected="0" parameter_string_value="" parameter_type="4" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_jerk_print" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="jerk_print" parameter_real_selected="7" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+    </parameter_group>
+    <parameter_group exclusive_subgroups="false" group_enable_flag="true" group_id="prm_grp_travel" group_optional_flag="false" group_platform_flag="false" orig_group_id="grp_Travel">
+      <parameter parameter_id="prm_connect_single_pass_only" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="connect_single_pass_only" parameter_real_selected="0" parameter_string_value="" parameter_type="4" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_connect_fill_wet_move" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="connect_fill_wet_move" parameter_real_selected="0" parameter_string_value="" parameter_type="4" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_rapid_z_lift_enabled" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="rapid_z_lift_enabled" parameter_real_selected="0" parameter_string_value="" parameter_type="4" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_rapid_z_lift_distance" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="rapid_z_lift_distance" parameter_real_selected="0.20000000000000001" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_rapid_lift_diagonal" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="rapid_lift_diagonal" parameter_real_selected="0" parameter_string_value="" parameter_type="4" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_rapid_lift_between_layers" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="rapid_lift_between_layers" parameter_real_selected="0" parameter_string_value="" parameter_type="4" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_nozzle_wipe_enabled" parameter_int_selected="0" parameter_option_bool="true" parameter_option_selected="" parameter_orig_id="nozzle_wipe_enabled" parameter_real_selected="0" parameter_string_value="" parameter_type="4" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_nozzle_wipe_distance" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="nozzle_wipe_distance" parameter_real_selected="0.80000000000000004" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+    </parameter_group>
+    <parameter_group exclusive_subgroups="false" group_enable_flag="true" group_id="prm_mesh_options" group_optional_flag="false" group_platform_flag="false" orig_group_id="prm_mesh_options">
+      <parameter parameter_id="prm_mesh_refinement_option" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="High" parameter_orig_id="" parameter_real_selected="0" parameter_string_value="" parameter_type="3" parameter_unit_multiplier="1">
+        <options parameter_option="High"/>
+        <options parameter_option="Medium"/>
+        <options parameter_option="Low"/>
+        <options parameter_option="Custom"/>
+      </parameter>
+      <parameter parameter_id="prm_mesh_tolerance" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="" parameter_real_selected="0.0050000000000000001" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_mesh_normal_tolerance" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="" parameter_real_selected="10" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_mesh_max_edge_length" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="" parameter_real_selected="50" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_mesh_grid_aspect_ratio" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="" parameter_real_selected="20" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="1"/>
+    </parameter_group>
+  </additional_parameters>
+
+  <platform_parameters strategy="General">
+    <parameter_group exclusive_subgroups="false" group_enable_flag="true" group_id="prm_grp_platform_global_settings" group_optional_flag="false" group_platform_flag="true" orig_group_id="grp_Platform\Global Settings">
+      <parameter parameter_id="prm_filament_diameters_0" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="filament_diameters_0" parameter_real_selected="2.8500000000000001" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_bed_temps_0" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="bed_temps_0" parameter_real_selected="60" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_layer_height" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="layer_height" parameter_real_selected="0.14999999999999999" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_layer_height_first" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="layer_height_first" parameter_real_selected="0.20000000000000001" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_speed_travel" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="speed_travel" parameter_real_selected="120" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_spiral_vase_enabled" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="spiral_vase_enabled" parameter_real_selected="0" parameter_string_value="" parameter_type="4" parameter_unit_multiplier="1"/>
+    </parameter_group>
+    <parameter_group exclusive_subgroups="false" group_enable_flag="true" group_id="prm_grp_platform_nozzle_priming_settings" group_optional_flag="false" group_platform_flag="true" orig_group_id="grp_Platform\Nozzle Priming Settings">
+      <parameter parameter_id="prm_prime_enabled" parameter_int_selected="0" parameter_option_bool="true" parameter_option_selected="" parameter_orig_id="prime_enabled" parameter_real_selected="0" parameter_string_value="" parameter_type="4" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_extrusion_width_prime" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="extrusion_width_prime" parameter_real_selected="1" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_prime_edge_clearance" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="prime_edge_clearance" parameter_real_selected="20" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+      <parameter parameter_id="prm_prime_max_length" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="prime_max_length" parameter_real_selected="100" parameter_string_value="" parameter_type="1" parameter_unit_multiplier="10"/>
+    </parameter_group>
+    <parameter_group exclusive_subgroups="false" group_enable_flag="true" group_id="prm_grp_platform_additional_g_code_settings" group_optional_flag="false" group_platform_flag="true" orig_group_id="grp_Platform\Additional G-Code Settings">
+      <parameter parameter_id="prm_start_at_home_position" parameter_int_selected="0" parameter_option_bool="true" parameter_option_selected="" parameter_orig_id="start_at_home_position" parameter_real_selected="0" parameter_string_value="" parameter_type="4" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_end_at_park_position" parameter_int_selected="0" parameter_option_bool="true" parameter_option_selected="" parameter_orig_id="end_at_park_position" parameter_real_selected="0" parameter_string_value="" parameter_type="4" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_enable_arc_fit" parameter_int_selected="0" parameter_option_bool="false" parameter_option_selected="" parameter_orig_id="enable_arc_fit" parameter_real_selected="0" parameter_string_value="" parameter_type="4" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_verbose_gcode" parameter_int_selected="0" parameter_option_bool="true" parameter_option_selected="" parameter_orig_id="verbose_gcode" parameter_real_selected="0" parameter_string_value="" parameter_type="4" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_use_standby_temp" parameter_int_selected="0" parameter_option_bool="true" parameter_option_selected="" parameter_orig_id="use_standby_temp" parameter_real_selected="0" parameter_string_value="" parameter_type="4" parameter_unit_multiplier="1"/>
+      <parameter parameter_id="prm_always_retract_between_layers" parameter_int_selected="0" parameter_option_bool="true" parameter_option_selected="" parameter_orig_id="always_retract_between_layers" parameter_real_selected="0" parameter_string_value="" parameter_type="4" parameter_unit_multiplier="1"/>
+    </parameter_group>
+  </platform_parameters>
+
+</printsetting>

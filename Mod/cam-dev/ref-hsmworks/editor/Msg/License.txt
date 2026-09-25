@@ -1,0 +1,289 @@
+    ---------------------------------------------------------------
+          End-User License Agreement
+    ---------------------------------------------------------------
+
+          TERMS OF USE FOR SOFTWARE
+
+    Date: 2021-08-02
+    Copyright 1991-2021 CIMCO A/S
+    Software: Autodesk HSM Edit 9.00.03
+
+    Notice:
+
+    CIMCO A/S reserves the right to make improvements
+    to the Software at any time and without notice.
+
+    Software License
+
+    You have the right to use the number of licenses of the
+    enclosed software which you have bought from CIMCO A/S.
+    You may not distribute copies of the software or related
+    documentation to any persons or companies. You may not
+    modify or translate the software or related documentation
+    without the prior written consent of CIMCO A/S.
+
+    Disclaimer of all Warranties and Liability
+
+    CIMCO A/S makes no warranties, either express or implied,
+    with respect to the software, its quality, performance,
+    merchantability, or fitness for any particular purpose.
+    The entire risk as to its quality and performance is with
+    the buyer. Should the software prove defective following
+    its purchase, the buyer (and not CIMCO A/S, its distributor,
+    or its retailer) assumes the entire cost of all necessary
+    servicing, repair, of correction and any incidental or
+    consequential damages. In no event will CIMCO A/S be liable
+    for direct, indirect, or consequential damages resulting from
+    any defect in the software, even if CIMCO A/S has been advised
+    of the possibility of such damages. Some jurisdictions do not
+    allow the exclusion or limitation of implied warranties or
+    liability for incidental or consequential damages, so the
+    above limitation or exclusion may not apply to you.
+
+    CIMCO A/S uses open source projects and other open source software. 
+    For individual project licenses see 'License Libraries.txt'
+
+    ---------------------------------------------------------------
+
+          BENUTZUNGSBEDINGUNGEN DER SOFTWARE
+
+    Datum: 2021-08-02
+    Copyright 1991-2021 CIMCO A/S
+    Software: Autodesk HSM Edit 9.00.03
+
+    Hinweis:
+
+    CIMCO A/S behält sich das Recht vor jederzeit und ohne
+    vorherige Ankündigung Verbesserungen an Software vor zu nehmen.
+
+    Software-Lizenz
+
+    Sie haben das Recht die Anzahl der durch Sie von CIMCO A/S
+    erworbenen Lizenzen des beiliegenden Programms zu nutzen.
+    Sie dürfen keine Kopien des Programms oder darauf bezogenes
+    Dokumentationsmaterial an Personen oder Firmen weiter geben.
+    Sie dürfen das Programm oder darauf bezogenenes
+    Dokumentationsmaterial weder verändern noch übersetzen
+    ohne vorherige schriftliche Einwilligung durch CIMCO A/S.
+
+    Vorbehalt gegen Haftung und Schadensersatzansprüche
+
+    CIMCO A/S gibt keine Garantie, weder ausdrücklich
+    noch impliziert, in Bezug auf die Software, ihre Qualität,
+    Anwendbarkeit, Marktfähigkeit oder Geeignetheit für
+    irgendeinen besonderen Zweck. Das gesamte Risiko in Bezug
+    auf die Qualität und die Anwendbarkeit obliegt dem Käufer.
+    Sollte sich die Software nach dem Kauf als fehlerhaft
+    erweisen, übernimmt der Käufer (und nicht CIMCO A/Soder
+    evt. Zwischen- und Einzelhändler) die gesamten Kosten
+    für erforderliche Wartung, Reparatur oder Berichtigung und
+    alle entstandenen Schäden und Folgeschäden. Unter keinen
+    Umständen ist CIMCO A/S haftbar für direkte und
+    indirekte Schäden oder Folgeschäden, die aus einem Fehler
+    in der Software herrühren, selbst wenn CIMCO A/S
+    auf die Möglichkeit solcher Schäden hingewiesen worden
+    sein sollte. Die Rechtsprechung mancher Länder erlaubt
+    nicht den Ausschluss oder die Begrenzung implizierter
+    Garantien oder der Haftung für Unfälle oder Folgeschäden.
+    Sofern dies für Sie der Fall ist, treffen die obige
+    Einschränkung und der Ausschluss für Sie nicht zu.
+
+    CIMCO A/S nutzt Open-Source-Projekte und andere Open-Source-Software.
+    Für einzelne Projekt Lizenzen finden Sie unter 'License Libraries.txt'
+
+    ---------------------------------------------------------------
+
+          CONDITIONS D'UTILISATION DU LOGICIEL
+
+    Date: 2021-08-02
+    Copyright 1991-2021 CIMCO A/S
+    Logiciel: Autodesk HSM Edit 9.00.03
+
+    Remarque
+
+    CIMCO A/S se réserve le droit d'apporter des améliorations
+    au logiciel, ce à tout moment et sans informations préalables.
+
+    Licence du logiciel
+
+    Vous avez le droit d'utiliser toutes les licences du programme
+    que vous avez acheté auprès de CIMCO A/S. Aucune copie du
+    programme, encore moins sa documentation ne doit être donnée
+    à une personne ou compagnie quelconque. Toute modification ou
+    traduction du programme ou de sa documentation en langue
+    étrangère n'est possible qu'avec l'accord préalable écrit de
+    CIMCO A/S.
+
+    Exclusion de garantie et de responsabilité
+
+    CIMCO A/S ne donne aucune garantie - explicite ou implicite -
+    sur le logiciel, sa qualité, sa performance, sa valeur
+    marchande ou sa convenance. Tout risque quant à sa qualité
+    et sa performance n'engage que la responsabilité de l'acheteur.
+    Si après achat, le logiciel s'avère défectueux, alors il
+    revient à l'acheteur(et non à CIMCO A/S, au distributeur ou au
+    détaillant) d'assumer tous les frais d'entretien, de réparation
+    et de correction; de même que les frais de tout dommage direct
+    ou indirect. En aucun cas, la responsabilité de CIMCO A/S ne
+    saurait être engagée pour des dommages directs ou indirects qui
+    pourraient résulter d'un défaut dans le logiciel, même si
+    CIMCO A/S a été informé de la possibilité d'avoir de tels
+    dommages. Certaines juridictions n'autorisent pas l'exclusion
+    ou la limitation de garantie implicite ou de responsabilité
+    concernant les dommages directs ou indirects. Ceci revient à
+    dire que les limitations ou l'exclusion ci-dessus peuvent ne
+    pas s'appliquer à vous.
+
+    La société Cimco utilise des projets open source mais aussi 
+    d'autres logiciels également open source.
+    Pour les licences sur des projets individuels, voir «Licence Libraries.txt «.
+
+    ---------------------------------------------------------------
+
+          OHJELMISTON KÄYTTÖEHDOT
+
+    Päivämäärä: 2021-08-02
+    Copyright 1991-2021 CIMCO A/S
+    Ohjelmisto: Autodesk HSM Edit 9.00.03
+
+    Huom.:
+
+    CIMCO A/S pidättää oikeuden tehdä parannuksia
+    ohjelmistoon ilman erillistä ilmoitusta.
+
+    Ohjelmistolisenssi:
+
+    Ohjelmasta oikeus käyttää niin monta tämän ohjelman
+    lisenssiä kuin niitä on hankittu CIMCO A/S.
+    Ohjelmasta tehtyjä kopioita tai siihen liittyviä
+    dokumentteja ei myöskään saa jakaa.
+    Ohjelman tai sen dokumenttien muokkaus ilman
+    CIMCO A/S kirjallista lupaa on kielletty.
+
+    Vastuuvapautuslauseke kaikista takuista ja vastuista:
+
+    CIMCO A/S ei anna mitään takuuta ohjelmiston
+    virheettömyydestä, suorituskyvystä, toiminnasta tai
+    ohjelmiston sopivuudesta mihinkään erityiseen
+    tarkoitukseen. Ohjelman käyttäjälle jää
+    kokonaisuudessaan riski sen toiminnasta ja
+    soveltuvuudesta. Vaikka ohjelmisto
+    osoittautuisi vialliseksi sen hankkimisen jälkeen on
+    ostaja (ei CIMCO A/S tai sen edustaja) vastuussa
+    kaikista mahdollisesti aiheutuneiden suorien, tai
+    epäsuorien vahinkojen kustannuksista. CIMCO A/S
+    ei ole vastuussa suorista tai epäsuorista vahingoista ja
+    kustannuksista, vaikka CIMCO A/S olisi
+    ilmoitettu tämänkaltaisen vahingon mahdollisuudesta.
+
+    CIMCO A/S käyttää avoimen lähdekoodin projekteja ja ohjelmistoja.
+    Yksittäisen projektin lisensseistä lisätietoja
+    'License Libraries.txt' tiedstossa
+
+    ---------------------------------------------------------------
+
+           TERMOS DE USO DO SOFTWARE
+
+    Data: 2021-08-02
+    Copyright 1991-2021 CIMCO A/S
+    Software: Autodesk HSM Edit 9.00.03
+
+    Declaração
+
+    A CIMCO A/S reserva-se o direito de realizar
+    melhorias e modificações no software a qualquer momento e
+    sem nenhum tipo de aviso e/ou notificação ao cliente.
+
+    Licença de "Software"
+
+    Você têm o direito de usar apenas o número de licenças
+    do(s) programa(s) em execução, a(s) qual(is) você comprou
+    da CIMCO A/S. Você não pode distribuir cópias do
+    programa, licenças ou quaisquer documentações a ele
+    relacionadas para ninguém, nem para nenhuma empresa ou
+    usuário que não o(s) definido(s) na(s) sua(s) chave(s)
+    de licença(s) fornecida(s) pela CIMCO A/S.
+    Você não pode modificar ou realizar qualquer outro tipo de
+    alteração do comportamento original do programa através de
+    engenharia reversa ou qualquer outro método de circunvenção
+    dos meios e proteções criados pela CIMCO A/S para
+    proteger seus interesses e sua propriedade intelectual.
+    Você não pode traduzir ou modificar o programa nem qualquer
+    documentos a ele relacionados sem o consentimento escrito
+    da CIMCO A/S.
+
+    Renúncia a garantias e responsabilidades
+
+    A CIMCO A/S não fornece nenhuma garantia, seja
+    de modo expresso ou implícito, quanto ao software, sua
+    qualidade, desempenho, comerciabilidade e adequação para
+    nenhum propósito em particular. Todo o risco quanto à sua
+    qualidade e desempenho pertence ao comprador. Caso o
+    software se mostre defeituoso após sua compra, o comprador
+    (e não a CIMCO A/S, seus distribuidores ou revendas)
+    assume todos os custos relativos a serviços necessários,
+    reparação, e demais despesas provenientes de qualquer dano
+    acidental ou consecutivo. Em nenhuma circustância a
+    CIMCO A/S será responsável por danos diretos, indiretos
+    ou consecutivos resultantes de qualquer defeito ou falha no
+    "Software", mesmo se a CIMCO A/S foi informada da
+    possibilidade de tais falhas ocorrerem. Alguns tribunais e
+    jurisdições não permitem a exclusão ou limitação das garantias
+    ou responsabilidades por danos acidentais ou consecutivos,
+    de forma que as limitações ou exclusões acima citadas podem
+    não se aplicar a você.
+
+    CIMCO A/S usa projetos de código aberto e outros softwares de 
+    código aberto. Veja 'License Libraries.txt' para obter mais 
+    informação sobre as licenças de cada projeto.
+
+    ---------------------------------------------------------------
+
+            TÉRMINOS DE USO DEL SOFTWARE
+
+    Fecha: 2021-08-02
+    Copyright 1991-2021 CIMCO A/S
+    Producto: Autodesk HSM Edit 9.00.03
+
+    Aviso
+
+    CIMCO A/S se reserva el derecho de realizar
+    modificaciones y mejoras en el software en cualquier
+    momento y sin ningún tipo de aviso previo.
+
+    Licencia de software
+
+    Usted tiene el derecho de usar el número de licencias del
+    programa en cuestión que haya comprado a CIMCO A/S.
+    Usted no puede distribuir copias del programa o de los
+    documentos relacionados a ninguna persona o empresa.
+    Usted no puede modificar o traducir el programa ni la
+    documentación relacionada sin el consentimiento previo
+    por escrito de CIMCO A/S.
+
+    Renuncia a garantías y responsabilidades
+
+    CIMCO A/S no ofrece ninguna garantía, ya sea de forma
+    expresa o implícita, con respecto al software, su calidad,
+    rendimiento, comercialización o idoneidad para ningún
+    propósito en particular. El comprador asume todo el riesgo en
+    cuanto a la calidad y rendimiento del software. En el caso de
+    que el software resultase defectuoso después de su compra, el
+    comprador (y no CIMCO A/S, sus distribuidores o minoristas)
+    asume todos los costes derivados de los servicios y
+    reparaciones necesarios de los daños y perjuicios ocasionados.
+    En ninguna circunstancia CIMCO A/S será responsable de los
+    daños directos, indirectos o consecuentes como resultado de
+    cualquier defecto en el software, incluso si CIMCO A/S había
+    sido avisado de la posibilidad de dichos daños.
+    Algunos tribunales y jurisdicciones no permiten la exclusión
+    o limitación de las garantías o responsabilidades por daños
+    accidentales o consecuentes, de modo que las limitaciones o
+    exclusiones citadas anteriormente pueden no ser de aplicación
+    para usted.
+    
+    CIMCO A/S utiliza proyectos de código abierto y otros programas 
+    de código abierto. Consulte 'License Libraries.txt' para 
+    más información sobre las licencias de cada proyecto.
+    
+    ---------------------------------------------------------------

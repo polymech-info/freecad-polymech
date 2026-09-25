@@ -1,0 +1,40 @@
+0  BEGIN PGM m12s-pre-right MM 
+1  BLK FORM 0.1 Z  X-1500  Y-40  Z-40
+2  BLK FORM 0.2  X+0  Y+0  Z+0
+3  ;-------------------------------------
+4  ;Tools
+5  ;  #4 D=6.7 TAPER=90deg - ZMIN=-25 - ZMAX=+45 - spot drill
+6  ;-------------------------------------
+7  ;
+8  * - Drill1 (5)
+9  M5
+10 TOOL CALL 4 Z S1746
+11 L M140 MB MAX
+12 M3
+13 L  X-60  Y-20 R0 FMAX
+14 L  Z+45 R0 FMAX
+15 M8
+16 CYCL DEF 32.0 TOLERANCE
+17 CYCL DEF 32.1
+18 CYCL DEF 203 UNIVERSAL DRILLING ~
+    Q200=+5    ;SET-UP CLEARANCE ~
+    Q201=-25   ;DEPTH ~
+    Q206=+2131 ;FEED RATE FOR PLNGNG ~
+    Q202=+3    ;PLUNGING DEPTH ~
+    Q210=+0    ;DWELL TIME AT TOP ~
+    Q203=+0    ;SURFACE COORDINATE ~
+    Q204=+35   ;2ND SET-UP CLEARANCE ~
+    Q212=+0    ;DECREMENT ~
+    Q213=+1    ;NR OF BREAKS ~
+    Q205=+3    ;MIN. PLUNGING DEPTH ~
+    Q211=+0    ;DWELL TIME AT DEPTH ~
+    Q208= MAX ;RETRACTION FEED RATE ~
+    Q256=+3    ;DIST FOR CHIP BRKNG
+19 L FMAX M99
+20 L  X-420 FMAX M99
+21 L  Z+45 FMAX
+22 M9
+23 M5
+24 L M140 MB MAX
+25 M30
+26 END PGM m12s-pre-right MM 

@@ -1,0 +1,18 @@
+{
+    "description": "Copper Alloys",
+    "category": "Metal",
+    "uuid": "c5325500-4535-4a25-82ae-614066785344",
+    "designators": [
+        "ISO N3",
+        "Brass"
+    ],
+    "physicalMaterials": [
+        "PrismMaterial-005",
+        "PrismMaterial-090",
+        "PrismMaterial-089",
+        "PrismMaterial-044",
+        "PrismMaterial-097",
+        "PrismMaterial-010"
+    ],
+    "version": 1.0
+}

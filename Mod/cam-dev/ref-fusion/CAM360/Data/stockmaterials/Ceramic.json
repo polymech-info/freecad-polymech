@@ -1,0 +1,14 @@
+{
+    "description": "Ceramic",
+    "category": "Ceramic",
+    "uuid": "3203b455-7bb3-423b-827c-0219afaba152",
+    "designators": [],
+    "physicalMaterials": [
+        "PrismMaterial-407",
+        "PrismMaterial-408",
+        "PrismMaterial-409",
+        "PrismMaterial-214",
+        "PrismMaterial-213"
+    ],
+    "version": 1.0
+}

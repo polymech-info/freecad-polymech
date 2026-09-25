@@ -1,0 +1,48 @@
+0  BEGIN PGM probe-29-single-left MM 
+1  BLK FORM 0.1 Z  X+0  Y-60  Z-80
+2  BLK FORM 0.2  X+155  Y+0  Z+0
+3  ;-------------------------------------
+4  ;Tools
+5  ;  #100 D=6 CR=3 - ZMIN=-6 - ZMAX=+55 - probe
+6  ;    Heidenhain
+7  ;-------------------------------------
+8  ;
+9  * - Probe WCS1 (2)
+10 M5
+11 TOOL CALL 100 Z S50
+12 L M140 MB MAX
+13 LBL 1
+14 CYCL DEF 247 DATUM SETTING ~
+    Q339=+1    ;DATUM NUMBER
+15 LBL 0
+16 L  X+49.9  Y-30 R0 FMAX
+17 L  Z+55 R0 FMAX
+18 CYCL DEF 32.0 TOLERANCE
+19 CYCL DEF 32.1
+20 TCH PROBE 412 DATUM INSIDE CIRCLE ~
+    Q321=+49.9 ;CENTER IN 1ST AXIS ~
+    Q322=-30   ;CENTER IN 2ND AXIS ~
+    Q262=+29   ;NOMINAL DIAMETER ~
+    Q325=+0    ;STARTING ANGLE ~
+    Q247=+90   ;STEPPING ANGLE ~
+    Q261=-3    ;MEASURING HEIGHT ~
+    Q320=+6    ;SET-UP CLEARANCE ~
+    Q260=+5    ;CLEARANCE HEIGHT ~
+    Q301=+0    ;MOVE TO CLEARANCE ~
+    Q305=+1    ;NUMBER IN TABLE ~
+    Q331=+49.9 ;DATUM ~
+    Q332=-30   ;DATUM ~
+    Q303=+1    ;MEAS. VALUE TRANSFER ~
+    Q381=+0    ;PROBE IN TS AXIS ~
+    Q382=+0    ;1ST CO. FOR TS AXIS ~
+    Q383=+0    ;2ND CO. FOR TS AXIS ~
+    Q384=+0    ;3RD CO. FOR TS AXIS ~
+    Q333=+0    ;DATUM ~
+    Q423=+4    ;NO. OF MEAS. POINTS ~
+    Q365=+1    ;TYPE OF TRAVERSE
+21 L  Z+55 FMAX
+22 CALL LBL 1 ;DATUM
+23 M5
+24 L M140 MB MAX
+25 M30
+26 END PGM probe-29-single-left MM 

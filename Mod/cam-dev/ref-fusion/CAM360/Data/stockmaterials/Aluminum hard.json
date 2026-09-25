@@ -1,0 +1,13 @@
+{
+    "description": "Aluminum hard",
+    "category": "Metal",
+    "uuid": "e7ed7587-7a04-48ce-a5d9-baf862e5c256",
+    "designators": [
+        "Aluminium hard"
+    ],
+    "physicalMaterials": [
+        "PrismMaterial-231",
+        "PrismMaterial-067"
+    ],
+    "version": 1.0
+}

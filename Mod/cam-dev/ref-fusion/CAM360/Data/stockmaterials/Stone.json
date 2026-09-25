@@ -1,0 +1,18 @@
+{
+    "description": "Stone",
+    "category": "Stone",
+    "uuid": "c8c1e33c-fbb0-4a5b-9c09-79583ea8b5ae",
+    "designators": [],
+    "physicalMaterials": [
+        "Material-142",
+        "Material-141",
+        "Material-140",
+        "Material-143",
+        "Material-144",
+        "Material-145",
+        "Material-146",
+        "Material-147",
+        "Material-148"
+    ],
+    "version": 1.0
+}

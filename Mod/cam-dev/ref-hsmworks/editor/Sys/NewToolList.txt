@@ -1,0 +1,225 @@
+### Config section ###################################################
+[CONFIG_BEGIN]
+#Ignore configuration options from the editor, default: No
+LOCK_CONFIGURATION= No
+
+#Tool trigger, default: T
+TOOL_TRIGGER= T
+
+#For advanced trigger you can specify the trigger using regular expression, optional.
+TOOL_TRIGGER_REGEX= 
+
+#Number of lines to scan at a time, default: 1
+NUMBER_OF_LINES_TO_SCAN= 1
+
+#Start symbol for comment, default: (
+COMMENT_START= (
+
+#End symbol for comment, default: )
+COMMENT_END= )
+
+#Sort tool list, default: Yes
+SORT_TOOL_LIST= Yes
+
+#Only show comment from first tool found, default: Yes
+SKIP_DUPLICATE_TOOLS= Yes
+
+#Ignores duplicate info in the tool name (T020202 = T02), default: Yes
+IGNORE_DUPLICATE_INFO= Yes
+
+#Ignore zeros in tool name (T02 = T2), default: Yes
+IGNORE_ZEROS= Yes
+
+#Number of comment lines to include near each tool trigger, default: 1
+NUMBER_OF_COMMENTS= 1
+
+#Maximum number of lines between comment and tool, default 10
+#if MAX_DISTANCE_FROM_TOOL is 0 it will automatically be set to halfway between two tools.
+MAX_DISTANCE_FROM_TOOL= 10
+
+#Placement of tool comment (Above, Below, Both), default: Both
+TOOL_COMMENT_LOCATION= Both
+
+#Only use comment lines that match the regular expression, optional.
+FILTER_COMMENT_REGEX= 
+
+#Add this delimiter at the end of tool lines when there is more than one, optional.
+#This is used when the tool list is printed without columns (XML/HTML).
+#Examples: <BR> (Newline in HTML), </P><P> (Wrap each line in a paragraph)
+MULTILINE_DELIMITER=
+
+
+#### Extract value from tool comment 
+# Can be used in TOOLLINE
+# Add more sections as needed $INFO3, $INFO4, ...
+[EXTRACT_FROM_TOOL_COMMENT_BEGIN]
+#Name of variable (only $A-Z0-9 allowed)
+VARIABLE= $INFO1
+
+#Regular expression used to extract the text
+EXTRACT_REGEX= 
+[EXTRACT_FROM_TOOL_COMMENT_END]
+
+[EXTRACT_FROM_TOOL_COMMENT_BEGIN]
+#Name of variable (only $A-Z0-9 allowed)
+VARIABLE= $INFO2
+
+#Regular expression used to extract the text
+EXTRACT_REGEX= 
+[EXTRACT_FROM_TOOL_COMMENT_END]
+
+
+
+#### Extract lines from program
+# Can be used in HEADER, FOOTER or EMPTY_LIST
+# Add more sections as needed $EXTRACT2, $EXTRACT3, ...
+[EXTRACT_FROM_FILE_BEGIN]
+#Name of variable (only $A-Z0-9 allowed)
+VARIABLE= $EXTRACT1
+
+#If extraction should be performed, default: No
+ENABLE= No
+
+#Regular expression that starts extraction, required.
+EXTRACT_REGEX_START= 
+
+#Regular expression that stops extraction, optional.
+EXTRACT_REGEX_STOP= 
+
+#Stop extracting after number of lines, default: 10
+STOP_AFTER_LINES= 10
+
+#Only extract comments, default: No
+ONLY_EXTRACT_COMMENTS= No
+
+#Continue extracting after reaching EXTRACT_REGEX_STOP or STOP_AFTER_LINES, default: No
+EXTRACT_MULTIPLE_BLOCKS= No
+
+#Insert line number before each line, default: No
+INSERT_LINE_NUM= No
+
+#Filter lines with regular expression, optional.
+FILTER_REGEX=
+[EXTRACT_FROM_FILE_END]
+
+[CONFIG_END]
+######################################################################
+
+
+
+### Template section #################################################
+[HEADER_BEGIN]
+----------------------------------------------------------------------
+  Tool List: $FILENAMENOEXT
+----------------------------------------------------------------------
+
+  File              : $FILENAME
+  Program           : $FILENAMENOEXT
+  Full name         : $FILEPATH
+  Created           : $DATETIME
+
+----------------------------------------------------------------------
+  Tool number     Tool information
+----------------------------------------------------------------------
+[HEADER_END]
+
+
+
+[TOOLLINE_BEGIN]
+  $TOOLNAME[15] $TOOLINFO[40] $INFO1[8]
+[TOOLLINE_END]
+
+
+
+[EMPTY_LIST_BEGIN]
+
+  $NOTOOLSFOUND
+  
+[EMPTY_LIST_END]
+
+
+
+[FOOTER_BEGIN]
+----------------------------------------------------------------------
+[FOOTER_END]
+######################################################################
+
+
+
+
+
+
+### Examples #########################################################
+#
+# To use these comment out the following lines above:
+# [HEADER_BEGIN], [HEADER_END], 
+# [TOOLLINE_BEGIN], [TOOLLINE_END], 
+# [EMPTY_LIST_BEGIN], [EMPTY_LIST_END], 
+# [FOOTER_BEGIN], [FOOTER_END]
+# and remove comments from the example below
+
+### Simple HTML Example ##############
+#[HEADER_BEGIN]
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><TITLE>Tool List: $FILENAMENOEXT</TITLE></HEAD>
+<BODY>
+
+<H1>Tool List: $FILENAMENOEXT</H1>
+<TABLE>
+<TR><TD>File</TD><TD>$FILENAME</TD></TR>
+<TR><TD>Program</TD><TD>$FILENAMENOEXT</TD></TR>
+<TR><TD>Full name</TD><TD>$FILEPATH</TD></TR>
+<TR><TD>Created</TD><TD>$DATETIME</TD></TR>
+</TABLE>
+<BR><BR>
+<TABLE>
+<TR><TH>Tool number</TH><TH>Tool information</TH></TR>
+#[HEADER_END]
+
+#[TOOLLINE_BEGIN]
+<TR>
+<TD>$TOOLNAME</TD>
+<TD>$TOOLINFO</TD>
+</TR>
+#[TOOLLINE_END]
+
+#[EMPTY_LIST_BEGIN]
+<TR>
+<TD>&nbsp;</TD>
+<TD>$NOTOOLSFOUND</TD>
+</TR>
+#[EMPTY_LIST_END]
+
+#[FOOTER_BEGIN]
+</TABLE>
+<BR>
+</BODY>
+</HTML>
+#[FOOTER_END]
+
+### XML Example ##############
+#[HEADER_BEGIN]
+<?xml version="1.0"?>
+<TOOLLIST>
+<NCFILE>
+<FILENAME>$FILENAME</FILENAME>
+<PATH>$FILEPATH</PATH>
+<CREATED>$DATETIME</CREATED>
+</NCFILE>
+#[HEADER_END]
+
+#[TOOLLINE_BEGIN]
+<TOOL>
+ <NAME>$TOOLNAME</NAME>
+ <COMMENT>$TOOLINFO</COMMENT>
+ <INFO1>$INFO1</INFO1>
+</TOOL>
+#[TOOLLINE_END]
+
+#[EMPTY_LIST_BEGIN]
+#[EMPTY_LIST_END]
+
+#[FOOTER_BEGIN]
+</TOOLLIST>
+#[FOOTER_END]
+######################################################################

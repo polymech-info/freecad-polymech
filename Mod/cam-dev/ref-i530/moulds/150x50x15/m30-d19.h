@@ -1,0 +1,48 @@
+0  BEGIN PGM m30-d19 MM 
+1  BLK FORM 0.1 Z  X-90  Y-40  Z-30
+2  BLK FORM 0.2  X+90  Y+40  Z+0
+3  ;-------------------------------------
+4  ;Tools
+5  ;  #11 D=12 - ZMIN=-19.025 - ZMAX=+15.24 - form mill
+6  ;    AB Tools, Inc.
+7  ;    TM1/4
+8  ;-------------------------------------
+9  ;
+10 * - 1/4-20 Thread (11)
+11 M5
+12 TOOL CALL 11 Z S5000
+13 L M140 MB MAX
+14 M3
+15 L  X-1  Y+22.2 R0 FMAX
+16 L  Z+15.24 R0 FMAX
+17 M8
+18 CYCL DEF 32.0 TOLERANCE
+19 CYCL DEF 32.1
+20 L  Z+2.057 FMAX
+21 L  Z+0.025 F2203
+22 L  Y+21.2
+23 CC  X+0  Y+21.2
+24 CP IPA+90  Z+0 DR+
+25 CC  X+0  Y+0
+26 CP IPA-3420  Z-19 DR- F806
+27 CC  X+0  Y-21.2
+28 CP IPA+90  Z-19.025 DR+ F2203
+29 L  X-1  Y-22.2
+30 L  Z+5.08 FMAX
+31 L  Y+21.8 FMAX
+32 L  Z+2.057 FMAX
+33 L  Z+0.025 F2203
+34 L  Y+20.8
+35 CC  X+0  Y+20.8
+36 CP IPA+90  Z+0 DR+
+37 CC  X+0  Y+0
+38 CP IPA-3420  Z-19 DR- F806
+39 CC  X+0  Y-20.8
+40 CP IPA+90  Z-19.025 DR+ F2203
+41 L  X-1  Y-21.8
+42 L  Z+15.24 FMAX
+43 M9
+44 M5
+45 L M140 MB MAX
+46 M30
+47 END PGM m30-d19 MM 

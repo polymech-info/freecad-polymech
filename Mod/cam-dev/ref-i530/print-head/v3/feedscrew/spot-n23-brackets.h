@@ -1,0 +1,41 @@
+0  BEGIN PGM spot-n23-brackets MM 
+1  BLK FORM 0.1 Z  X+0  Y-60  Z-20
+2  BLK FORM 0.2  X+80  Y+0  Z+0
+3  ;-------------------------------------
+4  ;Tools
+5  ;  #7 D=5 TAPER=90deg - ZMIN=-6 - ZMAX=+15 - spot drill
+6  ;-------------------------------------
+7  ;
+8  * - Drill1
+9  M5
+10 TOOL CALL 7 Z S10000
+11 L M140 MB MAX
+12 M3
+13 L  X+63.57  Y-6.43 R0 FMAX
+14 L  Z+15 R0 FMAX
+15 M8
+16 CYCL DEF 32.0 TOLERANCE
+17 CYCL DEF 32.1
+18 CYCL DEF 200 DRILLING ~
+    Q200=+5    ;SET-UP CLEARANCE ~
+    Q201=-6    ;DEPTH ~
+    Q206=+30   ;FEED RATE FOR PLNGNG ~
+    Q202=+6    ;PLUNGING DEPTH ~
+    Q210=+0    ;DWELL TIME AT TOP ~
+    Q203=+0    ;SURFACE COORDINATE ~
+    Q204=+5    ;2ND SET-UP CLEARANCE ~
+    Q211=+0    ;DWELL TIME AT DEPTH
+19 L FMAX M99
+20 L  X+72.5  Y-12.5 FMAX M99
+21 L  Y-47.5 FMAX M99
+22 L  X+63.57  Y-53.57 FMAX M99
+23 L  X+16.43 FMAX M99
+24 L  X+7.5  Y-47.5 FMAX M99
+25 L  Y-12.5 FMAX M99
+26 L  X+16.43  Y-6.43 FMAX M99
+27 L  Z+15 FMAX
+28 M9
+29 M5
+30 L M140 MB MAX
+31 M30
+32 END PGM spot-n23-brackets MM 

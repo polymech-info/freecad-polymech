@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<template-document xmlns="http://www.hsmworks.com/namespace/hsmworks/document/template" version="1.0">
+
+  <localizationNameID id="6"/>
+  <localizationDescriptionID id="6"/>
+
+  <holeSignature version="3">
+    <segment type="Cylinder"/>
+  </holeSignature>
+
+  <!-- Spot drill -->
+  <template localizationID="16" strategy="drill" unit="inches">
+    <holeData operationType="spot" toolDiameterRatio="1.000000">
+      <holeMapping>
+        <segment index="0"/>
+      </holeMapping>
+    </holeData>
+    <parameter expression="'selection-faces'" name="holeMode"/>
+    <parameter expression="true" name="holeFaces"/>
+    <parameter expression="true" name="mergeHoleSegments"/>
+    <parameter expression="false" name="autoMergeHoleSegments"/>
+    <parameter expression="'from hole top'" name="topHeight_mode"/>
+    <parameter expression="0mm" name="topHeight_offset"/>
+    <parameter expression="'to chamfer width'" name="bottomHeight_mode"/>
+    <parameter expression="0mm" name="toChamferWidth"/>
+    <parameter expression="'drilling'" name="cycleType"/>
+  </template>
+
+  <!-- Drill -->
+  <template localizationID="17" strategy="drill" unit="inches">
+    <holeData operationType="drill" toolDiameterRatio="0.970000">
+      <holeMapping>
+        <segment index="0"/>
+      </holeMapping>
+    </holeData>
+    <parameter expression="'selection-faces'" name="holeMode"/>
+    <parameter expression="true" name="holeFaces"/>
+    <parameter expression="true" name="mergeHoleSegments"/>
+    <parameter expression="false" name="autoMergeHoleSegments"/>
+    <parameter expression="true" name="drillTipThroughBottom"/>
+    <parameter expression="0mm" name="breakThroughDepth"/>
+    <parameter expression="'from hole top'" name="topHeight_mode"/>
+    <parameter expression="0mm" name="topHeight_offset"/>
+    <parameter expression="'from hole bottom'" name="bottomHeight_mode"/>
+    <parameter expression="0mm" name="bottomHeight_offset"/>
+    <parameter expression="'chip-breaking'" name="cycleType"/>
+  </template>
+
+  <!-- Ream -->
+  <template localizationID="18" strategy="drill" unit="inches">
+    <holeData operationType="ream" toolDiameterRatio="1.000000">
+      <holeMapping>
+        <segment index="0"/>
+      </holeMapping>
+    </holeData>
+    <parameter expression="'selection-faces'" name="holeMode"/>
+    <parameter expression="true" name="holeFaces"/>
+    <parameter expression="true" name="mergeHoleSegments"/>
+    <parameter expression="false" name="autoMergeHoleSegments"/>
+    <parameter expression="true" name="drillTipThroughBottom"/>
+    <parameter expression="0mm" name="breakThroughDepth"/>
+    <parameter expression="'from hole top'" name="topHeight_mode"/>
+    <parameter expression="0mm" name="topHeight_offset"/>
+    <parameter expression="'from hole bottom'" name="bottomHeight_mode"/>
+    <parameter expression="0mm" name="bottomHeight_offset"/>
+    <parameter expression="'reaming'" name="cycleType"/>
+  </template>
+
+</template-document>

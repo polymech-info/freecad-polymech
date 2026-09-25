@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type='text/xsl' href='tool-library.xsl'?>
+<!--Use a standards compliant web browser to view this file-->
+<tool-library version="1.0" guid="{2212af6d-adf2-4ecd-a24d-b309db3fd031}" xmlns="http://www.hsmworks.com/xml/2004/cnc/tool-library">
+	<tool version="1.1" type="face mill" unit="millimeters" guid="{25a28b97-70f2-4611-8ac7-328c859cf793}">
+		<nc number="1" diameter-offset="1" length-offset="1" break-control="0" manual-tool-change="0"/>
+		<coolant mode="flood"/>
+		<material name="unspecified"/>
+		<body diameter="50" flute-length="6" shoulder-length="20" shaft-diameter="40" body-length="50" overall-length="130" number-of-flutes="4" thread-pitch="0"/>
+		<holder description="BT40 - B4C3-0040" guid="{5c122784-9437-4c31-9484-cdd782aa6f1a}" library-name="Sample Holders">
+			<section diameter="60.96" length="0"/>
+			<section diameter="62.992" length="1.016"/>
+			<section diameter="62.992" length="23.4696"/>
+			<section diameter="60.96" length="1.016"/>
+			<section diameter="49.8856" length="0"/>
+			<section diameter="49.8856" length="7.5184"/>
+			<section diameter="59.944" length="5.08"/>
+			<section diameter="59.944" length="5.0292"/>
+			<section diameter="61" length="0"/>
+			<section diameter="63" length="1"/>
+			<section diameter="63" length="4.4"/>
+			<section diameter="53" length="2.887"/>
+			<section diameter="53" length="4.226"/>
+			<section diameter="63" length="2.887"/>
+			<section diameter="63" length="8.6"/>
+			<section diameter="61" length="1"/>
+			<section diameter="44.45" length="0"/>
+			<section diameter="44.45" length="2"/>
+		</holder>
+		<motion spindle-rpm="955" ramp-spindle-rpm="955" clockwise="yes" feed-mode="per-minute" cutting-feedrate="460" entry-feedrate="460" exit-feedrate="460" plunge-feedrate="460" ramp-feedrate="460" retract-feedrate="460"/>
+	</tool>
+	<tool version="1.1" type="flat end mill" unit="millimeters" guid="{c62092ae-6fd1-45a2-b23b-d9fd2b53737d}">
+		<nc number="2" diameter-offset="2" length-offset="2" break-control="0" manual-tool-change="0"/>
+		<coolant mode="flood"/>
+		<material name="unspecified"/>
+		<body diameter="16" flute-length="55" shoulder-length="60" shaft-diameter="16" body-length="70" overall-length="102" number-of-flutes="4" thread-pitch="0"/>
+		<holder description="BT40 - B4C3-0032" guid="{04ff9f1d-1a84-4413-9499-659c39877517}" library-name="Sample Holders">
+			<section diameter="32.385" length="0"/>
+			<section diameter="47.625" length="3.6576"/>
+			<section diameter="47.625" length="18.3134"/>
+			<section diameter="45.593" length="1.016"/>
+			<section diameter="39.878" length="0"/>
+			<section diameter="39.878" length="9.0932"/>
+			<section diameter="42.926" length="1.524"/>
+			<section diameter="61" length="0"/>
+			<section diameter="63" length="1"/>
+			<section diameter="63" length="4.4"/>
+			<section diameter="53" length="2.887"/>
+			<section diameter="53" length="4.226"/>
+			<section diameter="63" length="2.887"/>
+			<section diameter="63" length="8.6"/>
+			<section diameter="61" length="1"/>
+			<section diameter="44.45" length="0"/>
+			<section diameter="44.45" length="2"/>
+		</holder>
+		<motion spindle-rpm="5000" ramp-spindle-rpm="5000" clockwise="yes" feed-mode="per-minute" cutting-feedrate="1000" entry-feedrate="500" exit-feedrate="1000" plunge-feedrate="500" ramp-feedrate="500" retract-feedrate="500"/>
+	</tool>
+	<tool version="1.1" type="flat end mill" unit="millimeters" guid="{3ff6eb92-d268-4973-9aeb-034b514ca351}">
+		<nc number="3" diameter-offset="3" length-offset="3" break-control="0" manual-tool-change="0"/>
+		<coolant mode="flood"/>
+		<material name="hss"/>
+		<body diameter="10" flute-length="40" shoulder-length="45" shaft-diameter="10" body-length="50" overall-length="70" number-of-flutes="3" thread-pitch="0"/>
+		<holder description="BT40 - B4C4-0016" guid="{c9376ccf-3d9c-44e0-abfc-d4d57cd68575}" library-name="Sample Holders">
+			<section diameter="20.9804" length="0"/>
+			<section diameter="27.4955" length="1.905"/>
+			<section diameter="27.4955" length="14.6812"/>
+			<section diameter="25.4" length="1.016"/>
+			<section diameter="21.8694" length="0"/>
+			<section diameter="21.8694" length="7.5692"/>
+			<section diameter="26.924" length="2.54"/>
+			<section diameter="26.924" length="15.3162"/>
+			<section diameter="33.274" length="3.175"/>
+			<section diameter="61" length="0"/>
+			<section diameter="63" length="1"/>
+			<section diameter="63" length="4.4"/>
+			<section diameter="53" length="2.887"/>
+			<section diameter="53" length="4.226"/>
+			<section diameter="63" length="2.887"/>
+			<section diameter="63" length="8.6"/>
+			<section diameter="61" length="1"/>
+			<section diameter="44.45" length="0"/>
+			<section diameter="44.45" length="2"/>
+		</holder>
+		<motion spindle-rpm="3000" ramp-spindle-rpm="3000" clockwise="yes" feed-mode="per-minute" cutting-feedrate="800" entry-feedrate="400" exit-feedrate="800" plunge-feedrate="400" ramp-feedrate="400" retract-feedrate="400"/>
+	</tool>
+	<tool version="1.1" type="flat end mill" unit="millimeters" guid="{cc79612c-b608-41ce-bb98-c8f8f86e28e7}">
+		<nc number="4" diameter-offset="4" length-offset="4" break-control="0" manual-tool-change="0"/>
+		<coolant mode="flood"/>
+		<material name="hss"/>
+		<body diameter="5" flute-length="10" shoulder-length="15" shaft-diameter="5" body-length="25" overall-length="35" number-of-flutes="3" thread-pitch="0"/>
+		<holder description="BT40 - B4C4-0011" guid="{9fb900c2-ff7c-4c0a-a4df-c5d0211e2f37}" library-name="Sample Holders">
+			<section diameter="14.986" length="0"/>
+			<section diameter="16.002" length="0.508"/>
+			<section diameter="16.002" length="11.43"/>
+			<section diameter="14.986" length="0.508"/>
+			<section diameter="12.954" length="0"/>
+			<section diameter="12.954" length="5.2832"/>
+			<section diameter="15.875" length="1.4732"/>
+			<section diameter="15.875" length="26.75"/>
+			<section diameter="22.225" length="3.175"/>
+			<section diameter="61" length="0"/>
+			<section diameter="63" length="1"/>
+			<section diameter="63" length="4.4"/>
+			<section diameter="53" length="2.887"/>
+			<section diameter="53" length="4.226"/>
+			<section diameter="63" length="2.887"/>
+			<section diameter="63" length="8.6"/>
+			<section diameter="61" length="1"/>
+			<section diameter="44.45" length="0"/>
+			<section diameter="44.45" length="2"/>
+		</holder>
+		<motion spindle-rpm="5000" ramp-spindle-rpm="5000" clockwise="yes" feed-mode="per-minute" cutting-feedrate="1000" entry-feedrate="500" exit-feedrate="1000" plunge-feedrate="500" ramp-feedrate="500" retract-feedrate="500"/>
+	</tool>
+	<tool version="1.1" type="flat end mill" unit="millimeters" guid="{9e7a0d49-13ca-4481-90b0-e4c59887a97c}">
+		<nc number="5" diameter-offset="5" length-offset="5" break-control="0" manual-tool-change="0"/>
+		<coolant mode="flood"/>
+		<material name="hss"/>
+		<body diameter="4" flute-length="10" shoulder-length="15" shaft-diameter="4" body-length="25" overall-length="35" number-of-flutes="3" thread-pitch="0"/>
+		<holder description="BT40 - B4C4-0011" guid="{9fb900c2-ff7c-4c0a-a4df-c5d0211e2f37}" library-name="Sample Holders">
+			<section diameter="14.986" length="0"/>
+			<section diameter="16.002" length="0.508"/>
+			<section diameter="16.002" length="11.43"/>
+			<section diameter="14.986" length="0.508"/>
+			<section diameter="12.954" length="0"/>
+			<section diameter="12.954" length="5.2832"/>
+			<section diameter="15.875" length="1.4732"/>
+			<section diameter="15.875" length="26.75"/>
+			<section diameter="22.225" length="3.175"/>
+			<section diameter="61" length="0"/>
+			<section diameter="63" length="1"/>
+			<section diameter="63" length="4.4"/>
+			<section diameter="53" length="2.887"/>
+			<section diameter="53" length="4.226"/>
+			<section diameter="63" length="2.887"/>
+			<section diameter="63" length="8.6"/>
+			<section diameter="61" length="1"/>
+			<section diameter="44.45" length="0"/>
+			<section diameter="44.45" length="2"/>
+		</holder>
+		<motion spindle-rpm="5000" ramp-spindle-rpm="5000" clockwise="yes" feed-mode="per-minute" cutting-feedrate="1000" entry-feedrate="500" exit-feedrate="1000" plunge-feedrate="500" ramp-feedrate="500" retract-feedrate="500"/>
+	</tool>
+	<tool version="1.1" type="bull nose end mill" unit="millimeters" guid="{03f65727-1fb3-4aa0-b7d5-9e3b7724c029}">
+		<nc number="10" diameter-offset="10" length-offset="10" break-control="0" manual-tool-change="0"/>
+		<coolant mode="flood"/>
+		<material name="hss"/>
+		<body diameter="20" corner-radius="1" flute-length="35" shoulder-length="45" shaft-diameter="20" body-length="70" overall-length="115" number-of-flutes="3" thread-pitch="0"/>
+		<holder description="BT40 - B4C3-0032" guid="{04ff9f1d-1a84-4413-9499-659c39877517}" library-name="Sample Holders">
+			<section diameter="32.385" length="0"/>
+			<section diameter="47.625" length="3.6576"/>
+			<section diameter="47.625" length="18.3134"/>
+			<section diameter="45.593" length="1.016"/>
+			<section diameter="39.878" length="0"/>
+			<section diameter="39.878" length="9.0932"/>
+			<section diameter="42.926" length="1.524"/>
+			<section diameter="61" length="0"/>
+			<section diameter="63" length="1"/>
+			<section diameter="63" length="4.4"/>
+			<section diameter="53" length="2.887"/>
+			<section diameter="53" length="4.226"/>
+			<section diameter="63" length="2.887"/>
+			<section diameter="63" length="8.6"/>
+			<section diameter="61" length="1"/>
+			<section diameter="44.45" length="0"/>
+			<section diameter="44.45" length="2"/>
+		</holder>
+		<motion spindle-rpm="16000" ramp-spindle-rpm="16000" clockwise="yes" feed-mode="per-minute" cutting-feedrate="9500" entry-feedrate="4750" exit-feedrate="9500" plunge-feedrate="4750" ramp-feedrate="4750" retract-feedrate="4750"/>
+	</tool>
+	<tool version="1.1" type="bull nose end mill" unit="millimeters" guid="{4cf2bc1f-9795-4220-af12-3ad17cd51b92}">
+		<nc number="11" diameter-offset="11" length-offset="11" break-control="0" manual-tool-change="0"/>
+		<coolant mode="flood"/>
+		<material name="unspecified"/>
+		<body diameter="10" corner-radius="1" flute-length="30" shoulder-length="35" shaft-diameter="10" body-length="50" overall-length="70" number-of-flutes="4" thread-pitch="0"/>
+		<holder description="BT40 - B4C4-0016" guid="{c9376ccf-3d9c-44e0-abfc-d4d57cd68575}" library-name="Sample Holders">
+			<section diameter="20.9804" length="0"/>
+			<section diameter="27.4955" length="1.905"/>
+			<section diameter="27.4955" length="14.6812"/>
+			<section diameter="25.4" length="1.016"/>
+			<section diameter="21.8694" length="0"/>
+			<section diameter="21.8694" length="7.5692"/>
+			<section diameter="26.924" length="2.54"/>
+			<section diameter="26.924" length="15.3162"/>
+			<section diameter="33.274" length="3.175"/>
+			<section diameter="61" length="0"/>
+			<section diameter="63" length="1"/>
+			<section diameter="63" length="4.4"/>
+			<section diameter="53" length="2.887"/>
+			<section diameter="53" length="4.226"/>
+			<section diameter="63" length="2.887"/>
+			<section diameter="63" length="8.6"/>
+			<section diameter="61" length="1"/>
+			<section diameter="44.45" length="0"/>
+			<section diameter="44.45" length="2"/>
+		</holder>
+		<motion spindle-rpm="2500" ramp-spindle-rpm="2500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="855" entry-feedrate="400" exit-feedrate="800" plunge-feedrate="314" ramp-feedrate="400" retract-feedrate="314"/>
+	</tool>
+	<tool version="1.1" type="bull nose end mill" unit="millimeters" guid="{1ae3e6da-adb5-413b-a202-21e9393d4de0}">
+		<nc number="12" diameter-offset="12" length-offset="12" break-control="0" manual-tool-change="0"/>
+		<coolant mode="flood"/>
+		<material name="hss"/>
+		<body diameter="8" corner-radius="1" flute-length="20" shoulder-length="25" shaft-diameter="8" body-length="35" overall-length="51" number-of-flutes="3" thread-pitch="0"/>
+		<holder description="BT40 - B4C4-0011" guid="{9fb900c2-ff7c-4c0a-a4df-c5d0211e2f37}" library-name="Sample Holders">
+			<section diameter="14.986" length="0"/>
+			<section diameter="16.002" length="0.508"/>
+			<section diameter="16.002" length="11.43"/>
+			<section diameter="14.986" length="0.508"/>
+			<section diameter="12.954" length="0"/>
+			<section diameter="12.954" length="5.2832"/>
+			<section diameter="15.875" length="1.4732"/>
+			<section diameter="15.875" length="26.75"/>
+			<section diameter="22.225" length="3.175"/>
+			<section diameter="61" length="0"/>
+			<section diameter="63" length="1"/>
+			<section diameter="63" length="4.4"/>
+			<section diameter="53" length="2.887"/>
+			<section diameter="53" length="4.226"/>
+			<section diameter="63" length="2.887"/>
+			<section diameter="63" length="8.6"/>
+			<section diameter="61" length="1"/>
+			<section diameter="44.45" length="0"/>
+			<section diameter="44.45" length="2"/>
+		</holder>
+		<motion spindle-rpm="5000" ramp-spindle-rpm="5000" clockwise="yes" feed-mode="per-minute" cutting-feedrate="1000" entry-feedrate="500" exit-feedrate="1000" plunge-feedrate="500" ramp-feedrate="500" retract-feedrate="500"/>
+	</tool>
+	<tool version="1.1" type="bull nose end mill" unit="millimeters" guid="{06c1a53f-8873-4215-b02a-4136930b9176}">
+		<nc number="13" diameter-offset="13" length-offset="13" break-control="0" manual-tool-change="0"/>
+		<coolant mode="flood"/>
+		<material name="hss"/>
+		<body diameter="6" corner-radius="1" flute-length="12" shoulder-length="18" shaft-diameter="6" body-length="30" overall-length="42" number-of-flutes="3" thread-pitch="0"/>
+		<holder description="BT40 - B4C4-0011" guid="{9fb900c2-ff7c-4c0a-a4df-c5d0211e2f37}" library-name="Sample Holders">
+			<section diameter="14.986" length="0"/>
+			<section diameter="16.002" length="0.508"/>
+			<section diameter="16.002" length="11.43"/>
+			<section diameter="14.986" length="0.508"/>
+			<section diameter="12.954" length="0"/>
+			<section diameter="12.954" length="5.2832"/>
+			<section diameter="15.875" length="1.4732"/>
+			<section diameter="15.875" length="26.75"/>
+			<section diameter="22.225" length="3.175"/>
+			<section diameter="61" length="0"/>
+			<section diameter="63" length="1"/>
+			<section diameter="63" length="4.4"/>
+			<section diameter="53" length="2.887"/>
+			<section diameter="53" length="4.226"/>
+			<section diameter="63" length="2.887"/>
+			<section diameter="63" length="8.6"/>
+			<section diameter="61" length="1"/>
+			<section diameter="44.45" length="0"/>
+			<section diameter="44.45" length="2"/>
+		</holder>
+		<motion spindle-rpm="30000" ramp-spindle-rpm="30000" clockwise="yes" feed-mode="per-minute" cutting-feedrate="6000" entry-feedrate="3000" exit-feedrate="6000" plunge-feedrate="3000" ramp-feedrate="3000" retract-feedrate="3000"/>
+	</tool>
+	<tool version="1.1" type="bull nose end mill" unit="millimeters" guid="{30f5a21a-750b-415b-836f-ada7226ecbad}">
+		<nc number="14" diameter-offset="14" length-offset="14" break-control="0" manual-tool-change="0"/>
+		<coolant mode="flood"/>
+		<material name="unspecified"/>
+		<body diameter="5" corner-radius="0.5" flute-length="13" shoulder-length="15" shaft-diameter="5" body-length="30" overall-length="100" number-of-flutes="4" thread-pitch="0"/>
+		<holder description="BT40 - B4C4-0011" guid="{9fb900c2-ff7c-4c0a-a4df-c5d0211e2f37}" library-name="Sample Holders">
+			<section diameter="14.986" length="0"/>
+			<section diameter="16.002" length="0.508"/>
+			<section diameter="16.002" length="11.43"/>
+			<section diameter="14.986" length="0.508"/>
+			<section diameter="12.954" length="0"/>
+			<section diameter="12.954" length="5.2832"/>
+			<section diameter="15.875" length="1.4732"/>
+			<section diameter="15.875" length="26.75"/>
+			<section diameter="22.225" length="3.175"/>
+			<section diameter="61" length="0"/>
+			<section diameter="63" length="1"/>
+			<section diameter="63" length="4.4"/>
+			<section diameter="53" length="2.887"/>
+			<section diameter="53" length="4.226"/>
+			<section diameter="63" length="2.887"/>
+			<section diameter="63" length="8.6"/>
+			<section diameter="61" length="1"/>
+			<section diameter="44.45" length="0"/>
+			<section diameter="44.45" length="2"/>
+		</holder>
+		<motion spindle-rpm="4950" ramp-spindle-rpm="4950" clockwise="yes" feed-mode="per-minute" cutting-feedrate="855" entry-feedrate="400" exit-feedrate="800" plunge-feedrate="314" ramp-feedrate="400" retract-feedrate="314"/>
+	</tool>
+	<tool version="1.1" type="ball end mill" unit="millimeters" guid="{0658bace-869e-4311-810a-c86bf9e79207}">
+		<nc number="20" diameter-offset="20" length-offset="20" break-control="0" manual-tool-change="0"/>
+		<coolant mode="flood"/>
+		<material name="hss"/>
+		<body diameter="10" corner-radius="5" flute-length="20" shoulder-length="30" shaft-diameter="10" body-length="50" overall-length="70" number-of-flutes="3" thread-pitch="0"/>
+		<holder description="BT40 - B4C4-0016" guid="{c9376ccf-3d9c-44e0-abfc-d4d57cd68575}" library-name="Sample Holders">
+			<section diameter="20.9804" length="0"/>
+			<section diameter="27.4955" length="1.905"/>
+			<section diameter="27.4955" length="14.6812"/>
+			<section diameter="25.4" length="1.016"/>
+			<section diameter="21.8694" length="0"/>
+			<section diameter="21.8694" length="7.5692"/>
+			<section diameter="26.924" length="2.54"/>
+			<section diameter="26.924" length="15.3162"/>
+			<section diameter="33.274" length="3.175"/>
+			<section diameter="61" length="0"/>
+			<section diameter="63" length="1"/>
+			<section diameter="63" length="4.4"/>
+			<section diameter="53" length="2.887"/>
+			<section diameter="53" length="4.226"/>
+			<section diameter="63" length="2.887"/>
+			<section diameter="63" length="8.6"/>
+			<section diameter="61" length="1"/>
+			<section diameter="44.45" length="0"/>
+			<section diameter="44.45" length="2"/>
+		</holder>
+		<motion spindle-rpm="30000" ramp-spindle-rpm="30000" clockwise="yes" feed-mode="per-minute" cutting-feedrate="1800" entry-feedrate="900" exit-feedrate="1800" plunge-feedrate="900" ramp-feedrate="900" retract-feedrate="900"/>
+	</tool>
+	<tool version="1.1" type="ball end mill" unit="millimeters" guid="{ac247c37-d102-47e9-b748-a06e44115ee6}">
+		<nc number="21" diameter-offset="21" length-offset="21" break-control="0" manual-tool-change="0"/>
+		<coolant mode="flood"/>
+		<material name="unspecified"/>
+		<body diameter="6" corner-radius="3" flute-length="10" shoulder-length="15" shaft-diameter="6" body-length="30" overall-length="42" number-of-flutes="2" thread-pitch="0"/>
+		<holder description="BT40 - B4C4-0011" guid="{9fb900c2-ff7c-4c0a-a4df-c5d0211e2f37}" library-name="Sample Holders">
+			<section diameter="14.986" length="0"/>
+			<section diameter="16.002" length="0.508"/>
+			<section diameter="16.002" length="11.43"/>
+			<section diameter="14.986" length="0.508"/>
+			<section diameter="12.954" length="0"/>
+			<section diameter="12.954" length="5.2832"/>
+			<section diameter="15.875" length="1.4732"/>
+			<section diameter="15.875" length="26.75"/>
+			<section diameter="22.225" length="3.175"/>
+			<section diameter="61" length="0"/>
+			<section diameter="63" length="1"/>
+			<section diameter="63" length="4.4"/>
+			<section diameter="53" length="2.887"/>
+			<section diameter="53" length="4.226"/>
+			<section diameter="63" length="2.887"/>
+			<section diameter="63" length="8.6"/>
+			<section diameter="61" length="1"/>
+			<section diameter="44.45" length="0"/>
+			<section diameter="44.45" length="2"/>
+		</holder>
+		<motion spindle-rpm="20500" ramp-spindle-rpm="20500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="5200" entry-feedrate="4000" exit-feedrate="4000" plunge-feedrate="1000" ramp-feedrate="4000" retract-feedrate="1000"/>
+	</tool>
+	<tool version="1.1" type="ball end mill" unit="millimeters" guid="{08560b9b-0b16-4a4c-837b-d838e097c867}">
+		<nc number="22" diameter-offset="22" length-offset="22" break-control="0" manual-tool-change="0"/>
+		<coolant mode="flood"/>
+		<material name="unspecified"/>
+		<body diameter="3" corner-radius="1.5" flute-length="5" shoulder-length="20" shaft-diameter="3" body-length="25" overall-length="31" number-of-flutes="3" thread-pitch="0"/>
+		<holder description="Long holder" guid="{d61f356a-86d4-4833-8a05-4c677d83bbab}" library-name="Sample Holders">
+			<section diameter="8" length="0"/>
+			<section diameter="20" length="30"/>
+			<section diameter="25" length="20"/>
+			<section diameter="50" length="0"/>
+			<section diameter="50" length="2"/>
+			<section diameter="46" length="2"/>
+			<section diameter="46" length="3"/>
+			<section diameter="50" length="2"/>
+			<section diameter="50" length="2"/>
+			<section diameter="42" length="0"/>
+			<section diameter="40" length="5"/>
+		</holder>
+		<motion spindle-rpm="20750" ramp-spindle-rpm="20750" clockwise="yes" feed-mode="per-minute" cutting-feedrate="3100" entry-feedrate="1200" exit-feedrate="1000" plunge-feedrate="500" ramp-feedrate="1200" retract-feedrate="500"/>
+	</tool>
+	<tool version="1.1" type="ball end mill" unit="millimeters" guid="{0a1b759d-3ff1-491f-b013-a71be24e1654}">
+		<nc number="23" diameter-offset="23" length-offset="23" break-control="0" manual-tool-change="0"/>
+		<coolant mode="flood"/>
+		<material name="unspecified"/>
+		<body diameter="2" corner-radius="1" flute-length="5" shoulder-length="8" shaft-diameter="3" body-length="25" overall-length="26" number-of-flutes="2" thread-pitch="0"/>
+		<holder description="Long holder" guid="{d61f356a-86d4-4833-8a05-4c677d83bbab}" library-name="Sample Holders">
+			<section diameter="8" length="0"/>
+			<section diameter="20" length="30"/>
+			<section diameter="25" length="20"/>
+			<section diameter="50" length="0"/>
+			<section diameter="50" length="2"/>
+			<section diameter="46" length="2"/>
+			<section diameter="46" length="3"/>
+			<section diameter="50" length="2"/>
+			<section diameter="50" length="2"/>
+			<section diameter="42" length="0"/>
+			<section diameter="40" length="5"/>
+		</holder>
+		<shaft>
+			<section diameter="2" length="0"/>
+			<section diameter="3" length="10"/>
+		</shaft>
+		<motion spindle-rpm="22000" ramp-spindle-rpm="22000" clockwise="yes" feed-mode="per-minute" cutting-feedrate="2475" entry-feedrate="1000" exit-feedrate="1000" plunge-feedrate="500" ramp-feedrate="800" retract-feedrate="500"/>
+	</tool>
+	<tool version="1.1" type="ball end mill" unit="millimeters" guid="{ea704c48-a170-4c46-87a3-5017ba72006d}">
+		<nc number="24" diameter-offset="24" length-offset="24" break-control="0" manual-tool-change="0"/>
+		<coolant mode="flood"/>
+		<material name="unspecified"/>
+		<body diameter="1" corner-radius="0.5" flute-length="2" shoulder-length="5" shaft-diameter="3" body-length="25" overall-length="70" number-of-flutes="2" thread-pitch="0"/>
+		<holder description="Long holder" guid="{d61f356a-86d4-4833-8a05-4c677d83bbab}" library-name="Sample Holders">
+			<section diameter="8" length="0"/>
+			<section diameter="20" length="30"/>
+			<section diameter="25" length="20"/>
+			<section diameter="50" length="0"/>
+			<section diameter="50" length="2"/>
+			<section diameter="46" length="2"/>
+			<section diameter="46" length="3"/>
+			<section diameter="50" length="2"/>
+			<section diameter="50" length="2"/>
+			<section diameter="42" length="0"/>
+			<section diameter="40" length="5"/>
+		</holder>
+		<shaft>
+			<section diameter="1" length="0"/>
+			<section diameter="3" length="10"/>
+		</shaft>
+		<motion spindle-rpm="25000" ramp-spindle-rpm="25000" clockwise="yes" feed-mode="per-minute" cutting-feedrate="1850" entry-feedrate="800" exit-feedrate="800" plunge-feedrate="500" ramp-feedrate="800" retract-feedrate="500"/>
+	</tool>
+	<tool version="1.1" type="drill" unit="millimeters" guid="{f89d3ec1-264a-4d0b-aaf5-2ee5563cec4d}">
+		<nc number="30" diameter-offset="30" length-offset="30" break-control="0" manual-tool-change="0"/>
+		<coolant mode="flood"/>
+		<material name="hss"/>
+		<body diameter="10" taper-angle="118" flute-length="80" shoulder-length="90" shaft-diameter="10" body-length="110" overall-length="130" number-of-flutes="3" thread-pitch="0"/>
+		<holder description="CT40 - Drill Chuck - 1mm-13mm" vendor="Lyndex-Nikken" product-id="CAT40-NPU13-105U" guid="{27fcadf6-4ad3-40c1-8e36-f83102302665}" library-name="Sample Holders">
+			<section diameter="13.715" length="0"/>
+			<section diameter="22.225" length="10.925"/>
+			<section diameter="35" length="0"/>
+			<section diameter="46.735" length="19.05"/>
+			<section diameter="46.736" length="0"/>
+			<section diameter="46.735" length="5.08"/>
+			<section diameter="48.515" length="0.89"/>
+			<section diameter="48.515" length="10.795"/>
+			<section diameter="46.735" length="0.89"/>
+			<section diameter="46.735" length="9.525"/>
+			<section diameter="42.925" length="1.905"/>
+			<section diameter="42.925" length="9.525"/>
+			<section diameter="48" length="0"/>
+			<section diameter="48" length="14.225"/>
+			<section diameter="44.45" length="3.556"/>
+			<section diameter="44.45" length="13.97"/>
+			<section diameter="61.55" length="0"/>
+			<section diameter="63.55" length="1"/>
+			<section diameter="63.55" length="3.43"/>
+			<section diameter="56.25" length="2.107"/>
+			<section diameter="56.25" length="2.825"/>
+			<section diameter="63.55" length="2.107"/>
+			<section diameter="63.55" length="3.4"/>
+			<section diameter="61.55" length="1"/>
+			<section diameter="44.45" length="0"/>
+			<section diameter="44.45" length="3.18"/>
+		</holder>
+		<motion spindle-rpm="5000" ramp-spindle-rpm="5000" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="500" ramp-feedrate="0" retract-feedrate="1000"/>
+	</tool>
+	<tool version="1.1" type="drill" unit="millimeters" guid="{f792895b-e46e-4c55-bfee-f58a814f635d}">
+		<nc number="31" diameter-offset="31" length-offset="31" break-control="0" manual-tool-change="0"/>
+		<coolant mode="flood"/>
+		<material name="hss"/>
+		<body diameter="7.5" taper-angle="118" flute-length="75" shoulder-length="82.5" shaft-diameter="7.5" body-length="97.5" overall-length="112.5" number-of-flutes="3" thread-pitch="0"/>
+		<holder description="CT40 - Drill Chuck - 1mm-13mm" vendor="Lyndex-Nikken" product-id="CAT40-NPU13-105U" guid="{27fcadf6-4ad3-40c1-8e36-f83102302665}" library-name="Sample Holders">
+			<section diameter="13.715" length="0"/>
+			<section diameter="22.225" length="10.925"/>
+			<section diameter="35" length="0"/>
+			<section diameter="46.735" length="19.05"/>
+			<section diameter="46.736" length="0"/>
+			<section diameter="46.735" length="5.08"/>
+			<section diameter="48.515" length="0.89"/>
+			<section diameter="48.515" length="10.795"/>
+			<section diameter="46.735" length="0.89"/>
+			<section diameter="46.735" length="9.525"/>
+			<section diameter="42.925" length="1.905"/>
+			<section diameter="42.925" length="9.525"/>
+			<section diameter="48" length="0"/>
+			<section diameter="48" length="14.225"/>
+			<section diameter="44.45" length="3.556"/>
+			<section diameter="44.45" length="13.97"/>
+			<section diameter="61.55" length="0"/>
+			<section diameter="63.55" length="1"/>
+			<section diameter="63.55" length="3.43"/>
+			<section diameter="56.25" length="2.107"/>
+			<section diameter="56.25" length="2.825"/>
+			<section diameter="63.55" length="2.107"/>
+			<section diameter="63.55" length="3.4"/>
+			<section diameter="61.55" length="1"/>
+			<section diameter="44.45" length="0"/>
+			<section diameter="44.45" length="3.18"/>
+		</holder>
+		<motion spindle-rpm="5000" ramp-spindle-rpm="5000" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="500" ramp-feedrate="0" retract-feedrate="1000"/>
+	</tool>
+	<tool version="1.1" type="drill" unit="millimeters" guid="{58d3e007-5cea-471b-8a4f-dacf20f93f32}">
+		<nc number="32" diameter-offset="32" length-offset="32" break-control="0" manual-tool-change="0"/>
+		<coolant mode="flood"/>
+		<material name="hss"/>
+		<body diameter="5" taper-angle="118" flute-length="50" shoulder-length="55" shaft-diameter="5" body-length="65" overall-length="75" number-of-flutes="3" thread-pitch="0"/>
+		<holder description="CT40 - Drill Chuck - 0mm-5mm" vendor="Albrecht" product-id="C50-J1 - Albrecht Drill Chuck" guid="{2a8145dc-e76d-46d1-be28-70e627bc04e9}" library-name="Sample Holders">
+			<section diameter="8" length="0"/>
+			<section diameter="13" length="5.1"/>
+			<section diameter="19.2" length="0"/>
+			<section diameter="30" length="14.6"/>
+			<section diameter="30" length="13.8"/>
+			<section diameter="28.2" length="0.6"/>
+			<section diameter="28.2" length="9"/>
+			<section diameter="26.5" length="0"/>
+			<section diameter="23.4" length="1.55"/>
+			<section diameter="23.4" length="8.55"/>
+			<section diameter="29.4" length="0"/>
+			<section diameter="30" length="0.3"/>
+			<section diameter="30" length="4.4"/>
+			<section diameter="29.4" length="0.3"/>
+			<section diameter="18" length="0"/>
+			<section diameter="18" length="1.5"/>
+			<section diameter="10" length="0"/>
+			<section diameter="10" length="3.81"/>
+			<section diameter="42.45" length="0"/>
+			<section diameter="44.45" length="1"/>
+			<section diameter="44.45" length="14.875"/>
+			<section diameter="61.55" length="0"/>
+			<section diameter="63.55" length="1"/>
+			<section diameter="63.55" length="3.43"/>
+			<section diameter="56.25" length="2.107"/>
+			<section diameter="56.25" length="2.825"/>
+			<section diameter="63.55" length="2.107"/>
+			<section diameter="63.55" length="3.4"/>
+			<section diameter="61.55" length="1"/>
+			<section diameter="44.45" length="0"/>
+			<section diameter="44.45" length="3.18"/>
+		</holder>
+		<motion spindle-rpm="5000" ramp-spindle-rpm="5000" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="500" ramp-feedrate="0" retract-feedrate="1000"/>
+	</tool>
+	<tool version="1.1" type="drill" unit="millimeters" guid="{ad04c23b-780e-4a85-ab83-307844cf84a8}">
+		<nc number="33" diameter-offset="33" length-offset="33" break-control="0" manual-tool-change="0"/>
+		<coolant mode="flood"/>
+		<material name="hss"/>
+		<body diameter="4.5" taper-angle="118" flute-length="45" shoulder-length="49.5" shaft-diameter="4.5" body-length="58.5" overall-length="67.5" number-of-flutes="3" thread-pitch="0"/>
+		<holder description="CT40 - Drill Chuck - 0mm-5mm" vendor="Albrecht" product-id="C50-J1 - Albrecht Drill Chuck" guid="{2a8145dc-e76d-46d1-be28-70e627bc04e9}" library-name="Sample Holders">
+			<section diameter="8" length="0"/>
+			<section diameter="13" length="5.1"/>
+			<section diameter="19.2" length="0"/>
+			<section diameter="30" length="14.6"/>
+			<section diameter="30" length="13.8"/>
+			<section diameter="28.2" length="0.6"/>
+			<section diameter="28.2" length="9"/>
+			<section diameter="26.5" length="0"/>
+			<section diameter="23.4" length="1.55"/>
+			<section diameter="23.4" length="8.55"/>
+			<section diameter="29.4" length="0"/>
+			<section diameter="30" length="0.3"/>
+			<section diameter="30" length="4.4"/>
+			<section diameter="29.4" length="0.3"/>
+			<section diameter="18" length="0"/>
+			<section diameter="18" length="1.5"/>
+			<section diameter="10" length="0"/>
+			<section diameter="10" length="3.81"/>
+			<section diameter="42.45" length="0"/>
+			<section diameter="44.45" length="1"/>
+			<section diameter="44.45" length="14.875"/>
+			<section diameter="61.55" length="0"/>
+			<section diameter="63.55" length="1"/>
+			<section diameter="63.55" length="3.43"/>
+			<section diameter="56.25" length="2.107"/>
+			<section diameter="56.25" length="2.825"/>
+			<section diameter="63.55" length="2.107"/>
+			<section diameter="63.55" length="3.4"/>
+			<section diameter="61.55" length="1"/>
+			<section diameter="44.45" length="0"/>
+			<section diameter="44.45" length="3.18"/>
+		</holder>
+		<motion spindle-rpm="3000" ramp-spindle-rpm="3000" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="500" ramp-feedrate="0" retract-feedrate="1000"/>
+	</tool>
+	<tool version="1.1" type="drill" unit="millimeters" guid="{e263a771-821d-4cfa-8fb5-2ae6211de7f2}">
+		<nc number="34" diameter-offset="34" length-offset="34" break-control="0" manual-tool-change="0"/>
+		<coolant mode="flood"/>
+		<material name="hss"/>
+		<body diameter="4.3" taper-angle="118" flute-length="43" shoulder-length="47.3" shaft-diameter="4.3" body-length="55.9" overall-length="64.5" number-of-flutes="3" thread-pitch="0"/>
+		<holder description="CT40 - Drill Chuck - 0mm-5mm" vendor="Albrecht" product-id="C50-J1 - Albrecht Drill Chuck" guid="{2a8145dc-e76d-46d1-be28-70e627bc04e9}" library-name="Sample Holders">
+			<section diameter="8" length="0"/>
+			<section diameter="13" length="5.1"/>
+			<section diameter="19.2" length="0"/>
+			<section diameter="30" length="14.6"/>
+			<section diameter="30" length="13.8"/>
+			<section diameter="28.2" length="0.6"/>
+			<section diameter="28.2" length="9"/>
+			<section diameter="26.5" length="0"/>
+			<section diameter="23.4" length="1.55"/>
+			<section diameter="23.4" length="8.55"/>
+			<section diameter="29.4" length="0"/>
+			<section diameter="30" length="0.3"/>
+			<section diameter="30" length="4.4"/>
+			<section diameter="29.4" length="0.3"/>
+			<section diameter="18" length="0"/>
+			<section diameter="18" length="1.5"/>
+			<section diameter="10" length="0"/>
+			<section diameter="10" length="3.81"/>
+			<section diameter="42.45" length="0"/>
+			<section diameter="44.45" length="1"/>
+			<section diameter="44.45" length="14.875"/>
+			<section diameter="61.55" length="0"/>
+			<section diameter="63.55" length="1"/>
+			<section diameter="63.55" length="3.43"/>
+			<section diameter="56.25" length="2.107"/>
+			<section diameter="56.25" length="2.825"/>
+			<section diameter="63.55" length="2.107"/>
+			<section diameter="63.55" length="3.4"/>
+			<section diameter="61.55" length="1"/>
+			<section diameter="44.45" length="0"/>
+			<section diameter="44.45" length="3.18"/>
+		</holder>
+		<motion spindle-rpm="3000" ramp-spindle-rpm="3000" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="500" ramp-feedrate="0" retract-feedrate="1000"/>
+	</tool>
+	<tool version="1.1" type="tap right hand" unit="millimeters" guid="{adc64692-6ede-4a52-97ad-89a8178defc2}">
+		<nc number="42" diameter-offset="42" length-offset="42" break-control="0" manual-tool-change="0"/>
+		<coolant mode="flood"/>
+		<material name="hss"/>
+		<body diameter="6" flute-length="15" shoulder-length="15" shaft-diameter="5" body-length="60" overall-length="72" number-of-flutes="3" thread-pitch="1"/>
+		<holder description="CT40 - Drill Chuck - 1mm-13mm" vendor="Lyndex-Nikken" product-id="CAT40-NPU13-105U" guid="{27fcadf6-4ad3-40c1-8e36-f83102302665}" library-name="Sample Holders">
+			<section diameter="13.715" length="0"/>
+			<section diameter="22.225" length="10.925"/>
+			<section diameter="35" length="0"/>
+			<section diameter="46.735" length="19.05"/>
+			<section diameter="46.736" length="0"/>
+			<section diameter="46.735" length="5.08"/>
+			<section diameter="48.515" length="0.89"/>
+			<section diameter="48.515" length="10.795"/>
+			<section diameter="46.735" length="0.89"/>
+			<section diameter="46.735" length="9.525"/>
+			<section diameter="42.925" length="1.905"/>
+			<section diameter="42.925" length="9.525"/>
+			<section diameter="48" length="0"/>
+			<section diameter="48" length="14.225"/>
+			<section diameter="44.45" length="3.556"/>
+			<section diameter="44.45" length="13.97"/>
+			<section diameter="61.55" length="0"/>
+			<section diameter="63.55" length="1"/>
+			<section diameter="63.55" length="3.43"/>
+			<section diameter="56.25" length="2.107"/>
+			<section diameter="56.25" length="2.825"/>
+			<section diameter="63.55" length="2.107"/>
+			<section diameter="63.55" length="3.4"/>
+			<section diameter="61.55" length="1"/>
+			<section diameter="44.45" length="0"/>
+			<section diameter="44.45" length="3.18"/>
+		</holder>
+		<motion spindle-rpm="1000" ramp-spindle-rpm="1000" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="1000" exit-feedrate="1000" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+	</tool>
+	<tool version="1.1" type="tap right hand" unit="millimeters" guid="{8a42d6aa-edec-4e1a-ad9c-1f7749087b93}">
+		<nc number="43" diameter-offset="43" length-offset="43" break-control="0" manual-tool-change="0"/>
+		<coolant mode="flood"/>
+		<material name="hss"/>
+		<body diameter="5" flute-length="15" shoulder-length="15" shaft-diameter="4" body-length="48" overall-length="58" number-of-flutes="3" thread-pitch="1"/>
+		<holder description="CT40 - Drill Chuck - 1mm-13mm" vendor="Lyndex-Nikken" product-id="CAT40-NPU13-105U" guid="{27fcadf6-4ad3-40c1-8e36-f83102302665}" library-name="Sample Holders">
+			<section diameter="13.715" length="0"/>
+			<section diameter="22.225" length="10.925"/>
+			<section diameter="35" length="0"/>
+			<section diameter="46.735" length="19.05"/>
+			<section diameter="46.736" length="0"/>
+			<section diameter="46.735" length="5.08"/>
+			<section diameter="48.515" length="0.89"/>
+			<section diameter="48.515" length="10.795"/>
+			<section diameter="46.735" length="0.89"/>
+			<section diameter="46.735" length="9.525"/>
+			<section diameter="42.925" length="1.905"/>
+			<section diameter="42.925" length="9.525"/>
+			<section diameter="48" length="0"/>
+			<section diameter="48" length="14.225"/>
+			<section diameter="44.45" length="3.556"/>
+			<section diameter="44.45" length="13.97"/>
+			<section diameter="61.55" length="0"/>
+			<section diameter="63.55" length="1"/>
+			<section diameter="63.55" length="3.43"/>
+			<section diameter="56.25" length="2.107"/>
+			<section diameter="56.25" length="2.825"/>
+			<section diameter="63.55" length="2.107"/>
+			<section diameter="63.55" length="3.4"/>
+			<section diameter="61.55" length="1"/>
+			<section diameter="44.45" length="0"/>
+			<section diameter="44.45" length="3.18"/>
+		</holder>
+		<motion spindle-rpm="1000" ramp-spindle-rpm="1000" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="1000" exit-feedrate="1000" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+	</tool>
+	<tool version="1.1" type="chamfer mill" unit="millimeters" guid="{31cf0bf3-2308-4b0b-8fc4-7ac1d515a401}">
+		<nc number="50" diameter-offset="50" length-offset="50" break-control="0" manual-tool-change="0"/>
+		<coolant mode="flood"/>
+		<material name="hss"/>
+		<body diameter="10" tip-diameter="2" taper-angle="45" flute-length="7" shoulder-length="10" shaft-diameter="8" body-length="30" overall-length="55" number-of-flutes="3" thread-pitch="0"/>
+		<holder description="BT40 - B4C4-0016" guid="{c9376ccf-3d9c-44e0-abfc-d4d57cd68575}" library-name="Sample Holders">
+			<section diameter="20.9804" length="0"/>
+			<section diameter="27.4955" length="1.905"/>
+			<section diameter="27.4955" length="14.6812"/>
+			<section diameter="25.4" length="1.016"/>
+			<section diameter="21.8694" length="0"/>
+			<section diameter="21.8694" length="7.5692"/>
+			<section diameter="26.924" length="2.54"/>
+			<section diameter="26.924" length="15.3162"/>
+			<section diameter="33.274" length="3.175"/>
+			<section diameter="61" length="0"/>
+			<section diameter="63" length="1"/>
+			<section diameter="63" length="4.4"/>
+			<section diameter="53" length="2.887"/>
+			<section diameter="53" length="4.226"/>
+			<section diameter="63" length="2.887"/>
+			<section diameter="63" length="8.6"/>
+			<section diameter="61" length="1"/>
+			<section diameter="44.45" length="0"/>
+			<section diameter="44.45" length="2"/>
+		</holder>
+		<motion spindle-rpm="5000" ramp-spindle-rpm="5000" clockwise="yes" feed-mode="per-minute" cutting-feedrate="1000" entry-feedrate="500" exit-feedrate="1000" plunge-feedrate="500" ramp-feedrate="500" retract-feedrate="500"/>
+	</tool>
+	<tool version="1.1" type="counter sink" unit="millimeters" guid="{cee81fee-4a15-44c1-ac60-0972d6f0bddb}">
+		<nc number="60" diameter-offset="60" length-offset="60" break-control="0" manual-tool-change="0"/>
+		<coolant mode="flood"/>
+		<material name="hss"/>
+		<body diameter="10" tip-diameter="0" taper-angle="90" flute-length="8" shoulder-length="10" shaft-diameter="8" body-length="30" overall-length="70" number-of-flutes="3" thread-pitch="0"/>
+		<holder description="BT40 - B4C4-0016" guid="{c9376ccf-3d9c-44e0-abfc-d4d57cd68575}" library-name="Sample Holders">
+			<section diameter="20.9804" length="0"/>
+			<section diameter="27.4955" length="1.905"/>
+			<section diameter="27.4955" length="14.6812"/>
+			<section diameter="25.4" length="1.016"/>
+			<section diameter="21.8694" length="0"/>
+			<section diameter="21.8694" length="7.5692"/>
+			<section diameter="26.924" length="2.54"/>
+			<section diameter="26.924" length="15.3162"/>
+			<section diameter="33.274" length="3.175"/>
+			<section diameter="61" length="0"/>
+			<section diameter="63" length="1"/>
+			<section diameter="63" length="4.4"/>
+			<section diameter="53" length="2.887"/>
+			<section diameter="53" length="4.226"/>
+			<section diameter="63" length="2.887"/>
+			<section diameter="63" length="8.6"/>
+			<section diameter="61" length="1"/>
+			<section diameter="44.45" length="0"/>
+			<section diameter="44.45" length="2"/>
+		</holder>
+		<motion spindle-rpm="5000" ramp-spindle-rpm="5000" clockwise="yes" feed-mode="per-minute" cutting-feedrate="1000" entry-feedrate="500" exit-feedrate="1000" plunge-feedrate="500" ramp-feedrate="500" retract-feedrate="1000"/>
+	</tool>
+	<tool version="1.1" type="spot drill" unit="millimeters" guid="{69d49cc7-cd33-46cf-96cb-986e1c4afdda}">
+		<nc number="70" diameter-offset="70" length-offset="70" break-control="0" manual-tool-change="0"/>
+		<coolant mode="flood"/>
+		<material name="hss"/>
+		<body diameter="10" taper-angle="90" flute-length="8" shoulder-length="10" shaft-diameter="8" body-length="30" overall-length="70" number-of-flutes="3" thread-pitch="0"/>
+		<holder description="BT40 - B4C4-0016" guid="{c9376ccf-3d9c-44e0-abfc-d4d57cd68575}" library-name="Sample Holders">
+			<section diameter="20.9804" length="0"/>
+			<section diameter="27.4955" length="1.905"/>
+			<section diameter="27.4955" length="14.6812"/>
+			<section diameter="25.4" length="1.016"/>
+			<section diameter="21.8694" length="0"/>
+			<section diameter="21.8694" length="7.5692"/>
+			<section diameter="26.924" length="2.54"/>
+			<section diameter="26.924" length="15.3162"/>
+			<section diameter="33.274" length="3.175"/>
+			<section diameter="61" length="0"/>
+			<section diameter="63" length="1"/>
+			<section diameter="63" length="4.4"/>
+			<section diameter="53" length="2.887"/>
+			<section diameter="53" length="4.226"/>
+			<section diameter="63" length="2.887"/>
+			<section diameter="63" length="8.6"/>
+			<section diameter="61" length="1"/>
+			<section diameter="44.45" length="0"/>
+			<section diameter="44.45" length="2"/>
+		</holder>
+		<motion spindle-rpm="5000" ramp-spindle-rpm="5000" clockwise="yes" feed-mode="per-minute" cutting-feedrate="1000" entry-feedrate="500" exit-feedrate="1000" plunge-feedrate="500" ramp-feedrate="500" retract-feedrate="1000"/>
+	</tool>
+	<tool version="1.1" type="spot drill" unit="millimeters" guid="{725de4b9-68a8-43cb-84a4-d0f33de43ae9}">
+		<nc number="71" diameter-offset="71" length-offset="71" break-control="0" manual-tool-change="0"/>
+		<coolant mode="flood"/>
+		<material name="hss"/>
+		<body diameter="20" taper-angle="90" flute-length="15" shoulder-length="20" shaft-diameter="16" body-length="30" overall-length="70" number-of-flutes="3" thread-pitch="0"/>
+		<holder description="BT40 - B4C4-0025" guid="{aceb32e6-140d-4e17-ad82-26f58052c1ba}" library-name="Sample Holders">
+			<section diameter="29.1084" length="0"/>
+			<section diameter="42.0116" length="3.7084"/>
+			<section diameter="42.0116" length="15.2654"/>
+			<section diameter="39.9796" length="1.016"/>
+			<section diameter="31.877" length="0"/>
+			<section diameter="31.877" length="9.7282"/>
+			<section diameter="41.402" length="4.7625"/>
+			<section diameter="41.402" length="30.4546"/>
+			<section diameter="60.706" length="9.652"/>
+			<section diameter="61" length="0"/>
+			<section diameter="63" length="1"/>
+			<section diameter="63" length="4.4"/>
+			<section diameter="53" length="2.887"/>
+			<section diameter="53" length="4.226"/>
+			<section diameter="63" length="2.887"/>
+			<section diameter="63" length="8.6"/>
+			<section diameter="61" length="1"/>
+			<section diameter="44.45" length="0"/>
+			<section diameter="44.45" length="2"/>
+		</holder>
+		<motion spindle-rpm="5000" ramp-spindle-rpm="5000" clockwise="yes" feed-mode="per-minute" cutting-feedrate="1000" entry-feedrate="500" exit-feedrate="1000" plunge-feedrate="500" ramp-feedrate="500" retract-feedrate="1000"/>
+	</tool>
+</tool-library>

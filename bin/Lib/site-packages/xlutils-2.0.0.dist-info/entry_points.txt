@@ -1,0 +1,2 @@
+[console_scripts]
+margins = xlutils.margins:main

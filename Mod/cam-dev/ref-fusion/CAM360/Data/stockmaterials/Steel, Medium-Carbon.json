@@ -1,0 +1,12 @@
+{
+    "description": "Steel, Medium-Carbon",
+    "category": "Metal",
+    "uuid": "49a7dd52-81d3-4862-ada9-deab5c724fe4",
+    "designators": [],
+    "physicalMaterials": [
+        "PrismMaterial-135",
+        "PrismMaterial-178",
+        "PrismMaterial-194"
+    ],
+    "version": 1.0
+}

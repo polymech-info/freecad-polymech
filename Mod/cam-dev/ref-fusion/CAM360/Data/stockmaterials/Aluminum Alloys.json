@@ -1,0 +1,11 @@
+{
+    "description": "Aluminum Alloys",
+    "category": "Metal",
+    "uuid": "51411e48-8fed-4493-9dc1-a9c21acc2be9",
+    "designators": [
+        "ISO N1",
+        "Aluminium Alloys"
+    ],
+    "physicalMaterials": [],
+    "version": 1.0
+}

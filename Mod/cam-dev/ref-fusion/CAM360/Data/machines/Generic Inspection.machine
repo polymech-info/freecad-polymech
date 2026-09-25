@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<machine xmlns="http://www.hsmworks.com/xml/2009/machine">
+
+  <vendor>Autodesk</vendor>
+
+  <model></model>
+
+  <description>Generic Inspection</description>
+
+  <machining additive="no" inspection="yes" jet="no" milling="no" turning="no"/>
+
+  <png128></png128>
+
+  <mtk></mtk>
+
+  <fusion>
+    <model></model>
+  </fusion>
+
+  <inspection>
+    <network serverIp="127.0.0.1" serverPort="50000"/>
+  </inspection>
+
+</machine>

@@ -1,0 +1,48 @@
+{
+  "$comment": "Schema to validate the model response when generating feeds and speeds.",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "surface_speed": {
+      "$ref": "#/definitions/machining_parameter"
+    },
+    "chip_load": {
+      "$ref": "#/definitions/machining_parameter"
+    }
+  },
+  "required": [
+    "surface_speed",
+    "chip_load"
+  ],
+  "additionalProperties": false,
+  "definitions": {
+    "machining_parameter": {
+      "type": "object",
+      "properties": {
+        "cautious_value": {
+          "type": "number"
+        },
+        "balanced_value": {
+          "type": "number"
+        },
+        "fast_value": {
+          "type": "number"
+        },
+        "unit": {
+          "type": "string"
+        },
+        "justification": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "cautious_value",
+        "balanced_value",
+        "fast_value",
+        "unit",
+        "justification"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

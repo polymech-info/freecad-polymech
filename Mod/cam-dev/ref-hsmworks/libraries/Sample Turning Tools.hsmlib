@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet type='text/xsl' href='tool-library.xsl'?>
+<!--Use a standards compliant web browser to view this file-->
+<tool-library xmlns="http://www.hsmworks.com/xml/2004/cnc/tool-library" version="1.0" guid="{aebd9bf5-02f0-4e66-bc03-58e650e57ca4}">
+  <tool version="1.1" type="turning general" unit="millimeters" guid="{364e5cab-0866-4df6-bda1-e67c6ca5084a}">
+    <description>CNMT Right Hand</description>
+    <nc number="0" compensation-offset="0" turret="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="carbide"/>
+    <insert shape="C" relief-angle="0" tolerance="M" cross-section="T" diameter="9.67194" thickness="3.96875" corner-radius="0.8" tip-angle="0" groove-width="0" insert-width="0" head-length="0" overall-length="30" thread-pitch="0" internal-thread="no"/>
+    <turning-holder clamping="D" shape="C" style="L" relief-angle="0" hand="R" shank-height="20" shank-width="20" chamfer-width="0" chamfer-height="0" diameter="9.67194" overall-length="125" head-length="32" cutting-width="25" round-shank="no" side-angle="0"/>
+    <turning-setup compensation="tip tangent" tool-angle="0" right-spindle="no"/>
+    <motion surface-speed="91440" ramp-spindle-rpm="0" clockwise="yes" feed-mode="per-revolution" cutting-feedrate="0.127" entry-feedrate="0.127" exit-feedrate="0.127" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="turning general" unit="millimeters" guid="{fb5d09b6-8cbf-407b-8458-3c871af5893b}">
+    <description>VNMT Right Hand</description>
+    <nc number="0" compensation-offset="0" turret="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="carbide"/>
+    <insert shape="V" relief-angle="0" tolerance="M" cross-section="T" diameter="9.68703" thickness="3.96875" corner-radius="0.2" tip-angle="0" groove-width="0" insert-width="0" head-length="0" overall-length="30" thread-pitch="0" internal-thread="no"/>
+    <turning-holder clamping="D" shape="V" style="L" relief-angle="0" hand="R" shank-height="20" shank-width="20" chamfer-width="0" chamfer-height="0" diameter="9.68703" overall-length="125" head-length="32" cutting-width="25" round-shank="no" side-angle="0"/>
+    <turning-setup compensation="tip tangent" tool-angle="0" right-spindle="no"/>
+    <motion surface-speed="91440" ramp-spindle-rpm="0" clockwise="yes" feed-mode="per-revolution" cutting-feedrate="0.127" entry-feedrate="0.127" exit-feedrate="0.127" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="turning general" unit="millimeters" guid="{8e554e23-b9ad-4d1f-9ad1-7419f9e02189}">
+    <description>TNMT Neutral</description>
+    <nc number="0" compensation-offset="0" turret="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="carbide"/>
+    <insert shape="T" relief-angle="0" tolerance="M" cross-section="T" diameter="9.62371" thickness="3.96875" corner-radius="0.8" tip-angle="0" groove-width="0" insert-width="0" head-length="0" overall-length="30" thread-pitch="0" internal-thread="no"/>
+    <turning-holder clamping="D" shape="T" style="A" relief-angle="0" hand="N" shank-height="20" shank-width="20" chamfer-width="0" chamfer-height="0" diameter="9.62371" overall-length="125" head-length="32" cutting-width="20" round-shank="no" side-angle="0"/>
+    <turning-setup compensation="tip tangent" tool-angle="0" right-spindle="no"/>
+    <motion surface-speed="91440" ramp-spindle-rpm="0" clockwise="yes" feed-mode="per-revolution" cutting-feedrate="0.127" entry-feedrate="0.127" exit-feedrate="0.127" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="turning general" unit="millimeters" guid="{ae536a7e-8a43-4b45-8df1-91c7856d0de2}">
+    <description>CNMT Left Hand</description>
+    <nc number="0" compensation-offset="0" turret="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="carbide"/>
+    <insert shape="C" relief-angle="0" tolerance="M" cross-section="T" diameter="9.67194" thickness="3.96875" corner-radius="0.8" tip-angle="0" groove-width="0" insert-width="0" head-length="0" overall-length="30" thread-pitch="0" internal-thread="no"/>
+    <turning-holder clamping="D" shape="C" style="L" relief-angle="0" hand="L" shank-height="20" shank-width="20" chamfer-width="0" chamfer-height="0" diameter="9.67194" overall-length="125" head-length="32" cutting-width="25" round-shank="no" side-angle="0"/>
+    <turning-setup compensation="tip tangent" tool-angle="0" right-spindle="no"/>
+    <motion surface-speed="91440" ramp-spindle-rpm="0" clockwise="yes" feed-mode="per-revolution" cutting-feedrate="0.127" entry-feedrate="0.127" exit-feedrate="0.127" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="turning general" unit="millimeters" guid="{a8a7d3eb-75f2-4056-be62-4b92b718bcd3}">
+    <description>VNMT Left Hand</description>
+    <nc number="0" compensation-offset="0" turret="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="carbide"/>
+    <insert shape="V" relief-angle="0" tolerance="M" cross-section="T" diameter="9.68703" thickness="3.96875" corner-radius="0.2" tip-angle="0" groove-width="0" insert-width="0" head-length="0" overall-length="30" thread-pitch="0" internal-thread="no"/>
+    <turning-holder clamping="D" shape="V" style="L" relief-angle="0" hand="L" shank-height="20" shank-width="20" chamfer-width="0" chamfer-height="0" diameter="9.68703" overall-length="125" head-length="32" cutting-width="25" round-shank="no" side-angle="0"/>
+    <turning-setup compensation="tip tangent" tool-angle="0" right-spindle="no"/>
+    <motion surface-speed="91440" ramp-spindle-rpm="0" clockwise="yes" feed-mode="per-revolution" cutting-feedrate="0.127" entry-feedrate="0.127" exit-feedrate="0.127" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="turning grooving" unit="millimeters" guid="{d3df428b-dbab-4f9b-9060-7c6cb4d8d8d3}">
+    <description>OD Grooving</description>
+    <nc number="0" compensation-offset="0" turret="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="carbide"/>
+    <insert shape="groove square" relief-angle="0" tolerance="M" cross-section="T" diameter="10" thickness="4" corner-radius="0.8" tip-angle="0" groove-width="4" insert-width="3.2" head-length="5" overall-length="30" thread-pitch="0" internal-thread="no"/>
+    <turning-holder clamping="D" shape="groove square" style="groove external" relief-angle="0" hand="R" shank-height="20" shank-width="20" chamfer-width="0" chamfer-height="0" diameter="10" overall-length="125" head-length="32" cutting-width="20" round-shank="no" side-angle="0"/>
+    <turning-setup compensation="tip" tool-angle="0" right-spindle="no"/>
+    <motion surface-speed="91440" ramp-spindle-rpm="0" clockwise="yes" feed-mode="per-revolution" cutting-feedrate="0.127" entry-feedrate="0.127" exit-feedrate="0.127" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="turning grooving" unit="millimeters" guid="{ee157bc5-492a-4de5-a0d0-b317c8ad1071}">
+    <description>OD Grooving</description>
+    <nc number="0" compensation-offset="0" turret="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="carbide"/>
+    <insert shape="groove round" relief-angle="0" tolerance="M" cross-section="T" diameter="10" thickness="4" corner-radius="0" tip-angle="0" groove-width="5" insert-width="3.2" head-length="0" overall-length="30" thread-pitch="0" internal-thread="no"/>
+    <turning-holder clamping="D" shape="groove round" style="groove external" relief-angle="0" hand="R" shank-height="20" shank-width="20" chamfer-width="0" chamfer-height="0" diameter="10" overall-length="125" head-length="32" cutting-width="20" round-shank="no" side-angle="0"/>
+    <turning-setup compensation="insert center" tool-angle="0" right-spindle="no"/>
+    <motion surface-speed="91440" ramp-spindle-rpm="0" clockwise="yes" feed-mode="per-revolution" cutting-feedrate="0.127" entry-feedrate="0.127" exit-feedrate="0.127" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="turning grooving" unit="millimeters" guid="{48291f5d-c0a2-4b86-8d1b-1a49af6a8ee9}">
+    <description>ID Grooving</description>
+    <nc number="0" compensation-offset="0" turret="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="carbide"/>
+    <insert shape="groove square" relief-angle="0" tolerance="M" cross-section="T" diameter="10" thickness="4" corner-radius="0.8" tip-angle="0" groove-width="3" insert-width="2.7" head-length="3.75" overall-length="20" thread-pitch="0" internal-thread="no"/>
+    <turning-holder clamping="D" shape="groove square" style="groove internal" relief-angle="0" hand="R" shank-height="20" shank-width="20" chamfer-width="0" chamfer-height="0" diameter="10" overall-length="125" head-length="33" cutting-width="30" round-shank="yes" side-angle="0"/>
+    <turning-setup compensation="tip tangent" tool-angle="90" right-spindle="no"/>
+    <motion surface-speed="91440" ramp-spindle-rpm="0" clockwise="yes" feed-mode="per-revolution" cutting-feedrate="0.127" entry-feedrate="0.127" exit-feedrate="0.127" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="turning threading" unit="millimeters" guid="{60782ee2-6d09-43fa-8ada-b2855709ad0a}">
+    <description>OD Threading</description>
+    <nc number="0" compensation-offset="0" turret="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="carbide"/>
+    <insert shape="thread iso double" relief-angle="0" tolerance="M" cross-section="T" diameter="10" thickness="4" corner-radius="0" tip-angle="0" groove-width="0" insert-width="4" head-length="0" overall-length="30" thread-pitch="2" internal-thread="no"/>
+    <turning-holder clamping="D" shape="thread iso double" style="thread straight" relief-angle="0" hand="R" shank-height="20" shank-width="20" chamfer-width="0" chamfer-height="0" diameter="10" overall-length="125" head-length="32" cutting-width="20" round-shank="no" side-angle="0"/>
+    <turning-setup compensation="tip tangent" tool-angle="0" right-spindle="no"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="0" clockwise="yes" feed-mode="per-minute" cutting-feedrate="1000" entry-feedrate="1000" exit-feedrate="1000" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="turning threading" unit="millimeters" guid="{b66f2bb5-f64c-4803-9a8d-2878bc2b4676}">
+    <description>OD Threading</description>
+    <nc number="0" compensation-offset="0" turret="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="carbide"/>
+    <insert shape="thread iso triple" relief-angle="0" tolerance="M" cross-section="T" diameter="10" thickness="4" corner-radius="0" tip-angle="0" groove-width="0" insert-width="2" head-length="0" overall-length="20" thread-pitch="2" internal-thread="no"/>
+    <turning-holder clamping="D" shape="thread iso triple" style="thread straight" relief-angle="0" hand="R" shank-height="20" shank-width="20" chamfer-width="0" chamfer-height="0" diameter="10" overall-length="125" head-length="32" cutting-width="20" round-shank="no" side-angle="0"/>
+    <turning-setup compensation="tip tangent" tool-angle="0" right-spindle="no"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="0" clockwise="yes" feed-mode="per-minute" cutting-feedrate="1000" entry-feedrate="1000" exit-feedrate="1000" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="turning boring" unit="millimeters" guid="{97391345-36c5-4035-af7c-ebf63181bfb0}">
+    <description>ID Boring</description>
+    <nc number="0" compensation-offset="0" turret="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="carbide"/>
+    <insert shape="C" relief-angle="0" tolerance="M" cross-section="T" diameter="9.67194" thickness="3.96875" corner-radius="0.8" tip-angle="0" groove-width="0" insert-width="0" head-length="0" overall-length="30" thread-pitch="0" internal-thread="no"/>
+    <turning-holder clamping="D" shape="C" style="boring bar l" relief-angle="0" hand="R" shank-height="12" shank-width="12" chamfer-width="0" chamfer-height="0" diameter="9.67194" overall-length="125" head-length="25" cutting-width="16" round-shank="yes" side-angle="0"/>
+    <turning-setup compensation="tip tangent" tool-angle="90" right-spindle="no"/>
+    <motion surface-speed="91440" ramp-spindle-rpm="0" clockwise="yes" feed-mode="per-revolution" cutting-feedrate="0.127" entry-feedrate="0.127" exit-feedrate="0.127" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+</tool-library>

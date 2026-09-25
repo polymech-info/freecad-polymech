@@ -1,0 +1,45 @@
+###############################################################################
+#
+# CIMCO Center 4.0 machine description
+#
+# This is a machine generated file - DO NOT EDIT !!!
+#
+###############################################################################
+
+[INIFILEVERSION]
+VERSION=200
+
+[INFO]
+
+DESCRIPTION	=Ftp Client
+TYPE		= 0
+PROTOCOL	= FTPCLIENT
+
+## FTPCLIENT ##################################################################
+
+[FTPCLIENT]
+SERVERADDR	= 
+USERNAME	= 
+PASSWORD	= 
+LOCALPATH	= 
+REMOTEPATH	= 
+PORTINFO	= 
+
+## SENDRECV ###################################################################
+
+[SENDRECV]
+ALLOWSEND	= Yes
+ALLOWRECV	= No
+USESPLIT		= Yes
+USEDEFDIR	= No
+LOCALSEND	= Yes
+LOCALRECV	= Yes
+LOCALDEL	= Yes
+LOCALRENAME	= Yes
+LOCALDIRCHANGE	= Yes
+REMOTEDEL	= Yes
+REMOTERENAME	= Yes
+REMOTEDIRCHANGE	= Yes
+LOCALCREATE	= Yes
+REMOTECREATE	= Yes
+

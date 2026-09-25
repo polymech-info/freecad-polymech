@@ -1,0 +1,58 @@
+0  BEGIN PGM barrel-entry MM 
+1  BLK FORM 0.1 Z  X-42.5  Y-60  Z-60
+2  BLK FORM 0.2  X+42.5  Y+60  Z+0
+3  ;-------------------------------------
+4  ;Tools
+5  ;  #13 D=9.75 CR=4.875 - ZMIN=-15 - ZMAX=+15 - ball end mill
+6  ;-------------------------------------
+7  ;
+8  * - 2D Contour16
+9  M5
+10 TOOL CALL 13 Z S6064
+11 L M140 MB MAX
+12 M3
+13 L  X-0.228  Y-4.7 R0 FMAX
+14 L  Z+15 R0 FMAX
+15 M8
+16 CYCL DEF 32.0 TOLERANCE
+17 CYCL DEF 32.1
+18 L  Z+5 FMAX
+19 L  Z+3.475 F184
+20 CC  Y-5.675  Z+3.475
+21 CP IPA-90 DR- F552
+22 L  Y-6.65  Z+2.5
+23 CC  X+0.747  Y-6.65
+24 CP IPA+90 DR+
+25 L  X+9  Y-7.625  Z+1.778
+26 CC  X+9  Y+0
+27 CP IPA+180  Z-0.318 DR+
+28 L  X-9  Y+7.625  Z-1.893
+29 CC  X-9  Y+0
+30 CP IPA+180  Z-3.988 DR+
+31 L  X+9  Y-7.625  Z-5.563
+32 CC  X+9  Y+0
+33 CP IPA+180  Z-7.659 DR+
+34 L  X-9  Y+7.625  Z-9.234
+35 CC  X-9  Y+0
+36 CP IPA+180  Z-11.329 DR+
+37 L  X+9  Y-7.625  Z-12.904
+38 CC  X+9  Y+0
+39 CP IPA+180  Z-15 DR+
+40 L  X-9  Y+7.625
+41 CC  X-9  Y+0
+42 CP IPA+180 DR+
+43 L  X+9  Y-7.625
+44 CC  X+9  Y+0
+45 CP IPA+180 DR+
+46 L  X-1  Y+7.625
+47 CC  X-1  Y+6.65
+48 CP IPA+90 DR+
+49 L  X-1.975  Y+5.675
+50 CC  Y+5.675  Z-14.025
+51 CP IPA-90 DR-
+52 L  Y+4.7  Z+15 FMAX
+53 M9
+54 M5
+55 L M140 MB MAX
+56 M30
+57 END PGM barrel-entry MM 

@@ -1,0 +1,45 @@
+0  BEGIN PGM schufe-back MM 
+1  BLK FORM 0.1 Z  X+0  Y-120  Z-10
+2  BLK FORM 0.2  X+240  Y+0  Z+0
+3  ;-------------------------------------
+4  ;Tools
+5  ;  #3 D=5 - ZMIN=-6 - ZMAX=+15 - flat end mill
+6  ;-------------------------------------
+7  ;
+8  * - 2D Contour1 (2)
+9  M5
+10 TOOL CALL 3 Z S12000
+11 L M140 MB MAX
+12 M3
+13 L  X+154.75  Y-95.5 R0 FMAX
+14 L  Z+15 R0 FMAX
+15 M8
+16 CYCL DEF 32.0 TOLERANCE
+17 CYCL DEF 32.1
+18 L  Z+5 FMAX
+19 L  Z-5.5 F799
+20 CC  X+155.25  Z-5.5
+21 CP IPA-90 DR- F2398
+22 L  X+155.75  Z-6
+23 CC  X+155.75  Y-95
+24 CP IPA+90 DR+
+25 L  X+156.25  Y-84.25
+26 L  Y-83.25 F600
+27 L  X+114.75 F2398
+28 L  X+113.75 F600
+29 L  Y-105.75 F2398
+30 L  Y-106.75 F600
+31 L  X+155.25 F2398
+32 L  X+156.25 F600
+33 L  Y-95 F2398
+34 CC  X+155.75  Y-95
+35 CP IPA+90 DR+
+36 L  X+155.25  Y-94.5
+37 CC  X+155.25  Z-5.5
+38 CP IPA+90 DR+
+39 L  X+154.75  Z+15 FMAX
+40 M9
+41 M5
+42 L M140 MB MAX
+43 M30
+44 END PGM schufe-back MM 

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet type='text/xsl' href='tool-library.xsl'?>
+<!--Use a standards compliant web browser to view this file-->
+<tool-library xmlns="http://www.hsmworks.com/xml/2004/cnc/tool-library" version="1.0" guid="{15edfc69-587f-4355-ac23-cef8a2b1bfdb}">
+  <holder version="1.1" unit="millimeters" guid="{237ada78-2fd6-4c9d-8e81-ada8cd369fb4}">
+    <description>BT30 - Blank1</description>
+    <holder>
+      <section diameter="44" length="0"/>
+      <section diameter="46" length="1"/>
+      <section diameter="46" length="3.4"/>
+      <section diameter="38" length="2.309"/>
+      <section diameter="38" length="3.381"/>
+      <section diameter="46" length="2.309"/>
+      <section diameter="46" length="6.6"/>
+      <section diameter="44" length="1"/>
+      <section diameter="31.75" length="0"/>
+      <section diameter="31.75" length="2"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="millimeters" guid="{dd7518bf-857e-438d-8d5b-e05fd5427a6d}">
+    <description>BT40 - Blank1</description>
+    <holder>
+      <section diameter="61" length="0"/>
+      <section diameter="63" length="1"/>
+      <section diameter="63" length="4.4"/>
+      <section diameter="53" length="2.887"/>
+      <section diameter="53" length="4.226"/>
+      <section diameter="63" length="2.887"/>
+      <section diameter="63" length="8.6"/>
+      <section diameter="61" length="1"/>
+      <section diameter="44.45" length="0"/>
+      <section diameter="44.45" length="2"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="millimeters" guid="{b2702a58-b19a-4caa-b9d6-64c110c46870}">
+    <description>CT40 - Blank2</description>
+    <manufacturer>Lyndex</manufacturer>
+    <holder>
+      <section diameter="42.45" length="0"/>
+      <section diameter="44.45" length="1"/>
+      <section diameter="44.45" length="14.875"/>
+      <section diameter="61.55" length="0"/>
+      <section diameter="63.55" length="1"/>
+      <section diameter="63.55" length="3.43"/>
+      <section diameter="56.25" length="2.107"/>
+      <section diameter="56.25" length="2.825"/>
+      <section diameter="63.55" length="2.107"/>
+      <section diameter="63.55" length="3.4"/>
+      <section diameter="61.55" length="1"/>
+      <section diameter="44.45" length="0"/>
+      <section diameter="44.45" length="3.18"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="millimeters" guid="{ea4b5159-a46f-4691-8d0d-b8312376555e}">
+    <description>CT40 - Blank1</description>
+    <manufacturer>Lyndex</manufacturer>
+    <holder>
+      <section diameter="61.55" length="0"/>
+      <section diameter="63.55" length="1"/>
+      <section diameter="63.55" length="3.43"/>
+      <section diameter="56.25" length="2.107"/>
+      <section diameter="56.25" length="2.825"/>
+      <section diameter="63.55" length="2.107"/>
+      <section diameter="63.55" length="3.4"/>
+      <section diameter="61.55" length="1"/>
+      <section diameter="44.45" length="0"/>
+      <section diameter="44.45" length="3.18"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="millimeters" guid="{6479dfac-3922-4761-abdd-c5edbc51e2cc}">
+    <description>CT50 - Blank2</description>
+    <manufacturer>Lyndex-Nikken</manufacturer>
+    <holder>
+      <section diameter="67.85" length="0"/>
+      <section diameter="69.85" length="1"/>
+      <section diameter="69.85" length="14.875"/>
+      <section diameter="96.45" length="0"/>
+      <section diameter="98.45" length="1"/>
+      <section diameter="98.45" length="3.44"/>
+      <section diameter="91.25" length="2.078"/>
+      <section diameter="91.25" length="2.997"/>
+      <section diameter="98.45" length="2.078"/>
+      <section diameter="98.45" length="3.41"/>
+      <section diameter="96.45" length="1"/>
+      <section diameter="69.85" length="0"/>
+      <section diameter="69.85" length="3.175"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="millimeters" guid="{6fc7f7f7-ce80-44c9-947c-60b2e25bd87e}">
+    <description>CT50 - Blank1</description>
+    <manufacturer>Lyndex-Nikken</manufacturer>
+    <holder>
+      <section diameter="96.45" length="0"/>
+      <section diameter="98.45" length="1"/>
+      <section diameter="98.45" length="3.44"/>
+      <section diameter="91.25" length="2.078"/>
+      <section diameter="91.25" length="2.997"/>
+      <section diameter="98.45" length="2.078"/>
+      <section diameter="98.45" length="3.41"/>
+      <section diameter="96.45" length="1"/>
+      <section diameter="69.85" length="0"/>
+      <section diameter="69.85" length="3.175"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="millimeters" guid="{c71a059d-3ec3-4508-a962-d9d20d68850f}">
+    <description>HSK100 - Blank</description>
+    <holder>
+      <section diameter="83" length="0"/>
+      <section diameter="85" length="1"/>
+      <section diameter="85" length="15"/>
+      <section diameter="99" length="0"/>
+      <section diameter="100" length="0.5"/>
+      <section diameter="100" length="3.5"/>
+      <section diameter="96.536" length="1"/>
+      <section diameter="95.036" length="0"/>
+      <section diameter="95.036" length="2"/>
+      <section diameter="96.536" length="0"/>
+      <section diameter="100" length="1"/>
+      <section diameter="100" length="20.5"/>
+      <section diameter="99" length="0.5"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="millimeters" guid="{51389eab-f02e-4653-9660-343a4803035d}">
+    <description>HSK40 - Blank</description>
+    <holder>
+      <section diameter="31.6" length="0"/>
+      <section diameter="33.6" length="1"/>
+      <section diameter="33.6" length="15"/>
+      <section diameter="39" length="0"/>
+      <section diameter="40" length="0.5"/>
+      <section diameter="40" length="1.75"/>
+      <section diameter="36.536" length="1"/>
+      <section diameter="35.536" length="0"/>
+      <section diameter="35.536" length="1.5"/>
+      <section diameter="36.536" length="0"/>
+      <section diameter="40" length="1"/>
+      <section diameter="40" length="13.75"/>
+      <section diameter="39" length="0.5"/>
+    </holder>
+  </holder>
+  <holder version="1.1" unit="millimeters" guid="{bd11f682-b064-4fe5-a063-37195542e69d}">
+    <description>HSK63 - Blank</description>
+    <holder>
+      <section diameter="50.4" length="0"/>
+      <section diameter="52.4" length="1"/>
+      <section diameter="52.4" length="15"/>
+      <section diameter="62" length="0"/>
+      <section diameter="63" length="0.5"/>
+      <section diameter="63" length="3.5"/>
+      <section diameter="59.536" length="1"/>
+      <section diameter="58.036" length="0"/>
+      <section diameter="58.036" length="2"/>
+      <section diameter="59.536" length="0"/>
+      <section diameter="63" length="1"/>
+      <section diameter="63" length="17.5"/>
+      <section diameter="62" length="0.5"/>
+    </holder>
+  </holder>
+</tool-library>

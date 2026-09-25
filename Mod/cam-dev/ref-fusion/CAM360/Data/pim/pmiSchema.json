@@ -1,0 +1,1497 @@
+{
+  "$comment": "Automatically generated schema. Do not manually edit!!! If you want to update the schema, clone https://git.autodesk.com/manufacturing-data-model/pim-pmi-sdk and run 'npm run generateSchema'.",
+  "$ref": "#/definitions/PMIRoot",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "AngleRelatorType": {
+      "type": "number",
+      "enum": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "AreaUnitType": {
+      "type": "number",
+      "enum": [
+        -1,
+        0,
+        1,
+        2
+      ]
+    },
+    "CircularCurve": {
+      "type": "object",
+      "properties": {
+        "range": {
+          "$ref": "#/definitions/ParameterRange"
+        },
+        "center": {
+          "$ref": "#/definitions/Point3"
+        },
+        "normal": {
+          "$ref": "#/definitions/Vector3"
+        },
+        "radius": {
+          "$ref": "#/definitions/Vector3"
+        }
+      },
+      "required": [
+        "center",
+        "normal",
+        "radius",
+        "range"
+      ],
+      "additionalProperties": false,
+      "description": "Circular curve around a given point Has maximum parameter range of 2pi"
+    },
+    "Curve": {
+      "type": "object",
+      "properties": {
+        "curveType": {
+          "$ref": "#/definitions/CurveType"
+        },
+        "circle": {
+          "$ref": "#/definitions/CircularCurve"
+        },
+        "line": {
+          "$ref": "#/definitions/CurveLine"
+        },
+        "polyline": {
+          "$ref": "#/definitions/Polyline"
+        }
+      },
+      "required": [
+        "curveType"
+      ],
+      "additionalProperties": false
+    },
+    "CurveLine": {
+      "type": "object",
+      "properties": {
+        "range": {
+          "$ref": "#/definitions/ParameterRange"
+        },
+        "position": {
+          "$ref": "#/definitions/Point3"
+        },
+        "direction": {
+          "$ref": "#/definitions/Vector3"
+        }
+      },
+      "required": [
+        "direction",
+        "position",
+        "range"
+      ],
+      "additionalProperties": false,
+      "description": "A line, defined as a poisition, direction and magnitude"
+    },
+    "CurveType": {
+      "type": "number",
+      "enum": [
+        0,
+        1,
+        2
+      ],
+      "description": "Types of curves that are supported. Used when reading component data."
+    },
+    "DatumModifier": {
+      "type": "object",
+      "properties": {
+        "propertiesNotSet": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "type": {
+          "$ref": "#/definitions/DatumModifierType"
+        },
+        "value": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "additionalProperties": false
+    },
+    "DatumModifierType": {
+      "type": "number",
+      "enum": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    "DatumReference": {
+      "type": "object",
+      "properties": {
+        "datumId": {
+          "type": "string"
+        },
+        "modifiers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/DatumModifier"
+          }
+        }
+      },
+      "required": [
+        "datumId",
+        "modifiers"
+      ],
+      "additionalProperties": false
+    },
+    "DatumTarget": {
+      "type": "object",
+      "properties": {
+        "targetId": {
+          "type": "string"
+        },
+        "targetLetter": {
+          "type": "string"
+        },
+        "datumTargetType": {
+          "$ref": "#/definitions/DatumTargetType"
+        },
+        "orientation": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        },
+        "lengths": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Measure"
+          }
+        },
+        "targetPoint": {
+          "$ref": "#/definitions/Point3"
+        },
+        "targetCurves": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Curve"
+          }
+        }
+      },
+      "required": [
+        "targetId",
+        "datumTargetType",
+        "orientation",
+        "lengths"
+      ],
+      "additionalProperties": false
+    },
+    "DatumTargetType": {
+      "type": "number",
+      "enum": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "DimensionalLocation": {
+      "type": "object",
+      "properties": {
+        "propertiesNotSet": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "pmiObjectType": {
+          "$ref": "#/definitions/PMIObjectType"
+        },
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "attributes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/PMIAttribute"
+          }
+        },
+        "geometries": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/GeometryReference"
+          }
+        },
+        "graphics": {
+          "$ref": "#/definitions/Graphics"
+        },
+        "versionPersistentId": {
+          "type": "string"
+        },
+        "value": {
+          "$ref": "#/definitions/MeasureWithTolerance"
+        },
+        "angleRelatorType": {
+          "$ref": "#/definitions/AngleRelatorType"
+        },
+        "holeType": {
+          "$ref": "#/definitions/HoleType"
+        },
+        "linearDistanceSubType": {
+          "$ref": "#/definitions/LinearDistanceSubType"
+        },
+        "relatingTargetId": {
+          "$ref": "#/definitions/GeometryReference"
+        },
+        "relatedTargetId": {
+          "$ref": "#/definitions/GeometryReference"
+        },
+        "orientation": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        }
+      },
+      "required": [
+        "angleRelatorType",
+        "description",
+        "geometries",
+        "id",
+        "linearDistanceSubType",
+        "name",
+        "pmiObjectType",
+        "value"
+      ],
+      "additionalProperties": false
+    },
+    "DimensionalSize": {
+      "type": "object",
+      "properties": {
+        "propertiesNotSet": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "pmiObjectType": {
+          "$ref": "#/definitions/PMIObjectType"
+        },
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "attributes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/PMIAttribute"
+          }
+        },
+        "geometries": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/GeometryReference"
+          }
+        },
+        "graphics": {
+          "$ref": "#/definitions/Graphics"
+        },
+        "versionPersistentId": {
+          "type": "string"
+        },
+        "value": {
+          "$ref": "#/definitions/MeasureWithTolerance"
+        },
+        "angleRelatorType": {
+          "$ref": "#/definitions/AngleRelatorType"
+        },
+        "holeType": {
+          "$ref": "#/definitions/HoleType"
+        },
+        "dimensionalSizeSubType": {
+          "$ref": "#/definitions/DimensionalSizeSubType"
+        },
+        "targetId": {
+          "$ref": "#/definitions/GeometryReference"
+        },
+        "orientation": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        }
+      },
+      "required": [
+        "angleRelatorType",
+        "description",
+        "dimensionalSizeSubType",
+        "geometries",
+        "id",
+        "name",
+        "pmiObjectType",
+        "value"
+      ],
+      "additionalProperties": false
+    },
+    "DimensionalSizeSubType": {
+      "type": "number",
+      "enum": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    "GDTDatum": {
+      "type": "object",
+      "properties": {
+        "propertiesNotSet": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "pmiObjectType": {
+          "$ref": "#/definitions/PMIObjectType"
+        },
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "attributes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/PMIAttribute"
+          }
+        },
+        "geometries": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/GeometryReference"
+          }
+        },
+        "graphics": {
+          "$ref": "#/definitions/Graphics"
+        },
+        "versionPersistentId": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "datumFeature": {
+          "$ref": "#/definitions/GeometryReference"
+        },
+        "datumTargets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/DatumTarget"
+          }
+        }
+      },
+      "required": [
+        "datumTargets",
+        "description",
+        "geometries",
+        "id",
+        "label",
+        "name",
+        "pmiObjectType"
+      ],
+      "additionalProperties": false
+    },
+    "GeneralNote": {
+      "type": "object",
+      "properties": {
+        "propertiesNotSet": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "pmiObjectType": {
+          "$ref": "#/definitions/PMIObjectType"
+        },
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "attributes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/PMIAttribute"
+          }
+        },
+        "geometries": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/GeometryReference"
+          }
+        },
+        "graphics": {
+          "$ref": "#/definitions/Graphics"
+        },
+        "versionPersistentId": {
+          "type": "string"
+        },
+        "referenceIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "description",
+        "geometries",
+        "id",
+        "name",
+        "pmiObjectType",
+        "referenceIds"
+      ],
+      "additionalProperties": false,
+      "description": "Class to hold general note. General note is a composite PMI object consisting of simple notes and geometric tolerances."
+    },
+    "GeometricTolerance": {
+      "type": "object",
+      "properties": {
+        "propertiesNotSet": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "pmiObjectType": {
+          "$ref": "#/definitions/PMIObjectType"
+        },
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "attributes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/PMIAttribute"
+          }
+        },
+        "geometries": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/GeometryReference"
+          }
+        },
+        "graphics": {
+          "$ref": "#/definitions/Graphics"
+        },
+        "versionPersistentId": {
+          "type": "string"
+        },
+        "type": {
+          "$ref": "#/definitions/GeometricToleranceType"
+        },
+        "modifiers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/GeometricToleranceModifierType"
+          }
+        },
+        "magnitude": {
+          "$ref": "#/definitions/Measure"
+        },
+        "maxUpper": {
+          "$ref": "#/definitions/Measure"
+        },
+        "displacement": {
+          "$ref": "#/definitions/Measure"
+        },
+        "firstUnitSize": {
+          "$ref": "#/definitions/Measure"
+        },
+        "secondUnitSize": {
+          "$ref": "#/definitions/Measure"
+        },
+        "areaUnitType": {
+          "$ref": "#/definitions/AreaUnitType"
+        },
+        "toleranceZoneForm": {
+          "$ref": "#/definitions/ToleranceZoneFormType"
+        },
+        "datumReferences": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/DatumReference"
+          }
+        }
+      },
+      "required": [
+        "areaUnitType",
+        "description",
+        "geometries",
+        "id",
+        "modifiers",
+        "name",
+        "pmiObjectType",
+        "toleranceZoneForm",
+        "type"
+      ],
+      "additionalProperties": false,
+      "description": "Object to represent a PMI Geometric Tolerance for a geometry This will hold information regarding a geometric item on the CAD and its corresponding tolerances"
+    },
+    "GeometricToleranceModifierType": {
+      "type": "number",
+      "enum": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    "GeometricToleranceType": {
+      "type": "number",
+      "enum": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    "GeometryReference": {
+      "type": "object",
+      "properties": {
+        "geometryType": {
+          "type": "string",
+          "description": "The type of geometry that is referenced."
+        },
+        "referenceKey": {
+          "type": "string",
+          "description": "Encoded string that contains the geometry reference."
+        },
+        "isHidden": {
+          "type": "boolean",
+          "description": "Flag to control whether the geometry is hidden. This is when the geometry is not part of the referenced feature, but is only used for dimensioning, like in holes."
+        }
+      },
+      "required": [
+        "geometryType",
+        "referenceKey"
+      ],
+      "additionalProperties": false,
+      "description": "A reference to a specified piece of geometry"
+    },
+    "Graphics": {
+      "type": "object",
+      "properties": {
+        "meshes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "curves": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Curve"
+          }
+        },
+        "text": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/TextDefinition"
+          }
+        }
+      },
+      "required": [
+        "meshes",
+        "curves",
+        "text"
+      ],
+      "additionalProperties": false
+    },
+    "HoleType": {
+      "type": "number",
+      "enum": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "LaySymbolType": {
+      "type": "number",
+      "enum": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "description": "Lay is the direction of predominant surface pattern ordinarily determined by the production method used"
+    },
+    "LimitsAndFits": {
+      "type": "object",
+      "properties": {
+        "deviation": {
+          "type": "string"
+        },
+        "grade": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "deviation",
+        "grade"
+      ],
+      "additionalProperties": false
+    },
+    "LinearDistanceSubType": {
+      "type": "number",
+      "enum": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "Measure": {
+      "type": "object",
+      "properties": {
+        "nominalValue": {
+          "type": "number"
+        },
+        "unit": {
+          "$ref": "#/definitions/UnitType"
+        },
+        "formatType": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "nominalValue",
+        "unit"
+      ],
+      "additionalProperties": false,
+      "description": "Represents a measure value (nominal value with unit)"
+    },
+    "MeasureBounds": {
+      "type": "object",
+      "properties": {
+        "lower": {
+          "$ref": "#/definitions/Measure"
+        },
+        "upper": {
+          "$ref": "#/definitions/Measure"
+        }
+      },
+      "required": [
+        "lower",
+        "upper"
+      ],
+      "additionalProperties": false,
+      "description": "A combined upper and lower bound for a value"
+    },
+    "MeasureModifierType1": {
+      "type": "number",
+      "enum": [
+        -1,
+        0,
+        1
+      ]
+    },
+    "MeasureModifierType2": {
+      "type": "number",
+      "enum": [
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ]
+    },
+    "MeasureQualifierType": {
+      "type": "number",
+      "enum": [
+        -1,
+        0,
+        1,
+        2
+      ]
+    },
+    "MeasureWithTolerance": {
+      "type": "object",
+      "properties": {
+        "propertiesNotSet": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "value": {
+          "$ref": "#/definitions/Measure"
+        },
+        "tolerance": {
+          "$ref": "#/definitions/PlusMinusTolerance"
+        },
+        "shaftTolerance": {
+          "$ref": "#/definitions/PlusMinusTolerance"
+        },
+        "qualifier": {
+          "$ref": "#/definitions/MeasureQualifierType"
+        },
+        "modifierType1": {
+          "$ref": "#/definitions/MeasureModifierType1"
+        },
+        "modifierType2": {
+          "$ref": "#/definitions/MeasureModifierType2"
+        }
+      },
+      "required": [
+        "value"
+      ],
+      "additionalProperties": false
+    },
+    "PMIAttribute": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "valueType": {
+          "$ref": "#/definitions/PMIAttributeValueType"
+        },
+        "value": {
+          "type": "object",
+          "properties": {
+            "integerValue": {
+              "type": "number"
+            },
+            "longValue": {
+              "type": "number"
+            },
+            "floatValue": {
+              "type": "number"
+            },
+            "boolValue": {
+              "type": "boolean"
+            },
+            "stringValue": {
+              "type": "string"
+            },
+            "idSetValue": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "blobValue": {}
+          },
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "name",
+        "valueType",
+        "value"
+      ],
+      "additionalProperties": false,
+      "description": "Holds a name/value pair representing as a PMI object attribute. Only one value is expected at one time."
+    },
+    "PMIAttributeValueType": {
+      "type": "number",
+      "enum": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "PMIFolder": {
+      "type": "object",
+      "properties": {
+        "propertiesNotSet": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "pmiObjectType": {
+          "$ref": "#/definitions/PMIObjectType"
+        },
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "attributes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/PMIAttribute"
+          }
+        },
+        "geometries": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/GeometryReference"
+          }
+        },
+        "graphics": {
+          "$ref": "#/definitions/Graphics"
+        },
+        "versionPersistentId": {
+          "type": "string"
+        },
+        "folderItems": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "description",
+        "folderItems",
+        "geometries",
+        "id",
+        "name",
+        "pmiObjectType"
+      ],
+      "additionalProperties": false
+    },
+    "PMIObjectBase": {
+      "type": "object",
+      "properties": {
+        "propertiesNotSet": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "pmiObjectType": {
+          "$ref": "#/definitions/PMIObjectType"
+        },
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "attributes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/PMIAttribute"
+          }
+        },
+        "geometries": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/GeometryReference"
+          }
+        },
+        "graphics": {
+          "$ref": "#/definitions/Graphics"
+        },
+        "versionPersistentId": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "pmiObjectType",
+        "id",
+        "name",
+        "description",
+        "geometries"
+      ],
+      "additionalProperties": false,
+      "description": "Base object containing common data for all PMI object types"
+    },
+    "PMIObjectType": {
+      "type": "string",
+      "enum": [
+        "DimensionalLocation",
+        "DimensionalSize",
+        "GDTDatum",
+        "GeometricTolerance",
+        "GeneralNote",
+        "Graphical",
+        "Folder",
+        "SimpleNote",
+        "SurfaceTexture"
+      ]
+    },
+    "PMIRoot": {
+      "additionalProperties": false,
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "$ref": "#/definitions/DimensionalSize"
+          },
+          {
+            "$ref": "#/definitions/DimensionalLocation"
+          },
+          {
+            "$ref": "#/definitions/GeometricTolerance"
+          },
+          {
+            "$ref": "#/definitions/GDTDatum"
+          },
+          {
+            "$ref": "#/definitions/PMIFolder"
+          },
+          {
+            "$ref": "#/definitions/SurfaceTexture"
+          },
+          {
+            "$ref": "#/definitions/SimpleNote"
+          },
+          {
+            "$ref": "#/definitions/GeneralNote"
+          },
+          {
+            "$ref": "#/definitions/PMIObjectBase"
+          }
+        ]
+      }
+    },
+    "ParameterRange": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "$ref": "#/definitions/ParameterRangeType"
+        },
+        "low": {
+          "type": "number"
+        },
+        "high": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "additionalProperties": false,
+      "description": "Parametric range of a curve or surface, may be infinite or finite."
+    },
+    "ParameterRangeType": {
+      "type": "number",
+      "enum": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "description": "Possible parametric ranges for curves. Infintie is an unbounded curve Finite has upper and lower bound Bound below is infinite in upper direction, but has lower bound Bound above is infinite in lower direction, but has upper bound"
+    },
+    "PlusMinusTolerance": {
+      "type": "object",
+      "properties": {
+        "bounds": {
+          "$ref": "#/definitions/MeasureBounds"
+        },
+        "class": {
+          "$ref": "#/definitions/LimitsAndFits"
+        }
+      },
+      "additionalProperties": false,
+      "description": "Stores tolerance for a nominal value as a set of plus and minus deviations (bounds to that tolerance) or tolerance class. Bounds and tolerance class are mutually exclusive."
+    },
+    "Point3": {
+      "type": "object",
+      "properties": {
+        "x": {
+          "type": "number"
+        },
+        "y": {
+          "type": "number"
+        },
+        "z": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "x",
+        "y",
+        "z"
+      ],
+      "additionalProperties": false
+    },
+    "Polyline": {
+      "type": "object",
+      "properties": {
+        "range": {
+          "$ref": "#/definitions/ParameterRange"
+        },
+        "points": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        },
+        "closed": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "closed",
+        "points",
+        "range"
+      ],
+      "additionalProperties": false,
+      "description": "Sequence of points defining a series of straight line segments."
+    },
+    "RoughnessData": {
+      "type": "object",
+      "properties": {
+        "length": {
+          "type": "number"
+        },
+        "value": {
+          "type": "number"
+        },
+        "paramType": {
+          "$ref": "#/definitions/SurfaceTextParameterType"
+        },
+        "max": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "length",
+        "value",
+        "paramType",
+        "max"
+      ],
+      "additionalProperties": false
+    },
+    "SimpleNote": {
+      "type": "object",
+      "properties": {
+        "propertiesNotSet": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "pmiObjectType": {
+          "$ref": "#/definitions/PMIObjectType"
+        },
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "attributes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/PMIAttribute"
+          }
+        },
+        "geometries": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/GeometryReference"
+          }
+        },
+        "graphics": {
+          "$ref": "#/definitions/Graphics"
+        },
+        "versionPersistentId": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "description",
+        "geometries",
+        "id",
+        "name",
+        "note",
+        "pmiObjectType"
+      ],
+      "additionalProperties": false,
+      "description": "Class to hold semantic text of a simple note."
+    },
+    "SurfaceTextParameterType": {
+      "type": "number",
+      "enum": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "SurfaceTexture": {
+      "type": "object",
+      "properties": {
+        "propertiesNotSet": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "pmiObjectType": {
+          "$ref": "#/definitions/PMIObjectType"
+        },
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "attributes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/PMIAttribute"
+          }
+        },
+        "geometries": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/GeometryReference"
+          }
+        },
+        "graphics": {
+          "$ref": "#/definitions/Graphics"
+        },
+        "versionPersistentId": {
+          "type": "string"
+        },
+        "type": {
+          "$ref": "#/definitions/SurfaceTextureType"
+        },
+        "laySymbol": {
+          "$ref": "#/definitions/LaySymbolType"
+        },
+        "standard": {
+          "$ref": "#/definitions/SurfaceTextureStandardType"
+        },
+        "averageRoughness": {
+          "type": "number"
+        },
+        "minRoughness": {
+          "type": "number"
+        },
+        "maxRoughness": {
+          "type": "number"
+        },
+        "processingAllowance": {
+          "type": "number"
+        },
+        "processingAllowanceLowerTolerance": {
+          "type": "number"
+        },
+        "processingAllowanceUpperTolerance": {
+          "type": "number"
+        },
+        "machineMethod": {
+          "type": "string"
+        },
+        "isModifier": {
+          "type": "boolean"
+        },
+        "cutoff": {
+          "$ref": "#/definitions/RoughnessData"
+        },
+        "secondaryRoughness": {
+          "$ref": "#/definitions/RoughnessData"
+        },
+        "tertiaryRoughness": {
+          "$ref": "#/definitions/RoughnessData"
+        },
+        "waviness": {
+          "$ref": "#/definitions/RoughnessData"
+        }
+      },
+      "required": [
+        "description",
+        "geometries",
+        "id",
+        "isModifier",
+        "laySymbol",
+        "machineMethod",
+        "name",
+        "pmiObjectType",
+        "standard",
+        "type"
+      ],
+      "additionalProperties": false,
+      "description": "Object to represent a PMI Surface Texture for a geometry"
+    },
+    "SurfaceTextureStandardType": {
+      "type": "number",
+      "enum": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "SurfaceTextureType": {
+      "type": "number",
+      "enum": [
+        0,
+        1,
+        2
+      ]
+    },
+    "TextDefinition": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string"
+        },
+        "leftCenterPosition": {
+          "$ref": "#/definitions/Point3"
+        },
+        "facingDirection": {
+          "$ref": "#/definitions/Vector3"
+        },
+        "textDirection": {
+          "$ref": "#/definitions/Vector3"
+        },
+        "lineSpacing": {
+          "type": "number"
+        },
+        "font": {
+          "type": "object",
+          "properties": {
+            "fontName": {
+              "type": "string"
+            },
+            "fontSize": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "fontName",
+            "fontSize"
+          ],
+          "additionalProperties": false
+        },
+        "textColor": {
+          "type": "object",
+          "properties": {
+            "R": {
+              "type": "number"
+            },
+            "B": {
+              "type": "number"
+            },
+            "G": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "R",
+            "B",
+            "G"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "text",
+        "leftCenterPosition",
+        "facingDirection",
+        "textDirection",
+        "lineSpacing",
+        "font",
+        "textColor"
+      ],
+      "additionalProperties": false
+    },
+    "ToleranceZoneFormType": {
+      "type": "number",
+      "enum": [
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "UnitType": {
+      "type": "number",
+      "enum": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "Vector3": {
+      "type": "object",
+      "properties": {
+        "x": {
+          "type": "number"
+        },
+        "y": {
+          "type": "number"
+        },
+        "z": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "x",
+        "y",
+        "z"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

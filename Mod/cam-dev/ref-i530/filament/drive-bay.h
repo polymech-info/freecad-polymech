@@ -1,0 +1,49 @@
+0  BEGIN PGM drive-bay MM 
+1  BLK FORM 0.1 Z  X+0  Y-145  Z-2
+2  BLK FORM 0.2  X+474  Y+0  Z+0
+3  ;-------------------------------------
+4  ;Tools
+5  ;  #12 D=10 - ZMIN=-4 - ZMAX=+15 - flat end mill
+6  ;-------------------------------------
+7  ;
+8  * - 2D Contour1
+9  M5
+10 TOOL CALL 12 Z S1617
+11 L M140 MB MAX
+12 M3
+13 L  X+176.823  Y-85.5 R0 FMAX
+14 L  Z+15 R0 FMAX
+15 M8
+16 CYCL DEF 32.0 TOLERANCE
+17 CYCL DEF 32.1
+18 L  Z+5 FMAX
+19 L  Z+3.5 F361
+20 CC  Y-86.5  Z+3.5
+21 CP IPA-90 DR- F182
+22 L  Y-87.5  Z+2.5
+23 CC  X+177.823  Y-87.5
+24 CP IPA+90 DR+
+25 L  X+179.958  Y-88.5  Z+2.425
+26 L  Y-56.5  Z+1.308
+27 L  X+43.958  Z-3.441
+28 L  Y-72.5  Z-4
+29 L  Y-86.5
+30 L  Y-88.5 F45
+31 L  X+177.958 F182
+32 L  X+179.958 F45
+33 L  Y-58.5 F182
+34 L  Y-56.5 F45
+35 L  X+45.958 F182
+36 L  X+43.958 F45
+37 L  Y-72.5 F182
+38 CC  X+44.958  Y-72.5
+39 CP IPA+90 DR+
+40 L  X+45.958  Y-73.5
+41 CC  X+45.958  Z-3
+42 CP IPA-90 DR-
+43 L  X+46.958  Z+15 FMAX
+44 M9
+45 M5
+46 L M140 MB MAX
+47 M30
+48 END PGM drive-bay MM 

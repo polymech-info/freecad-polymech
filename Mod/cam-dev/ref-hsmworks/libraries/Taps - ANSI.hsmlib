@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet type='text/xsl' href='tool-library.xsl'?>
+<!--Use a standards compliant web browser to view this file-->
+<tool-library xmlns="http://www.hsmworks.com/xml/2004/cnc/tool-library" version="1.0" guid="{856ed44e-93c9-45b6-abce-3c06974e2dc4}">
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{9e3e3dfa-56e4-49ba-b0df-acf81637a019}">
+    <description>#0-80 UNF</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.06" taper-angle="180" flute-length="0.24" shoulder-length="0.292" shaft-diameter="0.054" body-length="0.6" overall-length="2.6" number-of-flutes="2" thread-pitch="0.0125"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{64dead42-2ace-41b3-b88a-fd36cbffd837}">
+    <description>#1-64 UNC</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.073" taper-angle="180" flute-length="0.292" shoulder-length="0.344" shaft-diameter="0.0657" body-length="0.73" overall-length="2.73" number-of-flutes="2" thread-pitch="0.015625"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{32d5e4d6-2d7b-427c-8eb9-2dacf2cc631f}">
+    <description>#1-72 UNF</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.073" taper-angle="180" flute-length="0.292" shoulder-length="0.344" shaft-diameter="0.0657" body-length="0.73" overall-length="2.73" number-of-flutes="2" thread-pitch="0.0138889"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{0b92dd57-4cac-4ef1-b183-26c80073d3eb}">
+    <description>#2-56 UNC</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.086" taper-angle="180" flute-length="0.344" shoulder-length="0.396" shaft-diameter="0.0774" body-length="0.86" overall-length="2.86" number-of-flutes="2" thread-pitch="0.0178571"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{d0690907-3886-46d6-8a92-9ead652eb841}">
+    <description>#2-64 UNF</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.086" taper-angle="180" flute-length="0.344" shoulder-length="0.396" shaft-diameter="0.0774" body-length="0.86" overall-length="2.86" number-of-flutes="2" thread-pitch="0.015625"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{19f3c4d1-3127-4165-9e3a-683560e1b3fc}">
+    <description>#3-48 UNC</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.099" flute-length="0.396" shoulder-length="0.448" shaft-diameter="0.0891" body-length="0.99" overall-length="2.99" number-of-flutes="2" thread-pitch="0.0208333"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{d948188f-835b-404b-a516-a35f4f0c5233}">
+    <description>#3-56 UNF</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.099" taper-angle="180" flute-length="0.396" shoulder-length="0.448" shaft-diameter="0.0891" body-length="0.99" overall-length="2.99" number-of-flutes="2" thread-pitch="0.0178571"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{ff48f8a4-cd28-4c88-b9de-5912eca35ec7}">
+    <description>#4-40 UNC</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.112" taper-angle="180" flute-length="0.448" shoulder-length="0.5" shaft-diameter="0.1008" body-length="1.12" overall-length="3.12" number-of-flutes="2" thread-pitch="0.025"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{6094f3e7-da10-4d02-8c89-c432f345da67}">
+    <description>#4-48 UNF</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.112" taper-angle="180" flute-length="0.448" shoulder-length="0.5" shaft-diameter="0.1008" body-length="1.12" overall-length="3.12" number-of-flutes="2" thread-pitch="0.0208333"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{8045dff9-93e8-48d4-8b47-186f2ae5d0b3}">
+    <description>#5-40 UNC</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.125" taper-angle="180" flute-length="0.5" shoulder-length="0.552" shaft-diameter="0.1125" body-length="1.25" overall-length="3.25" number-of-flutes="2" thread-pitch="0.025"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{42ac8349-d0ac-4c8d-b846-dcb7ef37c0c0}">
+    <description>#5-44 UNF</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.125" taper-angle="180" flute-length="0.5" shoulder-length="0.552" shaft-diameter="0.1125" body-length="1.25" overall-length="3.25" number-of-flutes="2" thread-pitch="0.0227273"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{457591a8-c6c2-4dc6-bf06-80ebed14ed06}">
+    <description>#6-32 UNC</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.138" taper-angle="180" flute-length="0.552" shoulder-length="0.656" shaft-diameter="0.1242" body-length="1.38" overall-length="3.38" number-of-flutes="2" thread-pitch="0.03125"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{9161740d-9a08-45bf-a456-356235abe562}">
+    <description>#6-40 UNF</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.138" taper-angle="180" flute-length="0.552" shoulder-length="0.656" shaft-diameter="0.1242" body-length="1.38" overall-length="3.38" number-of-flutes="2" thread-pitch="0.025"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{5cdc0bd9-7637-4358-9225-6d7155bf567d}">
+    <description>#8-32 UNC</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.164" taper-angle="180" flute-length="0.656" shoulder-length="0.76" shaft-diameter="0.1476" body-length="1.64" overall-length="3.64" number-of-flutes="2" thread-pitch="0.03125"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{28ded2c5-74cf-48a3-92c2-91490e025dc4}">
+    <description>#8-36 UNF</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.164" taper-angle="180" flute-length="0.656" shoulder-length="0.76" shaft-diameter="0.1476" body-length="1.64" overall-length="3.64" number-of-flutes="2" thread-pitch="0.0277778"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{1212e088-9e68-4893-bc58-764027128b47}">
+    <description>#10-24 UNC</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.19" taper-angle="180" flute-length="0.76" shoulder-length="0.864" shaft-diameter="0.171" body-length="1.9" overall-length="3.9" number-of-flutes="2" thread-pitch="0.0416667"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{98c04f84-abb1-4fa2-ba43-0d8b8fdc498a}">
+    <description>#10-32 UNF</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.19" taper-angle="180" flute-length="0.76" shoulder-length="0.864" shaft-diameter="0.171" body-length="1.9" overall-length="3.9" number-of-flutes="2" thread-pitch="0.03125"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{b796e55e-6652-4002-870e-505ebbe3676d}">
+    <description>#12-24 UNC</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.216" taper-angle="180" flute-length="0.864" shoulder-length="0.864" shaft-diameter="0.1944" body-length="2.16" overall-length="4.16" number-of-flutes="2" thread-pitch="0.0416667"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{36375086-ad66-419b-ab3c-643af2fece9b}">
+    <description>#12-28 UNC</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.216" taper-angle="180" flute-length="0.864" shoulder-length="1" shaft-diameter="0.1944" body-length="2.16" overall-length="4.16" number-of-flutes="2" thread-pitch="0.0357143"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{c30ce05c-6387-4c1b-b5c5-4767ee5397d6}">
+    <description>#12-32 UNF</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.216" taper-angle="180" flute-length="0.864" shoulder-length="1" shaft-diameter="0.1944" body-length="2.16" overall-length="4.16" number-of-flutes="2" thread-pitch="0.03125"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{b9d5e96d-6734-4fa2-9702-dee50495f658}">
+    <description>1/4-20 UNC</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.25" taper-angle="180" flute-length="1" shoulder-length="1" shaft-diameter="0.225" body-length="2.5" overall-length="4.5" number-of-flutes="2" thread-pitch="0.05"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{20693f7b-438f-48f6-9861-94efa8ce32a3}">
+    <description>1/4-28 UNF</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.25" taper-angle="180" flute-length="1" shoulder-length="1.25" shaft-diameter="0.225" body-length="2.5" overall-length="4.5" number-of-flutes="2" thread-pitch="0.0357143"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{7a93f12a-f64c-4572-ac3a-e975f3523956}">
+    <description>1/4-32 UNEF</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.25" taper-angle="180" flute-length="1" shoulder-length="1.25" shaft-diameter="0.225" body-length="2.5" overall-length="4.5" number-of-flutes="2" thread-pitch="0.03125"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{d6b84a29-3e57-47e4-9d12-b8abd5c03393}">
+    <description>5/16-18 UNC</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.3125" taper-angle="180" flute-length="1.25" shoulder-length="1.25" shaft-diameter="0.28125" body-length="3.125" overall-length="5.125" number-of-flutes="2" thread-pitch="0.0555556"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{ec6688f1-f871-4df5-a5ab-9fef1fd38625}">
+    <description>5/16-24 UNF</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.3125" taper-angle="180" flute-length="1.25" shoulder-length="1.5" shaft-diameter="0.28125" body-length="3.125" overall-length="5.125" number-of-flutes="2" thread-pitch="0.0416667"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{2d41c4d6-6aee-47c3-9197-f961cb48de1f}">
+    <description>5/16-32 UNEF</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.3125" taper-angle="180" flute-length="1.25" shoulder-length="1.5" shaft-diameter="0.28125" body-length="3.125" overall-length="5.125" number-of-flutes="2" thread-pitch="0.03125"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{44a7d00e-54c9-4405-b697-1cfbc1845d02}">
+    <description>3/8-16 UNC</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.375" taper-angle="180" flute-length="1.5" shoulder-length="1.5" shaft-diameter="0.3375" body-length="3.75" overall-length="5.75" number-of-flutes="2" thread-pitch="0.0625"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{8019f75a-7505-48b2-80d2-cadb439beb51}">
+    <description>3/8-24 UNF</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.375" taper-angle="180" flute-length="1.5" shoulder-length="1.75" shaft-diameter="0.3375" body-length="3.75" overall-length="5.75" number-of-flutes="2" thread-pitch="0.0416667"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{9065c6c8-c5ec-4e3f-9b76-0fcb3bf5b03b}">
+    <description>3/8-32 UNEF</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.375" taper-angle="180" flute-length="1.5" shoulder-length="1.75" shaft-diameter="0.3375" body-length="3.75" overall-length="5.75" number-of-flutes="2" thread-pitch="0.03125"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{ff7ff5e5-69b7-4e6c-ac7c-bccd71eb6c53}">
+    <description>7/16-14 UNC</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.4375" taper-angle="180" flute-length="1.75" shoulder-length="1.75" shaft-diameter="0.39375" body-length="4.375" overall-length="6.375" number-of-flutes="2" thread-pitch="0.0714286"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{6af34b89-8ef0-44f7-b6e4-3740e7984b65}">
+    <description>7/16-20 UNF</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.4375" taper-angle="180" flute-length="1.75" shoulder-length="2" shaft-diameter="0.39375" body-length="4.375" overall-length="6.375" number-of-flutes="2" thread-pitch="0.05"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{022b65d2-f96e-481f-aa0b-1675959f2488}">
+    <description>7/16-28 UNEF</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.4375" taper-angle="180" flute-length="1.75" shoulder-length="2" shaft-diameter="0.39375" body-length="4.375" overall-length="6.375" number-of-flutes="2" thread-pitch="0.0357143"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{50f7c2c7-4426-45f7-af3b-1af7dffde5e4}">
+    <description>1/2-13 UNC</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.5" taper-angle="180" flute-length="2" shoulder-length="2" shaft-diameter="0.45" body-length="5" overall-length="7" number-of-flutes="2" thread-pitch="0.0769231"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{03bd2df6-6fec-4cbb-8ebb-0d9621648b89}">
+    <description>1/2-20 UNF</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.5" taper-angle="180" flute-length="2" shoulder-length="2.25" shaft-diameter="0.45" body-length="5" overall-length="7" number-of-flutes="2" thread-pitch="0.05"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{5645f185-b0eb-472a-ab10-2fdbe76cbcf2}">
+    <description>1/2-28 UNEF</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.5" taper-angle="180" flute-length="2" shoulder-length="2.25" shaft-diameter="0.45" body-length="5" overall-length="7" number-of-flutes="2" thread-pitch="0.0357143"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{c634ef16-8da1-4add-8fda-01402af49ed7}">
+    <description>9/16-12 UNC</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.5625" taper-angle="180" flute-length="2.25" shoulder-length="2.25" shaft-diameter="0.50625" body-length="5.625" overall-length="7.625" number-of-flutes="2" thread-pitch="0.0833333"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{da47a81c-6aad-4f51-a767-f8c9b88f2b35}">
+    <description>9/16-18 UNF</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.5625" taper-angle="180" flute-length="2.25" shoulder-length="2.5" shaft-diameter="0.50625" body-length="5.625" overall-length="7.625" number-of-flutes="2" thread-pitch="0.0555556"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{41b169ef-0a6d-4d0c-8bb2-e98b3a048c5a}">
+    <description>9/16-24 UNEF</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.5625" taper-angle="180" flute-length="2.25" shoulder-length="2.5" shaft-diameter="0.50625" body-length="5.625" overall-length="7.625" number-of-flutes="2" thread-pitch="0.0416667"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{e7f26d57-9b0a-4a0a-b691-f377337f8a1b}">
+    <description>5/8-11 UNC</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.625" taper-angle="180" flute-length="2.5" shoulder-length="2.5" shaft-diameter="0.5625" body-length="6.25" overall-length="8.25" number-of-flutes="2" thread-pitch="0.0909091"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{3bdc3eb1-c75a-496a-abc4-a9149125fd2f}">
+    <description>5/8-18 UNF</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.625" taper-angle="180" flute-length="2.5" shoulder-length="2.75" shaft-diameter="0.5625" body-length="6.25" overall-length="8.25" number-of-flutes="2" thread-pitch="0.0555556"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{4f8752e3-b2cc-474c-a8e9-4fd798eebc62}">
+    <description>5/8-24 UNEF</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.625" taper-angle="180" flute-length="2.5" shoulder-length="3" shaft-diameter="0.5625" body-length="6.25" overall-length="8.25" number-of-flutes="2" thread-pitch="0.0416667"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{f5c231cb-a941-4b89-8fd6-d58bfe47996a}">
+    <description>11/16-24 UNEF</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.6875" taper-angle="180" flute-length="2.75" shoulder-length="3" shaft-diameter="0.61875" body-length="6.875" overall-length="8.875" number-of-flutes="2" thread-pitch="0.0416667"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{0e87d46c-cf10-4fe3-89e6-0d7bd6efe211}">
+    <description>3/4-10 UNC</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.75" taper-angle="180" flute-length="3" shoulder-length="3" shaft-diameter="0.675" body-length="7.5" overall-length="9.5" number-of-flutes="2" thread-pitch="0.1"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{a87c5761-eedb-4a5d-b963-9546311d8751}">
+    <description>3/4-16 UNF</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.75" taper-angle="180" flute-length="3" shoulder-length="3.25" shaft-diameter="0.675" body-length="7.5" overall-length="9.5" number-of-flutes="2" thread-pitch="0.0625"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{a8874b3a-8845-4563-b94b-a8678539b17b}">
+    <description>3/4-20 UNEF</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.75" taper-angle="180" flute-length="3" shoulder-length="3.5" shaft-diameter="0.675" body-length="7.5" overall-length="9.5" number-of-flutes="2" thread-pitch="0.05"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{ff54a26f-e80f-4919-9d8e-d77515da2a3e}">
+    <description>13/16-20 UNEF</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.8125" taper-angle="180" flute-length="3.25" shoulder-length="3.5" shaft-diameter="0.73125" body-length="8.125" overall-length="10.125" number-of-flutes="2" thread-pitch="0.05"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{9127217d-c068-466f-8b17-b6af2df2d4c0}">
+    <description>7/8-9 UNC</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.875" taper-angle="180" flute-length="3.5" shoulder-length="3.5" shaft-diameter="0.7875" body-length="8.75" overall-length="10.75" number-of-flutes="2" thread-pitch="0.1111111"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{837f3dc0-fd15-4ff7-aac8-b519bb95e263}">
+    <description>7/8-14 UNF</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.875" taper-angle="180" flute-length="3.5" shoulder-length="3.75" shaft-diameter="0.7875" body-length="8.75" overall-length="10.75" number-of-flutes="2" thread-pitch="0.0714286"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{755c237e-3ac7-4b67-87f3-5aecb4c7b98f}">
+    <description>7/8-20 UNEF</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.875" taper-angle="180" flute-length="3.5" shoulder-length="4" shaft-diameter="0.7875" body-length="8.75" overall-length="10.75" number-of-flutes="2" thread-pitch="0.05"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{f09465a0-5bd9-4150-84fb-8d56c4f067f7}">
+    <description>15/16-20 UNEF</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.9375" taper-angle="180" flute-length="3.75" shoulder-length="4" shaft-diameter="0.84375" body-length="9.375" overall-length="11.375" number-of-flutes="2" thread-pitch="0.05"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{86552429-9ad8-47df-9278-12aafd147425}">
+    <description>1-8 UNC</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="1" taper-angle="180" flute-length="4" shoulder-length="4" shaft-diameter="0.9" body-length="10" overall-length="12" number-of-flutes="2" thread-pitch="0.125"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{e1feb2a4-3cc2-4e53-97d7-4de1fa05832d}">
+    <description>1-12 UNF</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="1" taper-angle="180" flute-length="4" shaft-diameter="0.9" body-length="10" overall-length="12" number-of-flutes="2" thread-pitch="0.0833333"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="inches" guid="{71316ab3-11d6-4397-8c5a-ff9abe358368}">
+    <description>1-20 UNEF</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="1" taper-angle="180" flute-length="4" shaft-diameter="0.9" body-length="10" overall-length="12" number-of-flutes="2" thread-pitch="0.05"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+</tool-library>

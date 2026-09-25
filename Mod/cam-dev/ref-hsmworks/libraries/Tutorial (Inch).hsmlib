@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet type='text/xsl' href='tool-library.xsl'?>
+<!--Use a standards compliant web browser to view this file-->
+<tool-library xmlns="http://www.hsmworks.com/xml/2004/cnc/tool-library" version="1.0" guid="{5555a518-9b69-4bec-8060-e30b752be3bf}">
+  <tool version="1.1" type="flat end mill" unit="inches" guid="{c62092ae-6fd1-45a2-b23b-d9fd2b53737d}">
+    <nc number="2" diameter-offset="2" length-offset="2" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="0.75" flute-length="2" shoulder-length="2.25" shaft-diameter="0.75" body-length="2.75" overall-length="4" number-of-flutes="4" thread-pitch="0"/>
+    <holder description="Maritool CAT40-ER32-2.35" comment="Maritool CAT40-ER32-2.35" vendor="Maritool" product-id="CAT40-ER32-2.35">
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.97" length="0.148"/>
+      <section diameter="1.97" length="0.836"/>
+      <section diameter="1.57" length="0"/>
+      <section diameter="1.57" length="0.176"/>
+      <section diameter="1.75" length="0.09"/>
+      <section diameter="1.75" length="0.425"/>
+      <section diameter="1.85" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+    <motion spindle-rpm="5000.01" ramp-spindle-rpm="5000.01" clockwise="yes" feed-mode="per-minute" cutting-feedrate="40" entry-feedrate="20" exit-feedrate="40" plunge-feedrate="20" ramp-feedrate="20" retract-feedrate="20"/>
+  </tool>
+  <tool version="1.1" type="flat end mill" unit="inches" guid="{3ff6eb92-d268-4973-9aeb-034b514ca351}">
+    <nc number="3" diameter-offset="3" length-offset="3" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.5" flute-length="1.2" shoulder-length="1.6" shaft-diameter="0.5" body-length="2" overall-length="2.75" number-of-flutes="3" thread-pitch="0"/>
+    <holder description="Maritool CAT40-ER32-2.35" comment="Maritool CAT40-ER32-2.35" vendor="Maritool" product-id="CAT40-ER32-2.35">
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.97" length="0.148"/>
+      <section diameter="1.97" length="0.836"/>
+      <section diameter="1.57" length="0"/>
+      <section diameter="1.57" length="0.176"/>
+      <section diameter="1.75" length="0.09"/>
+      <section diameter="1.75" length="0.425"/>
+      <section diameter="1.85" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+    <motion spindle-rpm="3000" ramp-spindle-rpm="3000" clockwise="yes" feed-mode="per-minute" cutting-feedrate="30" entry-feedrate="15" exit-feedrate="30" plunge-feedrate="15" ramp-feedrate="15" retract-feedrate="15"/>
+  </tool>
+  <tool version="1.1" type="flat end mill" unit="inches" guid="{cc79612c-b608-41ce-bb98-c8f8f86e28e7}">
+    <nc number="4" diameter-offset="4" length-offset="4" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.25" flute-length="0.4" shoulder-length="0.6" shaft-diameter="0.25" body-length="1" overall-length="1.4" number-of-flutes="3" thread-pitch="0"/>
+    <holder description="Maritool CAT40-ER32-2.35" comment="Maritool CAT40-ER32-2.35" vendor="Maritool" product-id="CAT40-ER32-2.35">
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.97" length="0.148"/>
+      <section diameter="1.97" length="0.836"/>
+      <section diameter="1.57" length="0"/>
+      <section diameter="1.57" length="0.176"/>
+      <section diameter="1.75" length="0.09"/>
+      <section diameter="1.75" length="0.425"/>
+      <section diameter="1.85" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+    <motion spindle-rpm="5000" ramp-spindle-rpm="5000" clockwise="yes" feed-mode="per-minute" cutting-feedrate="40" entry-feedrate="20" exit-feedrate="40" plunge-feedrate="20" ramp-feedrate="20" retract-feedrate="20"/>
+  </tool>
+  <tool version="1.1" type="flat end mill" unit="inches" guid="{9e7a0d49-13ca-4481-90b0-e4c59887a97c}">
+    <nc number="5" diameter-offset="5" length-offset="5" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.1875" flute-length="0.4" shoulder-length="0.6" shaft-diameter="0.1875" body-length="1." overall-length="1.5" number-of-flutes="3" thread-pitch="0"/>
+    <holder description="Default Holder">
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.97" length="0.148"/>
+      <section diameter="1.97" length="0.836"/>
+      <section diameter="1.57" length="0"/>
+      <section diameter="1.57" length="0.176"/>
+      <section diameter="1.75" length="0.09"/>
+      <section diameter="1.75" length="0.425"/>
+      <section diameter="1.85" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+    <motion spindle-rpm="5000" ramp-spindle-rpm="5000" clockwise="yes" feed-mode="per-minute" cutting-feedrate="40" entry-feedrate="20" exit-feedrate="40" plunge-feedrate="20" ramp-feedrate="20" retract-feedrate="20"/>
+  </tool>
+  <tool version="1.1" type="bull nose end mill" unit="inches" guid="{03f65727-1fb3-4aa0-b7d5-9e3b7724c029}">
+    <nc number="6" diameter-offset="6" length-offset="6" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.75" corner-radius="0.0625" flute-length="1.25" shoulder-length="1.75" shaft-diameter="0.75" body-length="3" overall-length="4" number-of-flutes="3" thread-pitch="0"/>
+    <holder description="Default Holder">
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.97" length="0.148"/>
+      <section diameter="1.97" length="0.836"/>
+      <section diameter="1.57" length="0"/>
+      <section diameter="1.57" length="0.176"/>
+      <section diameter="1.75" length="0.09"/>
+      <section diameter="1.75" length="0.425"/>
+      <section diameter="1.85" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+    <motion spindle-rpm="16000" ramp-spindle-rpm="16000" clockwise="yes" feed-mode="per-minute" cutting-feedrate="40" entry-feedrate="20" exit-feedrate="40" plunge-feedrate="20" ramp-feedrate="20" retract-feedrate="20"/>
+  </tool>
+  <tool version="1.1" type="bull nose end mill" unit="inches" guid="{4cf2bc1f-9795-4220-af12-3ad17cd51b92}">
+    <nc number="7" diameter-offset="7" length-offset="7" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="0.5" corner-radius="0.0625" flute-length="0.75" shoulder-length="1." shaft-diameter="0.5" body-length="2" overall-length="3" number-of-flutes="4" thread-pitch="0"/>
+    <holder description="Default Holder">
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.97" length="0.148"/>
+      <section diameter="1.97" length="0.836"/>
+      <section diameter="1.57" length="0"/>
+      <section diameter="1.57" length="0.176"/>
+      <section diameter="1.75" length="0.09"/>
+      <section diameter="1.75" length="0.425"/>
+      <section diameter="1.85" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+    <motion spindle-rpm="2500" ramp-spindle-rpm="2500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="30" entry-feedrate="15" exit-feedrate="30" plunge-feedrate="15" ramp-feedrate="15" retract-feedrate="15"/>
+  </tool>
+  <tool version="1.1" type="bull nose end mill" unit="inches" guid="{1ae3e6da-adb5-413b-a202-21e9393d4de0}">
+    <nc number="8" diameter-offset="8" length-offset="8" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.3125" corner-radius="0.0625" flute-length="0.75" shoulder-length="1." shaft-diameter="0.3125" body-length="1.5" overall-length="2" number-of-flutes="3" thread-pitch="0"/>
+    <holder description="Default Holder">
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.97" length="0.148"/>
+      <section diameter="1.97" length="0.836"/>
+      <section diameter="1.57" length="0"/>
+      <section diameter="1.57" length="0.176"/>
+      <section diameter="1.75" length="0.09"/>
+      <section diameter="1.75" length="0.425"/>
+      <section diameter="1.85" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+    <motion spindle-rpm="5000" ramp-spindle-rpm="5000" clockwise="yes" feed-mode="per-minute" cutting-feedrate="40" entry-feedrate="20" exit-feedrate="40" plunge-feedrate="20" ramp-feedrate="20" retract-feedrate="20"/>
+  </tool>
+  <tool version="1.1" type="bull nose end mill" unit="inches" guid="{06c1a53f-8873-4215-b02a-4136930b9176}">
+    <nc number="9" diameter-offset="9" length-offset="9" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.25" corner-radius="0.0625" flute-length="0.5" shoulder-length="0.75" shaft-diameter="0.25" body-length="1." overall-length="1.75" number-of-flutes="3" thread-pitch="0"/>
+    <holder description="Default Holder">
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.97" length="0.148"/>
+      <section diameter="1.97" length="0.836"/>
+      <section diameter="1.57" length="0"/>
+      <section diameter="1.57" length="0.176"/>
+      <section diameter="1.75" length="0.09"/>
+      <section diameter="1.75" length="0.425"/>
+      <section diameter="1.85" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+    <motion spindle-rpm="30000" ramp-spindle-rpm="30000" clockwise="yes" feed-mode="per-minute" cutting-feedrate="200" entry-feedrate="100" exit-feedrate="200" plunge-feedrate="118.11" ramp-feedrate="100" retract-feedrate="118.11"/>
+  </tool>
+  <tool version="1.1" type="bull nose end mill" unit="inches" guid="{30f5a21a-750b-415b-836f-ada7226ecbad}">
+    <nc number="10" diameter-offset="10" length-offset="10" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="0.1875" corner-radius="0.025" flute-length="0.5" shoulder-length="0.6" shaft-diameter="0.1875" body-length="1.25" overall-length="4" number-of-flutes="4" thread-pitch="0"/>
+    <holder description="Default Holder">
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.97" length="0.148"/>
+      <section diameter="1.97" length="0.836"/>
+      <section diameter="1.57" length="0"/>
+      <section diameter="1.57" length="0.176"/>
+      <section diameter="1.75" length="0.09"/>
+      <section diameter="1.75" length="0.425"/>
+      <section diameter="1.85" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+    <motion spindle-rpm="4950" ramp-spindle-rpm="4950" clockwise="yes" feed-mode="per-minute" cutting-feedrate="30" entry-feedrate="15" exit-feedrate="30" plunge-feedrate="15" ramp-feedrate="15" retract-feedrate="15"/>
+  </tool>
+  <tool version="1.1" type="ball end mill" unit="inches" guid="{0658bace-869e-4311-810a-c86bf9e79207}">
+    <nc number="11" diameter-offset="11" length-offset="11" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.5" corner-radius="0.25" flute-length="0.8" shoulder-length="1.2" shaft-diameter="0.5" body-length="2" overall-length="2.75" number-of-flutes="3" thread-pitch="0"/>
+    <holder description="Default Holder">
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.97" length="0.148"/>
+      <section diameter="1.97" length="0.836"/>
+      <section diameter="1.57" length="0"/>
+      <section diameter="1.57" length="0.176"/>
+      <section diameter="1.75" length="0.09"/>
+      <section diameter="1.75" length="0.425"/>
+      <section diameter="1.85" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+    <motion spindle-rpm="30000.1" ramp-spindle-rpm="30000.1" clockwise="yes" feed-mode="per-minute" cutting-feedrate="70" entry-feedrate="35" exit-feedrate="70" plunge-feedrate="35" ramp-feedrate="35" retract-feedrate="35"/>
+  </tool>
+  <tool version="1.1" type="ball end mill" unit="inches" guid="{ac247c37-d102-47e9-b748-a06e44115ee6}">
+    <nc number="12" diameter-offset="12" length-offset="12" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="0.25" corner-radius="0.125" flute-length="0.4" shoulder-length="0.6" shaft-diameter="0.25" body-length="1.25" overall-length="1.75" number-of-flutes="2" thread-pitch="0"/>
+    <holder description="Default Holder">
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.97" length="0.148"/>
+      <section diameter="1.97" length="0.836"/>
+      <section diameter="1.57" length="0"/>
+      <section diameter="1.57" length="0.176"/>
+      <section diameter="1.75" length="0.09"/>
+      <section diameter="1.75" length="0.425"/>
+      <section diameter="1.85" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+    <motion spindle-rpm="20500" ramp-spindle-rpm="20500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="200" entry-feedrate="150" exit-feedrate="150" plunge-feedrate="40" ramp-feedrate="150" retract-feedrate="40"/>
+  </tool>
+  <tool version="1.1" type="ball end mill" unit="inches" guid="{08560b9b-0b16-4a4c-837b-d838e097c867}">
+    <nc number="13" diameter-offset="13" length-offset="13" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="0.125" corner-radius="0.0625" flute-length="0.2" shoulder-length="0.8" shaft-diameter="0.125" body-length="1." overall-length="1.25" number-of-flutes="3" thread-pitch="0"/>
+    <holder description="Long holder">
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.97" length="0.148"/>
+      <section diameter="1.97" length="0.836"/>
+      <section diameter="1.57" length="0"/>
+      <section diameter="1.57" length="0.176"/>
+      <section diameter="1.75" length="0.09"/>
+      <section diameter="1.75" length="0.425"/>
+      <section diameter="1.85" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+    <motion spindle-rpm="20750" ramp-spindle-rpm="20750" clockwise="yes" feed-mode="per-minute" cutting-feedrate="100" entry-feedrate="40" exit-feedrate="40" plunge-feedrate="20" ramp-feedrate="40" retract-feedrate="20"/>
+  </tool>
+  <tool version="1.1" type="ball end mill" unit="inches" guid="{0a1b759d-3ff1-491f-b013-a71be24e1654}">
+    <nc number="14" diameter-offset="14" length-offset="14" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="0.075" corner-radius="0.0375" flute-length="0.125" shoulder-length="0.3" shaft-diameter="0.1181102" body-length="1." overall-length="1.5" number-of-flutes="2" thread-pitch="0"/>
+    <holder description="Long holder">
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.97" length="0.148"/>
+      <section diameter="1.97" length="0.836"/>
+      <section diameter="1.57" length="0"/>
+      <section diameter="1.57" length="0.176"/>
+      <section diameter="1.75" length="0.09"/>
+      <section diameter="1.75" length="0.425"/>
+      <section diameter="1.85" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+    <shaft>
+      <section diameter="0.075" length="0"/>
+      <section diameter="0.1181102" length="0.3937008"/>
+    </shaft>
+    <motion spindle-rpm="22000" ramp-spindle-rpm="22000" clockwise="yes" feed-mode="per-minute" cutting-feedrate="100" entry-feedrate="40" exit-feedrate="40" plunge-feedrate="20" ramp-feedrate="40" retract-feedrate="20"/>
+  </tool>
+  <tool version="1.1" type="ball end mill" unit="inches" guid="{ea704c48-a170-4c46-87a3-5017ba72006d}">
+    <nc number="15" diameter-offset="15" length-offset="15" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="0.04" corner-radius="0.02" flute-length="0.075" shoulder-length="0.2" shaft-diameter="0.1181102" body-length="1." overall-length="2.75" number-of-flutes="2" thread-pitch="0"/>
+    <holder description="Long holder">
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.97" length="0.148"/>
+      <section diameter="1.97" length="0.836"/>
+      <section diameter="1.57" length="0"/>
+      <section diameter="1.57" length="0.176"/>
+      <section diameter="1.75" length="0.09"/>
+      <section diameter="1.75" length="0.425"/>
+      <section diameter="1.85" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+    <shaft>
+      <section diameter="0.04" length="0"/>
+      <section diameter="0.1181102" length="0.3937008"/>
+    </shaft>
+    <motion spindle-rpm="25000" ramp-spindle-rpm="25000" clockwise="yes" feed-mode="per-minute" cutting-feedrate="70" entry-feedrate="30" exit-feedrate="30" plunge-feedrate="20" ramp-feedrate="30" retract-feedrate="20"/>
+  </tool>
+  <tool version="1.1" type="drill" unit="inches" guid="{f89d3ec1-264a-4d0b-aaf5-2ee5563cec4d}">
+    <nc number="16" diameter-offset="16" length-offset="16" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.4" taper-angle="118" flute-length="3.2" shoulder-length="3.5" shaft-diameter="0.4" body-length="4" overall-length="5" number-of-flutes="3" thread-pitch="0"/>
+    <holder description="Maritool CAT40-APU13 Drill Chuck" comment="Maritool CAT40-APU13" vendor="Maritool" product-id="CAT40-APU13">
+      <section diameter="0.53" length="0"/>
+      <section diameter="0.9" length="0.5"/>
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.94094" length="0.7874016"/>
+      <section diameter="1.94094" length="0.1952756"/>
+      <section diameter="1.98819" length="0.023622"/>
+      <section diameter="1.98819" length="0.8720472"/>
+      <section diameter="1.88976" length="0.0492126"/>
+      <section diameter="1.88976" length="0.6496063"/>
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.5" length="0.1377953"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+    <motion spindle-rpm="5000" ramp-spindle-rpm="5000" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="20" ramp-feedrate="0" retract-feedrate="40"/>
+  </tool>
+  <tool version="1.1" type="drill" unit="inches" guid="{f792895b-e46e-4c55-bfee-f58a814f635d}">
+    <nc number="17" diameter-offset="17" length-offset="17" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.3" taper-angle="118" flute-length="3" shoulder-length="3.25" shaft-diameter="0.3" body-length="4" overall-length="4.5" number-of-flutes="3" thread-pitch="0"/>
+    <holder description="Default Holder">
+      <section diameter="0.53" length="0"/>
+      <section diameter="0.9" length="0.5"/>
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.94094" length="0.7874016"/>
+      <section diameter="1.94094" length="0.1952756"/>
+      <section diameter="1.98819" length="0.023622"/>
+      <section diameter="1.98819" length="0.8720472"/>
+      <section diameter="1.88976" length="0.0492126"/>
+      <section diameter="1.88976" length="0.6496063"/>
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.5" length="0.1377953"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+    <motion spindle-rpm="5000.01" ramp-spindle-rpm="5000.01" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="20.0001" ramp-feedrate="0" retract-feedrate="40"/>
+  </tool>
+  <tool version="1.1" type="drill" unit="inches" guid="{58d3e007-5cea-471b-8a4f-dacf20f93f32}">
+    <nc number="18" diameter-offset="18" length-offset="18" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.2" taper-angle="118" flute-length="2" shoulder-length="2.25" shaft-diameter="0.2" body-length="2.5" overall-length="3" number-of-flutes="3" thread-pitch="0"/>
+    <holder description="Default Holder">
+      <section diameter="0.53" length="0"/>
+      <section diameter="0.9" length="0.5"/>
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.94094" length="0.7874016"/>
+      <section diameter="1.94094" length="0.1952756"/>
+      <section diameter="1.98819" length="0.023622"/>
+      <section diameter="1.98819" length="0.8720472"/>
+      <section diameter="1.88976" length="0.0492126"/>
+      <section diameter="1.88976" length="0.6496063"/>
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.5" length="0.1377953"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+    <motion spindle-rpm="5000" ramp-spindle-rpm="5000" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="20" ramp-feedrate="0" retract-feedrate="40"/>
+  </tool>
+  <tool version="1.1" type="chamfer mill" unit="inches" guid="{31cf0bf3-2308-4b0b-8fc4-7ac1d515a401}">
+    <nc number="19" diameter-offset="19" length-offset="19" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.5" tip-diameter="0.0635" taper-angle="45" flute-length="0.25" shoulder-length="0.5" shaft-diameter="0.3" body-length="1.25" overall-length="2" number-of-flutes="3" thread-pitch="0"/>
+    <holder description="Default Holder">
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.97" length="0.148"/>
+      <section diameter="1.97" length="0.836"/>
+      <section diameter="1.57" length="0"/>
+      <section diameter="1.57" length="0.176"/>
+      <section diameter="1.75" length="0.09"/>
+      <section diameter="1.75" length="0.425"/>
+      <section diameter="1.85" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+    <motion spindle-rpm="5000" ramp-spindle-rpm="5000" clockwise="yes" feed-mode="per-minute" cutting-feedrate="40" entry-feedrate="20" exit-feedrate="40" plunge-feedrate="20" ramp-feedrate="20" retract-feedrate="20"/>
+  </tool>
+  <tool version="1.1" type="counter sink" unit="inches" guid="{cee81fee-4a15-44c1-ac60-0972d6f0bddb}">
+    <nc number="20" diameter-offset="20" length-offset="20" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="0.5" tip-diameter="0" taper-angle="90" flute-length="0.4" shoulder-length="0.5" shaft-diameter="0.3" body-length="2" overall-length="2.75" number-of-flutes="3" thread-pitch="0"/>
+    <holder description="Default Holder">
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.97" length="0.148"/>
+      <section diameter="1.97" length="0.836"/>
+      <section diameter="1.57" length="0"/>
+      <section diameter="1.57" length="0.176"/>
+      <section diameter="1.75" length="0.09"/>
+      <section diameter="1.75" length="0.425"/>
+      <section diameter="1.85" length="0.05"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+    <motion spindle-rpm="5000" ramp-spindle-rpm="5000" clockwise="yes" feed-mode="per-minute" cutting-feedrate="40" entry-feedrate="20" exit-feedrate="40" plunge-feedrate="20" ramp-feedrate="20" retract-feedrate="40"/>
+  </tool>
+  <tool version="1.1" type="face mill" unit="inches" guid="{255497a9-25b1-4a78-bd66-9d6bd8db8f49}">
+    <description>2" Face Mill</description>
+    <manufacturer>Maritool</manufacturer>
+    <product-id>MSAP16-D050A05R-25.4</product-id>
+    <nc number="1" diameter-offset="1" length-offset="1" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body diameter="2" flute-length="0.633" shoulder-length="0.633" shaft-diameter="1.8" body-length="1.563" overall-length="1.563" number-of-flutes="5" thread-pitch="0"/>
+    <holder description="Maritool CAT40-FMA1.0-1.5M" comment="Maritool CAT40-FMA1.0-1.5M" vendor="Maritool" product-id="CAT40-FMA1.0-1.5M">
+      <section diameter="1.85" length="0"/>
+      <section diameter="1.85" length="0.6875"/>
+      <section diameter="1.975" length="0.0625"/>
+      <section diameter="2.442" length="0"/>
+      <section diameter="2.502" length="0.03"/>
+      <section diameter="2.502" length="0.145"/>
+      <section diameter="2.215" length="0.079"/>
+      <section diameter="2.215" length="0.118"/>
+      <section diameter="2.502" length="0.079"/>
+      <section diameter="2.502" length="0.143"/>
+      <section diameter="2.442" length="0.03"/>
+      <section diameter="1.75" length="0"/>
+      <section diameter="1.75" length="0.125"/>
+    </holder>
+    <shaft>
+      <section diameter="1.9685" length="0"/>
+      <section diameter="1.8" length="0.465"/>
+    </shaft>
+    <motion spindle-rpm="6500" ramp-spindle-rpm="6500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="65" entry-feedrate="65" exit-feedrate="65" plunge-feedrate="30" ramp-feedrate="65" retract-feedrate="30"/>
+  </tool>
+</tool-library>

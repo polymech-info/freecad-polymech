@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><locale xmlns="http://www.hsmworks.com/xml/2008/locale">
+
+  <description>Chinese - Simplified</description>
+  <country>cn</country>
+
+  <!--
+	The entries in this file are used for localized text for feature flags,
+	as exposed in the Fusion preferences dialog.
+
+	The formats used for the entries should be in the form shown here,
+	where in this case the feature flag name would be 'feature-flag'.
+	  <message name="feature-flag-name">English Feature Flag Name</message>
+	  <message name="feature-flag-desc">English Feature Flag Description</message>
+   	  <message name="feature-flag-contextid">English Feature Flag Info Link</message>
+	  OR
+	  <message name="feature-flag-contextid">CONTEXT_ID</message>
+
+	If a context id is specified, a URL will be constructed, along the lines of:
+	https://help.autodesk.com/view/fusion360/<LANG>/?contextId=<CONTEXT_ID>
+	with the language code filled in based on the active language.
+  -->
+  <message name="additive-angled-volume-support-name">增材斜向体积支撑</message>
+  <message name="additive-angled-volume-support-desc">在增材制造设置期间创建的体积支撑沿着矢量向构建板方向展开。此预览功能提供了将该矢量一分为二的选项。通过使用两个矢量之间的角度，可以避免创建连接下表皮区域与零件上表皮区域的支撑。这将提高曲面质量并缩短上表皮区域的后处理时间。</message>
+  <message name="additive-angled-volume-support-contextid">MFG-ADDITIVE-ANGLED-VOLUME-SUPPORTS-PREVIEW</message>
+
+  <message name="Additive-Lateral-Support-name">增材横向支撑</message>
+  <message name="Additive-Lateral-Support-desc">为具有复杂形状或脆弱薄壁的零件生成 3D 打印软钳夹。横向支撑设计用于在铣削等加工过程中固定这些零件。</message>
+
+  <message name="Additive-General-name">增材制造</message>
+  <message name="Additive-General-desc">选择打印参数，自动定向零件以成功进行构建，并生成支撑结构和刀具路径。直接导出以选择粉末床或导出 3MF 文件。</message>
+  <message name="Additive-General-contextid">EXT-MFG-ADDITIVE-START</message>
+
+  <message name="Additive-Tech-DED-name">增材多轴沉积</message>
+  <message name="Additive-Tech-DED-desc">创建增材刀具路径以使用多轴沉积技术构建特征。例如，DED (定向能量沉积)。</message>
+  <message name="Additive-Tech-DED-contextid">MFG-AM-FEATURE-CONSTRUCTION</message>
+
+  <message name="Additive-Tech-SLM-name">增材制造</message>
+  <message name="Additive-Tech-SLM-desc">允许您选择金属粉末层熔融(MPBF)机床、在平台上排列和定向零件、创建完全关联的支撑结构和切片模型。输出原生构建文件，包括激光参数或 3MF 文件。</message>
+  <message name="Additive-Tech-SLM-contextid">MFG-AM-WORKFLOW-PREPARE-PARTS-FOR-ADDITIVE-MANUFACTURE</message>
+
+  <message name="advanced-direct-selection-name">高级直接选择</message>
+  <message name="advanced-direct-selection-desc">Enables the advanced direct selection mode for surface selections.</message>
+
+  <message name="configurable-tolerance-colors-name">公差颜色</message>
+  <message name="configurable-tolerance-colors-desc">为检查结果和毛坯仿真设置公差颜色以便相匹配。“首选项”中增加了一个设置，让您可以在两种颜色约定之间进行选择。此外，在画布中，将以橙色显示“探测形状”、“探测 WCS”和“手动检查”的任何超出公差范围的检查结果，并以黑色显示“手动检查”的公称值。</message>
+  <message name="configurable-tolerance-colors-contextid">MFG-TOLERANCE-COLORS</message>
+
+  <message name="drilling-collision-avoidance-name">避免钻孔时发生碰撞</message>
+  <message name="drilling-collision-avoidance-desc">通过指定轴和夹头间隙，提高了钻孔操作的安全性。切削时，您可以选择跳过可能会导致发生碰撞的孔。连接时，您可以选择自动调整退刀高度以避开任何障碍物。</message>
+
+  <message name="drilling-through-hole-flipper-name">多轴钻孔中的通孔方向控制</message>
+  <message name="drilling-through-hole-flipper-desc">对于多轴钻孔，为任何通孔设置方向，刀具路径将遵循选定的方向。</message>
+
+  <message name="cutting-force-analysis-name">切削力分析</message>
+  <message name="cutting-force-analysis-desc">在仿真期间收集切削力数据。</message>
+
+  <message name="hig-styled-qt-name">更新的样式</message>
+  <message name="hig-styled-qt-desc">先睹为快 - 正在进行中的 Fusion 制造对话框样式更新</message>
+
+  <message name="import-macro-results-name">导入宏打印结果</message>
+  <message name="import-macro-results-desc">导入使用“探测 WCS”或“探测形状”操作在机床控制器上创建的“打印结果”。</message>
+  <message name="import-macro-results-contextid">MFG-IMPORT-MACRO-RESULTS</message>
+
+  <message name="inspection-results-projection-name">检查表面 CAD 投影</message>
+  <message name="inspection-results-projection-desc">在零件形状或位置不同于 CAD 文件的情况下，评估探测点时会提供更准确的结果。计算测量点相对于 CAD 表面(而非“检查表面”加工策略的预定点)的偏差。</message>
+  <message name="inspection-results-projection-contextid">MFG-PROBE-PROJECT-POINTS</message>
+
+  <message name="fusion-mfg-assistant-name">制造助手</message>
+  <message name="fusion-mfg-assistant-desc">允许您询问与使用 Fusion 进行制造相关的问题。回答由人工智能(AI)使用 Autodesk 和 Web 资源提供。</message>
+
+  <message name="invalid-parameter-error-name">参数错误无效</message>
+  <message name="invalid-parameter-error-desc">在生成刀具路径时添加其他参数验证检查。</message>
+
+  <message name="live-machine-connection-name">实时机床数据连接</message>
+  <message name="live-machine-connection-desc">通过从“检查表面”、“探测形状”和“探测 WCS”策略的 Haas 控制器中实时获取探测点的数据，从而实时计算结果。</message>
+  <message name="live-machine-connection-contextid">MFG-PROBE-LIVE-CONNECTION</message>
+
+  <message name="live-part-alignment-name">实时机床零件对齐</message>
+  <message name="live-part-alignment-desc">允许对实时机床数据连接使用零件对齐。</message>
+  <message name="live-part-alignment-contextid">MFG-LIVE-PART-ALIGNMENT-PREVIEW</message>
+
+  <message name="simulation-disable-visualization-collisions-on-name">跳过可视化毛坯仿真的碰撞检测</message>
+  <message name="simulation-disable-visualization-collisions-on-desc">在仿真过程中计算可视化毛坯时跳过额外的碰撞检测。这样有助于加快画布中毛坯的可视化仿真，尤其是在仿真许多操作和/或使用机床进行仿真时。碰撞检测仍作为验证过程的一部分来执行。</message>
+
+  <message name="simulation-mode-name">仿真显示选项和信息</message>
+  <message name="simulation-mode-desc">将“仿真”对话框替换为两个新的对话框，使得用于控制画布中显示什么内容的设置与有关仿真的关键信息摘要分离开来。从“仿真”上下文环境的工具栏访问显示选项和信息摘要。</message>
+
+  <message name="geometry-simulator-use-GPU-name">更快的 IPS 处理(GPU)</message>
+  <message name="geometry-simulator-use-GPU-desc">使用图形处理器(GPU)提供更快的处理速度。在“首选项”中添加了“IPS 和剩余毛坯”&gt;“处理模式”选项。此新选项使您可以在“标准(计算机处理器)”和“更快(图形处理器)”模式之间进行选择，以生成加工中的毛坯和剩余(残料)毛坯。对于新选项，更快的处理速度取决于图形处理器的质量。</message>
+  <message name="geometry-simulator-use-GPU-contextid">MFG-SIMULATE-FASTER-GPU</message>
+  
+  <message name="gpu-machine-simulation-name">在机床仿真过程中使用加快(GPU)毛坯仿真</message>
+  <message name="gpu-machine-simulation-desc">通过使用图形处理器(GPU)，在机床仿真过程中提供更快的毛坯仿真。将“模式”&gt;“加快仿真(GPU)”选项添加到“仿真”上下文环境中，作为使用计算机处理器(CPU)的更快捷替代方式。使用 GPU 时，将在 CPU 上继续进行机床验证(包括机床碰撞检测)，并且可能花费更长时间。将根据模型而不是毛坯检查机床。处理速度会更快，具体取决于图形处理器的质量。</message>
+  <message name="gpu-machine-simulation-contextid">MFG-SIMULATE-MACHINE-GPU</message>
+
+  <message name="gpu-stock-per-pixel-refinement-name">优化了毛坯仿真的视觉效果(GPU)</message>
+  <message name="gpu-stock-per-pixel-refinement-desc">改进了使用“加快仿真(GPU)”选项时(特别是在暂停仿真期间)仿真毛坯的视觉质量。Fusion 会优化毛坯网格，然后增强每个可见像素的细节。每次视图更改(旋转、平移、缩放)后，系统都会重新计算优化，这可能需要额外的时间。</message>
+
+  <message name="simulation-auto-machine-part-ghosting-name">仿真时机床自动透明</message>
+  <message name="simulation-auto-machine-part-ghosting-desc">在机床仿真期间自动使阻碍查看刀尖的任何机床项变为透明。这样可确保在平移和改变视图时能够清晰地查看刀尖。</message>
+
+  <message name="manual-inspect-measure-method-name">手动检查的中心到中心距离</message>
+  <message name="manual-inspect-measure-method-desc">可让您选择在手动检查中如何测量两个孔或凸柱的中心之间的距离。如果测量仪器不支持测量中心到中心的距离，Fusion 可以使用两个孔或凸柱的直径以及两者之间的最大或最小距离来计算该距离。</message>
+  <message name="manual-inspect-measure-method-contextid">MFG-MANUAL-INSPECTION-CENTERS-PREVIEW</message>
+
+  <message name="manual-measure-name">手动检查</message>
+  <message name="manual-measure-desc">创建要使用手动检查设备(例如卡尺、千分尺或测高计)进行物理测量的特征列表。记录测量值以将其与指定公差进行比较，(可选)并将结果保存为检查报告。</message>
+  <message name="manual-measure-contextid">MFG-CREATE-MANUAL-INSPECTION</message>
+
+  <message name="legacy-mesh-silhouette-name">传统网格轮廓</message>
+  <message name="legacy-mesh-silhouette-desc">启用网格数据的传统轮廓。</message>
+
+  <message name="legacy-chaining-name">传统链选</message>
+  <message name="legacy-chaining-desc">在“制造”工作空间中为边选择启用旧的传统链选引擎。</message>
+
+  <message name="legacy-drilling-name">传统钻孔</message>
+  <message name="legacy-drilling-desc">在“制造”工作空间中启用旧的传统钻孔。</message>
+
+  <message name="new_import_results-name">导入检查结果</message>
+  <message name="new_import_results-desc">在导入检查结果时，选择要将探测点投影到的实体。</message>
+  <message name="new_import_results-contextid">MFG-PROBE-IMPORT-RESULTS</message>
+
+  <message name="old-turning-profile-strategy-name">旧轮廓车削</message>
+  <message name="old-turning-profile-strategy-desc">启用旧轮廓车削策略。这仅在有限时间内可用。</message>
+
+  <message name="old-pocket-detector-name">2D 挖槽传统检测</message>
+  <message name="old-pocket-detector-desc">如果设置此标志，将使用用于检测 2D 开放式挖槽的传统算法。</message>
+
+  <message name="probe-angle-measure-name">探测: 离轴角测量</message>
+  <message name="probe-angle-measure-desc">允许使用探测形状来测量垂直面的旋转角度。</message>
+
+  <message name="probe-geometry-strategy-name">基于宏的检查</message>
+  <message name="probe-geometry-strategy-desc">通过机床上的探测循环测量正在加工的特征。验证关键几何特征的尺寸和位置，更新刀具磨损参数，然后暂停或停止程序以处理超出公差的特征。&lt;i&gt;包括: 探测形状、检查报告等等。&lt;/i&gt;</message>
+  <message name="probe-geometry-strategy-contextid">EXT-MANUFACTURING</message>
+
+  <message name="pmi-inspection-plan-name">PMI 检查计划</message>
+  <message name="pmi-inspection-plan-desc">启用基于现有 PMI 自动生成检查计划的功能。</message>
+  <message name="pmi-inspection-plan-contextid">MFG-PMI-INSPECTION-PLAN-PREVIEW</message>
+
+  <message name="probe-on-pcd-name">探测 PCD 上的孔和凸柱</message>
+  <message name="probe-on-pcd-desc">允许使用“探测 WCS”和“探测形状”策略中的其他选项以允许探测 PCD 上的孔和凸柱。</message>
+
+  <message name="hide-warnings-name">隐藏警告</message>
+  <message name="hide-warnings-desc">如果您在对操作进行编程时遇到警告，可以在阅读各操作的相关警告并确定它们不需要额外关注后选择隐藏这些警告。在您重新生成操作之前，这些警告将保持隐藏状态。</message>
+
+  <message name="ignore-warnings-name">忽略警告</message>
+  <message name="ignore-warnings-desc">允许忽略操作警告。可以仅忽略会话的警告，也可以始终忽略警告。</message>
+
+  <message name="improved-form-mill-approximation-name">改进了成形铣刀近似</message>
+  <message name="improved-form-mill-approximation-desc">将成形铣刀近似为牛鼻铣刀而不是立铣刀。</message>
+	
+  <message name="post-processing-with-legacy-dialog-off-name">后处理 NC 代码与传统后处理对话框</message>
+  <message name="post-processing-with-legacy-dialog-off-desc">如果您遇到与新 NC 程序后处理界面有关的问题，请恢复为旧式后处理对话框。</message>
+  <message name="post-processing-with-legacy-dialog-off-contextid">MFG-POST-PROCESS-OPERATIONS</message>
+
+  <message name="4-axis-machining-type-name">3D 刀具路径的 4 轴加工</message>
+  <message name="4-axis-machining-type-desc">向 3D 刀具路径添加了更多 4 轴加工选项。为了在 4 轴和 5 轴运动中执行合适的快速连接，您可以将“安全高度”和“退刀高度”设置为圆柱体、球体或倾斜平面。</message>
+
+  <message name="restrict-to-4-axis-name">限制到 4 轴</message>
+  <message name="restrict-to-4-axis-desc">从 5 轴策略生成 4 轴刀具路径，以在至少具有 4 个轴的机床上使用。当前仅用于“流线”策略。</message>
+  <message name="restrict-to-4-axis-contextid">外部制造</message>
+
+  <message name="roughing-form-tools-name">Roughing Form Tools</message>
+  <message name="roughing-form-tools-desc">Enables calculation of 3D Pocket and 3D Adaptive operations to use actual Form Mill shape for toolpath calculation, instead of an approximated regular mill.</message>
+
+  <message name="moduleworks-three-plus-two-name">3+2 清洁策略(未来扩展功能)</message>
+  <message name="moduleworks-three-plus-two-desc">一种粗加工策略，可用于使用多个刀具朝向去除大量材料。可以使用刚性更强的较短刀具来加工倒扣面等区域。</message>
+  <message name="moduleworks-three-plus-two-contextid">外部制造</message>
+
+  <message name="setup-sheet-configurations-name">设置清单配置</message>
+  <message name="setup-sheet-configurations-desc">允许创建自定义设置清单配置。</message>
+
+  <message name="spun-profile-dmk-name">旋转轮廓</message>
+  <message name="spun-profile-dmk-desc">通过使用新的“旋转轮廓”算法，提高“旋转轮廓”功能的稳定性和性能。该功能允许您通过旋转选定模型来创建轮廓曲线以执行车削操作。</message>
+
+  <message name="stock-drag-handles-name">毛坯拖动控制柄</message>
+  <message name="stock-drag-handles-desc">启用拖动控制柄以调整毛坯尺寸。</message>
+
+  <message name="strategy-inspect-surface-name">曲面检查</message>
+  <message name="strategy-inspect-surface-desc">使用基于 CAD 的探测功能，通过主轴装夹式探头测量复杂表面几何图形的精度。使用智能零件对齐自动设置和加工非棱柱零件，如锻件和铸件。&lt;i&gt;包括: 检查表面、检查报告、自动零件对齐等等。&lt;/i&gt;</message>
+  <message name="strategy-inspect-surface-contextid">EXT-MANUFACTURING</message>
+
+  <message name="customize-inspection-report-name">自定义检查报告</message>
+  <message name="customize-inspection-report-desc">使您可以在创建检查报告时从精选的预定义模板中进行选择和编辑。</message>
+
+  <message name="strategy-rotary-name">旋转加工策略</message>
+  <message name="strategy-rotary-desc">使用旋转策略进行 4 轴铣削，加工复杂的非几何形状。</message>
+  <message name="strategy-rotary-contextid">MFG-MULTI-AXIS-ROTARY</message>
+
+  <message name="extension-3-axis-name">自动化 3 轴加工</message>
+  <message name="extension-3-axis-desc">通过一系列可应用于整个零件以加快 CAM 编程的智能 3 轴策略，简化对特征丰富的复杂零件的钻孔和铣削。&lt;i&gt;包括: 3 轴孔识别以及 3 轴陡峭面和浅平面。&lt;/i&gt;</message>
+  <message name="extension-3-axis-contextid">EXT-MANUFACTURING</message>
+
+  <message name="extension-3-plus-2-name">自动化 3+2 加工</message>
+  <message name="extension-3-plus-2-desc">访问其他策略和刀轴控制，这些策略和刀轴控制可使用 CNC 机床的旋转轴通过 3+2 (位置)加工来钻孔和铣削整个零件。&lt;i&gt;包括: 3+2 孔识别。&lt;/i&gt;</message>
+  <message name="extension-3-plus-2-contextid">EXT-MANUFACTURING</message>
+
+  <message name="template-library-name">模板库</message>
+  <message name="template-library-desc">模板的全新界面。在新库中存储、浏览或重用模板。</message>
+
+  <message name="toolpath-modifications-name">刀具路径修改</message>
+  <message name="toolpath-modifications-desc">访问一系列功能强大的修改工具，对刀具路径进行全局或局部编辑，无需完全重新计算。可以编辑修改本身，以获得更大的灵活性。&lt;i&gt;包括: 刀具路径修整、删除加工路径、替换刀具等等。&lt;/i&gt;</message>
+  <message name="toolpath-modifications-contextid">EXT-MANUFACTURING</message>
+
+  <message name="tool-library-v4-dynamic-tool-preview-release-name">刀具库 - 三维预览</message>
+  <message name="tool-library-v4-dynamic-tool-preview-release-desc">在刀具库中启用 3D 刀具预览。</message>
+
+  <message name="tool-library-v4-fusionmake-parser-name">刀具库 - Fusion 解析器</message>
+  <message name="tool-library-v4-fusionmake-parser-desc">允许在刀具库中使用 Fusion 解析器，以便更好地保持用户表达式的一致性。</message>
+
+  <message name="tool-library-v4-tool-orientation-name">刀具库 - 刀具朝向</message>
+  <message name="tool-library-v4-tool-orientation-desc">添加了更直观的交互来设置车削刀具朝向。此外，还添加了独立于刀具朝向控制主轴方向的功能，这样就不再需要手动编辑代码，但可能会增加碰撞的风险。如果您启用此预览功能并调整设置，请注意，再次将其关闭时，将保留设置的主轴方向，同时调整刀具朝向，而不会使操作无效。另请注意，仿真期间可能不会亮显潜在的碰撞。&lt;br/&gt;&lt;i&gt;重要信息: 始终都要先直观地确认仿真结果并检查后处理输出中的主轴 M 代码，然后再运行 CNC 代码。&lt;/i&gt;</message>
+
+  <message name="tool-gtc-import-name">刀具库 – 导入 GTC 软件包</message>
+  <message name="tool-gtc-import-desc">可让您从 GTC (通用刀具目录)软件包将一个或多个刀具导入刀具库。GTC 软件包是压缩文件，通常包括刀具模型(STEP 文件)和用于定义刀具形状的特性(P21 文件)。GTC 软件包通常可从刀具供应商或制造商处下载。</message>
+
+  <message name="tool-p21-import-name">刀具库 – 导入 P21 文件</message>
+  <message name="tool-p21-import-desc">可让您从 P21 文件将刀具导入到刀具库。P21 文件包含用于定义刀具形状的特性，这些特性在导入过程中会映射到 Fusion 的刀具参数。P21 文件通常可从刀具供应商或制造商处下载。</message>
+
+  <message name="extension-multi-axis-name">4 轴和 5 轴同步加工</message>
+  <message name="extension-multi-axis-desc">解锁多轴策略和刀具轴选项，以同时驱动 CNC 机床的线性轴和旋转轴，从而安全高效地加工最复杂的形状。&lt;i&gt;包括: 刀具侧刃加工、多轴陡峭面和浅平面以及多轴轮廓等等。&lt;/i&gt;</message>
+  <message name="extension-multi-axis-contextid">EXT-MANUFACTURING</message>
+
+  <message name="mfg-working-model-name">制造工作模型</message>
+  <message name="mfg-working-model-desc">在“制造”工作空间中启用制造模型。使用排料和排列功能时需要。</message>
+  <message name="mfg-working-model-contextid">MFG-MANUFACTURING-MODEL-OVERVIEW</message>
+
+  <message name="strategy-old-flow-name">流线(旧)</message>
+  <message name="strategy-old-flow-desc">用于加工曲面。流线(旧)要求指定加工曲面时所需的步距数。新的流线策略(位于“3D 刀具路径”下拉菜单中)可自动计算所需的步距。如果在调整工作流以使用新的“流线”策略之前仍需要使用流线(旧)，则启用此预览功能可以访问流线(旧)。</message>
+
+  <message name="skip-ruled-alignment-name">传统曲面细分</message>
+  <message name="skip-ruled-alignment-desc">在使用某些铣削策略生成刀具路径时，使用旧方法划分曲面。如果新方法在直纹曲面上导致刀具路径问题，这种方法可能会有帮助。</message>
+
+  <message name="online-system-library-name">自动获取最新的后处理器、机床和打印设置</message>
+  <message name="online-system-library-desc">后处理器库、机床库和打印设置库的“Fusion 库”部分会随着后处理器、机床和打印设置的最新版本进行更新，并在这些设置可用时进行添加。每次重新启动 Fusion 时，都会检查更新。</message>
+
+  <message name="secondary-spindle-pull-name">杆件抽出</message>
+  <message name="secondary-spindle-pull-desc">启用“杆件抽出”策略。</message>
+
+  <message name="import-pmi-name">在文件上传时导入 PMI 数据</message>
+  <message name="import-pmi-desc">从数据面板打开时，允许从在其他 CAD 应用程序中创建的设计导入 PMI (产品制造信息)。</message>
+  <message name="import-pmi-contextid">MFG-PMI-FOR-INSPECTION-PREVIEW</message>
+
+  <message name="un-cached-dependency-analyzer-name">启用旧版从属性分析</message>
+  <message name="un-cached-dependency-analyzer-desc">使用旧版算法进行从属性分析。这将导致性能降级，并且应仅在出现失效不稳定情况时启用，以作为最后一种解决办法。</message>
+
+  <message name="blend-entry-exit-passes-name">混合: 进刀和退刀路径</message>
+  <message name="blend-entry-exit-passes-desc">在始端驱动曲线之前以及末端驱动曲线之后添加加工路径以扩展加工区域，并分别控制刀具朝向和远离零件的移动。仅当“步距计算”设置为“从刀尖”时才适用。</message>
+
+  <message name="blend-intermediate-curves-name">混合: 中间驱动曲线</message>
+  <message name="blend-intermediate-curves-desc">定义始端和末端驱动曲线之间的驱动曲线，以控制混合加工应如何推进。仅当混合加工来自明确的曲线选择且“步距计算”设置为“从刀尖”时才适用。</message>
+
+  <message name="dmk-leadslinks-improvements-name">改进了导入和导出移动</message>
+  <message name="dmk-leadslinks-improvements-desc">通过修整切削加工路径的末端以适应它们来添加指定的导入和导出。通过从悬垂曲面下延伸导入和导出移动，提高了进刀和退刀移动的安全性。仅适用于“陡峭面和浅平面”和“旋转”加工策略。</message>
+
+  <message name="modifications-areaclear-toolpaths-name">对 3D 自适应清洁和 3D 挖槽清洁的修改</message>
+  <message name="modifications-areaclear-toolpaths-desc">删除不需要的移动并调整引导和连接以优化刀具路径。请检查所有编辑过的刀具路径，了解毛坯中是否有任何意外移动。</message>
+
+  <message name="toolpath-trimming-turning-name">车削刀具路径的“修整和删除加工路径”修改(后续 Extension 功能)</message>
+  <message name="toolpath-trimming-turning-desc">应用“修整和删除加工路径”修改以优化刀具路径。可用于轮廓精加工、凹槽精加工和车削轨迹刀具路径。</message>
+
+  <message name="polar-machining-ui-name">极轴加工</message>
+  <message name="polar-machining-ui-desc">提供刀具路径操作中的选项，用于在沿刀具路径移动刀具时结合使用旋转和线性移动。</message>
+
+  <message name="dmk-projection-finishing-name">项目策略的其他选项。</message>
+  <message name="dmk-projection-finishing-desc">通过将阵列投影到指定点或曲线或从指定点或曲线投影阵列来加工倒扣面。</message>
+
+  <message name="exclude-inclined-flats-name">排除倾斜平坦曲面(未来扩展功能)</message>
+  <message name="exclude-inclined-flats-desc">自动排除倾斜平坦曲面以避免对其进行加工。当您只希望使用球头立铣刀加工有机曲面时，此功能非常有用。在“陡峭面和浅平面”策略中可用。</message>
+
+  <message name="use-machine-geometry-in-toolpath-generation-name">在计算刀具路径时检查与机床主轴和工作台的碰撞</message>
+  <message name="use-machine-geometry-in-toolpath-generation-desc">在检查与轴和夹头的碰撞时，也可以选择性地检查与机床主轴和工作台的碰撞。使用机床生成器定义应使用的形状。</message>
+
+  <message name="multi-axis-walls-name">壁策略的多轴加工</message>
+  <message name="multi-axis-walls-desc">可让您使用多轴加工在单个操作中到达零件的更多区域。</message>
+
+  <message name="inclined-wall-finishing-name">壁策略</message>
+  <message name="inclined-wall-finishing-desc">可用于自动检测和加工垂直壁的精加工策略。</message>
+
+  <message name="in-control-radius-compensation-name">受控半径补偿</message>
+  <message name="in-control-radius-compensation-desc">对“补偿类型”设置为“受控”的刀具路径使用较新、更稳定的算法。该较新算法已在大多数情况下使用，在选择此选项的情况下，可在所有情况下使用。</message>
+
+  <message name="dual-spindle-machines-enabled-name">车床和车铣机床</message>
+  <message name="dual-spindle-machines-enabled-desc">可让您为双主轴车床和车铣机床创建机床定义。在机床库中，添加多个车铣选项，以帮助您快速创建带动态刀具的车床的常用配置。创建机床定义时，可让您在运动树状图中指定刀塔和主轴。</message>
+
+  <message name="stock-materials-name">毛坯材料</message>
+  <message name="stock-materials-desc">添加一个可使用毛坯材料填充以便与车间所具有的材料相匹配的库。允许您为设置以及刀具的切削数据预设指定毛坯材料。当您选择用于操作的刀具时，请根据要加工的材料选择预设。</message>
+
+  <message name="cyclic-wrapped-name">环绕刀具路径的循环轮廓</message>
+  <message name="cyclic-wrapped-desc">启用环绕复选框时允许循环轮廓。这也使 HSM 内核能够改进环绕刀具路径的连接。</message>
+
+  <message name="probe-geometry-surface-fitting-name">在探测形状中检查曲面形状</message>
+  <message name="probe-geometry-surface-fitting-desc">为“探测形状”策略添加功能，以使用标准探测循环(宏)不支持的探测点拟合和检查几何特征，如圆和平面。设置曲面公差以定义整个曲面上可接受的变化，以及特定于选定曲面类型的特征公差。</message>
+
+  <message name="inspection-in-pim-name">检查数据存储</message>
+  <message name="inspection-in-pim-desc">除了 Fusion 文档之外，还将检查数据存储在制造数据模型(MFGDM)中，同时在浏览器和画布中保持完整的可访问性和功能。</message>
+
+  <message name="shaft-and-holder-for-2d-chamfer-name">2D 倒角的轴和夹头</message>
+  <message name="shaft-and-holder-for-2d-chamfer-desc">可让您指定轴和夹头间隙，并选择如何避免可能的碰撞，从而提高刀具路径安全性。</message>
+
+  <message name="even-stepdowns-in-2d-adaptive-name">用于 2D 自适应的平均下刀步距</message>
+  <message name="even-stepdowns-in-2d-adaptive-desc">通过使加工路径之间的距离相等，有助于创建更一致的切削条件。</message>
+
+  <message name="reusable-selections-name">重用选择和刀具朝向</message>
+  <message name="reusable-selections-desc">允许重用其他操作中的形状选择，而不考虑刀具朝向。当刀具朝向处于启用状态时，在浏览器中的每个操作下添加一个可选的刀具朝向节点，从而允许在多个操作中重用。</message>
+
+  <message name="mill-auto-thread-name">铣削自动螺纹检测</message>
+  <message name="mill-auto-thread-desc">检测 Fusion 在您选择的几何图元上生成的螺纹，并自动为铣削螺纹策略输入螺纹定义。</message>
+
+  <message name="reusable-tool-orientations-name">重用刀具朝向</message>
+  <message name="reusable-tool-orientations-desc">为操作设置刀具朝向时，在浏览器中向操作添加了一个可选的“刀具朝向”节点。这样，您便可以将刀具朝向重用于将来的操作，从而不再需要每次都指定朝向，并且能够在多项操作中同时调整。</message>
+
+  <message name="machine-management-workflow-improvements-name">机床管理改进</message>
+  <message name="machine-management-workflow-improvements-desc">在浏览器中添加右键单击选项以替换或删除机床定义，从而简化机床管理工作流。这些选项可用于替换当前设置中或所有设置(包括 NC 程序)中的机床定义，以及从相同区域和文档中删除机床定义。</message>
+
+  <message name="machine-rotary-angles-settings-name">刀具朝向的机床角度</message>
+  <message name="machine-rotary-angles-settings-desc">可让您针对 2D 加工策略(3+2 加工)设置机床角度，并针对 3D 加工策略(3 轴加工)在传统的转动和倾斜与机床角度之间进行选择。指定机床角度时，在画布上显示机床模型，有助于改进可视化。需要机床定义链接到机床模型的设置。</message>
+
+  <message name="patterns-rotation-preference-name">阵列的旋转首选项</message>
+  <message name="patterns-rotation-preference-desc">可让您设置阵列中旋转运动的首选项。它允许保持所有实例的原始朝向、旋转每个实例，或强制 3 轴移动。此选项仅适用于刀具朝向与旋转轴对齐时的操作。</message>
+
+  <message name="mill-standard-thread-name">铣削标准螺纹定义</message>
+  <message name="mill-standard-thread-desc">允许在铣削操作中使用标准螺纹定义。</message>
+
+  <message name="Turn-and-tilt-tool-orientation-2D-name">2D 加工策略的转动和倾斜刀具朝向</message>
+  <message name="Turn-and-tilt-tool-orientation-2D-desc">通过使用额外的控件来设置 2D 加工策略的刀具朝向，从而在一次操作中覆盖零件的更多区域。使用“转动和倾斜”操纵器，将刀具朝向对齐到当前视图，或单击一下将刀具朝向设置为垂直于任何表面。</message>
+
+  <message name="disable-cadref-pruning-name">禁用放弃未使用的 CAD 参考</message>
+  <message name="disable-cadref-pruning-desc">禁用放弃未参考的 CAD 几何图元的步骤(打开文档时通常会执行该步骤)。仅当此机制导致可疑问题时，才应启用此步骤。</message>
+
+  <message name="chain-face-compression-name">恢复链压缩</message>
+  <message name="chain-face-compression-desc">恢复链压缩。实施这项功能是为了提高更改工作空间和加载文档时的性能，但会增加模型更改后无法正确恢复选择的风险。根据报告的问题，链压缩已被删除，但如果有必要，此首选项允许您恢复链压缩。</message>
+
+  <message name="machine-positioning-name">杆件抽出可见性</message>
+  <message name="machine-positioning-desc">使机床和夹具组件能够相对于已执行的杆件抽出正确定位</message>
+
+  <message name="turn-groove-roughing-cusp-cleanup-name">车削增量剩余材料清除</message>
+  <message name="turn-groove-roughing-cusp-cleanup-desc">逐渐清除粗加工路径留下的剩余材料。</message>
+
+  <message name="turn-profile-roughing-rest-area-undercuts-name">车削轮廓粗加工残料区域倒扣面</message>
+  <message name="turn-profile-roughing-rest-area-undercuts-desc">在轮廓粗加工中使用残料加工时访问倒扣面。</message>
+
+  <message name="legacy-dxf-export-name">用于排料的旧版 DXF 导出</message>
+  <message name="legacy-dxf-export-desc">在排料和预制中启用旧版 DXF 导出引擎。仅当新版导出方法导致问题或不稳定时，才使用此选项。</message>
+
+  <message name="tool-call-strategy-name">刀具调用策略</message>
+  <message name="tool-call-strategy-desc">在副主轴移动、零件切断和转移操作之前，调用刀具或空工位进行预定位。使用“刀具调用”可优化刀具选择，节省操作之间的时间，并降低崩溃风险。</message>
+
+  <message name="relaxed-multiple-reference-matches-handling-name">对模糊引用的传统处理方式</message>
+  <message name="relaxed-multiple-reference-matches-handling-desc">通常，模糊选择(即无法可靠地从文档中加载的选择)将标记为缺失，用户必须重新选择。启用此选项后，模糊选择不会标记为缺失。系统将加载这些选择，但存在无法正确恢复的风险。</message>
+
+  <message name="toolpath-feedrate-edit-name">刀具路径进给速率修改</message>
+  <message name="toolpath-feedrate-edit-desc">启用刀具路径进给速率修改策略。</message>
+
+  <message name="setup-groups-name">设置组</message>
+  <message name="setup-groups-desc">启用设置组策略。</message>
+  
+  <message name="subspindle-fixture-positioning-name">副主轴夹具定位</message>
+  <message name="subspindle-fixture-positioning-desc">使副主轴夹具零部件能够相对于当前抓取位置正确定位。</message>
+
+  <message name="enable-optimized-flats-name">改进的挖槽清洁</message>
+  <message name="enable-optimized-flats-desc">允许在扁平区域上方加工毛坯。</message>
+
+  <message name="add-produce-contact-normal-name">额外的 5 轴支持</message>
+  <message name="add-produce-contact-normal-desc">允许在更多情况下使用 5 轴倾斜功能，例如，当使用非球头刀具或对轴向和径向偏移使用不同的值时。
+  </message>
+
+  <message name="slice-containment-name">切片加工范围</message>
+  <message name="slice-containment-desc">为挖槽启用切片加工范围。</message>
+
+  <message name="evenly-spaced-points-and-polar-links-hsm-name">等间距点</message>
+  <message name="evenly-spaced-points-and-polar-links-hsm-desc">编辑刀具路径中沿切削移动的点分布。移除原始点并插入尽可能等间距的新点。这样可提高运动平滑度，帮助机床更紧密地遵循编程的进给速率，并实现更好的表面光洁度和更短的周期时间。现在，在更多策略中提供，包括轮廓、平行、流线加工、测地线和去毛刺。</message>
+  
+</locale>

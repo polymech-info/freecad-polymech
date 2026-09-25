@@ -1,0 +1,4 @@
+# GitHub rejects blobs over 100 MB. This tree ships several DLLs above that
+# limit (libclang, mwgeolib, 5axui_res_neutral, and other CAM reference libs).
+*.dll
+*.exe

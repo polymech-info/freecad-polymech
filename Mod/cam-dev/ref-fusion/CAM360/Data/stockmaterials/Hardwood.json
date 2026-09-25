@@ -1,0 +1,15 @@
+{
+    "description": "Hardwood",
+    "category": "Wood",
+    "uuid": "be106778-d475-4378-b283-b830ef84e571",
+    "designators": [],
+    "physicalMaterials": [
+        "PrismMaterial-250",
+        "PrismMaterial-251",
+        "PrismMaterial-253",
+        "PrismMaterial-254",
+        "PrismMaterial-270",
+        "PrismMaterial-271"
+    ],
+    "version": 1.0
+}

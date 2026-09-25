@@ -1,0 +1,11 @@
+{
+    "description": "Titanium Alloys",
+    "category": "Metal",
+    "uuid": "c920088e-3d37-4a82-9367-102b32b33362",
+    "designators": [],
+    "physicalMaterials": [
+        "PrismMaterial-019",
+        "PrismMaterial-134"
+    ],
+    "version": 1.0
+}

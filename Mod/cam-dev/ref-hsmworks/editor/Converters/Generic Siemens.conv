@@ -1,0 +1,1900 @@
+globals = {
+decimalMark: ".",
+linebreak: "\n",
+variableDelimeter: " ",
+tolerance: 0.0002,
+showSequenceNumbers: true,
+sequenceNumberStart: 10,
+sequenceNumberIncrement: 5,
+arcType: 1
+};
+
+PostInfo = {
+title: "Fanuc",
+summary: "Default Post Processor built for CNC-Calc V.7",
+description: "This is a Post Processor built for the Fanuc controllers used on a mill",
+author: "Cimco A/S",
+version: "1.0",
+type: POST_TYPE_MILL
+};
+
+propertyNames = {
+RetractPlane: 1,
+SafeDistance: 1,
+ReferenceHeight: 1,
+Depth: 1,
+PlungeFeedrate: 1,
+RetractFeedrate: 1,
+FirstPeckDepth: 1,
+SubsequentPeckDepth: 1
+};
+
+MillDrillingFields = [];
+
+SupportedCycles =
+	[
+{
+name : "G81 Spot - Drilling Cycle",
+type : 2,
+xPosition : 2,
+yPosition : 2,
+zPosition : 2,
+initialHeight : 2,
+referenceHeight : 2,
+plungeFeedRate : 2,
+RPMFactor: 1
+},
+{
+name : "G82 Counter Boring - Drilling Cycle",
+type : 2,
+xPosition : 2,
+yPosition : 2,
+zPosition : 2,
+initialHeight : 2,
+referenceHeight : 2,
+plungeFeedRate : 2,
+dwellBottom: 1,
+RPMFactor: 1
+	   },
+	   {
+name : "G83 Peck - Drilling Cycle",
+type : 2,
+xPosition : 2,
+yPosition : 2,
+zPosition : 2,
+initialHeight : 2,
+referenceHeight : 2,
+plungeFeedRate : 2,
+peckAmount: 1,
+RPMFactor: 1
+	   },
+	   {
+name : "G83 Small–Hole Peck - Drilling Cycle",
+type : 2,
+xPosition : 2,
+yPosition : 2,
+zPosition : 2,
+initialHeight : 2,
+referenceHeight : 2,
+plungeFeedRate : 2,
+retractFeedRate: 1,
+dwellBottom: 1,
+peckAmount: 1,
+RPMFactor: 1
+	   },
+	   {
+name : "G84 Right–Handed - Tapping Cycle",
+type : 2,
+xPosition : 2,
+yPosition : 2,
+zPosition : 2,
+initialHeight : 2,
+referenceHeight : 2,
+plungeFeedRate : 2,
+dwellTop: 1,
+pitch: 1,
+RPMFactor: 1
+	   },
+	   {
+name : "G85 Boring - Drilling Cycle",
+type : 2,
+xPosition : 2,
+yPosition : 2,
+zPosition : 2,
+initialHeight : 2,
+referenceHeight : 2,
+plungeFeedRate : 2,
+retractFeedRate: 1,
+RPMFactor: 1
+	   },
+	   {
+name : "G86 Boring - Drilling Cycle",
+type : 2,
+xPosition : 2,
+yPosition : 2,
+zPosition : 2,
+initialHeight : 2,
+referenceHeight : 2,
+plungeFeedRate : 2,
+RPMFactor: 0
+	   },
+	   {
+name : "G87 Boring - Back Boring Cycle",
+type : 2,
+xPosition : 2,
+yPosition : 2,
+zPosition : 2,
+initialHeight : 2,
+referenceHeight : 2,
+plungeFeedRate : 2,
+dwellTop: 1,
+shiftAmount: 1,
+RPMFactor: 1
+	   }
+	];
+
+var epsilon = 0.002;
+
+var commentFront = "(";
+var commentBack = ")";
+var textAsComment = "";
+var toolOperationCommment = "";
+
+var defaultM = "";
+
+var gFormat;
+var qFormat;
+var fFormat;
+var xyzFormat;
+var abcFormat;
+var stockFormat;
+var drillingFormat;
+var mFormat;
+var dFormat;
+
+var gOutput;
+var compOutput;
+var globalM;
+var alwaysPrintPrefix = false;
+
+var paramFormat;
+var paramOutput;
+
+var defaultDoubleFormat;
+var defaultDoubleOutput;
+
+var feedOutput;
+var compensationOutput;
+
+var xOutput;
+var yOutput;
+var zOutput;
+
+
+var drillingOutput;
+var xDrillingOutput;
+var yDrillingOutput;
+var zDrillingOutput;
+
+var aOutput;
+var bOutput;
+var cOutput;
+
+var xCircleCenterOutput;
+var yCircleCenterOutput;
+var zCircleCenterOutput;
+
+var stockXOutput;
+var stockYOutput;
+var stockZOutput;
+
+
+var realOutput;
+
+var mOutput;
+
+var iOutput;
+var jOutput;
+var kOutput;
+var rOutput;
+var qOutput;
+var dOutput;
+var pOutput;
+
+var planeOutput;
+
+var feedrates;
+
+var tolerance
+	var tool;
+var gCode;
+var cGcode
+	var opCode;
+var stock;
+var plane;
+
+var lastFeedrate;
+var feedRateReset = true;
+var lastSS;
+
+var prevCooling;
+
+var sweepOutput;
+var toolList;
+var completeToolList;
+var completeToolListIndex = 0;
+var ToolParameters;
+var lastCompensation;
+var compensationTmp;
+
+var dwellOutput;
+
+var sequenceNumber;
+
+// Used to handle drill cycles
+var drillHeaderCalled = false;
+var drillIsFirst;
+var drillHeader;
+var drillHeaderConv;
+
+var tiltAngle;
+var rotAngle;
+var thirdAngle;
+var pathType;
+
+// Variables to handle drilling parameters
+var retractDistance; // Used as Second Safety Clearance
+var safeDistance;  // Used as Safety Clearance
+var referenceHeight; // Used as Surface Coordinate 
+var depth;
+
+var first = true;
+var first5Axis = true;
+
+var toolChanged;
+var prevToolNo;
+var prevToolss;
+
+//sub programming
+//var subProgramList = new Array();
+var subProgramRunning = 0;
+//var subProgramLastCoord = new array();
+var lastSubprogramID;
+var currentSubprogramID;
+
+var subProgramList;
+var stockXMin;
+var stockYMin;
+var stockZMin;
+
+var stockXMax;
+var stockYMax;
+var stockZMax;
+
+var ProgramName;
+
+function writeBlock() {
+	if (globals.showSequenceNumbers) {
+		writeWords2(sequenceNumber, arguments);
+		sequenceNumber += globals.sequenceNumberIncrement;
+	} else {
+		writeWords(arguments);
+	}
+}
+
+function feedrateReset()
+{
+	feedOutput.reset();
+	feedRateReset = true;
+}
+
+function getFeedrate(movement) 
+{
+	if (movement == MOVE_RAPID)
+	{
+		return;
+	}
+
+	var defaultF;
+
+	if (alwaysPrintPrefix) 
+	{
+		defaultF = "F";
+	} else
+	{
+		defaultF = "";
+	}
+
+	if (movement == MOVE_RAPID)
+	{
+		lastFeedrate = "FMAX";
+		return "FMAX";
+	}
+	if (!(movement in feedrates)) {
+		//lastFeedrate = defaultF; //was "F"
+		return defaultF;
+	}
+
+
+	var currentFeedrate = feedOutput.format(feedrates[movement]);
+	//feedRateReset = false;
+	//writeBlock("cur ", currentFeedrate, " last ",lastFeedrate);
+	if (lastFeedrate == currentFeedrate && !feedRateReset)
+	{
+		if (!(movement in feedrates))
+		{
+			//lastFeedrate = defaultF; //was "F"
+
+			return defaultF;
+		}
+	}
+	else
+	{
+		if (currentFeedrate.length > 0)
+		{
+			lastFeedrate = currentFeedrate;
+		}
+		feedRateReset = false;
+		return currentFeedrate || defaultF;;
+	}
+
+	return feedOutput.format(feedrates[movement]) || defaultF;
+}
+
+function getCompensation() {
+
+	compensationTmp = lastCompensation;
+	switch (lastCompensation)
+	{
+	case COMPENSATION_LEFT: { return 41; break };
+	case COMPENSATION_RIGHT: { return 42; break };
+	case COMPENSATION_OFF: { return 40; break };
+	case POST_COMPENSATION_CANCEL: { return 40; break };
+								   //case null: { return 43; break };
+	}
+}
+
+function getToolCompensation() {
+
+	var diaOff = tool.toolNumber + 50;
+	return diaOff;
+}
+
+
+function reset() {
+	xOutput.reset();
+	yOutput.reset();
+	zOutput.reset();
+}
+
+function onInit() {
+	//commentFormat = createFormat({ prefix: ""});
+	gFormat = createFormat({ prefix: "G", decimals: 0, width: 1 });
+	qFormat = createFormat({ prefix: "Q", decimals: 0, width: 1 });
+	fFormat = createFormat({ prefix: "F", decimals: 2, forceDecimal: false, forceDelim: true, removeIntZero: true });
+	dFormat = createFormat({ prefix: "D", decimals: 0, forceDecimal: false, forceDelim: false, removeIntZero: false });
+	xyzFormat = createFormat({ decimals: 3, forceDecimal: false, forceSign: false, forceDelim: true, removeIntZero: true });
+	abcFormat = createFormat({ decimals: 3, forceDecimal: false, forceSign: false, forceDelim: true, removeIntZero: true });
+	sweepFormat = createFormat({ decimals: 3, forceDecimal: false, forceSign: true, forceDelim: true, removeIntZero: true });
+	stockFormat = createFormat({ decimals: 3, forceDecimal: false, forceSign: true, forceDelim: true, removeIntZero: true });
+	drillingFormat = createFormat({ decimals: 3, forceDecimal: false, forceSign: false, forceDelim: true, removeIntZero: false });
+	mFormat = createFormat({ decimals: 0, forceDecimal: false, forceSign: false, forceDelim: false, removeIntZero: false });
+
+
+	intFormat = createFormat({ decimals: 0 });
+	realFormat = createFormat({ decimals: 3, forceDecimal: false, forceSign: false, forceDelim: true, removeIntZero: true });
+	paramFormat = createFormat({ prefix: "Q", decimals: 0 });
+	paramOutput = createVariable({ force: true }, paramFormat);
+	mOutput = createVariable({ prefix: "M", force: true }, mFormat);
+	gOutput = createVariable({}, gFormat);
+	compOutput = createVariable({}, gFormat);
+	dOutput = createVariable({ force: false }, dFormat);
+
+	planeOutput = createVariable({ force: false, prefix: "G" }, intFormat);
+
+	defaultDoubleFormat = createFormat({ decimals: 3 });
+	defaultDoubleOutput = createVariable({ force: true }, defaultDoubleFormat);
+
+	feedOutput = createVariable({}, fFormat);
+	compensationOutput = createVariable({}, gFormat);
+
+	xOutput = createVariable({ prefix: "X" }, xyzFormat);
+	yOutput = createVariable({ prefix: "Y" }, xyzFormat);
+	zOutput = createVariable({ prefix: "Z" }, xyzFormat);
+
+	aOutput = createVariable({ prefix: "A" }, abcFormat);
+	bOutput = createVariable({ prefix: "B" }, abcFormat);
+	cOutput = createVariable({ prefix: "C" }, abcFormat);
+
+	xCircleCenterOutput = createVariable({ prefix: "X", force: true}, xyzFormat);
+	yCircleCenterOutput = createVariable({ prefix: "Y", force: true }, xyzFormat);
+	zCircleCenterOutput = createVariable({ prefix: "Z" }, xyzFormat);
+
+	xDrillingOutput = createVariable({ prefix: "X", force: false }, xyzFormat);
+	yDrillingOutput = createVariable({ prefix: "Y", force: false }, xyzFormat);
+	zDrillingOutput = createVariable({ prefix: "Z", force: false }, xyzFormat);
+
+	iOutput = createVariable({ prefix: "I", force: true }, xyzFormat);
+	jOutput = createVariable({ prefix: "J", force: true }, xyzFormat);
+	kOutput = createVariable({ prefix: "K", force: true }, xyzFormat);
+	rOutput = createVariable({ prefix: "R", force: true }, xyzFormat);
+	qOutput = createVariable({ prefix: "Q", force: true }, xyzFormat);
+	pOutput = createVariable({ prefix: "P", force: false}, realFormat);
+
+	stockXOutput = createVariable({ prefix: "X" }, stockFormat);
+	stockYOutput = createVariable({ prefix: "Y" }, stockFormat);
+	stockZOutput = createVariable({ prefix: "Z" }, stockFormat);
+
+	drillingOutput = createVariable({ force: true }, drillingFormat);
+
+	toleranceOutput = createVariable({ prefix: "", force: false }, realFormat);
+
+	sweepOutput = createVariable({ prefix: "IPA", force: true }, sweepFormat);
+
+	sOutput = createVariable({ prefix: "S", force: true }, intFormat);
+	tOutput = createVariable({ prefix: "", force: true }, intFormat);
+	//tOutput = createVariable({ prefix: "TOOL CALL ", force: true }, intFormat);
+
+	feedrates = {};
+
+	lastFeedrate = "";
+
+	lastCompensation = null;
+	compensationTmp = null;
+
+	dwellOutput = createVariable({}, xyzFormat);
+
+	sequenceNumber = globals.sequenceNumberStart;
+
+	stockXMin = stockXOutput.format(0);
+	stockYMin = stockYOutput.format(0);
+	stockZMin = stockZOutput.format(0);
+
+	stockXOutput.reset();
+	stockYOutput.reset();
+	stockZOutput.reset();
+
+	stockXMax = stockXOutput.format(0);
+	stockYMax = stockYOutput.format(0);
+	stockZMax = stockZOutput.format(0);
+
+	stockXOutput.reset();
+	stockYOutput.reset();
+	stockZOutput.reset();
+
+	first = true;
+	prevToolNo = -1;
+	prevToolss = -1;
+	tiltAngle = 0;
+	rotAngle = 0;
+	thirdAngle = 0;
+	pathType = 0;
+	cGcode;
+	//toolList = new Array();
+
+	lastX = xOutput.format(-9999999);   //TODO get some better start values
+	lastY = yOutput.format(-9999999);
+	lastZ = zOutput.format(-9999999);
+	reset();
+}
+
+function onOpen(operationName, isClipboard)
+{
+	if (first)
+	{
+		writeBlock("%");
+		writeBlock("O0000", commentFront, operationName, commentBack);
+		var d = new Date();
+		var day = d.getDate();
+		var month = d.getMonth() + 1;
+		var minutes = d.getMinutes() + "";
+
+		if (minutes.length == 1) {
+			minutes = "0" + minutes;
+		}
+
+		if (month.length == 1) {
+			month = "0" + month;
+		}
+
+		writeBlock(commentFront  + day + "-" + month + "-" + d.getFullYear() + "  " + d.getHours() + ":" + minutes + "" + commentBack);
+		/*
+		if (!(stock.minX == 0 && stock.minY == 0 && stock.minZ == 0 && stock.maxX == 0 && stock.maxX == 0 && stock.maxX == 0))
+		{
+		writeBlock(commentFront + "STOCK", stockXMin, stockYMin, stockZMin + commentBack);
+		writeBlock(commentFront + "STOCK", stockXMax, stockYMax, stockZMax + commentBack);
+		}
+		*/
+		outputToolList();
+		writeBlock("G21");
+		writeBlock("G0", "G17", "G40", "G49","G80", "G90");
+	}
+}
+
+function onClose() {
+
+
+	/*
+	CALL LABELS HERE
+	*/
+
+	writeBlock("M5");
+	writeBlock("G91", "G28", "Z0.");
+	writeBlock("G28","Y0","A0.");
+	writeBlock("M30");
+	writeBlock("%");
+}
+
+function onComment(text)
+{
+	var comment = commentFront + text + commentBack;
+
+	writeBlock(comment);
+}
+
+function onAxisSubstitutionStart(axisName, diameter, axisTollerance)
+{
+
+}
+
+function onAxisSubstitutionEnd()
+{
+
+}
+
+function onSpindleRotation(rotation)
+{
+
+}
+
+function outputToolList()
+{
+	for (key in toolList)
+	{
+		ctool = toolList[key];
+		//writeBlock(JSON.stringify(ctool))
+
+		oTool = "TOOL" + ctool.toolNumber;
+		oTool = oTool +  spacePadding(oTool.length,8);
+
+		oComment = "\"" + ctool.toolOperationCommment.trim() + "\"";
+		oComment = oComment + spacePadding(oComment.length, 40);
+
+		oUm = "UM D=" + ctool.dia;
+		oUm = oUm + spacePadding(oUm.length, 10);
+
+		oCr = "CR=" + ctool.rad;
+		oCr = oCr + spacePadding(oCr.length, 10);
+
+		oA = ""//"A=" ;
+			//oTool = oTool + spacePadding(oTool.length, 8);
+
+			oFl = "FL=" + ctool.fluteLength;
+		oFl = oFl + spacePadding(oFl.length, 10);
+
+		oSl = "SL=" + ctool.shoulderLength;
+		oSl = oSl + spacePadding(oSl.length, 10);
+
+		oBl = "BL=" + ctool.overallLength;
+		oBl = oBl + spacePadding(oBl.length, 10);
+
+		oAd = "AD=" + ctool.diameter;
+		oAd = oAd + spacePadding(oAd.length, 10);
+
+		writeBlock(commentFront, oTool, oComment, oUm, oCr, oA, oFl, oSl, oBl, oAd, commentBack);
+	}
+}
+
+function spacePadding(length,numSpace)
+{
+	var padding = "";
+	while(length < numSpace)
+	{
+		padding = padding + " ";
+		length = length + 1
+	}
+	return padding;
+}
+
+function setToolList(inToolList)
+{
+	completeToolList = inToolList;
+
+	var u = {}, a = [];
+	for (var i = 0, l = inToolList.length; i < l; ++i) {
+		if (!u.hasOwnProperty(inToolList[i].toolNumber)) {
+			a.push(inToolList[i]);
+			u[inToolList[i].toolNumber] = 1;
+		}
+	}
+
+	toolList = a;
+}
+
+function setMisc1005(text)
+{
+	if(text.textAsComment.length >0)
+	{
+		writeBlock(commentFront, text.textAsComment.toUpperCase(), commentBack);
+	}
+}
+
+function setMisc1008(text)
+{
+	toolOperationCommment = text.toolOperationCommment;
+	//writeBlock("(", text.toolOperationCommment,")");
+}
+
+function onToolChange(toolData) {
+
+	tool = toolData;
+	feedOutput.reset();
+
+	var t = tOutput.format(toolData.toolNumber);
+	var s = sOutput.format(Math.abs(toolData.spindleSpeed));
+	//var f = feedOutput.format(toolData.feedrate);
+	var p = toolData.plane;
+	var tn = toolData.toolName;
+	var postfix = "DR+0 ;"
+
+		var axis = "";
+
+	if (p == PLANE_XY) {
+		axis = "Z";
+	}
+	else if (p == PLANE_YZ) {
+		axis = "Y";
+	}
+	else if (p == PLANE_XZ) {
+		axis = "X";
+	}
+
+	var f = getFeedrate(MOVE_RAPID);
+
+	if (prevToolNo != t)
+	{
+		toolChanged = true;
+		prevToolNo = t;
+		lastSS = tool.spindleSpeed;
+		//first = true;
+		prevCooling = -1;
+		//writeBlock("M9");
+		//writeBlock("L Z1. R", f, "M91");
+		//lastX = xOutput.format(-9999999);   
+		//lastY = yOutput.format(-9999999);
+		//lastZ = zOutput.format(-9999999);
+
+		//writeBlock("TOOL CALL", t, axis, s, postfix, tn);
+
+		if (!first) {
+
+			gCode = gOutput.format(0);
+			writeBlock("M5")
+				writeBlock("G91", gCode, "G28", "Z0.");
+			writeBlock("G28", "Y0", "A0.");
+			if (opCode == 3) {
+				reset();
+				writeBlock("/", "G28", "X0.", "Y0.");
+
+				var xh = xOutput.format(tool.xh);
+				var yh = yOutput.format(tool.yh);
+				var zh = zOutput.format(tool.zh);
+
+				writeBlock("/", "G92", xh,yh,zh);
+			}
+
+			writeBlock("M01");
+
+
+		} else {
+			if (opCode == 3) {
+				reset();
+				writeBlock("/","G91","G28","Z0.");
+				writeBlock("/", "G28", "X0.", "Y0.");
+
+				var xh = xOutput.format(tool.xh);
+				var yh = yOutput.format(tool.yh);
+				var zh = zOutput.format(tool.zh);
+
+				writeBlock("/", "G92", xh, yh, zh);
+			}
+		}
+
+		var x = xOutput.format(toolData.xr);
+		var y = yOutput.format(toolData.yr);
+		var z = zOutput.format(toolData.zr);
+
+		writeBlock("(", toolData.toolName.toUpperCase(), ")");
+
+		if (toolOperationCommment.length > 0) {
+			writeBlock(commentFront, toolOperationCommment.toUpperCase(), commentBack);
+			toolOperationCommment = "";
+		}
+		//reset();
+
+		var ssM;
+		if (toolData.spindleSpeed < 0) {
+			ssM = mOutput.format(4); //"M4";
+		} else
+		{
+			ssM = mOutput.format(3); // "M3";
+		}
+		gOutput.reset();
+		gCode = gOutput.format(0);
+		writeBlock("T" + toolData.toolNumber,"M6")
+			writeBlock(gCode, "G90", "G54", x, y, s, ssM);
+
+		writeBlock("G43", "H" + toolData.toolNumber);// insert next tool as T
+		first = false
+			//reset();
+			//zOutput.reset();
+
+			//onLinearXY(toolData.xr, toolData.yr, MOVE_RAPID);
+	} else {
+		if (toolData.mode == 1000)
+		{
+			var ssM;
+			if (toolData.spindleSpeed < 0) {
+				ssM = mOutput.format(4); //"M4";
+			} else {
+				ssM = mOutput.format(3); // "M3";
+			}
+
+			if (lastSS != tool.spindleSpeed)
+			{
+				writeBlock(s,ssM);
+				lastSS = tool.spindleSpeed;
+			}
+
+			//var discardz = zOutput.format(-99999);
+			if (toolOperationCommment.length > 0)
+			{
+				writeBlock(commentFront, toolOperationCommment.toUpperCase(), commentBack);
+				toolOperationCommment = "";
+			}
+			if (toolData.zr > zOutput.getLast())
+			{
+				onLinearZ(toolData.zr, MOVE_RAPID);
+			} else
+			{
+				onLinearXY(toolData.xr, toolData.yr, MOVE_RAPID);
+			}
+			if (subProgramRunning == 1)
+			{
+				//writeBlock("CALL LBL", currentSubprogramID + ""); //test1
+			}
+		} else
+		{
+			if (toolOperationCommment.length > 0)
+			{
+				writeBlock(commentFront, toolOperationCommment.toUpperCase(), commentBack);
+				toolOperationCommment = "";
+			}
+			if (subProgramRunning == 1)
+			{
+				//writeBlock("CALL LBL", currentSubprogramID + "");
+			}
+
+		}
+	}
+}
+
+function startOfOperation(synctoolOp, dataStream, syncOpId)
+{
+}
+
+function subProgram(SP)
+{
+	if (SP.sub_trns_id > 0 )//&& SP.sub_sec_no == 0)
+	{
+		currentSubprogramID = SP.sub_op_id + 10;
+
+	} else if (SP.sub_trns_id == 0)// && SP.sub_sec_no == 1)
+	{
+		currentSubprogramID = SP.sub_op_id + 100;
+	}
+
+	writeBlock("CALL LBL", currentSubprogramID + "");
+	/*
+	if (subProgramRunning == 0 && currentSubprogramID > 100)
+	{
+	lastSubprogramID = currentSubprogramID;
+	writeBlock("CALL LBL", currentSubprogramID + "" );
+	}
+	*/
+	subProgramRunning = subProgramRunning + 1;
+}
+
+function endSubProgram(esub_op_id, esub_grp_id, esub_trns_id, esub_sec_no, esub_totl_no, esub_chn_no)
+{
+	subProgramRunning = subProgramRunning - 1;
+}
+
+function setToolParameters(TP)
+{
+	ToolParameters = TP;
+}
+
+function onLinear(x, y, z, movement)
+{
+	var lastX = xOutput.getLast();
+	var lastY = yOutput.getLast();
+	var lastZ = zOutput.getLast();
+
+	//onComment(lastX + " " + x + " " + lastY + " " + y + " " + lastZ + " " + z + " ");
+	//onComment((Math.abs(lastX - x))+" "+(Math.abs(lastY - y))+" "+(Math.abs(lastZ - z)));
+	if ((Math.abs(lastX - x) >= epsilon) || (Math.abs(lastY - y) >= epsilon) || (Math.abs(lastZ - z) >= epsilon))
+	{
+		var x = xOutput.format(x);
+		var y = yOutput.format(y);
+		var z = zOutput.format(z);
+		var f = getFeedrate(movement);
+		var m = defaultM;//mOutput.format(3);
+
+		//feedrateReset();
+		//var fTest = getFeedrate(movement);
+
+		if (movement == MOVE_RAPID)
+		{
+			gCode = gOutput.format(0);
+			f = "";
+		} else
+		{
+			gCode = gOutput.format(1);
+		}
+
+		//var comp = getCompensation();
+
+		if (lastCompensation != null) {
+			cGcode = compOutput.format(getCompensation());
+
+		} else {
+			cGcode = "";
+		}
+
+		var diaOff = "";
+		if (getCompensation() == 41) {
+			diaOff = dOutput.format(getToolCompensation());
+		} else if (getCompensation() == 42) {
+			diaOff = dOutput.format(getToolCompensation());
+		}
+		//writeBlock("comp:"+);
+		if (first) {
+			//m = mOutput.format(3);
+			/*
+			if (lastSS > 0)
+			{
+			writeBlock(gCode, x, y, r, f, "M3");
+			} else if (lastSS < 0) {
+			writeBlock(gCode, x, y, r, f, "M4");
+			} else if (lastSS == 0) {
+			writeBlock(gCode, x, y, r, f, "M5");
+			}
+			*/
+			writeBlock(cGcode,diaOff,gCode, x, y, z, f);
+			//x = xOutput.format(x);
+			//y = yOutput.format(y);
+			//m = "M";
+			first = false;
+			//zOutput.reset();
+			//prevCooling = -1;
+		} else
+		{
+			/*
+			if (tool.coolant == 0 && prevCooling != 0)
+			{
+			prevCooling = 0;
+			m = "M9";
+			globalM = mOutput.format(9);
+			//globalM = xOutput.format(9);
+			}
+			else if (tool.coolant == 1 && prevCooling != 1)
+			{
+			prevCooling = 1;
+			m = "M8";
+			globalM = mOutput.format(8);
+			}
+			*/
+			writeBlock(cGcode,diaOff,gCode, x, y, z, f, m);
+		}
+	}
+}
+
+function onLinearXY(inx, iny, movement)
+{
+	if (xOutput.getLast() != inx || yOutput.getLast() != iny) {
+		var r = getCompensation();
+		var f = getFeedrate(movement);
+		var x;
+		var y;
+
+		if (movement == MOVE_PLUNGE) {
+			x = xDrillingOutput.format(inx);
+			y = yDrillingOutput.format(iny);
+
+			xOutput.format(inx);
+			yOutput.format(iny);
+		} else
+		{
+			x = xOutput.format(inx);
+			y = yOutput.format(iny);
+		}
+
+		var m = defaultM;
+
+		if (movement == MOVE_RAPID)
+		{
+			gCode = gOutput.format(0);
+			f = "";
+		}
+		/*
+		else if (drillHeader.topDwelling > 0)
+		{
+		gCode = gOutput.format(82);
+		}
+		else if (movement == MOVE_PLUNGE) {
+		gCode = gOutput.format(81);
+		} */
+
+		else
+		{
+			gCode = gOutput.format(1);
+		}
+
+		/*
+		feedrateReset();
+		var fTest = getFeedrate(movement);
+		if (fTest == "FMAX") {
+		gCode = gOutput.format(0);
+		f = "";
+		} else {
+		gCode = gOutput.format(1);
+		}*/
+
+
+
+		if (toolChanged) {
+			globalM = mOutput.format(3);
+			toolChanged = false;
+		}
+		if (first) {
+			if (lastSS > 0) {
+				writeBlock(gCode, x, y, r, f);
+			} else if (lastSS < 0) {
+				writeBlock(gCode, x, y, r, f);
+			} else if (lastSS == 0) {
+				writeBlock(gCode, x, y, r, f);
+			}
+
+			zOutput.reset();
+			first = false;
+		}
+		else {
+			writeBlock(gCode, x, y, r, f, m);
+		}
+	}
+}
+
+function onLinearZ(inz, movement)
+{
+	if (zOutput.getLast() != inz) {
+		var r = getCompensation();
+		var f = getFeedrate(movement);
+		var z = zOutput.format(inz);
+
+		feedrateReset();
+		var fTest = getFeedrate(movement);
+
+		if (movement == MOVE_RAPID) {
+			gCode = gOutput.format(0);
+			f = "";
+		} else {
+			gCode = gOutput.format(1);
+		}
+
+		//var m = "M";
+		//writeBlock("L", z, r, f, defaultM);
+		writeBlock(gCode, z, r, f, defaultM );
+	}
+}
+
+function onCircular(cx, cy, cz, ex, ey, ez, isCW, movement)
+{
+	// current position
+	var lastX = xOutput.getLast();
+	var lastY = yOutput.getLast();
+	var lastZ = zOutput.getLast();
+	var fullCircle = false;
+
+	if ((Math.abs(lastX - ex) <= epsilon) && (Math.abs(lastY - ey) <= epsilon))
+	{
+		fullCircle = true;
+	}
+
+	gCode = gOutput.format(isCW ? 2 : 3);
+
+	var lastPlane = planeOutput.getLast();	
+	//writeBlock(commentFront,"cx "+cx, "cy "+cy,"cz "+cz);
+	//writeBlock(commentFront,"ex "+ex,"ey "+ey,"ez "+ez);
+	//writeBlock(commentFront,"lastX "+lastX,"lastY "+lastY,"lastZ "+lastZ);
+
+	var exf;
+	var eyf;
+	var ezf;
+	var i;
+	var j;
+	var k;
+
+	xOutput.reset();
+	yOutput.reset();
+	if(lastPlane == 17)
+	{
+		exf = xOutput.format(ex);
+		eyf = yOutput.format(ey);
+		ezf = zOutput.format(ez);
+
+		i = iOutput.format(cx );//- lastX);
+		j = jOutput.format(cy );//- lastY);
+		// k = kOutput.format(cz - lastZ);
+
+		k = "";
+	}
+	else if (lastPlane== 18)
+	{
+		exf = xOutput.format(ex);
+		eyf = yOutput.format(ez*-1);
+		ezf = zOutput.format(ey);
+
+		i = iOutput.format(cx);//- lastX);
+		// j = kOutput.format(cz*-1 - lastY);
+		k = kOutput.format(cy);// - lastZ);
+
+		j = "";
+	}
+	else if (lastPlane == 19)
+	{
+		exf = xOutput.format(ez);
+		eyf = yOutput.format(ex);
+		ezf = zOutput.format(ey);
+
+		// i = kOutput.format(cz - lastX);
+		j = jOutput.format(cx);// - lastY);
+		k = kOutput.format(cy);// - lastZ);
+
+		i = "";
+	}
+
+	var f = getFeedrate(movement);
+
+	var r = getCompensation();
+
+	if (globals.arcType == 2) { // radius
+		var radius = Math.sqrt(((cx - ex) * (cx - ex)) + ((cy - ey) * (cy - ey)));
+
+		var rad = radiusOutput.format(radius);
+		writeBlock(plane, gCode, exf, eyf, ezf, rad, f, defaultM, "");
+
+		//writeBlock(c, g, x, y, z, r, f);
+	} else if (globals.arcType == 0) { // relative
+
+	}
+	else 
+	{ // absolute
+		if (!fullCircle)
+		{
+			if (Math.abs(lastZ - ez) > globals.tolerance)
+			{
+				writeBlock(plane ,gCode, exf, eyf, ezf, i, j, k, r,f, defaultM,"");
+			} 
+			else 
+			{
+				writeBlock(plane, gCode, exf, eyf, ezf, i, j, k, r, f, defaultM, "");
+			}
+		} 
+		else //full circle
+		{
+			if (Math.abs(lastZ - ez) > globals.tolerance)
+			{
+				writeBlock(plane, gCode, exf, eyf, ezf, i, j, k, r, f, defaultM), "";
+			} 
+			else 
+			{
+				writeBlock(plane, gCode, i, j, k, r, f, defaultM, "");
+			}
+		}
+	}
+}
+
+function onCompensation(compensation) {
+	dOutput.reset();
+	lastCompensation = compensation;
+}
+
+function onDwell(seconds) {
+	writeBlock("CYCL DEF 9.0 DWELL TIME");
+	writeBlock("CYCL DEF 9.1 DWELL", '"' + dwellOutput.format(seconds) + '"');
+	writeBlock("CYCL CALL");
+}
+
+function on5axisHeader() {
+}
+
+function on5axis(motion, movement) {
+}
+
+function on5axisFooter() {
+}
+
+function setRotation(itiltAngle, irotAngle, ithirdAngle, ipathType) {
+	tiltAngle = itiltAngle;
+	rotAngle = irotAngle;
+	thirdAngle = ithirdAngle;
+	pathType = ipathType;
+}
+
+function setMiscellaneous1011(real1, real2, real3, real4, real5, real6, real7, real8, real9, real10) {
+	tolerance = toleranceOutput.format(real7);
+}
+
+function setMiscellaneous1013(incc, intldia, intcr, incctotip, intlplnno, intox, intoy, intoz, inopcode, instrtoolpath) {
+	opCode = inopcode;
+}
+
+function setMiscellaneous1016(op_id, tool_type, tool_op, cpnnlo, corgx, corgy, corgz, cc_computer, workofs, met_tool, n_flutes, spindle_rot, n_thp_thds, lstation, lturret, ltool_id, xform_op_id) {
+
+}
+
+function onDrillingHeaderConversion(inDrillHeader)
+{
+	//writeBlock(commentFront,JSON.stringify(inDrillHeader));
+	drillHeaderConv = inDrillHeader;
+	var garbX = xDrillingOutput.format(xOutput.getLast());
+	var garby = yDrillingOutput.format(yOutput.getLast());
+	var garbz = zDrillingOutput.format(zOutput.getLast());
+	//type,xPosition, yPosition ,zPosition,initialHeight, referenceHeight,drillHeaderConv.depth, drillHeaderConv.topOfStock ,drillHeaderConv.dwellBottom  
+	//if(drillHeaderConv.topOfStock == 0, drillHeaderConv.depth == 0,drillHeaderConv.plungeFeedRate == 0, drillHeaderConv.retractFeedRate == 0,drillHeaderConv.dwellBottom == 0,drillHeaderConv.dwellTop == 0, drillHeaderConv.peckFirst == 0,drillHeaderConv.Pecks == 0, drillHeaderConv.minimumPeck == 0,drillHeaderConv.peckReduktion == 0, drillHeaderConv.peckCearance == 0, drillHeaderConv.chipBreakRetract == 0, drillHeaderConv.chipBreakDepth == 0, drillHeaderConv.chipBreaks == 0, drillHeaderConv.pitch == 0, drillHeaderConv.shiftAmount == 0, drillHeaderConv.disengagingDir == 0, angleOfSpindle == 0, drillHeaderConv.toolEdgeHeight == 0, drillHeaderConv.materialThickness == 0,drillHeaderConv.upperAdvStop == 0, drillHeaderConv.lowerAdvStop == 0,drillHeaderConv.RPMFactor == 0)
+	//{
+	//}
+	//"plungeFeedRate":100,"retractFeedRate":250,"dwellBottom":0.5,
+	if(drillHeaderConv.type == 1 && drillHeaderConv.plungeFeedRate != 0 &&  drillHeaderConv.retractFeedRate == 0 && drillHeaderConv.dwellTop == 0 &&  drillHeaderConv.peckFirst == 0 && drillHeaderConv.peckAmount == 0 &&  drillHeaderConv.minimumPeck == 0 && drillHeaderConv.peckReduktion == 0 &&  drillHeaderConv.peckCearance == 0 &&  drillHeaderConv.chipBreakRetract == 0 &&  drillHeaderConv.chipBreakDepth == 0 &&  drillHeaderConv.chipBreaks == 0 &&  drillHeaderConv.pitch == 0 &&  drillHeaderConv.shiftAmount == 0 &&  drillHeaderConv.disengagingDir == 0 &&  drillHeaderConv.angleOfSpindle == 0 &&  drillHeaderConv.toolEdgeHeight == 0 &&  drillHeaderConv.materialThickness == 0 && drillHeaderConv.upperAdvStop == 0 &&  drillHeaderConv.lowerAdvStop == 0 && drillHeaderConv.RPMFactor == 0)
+	{
+		var x = xDrillingOutput.format(drillHeaderConv.xPosition);
+		var y = yDrillingOutput.format(drillHeaderConv.yPosition);
+		zOutput.reset();
+		var z = zDrillingOutput.format(drillHeaderConv.depth);
+		var r = rOutput.format(drillHeaderConv.initialHeight);
+		feedrateReset();
+		var f = getFeedrate(MOVE_PLUNGE);
+
+		var	g = "G81"; //G81 Spot - Drilling Cycle
+
+		writeBlock(g, x, y, z, r,f);
+
+		var garbz = zOutput.format(drillHeaderConv.initialHeight);
+	}
+	else if(drillHeaderConv.type == 1 && drillHeaderConv.plungeFeedRate != 0 &&  drillHeaderConv.retractFeedRate == 0 && drillHeaderConv.dwellBottom != 0 && drillHeaderConv.dwellTop == 0 &&  drillHeaderConv.peckFirst == 0 && drillHeaderConv.peckAmount == 0 &&  drillHeaderConv.minimumPeck == 0 && drillHeaderConv.peckReduktion == 0 &&  drillHeaderConv.peckCearance == 0 &&  drillHeaderConv.chipBreakRetract == 0 &&  drillHeaderConv.chipBreakDepth == 0 &&  drillHeaderConv.chipBreaks == 0 &&  drillHeaderConv.pitch == 0 &&  drillHeaderConv.shiftAmount == 0 &&  drillHeaderConv.disengagingDir == 0 &&  drillHeaderConv.angleOfSpindle == 0 &&  drillHeaderConv.toolEdgeHeight == 0 &&  drillHeaderConv.materialThickness == 0 && drillHeaderConv.upperAdvStop == 0 &&  drillHeaderConv.lowerAdvStop == 0 && drillHeaderConv.RPMFactor == 0)
+	{
+		var x = xDrillingOutput.format(drillHeaderConv.xPosition);
+		var y = yDrillingOutput.format(drillHeaderConv.yPosition);
+		zOutput.reset();
+		var z = zDrillingOutput.format(drillHeaderConv.depth);
+		var r = rOutput.format(drillHeaderConv.initialHeight);
+		feedrateReset();
+		var f = getFeedrate(MOVE_PLUNGE);
+		var p = "";
+		if (drillHeaderConv.dwellBottom > 0)
+		{
+			p = pOutput.format(drillHeaderConv.dwellBottom);
+		}
+		var	g = "G82"; //G82 Counter Boring - Drilling Cycle
+
+		writeBlock(g, x, y, z, r, p,f);
+
+		var garbz = zOutput.format(drillHeaderConv.initialHeight);
+	}
+	else if(drillHeaderConv.type == 1 && drillHeaderConv.plungeFeedRate != 0 &&  drillHeaderConv.retractFeedRate == 0 && drillHeaderConv.dwellTop == 0 &&  drillHeaderConv.peckFirst == 0 && drillHeaderConv.peckAmount != 0 &&  drillHeaderConv.minimumPeck == 0 && drillHeaderConv.peckReduktion == 0 &&  drillHeaderConv.peckCearance == 0 &&  drillHeaderConv.chipBreakRetract == 0 &&  drillHeaderConv.chipBreakDepth == 0 &&  drillHeaderConv.chipBreaks == 0 &&  drillHeaderConv.pitch == 0 &&  drillHeaderConv.shiftAmount == 0 &&  drillHeaderConv.disengagingDir == 0 &&  drillHeaderConv.angleOfSpindle == 0 &&  drillHeaderConv.toolEdgeHeight == 0 &&  drillHeaderConv.materialThickness == 0 && drillHeaderConv.upperAdvStop == 0 &&  drillHeaderConv.lowerAdvStop == 0 && drillHeaderConv.RPMFactor == 0)
+	{
+		var x = xDrillingOutput.format(drillHeaderConv.xPosition);
+		var y = yDrillingOutput.format(drillHeaderConv.yPosition);
+		zOutput.reset();
+		var z = zDrillingOutput.format(drillHeaderConv.depth);
+		var r = rOutput.format(drillHeaderConv.initialHeight);
+		var q = qOutput.format(drillHeaderConv.peckAmount);
+		feedrateReset();
+		var f = getFeedrate(MOVE_PLUNGE);
+		var p = "";
+		if (drillHeaderConv.dwellBottom > 0)
+		{
+			p = pOutput.format(drillHeaderConv.dwellBottom);
+		}
+		var	g = "G83"; //G83 Peck - Drilling Cycle
+
+		writeBlock(g, x, y, z, r, q, p,f);
+
+		var garbz = zOutput.format(drillHeaderConv.initialHeight);
+	}
+	else if(drillHeaderConv.type == 1 && drillHeaderConv.plungeFeedRate != 0 &&  drillHeaderConv.retractFeedRate != 0 && drillHeaderConv.dwellTop != 0 &&  drillHeaderConv.peckFirst == 0 && drillHeaderConv.peckAmount != 0 &&  drillHeaderConv.minimumPeck == 0 && drillHeaderConv.peckReduktion == 0 &&  drillHeaderConv.peckCearance == 0 &&  drillHeaderConv.chipBreakRetract == 0 &&  drillHeaderConv.chipBreakDepth == 0 &&  drillHeaderConv.chipBreaks == 0 &&  drillHeaderConv.pitch == 0 &&  drillHeaderConv.shiftAmount == 0 &&  drillHeaderConv.disengagingDir == 0 &&  drillHeaderConv.angleOfSpindle == 0 &&  drillHeaderConv.toolEdgeHeight == 0 &&  drillHeaderConv.materialThickness == 0 && drillHeaderConv.upperAdvStop == 0 &&  drillHeaderConv.lowerAdvStop == 0 && drillHeaderConv.RPMFactor == 0)
+	{
+		var x = xDrillingOutput.format(drillHeaderConv.xPosition);
+		var y = yDrillingOutput.format(drillHeaderConv.yPosition);
+		zOutput.reset();
+		var z = zDrillingOutput.format(drillHeaderConv.depth);
+		var r = rOutput.format(drillHeaderConv.initialHeight);
+		var q = qOutput.format(drillHeaderConv.peckAmount);
+		feedrateReset();
+		var f = getFeedrate(MOVE_PLUNGE);
+		var p = "";
+		if (drillHeaderConv.dwellBottom > 0)
+		{
+			p = pOutput.format(drillHeaderConv.dwellBottom);
+		}
+		var	g = "G83"; //G83 Small–Hole Peck - Drilling Cycle
+
+		writeBlock(g, x, y, z, r, q, p,f);
+
+		var garbz = zOutput.format(drillHeaderConv.initialHeight);
+	}
+	else if(drillHeaderConv.type == 3 && drillHeaderConv.plungeFeedRate != 0  && drillHeaderConv.retractFeedRate == 0 && drillHeaderConv.dwellBottom != 0 &&  drillHeaderConv.peckFirst == 0 && drillHeaderConv.peckAmount == 0 &&  drillHeaderConv.minimumPeck == 0 && drillHeaderConv.peckReduktion == 0 &&  drillHeaderConv.peckCearance == 0 &&  drillHeaderConv.chipBreakRetract == 0 &&  drillHeaderConv.chipBreakDepth == 0 &&  drillHeaderConv.chipBreaks == 0 &&  drillHeaderConv.pitch != 0 &&  drillHeaderConv.shiftAmount == 0 &&  drillHeaderConv.disengagingDir == 0 &&  drillHeaderConv.angleOfSpindle == 0 &&  drillHeaderConv.toolEdgeHeight == 0 &&  drillHeaderConv.materialThickness == 0 && drillHeaderConv.upperAdvStop == 0 &&  drillHeaderConv.lowerAdvStop == 0 && drillHeaderConv.RPMFactor == 0)
+	{
+		var x = xDrillingOutput.format(drillHeaderConv.xPosition);
+		var y = yDrillingOutput.format(drillHeaderConv.yPosition);
+		zOutput.reset();
+		var z = zDrillingOutput.format(drillHeaderConv.depth);
+		var r = rOutput.format(drillHeaderConv.initialHeight);
+		feedrateReset();
+		var f = getFeedrate(MOVE_PLUNGE);
+		var p = "";
+		if (drillHeaderConv.dwellBottom > 0)
+		{
+			p = pOutput.format(drillHeaderConv.dwellBottom);
+		}
+		var	g = "G84"; //G84 Right–Handed - Tapping Cycle
+
+		writeBlock(g, x, y, z, r, p,f);
+
+		var garbz = zOutput.format(drillHeaderConv.initialHeight);
+	}
+	else if(drillHeaderConv.type == 1 && drillHeaderConv.plungeFeedRate != 0  && drillHeaderConv.retractFeedRate != 0 && drillHeaderConv.dwellTop == 0 &&  drillHeaderConv.peckFirst == 0 && drillHeaderConv.peckAmount == 0 &&  drillHeaderConv.minimumPeck == 0 && drillHeaderConv.peckReduktion == 0 &&  drillHeaderConv.peckCearance == 0 &&  drillHeaderConv.chipBreakRetract == 0 &&  drillHeaderConv.chipBreakDepth == 0 &&  drillHeaderConv.chipBreaks == 0 &&  drillHeaderConv.pitch == 0 &&  drillHeaderConv.shiftAmount == 0 &&  drillHeaderConv.disengagingDir == 0 &&  drillHeaderConv.angleOfSpindle == 0 &&  drillHeaderConv.toolEdgeHeight == 0 &&  drillHeaderConv.materialThickness == 0 && drillHeaderConv.upperAdvStop == 0 &&  drillHeaderConv.lowerAdvStop == 0 && drillHeaderConv.RPMFactor == 0)
+	{
+		var x = xDrillingOutput.format(drillHeaderConv.xPosition);
+		var y = yDrillingOutput.format(drillHeaderConv.yPosition);
+		zOutput.reset();
+		var z = zDrillingOutput.format(drillHeaderConv.depth);
+		var r = rOutput.format(drillHeaderConv.initialHeight);
+		feedrateReset();
+		var f = getFeedrate(MOVE_PLUNGE);
+		var p = "";
+		if (drillHeaderConv.dwellBottom > 0)
+		{
+			p = pOutput.format(drillHeaderConv.dwellBottom);
+		}
+		var	g = "G85"; //G85 Boring - Drilling Cycle
+
+		writeBlock(g, x, y, z, r, p,f);
+
+		var garbz = zOutput.format(drillHeaderConv.initialHeight);
+	}
+	else if(drillHeaderConv.type == 1 && drillHeaderConv.plungeFeedRate != 0  && drillHeaderConv.retractFeedRate == 0 && drillHeaderConv.dwellTop == 0 &&  drillHeaderConv.peckFirst == 0 && drillHeaderConv.peckAmount == 0 &&  drillHeaderConv.minimumPeck == 0 && drillHeaderConv.peckReduktion == 0 &&  drillHeaderConv.peckCearance == 0 &&  drillHeaderConv.chipBreakRetract == 0 &&  drillHeaderConv.chipBreakDepth == 0 &&  drillHeaderConv.chipBreaks == 0 &&  drillHeaderConv.pitch == 0 &&  drillHeaderConv.shiftAmount == 0 &&  drillHeaderConv.disengagingDir == 0 &&  drillHeaderConv.angleOfSpindle == 0 &&  drillHeaderConv.toolEdgeHeight == 0 &&  drillHeaderConv.materialThickness == 0 && drillHeaderConv.upperAdvStop == 0 &&  drillHeaderConv.lowerAdvStop == 0 && drillHeaderConv.RPMFactor == 0)
+	{
+		var x = xDrillingOutput.format(drillHeaderConv.xPosition);
+		var y = yDrillingOutput.format(drillHeaderConv.yPosition);
+		zOutput.reset();
+		var z = zDrillingOutput.format(drillHeaderConv.depth);
+		var r = rOutput.format(drillHeaderConv.initialHeight);
+
+		feedrateReset();
+		var f = getFeedrate(MOVE_PLUNGE);
+		var p = "";
+		if (drillHeaderConv.dwellBottom > 0)
+		{
+			p = pOutput.format(drillHeaderConv.dwellBottom);
+		}
+		var	g = "G86"; //G86 Boring - Drilling Cycle
+
+		writeBlock(g, x, y, z, r, p,f);
+
+		var garbz = zOutput.format(drillHeaderConv.initialHeight);
+	}
+	else if(drillHeaderConv.type == 5 && drillHeaderConv.plungeFeedRate != 0  && drillHeaderConv.retractFeedRate == 0 && drillHeaderConv.dwellTop != 0 &&  drillHeaderConv.peckFirst == 0 && drillHeaderConv.peckAmount == 0 &&  drillHeaderConv.minimumPeck == 0 && drillHeaderConv.peckReduktion == 0 &&  drillHeaderConv.peckCearance == 0 &&  drillHeaderConv.chipBreakRetract == 0 &&  drillHeaderConv.chipBreakDepth == 0 &&  drillHeaderConv.chipBreaks == 0 &&  drillHeaderConv.pitch == 0 &&  drillHeaderConv.shiftAmount != 0 &&  drillHeaderConv.disengagingDir == 0 &&  drillHeaderConv.angleOfSpindle == 0 &&  drillHeaderConv.toolEdgeHeight == 0 &&  drillHeaderConv.materialThickness == 0 && drillHeaderConv.upperAdvStop == 0 &&  drillHeaderConv.lowerAdvStop == 0 && drillHeaderConv.RPMFactor == 0)
+	{
+		var x = xDrillingOutput.format(drillHeaderConv.xPosition);
+		var y = yDrillingOutput.format(drillHeaderConv.yPosition);
+		zOutput.reset();
+		var z = zDrillingOutput.format(drillHeaderConv.depth);
+		var r = rOutput.format(drillHeaderConv.initialHeight);
+		var q = qOutput.format(drillHeaderConv.peckAmount);
+		feedrateReset();
+		var f = getFeedrate(MOVE_PLUNGE);
+		var p = "";
+		if (drillHeaderConv.dwellBottom > 0)
+		{
+			p = pOutput.format(drillHeaderConv.dwellBottom);
+		}
+		var	g = "G87"; //G87 Boring - Back Boring Cycle
+
+		writeBlock(g, x, y, z, r, q, p,f);
+
+		var garbz = zOutput.format(drillHeaderConv.initialHeight);
+	}
+
+	else
+	{
+	//writeBlock(commentFront,JSON.stringify(inDrillHeader));
+	}
+
+	/*
+	if (drillHeaderConv.type == 200)
+	{
+		var x = xDrillingOutput.format(drillHeaderConv.xPosition);
+		var y = yDrillingOutput.format(drillHeaderConv.yPosition);
+		var z = zDrillingOutput.format(drillHeaderConv.Depth);
+		var r = rOutput.format(drillHeaderConv.initialHeight);
+		feedrateReset();
+		var f = getFeedrate(MOVE_PLUNGE);
+		pOutput.reset();
+		var p = pOutput.format(drillHeaderConv.dwellTop*1000);
+
+		var g;
+		if (drillHeaderConv.dwellTop > 0) {
+			g = "G82";
+		} else {
+			g = "G82";
+		}
+
+		writeBlock(g, x, y, z, r, p, f);
+
+		var garbz = zOutput.format(drillHeaderConv.initialHeight);
+	}
+	else if (drillHeaderConv.type == 201)
+	{
+		var x = xDrillingOutput.format(drillHeaderConv.xPosition);
+		var y = yDrillingOutput.format(drillHeaderConv.yPosition);
+		var z = zDrillingOutput.format(drillHeaderConv.Depth);
+		var r = rOutput.format(drillHeaderConv.initialHeight);
+		feedrateReset();
+		var f = getFeedrate(MOVE_PLUNGE);
+		var p = "";
+
+		if (drillHeaderConv.dwellTop > 0) {
+			//p = pOutput.format(drillHeader.topDwelling * 1000);
+		}
+
+		var g;
+		if (tool.spindleSpeed < 0) {
+			g = "G86";
+		} else {
+			g = "G86";
+		}
+
+		writeBlock(g, x, y, z, r, p, f);
+
+		var garbz = zOutput.format(drillHeaderConv.initialHeight);
+	}
+	else if (drillHeaderConv.type == 202)
+	{
+		var x = xDrillingOutput.format(drillHeaderConv.xPosition);
+		var y = yDrillingOutput.format(drillHeaderConv.yPosition);
+		var z = zDrillingOutput.format(drillHeaderConv.Depth);
+		var r = rOutput.format(drillHeaderConv.initialHeight);
+		var q = qOutput.format(drillHeaderConv.plungingDepth);
+		feedrateReset();
+		var f = getFeedrate(MOVE_PLUNGE);
+
+		var p = "";
+
+		if (drillHeaderConv.dwellTop > 0) {
+			pOutput.reset();
+			p = pOutput.format(drillHeaderConv.dwellTop*1000);
+		}
+
+		var g;
+		if (tool.spindleSpeed < 0) {
+			g = "G82";
+		} else {
+			g = "G82";
+		}
+
+		writeBlock(g, x, y, z, r, p, f);
+
+		var z = zOutput.format(drillHeaderConv.initialHeight);
+	}
+	else if (drillHeaderConv.type == 205)
+	{
+		var x = xDrillingOutput.format(drillHeaderConv.xPosition);
+		var y = yDrillingOutput.format(drillHeaderConv.yPosition);
+		zOutput.reset();
+		var z = zDrillingOutput.format(drillHeaderConv.Depth);
+		var r = rOutput.format(drillHeaderConv.initialHeight);
+		var q = qOutput.format(drillHeaderConv.plungingDepth);
+		feedrateReset();
+		var f = getFeedrate(MOVE_PLUNGE);
+
+		var g;
+		if (tool.spindleSpeed < 0) {
+			g = "G83";
+		} else {
+			g = "G83";
+		}
+
+		writeBlock(g, x, y, z, r, q, f);
+
+		var garbz = zOutput.format(drillHeaderConv.initialHeight);
+	}
+	else if (drillHeaderConv.type == 207)
+	{
+		var g;
+		if (tool.spindleSpeed < 0) {
+			g = "G74";
+		} else {
+			g = "G84";
+		}
+
+		var x = xDrillingOutput.format(drillHeaderConv.xPosition);
+		var y = yDrillingOutput.format(drillHeaderConv.yPosition);
+		var z = zDrillingOutput.format(drillHeaderConv.Depth);
+		var r = rOutput.format(drillHeaderConv.initialHeight);
+		//var q = qOutput.format(drillHeader.firstDepth);
+		feedrateReset();
+		var f = getFeedrate(MOVE_PLUNGE);
+		var s = sOutput.format(drillHeaderConv.pitch * tool.spindleSpeed);
+		writeBlock("M29", s);
+		writeBlock(g, x, y, z, r, f);
+
+		var garbz = zOutput.format(drillHeaderConv.initialHeight);
+	}
+	*/
+}
+
+function onDrillingPointConversion(inX, inY,inZ,ref)
+{
+	zOutput.reset();
+	var f = getFeedrate(MOVE_RAPID);
+
+	var z = zOutput.format(drillHeaderConv.initialHeight);
+
+	if (drillHeaderConv.type == 200)
+	{
+
+		if (xOutput.getLast() != inX || yOutput.getLast() != inY)
+		{
+			var x = xDrillingOutput.format(inX);
+			var y = yDrillingOutput.format(inY);
+
+			xOutput.format(inX);
+			yOutput.format(inY);
+
+			var p = pOutput.format(drillHeaderConv.dwellTop * 1000);
+			writeBlock(x, y, p);
+		}
+	}
+	else if (drillHeaderConv.type == 201)
+	{
+		if (xOutput.getLast() != inX || yOutput.getLast() != inY)
+		{
+			var x = xDrillingOutput.format(inX);
+			var y = yDrillingOutput.format(inY);
+
+			xOutput.format(inX);
+			yOutput.format(inY);
+
+			var p = pOutput.format(drillHeaderConv.dwellTop * 1000);
+			writeBlock(x, y, p);
+		}
+	}
+	else if (drillHeaderConv.type == 202)
+	{
+		if (xOutput.getLast() != inX || yOutput.getLast() != inY)
+		{
+			var x = xDrillingOutput.format(inX);
+			var y = yDrillingOutput.format(inY);
+
+			xOutput.format(inX);
+			yOutput.format(inY);
+
+			var p = pOutput.format(drillHeaderConv.dwellTop * 1000);
+			writeBlock(x, y, p);
+		}
+	}
+	else if (drillHeaderConv.type == 205)
+	{
+		if (xOutput.getLast() != inX || yOutput.getLast() != inY)
+		{
+			var x = xDrillingOutput.format(inX);
+			var y = yDrillingOutput.format(inY);
+
+			xOutput.format(inX);
+			yOutput.format(inY);
+
+			//var p = pOutput.format(drillHeaderConv.dwellTop * 1000);
+			writeBlock(x, y);
+		}
+	}
+	else if (drillHeaderConv.type == 207)
+	{
+		if (xOutput.getLast() != inX || yOutput.getLast() != inY)
+		{
+			var x = xDrillingOutput.format(inX);
+			var y = yDrillingOutput.format(inY);
+
+			xOutput.format(inX);
+			yOutput.format(inY);
+
+			//var p = pOutput.format(drillHeader.topDwelling);
+			writeBlock(x, y);
+		}
+	}
+}
+
+function onDrillingFooterConversion() {
+	//drillHeaderCalled = false;
+	//gCode = gOutput.format(80);
+
+	writeBlock("G80");
+}
+
+function onDrillingHeader(obj) {
+
+	var garbX = xDrillingOutput.format(xOutput.getLast());
+	var garby = yDrillingOutput.format(yOutput.getLast());
+	var garbz = zDrillingOutput.format(zOutput.getLast());
+	// indicate that the drill header was called 
+	//drillHeaderCalled = true;
+
+	// Indicate that the next hole (onDrillingPoint) is the first hole after the header
+	drillIsFirst = true;
+	drillHeader = obj;
+	//onComment(drillHeader.name);
+
+	// Calculate the various parameters
+	retractDistance = drillHeader.retractPlane - drillHeader.referencePlane; // Used as Second Safety Clearance
+
+	if (drillHeader.safeDistanceIsAbsolute) {
+		safeDistance = drillHeader.safeDistance - drillHeader.referencePlane;
+	}
+	else {
+		safeDistance = drillHeader.safeDistance;
+	}
+
+	referenceHeight = drillHeader.referencePlane;
+
+	if (drillHeader.endDepthIsAbsolute) {
+		depth = drillHeader.referencePlane - drillHeader.endDepth;
+	}
+	else {
+		depth = drillHeader.endDepth;
+	}
+
+	if (drillHeader.name == "BORING") 
+	{
+		var x = xDrillingOutput.format(drillHeader.endX);
+		var y = yDrillingOutput.format(drillHeader.endY);
+		var z = zDrillingOutput.format(drillHeader.endZ);
+		var r = rOutput.format(drillHeader.retractPlane);
+		feedrateReset();
+		var f = getFeedrate(MOVE_PLUNGE);
+		pOutput.reset();
+		var p = pOutput.format(drillHeader.topDwelling);
+
+		var g;
+		if (drillHeader.topDwelling > 0) {
+			g = "G82";
+		} else {
+			g = "G81"; 
+		}
+
+		writeBlock("G99",g, x, y, z, r, p,f);
+
+		var z = zOutput.format(drillHeader.retractPlane);
+	}
+	else if (drillHeader.name == "UDSPAANING")
+	{
+		var x = xDrillingOutput.format(drillHeader.endX);
+		var y = yDrillingOutput.format(drillHeader.endY);
+		zOutput.reset();
+		var z = zDrillingOutput.format(drillHeader.endZ);
+		var r = rOutput.format(drillHeader.referencePlane - (drillHeader.safeDistance - drillHeader.retractPlane));
+		var q = qOutput.format(drillHeader.firstDepth);
+		feedrateReset();
+		var f = getFeedrate(MOVE_PLUNGE);
+
+		var g;
+		if (tool.spindleSpeed < 0) {
+			g = "G73";
+		} else {
+			g = "G83";
+		}
+
+		writeBlock("G99",g, x, y, z, r, q, f);
+	} 
+	else if (drillHeader.name == "UNIVERSAL")
+	{
+		var x = xDrillingOutput.format(drillHeader.endX);
+		var y = yDrillingOutput.format(drillHeader.endY);
+		var z = zDrillingOutput.format(drillHeader.endZ);
+		var r = rOutput.format(drillHeader.retractPlane);
+		var q = qOutput.format(drillHeader.firstDepth);
+		feedrateReset();
+		var f = getFeedrate(MOVE_PLUNGE);
+
+		var p = "";
+
+		if (drillHeader.topDwelling > 0)
+		{
+			//p = pOutput.format(drillHeader.topDwelling * 1000);
+		}
+
+		var g;
+		if (tool.spindleSpeed < 0) {
+			g = "G73";
+		} else {
+			g = "G73";
+		}
+
+		writeBlock("G99",g, x, y, z, r, p,q, f);
+
+		var z = zOutput.format(drillHeader.retractPlane);
+	}
+	else if (drillHeader.name == "GEVIND")
+	{
+		var g;
+		if (tool.spindleSpeed < 0) {
+			g = "G74";
+		} else {
+			g = "G84";
+		}
+
+		var x = xDrillingOutput.format(drillHeader.endX);
+		var y = yDrillingOutput.format(drillHeader.endY);
+		var z = zDrillingOutput.format(drillHeader.endZ);
+		var r = rOutput.format(drillHeader.referencePlane - (drillHeader.safeDistance - drillHeader.retractPlane));
+
+		feedrateReset();
+		var f = getFeedrate(MOVE_PLUNGE);
+		var s = sOutput.format(Math.abs(tool.spindleSpeed));
+		writeBlock("M29",s);
+		writeBlock("G99", g, x, y, z, r, f);
+	} 
+	else if (drillHeader.name == "ROERHUL")
+	{
+		var x = xDrillingOutput.format(drillHeader.endX);
+		var y = yDrillingOutput.format(drillHeader.endY);
+		var z = zDrillingOutput.format(drillHeader.endZ);
+		var r = rOutput.format(drillHeader.retractPlane);
+		feedrateReset();
+		var f = getFeedrate(MOVE_PLUNGE);
+		var p = "";
+
+		if (drillHeader.topDwelling > 0) {
+			//p = pOutput.format(drillHeader.topDwelling * 1000);
+		}
+
+		var g;
+		if (tool.spindleSpeed < 0) {
+			g = "G76";
+		} else {
+			g = "G86";
+		}
+
+		writeBlock("G99",g, x, y, z, r, p, f);
+
+		var z = zOutput.format(drillHeader.retractPlane);
+	}
+	else if (drillHeader.name == "MISC1")
+	{
+		var x = xDrillingOutput.format(drillHeader.endX);
+		var y = yDrillingOutput.format(drillHeader.endY);
+		var z = zDrillingOutput.format(drillHeader.endZ);
+		var r = rOutput.format(drillHeader.retractPlane);
+		var q = qOutput.format(drillHeader.firstDepth);
+		feedrateReset();
+		var f = getFeedrate(MOVE_PLUNGE);
+
+		var p = "";
+
+		if (drillHeader.topDwelling > 0) {
+			pOutput.reset();
+			p = pOutput.format(drillHeader.topDwelling );
+		}
+
+		var g;
+		if (tool.spindleSpeed < 0) {
+			g = "G76";
+		} else {
+			g = "G76";
+		}
+
+		writeBlock("G99", g, x, y, z, r, p, f);
+
+		var z = zOutput.format(drillHeader.retractPlane);
+	}
+	else if (drillHeader.name == "MISC2")
+	{
+
+	}
+}
+
+function onDrillingPoint(inX, inY) {
+	//var x = xOutput.format(inX);
+	//var y = yOutput.format(inY);
+	zOutput.reset();
+	var f = getFeedrate(MOVE_RAPID);
+
+	var z = zOutput.format(drillHeader.retractPlane);
+	if (drillHeader.name == "BORING") 
+	{
+		if (xOutput.getLast() != inX || yOutput.getLast() != inY) 
+		{
+			var x = xDrillingOutput.format(inX);
+			var y = yDrillingOutput.format(inY);
+
+			xOutput.format(inX);
+			yOutput.format(inY);
+
+			var p = pOutput.format(drillHeader.topDwelling);
+			writeBlock(x, y, p);
+		}
+
+		//onLinearXY(inX,inY,MOVE_PLUNGE);
+	}
+	else if (drillHeader.name == "UDSPAANING")
+	{
+		if (xOutput.getLast() != inX || yOutput.getLast() != inY) 
+		{
+			var x = xDrillingOutput.format(inX);
+			var y = yDrillingOutput.format(inY);
+
+			xOutput.format(inX);
+			yOutput.format(inY);
+
+			var p = pOutput.format(drillHeader.topDwelling);
+			writeBlock(x, y, p);
+		}
+	}
+	else if (drillHeader.name == "UNIVERSAL")
+	{
+		if (xOutput.getLast() != inX || yOutput.getLast() != inY) 
+		{
+			var x = xDrillingOutput.format(inX);
+			var y = yDrillingOutput.format(inY);
+
+			xOutput.format(inX);
+			yOutput.format(inY);
+
+			var p = pOutput.format(drillHeader.topDwelling);
+			writeBlock(x, y, p);
+		}
+	}
+	else if (drillHeader.name == "GEVIND")
+	{
+		if (xOutput.getLast() != inX || yOutput.getLast() != inY) {
+			var x = xDrillingOutput.format(inX);
+			var y = yDrillingOutput.format(inY);
+
+			xOutput.format(inX);
+			yOutput.format(inY);
+
+			var p = pOutput.format(drillHeader.topDwelling);
+			writeBlock(x, y, p);
+		}
+	}
+	else if (drillHeader.name == "ROERHUL") {
+
+		if (xOutput.getLast() != inX || yOutput.getLast() != inY) {
+			var x = xDrillingOutput.format(inX);
+			var y = yDrillingOutput.format(inY);
+
+			xOutput.format(inX);
+			yOutput.format(inY);
+
+			var p = pOutput.format(drillHeader.topDwelling);
+			writeBlock(x, y, p);
+		}
+	}
+	else if (drillHeader.name == "MISC1")
+	{
+		if (xOutput.getLast() != inX || yOutput.getLast() != inY) {
+			var x = xDrillingOutput.format(inX);
+			var y = yDrillingOutput.format(inY);
+
+			xOutput.format(inX);
+			yOutput.format(inY);
+
+			var p = pOutput.format(drillHeader.topDwelling);
+			writeBlock(x, y, p);
+		}
+	}
+	else if (drillHeader.name == "MISC2")
+	{
+
+	}
+}
+
+function onDrillingFooter()
+{
+	//drillHeaderCalled = false;
+	//gCode = gOutput.format(80);
+
+	writeBlock("G80");
+}
+
+function getParameter(name) {
+	if (!(name in propertyNames)) {
+		throw new Error(name + " not a known property");
+	}
+	if (!(name in globals)) {
+		throw new Error(name + " not yet set");
+	}
+	return globals[name];
+}
+
+function setParameter(name, value) {
+	if (!(name in propertyNames)) {
+		throw new Error(name + " not a known property");
+	}
+	globals[name] = value;
+}
+
+function getNextTool()
+{
+	while(completeToolListIndex < completeToolList.length && completeToolList[completeToolListIndex].toolNumber == tool.toolNumber)
+	{
+		//writeBlock("completeToolList " + completeToolList[completeToolListIndex].toolNumber);
+		completeToolListIndex = completeToolListIndex +1;
+	}
+	if (completeToolListIndex == completeToolList.length)
+	{
+		completeToolListIndex = 0;
+	}
+}
+
+function setStock(inStock) {
+
+	stock = inStock;
+
+	stockXMin = stockXOutput.format(inStock.minX);
+	stockYMin = stockYOutput.format(inStock.minY);
+	stockZMin = stockZOutput.format(inStock.minZ);
+
+	stockXOutput.reset();
+	stockYOutput.reset();
+	stockZOutput.reset();
+
+	stockXMax = stockXOutput.format(inStock.maxX);
+	stockYMax = stockYOutput.format(inStock.maxY);
+	stockZMax = stockZOutput.format(inStock.maxZ);
+}
+
+function setFeedrate(movement, feedrate) {
+	if (Math.round(feedrate) == -1) {
+
+	} else if (Math.round(feedrate) == -2){
+
+	}
+	else {
+		feedrates[movement] = Math.round(feedrate*100)/100;
+	}
+}
+
+function onMachineOrigin(x,y,z)
+{
+	//writeBlock("onMachineOrigin",""+x,""+y,""+z);
+}
+
+function setPlane(newPlane)
+{
+	plane = planeOutput.format(newPlane);
+	/*
+	if (newPlane == 0)
+	{
+	plane = planeOutput.format(17);
+	}
+	else if (newPlane == 1)
+	{
+	plane = planeOutput.format(19);
+	}
+	else if (newPlane == 2)
+	{
+	plane = planeOutput.format(18);
+	}
+	*/
+}

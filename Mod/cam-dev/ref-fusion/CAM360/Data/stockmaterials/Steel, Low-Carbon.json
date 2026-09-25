@@ -1,0 +1,13 @@
+{
+    "description": "Steel, Low-Carbon",
+    "category": "Metal",
+    "uuid": "6aef6633-1891-4c69-8bc6-62d3119f601b",
+    "designators": [],
+    "physicalMaterials": [
+        "PrismMaterial-018",
+        "PrismMaterial-167",
+        "PrismMaterial-070",
+        "PrismMaterial-075"
+    ],
+    "version": 1.0
+}

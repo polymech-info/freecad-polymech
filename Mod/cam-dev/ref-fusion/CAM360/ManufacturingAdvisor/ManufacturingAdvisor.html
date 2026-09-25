@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manufacturing Assistant</title>
+    <meta charset="utf-8">
+    <style>
+        @font-face {
+          font-family: 'ArtifaktElement';
+          src: local('Artifakt Element Regular'), local('ArtifaktElement-Regular'),
+            url('lib/Artifakt%20Element%20Regular.woff2')
+              format('woff2'),
+            local('Artifakt Element Regular'), local('ArtifaktElement-Regular'),
+            url('https://swc.autodesk.com/pharmacopeia/fonts/ArtifaktElement/v1.0/WOFF/Artifakt%20Element%20Regular.woff')
+              format('woff'),
+            local('Artifakt Element Regular'), local('ArtifaktElement-Regular'),
+            url('https://swc.autodesk.com/pharmacopeia/fonts/ArtifaktElement/v1.0/TTF/Artifakt%20Element%20Regular.ttf')
+              format('truetype');
+          font-weight: normal;
+          font-style: normal;
+        }
+        @font-face {
+          font-family: 'ArtifaktElement';
+          src: local('Artifakt Element Semi Bold'), local('ArtifaktElement-SemiBold'),
+            url('lib/Artifakt%20Element%20Semi%20Bold.woff2')
+              format('woff2'),
+            local('Artifakt Element Semi Bold'), local('ArtifaktElement-SemiBold'),
+            url('https://swc.autodesk.com/pharmacopeia/fonts/ArtifaktElement/v1.0/WOFF/Artifakt%20Element%20Semi%20Bold.woff')
+              format('woff'),
+            local('Artifakt Element Semi Bold'), local('ArtifaktElement-SemiBold'),
+            url('https://swc.autodesk.com/pharmacopeia/fonts/ArtifaktElement/v1.0/TTF/Artifakt%20Element%20Semi%20Bold.ttf')
+              format('truetype');
+          font-weight: 600;
+          font-style: normal;
+        }
+        @font-face {
+          font-family: 'ArtifaktElement';
+          src: local('Artifakt Element Bold'), local('ArtifaktElement-Bold'),
+            url('lib/Artifakt%20Element%20Bold.woff2')
+              format('woff2'),
+            local('Artifakt Element Bold'), local('ArtifaktElement-Bold'),
+            url('https://swc.autodesk.com/pharmacopeia/fonts/ArtifaktElement/v1.0/WOFF/Artifakt%20Element%20Bold.woff')
+              format('woff'),
+            local('Artifakt Element Bold'), local('ArtifaktElement-Bold'),
+            url('https://swc.autodesk.com/pharmacopeia/fonts/ArtifaktElement/v1.0/TTF/Artifakt%20Element%20Bold.ttf')
+              format('truetype');
+          font-weight: 700;
+          font-style: normal;
+        }
+        @font-face {
+          font-family: 'ArtifaktElement';
+          src: local('Artifakt Element Regular'), local('ArtifaktElement-Regular'),
+            url('lib/Artifakt%20Element%20Italic.woff2')
+              format('woff2'),
+            local('Artifakt Element Regular'), local('ArtifaktElement-Regular'),
+            url('https://swc.autodesk.com/pharmacopeia/fonts/ArtifaktElement/v1.0/WOFF/Artifakt%20Element%20Italic.woff')
+              format('woff'),
+            local('Artifakt Element Regular'), local('ArtifaktElement-Regular'),
+            url('https://swc.autodesk.com/pharmacopeia/fonts/ArtifaktElement/v1.0/TTF/Artifakt%20Element%20Italic.ttf')
+              format('truetype');
+          font-weight: normal;
+          font-style: italic;
+        }
+        @font-face {
+          font-family: 'ArtifaktElement';
+          src: local('Artifakt Element Semi Bold'), local('ArtifaktElement-SemiBold'),
+            url('lib/Artifakt%20Element%20Semi%20Bold%20Italic.woff2')
+              format('woff2'),
+            local('Artifakt Element Semi Bold'), local('ArtifaktElement-SemiBold'),
+            url('https://swc.autodesk.com/pharmacopeia/fonts/ArtifaktElement/v1.0/WOFF/Artifakt%20Element%20Semi%20Bold%20Italic.woff')
+              format('woff'),
+            local('Artifakt Element Semi Bold'), local('ArtifaktElement-SemiBold'),
+            url('https://swc.autodesk.com/pharmacopeia/fonts/ArtifaktElement/v1.0/TTF/Artifakt%20Element%20Semi%20Bold%20Italic.ttf')
+              format('truetype');
+          font-weight: 600;
+          font-style: italic;
+        }
+        @font-face {
+          font-family: 'ArtifaktElement';
+          src: local('Artifakt Element Bold'), local('ArtifaktElement-Bold'),
+            url('lib/Artifakt%20Element%20Bold%20Italic.woff2')
+              format('woff2'),
+            local('Artifakt Element Bold'), local('ArtifaktElement-Bold'),
+            url('https://swc.autodesk.com/pharmacopeia/fonts/ArtifaktElement/v1.0/WOFF/Artifakt%20Element%20Bold%20Italic.woff')
+              format('woff'),
+            local('Artifakt Element Bold'), local('ArtifaktElement-Bold'),
+            url('https://swc.autodesk.com/pharmacopeia/fonts/ArtifaktElement/v1.0/TTF/Artifakt%20Element%20Bold%20Italic.ttf')
+              format('truetype');
+          font-weight: 700;
+          font-style: italic;
+        }
+        @font-face {
+          font-family: 'ArtifaktLegend';
+          src: local('Artifakt Legend Extra Bold'), local('ArtifaktLegend-ExtraBold'),
+            url('lib/Artifakt%20Legend%20Extra%20Bold.woff2')
+              format('woff2'),
+            local('Artifakt Legend Extra Bold'), local('ArtifaktLegend-ExtraBold'),
+            url('https://swc.autodesk.com/pharmacopeia/fonts/ArtifaktLegend/v1.0/WOFF/Artifakt%20Legend%20Extra%20Bold.woff')
+              format('woff'),
+            local('Artifakt Legend Extra Bold'), local('ArtifaktLegend-ExtraBold'),
+            url('https://swc.autodesk.com/pharmacopeia/fonts/ArtifaktLegend/v1.0/TTF/Artifakt%20Legend%20Extra%20Bold.ttf')
+              format('truetype');
+          font-weight: 800;
+          font-style: normal;
+        }
+      @font-face {
+        font-family: 'ArtifaktLegend';
+        src: local('Artifakt Legend Extra Bold'), local('ArtifaktLegend-ExtraBold'), url('lib/Artifakt%20Legend%20Black%20Italic.woff2') format('woff2'), local('Artifakt Legend Extra Bold'), local('ArtifaktLegend-ExtraBold'), url('https://swc.autodesk.com/pharmacopeia/fonts/ArtifaktLegend/v1.0/WOFF/Artifakt%20Legend%20Black%20Italic.woff') format('woff'), local('Artifakt Legend Extra Bold'), local('ArtifaktLegend-ExtraBold'), url('https://swc.autodesk.com/pharmacopeia/fonts/ArtifaktLegend/v1.0/TTF/Artifakt%20Legend%20Black%20Italic.ttf') format('truetype');
+        font-weight: 800;
+        font-style: italic;
+      }
+
+        * {
+          font-family: 'ArtifaktElement', Arial;
+        }
+
+        html, body {
+          position: relative;
+          overflow: hidden;
+        }
+        
+        #container {
+          border: 1px solid #ddd;
+          width: 99%;
+          height: 100%;
+          position: relative;
+          display: inline-block;
+          flex-direction: column;
+        }
+        
+        .chat-section {
+          background-color: #ffffff;
+          font-family: 'ArtifaktElement', Arial;
+          font-weight: normal;
+          font-style: normal;
+          font-size: small;
+          height: calc(100vh - 124px); 
+          /*100vh (same as parent) - 2*8px(body border top and bottom) - 60px (input-section) - 48px (options-section)*/
+          width: 100%;
+          margin: auto;
+          overflow-y: auto;
+          position: relative;
+        }
+
+        .chat-section-overlay {
+          background: rgba(255, 255, 255, 0);
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: none;
+        }
+        
+        .reply {
+          background-color: #eeeeee;
+        }
+
+        .label {
+          font-weight: bold;
+          margin-left: 5px;
+        }
+
+        .message-text, .error-message {
+          margin: 18px;
+          align-self: center;
+        }
+        
+        .input-section {
+          background-color: #eeeeee;
+          height: 60px;
+          display: flex;
+        }
+        
+        .input-section input {
+          font-family: 'ArtifaktElement', Arial;
+          font-weight: 600;
+          font-style: normal;
+          font-size: medium;
+          color: #808080;
+          height: 36px;
+          width: 90%;
+          flex: 1;
+          margin: auto;
+          margin-left: 10px;
+          margin-right: 2%;
+          border: 1px solid #eeeeee;
+          border-radius: 5px;
+          padding-left: 10px;
+          background-color: #ffffff;
+          outline: none;
+        }
+
+        .input-section input.placeholder-chat-in-progress::placeholder {
+          font-size: x-small;
+        }
+
+        .input-section button {
+          font-family: 'ArtifaktElement', Arial;
+          font-weight: 600;
+          font-style: normal;
+          font-size: medium;
+          color: #808080;
+          height: 36px;
+          width: 50px;
+          margin: auto;
+          margin-right: 10px;
+          border: 1px solid #eeeeee;
+          background-color: #ffffff;
+          cursor: pointer;
+          border-radius: 5px;
+        }
+        
+        .options-section {
+          background-color: #cccccc;
+          height: 48px;
+          display: flex;
+          justify-content: start;
+          flex-direction: row;
+        }
+
+        .privacy-section {
+          background-color: #cdeaf7;
+          bottom: 0;
+          display: none;
+          position: absolute;
+          width: 100%;
+          z-index: 9997;
+        }
+
+        .privacy-section .privacy-info-logo {
+          background-color: #0696d7;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex: 0 0 auto;
+          min-width: 50px;
+          max-width: 50px;
+        }
+
+        .privacy-section .privacy-content {
+          flex-grow: 1;
+        }
+
+        .privacy-section .privacy-content h3, p, li{
+          padding-left: 5px;
+        }
+
+        .privacy-section .privacy-content h3 {
+          font-size: 16pt;
+          font-weight: 600;
+        }
+
+        .privacy-section .privacy-content p, li {
+          font-size: 10pt;
+        }
+
+        .privacy-section .privacy-content ul {
+          margin-top: 0;
+        }
+        .privacy-section .privacy-content a {
+          color: #000;
+        }
+
+        .privacy-section .privacy-close {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex: 0 0 auto;
+          min-width: 50px;
+          max-width: 50px;
+        }
+
+        .privacy-close-icon {
+          padding: 5px;
+          border: none;
+          background: none;
+          font-size: 20px;
+          color: #000000;
+          cursor: pointer;
+        }
+        
+        .new-chat, .chat-history {
+          font-family: 'ArtifaktElement', Arial;
+          font-weight: normal;
+          font-style: normal;
+          font-size: small;
+          color: #ffffff;
+          height: 36px;
+          margin-top: auto;
+          margin-bottom: auto;
+          margin-left: 10px; 
+          /* lighter grey is #bbbbbb */
+          border: 1px solid #999999; 
+          background-color: #999999;
+          cursor: pointer;
+          border-radius: 5px;
+        }
+        
+        .new-chat svg {
+          vertical-align: middle;
+        }
+
+        #new-chat.disabled {
+          opacity: 0.5; /* Optional: make the button appear semi-transparent */
+          cursor: not-allowed; /* Optional: change the cursor to indicate it's not clickable */
+        }
+        
+        .chat-history svg {
+          vertical-align: middle;
+        }
+        
+        .send-button svg {
+          vertical-align: middle;
+        }
+
+        #send-button.disabled {
+          opacity: 0.5; /* Optional: make the button appear semi-transparent */
+          cursor: not-allowed; /* Optional: change the cursor to indicate it's not clickable */
+        }
+        
+        code {
+          font-family: 'ArtifaktElement';
+          font-weight: normal;
+          font-style: italic;
+          font-size: small;
+          background-color: #f0f0f0;
+          border-radius: 2px;
+        }
+        
+        pre > code {
+          display: block;
+          padding: 5px;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          white-space: pre;
+          overflow-x: auto;
+        }
+        
+        p {
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+
+        .ellipsis-anim span {
+          opacity: 0;
+          -webkit-animation: ellipsis-dot 1s infinite;
+          animation: ellipsis-dot 1s infinite;
+        }
+        
+        .ellipsis-anim span:nth-child(1) {
+          -webkit-animation-delay: 0.0s;
+          animation-delay: 0.0s;
+        }
+        .ellipsis-anim span:nth-child(2) {
+          -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+        }
+        .ellipsis-anim span:nth-child(3) {
+          -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+        }
+        
+        @-webkit-keyframes ellipsis-dot {
+          0% { opacity: 0; }
+          50% { opacity: 1; }
+          100% { opacity: 0; }
+        }
+        
+        @keyframes ellipsis-dot {
+          0% { opacity: 0; }
+          50% { opacity: 1; }
+          100% { opacity: 0; }
+        }
+
+        .default-popup-container {
+          background-color: #ffffff;
+          border: 1px solid #ccc;
+          padding: 5px;
+          margin: 10px 10px 10px;
+          justify-content: center;
+          align-items: center; 
+          display: flex;
+        }
+
+        .default-popup-icon-div {
+          display: flex; 
+          justify-content: center; 
+          align-items: center;
+          flex: 0 0 auto;
+          min-width: 50px;
+          max-width: 50px;
+        }
+
+        .default-popup-message-div {
+          color: #000;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 20px; /* 142.857% */
+          flex: grow;
+        }
+
+        .grid-2x-container {
+            display: grid;
+            grid-template-columns: auto auto;
+            padding: 10px;
+        }
+
+        .default-sample-question {
+            background-color: #eeeeee;
+            border: none;
+            padding: 5px;
+            margin: 5px 5px 5px 5px;
+            border-radius: 5px;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+        }
+         /* the left side of the chat, i.e. profile image */
+        .dialogLeft{
+          width: 50px;
+        }
+         /* the right side of the chat, i.e. message */
+        .dialogRight{
+          flex-grow: 1;
+          display: flex;
+        }
+
+        .dialogContainer{
+          display: flex;
+        }
+
+        .avatar {
+          width: 32px; 
+          height: 32px; 
+          object-fit: contain; 
+          overflow: hidden;
+          border-radius: 50%;
+          margin: 19px 1px 19px 19px;
+        }
+
+      #loading-screen {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+      }
+
+      .loading-ring {
+        width: 192px;
+        height: 120px;
+        margin-bottom: 10px;
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+      }
+
+      .loading-text {
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-50%, 150%);
+        font-size: 12px;
+        color: #555555;
+        white-space: nowrap;
+      }
+
+      #error-screen {
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9998;
+      }
+
+      .error-screen-message {
+        display: flex;
+        width: 311px;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+      }
+
+      .blue-button {
+        background-color: #0696d7;
+        color: white;
+        border: none;
+        border-radius: 2px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 12px;
+        font-weight: 600;
+        width: 62px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -10px
+      }
+
+      .collapsible-list-container {
+        width: 250px;
+        margin: 20px auto;
+        background: #f5f7fa;
+        border-left: 4px solid #646464;
+        border-radius: 4px;
+        padding: 12px 12px 8px 16px;
+        box-sizing: border-box;
+        display:block;
+      }
+
+      .collapsible-list {
+        max-height: 110px;
+        overflow-y: auto;
+        transition: max-height 0.3s ease;
+        margin: 0;
+        padding-left: 20px;
+        font-size: small;
+      }
+
+      .collapsible-list.expanded {
+        overflow-y: auto;
+        max-height: 500px; /* Large enough to show all items */
+      }
+
+      .toggle-list-btn {
+        background-color: #646464;
+        color: white;
+        border: none;
+        border-radius: 2px;
+        padding: 10px 10px;
+        display: block;
+        cursor: pointer;
+        font-size: small;
+        font-weight: 600;
+        width: 62px;
+        height: 20px;
+        display: flex;
+        align-self: unset;
+        align-items: center;
+        justify-content: center;
+        margin-top: 8px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .animate-fade-in {
+        animation: fadeIn 500ms ease-out backwards;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+</head>
+<body>
+    <div id="loading-screen">
+        <img src="progress-ring.gif" alt="Loading" class="loading-ring">
+        <div class="loading-text">Connecting to your Manufacturing Assistant...</div>
+    </div>
+    <div id="error-screen">
+      <div class="error-screen-message">
+        <div style="font-weight: normal; font-size: 24px; text-align: center;">Something went wrong</div>
+        <div style=" display: flex; justify-content:center;">
+          <img src="lib/error.svg" width="267" height="150" alt="error"/>
+        </div>
+        <div style="font-weight: 600; font-size: 15px; display: flex; justify-content: center; ">We can't reach the assistant servers</div>
+        <div style="text-align: center; font-size: 12px; margin-top: -32px; word-break: keep-all">Make sure that you are working online or try re&#x2011stablishing your connection</div>
+        <div>
+          <button id="reconnect-button" class="blue-button">Reload</button>
+        </div>
+
+
+      </div>
+    </div>
+    <div id="container">
+        <div id="chat-section" class="chat-section">
+          <div id="chat-section-overlay" class="chat-section-overlay"></div>
+        </div>
+        <div id="input-section" class="input-section">
+          <input type="text" id="user-input" autofocus placeholder="Ask anything about manufacturing...">
+          <button id="send-button" class="send-button">Send</button>
+        </div>
+        <div id="options-section" class="options-section">
+          <button id="new-chat" class="new-chat">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" color="" class="css-3uuvty">
+              <path d="M17 8v1h4v8h-3v2.59L15.41 17H9v-2.59l-1 1V18h7l4 4v-4h3V8h-5z" fill="#ffffff"></path>
+              <path d="M2 3v10h3v4l4-4h7V3Zm13 9H8.59L6 14.59V12H3V4h12Z" fill="#ffffff"></path>
+            </svg>
+            New Chat
+          </button>
+          <!-- <button id="chat-history" class="chat-history">
+            <svg width="24px" height="24px" fill="none" xmlns="http://www.w3.org/2000/svg" color="" class="css-3uuvty">
+              <path d="M19.909 6.725a9.432 9.432 0 0 0-6.037-4.043c-4.792-.96-9.61 1.961-10.974 6.646l2.87.836c.935-3.208 4.234-5.206 7.518-4.55a6.46 6.46 0 0 1 4.135 2.769 6.467 6.467 0 0 1 .966 4.883 6.46 6.46 0 0 1-2.769 4.135 6.471 6.471 0 0 1-4.882.966 6.496 6.496 0 0 1-3.54-2.035l2.277-1.592-6.968-2.539-.004 7.414 2.219-1.552a9.508 9.508 0 0 0 7.311 3.422 9.427 9.427 0 0 0 5.246-1.597 9.426 9.426 0 0 0 4.042-6.036 9.429 9.429 0 0 0-1.41-7.127Z" stroke="white" stroke-miterlimit="5"></path>
+              <path d="M12.003 8.484v3.514l2.675 2.297" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            Recent chats
+          </button> -->
+        </div>
+        <div id="privacy-section" class="privacy-section">
+          <div class="privacy-info-logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12ZM4 12C4 16.4183 7.58172 20 12 20C14.1217 20 16.1566 19.1571 17.6569 17.6569C19.1571 16.1566 20 14.1217 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12ZM12 9.25C12.6904 9.25 13.25 8.69036 13.25 8C13.25 7.30964 12.6904 6.75 12 6.75C11.3096 6.75 10.75 7.30964 10.75 8C10.75 8.69036 11.3096 9.25 12 9.25ZM13 11V16H14V17H10V16H11V12H10V11H13Z" fill="white"/>
+            </svg>              
+          </div>
+          <div class="privacy-content">
+            <h3>Fusion Manufacturing Assistant (Preview)</h3>
+            <p>
+              By using Fusion Manufacturing Assistant (Preview), You acknowledge and understand that:
+            </p>
+            <ul>
+              <li>Fusion Manufacturing Assistant (Preview) is a "pre-release" or "beta" software under Section 9 of the <a href="https://www.autodesk.com/company/terms-of-use/en/general-terms" target="_blank"><b>Autodesk Terms of Use</b></a>;</li>
+              <li>Fusion Manufacturing Assistant (Preview) leverages generative AI technology provided by Microsoft Azure OpenAI Service, which will generate text content ("Output") based on the text prompts You submit;</li>
+              <li>Autodesk is not responsible for any Output generated and presented to You; and</li>
+              <li>Any use of the Output is at Your sole risk, You should double check the information contained in the Output, and You should not rely on the Output as a sole source of truth or factual information.</li>
+            </ul>
+          </div>
+          <div id="privacy-close" class="privacy-close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" id="privacy-close-icon" class="privacy-close-icon">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M18.3996 6.40001L17.5996 5.60001L11.9996 11.3L6.39961 5.60001L5.59961 6.40001L11.2996 12L5.59961 17.6L6.39961 18.4L11.9996 12.7L17.5996 18.4L18.3996 17.6L12.6996 12L18.3996 6.40001Z" fill="#666666" fill-opacity="0.7"/>
+            </svg>
+          </div>
+          
+        </div>
+    </div> 
+    <script src="lib/purify.min.js"></script>
+    <script>
+      // Event listeners
+      document.addEventListener('DOMContentLoaded', function() {
+        displayDefaultPopupMessage();
+      });
+
+      window.addEventListener('load', onLoad);
+
+      document.getElementById('reconnect-button').addEventListener('click', function() {
+        onLoad();
+      });
+
+      document.getElementById('user-input').addEventListener('keypress', function(event) {
+        if (event.key === 'Enter' && !isProcessing) {
+          event.preventDefault();
+          sendMessage();
+        }
+      });
+
+      document.getElementById('send-button').addEventListener('click', sendMessage);
+
+      document.getElementById('new-chat').addEventListener('click', function() {
+        document.getElementById('chat-section').innerHTML = '';
+        document.getElementById('user-input').value = '';
+        document.getElementById('user-input').setAttribute('placeholder', 'Ask anything about manufacturing...');
+        document.getElementById('user-input').classList.remove('placeholder-chat-in-progress');
+        displayDefaultPopupMessage();
+        window.neutronJavaScriptObject.executeQuery("new-chat-click", "");
+      });
+
+      document.getElementById('privacy-close-icon').addEventListener('click', function() {
+        document.getElementById('privacy-section').style.display = 'none';
+        document.getElementById('chat-section-overlay').style.display = 'none';
+        window.neutronJavaScriptObject.executeQuery("close-privacy-window", "");
+      });
+
+      document.addEventListener('click', function(event) {
+        if (!event.target.classList.contains('toggle-list-btn')) {
+          return;
+        }
+        const toggleListBtn = event.target;
+        const list = toggleListBtn.previousElementSibling;
+        list.classList.toggle('expanded');
+        toggleListBtn.textContent = list.classList.contains('expanded') ? 'Collapse' : 'Expand';
+      });
+
+      // SVG for "Send" icon
+      const sendIconSVG = `
+         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <path d="M0 15L1.5 8.25L7.9139 7.50993C7.92571 7.50857 7.92571 7.49143 7.9139 7.49007L1.5 6.75L0 0L15 7.5L0 15Z" fill="#808080"/>
+         </svg>
+        `;
+        
+      // Replace the innerHTML of the button with the SVG
+      document.getElementById('send-button').innerHTML = sendIconSVG;
+
+      // Functions
+      let loadingAnimationInterval = null;
+      let userImageAddr = null;
+      let endpoint = null;
+      let fnVersion = null;
+      let functionCallReply = null;
+
+      function onLoad() {
+        document.getElementById('loading-screen').style.display = 'flex';
+        // check connection status
+        fetch(endpoint + '/health')
+          .then(response => response.json())
+          .then(data => {
+            if ("response" in data && data.response == "UP") {
+              document.getElementById('error-screen').style.display = 'none';
+            } 
+            document.getElementById('loading-screen').style.display = 'none';
+          })
+          .catch(error => {
+            document.getElementById('loading-screen').style.display = 'none';
+          });
+      }
+
+      function createSVGElement(svgText) {
+        var parser = new DOMParser();
+        var svgDoc = parser.parseFromString(svgText, "image/svg+xml");
+        var svgElement = svgDoc.documentElement;
+        return svgElement;
+      }
+
+      function createAdvisorIcon(size = 24) {
+        const image = new Image(size, size);
+        image.src = `lib/Profile_picture_${size}.svg`;
+        image.alt = 'error';
+        return image;
+      }
+
+      function createUnavailableAdvisorIcon() {
+        // size can only be 32
+        const image = new Image(32, 32);
+        image.src = `lib/grey_profile_picture_32.svg`;
+        image.alt = 'error';
+        return image;
+      }
+      
+      function displayDefaultPopupMessage() {
+        const chatSection = document.getElementById('chat-section');
+
+        // Create default popup container div
+        const popupMessageBannerDiv = document.createElement('div');
+        popupMessageBannerDiv.id = 'default-popup-container';
+        popupMessageBannerDiv.className = 'default-popup-container';
+
+        // Create sub-div containing the advisor profile picture
+        const popupProfileDiv = document.createElement('div');
+        popupProfileDiv.className = "default-popup-icon-div";
+
+        const advisorImage = document.createElement('img');
+        popupProfileDiv.appendChild(createAdvisorIcon(24));
+
+        // Create sub-div containing message
+        const popupMessageDiv = document.createElement('div');
+        popupMessageDiv.className = "default-popup-message-div";
+        popupMessageDiv.textContent = "The manufacturing assistant is an AI tool here to assist you. For better accuracy in responses, you can ask related questions in the same chat session. Use a new chat for questions on a new topic. Remember to fact check any responses.";
+
+        // Append all children sub-divs
+        popupMessageBannerDiv.appendChild(popupProfileDiv);
+        popupMessageBannerDiv.appendChild(popupMessageDiv);
+        chatSection.appendChild(popupMessageBannerDiv);
+        
+        displayExampleQuestions();
+      }
+
+        // the below function is used to create 4 example questions shown as button as a 2x2 grid
+      function displayExampleQuestions() {
+        const chatSection = document.getElementById('chat-section');
+        const exampleQuestionsDiv = document.createElement('div');
+        exampleQuestionsDiv.id = 'example-questions';
+        exampleQuestionsDiv.className = 'grid-2x-container';
+        const exampleQuestions = [
+            'What are the differences between Flat and Horizontal toolpath strategies?',
+            'Give me a list of additive techonologies supported by Fusion.',
+            'How do I tilt my tool to avoid collisions?',
+            'Where is the toolpath trimming command?'
+        ];
+        exampleQuestions.forEach(function (question) {
+            const button = document.createElement('button');
+            button.className = 'default-sample-question';
+            button.textContent = question;
+            button.addEventListener('click', function () {
+                document.getElementById('user-input').value = question;
+                sendMessage();
+            });
+            exampleQuestionsDiv.appendChild(button);
+        });
+        chatSection.appendChild(exampleQuestionsDiv);
+      }
+
+      let isProcessing = false; // Variable to track if a query is in progress
+
+      function toggleButtonState(button, disable) {
+          if (button) {
+              button.disabled = disable;
+              if (disable) {
+                  button.classList.add('disabled');
+              } else {
+                  button.classList.remove('disabled');
+              }
+          } else {
+              console.error('Button not found');
+          }
+      }
+
+      function sanitizeUserInput(input) {
+        return input.replaceAll(/</g, '&lt;').replaceAll(/>/g, '&gt;');
+      }
+
+      DOMPurify.addHook('uponSanitizeElement', (node, data) => {
+        if (data.tagName === 'a') {
+          if (node.hasAttribute('target')) {
+            if (node.getAttribute('target') !== '_blank') {
+              node.removeAttribute('target');
+            }
+          } else {
+            node.setAttribute('target', '_blank');
+          }
+        }
+      });
+
+      function sanitizeAdvisorInput(input) {
+        return DOMPurify.sanitize(input, {
+          ALLOWED_TAGS: [
+            'b', 'i', 'u', 'a', 'strong', 'em', 'mark', 'small', 'del',
+            'ins', 'sub', 'sup', 'code', 'pre', 'li', 'ul', 'p', 'br',
+            'font', 'ol', 'div', 'button'
+          ],
+          ALLOWED_ATTR: ['href', 'target', 'style', 'color', 'size', 'face', 'class'],
+        });
+      }
+      
+      function sendMessage(nRetry = 1, waitFor = 60) {
+          if (isProcessing) {
+              return; // Prevent sending a new message if one is already being processed
+          }
+      
+          const sendButton = document.getElementById('send-button');
+          const newChatButton = document.getElementById('new-chat');
+      
+          if (window.neutronJavaScriptObject) {
+              window.neutronJavaScriptObject.executeQuery('get-auth-token', '', function (responseFromCPP) {
+                  const authorization = responseFromCPP;
+                  const inputField = document.getElementById('user-input');
+                  const messageText = sanitizeUserInput(inputField.value.trim());
+      
+                  if (messageText) {
+                      window.neutronJavaScriptObject.executeQuery("chat-in-progress", "");
+                      const defaultPopupContainer = document.getElementById('default-popup-container');
+                      if (defaultPopupContainer) {
+                          defaultPopupContainer.remove();
+                      }
+                      const defaultSampleAnswer = document.getElementById('example-questions');
+                      if (defaultSampleAnswer) {
+                          defaultSampleAnswer.remove();
+                      }
+                      appendUserMessage(messageText);
+      
+                      // Disable buttons
+                      toggleButtonState(newChatButton, true);
+                      toggleButtonState(sendButton, true);
+      
+                      // Set processing flag
+                      isProcessing = true;
+      
+                      startLoadingAnimation(sendButton); // Start the loading animation
+      
+                      getResponse(messageText, authorization);
+                      inputField.value = '';
+                      inputField.setAttribute('placeholder', 'Ask a related question or start a new chat for questions on a new topic');
+                      inputField.classList.add('placeholder-chat-in-progress');
+                  }
+      
+              });
+          } else {
+              nRetry = nRetry - 1;
+              if (nRetry < 0) {
+                  console.error('Error: Neutron JavaScript Object not available');
+                  return;
+              }
+              setTimeout(() => sendMessage(nRetry, waitFor), waitFor); // try again after 60 milliseconds
+          }
+      }
+      
+      function getResponse(messageText, authorization) {
+          const sendButton = document.getElementById('send-button');
+          const newChatButton = document.getElementById('new-chat');
+          const replyMessage = appendReplyElement();
+          startFetchingAnimation(replyMessage);
+      
+          fetch(endpoint + '/chat', {
+              method: "POST",
+              headers: {
+                  "Content-Type": "application/json",
+                  "Authorization": "Bearer " + authorization,
+              },
+              body: JSON.stringify({ query: messageText, fnVersion: fnVersion, functionCallingEngineResponse: functionCallReply }),
+          })
+          .then(response => response.json())
+          .then(data => {
+              stopFetchingAnimation(replyMessage);
+
+              if ("code" in data) {
+                  followup = "";
+                  if ("followup" in data) {
+                      followup = data.followup;
+                  }
+                  functionCall(data.code, function (reply) {
+                      functionCallReply = reply + "/n" + followup;
+                      setReplyMessage(replyMessage, sanitizeAdvisorInput(reply), true);
+                  });
+              }
+              else {
+                  functionCallReply = null;
+                  reply = data.response;
+                  if ("followup" in data) {
+                      reply = data.followup;
+                  }
+                  setReplyMessage(replyMessage, sanitizeAdvisorInput(reply), true);
+              }
+
+      
+              // Re-enable buttons
+              toggleButtonState(newChatButton, false);
+              toggleButtonState(sendButton, false);
+      
+              // Reset processing flag
+              isProcessing = false;
+              stopLoadingAnimation(sendButton);
+          })
+          .catch(error => {
+              console.error('Error:', error);
+              stopFetchingAnimation(replyMessage);
+              displayUnavailableAdvisor(replyMessage);
+      
+              // Re-enable buttons
+              toggleButtonState(newChatButton, false);
+              toggleButtonState(sendButton, false);
+      
+              // Reset processing flag
+              isProcessing = false;
+              stopLoadingAnimation(sendButton);
+          });
+      }
+
+      function createErrorSymbol() {
+        const image = new Image(16, 16);
+        image.src = `lib/error_state_icon.svg`;
+        image.alt = 'error';
+        return image;
+      }
+
+      function displayUnavailableAdvisor(replyMessage, message = "We can't reach the servers. Make sure that you are working online or try re-establishing your connection.", greyAdvisor = true) {
+        const diaRight = replyMessage.querySelector('.dialogRight');
+        const errorSymbol = document.createElement('div');
+        errorSymbol.style.margin = '22px -10px 0 18px';
+        errorSymbol.appendChild(createErrorSymbol());
+        errorSymbol.style.display = 'flex';
+        errorSymbol.style.width = '16px';
+        
+        const text = replyMessage.querySelector('.message-text');
+        text.style.display = 'inline-block';
+        text.innerHTML = message;
+
+        diaRight.insertBefore(errorSymbol, text);
+
+        const popupProfileDiv = replyMessage.querySelector('.avatar');
+        
+        if (greyAdvisor) {
+          while (popupProfileDiv.firstChild) {
+            popupProfileDiv.removeChild(popupProfileDiv.firstChild);
+          }
+          popupProfileDiv.appendChild(createUnavailableAdvisorIcon());
+        }
+      }
+
+      function startFetchingAnimation(replyMessage) {
+        const text = replyMessage.querySelector('.message-text');
+        text.innerHTML = '';
+        text.style.color = '#555555';
+        const ellipsisAnim = document.createElement('span');
+        ellipsisAnim.className = 'ellipsis-anim';
+        for (let i = 0; i < 3; i++) {
+          let dot = document.createElement('span');
+          dot.textContent = '●  ';
+          ellipsisAnim.appendChild(dot);
+        }
+        text.appendChild(ellipsisAnim);
+      }
+
+      function stopFetchingAnimation(replyMessage) {
+        const text = replyMessage.querySelector('.message-text');
+        text.style.color = '';
+        text.innerHTML = '';
+      }
+
+      function startLoadingAnimation(button) {
+        button.innerHTML = '';
+        const ellipsisAnim = document.createElement('span');
+        ellipsisAnim.className = 'ellipsis-anim';
+        for (let i = 0; i < 3; i++) {
+          let dot = document.createElement('span');
+          dot.textContent = '• ';
+          ellipsisAnim.appendChild(dot);
+        }
+        button.appendChild(ellipsisAnim);
+        button.disabled = true;
+      }
+      
+      function stopLoadingAnimation(button) {
+        button.innerHTML = sendIconSVG;
+        button.disabled = false;
+      }
+
+      function appendUserMessage(message) {
+        const userMessage = document.createElement('div');
+        userMessage.className = 'user';
+
+        const userImage = document.createElement('img');
+        userImage.className = 'avatar';
+        userImage.src = userImageAddr;
+
+        const diaLeft = document.createElement('div');
+        diaLeft.className = 'dialogLeft';
+        diaLeft.appendChild(userImage);
+
+
+        const text = document.createElement('div');
+        text.className = 'message-text';
+        text.innerHTML = message;
+
+
+        const diaRight = document.createElement('div');
+        diaRight.className = 'dialogRight';
+        diaRight.appendChild(text);
+
+        const container = document.createElement('div');
+        container.className = 'dialogContainer';
+        container.appendChild(diaLeft);
+        container.appendChild(diaRight);
+
+        userMessage.appendChild(container);
+
+        document.getElementById('chat-section').appendChild(userMessage);
+        userMessage.scrollIntoView({ behavior: "smooth"}); // autoscroll
+      }
+
+      function appendReplyElement() {
+        const replyMessage = document.createElement('div');
+        replyMessage.className = 'reply';
+
+        const advisorImage = document.createElement('div');
+        advisorImage.className = 'avatar';
+        const advisorIcon = createAdvisorIcon(32);
+        advisorImage.appendChild(advisorIcon);
+
+        const diaLeft = document.createElement('div');
+        diaLeft.className = 'dialogLeft';
+        diaLeft.appendChild(advisorImage);
+
+        const text = document.createElement('div');
+        text.className = 'message-text';
+
+        const diaRight = document.createElement('div');
+        diaRight.className = 'dialogRight';
+        diaRight.appendChild(text);
+
+        const container = document.createElement('div');
+        container.className = 'dialogContainer';
+        container.appendChild(diaLeft);
+        container.appendChild(diaRight);
+
+        replyMessage.appendChild(container);
+
+        document.getElementById('chat-section').appendChild(replyMessage);
+        replyMessage.scrollIntoView({ behavior: "smooth" }); // autoscroll
+        return replyMessage;
+      }
+
+      function setReplyMessage(dialogContainer, message) {
+        if (message) {
+          typeWriter(message, dialogContainer);
+        } else {
+          displayUnavailableAdvisor(dialogContainer, "We encountered an error when creating the response. Try again later or try asking another questions.", false);
+        }
+        
+      }
+
+      function appendErrorMessage(message) {
+        const errorMessage = document.createElement('div');
+        errorMessage.className = 'error-message';
+        errorMessage.innerHTML = message;
+        document.getElementById('chat-section').appendChild(errorMessage);
+        errorMessage.scrollIntoView({ behavior: "smooth"}); // autoscroll
+      }
+
+      function extractNextTypingBlock(text, i) {
+        const nextChar = text.charAt(i);
+
+        // Check if this is the start of a tag
+        if (nextChar != '<') return nextChar; // a character to "type"
+
+        // Check if the next block is a collapsible list container and if it is, return the whole thing
+        const subStr = text.substring(i);
+        // Note: this regex won't handle nested divs, 
+        // but we shouldn't encounter any of these for collapsible lists anyway
+        const collapsibleList = subStr.match(/^(<div class="collapsible-list-container(?:(?!<div>).)*<\/div>)/);
+        if (collapsibleList) {
+          return collapsibleList[0];
+        }
+
+        // Find the tag end
+        const tagEnd = text.indexOf('>', i);
+        if (tagEnd == -1) return nextChar; // unterminated
+
+        // Return the tag in one go
+        return text.substring(i, tagEnd + 1);
+      }
+
+      // Typewriter
+
+      function typeWriter(text, element) {
+
+        const textElement = element.querySelector('.message-text');
+        let chatSection = document.getElementById('chat-section');
+        let currentText = '';
+        let i = 0;
+
+        // speed of typing in milliseconds (higher value => slower typing)
+        const typewriterWait = 20;
+        // wait time in milliseconds for an animation to finish
+        const animationWait = 500;
+        function typeNextBlock() {
+          // Remove any animmation classes from the current HTML elements, 
+          // so that we won't get the animation again when the element is re-rendered
+          currentText = currentText.replaceAll("animate-fade-in", "");
+          const nextBlock = extractNextTypingBlock(text, i);
+          currentText += nextBlock;
+          textElement.innerHTML = currentText;
+          // Make sure we scroll to the bottom of the chat section
+          chatSection.scrollTop = chatSection.scrollHeight;
+          i += nextBlock.length;
+          if (i < text.length) {
+            const wait = nextBlock.search("animate-fade-in") === -1 ? typewriterWait : animationWait;
+            setTimeout(() => typeNextBlock(), wait); 
+          } else {
+            stopLoadingAnimation(document.getElementById('send-button'));
+          }
+        }
+
+        setTimeout(() => {
+          typeNextBlock();
+        }, typewriterWait);
+      }      
+
+      function functionCall(code, callback) {
+        if (window.neutronJavaScriptObject) {
+            const jsonArgs = JSON.stringify({ code: code });
+            window.neutronJavaScriptObject.executeQuery('function-call', jsonArgs, callback);
+        }
+      }
+
+      const safeInit = () => {
+        // as neutronJavaScriptObject is not available in the beginning, we need to wait for it to be available
+        if (window.neutronJavaScriptObject) {
+          window.neutronJavaScriptObject.executeQuery('get-init-information','', function (responseFromCPP) {
+            const jsonInfo = JSON.parse(responseFromCPP);
+
+            // set the user image address
+            userImageAddr = jsonInfo['userImageAddr'];
+            let img = new Image();
+            img.src = userImageAddr;
+
+            // display privacy section if needed
+            displayPrivacy = jsonInfo['displayPrivacy'];
+            if (displayPrivacy) {
+              const privacySectionElement = document.getElementById('privacy-section');
+              privacySectionElement.style.display = 'flex'
+              document.getElementById('chat-section-overlay').style.setProperty("background", "rgba(255, 255, 255, 0.6)");
+              document.getElementById('chat-section-overlay').style.setProperty("display", "block");
+            }
+
+            // set the endpoint
+            endpoint = jsonInfo['endpoint'];
+
+            // set the function version
+            fnVersion = jsonInfo['fnVersion'];
+
+
+          });
+        } else {
+          setTimeout(() => safeInit(), 60); // try again after 60 milliseconds
+        }
+      };
+      safeInit();
+
+    </script>
+</body>
+</html>

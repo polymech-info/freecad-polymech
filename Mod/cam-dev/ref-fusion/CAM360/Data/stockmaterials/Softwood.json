@@ -1,0 +1,12 @@
+{
+    "description": "Softwood",
+    "category": "Wood",
+    "uuid": "c06ae0cb-1f5e-4697-9b83-40826435f807",
+    "designators": [],
+    "physicalMaterials": [
+        "PrismMaterial-246",
+        "PrismMaterial-258",
+        "PrismMaterial-269"
+    ],
+    "version": 1.0
+}

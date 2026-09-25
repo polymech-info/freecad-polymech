@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<root DllName="NaMachineBuilderUI10" Identifier="MachineBuilderUI" IsCoreAddIn="0" IsUIAddIn="1" IsApplicationAddIn="1" AppName="CAM360" Name="MachineBuilderUI">
+  <NeededAddIns>
+    <NeededAddIn>MachineBuilder</NeededAddIn>
+    <NeededAddIn>CAM</NeededAddIn>
+    <NeededAddIn>CAMUI</NeededAddIn>
+  </NeededAddIns>
+  <DependentApps></DependentApps>
+  <Extensions></Extensions>
+</root>

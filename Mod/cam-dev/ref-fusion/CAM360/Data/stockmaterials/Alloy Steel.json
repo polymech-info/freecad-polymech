@@ -1,0 +1,10 @@
+{
+    "description": "Alloy Steel",
+    "category": "Metal",
+    "uuid": "82e497e1-7dd9-4357-8ece-a382d25c5c9d",
+    "designators": [],
+    "physicalMaterials": [
+        "PrismMaterial-230"
+    ],
+    "version": 1.0
+}

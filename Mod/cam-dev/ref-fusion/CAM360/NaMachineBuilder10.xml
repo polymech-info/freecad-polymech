@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<root DllName="NaMachineBuilder10" Identifier="MachineBuilder" IsCoreAddIn="0" IsUIAddIn="0" IsApplicationAddIn="1" AppName="CAM360" Name="MachineBuilder">
+  <NeededAddIns>
+  </NeededAddIns>
+
+  <AssetType Identifier="MachineAsset" Name="MachineAsset" BaseServerIdentifier="Neutron3DAssetType" AddInId="MachineBuilder"  DefaultDocTypeId="FusionDocType"/>
+</root>

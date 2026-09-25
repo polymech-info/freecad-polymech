@@ -1,0 +1,10 @@
+( PART NAME=om )
+( PROGRAM NUMBER=0001 )
+( MACHINE=DMG MORI SEIKI HSC 55 LINEAR )
+( CONTROLLER=HEIDENHAIN TNC 530i )
+;MATERIAL=  
+( THICKNESS=25.4 )
+( ESTIMATED MACHINE TIME=0 HRS.  2 MIN.  32 SEC. )
+( STATION  TOOL TYPE  DIAMETER  CORNER RADIUS  DESCRIPTION               )
+( -------  ---------  --------  -------------  -------------------- )
+(  001     ENDMILL      006.00                            6MM CRB 2FL 19 LOC  )

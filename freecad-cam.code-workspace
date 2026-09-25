@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../FreeCAD-Upstream"
+		},
+		{
+			"path": "../heidenhain-simulator"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}

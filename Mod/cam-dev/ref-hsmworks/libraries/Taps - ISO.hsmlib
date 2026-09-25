@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet type='text/xsl' href='tool-library.xsl'?>
+<!--Use a standards compliant web browser to view this file-->
+<tool-library xmlns="http://www.hsmworks.com/xml/2004/cnc/tool-library" version="1.0" guid="{5a444431-f680-4b22-9064-46121bad246d}">
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{f4aa8df9-74fd-461b-90c2-1b34081c142f}">
+    <description>M1.2x0.25</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="1.2" flute-length="8" shoulder-length="8" shaft-diameter="0.95" body-length="21" overall-length="41" number-of-flutes="2" thread-pitch="0.25"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{13392e3c-c735-41d4-9ea5-21f332bb2d77}">
+    <description>M1.6</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="1.6" taper-angle="180" flute-length="8" shoulder-length="8" shaft-diameter="1.25" body-length="21" overall-length="41" number-of-flutes="2" thread-pitch="0.35"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{077fa28b-1bfe-43bc-b453-61bbe1bc6f2f}">
+    <description>M2</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="2" taper-angle="180" flute-length="8" shoulder-length="8" shaft-diameter="1.6" body-length="21" overall-length="41" number-of-flutes="2" thread-pitch="0.4"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{3f9bd584-f02b-4546-ae48-778cf933c080}">
+    <description>M2.2x0.45</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="2.2" taper-angle="180" flute-length="9.5" shoulder-length="9.5" shaft-diameter="1.75" body-length="24.5" overall-length="44.5" number-of-flutes="2" thread-pitch="0.45"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{e99a946b-af45-4b49-b445-ab0bc841dddd}">
+    <description>M2.5</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="2.5" taper-angle="180" flute-length="9.5" shoulder-length="9.5" shaft-diameter="2.05" body-length="24.5" overall-length="44.5" number-of-flutes="2" thread-pitch="0.45"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{6e956a9f-5832-45bd-b711-845e77859b15}">
+    <description>M3</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="3" taper-angle="180" flute-length="11" shoulder-length="11" shaft-diameter="2.5" body-length="28" overall-length="48" number-of-flutes="2" thread-pitch="0.5"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{6e65ba1b-c7eb-4eb7-b8b6-52874b644434}">
+    <description>M3.5</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="3.5" taper-angle="180" flute-length="11" shoulder-length="11" shaft-diameter="2.9" body-length="28" overall-length="48" number-of-flutes="2" thread-pitch="0.6"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{5e61ff40-f346-4014-9516-f2e1e4455362}">
+    <description>M4</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="4" taper-angle="180" flute-length="13" shoulder-length="13" shaft-diameter="3.3" body-length="33" overall-length="53" number-of-flutes="2" thread-pitch="0.7"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{605b0010-64c2-4169-ac4f-097db8d5be80}">
+    <description>M5</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="5" taper-angle="180" flute-length="16" shoulder-length="16" shaft-diameter="4.2" body-length="38" overall-length="58" number-of-flutes="2" thread-pitch="0.8"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{831d2032-973e-4cd4-af9f-db2729a5f733}">
+    <description>M6</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="6" taper-angle="180" flute-length="19" shoulder-length="19" shaft-diameter="5" body-length="46" overall-length="66" number-of-flutes="2" thread-pitch="1"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{e9246ea6-dd25-4716-9502-aa84b0271e7b}">
+    <description>M7</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="7" taper-angle="180" flute-length="19" shoulder-length="19" shaft-diameter="6" body-length="46" overall-length="66" number-of-flutes="2" thread-pitch="1"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{aa86b87e-e041-484c-b47d-8ab06b577eb4}">
+    <description>M8</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="8" taper-angle="180" flute-length="22" shoulder-length="22" shaft-diameter="6.8" body-length="52" overall-length="72" number-of-flutes="2" thread-pitch="1.25"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{03aad91b-dcb6-41cd-a294-43cbf4fd4414}">
+    <description>M8x1.0</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="8" taper-angle="180" flute-length="22" shoulder-length="22" shaft-diameter="7" body-length="52" overall-length="72" number-of-flutes="2" thread-pitch="1"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{f539f6d1-a109-49fa-b530-eedf973c2c5a}">
+    <description>M10</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="10" taper-angle="180" flute-length="24" shoulder-length="24" shaft-diameter="8.5" body-length="60" overall-length="80" number-of-flutes="2" thread-pitch="1.5"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{284ebd47-06d4-465e-bb89-ea375af79c0f}">
+    <description>M10x1.0</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="10" taper-angle="180" flute-length="24" shoulder-length="24" shaft-diameter="9" body-length="60" overall-length="80" number-of-flutes="2" thread-pitch="1"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{2e74e5cd-ee42-4c62-abae-ea1205d6a10e}">
+    <description>M10x1.25</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="10" taper-angle="180" flute-length="24" shoulder-length="24" shaft-diameter="8.8" body-length="60" overall-length="80" number-of-flutes="2" thread-pitch="1.25"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{eb494600-800d-4480-8280-4a0807fcb0f3}">
+    <description>M12</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="12" taper-angle="180" flute-length="29" shoulder-length="29" shaft-diameter="10.2" body-length="69" overall-length="89" number-of-flutes="2" thread-pitch="1.75"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{aa4e2d82-0528-4c55-9193-ceac0a26a054}">
+    <description>M12x1.25</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="12" taper-angle="180" flute-length="29" shoulder-length="29" shaft-diameter="10.8" body-length="69" overall-length="89" number-of-flutes="2" thread-pitch="1.25"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{3b22701a-b087-485d-a44c-b42645175cc1}">
+    <description>M12x1.5</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="12" taper-angle="180" flute-length="29" shoulder-length="29" shaft-diameter="10.5" body-length="69" overall-length="89" number-of-flutes="2" thread-pitch="1.5"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{a595ec0b-0684-4d13-b3a8-766e9a31e959}">
+    <description>M14</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="14" taper-angle="180" flute-length="30" shoulder-length="30" shaft-diameter="12" body-length="75" overall-length="95" number-of-flutes="2" thread-pitch="2"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{ee50c5c9-e541-4b73-8237-693693a9918c}">
+    <description>M14x1.5</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="14" taper-angle="180" flute-length="30" shoulder-length="30" shaft-diameter="12.5" body-length="75" overall-length="95" number-of-flutes="2" thread-pitch="1.5"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{77e11b58-d953-48c8-a2b7-9f149084907f}">
+    <description>M16</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="16" taper-angle="180" flute-length="32" shoulder-length="32" shaft-diameter="14" body-length="82" overall-length="102" number-of-flutes="2" thread-pitch="2"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{9cbc41ac-c4af-4f74-acdb-629bc7e58285}">
+    <description>M16x1.5</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="16" taper-angle="180" flute-length="32" shoulder-length="32" shaft-diameter="14.5" body-length="82" overall-length="102" number-of-flutes="2" thread-pitch="1.5"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{d26fe2c9-7114-4480-8f9f-34c7331bfbe7}">
+    <description>M18</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="18" taper-angle="180" flute-length="37" shoulder-length="37" shaft-diameter="16.5" body-length="92" overall-length="112" number-of-flutes="2" thread-pitch="2.5"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{1c336ce3-fd25-47b4-ae44-18c42cc1c09c}">
+    <description>M18x1.5</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="18" taper-angle="180" flute-length="37" shoulder-length="37" shaft-diameter="16" body-length="92" overall-length="112" number-of-flutes="2" thread-pitch="1.5"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{e34f0fb8-8135-49a8-bdf4-a0a37ad83194}">
+    <description>M18x2.0</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="18" taper-angle="180" flute-length="37" shoulder-length="37" shaft-diameter="15.5" body-length="92" overall-length="112" number-of-flutes="2" thread-pitch="2"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{5329cbdf-443f-41ac-b81d-da1ac460cec2}">
+    <description>M20</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="20" taper-angle="180" flute-length="37" shoulder-length="37" shaft-diameter="17.5" body-length="92" overall-length="112" number-of-flutes="2" thread-pitch="2.5"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{f3b51e23-f640-4ee9-8ee7-d4a3352084a8}">
+    <description>M20x1.5</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="20" taper-angle="180" flute-length="37" shoulder-length="37" shaft-diameter="18.5" body-length="92" overall-length="112" number-of-flutes="2" thread-pitch="1.5"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{959b8382-a7cf-4922-a8ab-3e31f6bf1747}">
+    <description>M20x2.0</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="20" taper-angle="180" flute-length="37" shoulder-length="37" shaft-diameter="18" body-length="92" overall-length="112" number-of-flutes="2" thread-pitch="2"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{77ef7aae-8c2e-4972-ba68-aa8a9d033247}">
+    <description>M22</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="22" taper-angle="180" flute-length="38" shoulder-length="38" shaft-diameter="19.5" body-length="98" overall-length="118" number-of-flutes="2" thread-pitch="2.5"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{08f26563-2503-4024-9807-9c73441c2789}">
+    <description>M22x1.5</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="22" taper-angle="180" flute-length="38" shoulder-length="38" shaft-diameter="20.5" body-length="98" overall-length="118" number-of-flutes="2" thread-pitch="1.5"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{60fcc653-0df0-4ea0-bcf6-89b280a31405}">
+    <description>M22x2.0</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="22" taper-angle="180" flute-length="38" shoulder-length="38" shaft-diameter="20" body-length="98" overall-length="118" number-of-flutes="2" thread-pitch="2"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{7486179c-1c53-463c-a90c-ae35efa88436}">
+    <description>M24</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="24" taper-angle="180" flute-length="45" shoulder-length="45" shaft-diameter="21" body-length="110" overall-length="130" number-of-flutes="2" thread-pitch="3"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{aff6d08b-7cc9-43c4-9f0d-f7c9705b30f5}">
+    <description>M24x2.0</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="24" taper-angle="180" flute-length="45" shoulder-length="45" shaft-diameter="22" body-length="110" overall-length="130" number-of-flutes="2" thread-pitch="2"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{d6fd9d7f-9384-4d59-b0b9-0755b7547b22}">
+    <description>M27</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="27" taper-angle="180" flute-length="45" shoulder-length="45" shaft-diameter="24" body-length="115" overall-length="135" number-of-flutes="2" thread-pitch="3"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{3166ce2e-641d-411e-a152-46805b2b9578}">
+    <description>M27x2.0</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="27" taper-angle="180" flute-length="45" shoulder-length="45" shaft-diameter="25" body-length="115" overall-length="135" number-of-flutes="2" thread-pitch="2"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{f943a007-9916-462e-a914-f5bd68ded35a}">
+    <description>M30</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="30" taper-angle="180" flute-length="48" shoulder-length="48" shaft-diameter="26.5" body-length="118" overall-length="138" number-of-flutes="2" thread-pitch="3.5"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{31075456-b385-4ae6-a56f-5be5b9143a6f}">
+    <description>M30x2.0</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="30" taper-angle="180" flute-length="48" shoulder-length="48" shaft-diameter="28" body-length="118" overall-length="138" number-of-flutes="2" thread-pitch="2"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{fd4c2446-53cc-419c-bf6d-3c9e4a752b0b}">
+    <description>M33</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="33" taper-angle="180" flute-length="51" shoulder-length="51" shaft-diameter="31" body-length="131" overall-length="151" number-of-flutes="2" thread-pitch="2"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{1116d2cc-4ed4-468c-af24-f89a536d576c}">
+    <description>M33x3.5</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="33" taper-angle="180" flute-length="51" shoulder-length="51" shaft-diameter="29.5" body-length="131" overall-length="151" number-of-flutes="2" thread-pitch="3.5"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{c0db6140-c6d4-4552-af67-44ed48d58664}">
+    <description>M36</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="36" taper-angle="180" flute-length="57" shoulder-length="57" shaft-diameter="32" body-length="142" overall-length="162" number-of-flutes="2" thread-pitch="4"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{f2f65814-2477-426a-90c9-46608796f006}">
+    <description>M36x2.0</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="36" taper-angle="180" flute-length="57" shoulder-length="57" shaft-diameter="34" body-length="142" overall-length="162" number-of-flutes="2" thread-pitch="2"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{437dcd20-2e9c-42ab-b643-f0c245ce9c94}">
+    <description>M36x3.0</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="36" taper-angle="180" flute-length="57" shoulder-length="57" shaft-diameter="33" body-length="142" overall-length="162" number-of-flutes="2" thread-pitch="3"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{e82d22f3-8a76-41a7-8226-fc3567bd2b38}">
+    <description>M39</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="39" taper-angle="180" flute-length="60" shoulder-length="60" shaft-diameter="37" body-length="150" overall-length="170" number-of-flutes="2" thread-pitch="2"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{f06ba14d-904f-416d-a12e-4859c0eac7ed}">
+    <description>M39x3.0</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="39" taper-angle="180" flute-length="60" shoulder-length="60" shaft-diameter="36" body-length="150" overall-length="170" number-of-flutes="2" thread-pitch="3"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{785a09c8-f943-4671-af21-d9f7193ea4cd}">
+    <description>M39x4.0</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="39" taper-angle="180" flute-length="60" shoulder-length="60" shaft-diameter="35" body-length="150" overall-length="170" number-of-flutes="2" thread-pitch="4"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{4a32c067-8d80-4f29-a505-f9528e8e8537}">
+    <description>M42</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="42" taper-angle="180" flute-length="60" shoulder-length="60" shaft-diameter="37.5" body-length="150" overall-length="170" number-of-flutes="2" thread-pitch="4.5"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{26b26944-633f-45f7-9ae8-d66eb20e6e02}">
+    <description>M42x3.0</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="42" taper-angle="180" flute-length="60" shoulder-length="60" shaft-diameter="39" body-length="150" overall-length="170" number-of-flutes="2" thread-pitch="3"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{b988ec06-8ba4-4dd8-8218-b1bd80b559dc}">
+    <description>M45</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="45" taper-angle="180" flute-length="67" shoulder-length="67" shaft-diameter="43.5" body-length="167" overall-length="187" number-of-flutes="2" thread-pitch="1.5"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{0d81835d-be33-4c4d-bde0-91994438f744}">
+    <description>M45x4.5</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="45" taper-angle="180" flute-length="67" shoulder-length="67" shaft-diameter="40.5" body-length="167" overall-length="187" number-of-flutes="2" thread-pitch="4.5"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{0ba0562d-055a-41e5-afe9-60c29fa7a596}">
+    <description>M48</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="48" taper-angle="180" flute-length="67" shoulder-length="67" shaft-diameter="43" body-length="167" overall-length="187" number-of-flutes="2" thread-pitch="5"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{d91a9f20-e624-4bec-a7c6-585ce284caf9}">
+    <description>M48x3.0</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="48" taper-angle="180" flute-length="67" shoulder-length="67" shaft-diameter="45" body-length="167" overall-length="187" number-of-flutes="2" thread-pitch="3"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{874ec2d9-a850-48fb-b97a-3d11c83e8f2e}">
+    <description>M52x5.0</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="52" taper-angle="180" flute-length="70" shoulder-length="70" shaft-diameter="47" body-length="180" overall-length="200" number-of-flutes="2" thread-pitch="5"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{b83a1a2c-191f-4749-9991-7ce413f3c035}">
+    <description>M56</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="56" taper-angle="180" flute-length="70" shoulder-length="70" shaft-diameter="50.5" body-length="180" overall-length="200" number-of-flutes="2" thread-pitch="5.5"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{7b96d4ef-a9e1-4c5c-bed9-2422dfda576b}">
+    <description>M56x4.0</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="56" taper-angle="180" flute-length="70" shoulder-length="70" shaft-diameter="52" body-length="180" overall-length="200" number-of-flutes="2" thread-pitch="4"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{2c0a6bd3-98d2-4ba3-9e92-f3204b7ee0bf}">
+    <description>M60</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="60" taper-angle="180" flute-length="76" shoulder-length="76" shaft-diameter="58.5" body-length="201" overall-length="221" number-of-flutes="2" thread-pitch="1.5"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{1c8fa8be-db99-4386-8bbf-776941dbc524}">
+    <description>M60x5.5</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="60" taper-angle="180" flute-length="76" shoulder-length="76" shaft-diameter="54.5" body-length="201" overall-length="221" number-of-flutes="2" thread-pitch="5.5"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{608ff90e-f4ec-4d9a-b75d-43da1220cb96}">
+    <description>M64</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="64" taper-angle="180" flute-length="79" shoulder-length="79" shaft-diameter="58" body-length="214" overall-length="234" number-of-flutes="2" thread-pitch="6"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{e9f667f5-65eb-48f0-8293-bdae18a3f22a}">
+    <description>M64x4.0</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="64" taper-angle="180" flute-length="79" shoulder-length="79" shaft-diameter="60" body-length="214" overall-length="234" number-of-flutes="2" thread-pitch="4"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+  <tool version="1.1" type="tap right hand" unit="millimeters" guid="{9ed140c0-9bce-403f-859a-958346684dbc}">
+    <description>M68x6.0</description>
+    <nc number="0" diameter-offset="0" length-offset="0" break-control="0" manual-tool-change="0"/>
+    <coolant mode="flood"/>
+    <material name="unspecified"/>
+    <body diameter="68" flute-length="79" shoulder-length="79" shaft-diameter="62" body-length="214" overall-length="234" number-of-flutes="2" thread-pitch="6"/>
+    <motion spindle-rpm="500" ramp-spindle-rpm="500" clockwise="yes" feed-mode="per-minute" cutting-feedrate="0" entry-feedrate="0" exit-feedrate="0" plunge-feedrate="0" ramp-feedrate="0" retract-feedrate="0"/>
+  </tool>
+</tool-library>

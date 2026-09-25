@@ -1,0 +1,2468 @@
+globals = {
+decimalMark: ".",
+linebreak: "\n",
+variableDelimeter: " ",
+tolerance: 0.0002,
+showSequenceNumbers: true,
+sequenceNumberStart: 10,
+sequenceNumberIncrement: 5
+};
+
+PostInfo = {
+title: "Heidenhain",
+summary: "Default Post Processor built for CNC-Calc V.7",
+description: "This is a Post Processor built for the Heidenhain controllers used on a mill",
+author: "Cimco A/S",
+version: "1.0",
+type: POST_TYPE_MILL
+};
+
+propertyNames = {
+RetractPlane: 1,
+SafeDistance: 1,
+ReferenceHeight: 1,
+Depth: 1,
+PlungeFeedrate: 1,
+RetractFeedrate: 1,
+FirstPeckDepth: 1,
+SubsequentPeckDepth: 1
+};
+
+// Properties to be implemented !!!!
+// LatheDrillingFields = [
+// 	{
+// 		name: "Peck Drilling", // String
+// 		isLonghand: true,  // bool
+// 		// Feedrates
+// 		plungingFeedrate: true, // double
+// 		retractFeedrate: false, // double
+// 		// Pecking
+// 		usePecking: false, // bool
+// 		firstPeckDepth: false, // double
+// 		subsequentPeckDepths: false, // double
+// 		peckClearance: false, // double
+// 		peckRetract: false, // double
+//		pitch: false;
+// 		// Dwelling
+// 		uselowerDwell: false, // bool
+// 		useUpperDwell: false, // double
+// 	}
+// ];
+// 
+// LatheDrillingStruct 
+// {
+// 	String	name;
+// 	// Depth parameters
+// 	double  startDepth;
+// 	double	endDepth;
+// 	double  safeDistance;
+// 	double  retractDistance;
+// 	//operation Parameters
+// 	// Feedrates
+// 	bool    usePlungingFeedrate;
+// 	double  plungingFeedrate;
+// 	bool	useRetractFeedrate;
+// 	double	retractFeedrate;
+// 	// Pecking
+// 	bool    usePecking;
+// 	double  firstPeckDepth;
+// 	double  subsequentPecksDepths;
+// 	double  peckClearance;
+// 	double  packRetract;
+//	double	pitch;
+// 	// Dwelling
+// 	bool	useLowerDwell;
+// 	double  lowerDwell;
+// 	bool	useUpperDwell;
+// 	double  upperDwell;
+// 	// Used to calculate compensated depth
+// 	bool    useDrillTipCompensation;
+// 	double  drillDiameter;
+// 	double  drillTipAngle;
+// }
+// 
+// LatheThreadingFields =[
+// 	{
+// 		name: "Longhand G32" // string
+// 		pulloffDistance: true,
+// 		infeed: false
+// 	}
+//  ];
+// 
+// LatheThreadingStruct
+//  {
+// 	String  name; // Name used to select the correct operation in onLatheDrillPoint
+// 	// These Parameters define the Thread Form
+// 	double	threadLead;
+// 	int		numberOfStarts;
+// 	double	includedThreadAngle;
+// 	double  threadAngle;
+// 	double	majorDiameter;
+// 	double	minorDiameter;
+// 	
+// 	// These parameters define the method of operation
+// 	
+// 	int		operationOrientation //enum ThreadTypeZ{ThreadTypeOutsideNegative,ThreadTypeOutsidePositive,
+// 													ThreadTypeInsideNegative,ThreadTypeInsidePositive};
+// 	int		cuttingType; // enum ThreadCuttingType{ThreadCuttingTypeConstDepth,ThreadCuttingTypeConstPreasure};
+// 	int		cuttingDepthUsed; //enum ThreadCutsCalculationType{ThreadCalculateCutsTypeFirstCut,ThreadCalculateCutsTypeCount};
+// 	double	firstCutDepth;
+// 	int		numberOfCuts;
+// 	int		numberOfSpringPasses;
+// 	double	accelerationDistance;
+// 	double	overcutDistance;
+// 	double	stockClearance;
+// 	double	stockToLeave;
+// 	double	pullOffDistance;
+// 	double	infeedAngle;
+// 	int		taperType,; // enum ThreadTaperType{ThreadTaperNone,ThreadTaperTypeFront,ThreadTaperTypeBack};
+// 	double	taperAngle;
+// 	
+// }
+
+MillDrillingFields = [];
+
+SupportedCycles =
+	[
+		/*
+{
+	name : "test cycle",
+	type:2,
+	RPMFactor:2,
+	xPosition:2,
+	yPosition:2,
+	zPosition:2,
+	initialHeight:2,
+	referenceHeight:2,
+	topOfStock:2,
+	depth:2,
+	plungeFeedRate:2,
+	retractFeedRate:2,
+	dwellBottom:2,
+	dwellTop:2,
+	peckFirst:2,
+	peckAmount:2,
+	minimumPeck:2,
+	peckReduktion:2,
+	peckCearance:2, 
+	chipBreakRetract:2,
+	chipBreakDepth:2,
+	chipBreaks:2,
+	pitch:2,
+	shiftAmount:2,
+	disengagingDir:2,
+	angleOfSpindle:2,
+	toolEdgeHeight:2,
+	materialThickness:2,
+	upperAdvStop:2,
+	lowerAdvStop:2
+},
+*/
+{
+name : "CYCL DEF 200 DRILLING",
+type : 2,
+xPosition : 2,
+yPosition : 2,
+zPosition : 2,
+initialHeight : 2,
+referenceHeight : 2,
+plungeFeedRate : 2,
+topOfStock: 2,
+depth:2,
+dwellBottom: 1,
+dwellTop: 2,
+peckAmount:1,
+RPMFactor: 1
+},
+{
+name : "CYCL DEF 201 REAMING",
+type : 2,
+xPosition : 2,
+yPosition : 2,
+zPosition : 2,
+initialHeight : 2,
+referenceHeight : 2,
+plungeFeedRate : 2,
+topOfStock: 2,
+depth:2,
+retractFeedRate: 1,
+dwellBottom: 1,
+RPMFactor: 1
+	   },
+	   {
+name : "CYCL DEF 202 BORING",
+type : 2,
+xPosition : 2,
+yPosition : 2,
+zPosition : 2,
+initialHeight : 2,
+referenceHeight : 2,
+topOfStock: 2,
+depth:2,
+plungeFeedRate : 2,
+retractFeedRate : 1,
+dwellBottom : 1,
+shiftAmount : 1,
+disengagingDir : 1,
+angleOfSpindle : 2,
+RPMFactor : 1
+	   },
+	   {
+name : "CYCL DEF 203 UNIVERSAL DRILLING",
+type : 2,
+xPosition : 2,
+yPosition : 2,
+zPosition : 2,
+initialHeight : 2,
+referenceHeight : 2,
+topOfStock: 2,
+depth:2,
+plungeFeedRate : 2,
+retractFeedRate : 1,
+dwellBottom : 1,
+dwellTop : 2,
+peckFirst : 1,
+minimumPeck : 1,
+peckReduktion : 1,
+chipBreakRetract : 1,
+chipBreakDepth : 1,
+chipBreaks : 1,
+RPMFactor : 1
+	   },
+	   {
+name : "CYCL DEF 204 BACK BORING",
+type : 2,
+xPosition : 2,
+yPosition : 2,
+zPosition : 2,
+initialHeight : 2,
+referenceHeight : 2,
+topOfStock: 2,
+depth:2,
+plungeFeedRate : 2,
+retractFeedRate : 1,
+dwellBottom : 2,
+shiftAmount : 1,
+disengagingDir : 1,
+angleOfSpindle : 1,
+toolEdgeHeight : 1,
+materialThickness : 1,
+RPMFactor : 1
+	   },
+	   {
+name : "CYCL DEF 205 UNIVERSAL PECKING",
+type : 2,
+xPosition : 2,
+yPosition : 2,
+zPosition : 2,
+initialHeight : 2,
+referenceHeight : 2,
+topOfStock: 2,
+depth:2,
+plungeFeedRate : 2,
+dwellBottom : 1,
+peckFirst : 1,
+peckAmount : 1,
+peckReduktion : 1,
+chipBreakRetract : 1,
+chipBreakDepth : 1,
+upperAdvStop : 1,
+lowerAdvStop : 1,
+RPMFactor : 1
+	   },
+	   {
+name : "CYCL DEF 206 TAPPING NEW",
+type : 2,
+xPosition : 2,
+yPosition : 2,
+zPosition : 2,
+initialHeight : 2,
+referenceHeight : 2,
+topOfStock: 2,
+depth:2,
+plungeFeedRate : 2,
+dwellBottom : 1,
+pitch:1,
+RPMFactor : 1
+	   },
+	   {
+name : "CYCL DEF 207 RIGID TAPPING NEW",
+type : 2,
+xPosition : 2,
+yPosition : 2,
+zPosition : 2,
+initialHeight : 2,
+referenceHeight : 2,
+topOfStock: 2,
+depth:2,
+plungeFeedRate : 2,
+pitch : 1,
+RPMFactor : 1
+	   },
+	   {
+name : "CYCL DEF 209 TAPPING W/ CHIP BRKG",
+type : 2,
+xPosition : 2,
+yPosition : 2,
+zPosition : 2,
+initialHeight : 2,
+referenceHeight : 2,
+topOfStock: 2,
+depth:2,
+plungeFeedRate : 2,
+chipBreakRetract : 1,
+chipBreakDepth : 1,
+pitch : 1,
+angleOfSpindle : 1,
+RPMFactor : 1
+	   }
+	];
+
+var epsilon = 0.002;
+
+var commentFront = ";";
+var commentBack = "";
+var textAsComment = "";
+var toolOperationCommment = "";
+
+var defaultM = "M";
+
+var gFormat;
+var fFormat;
+var xyzFormat;
+var abcFormat;
+var stockFormat;
+var drillingFormat;
+var mFormat;
+
+var gOutput;
+var globalM;
+//var commentFormat;
+var alwaysPrintPrefix = true;
+
+var paramFormat;
+var paramOutput;
+
+var defaultDoubleFormat;
+var defaultDoubleOutput;
+
+var feedOutput;
+var compensationOutput;
+
+var xOutput;
+var yOutput;
+var zOutput;
+
+var aOutput;
+var bOutput;
+var cOutput;
+
+var xCircleCenterOutput;
+var yCircleCenterOutput;
+var zCircleCenterOutput;
+
+var stockXOutput;
+var stockYOutput;
+var stockZOutput;
+
+var drillingOutput;
+
+var drillingOutputSign;
+var drillingOutputNoSign;
+
+var realOutput;
+
+var drillingOutput;
+var xDrillingOutput;
+var yDrillingOutput;
+var zDrillingOutput;
+
+var mOutput;
+
+var iOutput;
+var jOutput;
+var kOutput;
+
+var feedrates;
+
+var tolerance
+	var tool;
+
+var lastFeedrate;
+var lastSS;
+
+var prevCooling;
+
+var sweepOutput;
+var toolList;
+var ToolParameters;
+var lastCompensation;
+var compensationTmp;
+
+var planeOutput;
+
+var dwellOutput;
+
+var sequenceNumber;
+
+// Used to handle drill cycles
+var drillHeaderCalled = false;
+var drillIsFirst;
+var drillHeader;
+
+var tiltAngle;
+var rotAngle;
+var thirdAngle;
+var pathType;
+
+// Variables to handle drilling parameters
+var retractDistance; // Used as Second Safety Clearance
+var safeDistance;  // Used as Safety Clearance
+var referenceHeight; // Used as Surface Coordinate 
+var depth;
+var plane;
+
+var first;
+var first5Axis = true;
+
+var toolChanged;
+var prevToolNo;
+var prevToolss;
+
+//sub programming
+//var subProgramList = new Array();
+var subProgramRunning = 0;
+//var subProgramLastCoord = new array();
+var lastSubprogramID;
+var currentSubprogramID;
+
+var drillHeaderConv;
+
+var subProgramList;
+var stockXMin;
+var stockYMin;
+var stockZMin;
+
+var stockXMax;
+var stockYMax;
+var stockZMax;
+
+var ProgramName;
+
+function writeBlock() {
+	if (globals.showSequenceNumbers) {
+		writeWords2(sequenceNumber, arguments);
+		sequenceNumber += globals.sequenceNumberIncrement;
+	} else {
+		writeWords(arguments);
+	}
+}
+
+function getFeedrate(movement) {
+
+	var defaultF;
+
+	if (alwaysPrintPrefix) 
+	{
+		defaultF = "F";
+	} else
+	{
+		defaultF = "";
+	}
+
+	if (movement == MOVE_RAPID) {
+		lastFeedrate = "FMAX";
+		return "FMAX";
+	}
+	if (!(movement in feedrates)) {
+		lastFeedrate = defaultF; //was "F"
+		return defaultF;
+	}
+
+	feedOutput.reset();
+	var currentFeedrate = feedOutput.format(feedrates[movement]);
+
+	if (lastFeedrate == currentFeedrate) {
+		if (!(movement in feedrates)) {
+			lastFeedrate = defaultF; //was "F"
+
+			return defaultF;
+		}
+	} else {
+		lastFeedrate = currentFeedrate;
+		return currentFeedrate || defaultF;;
+	}
+
+	return feedOutput.format(feedrates[movement]) || defaultF;
+}
+
+function getCompensation() {
+
+	var defaultC;
+
+	if (alwaysPrintPrefix) {
+		defaultC = "R";
+	} else {
+		defaultC = "";
+	}
+
+	if (lastCompensation == compensationTmp) {
+
+		return defaultC;
+	}
+	compensationTmp = lastCompensation;
+	switch (lastCompensation) {
+	case COMPENSATION_LEFT: { return "RL"; break };
+	case COMPENSATION_RIGHT: { return "RR"; break };
+	case COMPENSATION_OFF: { return "R0"; break };
+	}
+}
+
+function reset() {
+	xOutput.reset();
+	yOutput.reset();
+	zOutput.reset();
+}
+
+function onInit() {
+	//commentFormat = createFormat({ prefix: ""});
+	gFormat = createFormat({ prefix: "G", decimals: 0, width: 2 });
+	fFormat = createFormat({ decimals: 0, prefix: "F" });
+	xyzFormat = createFormat({ decimals: 3, forceDecimal: false, forceSign: false, forceDelim: true, removeIntZero: true });
+	abcFormat = createFormat({ decimals: 3, forceDecimal: false, forceSign: true, forceDelim: true, removeIntZero: true });
+	sweepFormat = createFormat({ decimals: 3, forceDecimal: false, forceSign: true, forceDelim: true, removeIntZero: true });
+	stockFormat = createFormat({ decimals: 3, forceDecimal: false, forceSign: true, forceDelim: true, removeIntZero: true });
+	drillingFormat = createFormat({ decimals: 3, forceDecimal: false, forceSign: false, forceDelim: true, removeIntZero: false });
+	mFormat = createFormat({ decimals: 0, forceDecimal: false, forceSign: false, forceDelim: false, removeIntZero: false });
+	drillingFormat = createFormat({ decimals: 3, forceDecimal: false, forceSign: false, forceDelim: true, removeIntZero: false });
+	drillingFormatSign = createFormat({ decimals: 3, forceDecimal: false,  forceSign: true, forceDelim: true, removeIntZero: false });
+	
+
+	intFormat = createFormat({ decimals: 0 });
+	realFormat = createFormat({ decimals: 3, forceDecimal: false, forceSign: true, forceDelim: true, removeIntZero: false });
+	paramFormat = createFormat({ prefix: "Q", decimals: 0 });
+	paramOutput = createVariable({ force: true }, paramFormat);
+	mOutput = createVariable({ force: false }, mFormat);
+
+	defaultDoubleFormat = createFormat({ decimals: 3 });
+	defaultDoubleOutput = createVariable({ force: true }, defaultDoubleFormat);
+
+	gOutput = createVariable({}, gFormat);
+
+	feedOutput = createVariable({}, fFormat);
+	compensationOutput = createVariable({}, gFormat);
+	
+	xDrillingOutput = createVariable({ prefix: "X", force: false }, xyzFormat);
+	yDrillingOutput = createVariable({ prefix: "Y", force: false }, xyzFormat);
+	zDrillingOutput = createVariable({ prefix: "Z", force: false }, xyzFormat);
+
+	xOutput = createVariable({ prefix: "X" }, xyzFormat);
+	yOutput = createVariable({ prefix: "Y" }, xyzFormat);
+	zOutput = createVariable({ prefix: "Z" }, xyzFormat);
+
+	aOutput = createVariable({ prefix: "A" }, abcFormat);
+	bOutput = createVariable({ prefix: "B" }, abcFormat);
+	cOutput = createVariable({ prefix: "C" }, abcFormat);
+
+	xCircleCenterOutput = createVariable({ prefix: "X", force: true }, xyzFormat);
+	yCircleCenterOutput = createVariable({ prefix: "Y", force: true }, xyzFormat);
+	zCircleCenterOutput = createVariable({ prefix: "Z" }, xyzFormat);
+
+	iOutput = createVariable({ prefix: "I", force: true }, xyzFormat);
+	jOutput = createVariable({ prefix: "J", force: true }, xyzFormat);
+	kOutput = createVariable({ prefix: "K", force: true }, xyzFormat);
+
+	stockXOutput = createVariable({ prefix: "X" }, stockFormat);
+	stockYOutput = createVariable({ prefix: "Y" }, stockFormat);
+	stockZOutput = createVariable({ prefix: "Z" }, stockFormat);
+
+	drillingOutput = createVariable({ force: true }, drillingFormat);
+	drillingOutputSign = createVariable({ force: true ,forceSign: true}, drillingFormatSign);
+	drillingOutputNoSign = createVariable({ force: true,forceSign:false }, drillingFormat);
+
+	toleranceOutput = createVariable({ prefix: "", force: false }, realFormat);
+
+	sweepOutput = createVariable({ prefix: "IPA", force: true }, sweepFormat);
+
+	sOutput = createVariable({ prefix: "S", force: true }, intFormat);
+	tOutput = createVariable({ prefix: "", force: true }, intFormat);
+	//tOutput = createVariable({ prefix: "TOOL CALL ", force: true }, intFormat);
+
+	feedrates = {};
+
+	lastFeedrate = "";
+
+	lastCompensation = null;
+	compensationTmp = null;
+
+	planeOutput = createVariable({ force: false, prefix: "G" }, intFormat);
+
+	dwellOutput = createVariable({}, xyzFormat);
+
+	sequenceNumber = globals.sequenceNumberStart;
+
+	stockXMin = stockXOutput.format(0)
+		stockYMin = stockYOutput.format(0)
+		stockZMin = stockZOutput.format(0)
+
+		stockXOutput.reset();
+	stockYOutput.reset();
+	stockZOutput.reset();
+
+	stockXMax = stockXOutput.format(0)
+		stockYMax = stockYOutput.format(0)
+		stockZMax = stockZOutput.format(0)
+
+		stockXOutput.reset();
+	stockYOutput.reset();
+	stockZOutput.reset();
+
+	first = true;
+	prevToolNo = -1;
+	prevToolss = -1;
+	tiltAngle = 0;
+	rotAngle = 0;
+	thirdAngle = 0;
+	pathType = 0;
+	//toolList = new Array();
+
+	lastX = xOutput.format(-9999999);   //TODO get some better start values
+	lastY = yOutput.format(-9999999);
+	lastZ = zOutput.format(-9999999);
+	reset();
+}
+
+function onOpen(operationName, isClipboard) {
+	if (first) {
+		ProgramName = operationName;
+		writeBlock("BEGIN PGM ", operationName, "MM");
+		writeBlock("BLK FORM 0.1 Z", stockXMin, stockYMin, stockZMin);
+		writeBlock("BLK FORM 0.2", stockXMax, stockYMax, stockZMax);
+
+		outputToolList();
+		first = false;
+	}
+}
+
+function onClose() {
+	var f = getFeedrate(MOVE_RAPID)
+
+		writeBlock("M9");
+	writeBlock("L Z1. R", f, "M91");
+	//lastX = xOutput.format(-9999999);   
+	//lastY = yOutput.format(-9999999);
+	lastZ = zOutput.format(-9999999);
+	writeBlock("L Y+600. R", f, "M91");
+	writeBlock("M30");
+
+	/*
+	CALL LABELS HERE
+	*/
+
+	writeBlock("END PGM ", ProgramName, "MM");
+}
+
+function onComment(text) {
+	var comment = commentFront + text + commentBack;
+
+	writeBlock(comment);
+}
+
+function onAxisSubstitutionStart(axisName, diameter, axisTollerance) {
+
+}
+
+function onAxisSubstitutionEnd() {
+
+}
+
+function onSpindleRotation(rotation) {
+
+}
+
+function outputToolList() {
+	for (key in toolList) {
+		writeBlock(commentFront, toolList[key]);
+	}
+}
+
+function setToolList(toolList)
+{
+	//writeBlock("it works");
+}
+
+function setMiscTest(values){
+	toolList = values;
+}
+
+function setMisc1005(text) {
+	writeBlock(commentFront, text.textAsComment);
+}
+
+function setMisc1008(text) {
+	toolOperationCommment = text.toolOperationCommment.toUpperCase();
+	//writeBlock(commentFront, text.toolOperationCommment);
+}
+
+function startOfOperation(synctoolOp, dataStream, syncOpId)
+{
+}
+
+function onToolChange(toolData) {
+
+	tool = toolData;
+	feedOutput.reset();
+
+	var t = tOutput.format(toolData.toolNumber);
+	var s = sOutput.format(Math.abs(toolData.spindleSpeed));
+	//var f = feedOutput.format(toolData.feedrate);
+	var p = toolData.plane;
+	var tn = toolData.toolName;
+	var postfix = "DR+0 ;"
+
+		var axis = "";
+
+	if (p == PLANE_XY) {
+		axis = "Z";
+	}
+	else if (p == PLANE_YZ) {
+		axis = "Y";
+	}
+	else if (p == PLANE_XZ) {
+		axis = "X";
+	}
+
+	var f = getFeedrate(MOVE_RAPID);
+
+	if (prevToolNo != t)
+	{
+		toolChanged = true;
+		prevToolNo = t;
+		lastSS = tool.spindleSpeed;
+		//first = true;
+		prevCooling = -1;
+		writeBlock("M9");
+		writeBlock("L Z1. R", f, "M91");
+		//lastX = xOutput.format(-9999999);   
+		//lastY = yOutput.format(-9999999);
+		lastZ = zOutput.format(-9999999);
+
+		writeBlock("TOOL CALL", t, axis, s, postfix, tn);
+
+		if (toolOperationCommment.length > 0)
+		{
+			writeBlock(commentFront, toolOperationCommment);
+			toolOperationCommment = "";
+		}
+
+		//reset();
+		zOutput.reset();
+
+		onLinearXY(toolData.xr, toolData.yr, MOVE_RAPID);
+
+		if (subProgramRunning == 1)
+		{
+			//writeBlock("CALL LBL", currentSubprogramID + "");
+		}
+		//zOutput.reset();
+	} else {
+		if (toolData.mode == 1000)
+		{
+			if (lastSS != tool.spindleSpeed)
+			{
+				writeBlock("TOOL CALL", t, axis, s);
+				lastSS = tool.spindleSpeed;
+			}
+
+			//var discardz = zOutput.format(-99999);
+			if (toolOperationCommment.length > 0)
+			{
+				writeBlock(commentFront, toolOperationCommment);
+				toolOperationCommment = "";
+			}
+			if (toolData.zr > zOutput.getLast())
+			{
+				onLinearZ(toolData.zr, MOVE_RAPID);
+			} else
+			{
+				onLinearXY(toolData.xr, toolData.yr, MOVE_RAPID);
+			}
+			if (subProgramRunning == 1)
+			{
+				//writeBlock("CALL LBL", currentSubprogramID + ""); //test1
+			}
+		} else
+		{
+			if (toolOperationCommment.length > 0)
+			{
+				writeBlock(commentFront, toolOperationCommment);
+				toolOperationCommment = "";
+			}
+			if (subProgramRunning == 1)
+			{
+				//writeBlock("CALL LBL", currentSubprogramID + "");
+			}
+			//var f = getFeedrate(MOVE_RAPID)
+			//writeBlock(";" + tool.toolOperationCommment);
+			writeBlock("TOOL CALL", t, axis, s);
+			//writeBlock("L", x, y, "R", f, "M");
+		}
+	}
+}
+
+function subProgram(SP)
+{
+	if (SP.sub_trns_id > 0 )//&& SP.sub_sec_no == 0)
+	{
+		currentSubprogramID = SP.sub_op_id + 10;
+
+	} else if (SP.sub_trns_id == 0)// && SP.sub_sec_no == 1)
+	{
+		currentSubprogramID = SP.sub_op_id + 100;
+	}
+
+	writeBlock("CALL LBL", currentSubprogramID + "");
+	/*
+	if (subProgramRunning == 0 && currentSubprogramID > 100)
+	{
+	lastSubprogramID = currentSubprogramID;
+	writeBlock("CALL LBL", currentSubprogramID + "" );
+	}
+	*/
+	subProgramRunning = subProgramRunning + 1;
+}
+
+function endSubProgram(esub_op_id, esub_grp_id, esub_trns_id, esub_sec_no, esub_totl_no, esub_chn_no)
+{
+	subProgramRunning = subProgramRunning - 1;
+}
+
+function setToolParameters(TP)
+{
+	ToolParameters = TP;
+}
+
+function onLinear(x, y, z, movement)
+{
+	var lastX = xOutput.getLast();
+	var lastY = yOutput.getLast();
+	var lastZ = zOutput.getLast();
+
+	//onComment(lastX + " " + x + " " + lastY + " " + y + " " + lastZ + " " + z + " ");
+	//onComment((Math.abs(lastX - x))+" "+(Math.abs(lastY - y))+" "+(Math.abs(lastZ - z)));
+	if ((Math.abs(lastX - x) >= epsilon) || (Math.abs(lastY - y) >= epsilon) || (Math.abs(lastZ - z) >= epsilon)) {
+		var x = xOutput.format(x);
+		var y = yOutput.format(y);
+		var z = zOutput.format(z);
+		var r = getCompensation();
+		var f = getFeedrate(movement);
+		var m = defaultM;//mOutput.format(3);
+
+		if (first) {
+			//m = mOutput.format(3);
+			if (lastSS > 0) {
+				writeBlock("L", x, y, r, f, "M3");
+			} else if (lastSS < 0) {
+				writeBlock("L", x, y, r, f, "M4");
+			} else if (lastSS == 0) {
+				writeBlock("L", x, y, r, f, "M5");
+			}
+			//x = xOutput.format(x);
+			//y = yOutput.format(y);
+			//m = "M";
+			first = false;
+			zOutput.reset();
+			prevCooling = -1;
+		} 
+		else 
+		{
+			if(typeof tool != 'undefined')
+			{
+				if (tool.coolant == 0 && prevCooling != 0) 
+				{
+					prevCooling = 0;
+					m = "M9";
+					globalM = mOutput.format(9);
+					//globalM = xOutput.format(9);
+				}
+				else if (tool.coolant == 1 && prevCooling != 1) 
+				{
+					prevCooling = 1;
+					m = "M8";
+					globalM = mOutput.format(8);
+				}
+			}
+			writeBlock("L", x, y, z, r, f, m);
+		}
+	}
+}
+
+function onLinearXY(inx, iny, movement)
+{
+
+	if (xOutput.getLast() != inx || yOutput.getLast() != iny) {
+		var r = getCompensation();
+		var f = getFeedrate(movement);
+		var x = xOutput.format(inx);
+		var y = yOutput.format(iny);
+		var m = defaultM;
+
+		if (toolChanged) {
+			globalM = mOutput.format(3);
+			toolChanged = false;
+		}
+		if (first) {
+			if (lastSS > 0) {
+				writeBlock("L", x, y, r, f, "M3");
+			} else if (lastSS < 0) {
+				writeBlock("L", x, y, r, f, "M4");
+			} else if (lastSS == 0) {
+				writeBlock("L", x, y, r, f, "M5");
+			}
+
+			zOutput.reset();
+			first = false;
+		}
+		else {
+			writeBlock("L", x, y, r, f, m);
+		}
+	}
+}
+
+function onLinearZ(inz, movement)
+{
+	if (zOutput.getLast() != inz) {
+		var r = getCompensation();
+		var f = getFeedrate(movement);
+		var z = zOutput.format(inz);
+		//var m = "M";
+		//writeBlock("L", z, r, f, defaultM);
+		writeBlock("L", z, r, f, defaultM+globalM);
+	}
+}
+
+function onCircular(cx, cy, cz, ex, ey, ez, isCW, movement) {
+	// current position
+	var lastX = xOutput.getLast();
+	var lastY = yOutput.getLast();
+	var lastZ = zOutput.getLast();
+	var fullCircle = false;
+
+	if ((Math.abs(lastX - ex) <= epsilon) && (Math.abs(lastY - ey) <= epsilon)) {
+		fullCircle = true;
+	}
+
+	// distance to center has to be the same from start and end positions
+	if (Math.abs(distance(lastX, lastY, lastZ, cx, cy, cz) - distance(ex, ey, ez, cx, cy, cz)) > globals.tolerance) {
+		//throw new Error("Distance to center has to be the same from start and end positions");
+	}
+
+	//xOutput.reset();
+	//yOutput.reset();
+	//zOutput.reset();
+
+	xCircleCenterOutput.reset();
+	yCircleCenterOutput.reset();
+	zCircleCenterOutput.reset();
+
+
+	//reset();
+
+	// final position
+	//var exf = xOutput.format(ex);
+	//var eyf = yOutput.format(ey);
+	//var ezf = zOutput.format(ez);
+
+
+	// feed rate, direction, m
+	var f = getFeedrate(movement);
+	var dr = isCW ? "DR-" : "DR+";
+	var r = getCompensation();
+	//var m = "M";
+
+	var lastPlane = planeOutput.getLast();
+
+
+	if (!fullCircle) {
+		//writeBlock(commentFront,"cx "+cx, "cy "+cy,"cz "+cz);
+		//writeBlock(commentFront,"ex "+ex,"ey "+ey,"ez "+ez);
+		//writeBlock(commentFront,"lastX "+lastX,"lastY "+lastY,"lastZ "+lastZ);
+
+		if(lastPlane == 17)
+		{
+			var cxf = xCircleCenterOutput.format(cx);
+			var cyf = yCircleCenterOutput.format(cy);
+			var czf = zCircleCenterOutput.format(cz);
+
+			var exf = xOutput.format(ex);
+			var eyf = yOutput.format(ey);
+			var ezf = zOutput.format(ez);
+
+			// IPA
+			if (Math.abs(lastZ - zOutput.getLast()) > globals.tolerance)
+			{
+				function vectorString(v) { return "x: " + v.x + ", y: " + v.y; }
+				var startVector = new Vector2(lastX, lastY);
+				var centerVector = new Vector2(xCircleCenterOutput.getLast(), yCircleCenterOutput.getLast());
+				var endVector = new Vector2(xOutput.getLast(), yOutput.getLast());
+
+				var r1Vector = vectorUnit2(vectorSubtract2(startVector, centerVector));
+				var r2Vector = vectorUnit2(vectorSubtract2(endVector, centerVector));
+
+				var yVector = new Vector2(-1.0 * r1Vector.y, r1Vector.x);
+				if (isCW) {
+					yVector = new Vector2(-1.0 * yVector.x, -1 * yVector.y);
+				}
+				var sweep = Math.atan2(vectorDot2(r2Vector, yVector), vectorDot2(r2Vector, r1Vector));
+
+				if (sweep < 0) {
+					sweep = sweep + 2.0 * Math.PI;
+				}
+
+				if (!isCW) {
+					sweep = Math.abs(sweep);
+				} else {
+					sweep = -1.0 * Math.abs(sweep);
+				}
+				sweep = 180.0 * (sweep / Math.PI);
+
+				var sweepf = sweepOutput.format(sweep);
+
+				writeBlock("CC", cxf, cyf);
+				writeBlock("CP", sweepf, ezf, dr, r, f, defaultM);
+			} 
+			else 
+			{
+				writeBlock("CC", cxf, cyf);
+				writeBlock("C", exf, eyf, ezf, dr, r, f, defaultM);
+			}
+		}
+		else if (lastPlane== 18)
+		{
+
+			var cxf = xCircleCenterOutput.format(cx);
+			var cyf = yCircleCenterOutput.format(cz*-1);
+			var czf = zCircleCenterOutput.format(cy);
+
+			var exf = xOutput.format(ex);
+			var eyf = yOutput.format(ez*-1);
+			var ezf = zOutput.format(ey);
+
+			// IPA
+			if (Math.abs(lastY - yOutput.getLast()) > globals.tolerance) 
+			{
+				function vectorString(v) { return "x: " + v.x + ", y: " + v.y; }
+				var startVector = new Vector2(lastX, lastY);
+				var centerVector = new Vector2(xCircleCenterOutput.getLast(), yCircleCenterOutput.getLast());
+				var endVector = new Vector2(xOutput.getLast(), yOutput.getLast());
+
+				var r1Vector = vectorUnit2(vectorSubtract2(startVector, centerVector));
+				var r2Vector = vectorUnit2(vectorSubtract2(endVector, centerVector));
+
+				var yVector = new Vector2(-1.0 * r1Vector.y, r1Vector.x);
+				if (isCW) {
+					yVector = new Vector2(-1.0 * yVector.x, -1 * yVector.y);
+				}
+				var sweep = Math.atan2(vectorDot2(r2Vector, yVector), vectorDot2(r2Vector, r1Vector));
+
+				if (sweep < 0) {
+					sweep = sweep + 2.0 * Math.PI;
+				}
+
+				if (!isCW) {
+					sweep = Math.abs(sweep);
+				} else {
+					sweep = -1.0 * Math.abs(sweep);
+				}
+				sweep = 180.0 * (sweep / Math.PI);
+
+				var sweepf = sweepOutput.format(sweep);
+
+				writeBlock("CC", cxf, czf);
+				writeBlock("CP", sweepf, eyf, dr, r, f, defaultM);
+			} 
+			else 
+			{
+				writeBlock("CC", cxf, czf);
+				writeBlock("C", exf, eyf, ezf, dr, r, f, defaultM);
+			}
+		}
+		else if (lastPlane== 19)
+		{
+
+			var cxf = xCircleCenterOutput.format(cz);
+			var cyf = yCircleCenterOutput.format(cx);
+			var czf = zCircleCenterOutput.format(cy);
+
+			var exf = xOutput.format(ez);
+			var eyf = yOutput.format(ex);
+			var ezf = zOutput.format(ey);
+			//writeBlock(commentFront,"DEBUG "+(lastX - xOutput.getLast()))
+			// IPA
+			if (Math.abs(lastX - xOutput.getLast()) > globals.tolerance) 
+				//if (Math.abs(last - ey) > globals.tolerance) 
+			{
+				function vectorString(v) { return "x: " + v.x + ", y: " + v.y; }
+				var startVector = new Vector2(lastX, lastY);
+				var centerVector = new Vector2(xCircleCenterOutput.getLast(), yCircleCenterOutput.getLast());
+				var endVector = new Vector2(xOutput.getLast(), yOutput.getLast());
+
+				var r1Vector = vectorUnit2(vectorSubtract2(startVector, centerVector));
+				var r2Vector = vectorUnit2(vectorSubtract2(endVector, centerVector));
+
+				var yVector = new Vector2(-1.0 * r1Vector.y, r1Vector.x);
+				if (isCW) {
+					yVector = new Vector2(-1.0 * yVector.x, -1 * yVector.y);
+				}
+				var sweep = Math.atan2(vectorDot2(r2Vector, yVector), vectorDot2(r2Vector, r1Vector));
+
+				if (sweep < 0) {
+					sweep = sweep + 2.0 * Math.PI;
+				}
+
+				if (!isCW) {
+					sweep = Math.abs(sweep);
+				} else {
+					sweep = -1.0 * Math.abs(sweep);
+				}
+				sweep = 180.0 * (sweep / Math.PI);
+
+				var sweepf = sweepOutput.format(sweep);
+
+				writeBlock("CC", cyf, czf);
+				writeBlock("CP", sweepf, exf, dr, r, f, defaultM);
+			} 
+			else 
+			{
+				writeBlock("CC", cyf, czf);
+				writeBlock("C", exf, eyf, ezf, dr, r, f, defaultM);
+			}
+		}
+
+
+	} else //full circle
+	{
+			var cxf = xCircleCenterOutput.format(cx);
+			var cyf = yCircleCenterOutput.format(cy);
+
+		if (Math.abs(lastZ - ez) > globals.tolerance) {
+			function vectorString(v) { return "x: " + v.x + ", y: " + v.y; }
+			var startVector = new Vector2(lastX, lastY);
+			var centerVector = new Vector2(cx, cy);
+
+			var endVector = new Vector2((ex), (ey));
+
+			var r1Vector = vectorUnit2(vectorSubtract2(startVector, centerVector));
+			var r2Vector = vectorUnit2(vectorSubtract2(endVector, centerVector));
+
+			var yVector = new Vector2(-1.0 * r1Vector.y, r1Vector.x);
+			if (isCW) {
+				yVector = new Vector2(-1.0 * yVector.x, -1 * yVector.y);
+			}
+			var sweep = Math.atan2(vectorDot2(r2Vector, yVector), vectorDot2(r2Vector, r1Vector));
+
+			if (sweep < 0) {
+				sweep = sweep + 2.0 * Math.PI;
+			}
+
+			if (!isCW) {
+				sweep = Math.abs(sweep);
+			} else {
+				sweep = -1.0 * Math.abs(sweep);
+			}
+			sweep = 180.0 * (sweep / Math.PI);
+
+			var sweepf = sweepOutput.format(sweep);
+
+			ezf = zOutput.format(ez + (lastZ - ez) / 2.0);
+
+			var sweepf = sweepOutput.format(180); //TODO dont hardcode sweepf
+
+			writeBlock("CC", cxf, cyf);
+			writeBlock("CP", sweepf, ezf, dr, r, f, defaultM);
+
+			exf = xOutput.format(ex);
+			eyf = yOutput.format(ey);
+			ezf = zOutput.format(ez);
+			f = getFeedrate(movement);
+
+			writeBlock("CC", cxf, cyf);
+			writeBlock("CP", sweepf, ezf, dr, r, f, defaultM);
+
+		} else {
+			exf = xOutput.format(cx + (cx - ex));
+			eyf = yOutput.format(cy + (cy - ey));
+			ezf = zOutput.format(cz);
+
+			writeBlock("CC", cxf, cyf);
+			writeBlock("C", exf, eyf, dr, r, f, defaultM);
+
+			f = getFeedrate(movement);
+
+			exf = xOutput.format(ex);
+			eyf = yOutput.format(ey);
+			ezf = zOutput.format(ez);
+
+			writeBlock("CC", cxf, cyf);
+			writeBlock("C", exf, eyf, dr, r, f, defaultM);
+		}
+	}
+}
+
+function onCompensation(compensation) {
+	lastCompensation = compensation;
+}
+
+function onDwell(seconds) {
+	writeBlock("CYCL DEF 9.0 DWELL TIME");
+	writeBlock("CYCL DEF 9.1 DWELL", '"' + dwellOutput.format(seconds) + '"');
+	writeBlock("CYCL CALL");
+}
+
+function on5axisHeader() {
+	reset();
+	var x = xOutput.format(xOutput.getLast());
+	var y = yOutput.format(yOutput.getLast());
+	var z = zOutput.format(zOutput.getLast());
+	aOutput.reset();
+	cOutput.reset();
+	var a = aOutput.format(tiltAngle);
+	var c = cOutput.format(rotAngle);
+	var f = getFeedrate(MOVE_CUTTING);
+	var m = "M";
+	if (lastSS > 0) {
+		m = "M3";
+	} else if (lastSS < 0) {
+		m = "M4";
+	} else if (lastSS == 0) {
+		m = "M5";
+	}
+
+
+	//writeBlock("on5axisHeader works!");
+	writeBlock("CYCL DEF 32.0 TOLERANCE");
+	writeBlock("CYCL DEF 32.1", "T" + tolerance); //tolerance is gotten from 1011
+	//CALL LBL 2 ; CANCEL M128 OCH CYCLE 19, UPP I Z
+	writeBlock("L", a, c, "FMAX");
+	writeBlock("CYCL DEF 7.0 NULPUNKT");
+	writeBlock("CYCL DEF 7.1", "I" + x);
+	writeBlock("CYCL DEF 7.2", "I" + y);
+	writeBlock("CYCL DEF 7.3", "I" + z);
+	writeBlock("CYCL DEF 19.0 B.FLADE");
+	writeBlock("CYCL DEF 19.1", a, c, f);
+	writeBlock("L X0 Y0 R0 FMAX");
+	writeBlock("L Z0 FMAX");
+	writeBlock("CYCL DEF 19.0 B.FLADE");
+	writeBlock("CYCL DEF 19.1 A0 C0", f);
+	writeBlock("CYCL DEF 19.0 B.FLADE");
+	writeBlock("CYCL DEF 19.1");
+	writeBlock("CYCL DEF 7.0 NULPUNKT");
+	x = xOutput.format(xOutput.getLast() * -1);
+	y = yOutput.format(yOutput.getLast() * -1);
+	z = zOutput.format(zOutput.getLast() * -1);
+	writeBlock("CYCL DEF 7.1", "I" + x);
+	writeBlock("CYCL DEF 7.2", "I" + y);
+	writeBlock("CYCL DEF 7.3", "I" + z);
+	writeBlock("L M128");
+	x = xOutput.format(xOutput.getLast() * -1);
+	y = yOutput.format(yOutput.getLast() * -1);
+	z = zOutput.format(zOutput.getLast() * -1);
+	writeBlock("L", x, y, z, "FMAX",m);
+	writeBlock("L R0 FMAX");
+}
+
+function on5axis(motion, movement) {
+	//writeBlock(JSON.stringify(arguments))
+	var f = getFeedrate(movement);
+	var x = xOutput.format(motion.x);
+	var y = yOutput.format(motion.y);
+	var z = zOutput.format(motion.z);
+	var a = aOutput.format(motion.u);
+	var c = cOutput.format(motion.v);
+
+	if (first5Axis) {
+		on5axisHeader();
+		first5Axis = false;
+	} else {
+		writeBlock("L", x, y, z, a, c, f);
+	}
+}
+
+function on5axisFooter() {
+	//writeBlock("on5axisfooter works!");
+	first5Axis = true;
+}
+
+function setRotation(itiltAngle, irotAngle, ithirdAngle, ipathType) {
+	tiltAngle = itiltAngle;
+	rotAngle = irotAngle;
+	thirdAngle = ithirdAngle;
+	pathType = ipathType;
+}
+
+function setMiscellaneous1011(real1, real2, real3, real4, real5, real6, real7, real8, real9, real10) {
+	tolerance = toleranceOutput.format(real7);
+	writeBlock("CYCL DEF 32.0 TOLERANCE");
+	writeBlock("CYCL DEF 32.1", "T" + tolerance);
+}
+
+function setMiscellaneous1013(incc, intldia, intcr, incctotip, intlplnno, intox, intoy, intoz, inopcode, instrtoolpath) {
+
+	opCode = inopcode;
+}
+
+function onDrillingHeaderConversion(inDrillHeader)
+{
+	drillHeaderConv = inDrillHeader;
+	var garbX = xOutput.format(xOutput.getLast());
+	var garby = yOutput.format(yOutput.getLast());
+	var garbz = zOutput.format(zOutput.getLast());
+
+	//type,xPosition, yPosition ,zPosition,initialHeight, referenceHeight,depth, topOfStock ,drillHeaderConv.dwellBottom  
+	//if(topOfStock == 0, depth == 0,plungeFeedRate == 0, drillHeaderConv.retractFeedRate == 0,drillHeaderConv.dwellBottom == 0,drillHeaderConv.dwellTop == 0, drillHeaderConv.peckFirst == 0,Pecks == 0, drillHeaderConv.minimumPeck == 0,drillHeaderConv.peckReduktion == 0, drillHeaderConv.peckCearance == 0, drillHeaderConv.chipBreakRetract == 0, drillHeaderConv.chipBreakDepth == 0, drillHeaderConv.chipBreaks == 0, drillHeaderConv.pitch == 0, drillHeaderConv.shiftAmount == 0, drillHeaderConv.disengagingDir == 0, drillHeaderConv.angleOfSpindle == 0, drillHeaderConv.toolEdgeHeight == 0, drillHeaderConv.materialThickness == 0,drillHeaderConv.upperAdvStop == 0, drillHeaderConv.lowerAdvStop == 0,drillHeaderConv.RPMFactor == 0)
+	//{
+	//}
+	/*
+	//type : 2,
+xPosition : 2,
+yPosition : 2,
+zPosition : 2,
+initialHeight : 2,
+referenceHeight : 2,
+plungeFeedRate : 2,
+topOfStock: 2,
+depth:2,
+//dwellBottom: 1,
+//dwellTop: 1,
+//peckAmount:1,
+//RPMFactor: 1
+*/
+	//writeBlock(JSON.stringify(drillHeaderConv));
+	if(drillHeaderConv.type == 1 && drillHeaderConv.retractFeedRate == 0 && drillHeaderConv.dwellBottom != 0   &&  drillHeaderConv.peckFirst == 0 && drillHeaderConv.peckAmount != 0 &&  drillHeaderConv.minimumPeck == 0 && drillHeaderConv.peckReduktion == 0 &&  drillHeaderConv.peckCearance == 0 &&  drillHeaderConv.chipBreakRetract == 0 &&  drillHeaderConv.chipBreakDepth == 0 &&  drillHeaderConv.chipBreaks == 0 &&  drillHeaderConv.pitch == 0 &&  drillHeaderConv.shiftAmount == 0 &&  drillHeaderConv.disengagingDir == 0 &&  drillHeaderConv.angleOfSpindle == 0 &&  drillHeaderConv.toolEdgeHeight == 0 &&  drillHeaderConv.materialThickness == 0 && drillHeaderConv.upperAdvStop == 0 &&  drillHeaderConv.lowerAdvStop == 0 && drillHeaderConv.RPMFactor != 0)
+	{
+		var clearance = drillingOutput.format(drillHeaderConv.referenceHeight-drillHeaderConv.topOfStock);
+		var depth = drillingOutput.format((drillHeaderConv.depth-drillHeaderConv.topOfStock)*-1);
+		var peckAmount  = drillingOutput.format(drillHeaderConv.peckAmount);
+		var plungeFeedRate  = drillingOutput.format(drillHeaderConv.plungeFeedRate);
+		var dwellTop  = drillingOutput.format(drillHeaderConv.dwellTop);
+		var referenceHeight = drillingOutputSign.format(drillHeaderConv.topOfStock);
+		var secondClearance = drillingOutput.format(drillHeaderConv.initialHeight - drillHeaderConv.topOfStock);
+		var dwellBottom  = drillingOutput.format(drillHeaderConv.dwellBottom);
+
+		//CYCL DEF 200 DRILLING
+		writeBlock("CYCL DEF 200 DRILLING");
+		writeBlock("Q200="+clearance+" ;SET-UP CLEARANCE");
+		writeBlock("Q201="+depth+" ;DEPTH"); 
+		writeBlock("Q206="+plungeFeedRate+" ;FEED RATE FOR PLUNGING");
+		writeBlock("Q202="+peckAmount+" ;PLUNGING DEPTH");
+		writeBlock("Q210="+dwellTop+" ;DWELL TIME AT TOP");
+		writeBlock("Q203="+referenceHeight+" ;SURFACE COORDINATE");
+		writeBlock("Q204="+secondClearance+" ;2ND SET-UP CLEARANCE");
+		writeBlock("Q211="+dwellBottom+" ;DWELL TIME AT BOTTOM");
+	}
+	else if(drillHeaderConv.type == 1 && drillHeaderConv.retractFeedRate != 0 && drillHeaderConv.dwellBottom != 0  && drillHeaderConv.dwellTop == 0 &&  drillHeaderConv.peckFirst == 0 && drillHeaderConv.peckAmount == 0 &&  drillHeaderConv.minimumPeck == 0 && drillHeaderConv.peckReduktion == 0 &&  drillHeaderConv.peckCearance == 0 &&  drillHeaderConv.chipBreakRetract == 0 &&  drillHeaderConv.chipBreakDepth == 0 &&  drillHeaderConv.chipBreaks == 0 &&  drillHeaderConv.pitch == 0 &&  drillHeaderConv.shiftAmount == 0 &&  drillHeaderConv.disengagingDir == 0 &&  drillHeaderConv.angleOfSpindle == 0 &&  drillHeaderConv.toolEdgeHeight == 0 &&  drillHeaderConv.materialThickness == 0 && drillHeaderConv.upperAdvStop == 0 &&  drillHeaderConv.lowerAdvStop == 0 && drillHeaderConv.RPMFactor != 0)
+	{
+		var clearance = drillingOutput.format(drillHeaderConv.referenceHeight-drillHeaderConv.topOfStock);
+		var depth = drillingOutput.format((drillHeaderConv.depth-drillHeaderConv.topOfStock)*-1);
+		var peckAmount  = drillingOutput.format(drillHeaderConv.peckAmount);
+		var plungeFeedRate  = drillingOutput.format(drillHeaderConv.plungeFeedRate);
+		var retractionFeedRate  = drillingOutput.format(drillHeaderConv.retractFeedRate);
+		var dwellTop  = drillingOutput.format(drillHeaderConv.dwellTop);
+		var referenceHeight = drillingOutputSign.format(drillHeaderConv.topOfStock);
+		var secondClearance = drillingOutput.format(drillHeaderConv.initialHeight - drillHeaderConv.topOfStock);
+		var dwellBottom  = drillingOutput.format(drillHeaderConv.dwellBottom);
+
+		//CYCL DEF 200 DRILLING
+		writeBlock("CYCL DEF 201 REAMING");
+		writeBlock("Q200="+clearance+" ;SET-UP CLEARANCE");
+		writeBlock("Q201="+depth+" ;DEPTH"); 
+		writeBlock("Q206="+plungeFeedRate+" ;FEED RATE FOR PLUNGING");
+		writeBlock("Q211="+dwellBottom+" ;DWELL TIME AT BOTTOM");
+		writeBlock("Q208 = "+retractionFeedRate+" ;RETRACTION FEED RATE");
+		writeBlock("Q203="+referenceHeight+" ;SURFACE COORDINATE");
+		writeBlock("Q204="+secondClearance+" ;2ND SET-UP CLEARANCE");
+
+		//CYCL DEF 201 REAMING
+		/*
+		writeBlock("CYCL DEF 201 REAMING");
+		writeBlock("Q200 = "2" ;SET-UP CLEARANCE");
+		writeBlock("Q201 = "-10" ;DEPTH");
+		writeBlock("Q206 = "100" ;FEED RATE FOR PLUNGING");
+		writeBlock("Q211 = "0.5" ;DWELL TIME AT BOTTOM");
+		writeBlock("Q208 = "250" ;RETRACTION FEED RATE");
+		writeBlock("Q203 = "+30" ;SURFACE COORDINATE");
+		writeBlock("Q204 = "30" ;2ND SET-UP CLEARANCE");
+		*/
+	}
+	else if(drillHeaderConv.type == 2 && drillHeaderConv.retractFeedRate != 0 && drillHeaderConv.dwellBottom != 0  &&  drillHeaderConv.peckFirst == 0 && drillHeaderConv.peckAmount == 0 &&  drillHeaderConv.minimumPeck == 0 && drillHeaderConv.peckReduktion == 0 &&  drillHeaderConv.peckCearance == 0 &&  drillHeaderConv.chipBreakRetract == 0 &&  drillHeaderConv.chipBreakDepth == 0 &&  drillHeaderConv.chipBreaks == 0 &&  drillHeaderConv.pitch == 0 &&  drillHeaderConv.shiftAmount != 0 &&  drillHeaderConv.disengagingDir != 0 &&   drillHeaderConv.toolEdgeHeight == 0 &&  drillHeaderConv.materialThickness == 0 && drillHeaderConv.upperAdvStop == 0 &&  drillHeaderConv.lowerAdvStop == 0 && drillHeaderConv.RPMFactor != 0)
+	{
+		var clearance = drillingOutput.format(drillHeaderConv.referenceHeight-drillHeaderConv.topOfStock);
+		var depth = drillingOutput.format((drillHeaderConv.depth-drillHeaderConv.topOfStock)*-1);
+		var plungeFeedRate  = drillingOutput.format(drillHeaderConv.plungeFeedRate);
+		var retractionFeedRate  = drillingOutput.format(drillHeaderConv.retractFeedRate);
+		var referenceHeight = drillingOutputSign.format(drillHeaderConv.topOfStock);
+		var secondClearance = drillingOutput.format(drillHeaderConv.initialHeight - drillHeaderConv.topOfStock);
+		var dwellBottom  = drillingOutput.format(drillHeaderConv.dwellBottom);
+		var disengagingDir  = drillingOutput.format(drillHeaderConv.disengagingDir);
+		var angleOfSpindle  = drillingOutput.format(drillHeaderConv.angleOfSpindle);
+
+		//CYCL DEF 200 DRILLING
+		writeBlock("CYCL DEF 202 BORING");
+		writeBlock("Q200="+clearance+" ;SET-UP CLEARANCE");
+		writeBlock("Q201="+depth+" ;DEPTH"); 
+		writeBlock("Q206="+plungeFeedRate+" ;FEED RATE FOR PLUNGING");
+		writeBlock("Q211="+dwellBottom+" ;DWELL TIME AT BOTTOM");
+		writeBlock("Q208 = "+retractionFeedRate+" ;RETRACTION FEED RATE");
+		writeBlock("Q203="+referenceHeight+" ;SURFACE COORDINATE");
+		writeBlock("Q204="+secondClearance+" ;2ND SET-UP CLEARANCE");
+		writeBlock("Q214 = "+disengagingDir+" ;DISENGAGING DIRECTN");
+		writeBlock("Q336 = "+angleOfSpindle+" ;ANGLE OF SPINDLE");
+	}
+	else if(drillHeaderConv.type == 1 && drillHeaderConv.retractFeedRate != 0 && drillHeaderConv.dwellBottom != 0 && drillHeaderConv.peckFirst != 0 && drillHeaderConv.peckAmount == 0 &&  drillHeaderConv.minimumPeck != 0 && drillHeaderConv.peckReduktion != 0 &&  drillHeaderConv.peckCearance == 0 &&  drillHeaderConv.chipBreakRetract != 0 &&  drillHeaderConv.chipBreakDepth != 0 &&  drillHeaderConv.chipBreaks != 0 &&  drillHeaderConv.pitch == 0 &&  drillHeaderConv.shiftAmount == 0 &&  drillHeaderConv.disengagingDir == 0 &&  drillHeaderConv.angleOfSpindle == 0 &&  drillHeaderConv.toolEdgeHeight == 0 &&  drillHeaderConv.materialThickness == 0 && drillHeaderConv.upperAdvStop == 0 &&  drillHeaderConv.lowerAdvStop == 0 && drillHeaderConv.RPMFactor != 0)
+	{
+		var clearance = drillingOutput.format(drillHeaderConv.referenceHeight-drillHeaderConv.topOfStock);
+		var depth = drillingOutput.format((drillHeaderConv.depth-drillHeaderConv.topOfStock)*-1);
+		var plungeFeedRate  = drillingOutput.format(drillHeaderConv.plungeFeedRate);
+		var retractionFeedRate  = drillingOutput.format(drillHeaderConv.retractFeedRate);
+		var referenceHeight = drillingOutputSign.format(drillHeaderConv.topOfStock);
+		var secondClearance = drillingOutput.format(drillHeaderConv.initialHeight - drillHeaderConv.topOfStock);
+		var dwellBottom  = drillingOutput.format(drillHeaderConv.dwellBottom);
+		var dwellTop  = drillingOutput.format(drillHeaderConv.dwellTop);
+		var chipBreakRetract  = drillingOutput.format(drillHeaderConv.chipBreakRetract);
+		var chipBreaks  = drillingOutput.format(drillHeaderConv.chipBreaks);
+		var peckFirst  = drillingOutput.format(drillHeaderConv.peckFirst);
+		var minimumPeck  = drillingOutput.format(drillHeaderConv.minimumPeck);
+		var peckReduktion  = drillingOutput.format(drillHeaderConv.peckReduktion);
+		var disengagingDir  = drillingOutput.format(drillHeaderConv.disengagingDir);
+		var angleOfSpindle  = drillingOutput.format(drillHeaderConv.angleOfSpindle);
+
+		writeBlock("CYCL DEF 203 UNIVERSAL DRILLING");
+		writeBlock("Q200="+clearance+" ;SET-UP CLEARANCE");
+		writeBlock("Q201="+depth+" ;DEPTH"); 
+		writeBlock("Q206="+plungeFeedRate+" ;FEED RATE FOR PLUNGING");
+		writeBlock("Q202="+peckFirst+" ;PLUNGING DEPTH");
+		writeBlock("Q210="+dwellTop+" ;DWELL TIME AT TOP");
+		writeBlock("Q203="+referenceHeight+" ;SURFACE COORDINATE");
+		writeBlock("Q204="+secondClearance+" ;2ND SET-UP CLEARANCE");
+		writeBlock("Q212="+peckReduktion+" ;DECREMENT");
+		writeBlock("Q213="+chipBreaks+" ;BREAKS");
+		writeBlock("Q205="+minimumPeck+" ;MIN. PLUNGING DEPTH");
+		writeBlock("Q211="+dwellBottom+" ;DWELL TIME AT BOTTOM");
+		writeBlock("Q208 = "+retractionFeedRate+" ;RETRACTION FEED RATE");
+		writeBlock("Q256="+chipBreakRetract+" ;DIST FOR CHIP BRKNG");
+	}
+	else if(drillHeaderConv.type == 4 && drillHeaderConv.retractFeedRate != 0  &&  drillHeaderConv.peckFirst == 0 && drillHeaderConv.peckAmount == 0 &&  drillHeaderConv.minimumPeck == 0 && drillHeaderConv.peckReduktion == 0 &&  drillHeaderConv.peckCearance == 0 &&  drillHeaderConv.chipBreakRetract == 0 &&  drillHeaderConv.chipBreakDepth == 0 &&  drillHeaderConv.chipBreaks == 0 &&  drillHeaderConv.pitch == 0 &&  drillHeaderConv.shiftAmount != 0 &&  drillHeaderConv.disengagingDir != 0  && drillHeaderConv.upperAdvStop == 0 &&  drillHeaderConv.lowerAdvStop == 0 && drillHeaderConv.RPMFactor != 0)
+	{
+		var clearance = drillingOutput.format(drillHeaderConv.referenceHeight-drillHeaderConv.topOfStock);
+		var dwellBottom  = drillingOutput.format(drillHeaderConv.dwellBottom);
+		var referenceHeight = drillingOutput.format(drillHeaderConv.topOfStock);
+		var secondClearance = drillingOutputSign.format(drillHeaderConv.initialHeight - drillHeaderConv.topOfStock);
+		var toolEdgeHeight = drillingOutput.format(drillHeaderConv.toolEdgeHeight);
+		var angleOfSpindle = drillingOutput.format(drillHeaderConv.angleOfSpindle);
+		var disengagingDir = drillingOutput.format(drillHeaderConv.disengagingDir);
+		var plungeFeedRate = drillingOutput.format(drillHeaderConv.plungeFeedRate);
+		var retractFeedRate = drillingOutput.format(drillHeaderConv.retractFeedRate);
+		var shiftAmount = drillingOutput.format(drillHeaderConv.shiftAmount);
+		var materialThickness = drillingOutput.format(drillHeaderConv.materialThickness);
+		var depth = drillingOutputSign.format(drillHeaderConv.depth);
+		
+		writeBlock("CYCL DEF 204 BACK BORING");
+		writeBlock("Q200="+clearance+" ;SET-UP CLEARANCE");
+		writeBlock("Q249="+depth+" ;DEPTH OF COUNTERBORE");
+		writeBlock("Q250="+materialThickness+" ;MATERIAL THICKNESS");
+		writeBlock("Q251="+shiftAmount+" ;OFF-CENTER DISTANCE");
+		writeBlock("Q252="+toolEdgeHeight+" ;TOOL EDGE HEIGHT");
+		writeBlock("Q253="+retractFeedRate+" ;F PRE-POSITIONING");
+		writeBlock("Q254="+plungeFeedRate+" ;F COUNTERBORING");
+		writeBlock("Q255="+dwellBottom+" ;DWELL TIME");
+		writeBlock("Q203="+referenceHeight+" ;SURFACE COORDINATE");
+		writeBlock("Q204="+secondClearance+" ;2ND SET-UP CLEARANCE");
+		writeBlock("Q214="+disengagingDir+" ;DISENGAGING DIRECTN");
+		writeBlock("Q336="+angleOfSpindle+" ;ANGLE OF SPINDLE");
+	}
+	else if(drillHeaderConv.type == 1 && drillHeaderConv.retractFeedRate == 0 && drillHeaderConv.dwellBottom != 0  && drillHeaderConv.dwellTop == 0 &&  drillHeaderConv.peckFirst != 0 && drillHeaderConv.peckAmount != 0 &&  drillHeaderConv.minimumPeck == 0 && drillHeaderConv.peckReduktion != 0 &&  drillHeaderConv.peckCearance == 0 &&  drillHeaderConv.chipBreakRetract != 0 &&  drillHeaderConv.chipBreakDepth != 0 &&  drillHeaderConv.chipBreaks == 0 &&  drillHeaderConv.pitch == 0 &&  drillHeaderConv.shiftAmount == 0 &&  drillHeaderConv.disengagingDir == 0 &&  drillHeaderConv.angleOfSpindle == 0 &&  drillHeaderConv.toolEdgeHeight == 0 &&  drillHeaderConv.materialThickness == 0 && drillHeaderConv.upperAdvStop != 0 &&  drillHeaderConv.lowerAdvStop != 0 && drillHeaderConv.RPMFactor != 0)
+	{
+		var clearance = drillingOutput.format(drillHeaderConv.referenceHeight-drillHeaderConv.topOfStock);
+		var dwellBottom  = drillingOutput.format(drillHeaderConv.dwellBottom);
+		var referenceHeight = drillingOutput.format(drillHeaderConv.topOfStock);
+		var secondClearance = drillingOutputSign.format(drillHeaderConv.initialHeight - drillHeaderConv.topOfStock);
+		var plungeFeedRate = drillingOutput.format(drillHeaderConv.plungeFeedRate);
+		var retractFeedRate = drillingOutput.format(drillHeaderConv.retractFeedRate);
+		var depth = drillingOutput.format((drillHeaderConv.depth-drillHeaderConv.topOfStock)*-1);
+		var peckFirst  = drillingOutput.format(drillHeaderConv.peckFirst);
+		var peckReduktion  = drillingOutput.format(drillHeaderConv.peckReduktion);
+		//var minimumPeck  = drillingOutput.format(drillHeaderConv.minimumPeck);
+		var peckAmount  = drillingOutput.format(drillHeaderConv.peckAmount);
+		var chipBreakRetract  = drillingOutput.format(drillHeaderConv.chipBreakRetract);
+		var upperAdvStop  = drillingOutput.format(drillHeaderConv.upperAdvStop);
+		var lowerAdvStop  = drillingOutput.format(drillHeaderConv.lowerAdvStop);
+		var chipBreakDepth  = drillingOutput.format(drillHeaderConv.chipBreakDepth);
+
+		writeBlock("CYCL DEF 205 UNIVERSAL PECKING");
+		writeBlock("Q200="+clearance+" ;SET-UP CLEARANCE");
+		writeBlock("Q201="+depth+" ;DEPTH"); 
+		writeBlock("Q206="+plungeFeedRate+" ;FEED RATE FOR PLUNGING");
+		writeBlock("Q202="+peckFirst+" ;PLUNGING DEPTH");
+		writeBlock("Q203="+referenceHeight+" ;SURFACE COORDINATE");
+		writeBlock("Q204="+secondClearance+" ;2ND SET-UP CLEARANCE");
+		writeBlock("Q212="+peckReduktion+" ;DECREMENT");
+		writeBlock("Q205="+peckAmount+" ;MIN. PLUNGING DEPTH");
+		writeBlock("Q258="+upperAdvStop+" ;UPPER ADV STOP DIST");
+		writeBlock("Q259="+lowerAdvStop+" ;LOWER ADV STOP DIST");
+		writeBlock("Q257="+chipBreakDepth+" ;DEPTH FOR CHIP BRKNG");
+		writeBlock("Q256="+chipBreakRetract+" ;DIST FOR CHIP BRKNG");
+		writeBlock("Q211="+dwellBottom+" ;DWELL TIME AT BOTTOM");
+	}
+	else if(drillHeaderConv.type == 4 && drillHeaderConv.retractFeedRate == 0 && drillHeaderConv.dwellBottom != 0  && drillHeaderConv.dwellTop == 0 &&  drillHeaderConv.peckFirst == 0 && drillHeaderConv.peckAmount == 0 &&  drillHeaderConv.minimumPeck == 0 && drillHeaderConv.peckReduktion == 0 &&  drillHeaderConv.peckCearance == 0 &&  drillHeaderConv.chipBreakRetract == 0 &&  drillHeaderConv.chipBreakDepth == 0 &&  drillHeaderConv.chipBreaks == 0 &&   drillHeaderConv.shiftAmount == 0 &&  drillHeaderConv.disengagingDir == 0 &&  drillHeaderConv.angleOfSpindle == 0 &&  drillHeaderConv.toolEdgeHeight == 0 &&  drillHeaderConv.materialThickness == 0 && drillHeaderConv.upperAdvStop == 0 &&  drillHeaderConv.lowerAdvStop == 0 && drillHeaderConv.RPMFactor != 0)
+	{
+
+		var depth = drillingOutput.format((drillHeaderConv.depth-drillHeaderConv.topOfStock)*-1);
+		var clearance = drillingOutput.format(drillHeaderConv.referenceHeight-drillHeaderConv.topOfStock);
+		var plungeFeedRate = drillingOutput.format(drillHeaderConv.plungeFeedRate);
+		var dwellBottom  = drillingOutput.format(drillHeaderConv.dwellBottom);
+		var referenceHeight = drillingOutput.format(drillHeaderConv.topOfStock);
+		var secondClearance = drillingOutputSign.format(drillHeaderConv.initialHeight - drillHeaderConv.topOfStock);
+		
+		writeBlock("CYCL DEF 206 TAPPING NEW");
+		writeBlock("Q200="+clearance+" ;SET-UP CLEARANCE");
+		writeBlock("Q201="+depth+" ;DEPTH");
+		writeBlock("Q206="+plungeFeedRate+" ;FEED RATE FOR PLUNGING");
+		writeBlock("Q211="+dwellBottom+" ;DWELL TIME AT BOTTOM");
+		writeBlock("Q203="+referenceHeight+" ;SURFACE COORDINATE");
+		writeBlock("Q204="+secondClearance+" ;2ND SET-UP CLEARANCE");
+	}
+	else if(drillHeaderConv.type == 4 && drillHeaderConv.retractFeedRate == 0 && drillHeaderConv.dwellBottom == 0  && drillHeaderConv.dwellTop == 0 &&  drillHeaderConv.peckFirst == 0 && drillHeaderConv.peckAmount == 0 &&  drillHeaderConv.minimumPeck == 0 && drillHeaderConv.peckReduktion == 0 &&  drillHeaderConv.peckCearance == 0 &&  drillHeaderConv.chipBreakRetract == 0 &&  drillHeaderConv.chipBreakDepth == 0 &&  drillHeaderConv.chipBreaks == 0 &&  drillHeaderConv.pitch != 0 &&  drillHeaderConv.shiftAmount == 0 &&  drillHeaderConv.disengagingDir == 0 &&  drillHeaderConv.angleOfSpindle == 0 &&  drillHeaderConv.toolEdgeHeight == 0 &&  drillHeaderConv.materialThickness == 0 && drillHeaderConv.upperAdvStop == 0 &&  drillHeaderConv.lowerAdvStop == 0 && drillHeaderConv.RPMFactor != 0)
+	{
+		var depth = drillingOutput.format((drillHeaderConv.depth-drillHeaderConv.topOfStock)*-1);
+		var clearance = drillingOutput.format(drillHeaderConv.referenceHeight-drillHeaderConv.topOfStock);
+		var pitch = drillingOutput.format(drillHeaderConv.pitch);
+		var referenceHeight = drillingOutput.format(drillHeaderConv.topOfStock);
+		var secondClearance = drillingOutputSign.format(drillHeaderConv.initialHeight - drillHeaderConv.topOfStock);
+
+		writeBlock("CYCL DEF 207 RIGID TAPPING NEW");
+		writeBlock("Q200="+clearance+" ;SET-UP CLEARANCE");
+		writeBlock("Q201="+depth+" ;DEPTH");
+		writeBlock("Q239="+pitch+" ;PITCH");
+		writeBlock("Q203="+referenceHeight+" ;SURFACE COORDINATE");
+		writeBlock("Q204="+secondClearance+" ;2ND SET-UP CLEARANCE");
+	}	
+	else if(drillHeaderConv.type == 4 && drillHeaderConv.retractFeedRate == 0 && drillHeaderConv.dwellBottom == 0  && drillHeaderConv.dwellTop == 0 &&  drillHeaderConv.peckFirst == 0 && drillHeaderConv.peckAmount == 0 &&  drillHeaderConv.minimumPeck == 0 && drillHeaderConv.peckReduktion == 0 &&  drillHeaderConv.peckCearance == 0 &&  drillHeaderConv.chipBreakRetract != 0 &&  drillHeaderConv.chipBreakDepth != 0 &&  drillHeaderConv.chipBreaks == 0 &&  drillHeaderConv.pitch != 0 &&  drillHeaderConv.shiftAmount == 0 &&  drillHeaderConv.disengagingDir == 0 &&  drillHeaderConv.angleOfSpindle != 0 &&  drillHeaderConv.toolEdgeHeight == 0 &&  drillHeaderConv.materialThickness == 0 && drillHeaderConv.upperAdvStop == 0 &&  drillHeaderConv.lowerAdvStop == 0 && drillHeaderConv.RPMFactor == 0)
+	{
+		var depth = drillingOutput.format((drillHeaderConv.depth-drillHeaderConv.topOfStock)*-1);
+		var clearance = drillingOutput.format(drillHeaderConv.referenceHeight-drillHeaderConv.topOfStock);
+		var pitch = drillingOutput.format(drillHeaderConv.pitch);
+		var referenceHeight = drillingOutput.format(drillHeaderConv.topOfStock);
+		var secondClearance = drillingOutputSign.format(drillHeaderConv.initialHeight - drillHeaderConv.topOfStock);
+		var chipBreakRetract  = drillingOutput.format(drillHeaderConv.chipBreakRetract);
+		var chipBreakDepth  = drillingOutput.format(drillHeaderConv.chipBreakDepth);
+		var angleOfSpindle = drillingOutput.format(drillHeaderConv.angleOfSpindle);
+
+		writeBlock("CYCL DEF 209 TAPPING W/ CHIP BRKG");
+		writeBlock("Q200="+clearance+" ;SET-UP CLEARANCE");
+		writeBlock("Q201="+depth+" ;DEPTH");
+		writeBlock("Q239="+pitch+" ;PITCH");
+		writeBlock("Q203="+referenceHeight+" ;SURFACE COORDINATE");
+		writeBlock("Q204="+secondClearance+" ;2ND SET-UP CLEARANCE");
+		writeBlock("Q257="+chipBreakDepth+" ;DEPTH FOR CHIP BRKNG");
+		writeBlock("Q256="+chipBreakRetract+" ;DIST. FOR CHIP BRKNG");
+		writeBlock("Q336="+angleOfSpindle+" ;ANGLE OF SPINDLE");
+	}
+}
+
+function onDrillingPointConversion(inX, inY,inZ,ref)
+{
+	zOutput.reset();
+	var f = getFeedrate(MOVE_RAPID);
+
+	var z = zOutput.format(drillHeaderConv.initialHeight);
+
+	if (xOutput.getLast() != inX || yOutput.getLast() != inY)
+	{
+		xOutput.reset();
+		yOutput.reset();
+
+		var x = xOutput.format(inX);
+		var y = yOutput.format(inY);
+
+		//xOutput.format(inX);
+		//yOutput.format(inY);
+
+		//var p = pOutput.format(drillHeaderConv.dwellTop * 1000);
+		writeBlock("L",x, y,"M99");
+	}
+}
+function onDrillingFooterConversion() {
+	//drillHeaderCalled = false;
+	//gCode = gOutput.format(80);
+	writeBlock("G80");
+}
+
+
+function onDrillingHeader(obj) {
+	// indicate that the drill header was called 
+	drillHeaderCalled = true;
+
+	// Indicate that the next hole (onDrillingPoint) is the first hole after the header
+	drillIsFirst = true;
+	drillHeader = obj;
+	//onComment(drillHeader.name);
+
+	// Calculate the various parameters
+	retractDistance = drillHeader.retractPlane - drillHeader.referencePlane; // Used as Second Safety Clearance
+
+	if (drillHeader.safeDistanceIsAbsolute) {
+		safeDistance = drillHeader.safeDistance - drillHeader.referencePlane;
+	}
+	else {
+		safeDistance = drillHeader.safeDistance;
+	}
+
+	referenceHeight = drillHeader.referencePlane;
+
+	if (drillHeader.endDepthIsAbsolute) {
+		depth = drillHeader.referencePlane - drillHeader.endDepth;
+	}
+	else {
+		depth = drillHeader.endDepth;
+	}
+
+	if (drillHeader.name == "BORING") {
+		var f = getFeedrate(MOVE_PLUNGE);
+		var sd = drillingOutput.format(drillHeader.safeDistance - drillHeader.drillDepth);
+		var dybde = drillingOutput.format(drillHeader.endDepth - (drillHeader.retractPlane - drillHeader.safeDistance) - drillHeader.drillDepth);
+		var udsp = drillingOutput.format(drillHeader.endDepth - (drillHeader.retractPlane - drillHeader.safeDistance) - drillHeader.drillDepth);
+		var dwell = drillingOutput.format(drillHeader.bottomDwelling);
+
+		if (drillHeader.useTopDwelling)
+		{
+			dwell = drillingOutput.format(drillHeader.topDwelling);
+		}
+
+		writeBlock("CYCL DEF 1.0 BORING");
+		writeBlock("CYCL DEF 1.1 AFST.", sd);
+		writeBlock("CYCL DEF 1.2 DYBDE", dybde);
+		writeBlock("CYCL DEF 1.3 UDSP.", udsp);
+		writeBlock("CYCL DEF 1.4 V.TID", dwell);
+		writeBlock("CYCL DEF 1.5", f);
+
+		mOutput.reset();
+		globalM = mOutput.format(99);
+		zOutput.reset();
+		var garbage = zOutput.format(-99999);
+		//var z = zOutput.format(drillHeader.retractPlane);
+		//f = getFeedrate(MOVE_RAPID);
+		z = drillHeader.retractPlane;
+		onLinearZ(z, MOVE_RAPID);
+		//writeBlock("L", z, "R", f, "M99");
+	}
+	else if (drillHeader.name == "UDSPAANING")
+	{
+		var f = getFeedrate(MOVE_PLUNGE);
+		var sd = drillingOutput.format(drillHeader.referencePlane - drillHeader.drillDepth);
+		var dybde = drillingOutput.format(drillHeader.endDepth - (drillHeader.retractPlane - drillHeader.safeDistance) - drillHeader.drillDepth);
+		var udsp = drillingOutput.format(drillHeader.firstDepth * -1);  //TODO should this really be multiplied by negative 1?
+		var dwell = drillingOutput.format(drillHeader.topDwelling);
+
+		if (drillHeader.useTopDwelling) {
+			dwell = drillingOutput.format(drillHeader.topDwelling);
+		}
+
+		writeBlock("CYCL DEF 1.0 UDSPAANING");
+		writeBlock("CYCL DEF 1.1 AFST.", sd);
+		writeBlock("CYCL DEF 1.2 DYBDE", dybde);
+		writeBlock("CYCL DEF 1.3 UDSP.", udsp);
+		writeBlock("CYCL DEF 1.4 V.TID", dwell);
+		writeBlock("CYCL DEF 1.5", f);
+
+		//zOutput.reset();
+		zOutput.reset();
+		var z = zOutput.format(drillHeader.retractPlane - drillHeader.safeDistance + drillHeader.referencePlane);
+		//f = getFeedrate(MOVE_RAPID);
+		f = getFeedrate(MOVE_RAPID);
+		writeBlock("L", z, "R", f, "M99");
+	} 
+	else if (drillHeader.name == "UNIVERSAL")
+	{
+		var sd = drillingOutput.format(drillHeader.safeDistance - drillHeader.referencePlane);
+		var depth = drillingOutput.format(drillHeader.endDepth);
+		var pFr = drillingOutput.format(drillHeader.plungingFeedrate);
+		var firstDepth = drillingOutput.format(drillHeader.firstDepth);
+		var topDwell = drillingOutput.format(drillHeader.topDwelling);
+		//var surface = drillingOutput.format(drillHeader.referencePlane - drillHeader.endDepth - drillHeader.retractPlane);
+		var surface = drillingOutput.format( drillHeader.retractPlane - drillHeader.referencePlane);
+		var sd2 = drillingOutput.format(drillHeader.referencePlane);
+		var peckClearance = drillingOutput.format(drillHeader.peckClearance);
+		var peck2 = drillingOutput.format(drillHeader.peck2);
+		var peckAmount = drillingOutput.format(0);
+		var BottomDwell = drillingOutput.format(drillHeader.bottomDwelling);
+		var retractFeedrate = drillingOutput.format(9999);
+		var peck = drillingOutput.format(0.25);
+
+		cycle203(sd, depth, pFr, firstDepth, topDwell, surface, sd2, peck2, peckClearance, peckAmount, BottomDwell, retractFeedrate, peck);
+
+		/*
+		writeBlock("CYCL DEF 203 UNIVERSAL BORING");
+		writeBlock("Q200="+sd,"; SIKKERHEDS-AFSTAND");
+		writeBlock("Q201="+dybde,"; DYBDE");
+		writeBlock("Q206="+pFr,"; TILSPAENDING DYBDE"); 
+		writeBlock("Q202="+firstDepth, "; INDSTILLINGS-DYBDE");
+		writeBlock("Q210="+topDwell, "; DVAELETID OPPE");
+		writeBlock("Q203=",0.,"; OVERFLADE");
+		writeBlock("Q204=",25.,"; 2. SIKKERHEDS-AFST."); 
+		writeBlock("Q212="+peckClearance, "; REDUKTION FREM");
+		writeBlock("Q213=",0.,"; SPAANDBRUD ANTAL");
+		writeBlock("Q205="+peckClearance, " ; MIN FREMRYK DYBDE.");
+		writeBlock("Q211="+BottomDwell, "  ; DVAELETID NEDE");
+		writeBlock("Q208="+retractFeedrate, ". ; TILSPENDING-TILBAGE");
+		writeBlock("Q256=",peck," ; UDK-VED-SPAANBRUD");
+		*/
+		//L X+10. Y+10. FMAX M99
+	}
+	else if (drillHeader.name == "GEVIND")
+	{
+		//var distance = drillingOutput.format(drillHeader.referencePlane);
+		//var depth = drillingOutput.format(drillHeader.endDepth - (drillHeader.retractPlane - drillHeader.safeDistance));
+		var distance = drillingOutput.format(drillHeader.referencePlane - drillHeader.drillDepth);
+		var depth = drillingOutput.format(drillHeader.referencePlane - drillHeader.retractPlane + drillHeader.endDepth - drillHeader.drillDepth);
+		var stign
+
+			if (lastSS > 0)
+			{
+				stign = drillingOutput.format(ToolParameters.numberOfThreads);
+			}else
+			{
+				stign = drillingOutput.format(ToolParameters.numberOfThreads*-1);
+			}
+			cyclDef17(distance, depth, stign);
+
+			//L Z-3. R FMAX M99
+			//L Z+5. R FMAX M
+	} else if (drillHeader.name == "ROERHUL")
+	{
+		writeBlock(";", "Roerhulscyklus");
+	}
+	else if (drillHeader.name == "MISC1")
+	{
+
+	}
+	else if (drillHeader.name == "MISC2")
+	{
+
+	}
+}
+
+function onDrillingPoint(inX, inY) {
+	//var x = xOutput.format(inX);
+	//var y = yOutput.format(inY);
+	zOutput.reset();
+	var f = getFeedrate(MOVE_RAPID);
+
+	var z = zOutput.format(drillHeader.retractPlane);
+
+	// Used to indicate that the drill should return to Initial Level between holes
+	if (!drillHeader.isLonghand) {
+		if (drillIsFirst) {
+			drillIsFirst = false;
+			// 		xOutput.reset();
+			// 		yOutput.reset();
+			// 		zOutput.reset();
+
+			if (drillHeader.name == "BORING")
+			{
+
+				//var garbage = xOutput.format(-99999);
+				//garbage = yOutput.format(-99999);
+
+				onLinearXY(inX, inY, MOVE_RAPID);
+				var newZ = drillHeader.retractPlane
+					onLinearZ(newZ, MOVE_RAPID);
+
+			}
+			else if (drillHeader.name == "UDSPAANING")
+			{
+
+			}
+			else if (drillHeader.name == "UNIVERSAL")
+			{
+
+				xOutput.reset();
+				yOutput.reset();
+
+				var newX = xOutput.format(inX);
+				var newY = yOutput.format(inY);
+
+				writeBlock("L", newX, newY, f, "M99");
+			}
+			else if (drillHeader.name == "GEVIND")
+			{
+
+				zOutput.reset();
+
+				var newZ = zOutput.format(drillHeader.retractPlane + drillHeader.referencePlane - drillHeader.safeDistance);
+				writeBlock("L", newZ, "R", f, "M99");
+				//writeBlock("L", z, "R", f, "M");
+			} else if (drillHeader.name == "ROERHUL")
+			{
+				onLinearXY(inX, inY, MOVE_RAPID);
+				var newZ = drillHeader.endDepth + drillHeader.peck2;
+				onLinearZ(newZ, MOVE_RAPID);
+				newZ = drillHeader.endDepth + drillHeader.peck2 - drillHeader.peckClearance;
+				onLinearZ(newZ, MOVE_PLUNGE);
+				newZ = drillHeader.endDepth + drillHeader.peckClearance;
+				onLinearZ(newZ, MOVE_RAPID);
+				newZ = drillHeader.endDepth;
+				onLinearZ(newZ, MOVE_PLUNGE);
+				newZ = drillHeader.retractPlane;
+				onLinearZ(newZ, MOVE_RAPID);
+			}
+			else if (drillHeader.name == "MISC1")
+			{
+				onLinearXY(inX, inY, MOVE_RAPID);
+				newZ = drillHeader.endDepth;
+				onLinearZ(newZ, MOVE_PLUNGE);
+				newZ = drillHeader.retractPlane;
+				onLinearZ(newZ, MOVE_RAPID);
+			}
+			else if (drillHeader.name == "MISC2")
+			{
+				onLinearXY(inX, inY, MOVE_RAPID);
+				newZ = drillHeader.endDepth;
+				onLinearZ(newZ, MOVE_PLUNGE);
+				newZ = drillHeader.retractPlane;
+				onLinearZ(newZ, MOVE_RAPID);
+			}
+			else
+				if (drillHeader.name != "Export Holes") {
+					var r = getCompensation();
+					var f = getFeedrate(MOVE_RAPID);
+					var m = "M";
+					writeBlock("L", x, y, r, f, m);
+
+					var r = getCompensation();
+					var f = getFeedrate(MOVE_RAPID);
+					var m = "M";
+					writeBlock("L", z, r, f, m);
+				}
+
+				if (drillHeader.name == "Cycle 200 Drilling") {
+					writeBlock("CYCL DEF 200 DRILLING");
+					var paramLines = {};
+					var lineCount = 0;
+					paramLines[lineCount++] = "    " + paramOutput.format(200) + "=" +
+						defaultDoubleOutput.format(safeDistance) +
+						"  " + commentFront + "SAFETY CLEARANCE" + commentBack;
+
+					paramLines[lineCount++] = "    " + paramOutput.format(201) + "=" +
+						defaultDoubleOutput.format(depth) +
+						"  " + commentFront + "DEPTH" + commentBack;
+
+
+					// Parameter 206 Plunging Feedrate
+					// If usePlunging feed rate is not selected then it will use the feed rate for plunging
+					// and if that is not set the it will use the feedrate for cutting
+					paramLines[lineCount] = "    " + paramOutput.format(206) + "=";
+					if (drillHeader.usePlungingFeedrate) {
+						paramLines[lineCount] += defaultDoubleOutput.format(drillHeader.plungingFeedrate);
+					}
+					else {
+						// if no feedrate is given use the plunge or cutting feedrate
+						var plungingFeedrate = feedrates[MOVE_CUTTING];
+
+						if (MOVE_PLUNGE in feedrates) {
+							plungingFeedrate = feedrates[MOVE_PLUNGE];
+						}
+
+						paramLines[lineCount] += defaultDoubleOutput.format(plungingFeedrate);
+					}
+
+					paramLines[lineCount++] += "  " + commentFront + "FEED RATE FOR PLUNGING" + commentBack;
+
+
+					// Parameter 202 Infeed Depth (pecking depth)
+					if (drillHeader.useBottomDwelling) {
+						paramLines[lineCount++] = "    " + paramOutput.format(202) + "=" +
+							defaultDoubleOutput.format(drillHeader.firstDepth) +
+							"  " + commentFront + "INFEED DEPTH" + commentBack;
+					}
+
+					// Parameter 210 Dwell Time at Top
+					if (drillHeader.useBottomDwelling) {
+						paramLines[lineCount++] = "    " + paramOutput.format(210) + "=" +
+							defaultDoubleOutput.format(drillHeader.bottomDwelling) +
+							"  " + commentFront + "DWELL TIME AT TOP" + commentBack;
+					}
+					else {
+						paramLines[lineCount++] = "    " + paramOutput.format(210) + "=" +
+							defaultDoubleOutput.format(0.0) +
+							"  " + commentFront + "DWELL TIME AT TOP" + commentBack;
+					}
+
+
+					// Parameter 203 Surface Coordinate (Reference Plane)
+					paramLines[lineCount++] = "    " + paramOutput.format(203) + "=" +
+						defaultDoubleOutput.format(drillHeader.referencePlane) +
+						"  " + commentFront + "SURFACE COORDINATE" + commentBack;
+
+					// Parameter 204 Safety Clearance (Retract Plane)
+					paramLines[lineCount++] = "    " + paramOutput.format(204) + "=" +
+						defaultDoubleOutput.format(retractDistance) +
+						"  " + commentFront + "2ND SAFETY CLEARANCE" + commentBack;
+
+					// Parameter 211 Bottom Dwelling
+					if (drillHeader.useBottomDwelling) {
+						paramLines[lineCount++] = "    " + paramOutput.format(211) + "=" +
+							defaultDoubleOutput.format(drillHeader.bottomDwelling) +
+							"  " + commentFront + "DWELL TIME AT DEPTH" + commentBack;
+					}
+					else {
+						paramLines[lineCount++] = "    " + paramOutput.format(211) + "=" +
+							defaultDoubleOutput.format(0.0) +
+							"  " + commentFront + "DWELL TIME AT DEPTH" + commentBack;
+					}
+
+
+					for (var lineCounter = 0; lineCounter < lineCount; lineCounter++) {
+						writeln(paramLines[lineCounter]);
+					}
+					writeBlock("CYCL CALL");
+				} else if (drillHeader.name == "Cycle 203 Universal Drilling") {
+					writeBlock("CYCL DEF 203 UNIVERSAL DRILLING");
+					var paramLines = {};
+					var lineCount = 0;
+					paramLines[lineCount++] = "    " + paramOutput.format(200) + "=" +
+						defaultDoubleOutput.format(safeDistance) +
+						"  " + commentFront + "SAFETY CLEARANCE" + commentBack;
+
+					paramLines[lineCount++] = "    " + paramOutput.format(201) + "=" +
+						defaultDoubleOutput.format(depth) +
+						"  " + commentFront + "DEPTH" + commentBack;
+
+					// Parameter 206 Plunging Feedrate
+					// If usePlunging feed rate is not selected then it will use the feed rate for plunging
+					// and if that is not set the it will use the feedrate for cutting
+					paramLines[lineCount] = "    " + paramOutput.format(206) + "=";
+					if (drillHeader.usePlungingFeedrate) {
+						paramLines[lineCount] += defaultDoubleOutput.format(drillHeader.plungingFeedrate);
+					}
+					else {
+						// if no feedrate is given use the plunge or cutting feedrate
+						var plungingFeedrate = feedrates[MOVE_CUTTING];
+
+						if (MOVE_PLUNGE in feedrates) {
+							plungingFeedrate = feedrates[MOVE_PLUNGE];
+						}
+
+						paramLines[lineCount] += defaultDoubleOutput.format(plungingFeedrate);
+					}
+
+					paramLines[lineCount++] += "  " + commentFront + "FEED RATE FOR PLUNGING" + commentBack;
+
+
+					// Parameter 202 Infeed Depth (pecking depth)
+					if (drillHeader.useBottomDwelling) {
+						paramLines[lineCount++] = "    " + paramOutput.format(202) + "=" +
+							defaultDoubleOutput.format(drillHeader.firstDepth) +
+							"  " + commentFront + "INFEED DEPTH" + commentBack;
+					}
+
+					// Parameter 210 Dwell Time at Top
+					if (drillHeader.useBottomDwelling) {
+						paramLines[lineCount++] = "    " + paramOutput.format(210) + "=" +
+							defaultDoubleOutput.format(drillHeader.bottomDwelling) +
+							"  " + commentFront + "DWELL TIME AT TOP" + commentBack;
+					}
+					else {
+						paramLines[lineCount++] = "    " + paramOutput.format(210) + "=" +
+							defaultDoubleOutput.format(0.0) +
+							"  " + commentFront + "DWELL TIME AT TOP" + commentBack;
+					}
+
+
+					// Parameter 203 Surface Coordinate (Reference Plane)
+					paramLines[lineCount++] = "    " + paramOutput.format(203) + "=" +
+						defaultDoubleOutput.format(drillHeader.referencePlane) +
+						"  " + commentFront + "SURFACE COORDINATE" + commentBack;
+
+					// Parameter 204 Safety Clearance (Retract Plane)
+					paramLines[lineCount++] = "    " + paramOutput.format(204) + "=" +
+						defaultDoubleOutput.format(retractDistance) +
+						"  " + commentFront + "2ND SAFETY CLEARANCE" + commentBack;
+
+					// Parameter 212 Decrement (degrssion)
+					paramLines[lineCount++] = "    " + paramOutput.format(212) + "=" +
+						defaultDoubleOutput.format(drillHeader.degression) +
+						"  " + commentFront + "DECREMENT" + commentBack;
+
+
+					// Parameter 213 Breaks (Number of pecks between full retract)
+					paramLines[lineCount++] = "    " + paramOutput.format(213) + "=" +
+						defaultDoubleOutput.format(1) +
+						"  " + commentFront + "BREAKS" + commentBack;
+
+					// Parameter 205 Min. Infeed Depth
+					paramLines[lineCount++] = "    " + paramOutput.format(205) + "=" +
+						defaultDoubleOutput.format(drillHeader.minimumDepth) +
+						"  " + commentFront + "MIN. INFEED DEPTH" + commentBack;
+
+					// Parameter 211 Bottom Dwelling
+					if (drillHeader.useBottomDwelling) {
+						paramLines[lineCount++] = "    " + paramOutput.format(211) + "=" +
+							defaultDoubleOutput.format(drillHeader.bottomDwelling) +
+							"  " + commentFront + "DWELL TIME AT DEPTH" + commentBack;
+					}
+					else {
+						paramLines[lineCount++] = "    " + paramOutput.format(211) + "=" +
+							defaultDoubleOutput.format(0.0) +
+							"  " + commentFront + "DWELL TIME AT DEPTH" + commentBack;
+					}
+
+					// Parameter 208 Retract Feedrate
+					// If usePlunging feed rate is not selected then it will use the feed rate for plunging
+					// and if that is not set the it will use the feedrate for cutting
+					paramLines[lineCount] = "    " + paramOutput.format(208) + "=";
+					if (drillHeader.useRetractFeedrate) {
+						paramLines[lineCount] += defaultDoubleOutput.format(drillHeader.retractFeedrate);
+					}
+					else {
+						// if no feedrate is given use the plunge or cutting feedrate
+						var plungingFeedrate = feedrates[MOVE_CUTTING];
+
+						if (MOVE_PLUNGE in feedrates) {
+							plungingFeedrate = feedrates[MOVE_PLUNGE];
+						}
+
+						paramLines[lineCount] += defaultDoubleOutput.format(plungingFeedrate);
+					}
+					paramLines[lineCount++] += "  " + commentFront + "RETRACTION FEED RATE" + commentBack;
+
+					// Parameter 256 Dist. for chip breaking (pecking retract)
+					paramLines[lineCount++] = "    " + paramOutput.format(256) + "=" +
+						defaultDoubleOutput.format(drillHeader.peckingRetract) +
+						"  " + commentFront + "DIST. FOR CHIP BREAKING" + commentBack;
+
+					for (var lineCounter = 0; lineCounter < lineCount; lineCounter++) {
+						writeln(paramLines[lineCounter]);
+					}
+
+					writeBlock("CYCL CALL");
+
+				} else if (drillHeader.name == "Cycle 201 Reaming") {
+					writeBlock("CYCL DEF 201 REIBEN");
+					var paramLines = {};
+					var lineCount = 0;
+					paramLines[lineCount++] = "    " + paramOutput.format(200) + "=" +
+						defaultDoubleOutput.format(safeDistance) +
+						"  " + commentFront + "SAFETY CLEARANCE" + commentBack;
+
+					paramLines[lineCount++] = "    " + paramOutput.format(201) + "=" +
+						defaultDoubleOutput.format(depth) +
+						"  " + commentFront + "DEPTH" + commentBack;
+
+
+					// Parameter 206 Plunging Feedrate
+					// If usePlunging feed rate is not selected then it will use the feed rate for plunging
+					// and if that is not set the it will use the feedrate for cutting
+					paramLines[lineCount] = "    " + paramOutput.format(206) + "=";
+					if (drillHeader.usePlungingFeedrate) {
+						paramLines[lineCount] += defaultDoubleOutput.format(drillHeader.plungingFeedrate);
+					}
+					else {
+						// if no feedrate is given use the plunge or cutting feedrate
+						var plungingFeedrate = feedrates[MOVE_CUTTING];
+
+						if (MOVE_PLUNGE in feedrates) {
+							plungingFeedrate = feedrates[MOVE_PLUNGE];
+						}
+
+						paramLines[lineCount] += defaultDoubleOutput.format(plungingFeedrate);
+					}
+
+					paramLines[lineCount++] += "  " + commentFront + "FEED RATE FOR PLUNGING" + commentBack;
+
+
+					// Parameter 211 Bottom Dwelling
+					if (drillHeader.useBottomDwelling) {
+						paramLines[lineCount++] = "    " + paramOutput.format(211) + "=" +
+							defaultDoubleOutput.format(drillHeader.bottomDwelling) +
+							"  " + commentFront + "DWELL TIME AT DEPTH" + commentBack;
+					}
+					else {
+						paramLines[lineCount++] = "    " + paramOutput.format(211) + "=" +
+							defaultDoubleOutput.format(0.0) +
+							"  " + commentFront + "DWELL TIME AT DEPTH" + commentBack;
+					}
+
+					// Parameter 208 Retract Feedrate
+					// If usePlunging feed rate is not selected then it will use the feed rate for plunging
+					// and if that is not set the it will use the feedrate for cutting
+					paramLines[lineCount] = "    " + paramOutput.format(208) + "=";
+					if (drillHeader.useRetractFeedrate) {
+						paramLines[lineCount] += defaultDoubleOutput.format(drillHeader.retractFeedrate);
+					}
+					else {
+						// if no feedrate is given use the plunge or cutting feedrate
+						var plungingFeedrate = feedrates[MOVE_CUTTING];
+
+						if (MOVE_PLUNGE in feedrates) {
+							plungingFeedrate = feedrates[MOVE_PLUNGE];
+						}
+
+						paramLines[lineCount] += defaultDoubleOutput.format(plungingFeedrate);
+					}
+
+					paramLines[lineCount++] += "  " + commentFront + "RETRACTION FEED RATE" + commentBack;
+
+					// Parameter 203 Surface Coordinate (Reference Plane)
+					paramLines[lineCount++] = "    " + paramOutput.format(203) + "=" +
+						defaultDoubleOutput.format(drillHeader.referencePlane) +
+						"  " + commentFront + "SURFACE COORDINATE" + commentBack;
+
+					// Parameter 204 Safety Clearance (Retract Plane)
+					paramLines[lineCount++] = "    " + paramOutput.format(204) + "=" +
+						defaultDoubleOutput.format(retractDistance) +
+						"  " + commentFront + "2ND SAFETY CLEARANCE" + commentBack;
+
+					for (var lineCounter = 0; lineCounter < lineCount; lineCounter++) {
+						writeln(paramLines[lineCounter]);
+					}
+
+					writeBlock("CYCL CALL");
+
+				} else if (drillHeader.name == "Cycle 207 CW Rigid Tapping") {
+					writeBlock("CYCL DEF 207 RIGID TAPPING NEW");
+					var paramLines = {};
+					var lineCount = 0;
+					paramLines[lineCount++] = "    " + paramOutput.format(200) + "=" +
+						defaultDoubleOutput.format(safeDistance) +
+						"  " + commentFront + "SAFETY CLEARANCE" + commentBack;
+
+					paramLines[lineCount++] = "    " + paramOutput.format(201) + "=" +
+						defaultDoubleOutput.format(depth) +
+						"  " + commentFront + "DEPTH" + commentBack;
+
+					paramLines[lineCount++] = "    " + paramOutput.format(239) + "=" +
+						defaultDoubleOutput.format(drillHeader.pitch) +
+						"  " + commentFront + "THREAD PITCH" + commentBack;
+
+					// Parameter 203 Surface Coordinate (Reference Plane)
+					paramLines[lineCount++] = "    " + paramOutput.format(203) + "=" +
+						defaultDoubleOutput.format(drillHeader.referencePlane) +
+						"  " + commentFront + "SURFACE COORDINATE" + commentBack;
+
+					// Parameter 204 Safety Clearance (Retract Plane)
+					paramLines[lineCount++] = "    " + paramOutput.format(204) + "=" +
+						defaultDoubleOutput.format(retractDistance) +
+						"  " + commentFront + "2ND SAFETY CLEARANCE" + commentBack;
+
+					for (var lineCounter = 0; lineCounter < lineCount; lineCounter++) {
+						writeln(paramLines[lineCounter]);
+					}
+
+					writeBlock("CYCL CALL");
+
+				} else if (drillHeader.name == "Cycle 207 CCW Rigid Tapping") {
+					writeBlock("CYCL DEF 207 RIGID TAPPING NEW");
+					var paramLines = {};
+					var lineCount = 0;
+					paramLines[lineCount++] = "    " + paramOutput.format(200) + "=" +
+						defaultDoubleOutput.format(safeDistance) +
+						"  " + commentFront + "SAFETY CLEARANCE" + commentBack;
+
+					paramLines[lineCount++] = "    " + paramOutput.format(201) + "=" +
+						defaultDoubleOutput.format(depth) +
+						"  " + commentFront + "DEPTH" + commentBack;
+
+					paramLines[lineCount++] = "    " + paramOutput.format(239) + "=" +
+						defaultDoubleOutput.format(-drillHeader.pitch) +
+						"  " + commentFront + "THREAD PITCH" + commentBack;
+
+					// Parameter 203 Surface Coordinate (Reference Plane)
+					paramLines[lineCount++] = "    " + paramOutput.format(203) + "=" +
+						defaultDoubleOutput.format(drillHeader.referencePlane) +
+						"  " + commentFront + "SURFACE COORDINATE" + commentBack;
+
+					// Parameter 204 Safety Clearance (Retract Plane)
+					paramLines[lineCount++] = "    " + paramOutput.format(204) + "=" +
+						defaultDoubleOutput.format(retractDistance) +
+						"  " + commentFront + "2ND SAFETY CLEARANCE" + commentBack;
+
+					for (var lineCounter = 0; lineCounter < lineCount; lineCounter++) {
+						writeln(paramLines[lineCounter]);
+					}
+
+					writeBlock("CYCL CALL");
+
+				} else if (drillHeader.name == "Export Holes") {
+					var f = getFeedrate(MOVE_RAPID);
+					var m = "M99";
+					writeBlock("L", x, y, f, m);
+				}
+		} else // drillFirst
+		{
+			if (drillHeader.name == "BORING") {
+				//var f = getFeedrate(MOVE_RAPID);
+
+				//var x = xOutput.format(inX);
+				//var y = yOutput.format(inY);
+				//var z = zOutput.format(drillHeader.retractPlane);
+
+				//writeBlock("L", x, y, "R", f, "M");
+				//xOutput.reset();
+				//yOutput.reset();
+
+				var garbage = xOutput.format(-99999);
+				garbage = yOutput.format(-99999);
+				garbage = zOutput.format(-99999);
+
+				onLinearXY(inX,inY,MOVE_RAPID);
+				var newZ = drillHeader.retractPlane
+					//writeBlock("L", z, "R", f, "M99");
+					onLinearZ(newZ,MOVE_RAPID);
+			}
+			else if (drillHeader.name == "UDSPAANING")
+			{
+				var f = getFeedrate(MOVE_RAPID);
+
+				//var x = xOutput.format(x);
+				//var y = yOutput.format(y);
+				zOutput.reset();
+				//xOutput.reset();
+
+				//z = zOutput.format(drillHeader.retractPlane);
+				//var x = xOutput.format(inX);
+				//var y = yOutput.format(inY);
+
+				//writeBlock("L", x, y, "R", f, "M");
+				onLinearXY(inX, inY, MOVE_RAPID);
+				//writeBlock("L", z, "R", f, "M");
+
+				//writeBlock("L", x, "R", f, "M");
+
+				//z = zOutput.format(drillHeader.retractPlane + drillHeader.referencePlane - drillHeader.safeDistance);
+				z = zOutput.format(drillHeader.retractPlane);
+
+				writeBlock("L", z, "R", f, "M99");
+			}
+			else if (drillHeader.name == "UNIVERSAL")
+			{
+				var sd = drillingOutput.format(drillHeader.safeDistance - drillHeader.referencePlane);
+				var depth = drillingOutput.format(drillHeader.endDepth);
+				var pFr = drillingOutput.format(drillHeader.plungingFeedrate);
+				var firstDepth = drillingOutput.format(drillHeader.firstDepth);
+				var topDwell = drillingOutput.format(drillHeader.topDwelling);
+				//var surface = drillingOutput.format(drillHeader.referencePlane - drillHeader.endDepth - drillHeader.retractPlane);
+				var surface = drillingOutput.format(drillHeader.retractPlane - drillHeader.referencePlane);
+				var sd2 = drillingOutput.format(drillHeader.referencePlane);
+				var peckClearance = drillingOutput.format(drillHeader.peckClearance);
+				var peck2 = drillingOutput.format(drillHeader.peck2);
+				var peckAmount = drillingOutput.format(0);
+				var BottomDwell = drillingOutput.format(drillHeader.bottomDwelling);
+				var retractFeedrate = drillingOutput.format(9999);
+				var peck = drillingOutput.format(0.25);
+
+				cycle203(sd, depth, pFr, firstDepth, topDwell, surface, sd2, peck2, peckClearance, peckAmount, BottomDwell, retractFeedrate, peck);
+
+				xOutput.reset();
+				yOutput.reset();
+
+				var newX = xOutput.format(inX);
+				var newY = yOutput.format(inY);
+
+				writeBlock("L", newX, newY, f, "M99");
+			}
+			else if (drillHeader.name == "GEVIND")
+			{
+				onLinearXY(inX, inY, MOVE_RAPID);
+				zOutput.reset();
+				z = zOutput.format(drillHeader.retractPlane + drillHeader.referencePlane - drillHeader.safeDistance);
+				writeBlock("L", z, "R", f, "M99");
+			}
+			else if (drillHeader.name == "ROERHUL") {
+				writeBlock(";", "Roerhulscyklus");
+
+				//var sc = drillingOutput.format(drillHeader.shiftClearance);
+				//writeBlock(sc);
+				onLinearXY(inX, inY, MOVE_RAPID);
+				var newZ = drillHeader.endDepth + drillHeader.peck2;
+				onLinearZ(newZ,MOVE_RAPID);
+				newZ = drillHeader.endDepth + drillHeader.peck2 - drillHeader.peckClearance;
+				onLinearZ(newZ, MOVE_PLUNGE);
+				newZ = drillHeader.endDepth + drillHeader.peckClearance;
+				onLinearZ(newZ, MOVE_RAPID);
+				newZ = drillHeader.endDepth;
+				onLinearZ(newZ, MOVE_PLUNGE);
+				newZ = drillHeader.retractPlane;
+				onLinearZ(newZ, MOVE_RAPID);
+			}
+			else if (drillHeader.name == "MISC1")
+			{
+				onLinearXY(inX, inY, MOVE_RAPID);
+				newZ = drillHeader.endDepth;
+				onLinearZ(newZ, MOVE_PLUNGE);
+				newZ = drillHeader.retractPlane;
+				onLinearZ(newZ, MOVE_RAPID);
+			}
+			else if (drillHeader.name == "MISC2")
+			{
+				onLinearXY(inX, inY, MOVE_RAPID);
+				newZ = drillHeader.endDepth;
+				onLinearZ(newZ, MOVE_PLUNGE);
+				newZ = drillHeader.retractPlane;
+				onLinearZ(newZ, MOVE_RAPID);
+			}
+			else if (drillHeader.name != "Drilling") {
+				var f = getFeedrate(MOVE_RAPID);
+				var m = "M99";
+				writeBlock("L", x, y, f, m);
+			}
+		}
+	} // isLonghand
+
+	// The longhand routines are stored in this section.
+	// Please notice that the longhand routines normally
+	// doesn't write any output in onHeader and onFooter
+	if (drillHeader.name == "Drilling") {
+		// This drilling routine will do the following moves for each hole
+		// Move to the X,Y position in rapid
+		// Move down to the retract plane in rapid (Only the first hole)
+		// Move down to the safe distance in rapid
+		// Move down to the hole depth in feed
+		// Move to the safe distance in feed
+		// Move to the retract height in rapid
+
+		// This holds the safe distance in absolute coordinates
+		var absSafeDistance = drillHeader.safeDistance;
+		if (!drillHeader.safeDistanceIsAbsolute) {
+			absSafeDistance = drillHeader.referencePlane + drillHeader.safeDistance;
+		}
+
+		// Format the safe Distance for output
+		var zSafeDistance = zOutput.format(absSafeDistance);
+
+		// x and y are formatted at the start of the function
+		// Move to the correct X,Y coordinates
+		onLinearXY(x, y, MOVE_RAPID);
+
+		// We only move down to the retract height for the first hole
+		if (drillIsFirst) {
+			drillIsFirst = false;
+			onLinearZ(z, MOVE_RAPID);
+		}
+
+		// Move from retract height to safe distance
+		onLinearZ(zSafeDistance, MOVE_RAPID);
+
+		var zDepth = zOutput.format(depth); // Format the end depth for output
+
+		// Move from safe distance to the end depth
+		onLinearZ(zDepth, MOVE_PLUNGE);
+
+		// Retract to the safe distance
+		onLinearZ(zSafeDistance, MOVE_PLUNGE);
+
+		var zRetractPlane = zOutput.format(drillHeader.retractPlane);
+
+		// Retract from safe distance to the retract height
+		onLinearZ(zRetractPlane, MOVE_RAPID);
+	}
+}
+
+function onDrillingFooter() {
+
+	if (drillHeader.name == "UDSPAANING") {
+		//var f = getFeedrate(MOVE_RAPID);
+
+		//zOutput.reset();
+		//z = zOutput.format(drillHeader.retractPlane);
+		//writeBlock("L", x, y, "R", f, "M");
+		//writeBlock("L", z, "R", f, "M");
+	}
+}
+
+function getParameter(name) {
+	if (!(name in propertyNames)) {
+		throw new Error(name + " not a known property");
+	}
+	if (!(name in globals)) {
+		throw new Error(name + " not yet set");
+	}
+	return globals[name];
+}
+
+function setParameter(name, value) {
+	if (!(name in propertyNames)) {
+		throw new Error(name + " not a known property");
+	}
+	globals[name] = value;
+}
+
+function setStock(stock) {
+
+	stockXMin = stockXOutput.format(stock.minX);
+	stockYMin = stockYOutput.format(stock.minY);
+	stockZMin = stockZOutput.format(stock.minZ);
+
+	stockXOutput.reset();
+	stockYOutput.reset();
+	stockZOutput.reset();
+
+	stockXMax = stockXOutput.format(stock.maxX);
+	stockYMax = stockYOutput.format(stock.maxY);
+	stockZMax = stockZOutput.format(stock.maxZ);
+}
+
+
+function setFeedrate(movement, feedrate) {
+	if (Math.round(feedrate) == -1) {
+
+	} else {
+		feedrates[movement] = Math.round(feedrate);
+	}
+}
+
+function cyclDef17(distance, depth, stign)
+{
+	writeBlock("CYCL DEF 17.0 GEVIND");
+	writeBlock("CYCL DEF 17.1 AFST.", distance);
+	writeBlock("CYCL DEF 17.2 DYBDE", depth);
+	writeBlock("CYCL DEF 17.3 STIGN", stign);
+}
+
+
+function cycle203(sd, depth, pFr, firstDepth, topDwell, surface, sd2, peck2, peckClearance, peckAmount, BottomDwell, retractFeedrate, peck)
+{
+	writeBlock("CYCL DEF 203 UNIVERSAL BORING");
+	writeBlock("Q200=" + sd, "; SIKKERHEDS-AFSTAND");
+	writeBlock("Q201=" + depth, "; DYBDE");
+	writeBlock("Q206=" + pFr, "; TILSPAENDING DYBDE");
+	writeBlock("Q202=" + firstDepth, "; INDSTILLINGS-DYBDE");
+	writeBlock("Q210=" + topDwell, "; DVAELETID OPPE");
+	writeBlock("Q203=" + surface, "; OVERFLADE");
+	writeBlock("Q204=" + sd2, "; 2. SIKKERHEDS-AFST.");
+	writeBlock("Q212=" + peck2, "; REDUKTION FREM");
+	writeBlock("Q213=" + peckAmount, "; SPAANDBRUD ANTAL");
+	writeBlock("Q205=" + peckClearance, " ; MIN FREMRYK DYBDE.");
+	writeBlock("Q211=" + BottomDwell, "; DVAELETID NEDE");
+	writeBlock("Q208=" + retractFeedrate, "; TILSPENDING-TILBAGE");
+	writeBlock("Q256=" + peck, " ; UDK-VED-SPAANBRUD");
+}
+
+function label0()
+{
+	writeBlock(commentFront,"LBL","0");
+}
+
+function label1()
+{
+	writeBlock(commentFront, "LBL", "1");
+}
+
+function label2()
+{
+	writeBlock(commentFront, "LBL", "2");
+}
+
+function setPlane(newPlane)
+{
+	plane = planeOutput.format(newPlane);
+}

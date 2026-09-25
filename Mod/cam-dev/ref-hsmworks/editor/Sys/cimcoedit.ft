@@ -1,0 +1,16 @@
+APPLICATION "cimco_integration.mcedit"
+FUNC_DLL "Chooks\cimcoedit.dll"
+RES_DLL "SAME"
+CATEGORY "CIMCO Edit"
+
+FUNCTION CPP "m_main"
+  SBMP 10
+  LBMP 11
+  TIP 10
+END_FUNCTION
+
+FUNCTION CPP "m_about"
+  SBMP 20
+  LBMP 21
+  TIP 20
+END_FUNCTION

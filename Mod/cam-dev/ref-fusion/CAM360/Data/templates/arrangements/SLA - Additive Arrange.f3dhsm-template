@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<template-document xmlns="http://www.hsmworks.com/namespace/hsmworks/document/template" version="1.0">
+
+  <user-description>Arrangment Type = 2D Arrange (True Shape)
+Priority Type = Volume
+Placement: Center
+Platform clearance = 7 mm
+Frame Width = 5 mm
+Ceiling Clearence = 2 mm
+Voxel Size = 2 mm
+Object Spacing = 6 mm
+Rotation = 90 degree increments in Z
+
+Version: 01
+Date: 06/14/2025</user-description>
+
+  <user-notes></user-notes>
+
+  <iconID id="0"/>
+
+  <template description="Additive Arrange" strategy="additive_arrange_strategy" unit="millimeters" version="166">
+    <parameter expression="'none'" name="featureOperationId"/>
+    <parameter expression="true" name="arrange_enable3DArrange"/>
+    <parameter expression="false" name="arrange_default3D"/>
+    <parameter expression="true" name="arrange_enable_mcpacker"/>
+    <parameter expression="false" name="arrange_doToolpathGeneration"/>
+    <parameter expression="3." name="platform_clearance_machinevalue"/>
+    <parameter expression="5." name="frame_width_machinevalue"/>
+    <parameter expression="5." name="ceiling_clearance_machinevalue"/>
+    <parameter expression="(arrange_enable3DArrange == true) &amp;&amp; (arrange_default3D == true)? 'Pack3D' : 'Pack2D'" name="arrange_arrangement_type"/>
+    <parameter expression="'priority_volume'" name="arrange_priority_type"/>
+    <parameter expression="'arrange_sweetspot_center'" name="arrange_sweetspot_option"/>
+    <parameter expression="true" name="arrangeTargets">
+      <CadMultiComponent name="cadobject">
+        <CadArrangeComponent>
+          <Parameters>
+            <Parameter expression="true" name="arrange_component_use_global_quantity"/>
+            <Parameter expression="1" name="arrange_component_quantity"/>
+            <Parameter expression="'medium'" name="arrange_component_priority_options"/>
+            <Parameter expression="'global'" name="arrange_component_rotation"/>
+            <Parameter expression="'global'" name="arrange_component_rotation_x"/>
+            <Parameter expression="45 deg" name="arrange_component_rotation_x_custom"/>
+            <Parameter expression="'global'" name="arrange_component_rotation_y"/>
+            <Parameter expression="45 deg" name="arrange_component_rotation_y_custom"/>
+            <Parameter expression="'global'" name="arrange_component_rotation_z"/>
+            <Parameter expression="45 deg" name="arrange_component_rotation_z_custom"/>
+          </Parameters>
+        </CadArrangeComponent>
+      </CadMultiComponent>
+    </parameter>
+    <parameter expression="false" name="arrange_copies_created"/>
+    <parameter expression="1" name="arrange_global_quantity"/>
+    <parameter expression="true" name="arrange_rotation_group"/>
+    <parameter expression="'arrange_rotation_none'" name="arrange_rotation_x"/>
+    <parameter expression="45 deg" name="arrange_rotation_x_custom"/>
+    <parameter expression="'arrange_rotation_none'" name="arrange_rotation_y"/>
+    <parameter expression="45 deg" name="arrange_rotation_y_custom"/>
+    <parameter expression="'arrange_rotation_90'" name="arrange_rotation_z"/>
+    <parameter expression="45 deg" name="arrange_rotation_z_custom"/>
+    <parameter expression="0" name="arrange_mc_quality"/>
+    <parameter expression="'arbitrary'" name="arrange_mc_partRotation"/>
+    <parameter expression="false" name="arrange_mc_startfromposition"/>
+    <parameter expression="'unselected_move_outside'" name="arrange_unselected_components_option"/>
+    <parameter expression="7mm" name="arrange_platform_clearance"/>
+    <parameter expression="5 mm" name="arrange_frame_width"/>
+    <parameter expression="2 mm" name="arrange_ceiling_clearance"/>
+    <parameter expression="6mm" name="arrange_object_spacing"/>
+    <parameter expression="2.0mm" name="arrange_voxelsize"/>
+    <parameter expression="'SLA_EBPA'" name="additiveMachineTechnology"/>
+    <parameter expression="false" name="associatedView"/>
+  </template>
+
+</template-document>

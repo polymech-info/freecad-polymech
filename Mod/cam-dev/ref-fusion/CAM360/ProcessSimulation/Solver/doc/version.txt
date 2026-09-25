@@ -1,0 +1,4 @@
+git sha = 1eccc858
+version = v26.1.11
+build   = 26.1.0.92
+date    = Fri Sep 19 13:34:00 CUT 2025

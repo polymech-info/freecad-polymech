@@ -1,0 +1,1888 @@
+{
+  "$comment": "Automatically generated schema. Do not manually edit!!! If you want to update the schema go into pim-mono/sdks/pim-inspection-sdk and run 'npm run generateValidationSchema'.",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/InspectionData",
+  "definitions": {
+    "InspectionData": {
+      "type": "object",
+      "properties": {
+        "configuredDesign": {
+          "$ref": "#/definitions/ConfiguredDesignInspectionGraph"
+        },
+        "design": {
+          "$ref": "#/definitions/IInspectionGraph"
+        }
+      },
+      "additionalProperties": false,
+      "description": "Top level interface for the inspection data stored in a document. This can either contain a single inspection graph for a single design document or a map of inspection graphs for each configuration for a configured design document."
+    },
+    "ConfiguredDesignInspectionGraph": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/definitions/IInspectionGraph"
+      },
+      "description": "Interface for a the asset graph of a configured design document. Each configuration can contain its own inspection graph."
+    },
+    "IInspectionGraph": {
+      "type": "object",
+      "properties": {
+        "instructions": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/IInspectionInstruction"
+          }
+        },
+        "parts": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/IInspectionPart"
+          }
+        },
+        "results": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/IInspectionResult"
+          }
+        },
+        "contains": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "generated": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "observed": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/IObservedRelationship"
+            }
+          }
+        },
+        "partAlignments": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "item": {
+                "$ref": "#/definitions/IInspectionPartAlignment"
+              },
+              "part": {
+                "type": "string"
+              },
+              "instructions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "item",
+              "instructions"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false,
+      "description": "Interface describes an asset graph for inspection parts, instructions, results and partAlignments. Contains relationships are defined as adjacency lists from part reference id to result reference id. GeneratedBy relationships are defined under the generated property as adjacency lists from instruction reference id to result reference id."
+    },
+    "IInspectionInstruction": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/IInspectionInstructionManualMeasure"
+        },
+        {
+          "$ref": "#/definitions/IInspectionInstructionMacroMeasure"
+        },
+        {
+          "$ref": "#/definitions/IInspectionInstructionFittingMeasure"
+        },
+        {
+          "$ref": "#/definitions/IInspectionInstructionPathMeasure"
+        }
+      ]
+    },
+    "IInspectionInstructionManualMeasure": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "comment": {
+          "type": "string"
+        },
+        "camera": {
+          "$ref": "#/definitions/ICamera"
+        },
+        "manualInspectionType": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "$ref": "#/definitions/ManualInspectionType"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "feature": {
+          "$ref": "#/definitions/IValueFeature"
+        },
+        "distanceType": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "$ref": "#/definitions/DistanceType"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "manualMeasureMethod": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "$ref": "#/definitions/ManualMeasureMethod"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "manualInspectionType",
+        "name",
+        "type"
+      ],
+      "additionalProperties": false
+    },
+    "ICamera": {
+      "type": "object",
+      "properties": {
+        "position": {
+          "$ref": "#/definitions/Point"
+        },
+        "target": {
+          "$ref": "#/definitions/Point"
+        },
+        "up": {
+          "$ref": "#/definitions/Vector"
+        },
+        "width": {
+          "type": "number"
+        },
+        "height": {
+          "type": "number"
+        },
+        "unit": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "$ref": "#/definitions/InspectionUnit"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "position",
+        "target",
+        "up",
+        "width",
+        "height",
+        "unit"
+      ],
+      "additionalProperties": false
+    },
+    "Point": {
+      "type": "object",
+      "properties": {
+        "x": {
+          "type": "number"
+        },
+        "y": {
+          "type": "number"
+        },
+        "z": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "x",
+        "y",
+        "z"
+      ],
+      "additionalProperties": false
+    },
+    "Vector": {
+      "type": "object",
+      "properties": {
+        "x": {
+          "type": "number"
+        },
+        "y": {
+          "type": "number"
+        },
+        "z": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "x",
+        "y",
+        "z"
+      ],
+      "additionalProperties": false
+    },
+    "InspectionUnit": {
+      "type": "number",
+      "enum": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "ManualInspectionType": {
+      "type": "number",
+      "enum": [
+        0,
+        1,
+        2
+      ]
+    },
+    "IValueFeature": {
+      "type": "object",
+      "properties": {
+        "featureStatus": {
+          "$ref": "#/definitions/FeatureStatus"
+        },
+        "actual": {
+          "type": "number"
+        },
+        "nominal": {
+          "type": "number"
+        },
+        "deviation": {
+          "type": "number"
+        },
+        "error": {
+          "type": "number"
+        },
+        "tolerance": {
+          "$ref": "#/definitions/PlusMinusTolerance"
+        },
+        "unit": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "$ref": "#/definitions/InspectionUnit"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "dimensionGraphics": {
+          "$ref": "#/definitions/IDimensionGraphics"
+        }
+      },
+      "required": [
+        "featureStatus",
+        "nominal",
+        "tolerance",
+        "unit"
+      ],
+      "additionalProperties": false
+    },
+    "FeatureStatus": {
+      "type": "number",
+      "enum": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "PlusMinusTolerance": {
+      "type": "object",
+      "properties": {
+        "bounds": {
+          "$ref": "#/definitions/MeasureBounds"
+        },
+        "class": {
+          "$ref": "#/definitions/LimitsAndFits"
+        }
+      },
+      "additionalProperties": false,
+      "description": "Stores tolerance for a nominal value as a set of plus and minus deviations (bounds to that tolerance) or tolerance class. Bounds and tolerance class are mutually exclusive."
+    },
+    "MeasureBounds": {
+      "type": "object",
+      "properties": {
+        "lower": {
+          "$ref": "#/definitions/Measure"
+        },
+        "upper": {
+          "$ref": "#/definitions/Measure"
+        }
+      },
+      "required": [
+        "lower",
+        "upper"
+      ],
+      "additionalProperties": false,
+      "description": "A combined upper and lower bound for a value"
+    },
+    "Measure": {
+      "type": "object",
+      "properties": {
+        "nominalValue": {
+          "type": "number"
+        },
+        "unit": {
+          "$ref": "#/definitions/UnitType"
+        },
+        "formatType": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "nominalValue",
+        "unit"
+      ],
+      "additionalProperties": false,
+      "description": "Represents a measure value (nominal value with unit)"
+    },
+    "UnitType": {
+      "type": "number",
+      "enum": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "LimitsAndFits": {
+      "type": "object",
+      "properties": {
+        "deviation": {
+          "type": "string"
+        },
+        "grade": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "deviation",
+        "grade"
+      ],
+      "additionalProperties": false
+    },
+    "IDimensionGraphics": {
+      "type": "object",
+      "properties": {
+        "origin": {
+          "$ref": "#/definitions/Point"
+        },
+        "orientation": {
+          "$ref": "#/definitions/Matrix"
+        },
+        "labelRight": {
+          "type": "number"
+        },
+        "labelUp": {
+          "type": "number"
+        },
+        "modelToSnap": {
+          "$ref": "#/definitions/Matrix"
+        },
+        "topPoint": {
+          "$ref": "#/definitions/Point"
+        },
+        "bottomPoint": {
+          "$ref": "#/definitions/Point"
+        },
+        "color": {
+          "type": "number"
+        },
+        "identifier": {
+          "type": "string"
+        },
+        "labelOffset": {
+          "type": "number"
+        },
+        "type": {
+          "$ref": "#/definitions/DistanceType"
+        }
+      },
+      "required": [
+        "origin",
+        "orientation"
+      ],
+      "additionalProperties": false
+    },
+    "Matrix": {
+      "type": "object",
+      "properties": {
+        "elements": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        }
+      },
+      "required": [
+        "elements"
+      ],
+      "additionalProperties": false
+    },
+    "DistanceType": {
+      "type": "number",
+      "enum": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "ManualMeasureMethod": {
+      "type": "number",
+      "enum": [
+        0,
+        1,
+        2
+      ]
+    },
+    "IInspectionInstructionMacroMeasure": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "macroProbingStrategy": {
+          "$ref": "#/definitions/MacroProbingStrategy"
+        },
+        "macroProbingType": {
+          "$ref": "#/definitions/MacroProbingType"
+        },
+        "unit": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "$ref": "#/definitions/InspectionUnit"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "toolInfo": {
+          "type": "string"
+        },
+        "sizeTolerance": {
+          "$ref": "#/definitions/PlusMinusTolerance"
+        },
+        "positionTolerance": {
+          "$ref": "#/definitions/PlusMinusTolerance"
+        },
+        "angleTolerance": {
+          "$ref": "#/definitions/PlusMinusTolerance"
+        }
+      },
+      "required": [
+        "macroProbingStrategy",
+        "macroProbingType",
+        "name",
+        "toolInfo",
+        "type",
+        "unit"
+      ],
+      "additionalProperties": false
+    },
+    "MacroProbingStrategy": {
+      "type": "number",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "MacroProbingType": {
+      "type": "number",
+      "enum": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ]
+    },
+    "IInspectionInstructionFittingMeasure": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "fittingProbingType": {
+          "$ref": "#/definitions/FittingProbingType"
+        },
+        "unit": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "$ref": "#/definitions/InspectionUnit"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "toolInfo": {
+          "type": "string"
+        },
+        "formTolerance": {
+          "$ref": "#/definitions/PlusMinusTolerance"
+        },
+        "pointTolerance": {
+          "$ref": "#/definitions/PlusMinusTolerance"
+        },
+        "sizeTolerance": {
+          "$ref": "#/definitions/PlusMinusTolerance"
+        },
+        "positionTolerance": {
+          "$ref": "#/definitions/PlusMinusTolerance"
+        },
+        "angleTolerance": {
+          "$ref": "#/definitions/PlusMinusTolerance"
+        }
+      },
+      "required": [
+        "fittingProbingType",
+        "formTolerance",
+        "name",
+        "toolInfo",
+        "type",
+        "unit"
+      ],
+      "additionalProperties": false
+    },
+    "FittingProbingType": {
+      "type": "number",
+      "enum": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "IInspectionInstructionPathMeasure": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "positions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ISurfacePoint"
+          }
+        },
+        "surfaceOffset": {
+          "type": "number"
+        },
+        "unit": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "$ref": "#/definitions/InspectionUnit"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "toolInfo": {
+          "type": "string"
+        },
+        "tolerance": {
+          "$ref": "#/definitions/PlusMinusTolerance"
+        }
+      },
+      "required": [
+        "name",
+        "positions",
+        "surfaceOffset",
+        "toolInfo",
+        "type",
+        "unit"
+      ],
+      "additionalProperties": false
+    },
+    "ISurfacePoint": {
+      "type": "object",
+      "properties": {
+        "position": {
+          "$ref": "#/definitions/Point"
+        },
+        "normal": {
+          "$ref": "#/definitions/Vector"
+        }
+      },
+      "required": [
+        "position",
+        "normal"
+      ],
+      "additionalProperties": false
+    },
+    "IInspectionPart": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "additionalProperties": false,
+      "description": "JSON format to describe components of an inspection part asset."
+    },
+    "IInspectionResult": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/IInspectionResultPathMeasure"
+        },
+        {
+          "$ref": "#/definitions/IInspectionResultDistanceManualMeasure"
+        },
+        {
+          "$ref": "#/definitions/IInspectionResultPassFailMeasure"
+        },
+        {
+          "$ref": "#/definitions/IInspectionResultTextMeasure"
+        },
+        {
+          "$ref": "#/definitions/IInspectionResultMacroCircleMeasure"
+        },
+        {
+          "$ref": "#/definitions/IInspectionResultMacroPerpendicularDistanceMeasure"
+        },
+        {
+          "$ref": "#/definitions/IInspectionResultMacroRectangleMeasure"
+        },
+        {
+          "$ref": "#/definitions/IInspectionResultMacroPlaneMeasure"
+        },
+        {
+          "$ref": "#/definitions/IInspectionResultMacroAngleMeasure"
+        },
+        {
+          "$ref": "#/definitions/IInspectionResultMacroCornerMeasure"
+        },
+        {
+          "$ref": "#/definitions/IInspectionResultFittingCircleMeasure"
+        },
+        {
+          "$ref": "#/definitions/IInspectionResultFittingPlaneMeasure"
+        }
+      ]
+    },
+    "IInspectionResultPathMeasure": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "importTime": {
+          "type": "string"
+        },
+        "recordTime": {
+          "type": "string"
+        },
+        "displayAligned": {
+          "type": "boolean"
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ISurfacePointFeature"
+          }
+        },
+        "calculationType": {
+          "$ref": "#/definitions/CalculationType"
+        }
+      },
+      "required": [
+        "calculationType",
+        "features",
+        "name",
+        "type"
+      ],
+      "additionalProperties": false
+    },
+    "ISurfacePointFeature": {
+      "type": "object",
+      "properties": {
+        "featureStatus": {
+          "$ref": "#/definitions/FeatureStatus"
+        },
+        "center": {
+          "$ref": "#/definitions/Point"
+        },
+        "direction": {
+          "$ref": "#/definitions/Vector"
+        },
+        "nominal": {
+          "$ref": "#/definitions/Point"
+        },
+        "normal": {
+          "$ref": "#/definitions/Vector"
+        },
+        "offset": {
+          "type": "number"
+        },
+        "radius": {
+          "type": "number"
+        },
+        "tolerance": {
+          "$ref": "#/definitions/PlusMinusTolerance"
+        },
+        "unit": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "$ref": "#/definitions/InspectionUnit"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "result": {
+          "$ref": "#/definitions/ISurfacePointResult"
+        },
+        "alignedResult": {
+          "$ref": "#/definitions/ISurfacePointResult"
+        }
+      },
+      "required": [
+        "center",
+        "direction",
+        "featureStatus",
+        "offset",
+        "radius",
+        "tolerance",
+        "unit"
+      ],
+      "additionalProperties": false
+    },
+    "ISurfacePointResult": {
+      "type": "object",
+      "properties": {
+        "contactPoint": {
+          "$ref": "#/definitions/Point"
+        },
+        "delta": {
+          "$ref": "#/definitions/Vector"
+        },
+        "deviation": {
+          "type": "number"
+        },
+        "error": {
+          "type": "number"
+        },
+        "surfacePoint": {
+          "$ref": "#/definitions/Point"
+        },
+        "surfaceNormal": {
+          "$ref": "#/definitions/Vector"
+        }
+      },
+      "required": [
+        "contactPoint",
+        "delta",
+        "deviation",
+        "error",
+        "surfacePoint",
+        "surfaceNormal"
+      ],
+      "additionalProperties": false
+    },
+    "CalculationType": {
+      "type": "number",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "IInspectionResultDistanceManualMeasure": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "importTime": {
+          "type": "string"
+        },
+        "recordTime": {
+          "type": "string"
+        },
+        "manualInspectionType": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "$ref": "#/definitions/ManualInspectionType"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "camera": {
+          "$ref": "#/definitions/ICamera"
+        },
+        "feature": {
+          "$ref": "#/definitions/IValueFeature"
+        },
+        "distanceType": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "$ref": "#/definitions/DistanceType"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "manualMeasureMethod": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "$ref": "#/definitions/ManualMeasureMethod"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "distanceType",
+        "feature",
+        "manualInspectionType",
+        "name",
+        "type"
+      ],
+      "additionalProperties": false
+    },
+    "IInspectionResultPassFailMeasure": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "importTime": {
+          "type": "string"
+        },
+        "recordTime": {
+          "type": "string"
+        },
+        "manualInspectionType": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "$ref": "#/definitions/ManualInspectionType"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "camera": {
+          "$ref": "#/definitions/ICamera"
+        },
+        "feature": {
+          "$ref": "#/definitions/IPassFailFeature"
+        }
+      },
+      "required": [
+        "feature",
+        "manualInspectionType",
+        "name",
+        "type"
+      ],
+      "additionalProperties": false
+    },
+    "IPassFailFeature": {
+      "type": "object",
+      "properties": {
+        "featureStatus": {
+          "$ref": "#/definitions/FeatureStatus"
+        },
+        "pass": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "featureStatus",
+        "pass"
+      ],
+      "additionalProperties": false
+    },
+    "IInspectionResultTextMeasure": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "importTime": {
+          "type": "string"
+        },
+        "recordTime": {
+          "type": "string"
+        },
+        "manualInspectionType": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "$ref": "#/definitions/ManualInspectionType"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "camera": {
+          "$ref": "#/definitions/ICamera"
+        },
+        "feature": {
+          "$ref": "#/definitions/ITextFeature"
+        }
+      },
+      "required": [
+        "feature",
+        "manualInspectionType",
+        "name",
+        "type"
+      ],
+      "additionalProperties": false
+    },
+    "ITextFeature": {
+      "type": "object",
+      "properties": {
+        "featureStatus": {
+          "$ref": "#/definitions/FeatureStatus"
+        },
+        "text": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "featureStatus",
+        "text"
+      ],
+      "additionalProperties": false
+    },
+    "IInspectionResultMacroCircleMeasure": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "importTime": {
+          "type": "string"
+        },
+        "recordTime": {
+          "type": "string"
+        },
+        "macroInspectionType": {
+          "$ref": "#/definitions/MacroInspectionType"
+        },
+        "position": {
+          "$ref": "#/definitions/IPositionFeature"
+        },
+        "diameter": {
+          "$ref": "#/definitions/IValueFeature"
+        },
+        "diameterLabelOrientation": {
+          "$ref": "#/definitions/Matrix"
+        },
+        "drawCurve": {
+          "$ref": "#/definitions/CircularCurve"
+        }
+      },
+      "required": [
+        "diameter",
+        "macroInspectionType",
+        "name",
+        "position",
+        "type"
+      ],
+      "additionalProperties": false
+    },
+    "MacroInspectionType": {
+      "type": "number",
+      "enum": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "IPositionFeature": {
+      "type": "object",
+      "properties": {
+        "featureStatus": {
+          "$ref": "#/definitions/FeatureStatus"
+        },
+        "nominal": {
+          "$ref": "#/definitions/Point"
+        },
+        "actual": {
+          "$ref": "#/definitions/Point"
+        },
+        "deviation": {
+          "type": "number"
+        },
+        "error": {
+          "type": "number"
+        },
+        "tolerance": {
+          "$ref": "#/definitions/PlusMinusTolerance"
+        },
+        "unit": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "$ref": "#/definitions/InspectionUnit"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "featureStatus",
+        "nominal",
+        "tolerance",
+        "unit"
+      ],
+      "additionalProperties": false
+    },
+    "CircularCurve": {
+      "type": "object",
+      "properties": {
+        "range": {
+          "$ref": "#/definitions/ParameterRange"
+        },
+        "center": {
+          "$ref": "#/definitions/Point3"
+        },
+        "normal": {
+          "$ref": "#/definitions/Vector3"
+        },
+        "radius": {
+          "$ref": "#/definitions/Vector3"
+        }
+      },
+      "required": [
+        "center",
+        "normal",
+        "radius",
+        "range"
+      ],
+      "additionalProperties": false,
+      "description": "Circular curve around a given point Has maximum parameter range of 2pi"
+    },
+    "ParameterRange": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "$ref": "#/definitions/ParameterRangeType"
+        },
+        "low": {
+          "type": "number"
+        },
+        "high": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "additionalProperties": false,
+      "description": "Parametric range of a curve or surface, may be infinite or finite."
+    },
+    "ParameterRangeType": {
+      "type": "number",
+      "enum": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "description": "Possible parametric ranges for curves. Infintie is an unbounded curve Finite has upper and lower bound Bound below is infinite in upper direction, but has lower bound Bound above is infinite in lower direction, but has upper bound"
+    },
+    "Point3": {
+      "type": "object",
+      "properties": {
+        "x": {
+          "type": "number"
+        },
+        "y": {
+          "type": "number"
+        },
+        "z": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "x",
+        "y",
+        "z"
+      ],
+      "additionalProperties": false
+    },
+    "Vector3": {
+      "type": "object",
+      "properties": {
+        "x": {
+          "type": "number"
+        },
+        "y": {
+          "type": "number"
+        },
+        "z": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "x",
+        "y",
+        "z"
+      ],
+      "additionalProperties": false
+    },
+    "IInspectionResultMacroPerpendicularDistanceMeasure": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "importTime": {
+          "type": "string"
+        },
+        "recordTime": {
+          "type": "string"
+        },
+        "macroInspectionType": {
+          "$ref": "#/definitions/MacroInspectionType"
+        },
+        "position": {
+          "$ref": "#/definitions/IPositionFeature"
+        },
+        "distance": {
+          "$ref": "#/definitions/IValueFeature"
+        },
+        "labelOrientation": {
+          "$ref": "#/definitions/Matrix"
+        }
+      },
+      "required": [
+        "distance",
+        "macroInspectionType",
+        "name",
+        "position",
+        "type"
+      ],
+      "additionalProperties": false
+    },
+    "IInspectionResultMacroRectangleMeasure": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "importTime": {
+          "type": "string"
+        },
+        "recordTime": {
+          "type": "string"
+        },
+        "macroInspectionType": {
+          "$ref": "#/definitions/MacroInspectionType"
+        },
+        "position": {
+          "$ref": "#/definitions/IPositionFeature"
+        },
+        "length": {
+          "$ref": "#/definitions/IValueFeature"
+        },
+        "width": {
+          "$ref": "#/definitions/IValueFeature"
+        },
+        "labelOrientation": {
+          "$ref": "#/definitions/Matrix"
+        }
+      },
+      "required": [
+        "length",
+        "macroInspectionType",
+        "name",
+        "position",
+        "type",
+        "width"
+      ],
+      "additionalProperties": false
+    },
+    "IInspectionResultMacroPlaneMeasure": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "importTime": {
+          "type": "string"
+        },
+        "recordTime": {
+          "type": "string"
+        },
+        "macroInspectionType": {
+          "$ref": "#/definitions/MacroInspectionType"
+        },
+        "surfacePosition": {
+          "$ref": "#/definitions/ISurfacePositionFeature"
+        }
+      },
+      "required": [
+        "macroInspectionType",
+        "name",
+        "surfacePosition",
+        "type"
+      ],
+      "additionalProperties": false
+    },
+    "ISurfacePositionFeature": {
+      "type": "object",
+      "properties": {
+        "featureStatus": {
+          "$ref": "#/definitions/FeatureStatus"
+        },
+        "nominal": {
+          "$ref": "#/definitions/Point"
+        },
+        "actual": {
+          "$ref": "#/definitions/Point"
+        },
+        "deviation": {
+          "type": "number"
+        },
+        "error": {
+          "type": "number"
+        },
+        "tolerance": {
+          "$ref": "#/definitions/PlusMinusTolerance"
+        },
+        "unit": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "$ref": "#/definitions/InspectionUnit"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "surfaceNormal": {
+          "$ref": "#/definitions/Vector"
+        }
+      },
+      "required": [
+        "featureStatus",
+        "nominal",
+        "surfaceNormal",
+        "tolerance",
+        "unit"
+      ],
+      "additionalProperties": false
+    },
+    "IInspectionResultMacroAngleMeasure": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "importTime": {
+          "type": "string"
+        },
+        "recordTime": {
+          "type": "string"
+        },
+        "macroInspectionType": {
+          "$ref": "#/definitions/MacroInspectionType"
+        },
+        "angle": {
+          "$ref": "#/definitions/IValueFeature"
+        },
+        "unit": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "$ref": "#/definitions/InspectionUnit"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "referencePoint": {
+          "$ref": "#/definitions/Point"
+        },
+        "offsetDirection": {
+          "$ref": "#/definitions/Vector"
+        },
+        "zAxis": {
+          "$ref": "#/definitions/Vector"
+        },
+        "xAxis": {
+          "$ref": "#/definitions/Vector"
+        },
+        "spacing": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "angle",
+        "macroInspectionType",
+        "name",
+        "type",
+        "unit"
+      ],
+      "additionalProperties": false
+    },
+    "IInspectionResultMacroCornerMeasure": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "importTime": {
+          "type": "string"
+        },
+        "recordTime": {
+          "type": "string"
+        },
+        "macroInspectionType": {
+          "$ref": "#/definitions/MacroInspectionType"
+        },
+        "position": {
+          "$ref": "#/definitions/IPositionFeature"
+        },
+        "surfaceNormalX": {
+          "$ref": "#/definitions/Vector"
+        },
+        "surfaceNormalY": {
+          "$ref": "#/definitions/Vector"
+        },
+        "isInnerCorner": {
+          "type": "boolean"
+        },
+        "probeDiameter": {
+          "type": "number"
+        },
+        "nominalTop": {
+          "$ref": "#/definitions/Point"
+        },
+        "distanceToContact": {
+          "type": "number"
+        },
+        "toolViewToModel": {
+          "$ref": "#/definitions/Matrix"
+        }
+      },
+      "required": [
+        "macroInspectionType",
+        "name",
+        "position",
+        "type"
+      ],
+      "additionalProperties": false
+    },
+    "IInspectionResultFittingCircleMeasure": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "importTime": {
+          "type": "string"
+        },
+        "recordTime": {
+          "type": "string"
+        },
+        "fittingInspectionType": {
+          "$ref": "#/definitions/FittingInspectionType"
+        },
+        "formProfile": {
+          "$ref": "#/definitions/IFormProfileFeature"
+        },
+        "geometryFittingPoints": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/IGeometryFittingPointFeature"
+          }
+        },
+        "position": {
+          "$ref": "#/definitions/ISurfacePositionFeature"
+        },
+        "diameter": {
+          "$ref": "#/definitions/IValueFeature"
+        },
+        "labelOrientation": {
+          "$ref": "#/definitions/Matrix"
+        },
+        "drawCurve": {
+          "$ref": "#/definitions/CircularCurve"
+        }
+      },
+      "required": [
+        "diameter",
+        "fittingInspectionType",
+        "formProfile",
+        "geometryFittingPoints",
+        "name",
+        "position",
+        "type"
+      ],
+      "additionalProperties": false
+    },
+    "FittingInspectionType": {
+      "type": "number",
+      "enum": [
+        0,
+        1,
+        2
+      ]
+    },
+    "IFormProfileFeature": {
+      "type": "object",
+      "properties": {
+        "featureStatus": {
+          "$ref": "#/definitions/FeatureStatus"
+        },
+        "tolerance": {
+          "$ref": "#/definitions/PlusMinusTolerance"
+        },
+        "calculatedFormProfile": {
+          "type": "number"
+        },
+        "minFormDeviation": {
+          "type": "number"
+        },
+        "maxFormDeviation": {
+          "type": "number"
+        },
+        "unit": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "$ref": "#/definitions/InspectionUnit"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "calculatedFormProfile",
+        "featureStatus",
+        "maxFormDeviation",
+        "minFormDeviation",
+        "tolerance",
+        "unit"
+      ],
+      "additionalProperties": false
+    },
+    "IGeometryFittingPointFeature": {
+      "type": "object",
+      "properties": {
+        "featureStatus": {
+          "$ref": "#/definitions/FeatureStatus"
+        },
+        "probeCenter": {
+          "$ref": "#/definitions/Point"
+        },
+        "direction": {
+          "$ref": "#/definitions/Vector"
+        },
+        "probeRadius": {
+          "type": "number"
+        },
+        "actualContactPoint": {
+          "$ref": "#/definitions/Point"
+        },
+        "theoreticalContactPoint": {
+          "$ref": "#/definitions/Point"
+        },
+        "surfaceNormal": {
+          "$ref": "#/definitions/Vector"
+        },
+        "deviation": {
+          "type": "number"
+        },
+        "error": {
+          "type": "number"
+        },
+        "unit": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "$ref": "#/definitions/InspectionUnit"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "actualContactPoint",
+        "deviation",
+        "direction",
+        "error",
+        "featureStatus",
+        "probeCenter",
+        "probeRadius",
+        "surfaceNormal",
+        "theoreticalContactPoint",
+        "unit"
+      ],
+      "additionalProperties": false
+    },
+    "IInspectionResultFittingPlaneMeasure": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "importTime": {
+          "type": "string"
+        },
+        "recordTime": {
+          "type": "string"
+        },
+        "fittingInspectionType": {
+          "$ref": "#/definitions/FittingInspectionType"
+        },
+        "formProfile": {
+          "$ref": "#/definitions/IFormProfileFeature"
+        },
+        "geometryFittingPoints": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/IGeometryFittingPointFeature"
+          }
+        },
+        "normal": {
+          "$ref": "#/definitions/ISurfaceNormalFeature"
+        },
+        "centroid": {
+          "$ref": "#/definitions/Point"
+        },
+        "boundingCorners": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Point"
+          }
+        }
+      },
+      "required": [
+        "boundingCorners",
+        "centroid",
+        "fittingInspectionType",
+        "formProfile",
+        "geometryFittingPoints",
+        "name",
+        "normal",
+        "type"
+      ],
+      "additionalProperties": false
+    },
+    "ISurfaceNormalFeature": {
+      "type": "object",
+      "properties": {
+        "featureStatus": {
+          "$ref": "#/definitions/FeatureStatus"
+        },
+        "actual": {
+          "$ref": "#/definitions/Vector"
+        },
+        "nominal": {
+          "$ref": "#/definitions/Vector"
+        },
+        "tolerance": {
+          "$ref": "#/definitions/PlusMinusTolerance"
+        },
+        "unit": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "$ref": "#/definitions/InspectionUnit"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "actual",
+        "featureStatus",
+        "nominal",
+        "tolerance",
+        "unit"
+      ],
+      "additionalProperties": false
+    },
+    "IObservedRelationship": {
+      "type": "object",
+      "properties": {
+        "observedId": {
+          "type": "string"
+        },
+        "type": {
+          "$ref": "#/definitions/SourceType"
+        }
+      },
+      "required": [
+        "observedId",
+        "type"
+      ],
+      "additionalProperties": false
+    },
+    "SourceType": {
+      "type": "number",
+      "enum": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "IInspectionPartAlignment": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "alignmentType": {
+          "$ref": "#/definitions/AlignmentType"
+        },
+        "bestFitTransformation": {
+          "$ref": "#/definitions/Matrix"
+        },
+        "bestFitParameters": {
+          "$ref": "#/definitions/IBestFitParameters"
+        },
+        "unit": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "$ref": "#/definitions/InspectionUnit"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "name",
+        "alignmentType",
+        "bestFitParameters",
+        "unit"
+      ],
+      "additionalProperties": false,
+      "description": "JSON format to describe components of an inspection part alignment asset."
+    },
+    "AlignmentType": {
+      "type": "number",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "IBestFitParameters": {
+      "type": "object",
+      "properties": {
+        "bestFitType": {
+          "$ref": "#/definitions/BestFitType"
+        },
+        "xDirection": {
+          "$ref": "#/definitions/Vector"
+        },
+        "yDirection": {
+          "$ref": "#/definitions/Vector"
+        },
+        "zDirection": {
+          "$ref": "#/definitions/Vector"
+        },
+        "rotationalAxis": {
+          "$ref": "#/definitions/Vector"
+        }
+      },
+      "required": [
+        "bestFitType"
+      ],
+      "additionalProperties": false
+    },
+    "BestFitType": {
+      "type": "number",
+      "enum": [
+        0,
+        1,
+        2
+      ]
+    }
+  }
+}

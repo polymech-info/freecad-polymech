@@ -1,0 +1,50 @@
+0  BEGIN PGM contour-600 MM 
+1  BLK FORM 0.1 Z  X+0  Y-501.6  Z-30
+2  BLK FORM 0.2  X+601.6  Y+0  Z+0
+3  ;-------------------------------------
+4  ;Tools
+5  ;  #21 D=20 - ZMIN=-31 - ZMAX=+60 - flat end mill
+6  ;-------------------------------------
+7  ;
+8  * - 2D Contour1
+9  M5
+10 TOOL CALL 21 Z S5000
+11 L M140 MB MAX
+12 M3
+13 L  X+616.8  Y-248.8 R0 FMAX
+14 L  Z+60 R0 FMAX
+15 M8
+16 CYCL DEF 32.0 TOLERANCE
+17 CYCL DEF 32.1
+18 L  Z+5 FMAX
+19 L  Z+2 F333
+20 L  Z-29
+21 CC  X+614.8  Z-29
+22 CP IPA+90 DR+ F1000
+23 L  X+612.8  Z-31
+24 CC  X+612.8  Y-250.8
+25 CP IPA+90 DR+
+26 L  X+610.8  Y-500.8
+27 CC  X+600.8  Y-500.8
+28 CP IPA-90 DR-
+29 L  X+0.8  Y-510.8
+30 CC  X+0.8  Y-500.8
+31 CP IPA-90 DR-
+32 L  X-9.2  Y-0.8
+33 CC  X+0.8  Y-0.8
+34 CP IPA-90 DR-
+35 L  X+600.8  Y+9.2
+36 CC  X+600.8  Y-0.8
+37 CP IPA-90 DR-
+38 L  X+610.8  Y-250.8
+39 CC  X+612.8  Y-250.8
+40 CP IPA+90 DR+
+41 L  X+614.8  Y-252.8
+42 CC  X+614.8  Z-29
+43 CP IPA-90 DR-
+44 L  X+616.8  Z+60 FMAX
+45 M9
+46 M5
+47 L M140 MB MAX
+48 M30
+49 END PGM contour-600 MM 

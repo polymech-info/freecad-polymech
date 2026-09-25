@@ -1,0 +1,839 @@
+{
+    "specification" : [
+        {
+            "key"        : "coolant",
+            "title"      : "Coolant",
+            "description": "",
+            "type"       : "group",
+            "children"   : [
+                    {
+                    "key"        : "coolants",
+                    "title"      : "Coolants",
+                    "description": "",
+                    "type"       : "parent",
+                    "children"   : [
+                        {
+                            "key"        : "flood",
+                            "title"      : "Flood",
+                            "description": "",
+                            "type"       : "coolant",
+                            "visible"    : true
+                        },
+                        {
+                            "key"        : "mist",
+                            "title"      : "Mist",
+                            "description": "",
+                            "type"       : "coolant",
+                            "visible"    : true
+                        },
+                        {
+                            "key"        : "throughTool",
+                            "title"      : "Through Tool",
+                            "description": "",
+                            "type"       : "coolant",
+                            "visible"    : true
+                        },
+                        {
+                            "key"        : "air",
+                            "title"      : "Air",
+                            "description": "",
+                            "type"       : "coolant",
+                            "visible"    : true
+                        },
+                        {
+                            "key"        : "airThroughTool",
+                            "title"      : "Air Through Tool",
+                            "description": "",
+                            "type"       : "coolant",
+                            "visible"    : true
+                        },
+                        {
+                            "key"        : "suction",
+                            "title"      : "Suction",
+                            "description": "",
+                            "type"       : "coolant",
+                            "visible"    : true
+                        },
+                        {
+                            "key"        : "floodMist",
+                            "title"      : "Flood Mist",
+                            "description": "",
+                            "type"       : "coolant",
+                            "visible"    : true
+                        },
+                        {
+                            "key"        : "floodThroughTool",
+                            "title"      : "Flood Through Tool",
+                            "description": "",
+                            "type"       : "coolant",
+                            "visible"    : true
+                        },
+                        {
+                            "key"        : "off",
+                            "title"      : "Off",
+                            "description": "",
+                            "type"       : "coolant",
+                            "visible"    : true
+                        }
+                    ]
+                },
+                {
+                    "key"        : "singleLineCoolant",
+                    "title"      : "Single Line Coolant",
+                    "description": "Specifies to output multiple coolant codes in one line rather than in separate lines.",
+                    "type"       : "boolean",
+                    "visible"    : false
+                }
+            ]
+        },
+        {
+            "key"        : "smoothing",
+            "title"      : "Smoothing",
+            "description": "",
+            "type"       : "group",
+            "children"   : [
+                {
+                    "key"        : "roughing",
+                    "title"      : "Roughing",
+                    "description": "Roughing level for smoothing in automatic mode.",
+                    "type"       : "int",
+                    "visible"    : false
+                },
+                {
+                    "key"        : "semi",
+                    "title"      : "Semi-roughing",
+                    "description": "Semi-roughing level for smoothing in automatic mode.",
+                    "type"       : "int",
+                    "visible"    : false
+                },
+                {
+                    "key"        : "semifinishing",
+                    "title"      : "Semi-finishing",
+                    "description": "Semi-finishing level for smoothing in automatic mode.",
+                    "type"       : "int",
+                    "visible"    : false
+                },
+                {
+                    "key"        : "finishing",
+                    "title"      : "Finishing",
+                    "description": "Finishing level for smoothing in automatic mode.",
+                    "type"       : "int",
+                    "visible"    : false
+                },
+                {
+                    "key"        : "thresholdRoughing",
+                    "title"      : "Roughing Threshold",
+                    "description": "Operations with stock/tolerance above that threshold will use roughing level in automatic mode.",
+                    "type"       : "spatial",
+                    "visible"    : false
+                },
+                {
+                    "key"        : "thresholdSemiFinishing",
+                    "title"      : "Semi-finishing Threshold",
+                    "description": "Operations with stock/tolerance below that threshold will use finishing level in automatic mode.",
+                    "type"       : "spatial",
+                    "visible"    : false
+                },
+                {
+                    "key"        : "thresholdFinishing",
+                    "title"      : "Finishing Threshold",
+                    "description": "Operations with stock/tolerance above finishing and below threshold roughing that threshold will use semi finishing level in automatic mode.",
+                    "type"       : "spatial",
+                    "visible"    : false
+                },
+                {
+                    "key"        : "differenceCriteria",
+                    "title"      : "Difference Criteria",
+                    "description": "Specifies criteria when output smoothing codes.",
+                    "type"       : "stringEnum",
+                    "visible"    : false,
+                    "values"     : [
+                        {"title":"Level", "id":"level"},
+                        {"title":"Tolerence", "id":"tolerence"},
+                        {"title":"Both", "id":"both"}
+                    ]
+                },
+                {
+                    "key"        : "autoLevelCriteria",
+                    "title"      : "Auto Level Criteria",
+                    "description": "Determine levels in automatic mode.",
+                    "type"       : "stringEnum",
+                    "visible"    : false,
+                    "values"     : [
+                        {"title":"Stock", "id":"stock"},
+                        {"title":"Tolerence", "id":"tolerence"}
+                    ]
+                },
+                {
+                    "key"        : "cancelCompensation",
+                    "title"      : "Cancel Compensation",
+                    "description": "Tool length compensation must be canceled prior to changing the smoothing level.",
+                    "type"       : "boolean",
+                    "visible"    : false
+                }
+            ]
+        },
+        {
+            "key"        : "retract",
+            "title"      : "Retract",
+            "description": "",
+            "type"       : "group",
+            "children"   : [
+                {
+                    "key"        : "cancelRotationOnRetracting",
+                    "title"      : "Cancel Rotation On Retracting",
+                    "description": "",
+                    "type"       : "boolean",
+                    "visible"    : false
+                },
+                {
+                    "key"        : "methodXY",
+                    "title"      : "Method XY",
+                    "description": "",
+                    "type"       : "string",
+                    "visible"    : false
+                },
+                {
+                    "key"        : "methodZ",
+                    "title"      : "Method Z",
+                    "description": "",
+                    "type"       : "string",
+                    "visible"    : false
+                },
+                {
+                    "key"        : "useZeroValues",
+                    "title"      : "Use Zero Values",
+                    "description": "",
+                    "type"       : "stringArray",
+                    "visible"    : false
+                },
+                {
+                    "key"        : "homeXY",
+                    "title"      : "Home XY",
+                    "description": "",
+                    "type"       : "parent",
+                    "children"   : [
+                        {
+                            "key"        : "onIndexing",
+                            "title"      : "On Indexing",
+                            "description": "",
+                            "type"       : "homeXY",
+                            "visible"    : false
+                        },
+                        {
+                            "key"        : "onToolChange",
+                            "title"      : "On Tool Change",
+                            "description": "",
+                            "type"       : "homeXY",
+                            "visible"    : false
+                        },
+                        {
+                            "key"        : "onProgramEnd",
+                            "title"      : "On Program End",
+                            "description": "",
+                            "type"       : "homeXY",
+                            "visible"    : false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key"        : "parametricFeeds",
+            "title"      : "Parametric Feeds",
+            "description": "",
+            "type"       : "group",
+            "children"   : [
+                {
+                    "key"        : "firstFeedParameter",
+                    "title"      : "First Feed Parameter",
+                    "description": "",
+                    "type"       : "int",
+                    "visible"    : false
+                },
+                {
+                    "key"        : "feedAssignmentVariable",
+                    "title"      : "Feed Assignment Variable",
+                    "description": "",
+                    "type"       : "string",
+                    "visible"    : false
+                },
+                {
+                    "key"        : "feedOutputVariable",
+                    "title"      : "Feed Output Variable",
+                    "description": "",
+                    "type"       : "string",
+                    "visible"    : false
+                }
+            ]
+        },
+        {
+            "key"        : "unwind",
+            "title"      : "Unwind",
+            "description": "",
+            "type"       : "group",
+            "children"   : [
+                {
+                    "key"        : "method",
+                    "title"      : "Method",
+                    "description": "",
+                    "type"       : "int",
+                    "visible"    : false
+                },
+                {
+                    "key"        : "codes",
+                    "title"      : "Codes",
+                    "description": "",
+                    "type"       : "stringArray",
+                    "visible"    : false
+                },
+                {
+                    "key"        : "workOffsetCode",
+                    "title"      : "Work Offset Code",
+                    "description": "",
+                    "type"       : "string",
+                    "visible"    : false
+                },
+                {
+                    "key"        : "useAngle",
+                    "title"      : "Use Angle",
+                    "description": "",
+                    "type"       : "stringEnum",
+                    "visible"    : false,
+                    "values"     : [
+                        {"title":"True", "id":"true"},
+                        {"title":"Angle Prefix", "id":"anglePrefix"},
+                        {"title":"False", "id":"false"}
+                    ]
+                },
+                {
+                    "key"        : "anglePrefix",
+                    "title"      : "Angle Prefix",
+                    "description": "",
+                    "type"       : "stringArray",
+                    "visible"    : false
+                },
+                {
+                    "key"        : "resetG90",
+                    "title"      : "Reset G90",
+                    "description": "",
+                    "type"       : "boolean",
+                    "visible"    : false
+                }
+            ]
+        },
+        {
+            "key"        : "machineAngles",
+            "title"      : "Machine Angles",
+            "description": "",
+            "type"       : "group",
+            "children"   : [
+                {
+                    "key"        : "controllingAxis",
+                    "title"      : "Controlling Axis",
+                    "description": "",
+                    "type"       : "enum",
+                    "visible"    : true,
+                    "values"     : [
+                        {"title":"A", "id":"a"},
+                        {"title":"B", "id":"b"},
+                        {"title":"C", "id":"c"},
+                        {"title":"ABC", "id":"abc"}
+                    ]
+                },
+                {
+                    "key"        : "type",
+                    "title"      : "Preference Type",
+                    "description": "",
+                    "type"       : "enum",
+                    "visible"    : true,
+                    "values"     : [
+                        {"title":"Preference", "id":"PREFER_PREFERENCE"},
+                        {"title":"Closest", "id":"PREFER_CLOSEST"},
+                        {"title":"Positive", "id":"PREFER_POSITIVE"},
+                        {"title":"Negative", "id":"PREFER_NEGATIVE"},
+                        {"title":"Clockwise", "id":"PREFER_CW"},
+                        {"title":"Counter Clockwise", "id":"PREFER_CCW"}
+                    ]
+                },
+                {
+                    "key"        : "options",
+                    "title"      : "Options",
+                    "description": "",
+                    "type"       : "enum",
+                    "visible"    : true,
+                    "values"     : [
+                        {"title":"None", "id":"ENABLE_NONE"},
+                        {"title":"Reset", "id":"ENABLE_RESET"},
+                        {"title":"WCS", "id":"ENABLE_WCS"},
+                        {"title":"Limits", "id":"ENABLE_LIMITS"},
+                        {"title":"All", "id":"ENABLE_ALL"}
+                    ]
+                }
+            ]
+        },
+        {
+            "key"        : "workPlaneMethod",
+            "title"      : "Work Plane Method",
+            "description": "",
+            "type"       : "group",
+            "children"   : [
+                {
+                    "key"        : "useTiltedWorkplane",
+                    "title"      : "Use Tilted Workplane",
+                    "description": "Specifies that tilted workplanes should be used (ie. G68.2, G254, PLANE SPATIAL, CYCLE800), can be overwritten by property.",
+                    "type"       : "boolean",
+                    "visible"    : true
+                },
+                {
+                    "key"        : "eulerConvention",
+                    "title"      : "Euler Convention",
+                    "description": "Specifies the euler convention (ie EULER_XYZ_R), set to undefined to use machine angles for TWP commands ('undefined' requires machine configuration).",
+                    "type"       : "enum",
+                    "visible"    : true,
+                    "values"     : [
+                        {"title":"None", "id":"undefined"},
+                        {"title":"XZX S", "id":"EULER_XZX_S"},
+                        {"title":"YXY S", "id":"EULER_YXY_S"},
+                        {"title":"ZYZ S", "id":"EULER_ZYZ_S"},
+                        {"title":"XZX R", "id":"EULER_XZX_R"},
+                        {"title":"YXY R", "id":"EULER_YXY_R"},
+                        {"title":"ZYZ R", "id":"EULER_ZYZ_R"},
+
+                        {"title":"XZY S", "id":"EULER_XZY_S"},
+                        {"title":"YXZ S", "id":"EULER_YXZ_S"},
+                        {"title":"ZYX S", "id":"EULER_ZYX_S"},
+                        {"title":"YZX R", "id":"EULER_YZX_R"},
+                        {"title":"ZXY R", "id":"EULER_ZXY_R"},
+                        {"title":"XYZ R", "id":"EULER_XYZ_R"},
+
+                        {"title":"XYX S", "id":"EULER_XYX_S"},
+                        {"title":"YZY S", "id":"EULER_YZY_S"},
+                        {"title":"ZXZ S", "id":"EULER_ZXZ_S"},
+                        {"title":"XYX R", "id":"EULER_XYX_R"},
+                        {"title":"YZY R", "id":"EULER_YZY_R"},
+                        {"title":"ZXZ R", "id":"EULER_ZXZ_R"},
+
+                        {"title":"XYZ S", "id":"EULER_XYZ_S"},
+                        {"title":"YZX S", "id":"EULER_YZX_S"},
+                        {"title":"ZXY S", "id":"EULER_ZXY_S"},
+                        {"title":"ZYX R", "id":"EULER_ZYX_R"},
+                        {"title":"XZY R", "id":"EULER_XZY_R"},
+                        {"title":"YXZ R", "id":"EULER_YXZ_R"}
+                    ]
+                },
+                {
+                    "key"        : "eulerCalculationMethod",
+                    "title"      : "Euler Calculation Method",
+                    "description": "'Machine' adjusts euler angles to match the machines ABC orientation, machine configuration required.",
+                    "type"       : "stringEnum",
+                    "visible"    : true,
+                    "values"     : [
+                        {"title":"Standard", "id":"standard"},
+                        {"title":"Machine", "id":"machine"}
+                    ]
+                },
+                {
+                    "key"        : "cancelTiltFirst",
+                    "title"      : "Cancel Tilt First",
+                    "description": "Cancel tilted workplane prior to WCS (G54-G59) blocks.",
+                    "type"       : "boolean",
+                    "visible"    : false
+                },
+                {
+                    "key"        : "useABCPrepositioning",
+                    "title"      : "Use ABC Prepositioning",
+                    "description": "Position ABC axes prior to tilted workplane blocks.",
+                    "type"       : "boolean",
+                    "visible"    : true
+                },
+                {
+                    "key"        : "forceMultiAxisIndexing",
+                    "title"      : "Force Multi-Axis Indexing",
+                    "description": "Force multi-axis indexing for 3D programs.",
+                    "type"       : "boolean",
+                    "visible"    : false
+                },
+                {
+                    "key"        : "optimizeType",
+                    "title"      : "Optimize Type",
+                    "description": "",
+                    "type"       : "enum",
+                    "visible"    : false,
+                    "values"     : [
+                        {"title":"None", "id":"OPTIMIZE_NONE"},
+                        {"title":"Both", "id":"OPTIMIZE_BOTH"},
+                        {"title":"Tables", "id":"OPTIMIZE_TABLES"},
+                        {"title":"Heads", "id":"OPTIMIZE_HEADS"},
+                        {"title":"Axis", "id":"OPTIMIZE_AXIS"},
+                        {"title":"Undefined", "id":"undefined"}
+                    ]
+                }
+            ]
+        },
+        {
+            "key"        : "subprograms",
+            "title"      : "Subprograms",
+            "description": "",
+            "type"       : "group",
+            "children"   : [
+                {
+                    "key"        : "initialSubprogramNumber",
+                    "title"      : "Initial Subprogram Number",
+                    "description": "",
+                    "type"       : "int",
+                    "visible"    : false
+                },
+                {
+                    "key"        : "minimumCyclePoints",
+                    "title"      : "Minimum Cycle Points",
+                    "description": "",
+                    "type"       : "int",
+                    "visible"    : false
+                },
+                {
+                    "key"        : "format",
+                    "title"      : "Format",
+                    "description": "",
+                    "type"       : "FormatNumber",
+                    "visible"    : false
+                },
+                {
+                    "key"        : "files",
+                    "title"      : "Files",
+                    "description": "",
+                    "type"       : "parent",
+                    "children"    : [
+                        {
+                            "key"        : "extension",
+                            "title"      : "Extension",
+                            "description": "",
+                            "type"       : "string",
+                            "visible"    : false
+                        },
+                        {
+                            "key"        : "prefix",
+                            "title"      : "Prefix",
+                            "description": "",
+                            "type"       : "string",
+                            "visible"    : false
+                        }
+                    ]
+                },
+                {
+                    "key"        : "startBlock",
+                    "title"      : "Start Block",
+                    "description": "",
+                    "type"       : "parent",
+                    "children"    : [
+                        {
+                            "key"        : "files",
+                            "title"      : "Files",
+                            "description": "",
+                            "type"       : "stringArray",
+                            "visible"    : false
+                        },
+                        {
+                            "key"        : "embedded",
+                            "title"      : "Embedded",
+                            "description": "",
+                            "type"       : "stringArray",
+                            "visible"    : false
+                        }
+                    ]
+                },
+                {
+                    "key"        : "endBlock",
+                    "title"      : "End Block",
+                    "description": "",
+                    "type"       : "parent",
+                    "children"    : [
+                        {
+                            "key"        : "files",
+                            "title"      : "Files",
+                            "description": "",
+                            "type"       : "stringArray",
+                            "visible"    : false
+                        },
+                        {
+                            "key"        : "embedded",
+                            "title"      : "Embedded",
+                            "description": "",
+                            "type"       : "stringArray",
+                            "visible"    : false
+                        }
+                    ]
+                },
+                {
+                    "key"        : "callBlock",
+                    "title"      : "Call Block",
+                    "description": "",
+                    "type"       : "parent",
+                    "children"    : [
+                        {
+                            "key"        : "files",
+                            "title"      : "Files",
+                            "description": "",
+                            "type"       : "stringArray",
+                            "visible"    : false
+                        },
+                        {
+                            "key"        : "embedded",
+                            "title"      : "Embedded",
+                            "description": "",
+                            "type"       : "stringArray",
+                            "visible"    : false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key"        : "comments",
+            "title"      : "Comments",
+            "description": "",
+            "type"       : "group",
+            "children"   : [
+                {
+                    "key"        : "permittedCommentChars",
+                    "title"      : "Permitted Comment Chars",
+                    "description": "",
+                    "type"       : "string",
+                    "visible"    : true
+                },
+                {
+                    "key"        : "prefix",
+                    "title"      : "Prefix",
+                    "description": "",
+                    "type"       : "string",
+                    "visible"    : true
+                },
+                {
+                    "key"        : "suffix",
+                    "title"      : "Suffix",
+                    "description": "",
+                    "type"       : "string",
+                    "visible"    : true
+                },
+                {
+                    "key"        : "outputFormat",
+                    "title"      : "Output Format",
+                    "description": "",
+                    "type"       : "stringEnum",
+                    "visible"    : true,
+                    "values"     : [
+                        {"title":"Ignore Case", "id":"ignoreCase"},
+                        {"title":"Upper Case", "id":"upperCase"},
+                        {"title":"Lower Case", "id":"lowerCase"}
+                    ]
+                },
+                {
+                    "key"        : "maximumLineLength",
+                    "title"      : "Maximum Line Length",
+                    "description": "",
+                    "type"       : "int",
+                    "visible"    : true
+                }
+            ]
+        },
+        {
+            "key"        : "probing",
+            "title"      : "Probing",
+            "description": "",
+            "type"       : "group",
+            "children"   : [
+                {
+                    "key"        : "macroCall",
+                    "title"      : "Macro Call",
+                    "description": "",
+                    "type"       : "string",
+                    "visible"    : false
+                },
+                {
+                    "key"        : "probeAngleMethod",
+                    "title"      : "Probe Angle Method",
+                    "description": "",
+                    "type"       : "enum",
+                    "visible"    : false,
+                    "values"     : [
+                        {"title":"Off", "id":"OFF"},
+                        {"title":"Axis Rot", "id":"AXIS_ROT"},
+                        {"title":"G68", "id":"G68"},
+                        {"title":"G54.4", "id":"G54.4"},
+                        {"title":"Undefined", "id":"undefined"}
+                    ]
+                },
+                {
+                    "key"        : "probeAngleVariables",
+                    "title"      : "Probe Angle Variables",
+                    "description": "",
+                    "type"       : "parent",
+                    "children"   : [
+                        {
+                            "key"        : "x",
+                            "title"      : "x",
+                            "description": "",
+                            "type"       : "string",
+                            "visible"    : false
+                        },
+                        {
+                            "key"        : "y",
+                            "title"      : "y",
+                            "description": "",
+                            "type"       : "string",
+                            "visible"    : false
+                        },
+                        {
+                            "key"        : "r",
+                            "title"      : "r",
+                            "description": "",
+                            "type"       : "string",
+                            "visible"    : false
+                        },
+                        {
+                            "key"        : "baseParamG54x4",
+                            "title"      : "Base Param G54x4",
+                            "description": "",
+                            "type"       : "int",
+                            "visible"    : false
+                        },
+                        {
+                            "key"        : "baseParamAxisRot",
+                            "title"      : "Base Param Axis Rot",
+                            "description": "",
+                            "type"       : "int",
+                            "visible"    : false
+                        },
+                        {
+                            "key"        : "method",
+                            "title"      : "Method",
+                            "description": "",
+                            "type"       : "int",
+                            "visible"    : false
+                        }
+                    ]
+                },
+                {
+                    "key"        : "allowIndexingWCSProbing",
+                    "title"      : "Allow Indexing WCS Probing",
+                    "description": "",
+                    "type"       : "boolean",
+                    "visible"    : false
+                }
+            ]
+        },
+        {
+            "key"        : "maximumSequenceNumber",
+            "title"      : "Maximum Sequence Number",
+            "description": "",
+            "type"       : "int",
+            "visible"    : true
+        },
+        {
+            "key"        : "supportsToolVectorOutput",
+            "title"      : "Supports Tool Vector Output",
+            "description": "",
+            "type"       : "boolean",
+            "visible"    : false
+        },
+        {
+            "key"        : "supportsOptionalBlocks",
+            "title"      : "Supports Optional Blocks",
+            "description": "",
+            "type"       : "boolean",
+            "visible"    : false
+        },
+        {
+            "key"        : "outputToolLengthCompensation",
+            "title"      : "Output Tool Length Compensation",
+            "description": "",
+            "type"       : "boolean",
+            "visible"    : false
+        },
+        {
+            "key"        : "outputToolLengthOffset",
+            "title"      : "Output Tool Length Offset",
+            "description": "",
+            "type"       : "boolean",
+            "visible"    : false
+        },
+        {
+            "key"        : "outputToolDiameterOffset",
+            "title"      : "Output Tool Diameter Offset",
+            "description": "",
+            "type"       : "boolean",
+            "visible"    : false
+        },
+        {
+            "key"        : "maximumSpindleRPM",
+            "title"      : "Maximum Spindle RPM",
+            "description": "",
+            "type"       : "int",
+            "visible"    : false
+        },
+        {
+            "key"        : "maximumToolNumber",
+            "title"      : "Maximum Tool Number",
+            "description": "",
+            "type"       : "int",
+            "visible"    : false
+        },
+        {
+            "key"        : "maximumToolLengthOffset",
+            "title"      : "Maximum Tool Length Offset",
+            "description": "",
+            "type"       : "int",
+            "visible"    : false
+        },
+        {
+            "key"        : "maximumToolDiameterOffset",
+            "title"      : "Maximum Tool Diameter Offset",
+            "description": "",
+            "type"       : "int",
+            "visible"    : false
+        },
+        {
+            "key"        : "sequenceNumberPrefix",
+            "title"      : "Sequence Number Prefix",
+            "description": "",
+            "type"       : "string",
+            "visible"    : false
+        },
+        {
+            "key"        : "writeBlockSuffix",
+            "title"      : "Write Block Suffix",
+            "description": "",
+            "type"       : "string",
+            "visible"    : false
+        },
+        {
+            "key"        : "programNumber",
+            "title"      : "Program Number",
+            "description": "",
+            "type"       : "group",
+            "children"   : [
+                {
+                    "key"        : "min",
+                    "title"      : "Min",
+                    "description": "",
+                    "type"       : "int",
+                    "visible"    : false
+                },
+                {
+                    "key"        : "max",
+                    "title"      : "Max",
+                    "description": "",
+                    "type"       : "int",
+                    "visible"    : false
+                },
+                {
+                    "key"        : "reserved",
+                    "title"      : "Max",
+                    "description": "",
+                    "type"       : "intArray",
+                    "visible"    : false
+                }
+            ]
+        }
+    ]
+}

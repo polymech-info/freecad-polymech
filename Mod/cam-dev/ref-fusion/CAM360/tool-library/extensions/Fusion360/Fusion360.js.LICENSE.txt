@@ -1,0 +1,219 @@
+/*!
+ * LMV v7.76.0
+ *
+ * Copyright 2022 Autodesk, Inc.
+ * All rights reserved.
+ *
+ * This computer source code and related instructions and comments are the
+ * unpublished confidential and proprietary information of Autodesk, Inc.
+ * and are protected under Federal copyright and state trade secret law.
+ * They may not be disclosed to, copied or used by any third party without
+ * the prior written consent of Autodesk, Inc.
+ *
+ * Autodesk Forge Viewer Usage Limitations:
+ *
+ * The Autodesk Forge Viewer JavaScript must be delivered from an
+ * Autodesk-hosted URL.
+ */
+
+/*! !!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[5].use[2]!../../node_modules/sass-loader/dist/cjs.js!./AnimationToolbar.scss */
+
+/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */
+
+/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */
+
+/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */
+
+/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */
+
+/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */
+
+/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */
+
+/*! ../../node_modules/css-loader/dist/runtime/api.js */
+
+/*! ../../node_modules/css-loader/dist/runtime/noSourceMaps.js */
+
+/*! ../../res/locales/cs/nobundle-animation.loc.json */
+
+/*! ../../res/locales/da/nobundle-animation.loc.json */
+
+/*! ../../res/locales/de/nobundle-animation.loc.json */
+
+/*! ../../res/locales/en-GB/nobundle-animation.loc.json */
+
+/*! ../../res/locales/en/nobundle-animation.loc.json */
+
+/*! ../../res/locales/es/nobundle-animation.loc.json */
+
+/*! ../../res/locales/fr-CA/nobundle-animation.loc.json */
+
+/*! ../../res/locales/fr/nobundle-animation.loc.json */
+
+/*! ../../res/locales/it/nobundle-animation.loc.json */
+
+/*! ../../res/locales/ja/nobundle-animation.loc.json */
+
+/*! ../../res/locales/ko/nobundle-animation.loc.json */
+
+/*! ../../res/locales/nl/nobundle-animation.loc.json */
+
+/*! ../../res/locales/no/nobundle-animation.loc.json */
+
+/*! ../../res/locales/pl/nobundle-animation.loc.json */
+
+/*! ../../res/locales/pt-BR/nobundle-animation.loc.json */
+
+/*! ../../res/locales/ru/nobundle-animation.loc.json */
+
+/*! ../../res/locales/sv/nobundle-animation.loc.json */
+
+/*! ../../res/locales/tr/nobundle-animation.loc.json */
+
+/*! ../../res/locales/zh-HK/nobundle-animation.loc.json */
+
+/*! ../../res/locales/zh-Hans/nobundle-animation.loc.json */
+
+/*! ../../res/locales/zh-Hant/nobundle-animation.loc.json */
+
+/*! ./AnimationLocales */
+
+/*! ./AnimationPanel */
+
+/*! ./AnimationToolbar.scss */
+
+/*!************************************************!*\
+  !*** ./extensions/Fusion360/AnimationPanel.js ***!
+  \************************************************/
+
+/*!**************************************************!*\
+  !*** ./extensions/Fusion360/AnimationLocales.js ***!
+  \**************************************************/
+
+/*!****************************************************!*\
+  !*** ./extensions/Fusion360/AnimationExtension.js ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./extensions/Fusion360/AnimationToolbar.scss ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./res/locales/cs/nobundle-animation.loc.json ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./res/locales/da/nobundle-animation.loc.json ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./res/locales/de/nobundle-animation.loc.json ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./res/locales/en/nobundle-animation.loc.json ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./res/locales/es/nobundle-animation.loc.json ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./res/locales/fr/nobundle-animation.loc.json ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./res/locales/it/nobundle-animation.loc.json ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./res/locales/ja/nobundle-animation.loc.json ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./res/locales/ko/nobundle-animation.loc.json ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./res/locales/nl/nobundle-animation.loc.json ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./res/locales/no/nobundle-animation.loc.json ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./res/locales/pl/nobundle-animation.loc.json ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./res/locales/ru/nobundle-animation.loc.json ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./res/locales/sv/nobundle-animation.loc.json ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./res/locales/tr/nobundle-animation.loc.json ***!
+  \****************************************************/
+
+/*!*****************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
+  \*****************************************************/
+
+/*!*******************************************************!*\
+  !*** ./res/locales/en-GB/nobundle-animation.loc.json ***!
+  \*******************************************************/
+
+/*!*******************************************************!*\
+  !*** ./res/locales/fr-CA/nobundle-animation.loc.json ***!
+  \*******************************************************/
+
+/*!*******************************************************!*\
+  !*** ./res/locales/pt-BR/nobundle-animation.loc.json ***!
+  \*******************************************************/
+
+/*!*******************************************************!*\
+  !*** ./res/locales/zh-HK/nobundle-animation.loc.json ***!
+  \*******************************************************/
+
+/*!*********************************************************!*\
+  !*** ./res/locales/zh-Hans/nobundle-animation.loc.json ***!
+  \*********************************************************/
+
+/*!*********************************************************!*\
+  !*** ./res/locales/zh-Hant/nobundle-animation.loc.json ***!
+  \*********************************************************/
+
+/*!**************************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/noSourceMaps.js ***!
+  \**************************************************************/
+
+/*!***************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/styleDomAPI.js ***!
+  \***************************************************************/
+
+/*!********************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/insertBySelector.js ***!
+  \********************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/styleTagTransform.js ***!
+  \*********************************************************************/
+
+/*!**********************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/insertStyleElement.js ***!
+  \**********************************************************************/
+
+/*!****************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
+  \****************************************************************************/
+
+/*!**********************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js ***!
+  \**********************************************************************************/
+
+/*!***********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[5].use[2]!./node_modules/sass-loader/dist/cjs.js!./extensions/Fusion360/AnimationToolbar.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************/

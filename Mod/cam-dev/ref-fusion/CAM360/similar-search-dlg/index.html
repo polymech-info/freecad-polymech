@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Similar Search</title>
+    <script>
+      /**
+       * Set up the theme background colour based on the query, to avoid
+       * flashing a white background before rendering
+       */
+      function setThemeBackground() {
+        const location = new URL(window.location.toString());
+        let theme = location.searchParams.get('theme') ?? 'light-gray';
+        switch (theme) {
+          case 'dark-blue':
+            console.log('Setting dark-blue background');
+            document.body.style.backgroundColor = '#494f61';
+            break;
+          case 'dark-gray':
+            console.log('Setting dark-gray background');
+            document.body.style.backgroundColor = '#535353';
+            break;
+        }
+      }
+    </script>
+    <script type="module" crossorigin src="./assets/index-CigHlC81.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CFf-NxLN.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      setThemeBackground();
+    </script>
+  </body>
+</html>

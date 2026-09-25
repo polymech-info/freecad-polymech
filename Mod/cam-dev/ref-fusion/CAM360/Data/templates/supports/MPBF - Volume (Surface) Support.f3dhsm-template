@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<template-document xmlns="http://www.hsmworks.com/namespace/hsmworks/document/template" version="1.0">
+  <localizationNameID id="106"/>
+  <localizationDescriptionID id="106"/>
+
+  <user-notes></user-notes>
+
+  <iconID id="0"/>
+
+  <template description="Volume Support" strategy="areavolume_additive_support" unit="millimeters" version="147">
+    <parameter expression="false" name="advancedMode"/>
+    <parameter expression="false" name="betaMode"/>
+    <parameter expression="false" name="alphaMode"/>
+    <parameter expression="false" name="isXpress"/>
+    <parameter expression="true" name="licenseMultiaxis"/>
+    <parameter expression="true" name="license3D"/>
+    <parameter expression="true" name="metric"/>
+    <parameter expression="true" name="isAssemblyDocument"/>
+    <parameter expression="'operation'" name="context"/>
+    <parameter expression="'areavolume_additive_support'" name="strategy"/>
+    <parameter expression="''" name="operation_description"/>
+    <parameter expression="'none'" name="featureOperationId"/>
+    <parameter expression="23.0000001937151" name="surfaceZHigh"/>
+    <parameter expression="10." name="surfaceZLow"/>
+    <parameter expression="104.49999809265137" name="surfaceXLow"/>
+    <parameter expression="145.49999870359898" name="surfaceXHigh"/>
+    <parameter expression="114.49999809265137" name="surfaceYLow"/>
+    <parameter expression="135.49999809265137" name="surfaceYHigh"/>
+    <parameter expression="350." name="stockZHigh"/>
+    <parameter expression="0.0" name="stockZLow"/>
+    <parameter expression="0.0" name="stockXLow"/>
+    <parameter expression="250." name="stockXHigh"/>
+    <parameter expression="0.0" name="stockYLow"/>
+    <parameter expression="250." name="stockYHigh"/>
+    <parameter expression="true" name="useCombinedFilter"/>
+    <parameter expression="false" name="tab_supports_cluster"/>
+    <parameter expression="true" name="group_supports_cluster"/>
+    <parameter expression="true" name="supportTarget">
+      <CadMultiModelWithFaces name="cadobject">
+        <CadModel/>
+      </CadMultiModelWithFaces>
+    </parameter>
+    <parameter expression="39" name="supportCluster_cluster_critical_angle"/>
+    <parameter expression="false" name="group_avoid_cluster"/>
+    <parameter expression="false" name="noSupportTarget"/>
+    <parameter expression="true" name="group_supports_cluster_advanced"/>
+    <parameter expression="0.02 cm²" name="supportCluster_cluster_min_area"/>
+    <parameter expression="10000" name="supportCluster_cluster_max_area"/>
+    <parameter expression="'0'" name="supportCluster_cluster_type"/>
+    <parameter expression="'0'" name="supportCluster_cluster_duplicate"/>
+    <parameter expression="'0'" name="supportCluster_cluster_inner_outer"/>
+    <parameter expression="0.0" name="supportCluster_cluster_min_to_part"/>
+    <parameter expression="100.0" name="supportCluster_cluster_max_to_part"/>
+    <parameter expression="0.0" name="supportCluster_cluster_min_z_value"/>
+    <parameter expression="1e+07 mm" name="supportCluster_cluster_max_z_value"/>
+    <parameter expression="0" name="supportCluster_cluster_min_wall_distance"/>
+    <parameter expression="'1'" name="supportCluster_cluster_facegroup_aware"/>
+    <parameter expression="false" name="supportCluster_cluster_respect_next"/>
+    <parameter expression="3 mm" name="supportCluster_cluster_next_distance"/>
+    <parameter expression="false" name="tab_supports_general"/>
+    <parameter expression="true" name="group_supports_supportproperties_volume_general"/>
+    <parameter expression="'1'" name="supportPropertyVolume_volume_type"/>
+    <parameter expression="0.0" name="supportPropertyVolume_volume_distance_top"/>
+    <parameter expression="0.0" name="supportPropertyVolume_volume_distance_bottom"/>
+    <parameter expression="true" name="group_supports_general"/>
+    <parameter expression="0.05mm" name="supportGeneral_area_anchor_accuracy"/>
+    <parameter expression="0.2mm" name="supportGeneral_area_contur_offset_concave"/>
+    <parameter expression="0.1mm" name="supportGeneral_area_contur_offset_convex"/>
+    <parameter expression="false" name="tab_supports_volumesupportproperties"/>
+    <parameter expression="true" name="group_supports_supportproperties_structure_properties"/>
+    <parameter expression="'3'" name="supportPropertyStructure_macro_structure_density"/>
+    <parameter expression="1.3 mm" name="supportPropertyStructure_structure_width"/>
+    <parameter expression="2.30 mm" name="supportPropertyStructure_structure_height"/>
+    <parameter expression="0.7 mm" name="supportPropertyStructure_structure_interval_width"/>
+    <parameter expression="0.7 mm" name="supportPropertyStructure_structure_interval_height"/>
+    <parameter expression="0.0" name="supportPropertyStructure_structure_max_height"/>
+    <parameter expression="0.0" name="supportPropertyStructure_solid_for_height"/>
+    <parameter expression="true" name="supportPropertyStructure_structure_holes"/>
+    <parameter expression="'0'" name="supportPropertyStructure_structure_type"/>
+    <parameter expression="false" name="group_supports_supportproperties_thickening"/>
+    <parameter expression="0.0" name="supportPropertyStructure_structure_thickening"/>
+    <parameter expression="0.0" name="supportPropertyStructure_structure_thickening_top"/>
+    <parameter expression="0.0" name="supportPropertyStructure_structure_thickening_bottom"/>
+    <parameter expression="false" name="group_supports_supportproperties_fin_use"/>
+    <parameter expression="0.6mm" name="supportPropertyFin_fin_width"/>
+    <parameter expression="0.0" name="supportPropertyFin_fin_dist_support"/>
+    <parameter expression="1.0mm" name="supportPropertyFin_fin_dist_top"/>
+    <parameter expression="1.0mm" name="supportPropertyFin_fin_dist_down"/>
+    <parameter expression="false" name="tab_supports_raster_contour_properties"/>
+    <parameter expression="true" name="group_supports_supportproperties_volume_raster_properties"/>
+    <parameter expression="5.0" name="supportPropertyVolume_volume_structure_rotation"/>
+    <parameter expression="1.5 mm" name="supportPropertyVolume_volume_hatch_distance"/>
+    <parameter expression="true" name="supportPropertyVolume_do_filling"/>
+    <parameter expression="'0'" name="supportPropertyVolume_volume_fill_strategy"/>
+    <parameter expression="true" name="group_supports_supportproperties_volume_contour_properties"/>
+    <parameter expression="1" name="supportPropertyVolume_volume_contour_count"/>
+    <parameter expression="1.0mm" name="supportPropertyVolume_volume_contour_distance"/>
+    <parameter expression="1.0mm" name="supportPropertyVolume_volume_structure_accuracy"/>
+    <parameter expression="true" name="group_supports_supportproperties_structure_fragment"/>
+    <parameter expression="'3'" name="supportPropertyFragment_macro_structure_fragment"/>
+    <parameter expression="20.00 mm" name="supportPropertyFragment_structure_fragment_length"/>
+    <parameter expression="4 mm" name="supportPropertyFragment_volume_fragment_x"/>
+    <parameter expression="4 mm" name="supportPropertyFragment_volume_fragment_y"/>
+    <parameter expression="0.5 mm" name="supportPropertyFragment_volume_fragment_offset_x"/>
+    <parameter expression="0.5 mm" name="supportPropertyFragment_volume_fragment_offset_y"/>
+    <parameter expression="'3'" name="supportPropertyFragment_macro_structure_fragment_gap"/>
+    <parameter expression="supportPropertyFragment_macro_structure_fragment_gap == '0'? 0.4 : supportPropertyFragment_macro_structure_fragment_gap == '1'? 0.8 : 1.5" name="supportPropertyFragment_structure_fragment_gap"/>
+    <parameter expression="0.4 mm" name="supportPropertyFragment_volume_fragment_gap"/>
+    <parameter expression="false" name="tab_supports_supportconnections"/>
+    <parameter expression="true" name="group_supports_supportconnections"/>
+    <parameter expression="true" name="group_supports_supportconnections_top"/>
+    <parameter expression="'3'" name="supportPropertyConnection_macro_structure_connect_type"/>
+    <parameter expression="supportPropertyConnection_macro_structure_connect_type == '1'? '2': supportPropertyConnection_macro_structure_connect_type == '2'? '0': '1'" name="supportPropertyConnection_structure_connect_type"/>
+    <parameter expression="0.2mm" name="supportPropertyConnection_structure_connect_width"/>
+    <parameter expression="supportPropertyConnection_macro_structure_connect_type == '2'? 0.3 : 1.0" name="supportPropertyConnection_structure_connect_height"/>
+    <parameter expression="0.0" name="supportPropertyConnection_structure_connect_gab"/>
+    <parameter expression="0.5mm" name="supportPropertyConnection_structure_connect_strip"/>
+    <parameter expression="2" name="supportPropertyConnection_structure_connect_count"/>
+    <parameter expression="true" name="group_supports_supportconnections_bottom"/>
+    <parameter expression="'3'" name="supportPropertyConnection_macro_structure_connect_down_type"/>
+    <parameter expression="supportPropertyConnection_macro_structure_connect_down_type == '1'? '2': supportPropertyConnection_macro_structure_connect_down_type == '2'? '0': '1'" name="supportPropertyConnection_structure_connect_down_type"/>
+    <parameter expression="0.2mm" name="supportPropertyConnection_structure_connect_down_width"/>
+    <parameter expression="supportPropertyConnection_structure_connect_down_type == '2'? 0.3 : 1.0" name="supportPropertyConnection_structure_connect_down_height"/>
+    <parameter expression="0.0" name="supportPropertyConnection_structure_connect_down_gab"/>
+    <parameter expression="0.5mm" name="supportPropertyConnection_structure_connect_down_strip"/>
+    <parameter expression="1" name="supportPropertyConnection_structure_connect_down_count"/>
+    <parameter expression="true" name="group_supports_supportconnections_platform"/>
+    <parameter expression="'3'" name="supportPropertyConnection_macro_structure_connect_plat_type"/>
+    <parameter expression="supportPropertyConnection_macro_structure_connect_plat_type == '1'? '2': supportPropertyConnection_macro_structure_connect_plat_type == '2'? '0': '1'" name="supportPropertyConnection_structure_connect_plat_type"/>
+    <parameter expression="0.2mm" name="supportPropertyConnection_structure_connect_plat_width"/>
+    <parameter expression="supportPropertyConnection_structure_connect_plat_type == '2'? 0.3 : 1.0" name="supportPropertyConnection_structure_connect_plat_height"/>
+    <parameter expression="0.0" name="supportPropertyConnection_structure_connect_plat_gab"/>
+    <parameter expression="0.5mm" name="supportPropertyConnection_structure_connect_plat_strip"/>
+    <parameter expression="2" name="supportPropertyConnection_structure_connect_plat_count"/>
+    <parameter expression="1" name="supportPropertyConnection_structure_connect_plat_hatches"/>
+    <parameter expression="0.1" name="supportPropertyConnection_structure_connect_plat_distance"/>
+    <parameter expression="true" name="group_supports_supportconnections_by_layer"/>
+    <parameter expression="2mm" name="supportPropertyConnection_by_layer_refinelayer"/>
+    <parameter expression="'0'" name="supportPropertyConnection_by_layer_pintype"/>
+    <parameter expression="0.4mm" name="supportPropertyConnection_by_layer_pinwidth"/>
+    <parameter expression="2mm" name="supportPropertyConnection_by_layer_pindensity"/>
+    <parameter expression="false" name="tab_vol_support_angled"/>
+    <parameter expression="false" name="group_vol_support_angled"/>
+    <parameter expression="0mm" name="supportGeneral_area_angled_positionXOffset"/>
+    <parameter expression="0mm" name="supportGeneral_area_angled_positionYOffset"/>
+    <parameter expression="0mm" name="supportGeneral_area_angled_positionZOffset"/>
+    <parameter expression="false" name="supportGeneral_area_angled_do_tilt"/>
+    <parameter expression="0" name="supportGeneral_area_angled_angle_x"/>
+    <parameter expression="0" name="supportGeneral_area_angled_angle_z"/>
+    <parameter expression="false" name="associatedView"/>
+  </template>
+
+</template-document>

@@ -1,0 +1,967 @@
+<?xml version="1.0" encoding="windows-1256"?>
+<resource CompactMode="1" Language="Arabic (Saudi Arabia)" LANGID="1025">
+	<string id="9000" value="اليوم"/>
+	<string id="9001" value="بلا"/>
+	<string id="9011" value="تأكيد الحذف\nحذف هذا التكرار.\nحذف التكرارات.\nهل تريد حذف عدد تكرارات الموعد بالكامل &quot;&quot;%s&quot;&quot; أم هذا التكرار فقط ؟"/>
+	<string id="9012" value="فتح عنصر متكرر\nفتح هذا التكرار\nفتح هذه السلسلة\n%s هو عبارة عن موعد متكرر. هل تريد فتح هذا التكرار فقط أم مجموعة التكرارات؟"/>
+	<string id="9013" value="من"/>
+	<string id="9014" value="إلى"/>
+	<string id="9015" value="متوفر"/>
+	<string id="9016" value="موافق مبدئياً"/>
+	<string id="9017" value="مشغولة"/>
+	<string id="9018" value="خارج المكتب"/>
+	<string id="9019" value="الأول"/>
+	<string id="9020" value="ثانية"/>
+	<string id="9021" value="ثالث"/>
+	<string id="9022" value="رابع"/>
+	<string id="9023" value="الأخير"/>
+	<string id="9024" value="0 دقائق"/>
+	<string id="9025" value="1 دقائق"/>
+	<string id="9026" value="5 دقائق"/>
+	<string id="9027" value="10 دقائق"/>
+	<string id="9028" value="15 دقيقة"/>
+	<string id="9029" value="30 دقيقة"/>
+	<string id="9030" value="ساعة"/>
+	<string id="9031" value="ساعتان"/>
+	<string id="9032" value="3 ساعات"/>
+	<string id="9033" value="4 ساعات"/>
+	<string id="9034" value="5 ساعات"/>
+	<string id="9035" value="6 ساعات"/>
+	<string id="9036" value="7 ساعات"/>
+	<string id="9037" value="8 ساعات"/>
+	<string id="9038" value="9 ساعات"/>
+	<string id="9039" value="10 ساعات"/>
+	<string id="9040" value="11 ساعة"/>
+	<string id="9041" value="18 ساعة"/>
+	<string id="9042" value="0,5 أيام"/>
+	<string id="9043" value="يوم"/>
+	<string id="9044" value="يومان"/>
+	<string id="9045" value="3 أيام"/>
+	<string id="9046" value="أسبوع"/>
+	<string id="9047" value="أسبوعان"/>
+	<string id="9048" value="دقيقة/دقائق"/>
+	<string id="9049" value="ساعة"/>
+	<string id="9050" value="يوم/أيام"/>
+	<string id="9051" value="أسبوع"/>
+	<string id="9052" value="دقيقة"/>
+	<string id="9053" value="ت"/>
+	<string id="9054" value="ح"/>
+	<string id="9055" value="د"/>
+	<string id="9056" value="‏‏القيمة"/>
+	<string id="9057" value="ستفقد أية استثناءات مقترنة بهذا الموعد المتكرر. إذا كان أي من هذه الاستثناءات عبارة عن اجتماعات، فلن يتم إعلام الحضور. هل أنت موافق؟"/>
+	<string id="9058" value="هوامش (ميليمتر)‏"/>
+	<string id="9059" value="هوامش (بوصة)‏"/>
+	<string id="9060" value="بلا"/>
+	<string id="9061" value="هام"/>
+	<string id="9062" value="عمل"/>
+	<string id="9063" value="شخصي"/>
+	<string id="9064" value="الإجازة"/>
+	<string id="9065" value="يجب الحضور"/>
+	<string id="9066" value="مطلوب السفر"/>
+	<string id="9067" value="يتطلب التحضير"/>
+	<string id="9068" value="تاريخ الميلاد"/>
+	<string id="9069" value="الذكرى السنوية"/>
+	<string id="9070" value="مكالمة هاتفية"/>
+	<string id="9071" value="%d تذكير"/>
+	<string id="9072" value="الموضوع"/>
+	<string id="9073" value="تاريخ الاستحقاق"/>
+	<string id="9074" value="متأخر"/>
+	<string id="9075" value="تم تحديد %d تذكيراً"/>
+	<string id="9076" value="‏‏لا توجد أية تذكيرات لعرضها."/>
+	<string id="9077" value="وقت البدء"/>
+	<string id="9078" value="الرجاء إدخال قيمة بين %s و%s."/>
+	<string id="9079" value="Categories"/>
+	<string id="9086" value="Day"/>
+	<string id="9087" value="Week"/>
+	<string id="9088" value="Month"/>
+	<string id="9089" value="Show work week"/>
+	<string id="9090" value="Show full week"/>
+	<string id="9091" value="Click to add appointment"/>
+	<string id="9092" value="Previous Appointment"/>
+	<string id="9093" value="Next Appointment"/>
+	<string id="9094" value="%s Category"/>
+	<string id="9122" value="\nإضافة أو إزالة الأزرار"/>
+	<string id="9123" value="\nإعادة تعيين"/>
+	<string id="9135" value="\nقلم"/>
+	<string id="9136" value="\nلون التعبئة"/>
+	<string id="9137" value="\nانتقاء لون"/>
+	<string id="9138" value="\nسطر"/>
+	<string id="9139" value="\nمستطيل"/>
+	<string id="9140" value="\nقطع ناقص"/>
+	<string id="9141" value="\nنسخ"/>
+	<string id="9142" value="\nلصق"/>
+	<string id="9143" value="\nمسح"/>
+	<string id="9144" value="\nتراجع"/>
+	<string id="9145" value="\nإعادة"/>
+	<string id="9146" value="\nاستيراد من ملف"/>
+	<string id="9148" value="\nخيارات شريط الأدوات"/>
+	<string id="9149" value="\nإغلاق"/>
+	<string id="9150" value="\nExpand"/>
+	<string id="9151" value="\nإغلاق الإطار"/>
+	<string id="9152" value="\nاستعادة الإطار"/>
+	<string id="9153" value="\nتصغير الإطار"/>
+	<string id="9155" value="\nإنتقل إلى مقبض المجموعة الاولى"/>
+	<string id="9156" value="\nإنتقل إلى مقبض المجموعة الثانية"/>
+	<string id="9157" value="\nمقبض مجموعة افقي جديد"/>
+	<string id="9158" value="\nمقبض مجموعة عمودي جديد"/>
+	<string id="9159" value="\nإلغاء الأمر"/>
+	<string id="9160" value="إغلاق"/>
+	<string id="9161" value="تخصيص"/>
+	<string id="9162" value="قائمة جديدة"/>
+	<string id="9163" value="مخصص %d"/>
+	<string id="9164" value="لا يمكن أن يكون اسم شريط الأدوات فارغاً. اكتب اسماً معيناً."/>
+	<string id="9165" value="ناًسف لقد وصلت إلى النهاية المحددة"/>
+	<string id="9166" value="يوجد شريط أدوات اسمه '%s' بشكل مسبق. اكتب اسماً آخر."/>
+	<string id="9167" value="إعادة تسمية شريط أدوات"/>
+	<string id="9168" value="هل تريد بالتأكيد حذف شريط الأدوات '%s'؟"/>
+	<string id="9169" value="كافة الأوامر"/>
+	<string id="9170" value="سيؤدي هذا إلى حذف سجل الأوامر التي استخدمتها في هذا التطبيق وإلى استعادة المجموعة الافتراضية من الأوامر المرئية إلى القوائم وأشرطة الأدوات. وهو لن يؤدي إلى التراجع عن أي تخصيصات صريحة. هل تريد بالتأكيد القيام بذلك؟"/>
+	<string id="9171" value="هذا العدد غير صالح."/>
+	<string id="9172" value="‏‏يجب أن يكون الرقم بين 1 و 1638."/>
+	<string id="9173" value="هل تريد بالتأكيد إعادة تعيين التغييرات التي أجريت على '%s' شريط الأدوات؟"/>
+	<string id="9174" value="قوائم مضمّنة"/>
+	<string id="9175" value="هل أنت متأكد أنك تريد إعادة تعيين تعيينات المفاتيح؟ إن هذا الإجراء سيلغي كافة التعيينات المخصصة للمفاتيح على مستوى الكتابة."/>
+	<string id="9176" value="هذا الاختصار معين حاليا.\nهل تريد أعادة تعيينه؟"/>
+	<string id="9177" value="سبب تحديث البرامج تغير في شريط الأدوات '%s' . هل ترغب بإعادة تعيين شريط الأدوات المخصص وتحميله من جديد؟"/>
+	<string id="9178" value="جميع الملفات صورة | * bmp؛. * wmf؛ * emf؛ * ico؛ * dib؛ * png؛ * cur؛ * gif؛ * jpg | الصور النقطية (* bmp؛... * dib؛ . * png؛ * gif؛ * jpg) | * bmp؛.. * dib؛ * png؛ * gif؛ * jpg | ملفات التعريف (* wmf؛. * emf) | * wmf؛ *. emf | أيقونات (*ico؛. * cur) | * ico؛. | (* *). * cur كافة الملفات | * * | |"/>
+	<string id="9179" value="(إعداد افتراضي للنظام)"/>
+	<string id="9180" value="عشوائية"/>
+	<string id="9181" value="منكشفة"/>
+	<string id="9182" value="شريحة"/>
+	<string id="9183" value="تضاؤل"/>
+	<string id="9184" value="بلا"/>
+	<string id="9185" value="الملفات النشطة"/>
+	<string id="9186" value="تخصيص شريط الحالة"/>
+	<string id="9187" value="تم الضغط (%s). في انتظار المفتاح الثاني من وتر ..."/>
+	<string id="9194" value="طباعة هذا البند معاينتها\nطباعة"/>
+	<string id="9195" value="انتقل إلى الصفحة السابقة\nالصفحة السابقة"/>
+	<string id="9196" value="انتقل إلى الصفحة التالية\nالصفحة التالية"/>
+	<string id="9197" value="زيادة التكبير من صفحة المعاينة\nالتكبير في"/>
+	<string id="9198" value="تقليل التكبير من صفحة المعاينة\nتصغير"/>
+	<string id="9201" value="إغلاق المعاينة\nوثيقة معاينة"/>
+	<string id="9202" value="كامل الصفحة"/>
+	<string id="9203" value="الصفحة العرض"/>
+	<string id="9204" value="%i صفحة"/>
+	<string id="9205" value="%i من %i صفحة"/>
+	<string id="9320" value="جديد "/>
+	<string id="9321" value="حذف"/>
+	<string id="9322" value="تحريك للأعلى"/>
+	<string id="9323" value="تحريك للأسفل"/>
+	<string id="9325" value="الفرز التصاعدي\nالفرز التصاعدي"/>
+	<string id="9326" value="فرز تنازلي\nفرز تنازلي"/>
+	<string id="9327" value="محاذاة الفقرة عند الهامش الأيسر\nمحاذاة إلى اليسار"/>
+	<string id="9328" value="توسيط الفقرة بين الهامشين\nتوسيط"/>
+	<string id="9329" value="محاذاة الفقرة عند الهامش الأيمن\nمحاذاة إلى اليمين"/>
+	<string id="9330" value="إظهار الرموز كبيرة\nرموز كبيرة"/>
+	<string id="9331" value="إظهار الرموز صغيرة\nرموز صغيرة"/>
+	<string id="9332" value="إزالة من شريط Outlook"/>
+	<string id="9333" value="إعادة تسمية الاختصار"/>
+	<string id="9334" value="إلغاء التجميع"/>
+	<string id="9335" value="إعادة تسمية المجموعة"/>
+	<string id="9336" value="اسم"/>
+	<string id="9337" value="حجم"/>
+	<string id="9338" value="النوع"/>
+	<string id="9339" value="تاريخ التعديل"/>
+	<string id="9340" value="تلقائي"/>
+	<string id="9341" value="تخصيص..."/>
+	<string id="9342" value="اختيار الدليل:"/>
+	<string id="9343" value="..."/>
+	<string id="9344" value="*.*"/>
+	<string id="9345" value="كافة الملفات (*.*)|*.*||"/>
+	<string id="9346" value="اسم الدليل:"/>
+	<string id="9347" value="انقر فوق الدبوس ليبقى مفتوحاً"/>
+	<string id="9348" value="هل تعلم أنه..."/>
+	<string id="9349" value="‏‏الملف المحدد غير موجود."/>
+	<string id="9350" value="خطأ في قراءة ملف."/>
+	<string id="9351" value="ألوان"/>
+	<string id="9352" value="جديد "/>
+	<string id="9353" value="الحالي"/>
+	<string id="9354" value="الدلائل:"/>
+	<string id="9355" value="الملفات:"/>
+	<string id="9356" value="ست عشري"/>
+	<string id="9357" value="نفاذ ذاكرة أو موارد النظام."/>
+	<string id="9358" value="لا يمكن العثور على الملف المحدد."/>
+	<string id="9359" value="المسار المعيّن غير صالح."/>
+	<string id="9360" value="منع النظام الوصول للملف المحدد."/>
+	<string id="9361" value="الذاكرة المتوفرة غير كافية لإتمام هذه العملية."/>
+	<string id="9362" value="الملف التنفيذي غير صالح."/>
+	<string id="9363" value="حدث انتهاك في المشاركة."/>
+	<string id="9364" value="اقتران نوع الملف غير صالح أو غير مكتمل."/>
+	<string id="9365" value="لم يمكن اتمام معاملة تبادل البيانات DDE لانتهاء الوقت."/>
+	<string id="9366" value="فشلت معاملة تبادل الببانات DDE."/>
+	<string id="9367" value="لم يمكن اتمام معاملة تبادل البيانات DDE لأن معاملة تبادل بيانات اخرى قيد المعالجة."/>
+	<string id="9368" value="لا يوجد تطبيق مقترن بنوع الملف المحدد."/>
+	<string id="9369" value="لايمكن العثور على المكتبة المحددة."/>
+	<string id="9370" value="‏‏حدث خطأ غير معروف برقم %d"/>
+	<string id="9424" value="ألوان قياسية"/>
+	<string id="9425" value="نص التلميح"/>
+	<string id="9432" value="موافق"/>
+	<string id="9433" value="نعم"/>
+	<string id="9434" value="لا"/>
+	<string id="9435" value="إعادة المحاولة"/>
+	<string id="9436" value="إلغاء الأمر"/>
+	<string id="9437" value="إغلاق"/>
+	<string id="9438" value="إظهار التفاصيل"/>
+	<string id="9439" value="إخفاء التفاصيل"/>
+	<string id="9440" value="&amp;Apply"/>
+	<string id="9441" value="Help"/>
+	<string id="9456" value="إخفاء تلقائي"/>
+	<string id="9457" value="إغلاق"/>
+	<string id="9458" value="تكبير"/>
+	<string id="9459" value="استعادة"/>
+	<string id="9460" value="قائمة"/>
+	<string id="9461" value="Active Tool Windows"/>
+	<string id="9462" value="Active Files"/>
+	<string id="9501" value="حسب التصنيف"/>
+	<string id="9502" value="حسب الاًحرف الاًبجدية"/>
+	<string id="9503" value="صح\nخطأ"/>
+	<string id="9556" value="اسحب رأس العمود إلى هنا للتجميع حسب ذلك العمود."/>
+	<string id="9557" value="لا توجد عناصر لإظهارها."/>
+	<string id="9558" value="(لا توجد حقول متوفرة)"/>
+	<string id="9559" value="فرز حسب:"/>
+	<string id="9561" value="الهوامش (ميليمتر)"/>
+	<string id="9562" value="الهوامش (بوصة)"/>
+	<string id="9563" value="Enter filter text here"/>
+	<string id="9564" value="/Increasing"/>
+	<string id="9565" value="/Decreasing"/>
+	<string id="9566" value="Expand"/>
+	<string id="9567" value="Collapse"/>
+	<string id="9603" value="\nتخصيص أدوات الوصول السريع"/>
+	<string id="9611" value="\nعناصر تحكم إضافية"/>
+	<string id="9615" value="Are you sure you want to restore the Quick Access Toolbar to its default contents?"/>
+	<string id="9623" value="Main Tabs"/>
+	<string id="9624" value="New Tab (Custom)"/>
+	<string id="9625" value="New Group (Custom)"/>
+	<string id="9626" value="Delete all Ribbon and Quick Access Toolbar customization for this program?"/>
+	<string id="9651" value="إظهار أزرار إضافية"/>
+	<string id="9652" value="إظهار أزرار أقل"/>
+	<string id="9653" value="أزرار التكوين"/>
+	<string id="9654" value="Navigation Pane"/>
+	<string id="9711" value="Edit Options"/>
+	<string id="9714" value="Undefined command"/>
+	<string id="9715" value="Multiple operations"/>
+	<string id="9716" value="Delete: "/>
+	<string id="9717" value="Insert: "/>
+	<string id="9718" value="Typing"/>
+	<string id="9719" value="Paste"/>
+	<string id="9720" value="Move"/>
+	<string id="9721" value="Copy"/>
+	<string id="9722" value="Indentation"/>
+	<string id="9723" value="Decrease Indent"/>
+	<string id="9724" value="Format"/>
+	<string id="9725" value="Tabify"/>
+	<string id="9726" value="Untabify"/>
+	<string id="9727" value="Replace all"/>
+	<string id="9728" value="Change selection case"/>
+	<string id="9729" value="Delete text block"/>
+	<string id="9730" value="&amp;Move Here"/>
+	<string id="9731" value="&amp;Copy Here"/>
+	<string id="9732" value="C&amp;ancel"/>
+	<string id="9740" value="Custom"/>
+	<string id="9741" value="Regular"/>
+	<string id="9742" value="Bold"/>
+	<string id="9743" value="Italic"/>
+	<string id="9744" value="Bold Italic"/>
+	<string id="9746" value="&amp;Line number (1 - %d):"/>
+	<string id="9747" value="Open Schema File"/>
+	<string id="9748" value="Do you wish to close the &quot;Options Dialog&quot; and open the schema file &quot;%s%s&quot; in the editor window?"/>
+	<string id="9749" value="File '%s' is modified by outside source!\nDo you want to reload?"/>
+	<string id="9750" value="%d match found and replaced!"/>
+	<string id="9751" value="Finished searching!"/>
+	<string id="9800" value="التمرير لليسار"/>
+	<string id="9801" value="التمرير لليمين"/>
+	<string id="9802" value="إغلاق"/>
+	<string id="9803" value="Scroll Up"/>
+	<string id="9804" value="Scroll Down"/>
+	<string id="9900" value="أسود"/>
+	<string id="9901" value="بني"/>
+	<string id="9902" value="أخضر زيتي"/>
+	<string id="9903" value="أخضر داكن"/>
+	<string id="9904" value="أزرق مخضر داكن"/>
+	<string id="9905" value="أزرق داكن"/>
+	<string id="9906" value="نيلي"/>
+	<string id="9907" value="رمادي-80%"/>
+	<string id="9908" value="أحمر داكن"/>
+	<string id="9909" value="برتقالي"/>
+	<string id="9910" value="أصفر داكن"/>
+	<string id="9911" value="أخضر"/>
+	<string id="9912" value="أزرق مخضر"/>
+	<string id="9913" value="أزرق"/>
+	<string id="9914" value="أزرق-رمادي"/>
+	<string id="9915" value="رمادي-50%"/>
+	<string id="9916" value="أحمر"/>
+	<string id="9917" value="برتقالي فاتح"/>
+	<string id="9918" value="ليموني"/>
+	<string id="9919" value="أخضر بحري"/>
+	<string id="9920" value="أزرق مائي"/>
+	<string id="9921" value="أزرق فاتح"/>
+	<string id="9922" value="بنفسجي"/>
+	<string id="9923" value="رمادي-40%"/>
+	<string id="9924" value="زهري"/>
+	<string id="9925" value="ذهب"/>
+	<string id="9926" value="أصفر"/>
+	<string id="9927" value="أخضر ساطع"/>
+	<string id="9928" value="فيروزي"/>
+	<string id="9929" value="أزرق سماوي"/>
+	<string id="9930" value="أرجواني مزرق داكن"/>
+	<string id="9931" value="رمادي-25%"/>
+	<string id="9932" value="وردي"/>
+	<string id="9933" value="أسمر مصفر"/>
+	<string id="9934" value="أصفر فاتح"/>
+	<string id="9935" value="أخضر فاتح"/>
+	<string id="9936" value="فيروزي فاتح"/>
+	<string id="9937" value="أزرق شاحب"/>
+	<string id="9938" value="أرجواني شاحب"/>
+	<string id="9939" value="أبيض"/>
+	<string id="9940" value="رمادي"/>
+	<string id="9941" value="كستنائي"/>
+	<string id="9942" value="زيتي"/>
+	<string id="9943" value="أزرق داكن"/>
+	<string id="9944" value="أرجواني"/>
+	<string id="9945" value="فضي"/>
+	<string id="9946" value="زهري غامق"/>
+	<string id="9947" value="بلا تعبئة\nبلا تعبئة"/>
+	<string id="9948" value="لون تلقائي\nلون تلقائي"/>
+	<string id="9949" value="ألوان إضافية...‏"/>
+	<string id="9974" value="صفحة واحدة"/>
+	<string id="9975" value="صفحتان"/>
+	<string id="9978" value="Page %u\nPages %u-%u"/>
+	<string id="35001" value="تخصيص أشرطة الأدوات\n&amp;تخصيص ..."/>
+	<string id="35200" value="العربية (المملكة العربية السعودية)"/>
+	<string id="35202" value="الصينية (جمهورية الصين الشعبية)"/>
+	<string id="35203" value="الصينية (تايوان)"/>
+	<string id="35204" value="الكرواتية"/>
+	<string id="35205" value="التشيكية"/>
+	<string id="35206" value="الدانماركية"/>
+	<string id="35207" value="الهولندية"/>
+	<string id="35208" value="الإنجليزية (الولايات المتحدة)"/>
+	<string id="35209" value="الأستونية"/>
+	<string id="35210" value="الفنلندية"/>
+	<string id="35211" value="الفرنسية (فرنسا)"/>
+	<string id="35212" value="الألمانية (ألمانيا)"/>
+	<string id="35213" value="اليونانية"/>
+	<string id="35214" value="العبرية"/>
+	<string id="35215" value="المجرية"/>
+	<string id="35216" value="الإيطالية (إيطاليا)"/>
+	<string id="35217" value="اليابانية"/>
+	<string id="35218" value="الكورية"/>
+	<string id="35219" value="اللاتفية"/>
+	<string id="35220" value="الليتوانية"/>
+	<string id="35221" value="النرويجية (بوكمال)"/>
+	<string id="35222" value="البولندية"/>
+	<string id="35223" value="البرتغالية (البرتغال)"/>
+	<string id="35224" value="البرتغالية (البرازيل)"/>
+	<string id="35225" value="الرومانية"/>
+	<string id="35226" value="الروسية"/>
+	<string id="35227" value="Serbian"/>
+	<string id="35228" value="السلوفاكية"/>
+	<string id="35229" value="السلوفينية"/>
+	<string id="35230" value="الأسبانية (أسبانيا - الحديثة)"/>
+	<string id="35231" value="السويدية"/>
+	<string id="35232" value="التايلاندية"/>
+	<string id="35234" value="الأوكرانية"/>
+	<menu id="9121">
+		<menuitem caption="تخصيص">
+			<menuitem id="9123" caption="إعادة تعيين"/>
+			<menuitem id="9124" caption="حذف"/>
+			<menuitem/>
+			<menuitem id="9125" caption="الاسم:"/>
+			<menuitem/>
+			<menuitem id="9126" caption="نسخ شكل الزر"/>
+			<menuitem id="9127" caption="لصق شكل الزر"/>
+			<menuitem id="9128" caption="إعادة تعيين شكل الزر"/>
+			<menuitem id="9129" caption="تحرير شكل الزر..."/>
+			<menuitem id="9130" caption="تغيير شكل الزر"/>
+			<menuitem/>
+			<menuitem id="9131" caption="نمط افتراضي"/>
+			<menuitem id="9133" caption="نص فقط"/>
+			<menuitem id="9132" caption="صورة ونص"/>
+			<menuitem/>
+			<menuitem id="9134" caption="بدء مجموعة"/>
+		</menuitem>
+	</menu>
+	<menu id="9317">
+		<menuitem caption="RClickOutlookBar">
+			<menuitem id="9331" caption="رموز صغيرة"/>
+			<menuitem id="9330" caption="رموز كبيرة"/>
+		</menuitem>
+		<menuitem caption="RClickHexEdit">
+			<menuitem id="57643" caption="تراجع"/>
+			<menuitem/>
+			<menuitem id="57635" caption="قص"/>
+			<menuitem id="57634" caption="نسخ"/>
+			<menuitem id="57637" caption="لصق"/>
+			<menuitem id="57632" caption="حذف"/>
+			<menuitem/>
+			<menuitem id="57642" caption="تحديد الكل"/>
+		</menuitem>
+		<menuitem caption="RClickHeader">
+			<menuitem id="9325" caption="الفرز التصاعدي"/>
+			<menuitem id="9326" caption="فرز تنازلي"/>
+			<menuitem/>
+			<menuitem caption="محاذاة">
+				<menuitem id="9327" caption="محاذاة إلى اليسار"/>
+				<menuitem id="9328" caption="محاذاة إلى الوسط"/>
+				<menuitem id="9329" caption="محاذاة إلى اليمين"/>
+			</menuitem>
+		</menuitem>
+	</menu>
+	<menu id="9601">
+		<menuitem caption="الوصول السريع">
+			<menuitem id="9614" caption="&amp;تخصيص أدوات الوصول السريع"/>
+			<menuitem id="9613" caption="[Commands]"/>
+			<menuitem/>
+			<menuitem id="9616" caption="&amp;More Commands..."/>
+			<menuitem id="9617" caption="&amp;Show Below the Ribbon"/>
+			<menuitem id="9618" caption="&amp;Show Above the Ribbon"/>
+			<menuitem/>
+			<menuitem id="9612" caption="ت&amp;صغير الشريط"/>
+		</menuitem>
+	</menu>
+	<menu id="9602">
+		<menuitem caption="الوصول السريع">
+			<menuitem id="9605" caption="إ&amp;زالة من أدوات الوصول السريع"/>
+			<menuitem id="9606" caption="إ&amp;ضافة إلى أدوات الوصول السريع"/>
+			<menuitem/>
+			<menuitem id="9607" caption="&amp;تخصيص أدوات الوصول السريع ..."/>
+			<menuitem id="9608" caption="إظهار أدوات الوصول السريع أ&amp;سفل الشريط"/>
+			<menuitem id="9610" caption="إظهار أدوات الوصول السريع أ&amp;على الشريط"/>
+			<menuitem/>
+			<menuitem id="9612" caption="ت&amp;صغير الشريط"/>
+		</menuitem>
+	</menu>
+	<menu id="9628">
+		<menuitem caption="Import and Export">
+			<menuitem id="9629" caption="Import customization file"/>
+			<menuitem id="9630" caption="Export all customizations"/>
+		</menuitem>
+	</menu>
+	<menu id="9977">
+		<menuitem caption="HF">
+			<menuitem id="101" caption="&amp;&amp;d   تنسيق التاريخ القصير"/>
+			<menuitem id="102" caption="&amp;&amp;D   تنسيق التاريخ الطويل"/>
+			<menuitem/>
+			<menuitem id="103" caption="&amp;&amp;t   الوقت"/>
+			<menuitem id="104" caption="&amp;&amp;T   الوقت (24 ساعة)"/>
+			<menuitem/>
+			<menuitem id="105" caption="&amp;&amp;p   رقم الصفحة"/>
+			<menuitem id="106" caption="&amp;&amp;P   رقم الصفحة"/>
+			<menuitem/>
+			<menuitem id="108" caption="&amp;&amp;b  محاذاة لليسار &amp;&amp;b محاذاة للوسط &amp;&amp;b محاذاة لليمين"/>
+			<menuitem/>
+			<menuitem id="109" caption="&amp;&amp;w   تسمية توضيحية"/>
+			<menuitem id="110" caption="&amp;&amp;&amp;&amp;  علامة العطف (&amp;&amp;)"/>
+			<menuitem id="111" caption="\\n   سطر جديد"/>
+		</menuitem>
+	</menu>
+	<dialog id="9080" fontface="MS Shell Dlg" style="-2134376248" styleex="12288" position="0, 0, 175, 90">
+		<control id="103" style="1342177283" position="11, 6, 20, 20"/>
+		<control id="100" styleex="12288" position="44, 6, 120, 27"/>
+		<control id="101" class="BUTTON" style="1342177289" styleex="12288" position="7, 39, 125, 10"/>
+		<control id="102" class="BUTTON" style="1342177289" styleex="12288" position="5, 51, 127, 10"/>
+		<control id="1" class="BUTTON" caption="موافق" style="1342242817" styleex="8192" position="90, 69, 50, 14"/>
+		<control id="2" class="BUTTON" caption="إلغاء الأمر" style="1342242816" styleex="8192" position="34, 69, 50, 14"/>
+	</dialog>
+	<dialog id="9081" caption="إعداد ص&amp;فحة التقويم" fontface="MS Shell Dlg" style="-1865940788" styleex="12288" position="32, 32, 285, 365">
+		<control id="100" class="BUTTON" caption="خيارات العرض" style="1342177287" styleex="12288" position="170, 5, 106, 66"/>
+		<control caption="طباعة من:" style="1342308354" styleex="12288" position="237, 21, 36, 8"/>
+		<control id="101" class="COMBOBOX" style="1344339970" styleex="12288" position="176, 19, 52, 104"/>
+		<control caption="طباعة إلى:" style="1342308354" styleex="12288" position="233, 39, 40, 8"/>
+		<control id="102" class="COMBOBOX" style="1344339970" styleex="12288" position="176, 36, 52, 104"/>
+		<control id="103" class="BUTTON" caption="نطاق الطباعة" style="1342242819" styleex="12288" position="174, 56, 95, 10"/>
+		<control id="104" class="BUTTON" caption="رأس الصفحة" style="1342177287" styleex="12288" position="6, 5, 157, 65"/>
+		<control id="105" class="BUTTON" caption="طباعة العناوين" style="1342242819" styleex="12288" position="10, 17, 148, 10"/>
+		<control id="106" caption="خط العنوان" styleex="12288" position="9, 28, 136, 8"/>
+		<control id="107" caption="123456789 123456789 123456789\n2\n3" style="1342312576" styleex="12288" position="30, 40, 115, 26"/>
+		<control id="108" class="BUTTON" caption="..." style="1342242816" styleex="12288" position="10, 40, 16, 14"/>
+		<control class="BUTTON" caption="إعدادات افتراضية" style="1342177287" styleex="12288" position="6, 74, 270, 27"/>
+		<control id="110" class="BUTTON" caption="طباعة بتدرج الرمادي" style="1342242819" styleex="12288" position="11, 87, 258, 10"/>
+		<control class="BUTTON" caption="رأس/تذييل الصفحات" style="1342177287" styleex="12288" position="6, 105, 270, 70"/>
+		<control caption="رأس" styleex="12288" position="80, 115, 190, 8"/>
+		<control id="111" class="EDIT" style="1350631552" styleex="12288" position="23, 126, 247, 14"/>
+		<control id="113" class="BUTTON" caption="&gt;" style="1342242816" styleex="12288" position="10, 126, 13, 14"/>
+		<control caption="تذييل الصفحة" styleex="12288" position="80, 145, 190, 8"/>
+		<control id="112" class="EDIT" style="1350631552" styleex="12288" position="23, 155, 247, 14"/>
+		<control id="114" class="BUTTON" caption="&gt;" style="1342242816" styleex="12288" position="10, 155, 13, 14"/>
+		<control id="1073" class="BUTTON" caption="الورق" style="1342308359" styleex="12288" position="79, 183, 197, 51"/>
+		<control id="1089" caption="الحجم:" styleex="12288" position="232, 199, 40, 8"/>
+		<control id="1137" class="COMBOBOX" style="1344471299" styleex="12288" position="87, 197, 141, 160"/>
+		<control id="1090" caption="المصدر:" styleex="12288" position="232, 216, 39, 8"/>
+		<control id="1138" class="COMBOBOX" style="1344471299" styleex="12288" position="87, 214, 141, 160"/>
+		<control id="1072" class="BUTTON" caption="الاتجاه" style="1342308359" styleex="12288" position="6, 183, 66, 51"/>
+		<control id="1056" class="BUTTON" caption="عمودي" style="1342373892" styleex="12288" position="11, 196, 56, 12"/>
+		<control id="1057" class="BUTTON" caption="أفقي" style="1342177284" styleex="12288" position="9, 212, 58, 12"/>
+		<control id="1075" class="BUTTON" caption="هوامش" style="1342308359" styleex="12288" position="79, 238, 196, 58"/>
+		<control id="1102" caption="أيسر:" styleex="12288" position="231, 254, 36, 8"/>
+		<control id="1155" class="EDIT" style="1350762496" styleex="12288" position="196, 251, 32, 12"/>
+		<control id="1103" caption="أيمن:" styleex="12288" position="125, 253, 35, 8"/>
+		<control id="1157" class="EDIT" style="1350762496" styleex="12288" position="89, 250, 32, 12"/>
+		<control id="1104" caption="علوي:" styleex="12288" position="232, 274, 35, 8"/>
+		<control id="1156" class="EDIT" style="1350762496" styleex="12288" position="196, 272, 32, 12"/>
+		<control id="1105" caption="سفلي:" styleex="12288" position="125, 274, 35, 8"/>
+		<control id="1158" class="EDIT" style="1350762496" styleex="12288" position="89, 272, 32, 12"/>
+		<control id="109" class="BUTTON" caption="‏‏معاينة" style="1342177287" styleex="12288" position="5, 238, 66, 58"/>
+		<control id="1081" style="1342308357" styleex="12288" position="18, 253, 4, 38"/>
+		<control id="1080" style="1342308358" styleex="12288" position="22, 250, 31, 40"/>
+		<control id="1082" style="1342308357" styleex="12288" position="19, 290, 29, 2"/>
+		<control id="1026" class="BUTTON" caption="طابعة..." style="1342242816" styleex="8192" position="215, 300, 60, 14"/>
+		<control id="57670" class="BUTTON" caption="تعليمات" style="1342242816" styleex="8192" position="147, 320, 61, 14"/>
+		<control id="1" class="BUTTON" caption="موافق" style="1342373889" styleex="8192" position="60, 320, 48, 14"/>
+		<control id="2" class="BUTTON" caption="إلغاء الأمر" style="1342242816" styleex="8192" position="6, 320, 48, 14"/>
+		<control class="BUTTON" caption="Month view options" style="1342177287" position="6, 74, 113, 66"/>
+		<control id="117" class="SysDateTimePick32" style="1342242848" position="48, 84, 67, 15"/>
+		<control id="118" class="SysDateTimePick32" style="1342242848" position="48, 104, 67, 15"/>
+		<control caption="Print from:" position="9, 86, 36, 8"/>
+		<control caption="Print to:" position="18, 106, 27, 8"/>
+		<control id="116" class="BUTTON" caption="Print range" style="1342242819" position="14, 125, 95, 10"/>
+	</dialog>
+	<dialog id="9082" caption="تفاصيل الموعد والحدث" fontface="MS Shell Dlg" style="-2134376248" styleex="12288" position="0, 0, 450, 231">
+		<control caption="الموضوع:" styleex="12288" position="399, 7, 45, 8"/>
+		<control id="100" class="EDIT" style="1350631552" styleex="12288" position="161, 5, 234, 13"/>
+		<control caption="الموقع:" styleex="12288" position="399, 27, 45, 8"/>
+		<control id="101" class="EDIT" style="1350631552" styleex="12288" position="161, 25, 234, 13"/>
+		<control style="1342181381" styleex="12288" position="161, 45, 283, 1"/>
+		<control id="157" caption="وقت البدء:" styleex="12288" position="402, 55, 42, 8"/>
+		<control id="102" class="SysDateTimePick32" caption="DateTimePicker1" style="1342242849" styleex="12288" position="327, 53, 68, 13"/>
+		<control id="103" class="SysDateTimePick32" caption="DateTimePicker2" style="1342242857" styleex="12288" position="253, 53, 68, 13"/>
+		<control id="106" class="BUTTON" caption="حدث يستغرق يوماً كاملاً" style="1342251011" styleex="12288" position="161, 55, 85, 10"/>
+		<control id="158" caption="وقت الانتهاء:" styleex="12288" position="402, 75, 42, 8"/>
+		<control id="104" class="SysDateTimePick32" caption="DateTimePicker1" style="1342242849" styleex="12288" position="327, 73, 68, 13"/>
+		<control id="105" class="SysDateTimePick32" caption="DateTimePicker2" style="1342242857" styleex="12288" position="253, 73, 68, 13"/>
+		<control style="1342181381" styleex="12288" position="161, 93, 283, 1"/>
+		<control id="111" class="BUTTON" caption="التذكير:" style="1342243075" styleex="12288" position="399, 102, 45, 10"/>
+		<control id="112" class="COMBOBOX" style="1344339970" styleex="12288" position="327, 100, 68, 88"/>
+		<control id="110" caption="معرف الجدولة" style="1342308354" styleex="12288" position="251, 102, 64, 10"/>
+		<control id="109" class="COMBOBOX" style="1344339971" styleex="12288" position="161, 100, 85, 88"/>
+		<control style="1342181381" styleex="12288" position="154, 5, 1, 110"/>
+		<control id="117" caption="La&amp;bel:" styleex="12288" position="104, 7, 44, 8"/>
+		<control id="108" class="COMBOBOX" style="1344340003" styleex="12288" position="6, 5, 94, 209"/>
+		<control caption="إظهار الوقت كـ:" styleex="12288" position="103, 27, 45, 8"/>
+		<control id="107" class="COMBOBOX" style="1344339971" styleex="12288" position="6, 25, 94, 72"/>
+		<control style="1342181381" styleex="12288" position="6, 45, 142, 1"/>
+		<control id="113" class="BUTTON" caption="خاص" style="1342242819" styleex="12288" position="48, 55, 100, 10"/>
+		<control id="114" class="BUTTON" caption="اجتماع" style="1342242819" styleex="12288" position="48, 66, 100, 10"/>
+		<control style="1342181381" styleex="12288" position="6, 93, 142, 1"/>
+		<control id="115" class="BUTTON" caption="تكرار..." style="1342242816" styleex="8192" position="6, 100, 69, 14"/>
+		<control id="116" class="EDIT" style="1352732868" styleex="12288" position="6, 125, 438, 75"/>
+		<control style="1073745925" styleex="12288" position="6, 205, 438, 1"/>
+		<control id="1" class="BUTTON" caption="موافق" style="1342242817" styleex="8192" position="229, 211, 50, 14"/>
+		<control id="2" class="BUTTON" caption="إلغاء الأمر" style="1342242816" styleex="8192" position="173, 211, 50, 14"/>
+	</dialog>
+	<dialog id="9083" caption="تكرار الموعد" fontface="MS Shell Dlg" style="-2134376248" styleex="12288" position="0, 0, 340, 362">
+		<control class="BUTTON" caption="وقت الموعد" style="1342177287" styleex="12288" position="7, 3, 326, 62"/>
+		<control caption="بدء:" styleex="12288" position="295, 17, 32, 8"/>
+		<control id="109" class="COMBOBOX" style="1344339970" styleex="12288" position="188, 15, 106, 124"/>
+		<control caption="النهاية:" styleex="12288" position="295, 33, 32, 8"/>
+		<control id="102" class="COMBOBOX" style="1344339970" styleex="12288" position="188, 31, 106, 158"/>
+		<control caption="المدة:" styleex="12288" position="297, 49, 30, 8"/>
+		<control id="113" class="COMBOBOX" style="1344339970" styleex="12288" position="188, 47, 106, 162"/>
+		<control class="BUTTON" caption="نمط التكرار" style="1342177287" styleex="12288" position="7, 68, 326, 68"/>
+		<control id="117" class="BUTTON" caption="يومياً" style="1342308361" styleex="12288" position="272, 80, 55, 10"/>
+		<control id="118" class="BUTTON" caption="أسبوعياً" style="1342177289" styleex="12288" position="272, 94, 55, 10"/>
+		<control id="119" class="BUTTON" caption="شهري" style="1342177289" styleex="12288" position="272, 108, 55, 10"/>
+		<control id="120" class="BUTTON" caption="سنوي" style="1342177289" styleex="12288" position="272, 122, 55, 10"/>
+		<control id="156" style="1342181383" position="266, 79, 1, 53"/>
+		<control id="124" class="BUTTON" caption="كل" style="1342308361" styleex="12288" position="224, 78, 35, 10"/>
+		<control id="125" class="BUTTON" caption="أيام_العمل" style="1342177289" styleex="12288" position="151, 93, 108, 10"/>
+		<control id="126" class="EDIT" style="1350639744" styleex="12288" position="192, 77, 28, 12"/>
+		<control id="121" caption="يوم/أيام" styleex="12288" position="148, 78, 40, 8"/>
+		<control id="134" caption="تكرار كل" styleex="12288" position="215, 235, 43, 8"/>
+		<control id="123" class="EDIT" style="1350639744" styleex="12288" position="187, 233, 26, 12"/>
+		<control id="135" caption="أسبوع/أسابيع في:" styleex="12288" position="117, 235, 66, 8"/>
+		<control id="127" class="BUTTON" caption="الاثنين" style="1342242819" styleex="12288" position="217, 249, 41, 10"/>
+		<control id="128" class="BUTTON" caption="الثلاثاء" style="1342242819" styleex="12288" position="163, 249, 50, 10"/>
+		<control id="129" class="BUTTON" caption="الأربعاء" style="1342242819" styleex="12288" position="102, 249, 54, 10"/>
+		<control id="130" class="BUTTON" caption="الخميس" style="1342242819" styleex="12288" position="47, 249, 46, 10"/>
+		<control id="131" class="BUTTON" caption="الجمعة" style="1342242819" styleex="12288" position="217, 264, 41, 10"/>
+		<control id="132" class="BUTTON" caption="السبت" style="1342242819" styleex="12288" position="168, 264, 45, 10"/>
+		<control id="133" class="BUTTON" caption="الأحد" style="1342242819" styleex="12288" position="94, 263, 62, 10"/>
+		<control id="136" class="BUTTON" caption="يوم" style="1342308361" styleex="12288" position="233, 284, 26, 10"/>
+		<control id="137" class="BUTTON" caption="لم" style="1342177289" styleex="12288" position="231, 302, 28, 10"/>
+		<control id="138" class="EDIT" style="1350639744" styleex="12288" position="205, 283, 24, 12"/>
+		<control id="143" caption="من كل" styleex="12288" position="173, 285, 28, 8"/>
+		<control id="139" class="EDIT" style="1350639744" styleex="12288" position="145, 283, 25, 12"/>
+		<control id="144" caption="شهر/أشهر" styleex="12288" position="103, 285, 37, 8"/>
+		<control id="140" class="COMBOBOX" style="1344339971" styleex="12288" position="179, 300, 50, 230"/>
+		<control id="141" class="COMBOBOX" style="1344339971" styleex="12288" position="109, 300, 68, 287"/>
+		<control id="145" caption="من كل" styleex="12288" position="78, 301, 28, 8"/>
+		<control id="142" class="EDIT" style="1350639744" styleex="12288" position="49, 300, 26, 12"/>
+		<control id="146" caption="شهر/أشهر" styleex="12288" position="15, 301, 29, 8"/>
+		<control id="147" class="BUTTON" caption="كل" style="1342308361" styleex="12288" position="225, 326, 34, 10"/>
+		<control id="148" class="BUTTON" caption="لم" style="1342177289" styleex="12288" position="228, 344, 31, 10"/>
+		<control id="150" class="COMBOBOX" style="1344339971" styleex="12288" position="147, 324, 76, 230"/>
+		<control id="149" class="EDIT" style="1350631552" styleex="12288" position="118, 324, 27, 12"/>
+		<control id="154" class="COMBOBOX" style="1344339971" styleex="12288" position="175, 342, 48, 230"/>
+		<control id="155" class="COMBOBOX" style="1344339971" styleex="12288" position="103, 342, 70, 230"/>
+		<control id="153" caption="من" styleex="12288" position="89, 345, 10, 8"/>
+		<control id="151" class="COMBOBOX" style="1344339971" styleex="12288" position="16, 342, 71, 230"/>
+		<control class="BUTTON" caption="نطاق التكرار" style="1342177287" styleex="12288" position="7, 140, 326, 52"/>
+		<control caption="بدء:" styleex="12288" position="299, 156, 28, 8"/>
+		<control id="101" class="SysDateTimePick32" style="1342242849" styleex="12288" position="188, 153, 106, 12"/>
+		<control id="114" class="BUTTON" caption="لا يتوفر تاريخ انتهاء" style="1342308361" styleex="12288" position="74, 149, 100, 9"/>
+		<control id="115" class="BUTTON" caption="الانتهاء &amp;بعد:" style="1342177289" styleex="12288" position="129, 162, 45, 10"/>
+		<control id="116" class="BUTTON" caption="الانتهاء في:" style="1342177289" styleex="12288" position="135, 176, 39, 10"/>
+		<control id="122" class="EDIT" style="1350639744" styleex="12288" position="86, 159, 40, 12"/>
+		<control caption="تكرارات" styleex="12288" position="34, 161, 49, 8"/>
+		<control id="159" class="SysDateTimePick32" style="1342242849" styleex="12288" position="21, 174, 105, 12"/>
+		<control id="1" class="BUTTON" caption="موافق" style="1342242817" styleex="8192" position="223, 197, 50, 14"/>
+		<control id="2" class="BUTTON" caption="إلغاء الأمر" style="1342242816" styleex="8192" position="166, 197, 50, 14"/>
+		<control id="100" class="BUTTON" caption="إزالة التكرار" style="1476460544" styleex="8192" position="69, 197, 90, 14"/>
+	</dialog>
+	<dialog id="9084" caption="المنطقة الزمنية" fontface="MS Shell Dlg" style="-2134376248" styleex="12288" position="0, 0, 274, 178">
+		<control class="BUTTON" caption="المنطقة الزمنية الحالية" style="1342177287" styleex="12288" position="7, 7, 260, 65"/>
+		<control caption="التسمية:" styleex="12288" position="239, 23, 20, 8"/>
+		<control id="101" class="EDIT" style="1350631552" styleex="12288" position="174, 21, 40, 14"/>
+		<control caption="المنطقة الزمنية:" styleex="12288" position="223, 42, 36, 8"/>
+		<control id="103" class="COMBOBOX" style="1478557698" styleex="12288" position="19, 39, 195, 130"/>
+		<control id="105" class="BUTTON" caption="ضبط الساعة حسب التوقيت الصيفي تلقائياً" style="1476460547" styleex="12320" position="22, 56, 234, 8"/>
+		<control id="100" class="BUTTON" caption="إظهار منطقة زمنية أخرى" style="1342242819" styleex="12320" position="7, 78, 260, 8"/>
+		<control class="BUTTON" style="1342177287" styleex="12320" position="7, 88, 260, 62"/>
+		<control caption="التسمية:" styleex="12288" position="239, 101, 20, 8"/>
+		<control id="102" class="EDIT" style="1350631552" styleex="12288" position="174, 99, 40, 14"/>
+		<control caption="المنطقة الزمنية:" styleex="12288" position="223, 120, 36, 8"/>
+		<control id="104" class="COMBOBOX" style="1344339971" styleex="12288" position="19, 117, 195, 135"/>
+		<control id="106" class="BUTTON" caption="ضبط الساعة حسب التوقيت الصيفي تلقائياً" style="1342242819" styleex="12320" position="24, 134, 234, 8"/>
+		<control id="1" class="BUTTON" caption="موافق" style="1342242817" styleex="8192" position="74, 158, 50, 14"/>
+		<control id="2" class="BUTTON" caption="إلغاء الأمر" style="1342242816" styleex="8192" position="7, 158, 50, 14"/>
+	</dialog>
+	<dialog id="9085" caption="تذكيرات" fontface="MS Shell Dlg" style="-2134245176" styleex="12288" position="0, 0, 303, 181">
+		<control id="106" caption="ثابت" style="1342308480" styleex="12288" position="8, 5, 270, 30"/>
+		<control id="100" class="SysListView32" caption="قائمة1" style="1350664205" position="8, 40, 290, 90"/>
+		<control id="101" class="BUTTON" caption="استبعاد الكل" style="1342242816" styleex="8192" position="233, 135, 65, 14"/>
+		<control id="103" class="BUTTON" caption="فتح عنصر" style="1342242816" styleex="8192" position="78, 135, 65, 14"/>
+		<control id="102" class="BUTTON" caption="رفض" style="1342242816" styleex="8192" position="8, 135, 65, 14"/>
+		<control caption="انقر فوق &quot;&quot;انتظار&quot;&quot; لإعادة التذكير في غضون:" styleex="12288" position="128, 155, 170, 8"/>
+		<control id="104" class="COMBOBOX" style="1344339970" styleex="12288" position="78, 165, 220, 130"/>
+		<control id="105" class="BUTTON" caption="انتظار" style="1342242817" styleex="8192" position="8, 165, 65, 14"/>
+	</dialog>
+	<dialog id="9114" caption="القوائم" fontface="MS Shell Dlg" style="1086324808" position="0, 0, 230, 150">
+		<control id="100" caption="القوائم التطبيق" position="4, 5, 222, 8"/>
+		<control id="101" caption="سياق القوائم" position="4, 80, 222, 8"/>
+		<control caption=":تظهر القائمة" position="10, 20, 44, 11"/>
+		<control id="102" class="COMBOBOX" style="1344339971" position="54, 18, 159, 79"/>
+		<control id="103" class="BUTTON" caption="إعادة تعيين" style="1342242816" position="10, 57, 70, 14"/>
+		<control id="106" caption="القائمة الافتراضية\nالقائمة الافتراضية" position="37, 34, 181, 18"/>
+		<control id="107" resource="0" style="1342177283" position="10, 32, 21, 20"/>
+		<control caption=":اختيار قائمة السياق" position="10, 92, 68, 10"/>
+		<control id="104" class="COMBOBOX" style="1344339971" position="83, 90, 130, 79"/>
+		<control id="105" class="BUTTON" caption="إعادة تعيين" style="1342242816" position="10, 108, 70, 14"/>
+	</dialog>
+	<dialog id="9115" caption="محرر الأزرار" fontface="MS Shell Dlg" style="-1865940792" styleex="12288" position="0, 0, 253, 185">
+		<control caption="صورة" styleex="12288" position="162, 7, 82, 8"/>
+		<control class="BUTTON" caption="الألوانن" style="1342177287" styleex="12288" position="71, 106, 80, 71"/>
+		<control class="BUTTON" caption="نقلل" style="1342177287" styleex="12288" position="71, 72, 81, 31"/>
+		<control class="BUTTON" caption="&amp;معاينة" style="1342177287" styleex="12288" position="160, 106, 86, 71"/>
+		<control class="BUTTON" caption="أدوات" style="1342177287" styleex="12288" position="71, 9, 81, 60"/>
+		<control id="1" class="BUTTON" caption="موافق" style="1342242817" styleex="12288" position="10, 7, 50, 14"/>
+		<control id="2" class="BUTTON" caption="إلغاء الأمر" style="1342242816" styleex="12288" position="10, 25, 50, 14"/>
+		<control id="100" style="1342177543" position="160, 17, 86, 80"/>
+		<control id="101" style="1342308865" styleex="131072" position="166, 117, 73, 54"/>
+		<control caption="شفاف" styleex="12288" position="82, 157, 27, 8"/>
+		<control id="105" style="1342308608" position="116, 153, 15, 15"/>
+		<control id="103" caption="أدوات" style="1082262017" position="81, 21, 60, 43"/>
+		<control id="104" caption="نقلل" style="1082262017" position="80, 83, 62, 12"/>
+		<control id="106" style="1342308620" position="109, 144, 15, 15"/>
+		<control id="102" caption="الألوانن" style="1082262017" position="78, 121, 68, 12"/>
+	</dialog>
+	<dialog id="9116" caption="لوحة مفاتيح" fontface="MS Shell Dlg" style="1086324808" styleex="12288" position="0, 0, 230, 150">
+		<control caption="الفئة:" styleex="12288" position="195, 5, 31, 8"/>
+		<control id="100" class="COMBOBOX" style="1344339971" styleex="12288" position="133, 15, 93, 147"/>
+		<control id="101" caption="الأوامر:" styleex="12288" position="41, 28, 90, 8"/>
+		<control id="102" class="LISTBOX" style="1352728897" styleex="12288" position="135, 39, 91, 74"/>
+		<control id="103" caption="تعيينات المفاتيح:" styleex="12288" position="159, 28, 67, 8"/>
+		<control id="104" class="LISTBOX" style="1352728897" styleex="12288" position="62, 38, 69, 49"/>
+		<control id="105" caption="اضغط مفتاح الاختصار الجديد:" styleex="12288" position="41, 91, 90, 8"/>
+		<control id="106" class="EDIT" style="1350631552" position="62, 101, 69, 12"/>
+		<control id="107" class="BUTTON" caption="تعيين" style="1342242816" position="2, 39, 55, 14"/>
+		<control id="108" class="BUTTON" caption="إزالة" style="1342242816" position="2, 56, 55, 14"/>
+		<control id="109" class="BUTTON" caption="إعادة تعيين الكل" style="1342242816" position="2, 73, 55, 14"/>
+		<control id="110" caption="الوصف:" styleex="12288" position="188, 119, 38, 8"/>
+		<control id="111" styleex="143360" position="62, 129, 164, 19"/>
+	</dialog>
+	<dialog id="9117" caption="أشرطة أدوات" fontface="MS Shell Dlg" style="1086324808" position="0, 0, 230, 150">
+		<control caption=":أشرطة الأدوات" styleex="4096" position="4, 5, 222, 8"/>
+		<control id="100" class="LISTBOX" style="1352728913" styleex="12288" position="76, 15, 150, 131"/>
+		<control id="101" class="BUTTON" caption="...جديد" style="1342242816" position="2, 15, 70, 14"/>
+		<control id="102" class="BUTTON" caption="...إعادة تسمية" style="1342242816" position="2, 33, 70, 14"/>
+		<control id="103" class="BUTTON" caption="حذف" style="1342242816" position="2, 51, 70, 14"/>
+		<control id="104" class="BUTTON" caption="...إعادة تعيين" style="1342242816" position="2, 69, 70, 14"/>
+	</dialog>
+	<dialog id="9118" caption="خيارات" fontface="MS Shell Dlg" style="1086324808" styleex="12288" position="0, 0, 230, 150">
+		<control id="108" caption="القوائم وأشرطة الأدوات المخصصة" styleex="12288" position="4, 5, 222, 8"/>
+		<control id="100" class="BUTTON" caption="إظهار القوائم الكاملة دوماً" style="1342242819" styleex="12288" position="4, 17, 216, 10"/>
+		<control id="101" class="BUTTON" caption="إظهار القوائم الكاملة بعد مهلة قصيرة" style="1342242819" styleex="12288" position="4, 29, 204, 10"/>
+		<control id="102" class="BUTTON" caption="إعادة تعيين بيانات استخدام القوائم وأشرطة الأدوات" style="1342242816" styleex="12288" position="56, 42, 165, 14"/>
+		<control id="107" caption="غير ذلك" styleex="12288" position="4, 70, 222, 8"/>
+		<control id="103" class="BUTTON" caption="رموز كبيرة" style="1342242819" styleex="12288" position="4, 82, 216, 10"/>
+		<control id="104" class="BUTTON" caption="إظهار تلميحات الشاشة على أشرطة الأدوات" style="1342242819" styleex="12288" position="4, 93, 216, 10"/>
+		<control id="105" class="BUTTON" caption="إظهار مفاتيح الاختصار في تلميحات الشاشة" style="1342242819" styleex="12288" position="4, 104, 204, 10"/>
+		<control caption="حركة القوائم:" styleex="12288" position="172, 117, 46, 8"/>
+		<control id="106" class="COMBOBOX" style="1344339971" styleex="12288" position="90, 115, 79, 65"/>
+	</dialog>
+	<dialog id="9119" caption="الأوامر" fontface="MS Shell Dlg" style="1086324808" position="0, 0, 230, 150">
+		<control caption="لإضافة أمر إلى شريط أدوات: حدد فئة واسحب الأمر من مربع الحوار هذا إلى شريط الأدوات." styleex="12288" position="4, 5, 222, 19"/>
+		<control caption="الفئات:" styleex="12288" position="4, 25, 133, 8"/>
+		<control id="100" class="LISTBOX" style="1352728833" styleex="12288" position="145, 35, 81, 103"/>
+		<control caption="الأوامر:" styleex="12288" position="152, 25, 74, 8"/>
+		<control id="101" class="LISTBOX" style="1352728849" styleex="12288" position="0, 35, 140, 103"/>
+	</dialog>
+	<dialog id="9120" caption="شريط أدوات جديد" fontface="MS Shell Dlg" style="-2134376248" styleex="12288" position="0, 0, 186, 52">
+		<control caption="اسم شريط الأدوات:" styleex="12288" position="82, 4, 100, 8"/>
+		<control id="100" class="EDIT" style="1350631552" styleex="12288" position="4, 15, 178, 12"/>
+		<control id="1" class="BUTTON" caption="موافق" style="1342242817" styleex="12288" position="78, 34, 50, 14"/>
+		<control id="2" class="BUTTON" caption="إلغاء الأمر" style="1342242816" styleex="12288" position="132, 34, 50, 14"/>
+	</dialog>
+	<dialog id="9313" caption="تلميحات اليوم" fontface="MS Shell Dlg" style="-2134376248" position="0, 0, 279, 127">
+		<control id="1" class="BUTTON" caption="إغلاق" style="1342242817" position="224, 108, 50, 14"/>
+		<control id="100" class="BUTTON" caption="إظهار التلميحات عند بدء التشغيل" style="1342242819" position="6, 110, 140, 10"/>
+		<control id="101" class="BUTTON" caption="التلميح التالي" style="1342242816" position="170, 108, 50, 14"/>
+		<control id="102" style="1073741832" position="0, 0, 279, 103"/>
+	</dialog>
+	<dialog id="9314" caption="تخصيص" fontface="MS Shell Dlg" style="1321205832" position="0, 0, 147, 161">
+		<control id="100" caption="الألوان:" position="79, 4, 43, 10"/>
+		<control id="101" style="1342242823" position="3, 15, 119, 86"/>
+		<control id="102" style="1342242823" position="126, 15, 20, 86"/>
+		<control id="104" caption="تدرج:" position="7, 108, 34, 8"/>
+		<control id="115" class="EDIT" style="1350639744" position="45, 106, 33, 13"/>
+		<control id="112" class="msctls_updown32" caption="Spin1" style="1342177318" position="69, 105, 10, 14"/>
+		<control id="105" caption="إشباع:" position="7, 125, 25, 8"/>
+		<control id="114" class="EDIT" style="1350639744" position="45, 122, 33, 13"/>
+		<control id="116" class="msctls_updown32" caption="Spin2" style="1342177318" position="69, 122, 10, 14"/>
+		<control id="106" caption="إضاءة:" position="7, 140, 25, 8"/>
+		<control id="113" class="EDIT" style="1350639744" position="45, 138, 33, 13"/>
+		<control id="117" class="msctls_updown32" caption="Spin3" style="1342177318" position="69, 137, 10, 14"/>
+		<control id="107" caption="أحمر:" position="83, 108, 17, 8"/>
+		<control id="110" class="EDIT" style="1350639744" position="105, 106, 33, 13"/>
+		<control id="119" class="msctls_updown32" caption="Spin1" style="1342177318" position="129, 105, 11, 14"/>
+		<control id="108" caption="أخضر:" position="83, 125, 20, 8"/>
+		<control id="111" class="EDIT" style="1350639744" position="105, 122, 33, 13"/>
+		<control id="120" class="msctls_updown32" caption="Spin2" style="1342177318" position="129, 122, 11, 14"/>
+		<control id="109" caption="أزرق:" position="83, 140, 18, 8"/>
+		<control id="118" class="EDIT" style="1350639744" position="105, 138, 33, 13"/>
+		<control id="121" class="msctls_updown32" caption="Spin3" style="1342177318" position="129, 137, 11, 14"/>
+	</dialog>
+	<dialog id="9315" caption="قياسي" fontface="MS Shell Dlg" style="1321205832" position="0, 0, 147, 161">
+		<control id="100" caption="الألوان:" position="104, 4, 43, 10"/>
+		<control id="103" style="1342242823" position="0, 15, 147, 145"/>
+	</dialog>
+	<dialog id="9316" caption="ترتيب الإطارات" fontface="MS Shell Dlg" style="-1865678776" position="0, 0, 301, 164">
+		<control caption="حدد الإطار:" position="147, 7, 147, 8"/>
+		<control id="100" class="LISTBOX" style="1353779539" position="78, 17, 216, 140"/>
+		<control id="101" class="BUTTON" caption="تنشيط" style="1342242816" position="6, 7, 62, 14"/>
+		<control id="1" class="BUTTON" caption="موافق" style="1342242816" position="6, 24, 62, 14"/>
+		<control id="105" class="BUTTON" caption="حفظ" style="1342242816" position="6, 41, 62, 14"/>
+		<control id="104" class="BUTTON" caption="إغلاق إطار" style="1342242816" position="6, 58, 62, 14"/>
+		<control id="102" class="BUTTON" caption="تتالي" style="1342242816" position="6, 75, 62, 14"/>
+		<control id="106" class="BUTTON" caption="تجانب أفقي" style="1342242816" position="6, 92, 62, 14"/>
+		<control id="107" class="BUTTON" caption="تجانب عمودي" style="1342242816" position="6, 109, 62, 14"/>
+		<control id="103" class="BUTTON" caption="تصغير" style="1342242816" position="6, 126, 62, 14"/>
+	</dialog>
+	<dialog id="9560" caption="إعداد الصفحة" fontface="MS Shell Dlg" style="-1865940788" position="32, 32, 283, 229">
+		<control class="BUTTON" caption="رؤوس الصفحات وتذييلاتها" style="1342177287" position="6, 4, 271, 70"/>
+		<control caption="رأس الصفحة" position="12, 14, 190, 8"/>
+		<control id="100" class="EDIT" style="1350631552" position="12, 25, 244, 13"/>
+		<control id="102" class="BUTTON" caption="&gt;" style="1342242816" position="258, 25, 13, 13"/>
+		<control caption="تذييل الصفحة" position="12, 44, 190, 8"/>
+		<control id="101" class="EDIT" style="1350631552" position="12, 54, 244, 13"/>
+		<control id="103" class="BUTTON" caption="&gt;" style="1342242816" position="258, 54, 13, 13"/>
+		<control id="1073" class="BUTTON" caption="الورق" style="1342308359" position="6, 78, 196, 51"/>
+		<control id="1089" caption="الحجم:" position="12, 94, 40, 8"/>
+		<control id="1137" class="COMBOBOX" style="1344471299" position="55, 92, 141, 160"/>
+		<control id="1090" caption="المصدر" position="12, 111, 39, 8"/>
+		<control id="1138" class="COMBOBOX" style="1344471299" position="55, 109, 141, 160"/>
+		<control id="1072" class="BUTTON" caption="الاتجاه" style="1342308359" position="210, 78, 67, 51"/>
+		<control id="1056" class="BUTTON" caption="عمودي" style="1342373892" position="215, 91, 56, 12"/>
+		<control id="1057" class="BUTTON" caption="أفقي" style="1342177284" position="215, 107, 58, 12"/>
+		<control id="1075" class="BUTTON" caption="الهوامش" style="1342308359" position="6, 133, 196, 58"/>
+		<control id="1102" caption="اليسار:" position="12, 149, 36, 8"/>
+		<control id="1155" class="EDIT" style="1350762496" position="55, 147, 32, 13"/>
+		<control id="1103" caption="يمين:" position="123, 149, 35, 8"/>
+		<control id="1157" class="EDIT" style="1350762496" position="163, 147, 32, 13"/>
+		<control id="1104" caption="أعلى:" position="12, 169, 35, 8"/>
+		<control id="1156" class="EDIT" style="1350762496" position="55, 168, 32, 13"/>
+		<control id="1105" caption="أسفل:" position="123, 169, 35, 8"/>
+		<control id="1158" class="EDIT" style="1350762496" position="163, 169, 32, 13"/>
+		<control class="BUTTON" caption="المعاينة" style="1342177287" position="210, 133, 67, 58"/>
+		<control id="1081" style="1342308357" position="261, 148, 4, 38"/>
+		<control id="1080" style="1342308358" position="230, 145, 31, 40"/>
+		<control id="1082" style="1342308357" position="235, 185, 29, 2"/>
+		<control id="1026" class="BUTTON" caption="طابعة..." style="1342242816" position="6, 210, 48, 14"/>
+		<control id="57670" class="BUTTON" caption="تعليمات" style="1342242816" position="120, 210, 48, 14"/>
+		<control id="1" class="BUTTON" caption="موافق" style="1342373889" position="175, 210, 48, 14"/>
+		<control id="2" class="BUTTON" caption="إلغاء الأمر" style="1342242816" position="230, 210, 48, 14"/>
+	</dialog>
+	<dialog id="9600" caption="الوصول السريع" fontface="MS Shell Dlg" style="1086324808" styleex="12288" position="0, 0, 230, 150">
+		<control caption="ا&amp;ختيار أوامر من:" styleex="12288" position="135, 5, 91, 8"/>
+		<control id="102" class="COMBOBOX" style="1344339971" styleex="12288" position="135, 15, 91, 85"/>
+		<control id="100" class="LISTBOX" style="1352728851" styleex="12288" position="135, 32, 91, 101"/>
+		<control id="104" class="BUTTON" caption="إ&amp;ضافة" style="1342242816" styleex="12288" position="100, 61, 31, 14"/>
+		<control id="105" class="BUTTON" caption="إ&amp;زالة" style="1342242816" styleex="12288" position="100, 78, 31, 14"/>
+		<control id="101" class="LISTBOX" style="1352728851" styleex="12288" position="5, 32, 91, 84"/>
+		<control id="106" class="BUTTON" caption="إعادة &amp;تعيين" style="1342242816" styleex="12288" position="44, 119, 52, 14"/>
+		<control id="103" class="BUTTON" caption="&amp;وضع أدوات الوصول السريع أسفل الشريط" style="1342242819" styleex="12288" position="5, 136, 221, 12"/>
+	</dialog>
+	<dialog id="9620" caption="Customize &amp;Ribbon" fontface="MS Shell Dlg" style="1086324808" position="0, 0, 452, 227">
+		<control id="107" caption="Customize the Ribbon" position="14, 7, 284, 22"/>
+		<control caption="&amp;Choose commands from:" position="18, 34, 106, 8"/>
+		<control id="102" class="COMBOBOX" style="1344339971" position="18, 45, 164, 85"/>
+		<control id="100" class="XTPCoreTree" style="1342242816" styleex="512" position="18, 65, 164, 145"/>
+		<control id="104" class="BUTTON" caption="&amp;Add &gt;&gt;" style="1342242816" position="190, 109, 52, 14"/>
+		<control id="105" class="BUTTON" caption="&lt;&lt; &amp;Remove" style="1342242816" position="190, 126, 52, 14"/>
+		<control id="114" caption="&amp;Customize the Ribbon:" position="249, 34, 106, 8"/>
+		<control id="113" class="COMBOBOX" style="1344339971" position="248, 45, 164, 85"/>
+		<control id="101" class="XTPCoreTree" style="1342242816" styleex="512" position="249, 65, 164, 98"/>
+		<control id="108" class="BUTTON" caption="Ne&amp;w Tab" style="1342242816" position="249, 168, 52, 14"/>
+		<control id="109" class="BUTTON" caption="&amp;New Group" style="1342242816" position="305, 168, 52, 14"/>
+		<control id="110" class="BUTTON" caption="Rena&amp;me" style="1342242816" position="361, 168, 52, 14"/>
+		<control id="111" class="BUTTON" style="1342242816" position="422, 109, 21, 14"/>
+		<control id="112" class="BUTTON" style="1342242816" position="422, 126, 21, 14"/>
+		<control id="115" caption="Customizations:" position="251, 188, 50, 8"/>
+		<control id="106" class="BUTTON" caption="Re&amp;set" style="1342242816" position="305, 186, 52, 14"/>
+		<control id="116" class="BUTTON" caption="Im&amp;port/Export" style="1342242816" position="305, 203, 77, 14"/>
+	</dialog>
+	<dialog id="9621" caption="&amp;Quick Access Toolbar" fontface="MS Shell Dlg" style="1086324808" position="0, 0, 452, 227">
+		<control id="107" caption="Customize the Quick Access Toolbar." position="14, 7, 284, 22"/>
+		<control caption="&amp;Choose commands from:" position="18, 34, 106, 8"/>
+		<control id="102" class="COMBOBOX" style="1344339971" position="18, 45, 164, 85"/>
+		<control id="100" class="LISTBOX" style="1352728851" position="18, 65, 164, 119"/>
+		<control id="104" class="BUTTON" caption="&amp;Add &gt;&gt;" style="1342242816" position="190, 109, 52, 14"/>
+		<control id="105" class="BUTTON" caption="&lt;&lt; &amp;Remove" style="1342242816" position="190, 126, 52, 14"/>
+		<control id="101" class="LISTBOX" style="1352728851" position="249, 65, 164, 119"/>
+		<control id="106" class="BUTTON" caption="Re&amp;set" style="1342242816" position="249, 189, 52, 14"/>
+		<control id="103" class="BUTTON" caption="S&amp;how Quick Access Toolbar below the Ribbon" style="1342242819" position="18, 190, 161, 14"/>
+	</dialog>
+	<dialog id="9622" caption="Rename" fontface="MS Shell Dlg" style="-2134376248" position="0, 0, 228, 56">
+		<control caption="Display Name:" position="7, 8, 46, 8"/>
+		<control id="100" class="EDIT" style="1350631552" position="61, 7, 160, 14"/>
+		<control id="1" class="BUTTON" caption="OK" style="1342242817" position="117, 35, 50, 14"/>
+		<control id="2" class="BUTTON" caption="Cancel" style="1342242816" position="171, 35, 50, 14"/>
+	</dialog>
+	<dialog id="9632" fontsize="9" fontface="Segoe UI" style="1073741888" position="0, 0, 497, 258">
+		<control id="9638" style="1342177284" position="182, 13, 1, 238"/>
+		<control id="9640" style="1073741828" position="191, 7, 299, 244"/>
+		<control id="9639" class="BUTTON" caption="Print" style="1342251008" position="22, 22, 49, 44"/>
+		<control id="9635" caption="Print" style="1342308480" position="78, 23, 84, 12"/>
+		<control id="9634" style="1342177284" position="78, 36, 96, 1"/>
+		<control caption="Copies:" position="79, 47, 29, 7"/>
+		<control id="9637" class="EDIT" style="1350631552" position="111, 44, 61, 14"/>
+	</dialog>
+	<dialog id="9633" fontsize="9" fontface="Segoe UI" style="1073741888" position="0, 0, 497, 258">
+		<control id="9635" caption="Recent Documents" style="1342308480" position="22, 17, 148, 12"/>
+		<control id="9634" style="1342177284" position="22, 30, 468, 1"/>
+		<control id="9636" caption="Recent File List" style="1342374144" position="22, 35, 468, 216"/>
+	</dialog>
+	<dialog id="9705" caption="Editor" fontface="MS Shell Dlg" style="1220542536" position="0, 0, 260, 180">
+		<control class="BUTTON" caption="Window Settings " style="1342177287" position="7, 7, 246, 76"/>
+		<control id="100" class="BUTTON" caption="&amp;Vertical scrollbar" style="1342242819" position="15, 21, 105, 10"/>
+		<control id="101" class="BUTTON" caption="&amp;Horizontal scrollbar" style="1342242819" position="15, 32, 105, 10"/>
+		<control id="102" class="BUTTON" caption="Line &amp;Number" style="1342242819" position="15, 43, 105, 10"/>
+		<control id="103" class="BUTTON" caption="Selection &amp;margin" style="1342242819" position="15, 54, 105, 10"/>
+		<control id="114" class="BUTTON" caption="C&amp;ollapsible Nodes" style="1342242819" position="15, 65, 105, 10"/>
+		<control id="104" class="BUTTON" caption="&amp;Auto indentation" style="1342242819" position="130, 20, 115, 10"/>
+		<control id="113" class="BUTTON" caption="Virtual &amp;space" style="1342242819" position="130, 35, 115, 10"/>
+		<control id="105" class="BUTTON" caption="Synta&amp;x Colorization" style="1342242819" position="130, 50, 115, 10"/>
+		<control class="BUTTON" caption="Tabs" style="1342177287" position="7, 88, 162, 43"/>
+		<control caption="&amp;Tab size:" position="15, 103, 30, 8"/>
+		<control id="108" class="EDIT" style="1350631552" position="50, 100, 46, 14"/>
+		<control id="107" class="BUTTON" caption="Insert s&amp;paces" style="1342373897" position="102, 102, 58, 10"/>
+		<control id="106" class="BUTTON" caption="&amp;Keep Tabs" style="1342177289" position="102, 113, 51, 10"/>
+		<control id="109" class="BUTTON" caption="Overwrite Caret" style="1342308359" position="175, 88, 78, 43"/>
+		<control id="110" class="BUTTON" caption="Th&amp;in" style="1342373897" position="181, 102, 31, 10"/>
+		<control id="111" class="BUTTON" caption="Thi&amp;ck" style="1342177289" position="181, 113, 36, 10"/>
+		<control class="BUTTON" caption="Save Options " style="1342177287" position="7, 135, 246, 37"/>
+		<control id="112" class="BUTTON" caption="Automatic &amp;reload of externally modified files" style="1342242819" position="15, 151, 155, 10"/>
+	</dialog>
+	<dialog id="9706" caption="Editor Font" fontface="MS Shell Dlg" style="1220542536" position="0, 0, 260, 180">
+		<control id="100" caption="&amp;Font:" position="7, 7, 40, 9"/>
+		<control id="101" class="COMBOBOX" style="1344342337" position="7, 18, 119, 55"/>
+		<control id="102" caption="Font St&amp;yle:" position="134, 7, 45, 9"/>
+		<control id="103" class="COMBOBOX" style="1344342017" position="134, 18, 75, 55"/>
+		<control id="104" caption="Si&amp;ze:" position="217, 7, 30, 9"/>
+		<control id="105" class="COMBOBOX" style="1344342017" position="217, 18, 36, 55"/>
+		<control caption="Normal &amp;Text:" position="7, 68, 100, 8"/>
+		<control id="106" class="COMBOBOX" style="1344340515" position="7, 78, 103, 100"/>
+		<control id="107" class="BUTTON" caption="..." style="1342242816" position="113, 78, 13, 12"/>
+		<control caption="&amp;Normal Background:" position="7, 95, 100, 8"/>
+		<control id="108" class="COMBOBOX" style="1344340515" position="7, 105, 103, 100"/>
+		<control id="109" class="BUTTON" caption="..." style="1342242816" position="113, 105, 13, 12"/>
+		<control caption="Selected Te&amp;xt:" position="7, 122, 100, 8"/>
+		<control id="110" class="COMBOBOX" style="1344340515" position="7, 132, 103, 100"/>
+		<control id="111" class="BUTTON" caption="..." style="1342242816" position="113, 132, 13, 12"/>
+		<control caption="&amp;Selected Background:" position="7, 149, 100, 8"/>
+		<control id="112" class="COMBOBOX" style="1344340515" position="7, 159, 103, 100"/>
+		<control id="113" class="BUTTON" caption="..." style="1342242816" position="113, 159, 13, 12"/>
+		<control id="114" caption="Sc&amp;ript:" position="135, 69, 100, 9"/>
+		<control id="115" class="COMBOBOX" style="1352728643" position="134, 78, 119, 115"/>
+		<control id="118" class="BUTTON" caption="Sample Normal / Selected:" style="1342308359" position="135, 128, 118, 44"/>
+		<control id="119" caption="AaBbCc" style="1342308865" styleex="512" position="143, 140, 49, 26"/>
+		<control id="120" caption="XxYyZz" style="1342308865" styleex="512" position="196, 140, 49, 26"/>
+	</dialog>
+	<dialog id="9707" caption="Syntax Color" fontface="MS Shell Dlg" style="1220542536" position="0, 0, 260, 180">
+		<control id="200" caption="File T&amp;ype:" position="7, 7, 123, 9"/>
+		<control id="201" class="LISTBOX" style="1352728835" position="7, 17, 123, 64"/>
+		<control id="202" caption="&amp;Attributes:" position="7, 85, 123, 9"/>
+		<control id="203" class="LISTBOX" style="1352728835" position="7, 95, 123, 77"/>
+		<control caption="Normal &amp;Text:" position="135, 7, 100, 8"/>
+		<control id="106" class="COMBOBOX" style="1344340515" position="135, 17, 100, 100"/>
+		<control id="107" class="BUTTON" caption="..." style="1342242816" position="238, 17, 13, 12"/>
+		<control caption="&amp;Normal Background:" position="135, 33, 100, 8"/>
+		<control id="108" class="COMBOBOX" style="1344340515" position="135, 43, 100, 100"/>
+		<control id="109" class="BUTTON" caption="..." style="1342242816" position="238, 43, 13, 12"/>
+		<control caption="Selected Te&amp;xt:" position="135, 59, 100, 8"/>
+		<control id="110" class="COMBOBOX" style="1344340515" position="135, 69, 100, 100"/>
+		<control id="111" class="BUTTON" caption="..." style="1342242816" position="238, 69, 13, 12"/>
+		<control caption="&amp;Selected Background:" position="135, 85, 100, 8"/>
+		<control id="112" class="COMBOBOX" style="1344340515" position="135, 95, 100, 100"/>
+		<control id="113" class="BUTTON" caption="..." style="1342242816" position="238, 95, 13, 12"/>
+		<control id="204" class="BUTTON" caption="&amp;Bold" style="1342242819" position="135, 114, 30, 10"/>
+		<control id="205" class="BUTTON" caption="&amp;Italic" style="1342242819" position="170, 114, 31, 10"/>
+		<control id="117" class="BUTTON" caption="&amp;Underline" style="1342242819" position="206, 114, 46, 10"/>
+		<control id="118" class="BUTTON" caption="Sample Normal / Selected:" style="1342308359" position="135, 128, 118, 44"/>
+		<control id="119" caption="AaBbCc" style="1342308865" styleex="512" position="143, 140, 49, 26"/>
+		<control id="120" caption="XxYyZz" style="1342308865" styleex="512" position="196, 140, 49, 26"/>
+	</dialog>
+	<dialog id="9708" caption="Find &amp; Replace" fontface="MS Shell Dlg" style="-2134376248" position="0, 0, 271, 86">
+		<control caption="Find Text" style="1342177280" position="7, 9, 50, 8"/>
+		<control id="101" class="COMBOBOX" style="1344340034" position="61, 6, 143, 154"/>
+		<control caption="Replace With" style="1342177280" position="7, 25, 50, 8"/>
+		<control id="100" class="COMBOBOX" style="1344340034" position="61, 23, 143, 135"/>
+		<control class="BUTTON" caption="Options" style="1342177287" position="7, 38, 113, 41"/>
+		<control id="105" class="BUTTON" caption="Match whole word only" style="1342242819" position="13, 51, 100, 10"/>
+		<control id="104" class="BUTTON" caption="Match case" style="1342242819" position="13, 64, 100, 10"/>
+		<control class="BUTTON" caption="Direction" style="1342177287" position="126, 38, 80, 41"/>
+		<control id="103" class="BUTTON" caption="Search Up" style="1342308361" position="134, 51, 65, 10"/>
+		<control id="102" class="BUTTON" caption="Search Down" style="1342177289" position="134, 64, 65, 10"/>
+		<control id="106" class="BUTTON" caption="&amp;Find Next" style="1476460544" position="214, 7, 50, 14"/>
+		<control id="107" class="BUTTON" caption="&amp;Replace" style="1476460544" position="214, 23, 50, 14"/>
+		<control id="108" class="BUTTON" caption="Replace &amp;All" style="1476460544" position="214, 39, 50, 14"/>
+		<control id="2" class="BUTTON" caption="Close" style="1342242816" position="214, 65, 50, 14"/>
+	</dialog>
+	<dialog id="9709" caption="Find" fontface="MS Shell Dlg" style="-2134376248" position="0, 0, 271, 82">
+		<control caption="Find What" style="1342177280" position="7, 9, 43, 8"/>
+		<control id="101" class="COMBOBOX" style="1344340034" position="51, 6, 154, 153"/>
+		<control class="BUTTON" caption="Options" style="1342177287" position="7, 30, 113, 45"/>
+		<control id="105" class="BUTTON" caption="Match whole word only" style="1342242819" position="13, 43, 100, 10"/>
+		<control id="104" class="BUTTON" caption="Match case" style="1342242819" position="13, 58, 100, 10"/>
+		<control class="BUTTON" caption="Direction" style="1342177287" position="126, 30, 80, 45"/>
+		<control id="103" class="BUTTON" caption="Search Up" style="1342177289" position="134, 43, 65, 10"/>
+		<control id="102" class="BUTTON" caption="Search Down" style="1342177289" position="134, 58, 65, 10"/>
+		<control id="106" class="BUTTON" caption="&amp;Find Next" style="1476460544" position="214, 7, 50, 14"/>
+		<control id="2" class="BUTTON" caption="Close" style="1342242816" position="214, 26, 50, 14"/>
+	</dialog>
+	<dialog id="9710" caption="Go To Line" fontface="MS Shell Dlg" style="-2134376248" position="0, 0, 165, 55">
+		<control id="100" caption="&amp;Line number:" position="5, 5, 155, 8"/>
+		<control id="101" class="EDIT" style="1350639744" position="5, 17, 155, 14"/>
+		<control id="102" class="BUTTON" caption="&amp;Go To" style="1342242816" position="56, 36, 50, 14"/>
+		<control id="2" class="BUTTON" caption="Cancel" style="1342242816" position="110, 36, 50, 14"/>
+	</dialog>
+	<dialog id="9976" fontface="MS Shell Dlg" style="1073741892" position="0, 0, 392, 16">
+		<control id="58116" class="BUTTON" caption="طباعة..." style="1342275584" position="2, 2, 61, 12"/>
+		<control id="58114" class="BUTTON" caption="الصفحة التالية" style="1342275584" position="47, 2, 75, 12"/>
+		<control id="58115" class="BUTTON" caption="صفحة سابقة" style="1342275584" position="123, 2, 65, 12"/>
+		<control id="58113" class="BUTTON" style="1342275584" position="189, 2, 44, 12"/>
+		<control id="58117" class="BUTTON" caption="تكبير" style="1342275584" position="234, 2, 44, 12"/>
+		<control id="58118" class="BUTTON" caption="تصغير" style="1342275584" position="279, 2, 44, 12"/>
+		<control id="58112" class="BUTTON" caption="إغلاق" style="1342275584" position="324, 2, 44, 12"/>
+	</dialog>
+</resource>

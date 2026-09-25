@@ -1,0 +1,19 @@
+{
+    "description": "Glass",
+    "category": "Glass",
+    "uuid": "6755b1c8-c868-46b3-9645-37dbe0d49a2c",
+    "designators": [],
+    "physicalMaterials": [
+        "PrismMaterial-086",
+        "PrismMaterial-037",
+        "PrismMaterial-038",
+        "PrismMaterial-006",
+        "PrismMaterial-033",
+        "PrismMaterial-034",
+        "PrismMaterial-036",
+        "PrismMaterial-035",
+        "PrismMaterial-039",
+        "PrismMaterial-040"
+    ],
+    "version": 1.0
+}

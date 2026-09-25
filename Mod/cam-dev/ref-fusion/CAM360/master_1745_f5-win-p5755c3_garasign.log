@@ -1,0 +1,479 @@
+[INFO]: 2025-07-08 15:09:00 - ================================New Run===========================================================
+[INFO]: 2025-07-08 15:09:00 - Version: 1.8.2
+[INFO]: 2025-07-08 15:09:00 - Working directory:  D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release
+[INFO]: 2025-07-08 15:09:00 - Host name:  f5-win-p5755c3
+[INFO]: 2025-07-08 15:09:00 - Local IP address:  10.65.177.214
+[INFO]: 2025-07-08 15:09:00 - Public IP address:  20.3.11.234
+[INFO]: 2025-07-08 15:09:00 - Garasign relevent environment variables:
+[INFO]: 2025-07-08 15:09:00 - GARASIGN_NO_DISABLE_LOG=false
+[INFO]: 2025-07-08 15:09:00 - This version of the Garasign CLI is tested against Garasign KSP 1.35.0.0.
+[INFO]: 2025-07-08 15:09:00 - Vendor log directory created: D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\GarasignLogs
+[INFO]: 2025-07-08 15:09:00 - Client App ID:  692d9cec-01ec-4f17-bd73-02072ac4f270
+[INFO]: 2025-07-08 15:09:00 - Client secret value: dd6xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+[INFO]: 2025-07-08 15:09:01 - Downloading https://art-toucan.autodesk.com/artifactory/team-security-generic/garasign/assets/windows/latestproduct_windows.ini into latestproduct.ini
+[INFO]: 2025-07-08 15:09:02 - Garasign Server: garasign.com
+[INFO]: 2025-07-08 15:09:02 - Garasign Port: 8443
+[INFO]: 2025-07-08 15:09:02 - Garasign config file save timestamp: 1751987342 (Tue, 08 Jul 2025 15:09:02 UTC)
+[INFO]: 2025-07-08 15:09:02 - Successfully modified config file C:\Users\jenkins\AppData\Roaming\Garantir\GRS\config.ini
+[INFO]: 2025-07-08 15:09:02 - Running certificateloader. Attempt 1
+[DEBUG]: 2025-07-08 15:09:02 - Garasign config file stats before running certificateloader
+[DEBUG]: 2025-07-08 15:09:02 - Config file last modification timestamp: 1751987342 (Tue, 08 Jul 2025 15:09:02 UTC)
+[DEBUG]: 2025-07-08 15:09:02 - Server full URL: https://garasign.com:8443/CodeSigningRestService
+[DEBUG]: 2025-07-08 15:09:02 - Authentication method: OpenID
+[DEBUG]: 2025-07-08 15:09:15 - Garasign config file stats after running certificateloader
+[DEBUG]: 2025-07-08 15:09:15 - Config file last modification timestamp: 1751987342 (Tue, 08 Jul 2025 15:09:02 UTC)
+[DEBUG]: 2025-07-08 15:09:15 - Server full URL: https://garasign.com:8443/CodeSigningRestService
+[DEBUG]: 2025-07-08 15:09:15 - Authentication method: OpenID
+[INFO]: 2025-07-08 15:09:15 - 
+No certificates were removed from the certificate store (SmartCard KSP).
+No certificates were removed from the certificate store (Base KSP).
+GrsAPIAgent could not load content.
+3 certificates were loaded to the certificate store (Base KSP).
+No SSH certificate has been loaded to the registry (Base KSP).
+Pageant is already running: sending refresh request...
+
+[INFO]: 2025-07-08 15:09:15 - Doing sanity check. please wait.
+[INFO]: 2025-07-08 15:09:15 - Certificate with thumbprint 65998E608571BF3A9135ABAFB6902999454D4D18 is present.
+[INFO]: 2025-07-08 15:09:15 - Check successful. Ready to sign.
+[INFO]: 2025-07-08 15:09:15 - Garasign configured.
+[INFO]: 2025-07-08 15:09:27 - ================================New Run===========================================================
+[INFO]: 2025-07-08 15:09:27 - Calling command: [D:\jenkins\workspace\do_TorpedoEscherContainer_master\garasign.exe --sign -productsign -sequential D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\ADFlowPluginInterface.dll]
+[INFO]: 2025-07-08 15:09:27 - Version: 1.8.2
+[INFO]: 2025-07-08 15:09:27 - Working directory:  D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release
+[INFO]: 2025-07-08 15:09:27 - Host name:  f5-win-p5755c3
+[INFO]: 2025-07-08 15:09:27 - Local IP address:  10.65.177.214
+[INFO]: 2025-07-08 15:09:28 - Public IP address:  20.3.11.234
+[INFO]: 2025-07-08 15:09:28 - Garasign relevent environment variables:
+[INFO]: 2025-07-08 15:09:28 - GARASIGN_NO_DISABLE_LOG=false
+[INFO]: 2025-07-08 15:09:28 - This version of the Garasign CLI is tested against Garasign KSP 1.35.0.0.
+[INFO]: 2025-07-08 15:09:28 - Adding file to processing list:  D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\ADFlowPluginInterface.dll
+[INFO]: 2025-07-08 15:09:28 - Looking up certificate with thumbprint 65998E608571BF3A9135ABAFB6902999454D4D18
+[INFO]: 2025-07-08 15:09:28 - Chosen certificate with SHA1 thumbprint: 65998E608571BF3A9135ABAFB6902999454D4D18 , SHA256 thumbprint: C140BDD9488693ADED25E5BC4B8E23AFDDF34C4A6F4E051E5FA455E5416A94D7 , and Serial Number: 064A2A95F738064E9FAB477278B02D0B
+[INFO]: 2025-07-08 15:09:29 - Pre-signing check successful. Certificate exists.
+[INFO]: 2025-07-08 15:09:29 - Using batch size:  1
+[INFO]: 2025-07-08 15:09:29 - Signing pass #1
+[INFO]: 2025-07-08 15:09:29 - Signing pass #1, batch #1
+[INFO]: 2025-07-08 15:09:29 - signtool verify failed with error: exit status 1, assuming no signature.
+[INFO]: 2025-07-08 15:09:29 - Signed and timestamped D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\ADFlowPluginInterface.dll
+[INFO]: 2025-07-08 15:09:37 - ================================New Run===========================================================
+[INFO]: 2025-07-08 15:09:37 - Calling command: [D:\jenkins\workspace\do_TorpedoEscherContainer_master\garasign.exe --cleanup]
+[INFO]: 2025-07-08 15:09:37 - Version: 1.8.2
+[INFO]: 2025-07-08 15:09:37 - Working directory:  D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release
+[INFO]: 2025-07-08 15:09:37 - Host name:  f5-win-p5755c3
+[INFO]: 2025-07-08 15:09:37 - Local IP address:  10.65.177.214
+[INFO]: 2025-07-08 15:09:37 - Public IP address:  20.3.11.252
+[INFO]: 2025-07-08 15:09:37 - Garasign relevent environment variables:
+[INFO]: 2025-07-08 15:09:37 - This version of the Garasign CLI is tested against Garasign KSP 1.35.0.0.
+[INFO]: 2025-07-08 15:09:38 - Command: taskkill.exe /IM pageantgrs.exe /F completed successfully
+[INFO]: 2025-07-08 15:09:38 - Command: taskkill /IM grsvcard.exe /F completed successfully
+[INFO]: 2025-07-08 15:09:38 - Command: taskkill /IM grsapiagent.exe /F completed successfully
+[INFO]: 2025-07-08 15:09:39 - ================================New Run===========================================================
+[INFO]: 2025-07-08 15:09:39 - Calling command: [D:\jenkins\workspace\do_TorpedoEscherContainer_master\garasign.exe --verify -productsign D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\ADFlowPluginInterface.dll]
+[INFO]: 2025-07-08 15:09:39 - Version: 1.8.2
+[INFO]: 2025-07-08 15:09:39 - Working directory:  D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release
+[INFO]: 2025-07-08 15:09:39 - Host name:  f5-win-p5755c3
+[INFO]: 2025-07-08 15:09:39 - Local IP address:  10.65.177.214
+[INFO]: 2025-07-08 15:09:39 - Public IP address:  20.3.11.234
+[INFO]: 2025-07-08 15:09:39 - Garasign relevent environment variables:
+[INFO]: 2025-07-08 15:09:39 - This version of the Garasign CLI is tested against Garasign KSP 1.35.0.0.
+[INFO]: 2025-07-08 15:09:39 - Adding file to processing list:  D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\ADFlowPluginInterface.dll
+[INFO]: 2025-07-08 15:09:48 - ================================New Run===========================================================
+[INFO]: 2025-07-08 15:09:48 - Version: 1.8.2
+[INFO]: 2025-07-08 15:09:48 - Working directory:  D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release
+[INFO]: 2025-07-08 15:09:48 - Host name:  f5-win-p5755c3
+[INFO]: 2025-07-08 15:09:48 - Local IP address:  10.65.177.214
+[INFO]: 2025-07-08 15:09:48 - Public IP address:  20.3.11.252
+[INFO]: 2025-07-08 15:09:48 - Garasign relevent environment variables:
+[INFO]: 2025-07-08 15:09:48 - GARASIGN_NO_DISABLE_LOG=false
+[INFO]: 2025-07-08 15:09:48 - This version of the Garasign CLI is tested against Garasign KSP 1.35.0.0.
+[INFO]: 2025-07-08 15:09:48 - Vendor log directory already exists: D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\GarasignLogs
+[INFO]: 2025-07-08 15:09:48 - Vendor log directory cleared: D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\GarasignLogs
+[INFO]: 2025-07-08 15:09:48 - Client App ID:  692d9cec-01ec-4f17-bd73-02072ac4f270
+[INFO]: 2025-07-08 15:09:48 - Client secret value: dd6xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+[INFO]: 2025-07-08 15:09:48 - Downloading https://art-toucan.autodesk.com/artifactory/team-security-generic/garasign/assets/windows/latestproduct_windows.ini into latestproduct.ini
+[INFO]: 2025-07-08 15:09:49 - Garasign Server: garasign.com
+[INFO]: 2025-07-08 15:09:49 - Garasign Port: 8443
+[INFO]: 2025-07-08 15:09:49 - Garasign config file save timestamp: 1751987389 (Tue, 08 Jul 2025 15:09:49 UTC)
+[INFO]: 2025-07-08 15:09:49 - Successfully modified config file C:\Users\jenkins\AppData\Roaming\Garantir\GRS\config.ini
+[INFO]: 2025-07-08 15:09:49 - Running certificateloader. Attempt 1
+[DEBUG]: 2025-07-08 15:09:49 - Garasign config file stats before running certificateloader
+[DEBUG]: 2025-07-08 15:09:49 - Config file last modification timestamp: 1751987389 (Tue, 08 Jul 2025 15:09:49 UTC)
+[DEBUG]: 2025-07-08 15:09:49 - Server full URL: https://garasign.com:8443/CodeSigningRestService
+[DEBUG]: 2025-07-08 15:09:49 - Authentication method: OpenID
+[DEBUG]: 2025-07-08 15:10:02 - Garasign config file stats after running certificateloader
+[DEBUG]: 2025-07-08 15:10:02 - Config file last modification timestamp: 1751987389 (Tue, 08 Jul 2025 15:09:49 UTC)
+[DEBUG]: 2025-07-08 15:10:02 - Server full URL: https://garasign.com:8443/CodeSigningRestService
+[DEBUG]: 2025-07-08 15:10:02 - Authentication method: OpenID
+[INFO]: 2025-07-08 15:10:02 - 
+No certificates were removed from the certificate store (SmartCard KSP).
+No certificates were removed from the certificate store (Base KSP).
+GrsAPIAgent could not load content.
+3 certificates were loaded to the certificate store (Base KSP).
+No SSH certificate has been loaded to the registry (Base KSP).
+Pageant is already running: sending refresh request...
+
+[INFO]: 2025-07-08 15:10:02 - Doing sanity check. please wait.
+[INFO]: 2025-07-08 15:10:02 - Certificate with thumbprint 65998E608571BF3A9135ABAFB6902999454D4D18 is present.
+[INFO]: 2025-07-08 15:10:03 - Check successful. Ready to sign.
+[INFO]: 2025-07-08 15:10:03 - Garasign configured.
+[INFO]: 2025-07-08 15:10:16 - ================================New Run===========================================================
+[INFO]: 2025-07-08 15:10:16 - Calling command: [D:\jenkins\workspace\do_TorpedoEscherContainer_master\garasign.exe --sign -productsign -sequential D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\InfillPlugin.dll]
+[INFO]: 2025-07-08 15:10:16 - Version: 1.8.2
+[INFO]: 2025-07-08 15:10:16 - Working directory:  D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release
+[INFO]: 2025-07-08 15:10:16 - Host name:  f5-win-p5755c3
+[INFO]: 2025-07-08 15:10:16 - Local IP address:  10.65.177.214
+[INFO]: 2025-07-08 15:10:17 - Public IP address:  20.3.11.252
+[INFO]: 2025-07-08 15:10:17 - Garasign relevent environment variables:
+[INFO]: 2025-07-08 15:10:17 - GARASIGN_NO_DISABLE_LOG=false
+[INFO]: 2025-07-08 15:10:17 - This version of the Garasign CLI is tested against Garasign KSP 1.35.0.0.
+[INFO]: 2025-07-08 15:10:17 - Adding file to processing list:  D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\InfillPlugin.dll
+[INFO]: 2025-07-08 15:10:17 - Looking up certificate with thumbprint 65998E608571BF3A9135ABAFB6902999454D4D18
+[INFO]: 2025-07-08 15:10:17 - Chosen certificate with SHA1 thumbprint: 65998E608571BF3A9135ABAFB6902999454D4D18 , SHA256 thumbprint: C140BDD9488693ADED25E5BC4B8E23AFDDF34C4A6F4E051E5FA455E5416A94D7 , and Serial Number: 064A2A95F738064E9FAB477278B02D0B
+[INFO]: 2025-07-08 15:10:18 - Pre-signing check successful. Certificate exists.
+[INFO]: 2025-07-08 15:10:18 - Using batch size:  1
+[INFO]: 2025-07-08 15:10:18 - Signing pass #1
+[INFO]: 2025-07-08 15:10:18 - Signing pass #1, batch #1
+[INFO]: 2025-07-08 15:10:18 - signtool verify failed with error: exit status 1, assuming no signature.
+[INFO]: 2025-07-08 15:10:18 - Signed and timestamped D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\InfillPlugin.dll
+[INFO]: 2025-07-08 15:10:26 - ================================New Run===========================================================
+[INFO]: 2025-07-08 15:10:26 - Calling command: [D:\jenkins\workspace\do_TorpedoEscherContainer_master\garasign.exe --cleanup]
+[INFO]: 2025-07-08 15:10:26 - Version: 1.8.2
+[INFO]: 2025-07-08 15:10:26 - Working directory:  D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release
+[INFO]: 2025-07-08 15:10:26 - Host name:  f5-win-p5755c3
+[INFO]: 2025-07-08 15:10:26 - Local IP address:  10.65.177.214
+[INFO]: 2025-07-08 15:10:26 - Public IP address:  20.3.11.234
+[INFO]: 2025-07-08 15:10:26 - Garasign relevent environment variables:
+[INFO]: 2025-07-08 15:10:26 - This version of the Garasign CLI is tested against Garasign KSP 1.35.0.0.
+[INFO]: 2025-07-08 15:10:26 - Command: taskkill.exe /IM pageantgrs.exe /F completed successfully
+[INFO]: 2025-07-08 15:10:27 - Command: taskkill /IM grsvcard.exe /F completed successfully
+[INFO]: 2025-07-08 15:10:27 - Command: taskkill /IM grsapiagent.exe /F completed successfully
+[INFO]: 2025-07-08 15:10:28 - ================================New Run===========================================================
+[INFO]: 2025-07-08 15:10:28 - Calling command: [D:\jenkins\workspace\do_TorpedoEscherContainer_master\garasign.exe --verify -productsign D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\InfillPlugin.dll]
+[INFO]: 2025-07-08 15:10:28 - Version: 1.8.2
+[INFO]: 2025-07-08 15:10:28 - Working directory:  D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release
+[INFO]: 2025-07-08 15:10:28 - Host name:  f5-win-p5755c3
+[INFO]: 2025-07-08 15:10:28 - Local IP address:  10.65.177.214
+[INFO]: 2025-07-08 15:10:28 - Public IP address:  20.3.11.234
+[INFO]: 2025-07-08 15:10:28 - Garasign relevent environment variables:
+[INFO]: 2025-07-08 15:10:28 - This version of the Garasign CLI is tested against Garasign KSP 1.35.0.0.
+[INFO]: 2025-07-08 15:10:28 - Adding file to processing list:  D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\InfillPlugin.dll
+[INFO]: 2025-07-08 15:10:36 - ================================New Run===========================================================
+[INFO]: 2025-07-08 15:10:36 - Version: 1.8.2
+[INFO]: 2025-07-08 15:10:36 - Working directory:  D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release
+[INFO]: 2025-07-08 15:10:36 - Host name:  f5-win-p5755c3
+[INFO]: 2025-07-08 15:10:36 - Local IP address:  10.65.177.214
+[INFO]: 2025-07-08 15:10:37 - Public IP address:  20.3.11.252
+[INFO]: 2025-07-08 15:10:37 - Garasign relevent environment variables:
+[INFO]: 2025-07-08 15:10:37 - GARASIGN_NO_DISABLE_LOG=false
+[INFO]: 2025-07-08 15:10:37 - This version of the Garasign CLI is tested against Garasign KSP 1.35.0.0.
+[INFO]: 2025-07-08 15:10:37 - Vendor log directory already exists: D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\GarasignLogs
+[INFO]: 2025-07-08 15:10:37 - Vendor log directory cleared: D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\GarasignLogs
+[INFO]: 2025-07-08 15:10:37 - Client App ID:  692d9cec-01ec-4f17-bd73-02072ac4f270
+[INFO]: 2025-07-08 15:10:37 - Client secret value: dd6xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+[INFO]: 2025-07-08 15:10:37 - Downloading https://art-toucan.autodesk.com/artifactory/team-security-generic/garasign/assets/windows/latestproduct_windows.ini into latestproduct.ini
+[INFO]: 2025-07-08 15:10:38 - Garasign Server: garasign.com
+[INFO]: 2025-07-08 15:10:38 - Garasign Port: 8443
+[INFO]: 2025-07-08 15:10:38 - Garasign config file save timestamp: 1751987438 (Tue, 08 Jul 2025 15:10:38 UTC)
+[INFO]: 2025-07-08 15:10:38 - Successfully modified config file C:\Users\jenkins\AppData\Roaming\Garantir\GRS\config.ini
+[INFO]: 2025-07-08 15:10:38 - Running certificateloader. Attempt 1
+[DEBUG]: 2025-07-08 15:10:38 - Garasign config file stats before running certificateloader
+[DEBUG]: 2025-07-08 15:10:38 - Config file last modification timestamp: 1751987438 (Tue, 08 Jul 2025 15:10:38 UTC)
+[DEBUG]: 2025-07-08 15:10:38 - Server full URL: https://garasign.com:8443/CodeSigningRestService
+[DEBUG]: 2025-07-08 15:10:38 - Authentication method: OpenID
+[DEBUG]: 2025-07-08 15:10:51 - Garasign config file stats after running certificateloader
+[DEBUG]: 2025-07-08 15:10:51 - Config file last modification timestamp: 1751987438 (Tue, 08 Jul 2025 15:10:38 UTC)
+[DEBUG]: 2025-07-08 15:10:51 - Server full URL: https://garasign.com:8443/CodeSigningRestService
+[DEBUG]: 2025-07-08 15:10:51 - Authentication method: OpenID
+[INFO]: 2025-07-08 15:10:51 - 
+No certificates were removed from the certificate store (SmartCard KSP).
+No certificates were removed from the certificate store (Base KSP).
+GrsAPIAgent could not load content.
+3 certificates were loaded to the certificate store (Base KSP).
+No SSH certificate has been loaded to the registry (Base KSP).
+Pageant is already running: sending refresh request...
+
+[INFO]: 2025-07-08 15:10:51 - Doing sanity check. please wait.
+[INFO]: 2025-07-08 15:10:51 - Certificate with thumbprint 65998E608571BF3A9135ABAFB6902999454D4D18 is present.
+[INFO]: 2025-07-08 15:10:51 - Check successful. Ready to sign.
+[INFO]: 2025-07-08 15:10:51 - Garasign configured.
+[INFO]: 2025-07-08 15:11:05 - ================================New Run===========================================================
+[INFO]: 2025-07-08 15:11:05 - Calling command: [D:\jenkins\workspace\do_TorpedoEscherContainer_master\garasign.exe --sign -productsign -sequential D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\TorpedoNodesPlugin.dll]
+[INFO]: 2025-07-08 15:11:05 - Version: 1.8.2
+[INFO]: 2025-07-08 15:11:05 - Working directory:  D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release
+[INFO]: 2025-07-08 15:11:05 - Host name:  f5-win-p5755c3
+[INFO]: 2025-07-08 15:11:05 - Local IP address:  10.65.177.214
+[INFO]: 2025-07-08 15:11:05 - Public IP address:  20.3.11.252
+[INFO]: 2025-07-08 15:11:05 - Garasign relevent environment variables:
+[INFO]: 2025-07-08 15:11:05 - GARASIGN_NO_DISABLE_LOG=false
+[INFO]: 2025-07-08 15:11:05 - This version of the Garasign CLI is tested against Garasign KSP 1.35.0.0.
+[INFO]: 2025-07-08 15:11:05 - Adding file to processing list:  D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\TorpedoNodesPlugin.dll
+[INFO]: 2025-07-08 15:11:06 - Looking up certificate with thumbprint 65998E608571BF3A9135ABAFB6902999454D4D18
+[INFO]: 2025-07-08 15:11:06 - Chosen certificate with SHA1 thumbprint: 65998E608571BF3A9135ABAFB6902999454D4D18 , SHA256 thumbprint: C140BDD9488693ADED25E5BC4B8E23AFDDF34C4A6F4E051E5FA455E5416A94D7 , and Serial Number: 064A2A95F738064E9FAB477278B02D0B
+[INFO]: 2025-07-08 15:11:06 - Pre-signing check successful. Certificate exists.
+[INFO]: 2025-07-08 15:11:06 - Using batch size:  1
+[INFO]: 2025-07-08 15:11:06 - Signing pass #1
+[INFO]: 2025-07-08 15:11:06 - Signing pass #1, batch #1
+[INFO]: 2025-07-08 15:11:06 - signtool verify failed with error: exit status 1, assuming no signature.
+[INFO]: 2025-07-08 15:11:07 - Signed and timestamped D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\TorpedoNodesPlugin.dll
+[INFO]: 2025-07-08 15:11:15 - ================================New Run===========================================================
+[INFO]: 2025-07-08 15:11:15 - Calling command: [D:\jenkins\workspace\do_TorpedoEscherContainer_master\garasign.exe --cleanup]
+[INFO]: 2025-07-08 15:11:15 - Version: 1.8.2
+[INFO]: 2025-07-08 15:11:15 - Working directory:  D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release
+[INFO]: 2025-07-08 15:11:15 - Host name:  f5-win-p5755c3
+[INFO]: 2025-07-08 15:11:15 - Local IP address:  10.65.177.214
+[INFO]: 2025-07-08 15:11:15 - Public IP address:  20.3.11.252
+[INFO]: 2025-07-08 15:11:15 - Garasign relevent environment variables:
+[INFO]: 2025-07-08 15:11:15 - This version of the Garasign CLI is tested against Garasign KSP 1.35.0.0.
+[INFO]: 2025-07-08 15:11:15 - Command: taskkill.exe /IM pageantgrs.exe /F completed successfully
+[INFO]: 2025-07-08 15:11:15 - Command: taskkill /IM grsvcard.exe /F completed successfully
+[INFO]: 2025-07-08 15:11:16 - Command: taskkill /IM grsapiagent.exe /F completed successfully
+[INFO]: 2025-07-08 15:11:17 - ================================New Run===========================================================
+[INFO]: 2025-07-08 15:11:17 - Calling command: [D:\jenkins\workspace\do_TorpedoEscherContainer_master\garasign.exe --verify -productsign D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\TorpedoNodesPlugin.dll]
+[INFO]: 2025-07-08 15:11:17 - Version: 1.8.2
+[INFO]: 2025-07-08 15:11:17 - Working directory:  D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release
+[INFO]: 2025-07-08 15:11:17 - Host name:  f5-win-p5755c3
+[INFO]: 2025-07-08 15:11:17 - Local IP address:  10.65.177.214
+[INFO]: 2025-07-08 15:11:17 - Public IP address:  20.3.11.234
+[INFO]: 2025-07-08 15:11:17 - Garasign relevent environment variables:
+[INFO]: 2025-07-08 15:11:17 - This version of the Garasign CLI is tested against Garasign KSP 1.35.0.0.
+[INFO]: 2025-07-08 15:11:17 - Adding file to processing list:  D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\TorpedoNodesPlugin.dll
+[INFO]: 2025-07-08 15:11:25 - ================================New Run===========================================================
+[INFO]: 2025-07-08 15:11:25 - Version: 1.8.2
+[INFO]: 2025-07-08 15:11:25 - Working directory:  D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release
+[INFO]: 2025-07-08 15:11:25 - Host name:  f5-win-p5755c3
+[INFO]: 2025-07-08 15:11:25 - Local IP address:  10.65.177.214
+[INFO]: 2025-07-08 15:11:25 - Public IP address:  20.3.11.234
+[INFO]: 2025-07-08 15:11:25 - Garasign relevent environment variables:
+[INFO]: 2025-07-08 15:11:25 - GARASIGN_NO_DISABLE_LOG=false
+[INFO]: 2025-07-08 15:11:25 - This version of the Garasign CLI is tested against Garasign KSP 1.35.0.0.
+[INFO]: 2025-07-08 15:11:25 - Vendor log directory already exists: D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\GarasignLogs
+[INFO]: 2025-07-08 15:11:25 - Vendor log directory cleared: D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\GarasignLogs
+[INFO]: 2025-07-08 15:11:25 - Client App ID:  692d9cec-01ec-4f17-bd73-02072ac4f270
+[INFO]: 2025-07-08 15:11:25 - Client secret value: dd6xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+[INFO]: 2025-07-08 15:11:26 - Downloading https://art-toucan.autodesk.com/artifactory/team-security-generic/garasign/assets/windows/latestproduct_windows.ini into latestproduct.ini
+[INFO]: 2025-07-08 15:11:27 - Garasign Server: garasign.com
+[INFO]: 2025-07-08 15:11:27 - Garasign Port: 8443
+[INFO]: 2025-07-08 15:11:27 - Garasign config file save timestamp: 1751987487 (Tue, 08 Jul 2025 15:11:27 UTC)
+[INFO]: 2025-07-08 15:11:27 - Successfully modified config file C:\Users\jenkins\AppData\Roaming\Garantir\GRS\config.ini
+[INFO]: 2025-07-08 15:11:27 - Running certificateloader. Attempt 1
+[DEBUG]: 2025-07-08 15:11:27 - Garasign config file stats before running certificateloader
+[DEBUG]: 2025-07-08 15:11:27 - Config file last modification timestamp: 1751987487 (Tue, 08 Jul 2025 15:11:27 UTC)
+[DEBUG]: 2025-07-08 15:11:27 - Server full URL: https://garasign.com:8443/CodeSigningRestService
+[DEBUG]: 2025-07-08 15:11:27 - Authentication method: OpenID
+[DEBUG]: 2025-07-08 15:11:40 - Garasign config file stats after running certificateloader
+[DEBUG]: 2025-07-08 15:11:40 - Config file last modification timestamp: 1751987487 (Tue, 08 Jul 2025 15:11:27 UTC)
+[DEBUG]: 2025-07-08 15:11:40 - Server full URL: https://garasign.com:8443/CodeSigningRestService
+[DEBUG]: 2025-07-08 15:11:40 - Authentication method: OpenID
+[INFO]: 2025-07-08 15:11:40 - 
+No certificates were removed from the certificate store (SmartCard KSP).
+No certificates were removed from the certificate store (Base KSP).
+GrsAPIAgent could not load content.
+3 certificates were loaded to the certificate store (Base KSP).
+No SSH certificate has been loaded to the registry (Base KSP).
+Pageant is already running: sending refresh request...
+
+[INFO]: 2025-07-08 15:11:40 - Doing sanity check. please wait.
+[INFO]: 2025-07-08 15:11:40 - Certificate with thumbprint 65998E608571BF3A9135ABAFB6902999454D4D18 is present.
+[INFO]: 2025-07-08 15:11:40 - Check successful. Ready to sign.
+[INFO]: 2025-07-08 15:11:40 - Garasign configured.
+[INFO]: 2025-07-08 15:11:52 - ================================New Run===========================================================
+[INFO]: 2025-07-08 15:11:52 - Calling command: [D:\jenkins\workspace\do_TorpedoEscherContainer_master\garasign.exe --sign -productsign -sequential D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\LibTorpedo.dll]
+[INFO]: 2025-07-08 15:11:52 - Version: 1.8.2
+[INFO]: 2025-07-08 15:11:52 - Working directory:  D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release
+[INFO]: 2025-07-08 15:11:52 - Host name:  f5-win-p5755c3
+[INFO]: 2025-07-08 15:11:52 - Local IP address:  10.65.177.214
+[INFO]: 2025-07-08 15:11:52 - Public IP address:  20.3.11.234
+[INFO]: 2025-07-08 15:11:52 - Garasign relevent environment variables:
+[INFO]: 2025-07-08 15:11:52 - GARASIGN_NO_DISABLE_LOG=false
+[INFO]: 2025-07-08 15:11:52 - This version of the Garasign CLI is tested against Garasign KSP 1.35.0.0.
+[INFO]: 2025-07-08 15:11:52 - Adding file to processing list:  D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\LibTorpedo.dll
+[INFO]: 2025-07-08 15:11:53 - Looking up certificate with thumbprint 65998E608571BF3A9135ABAFB6902999454D4D18
+[INFO]: 2025-07-08 15:11:53 - Chosen certificate with SHA1 thumbprint: 65998E608571BF3A9135ABAFB6902999454D4D18 , SHA256 thumbprint: C140BDD9488693ADED25E5BC4B8E23AFDDF34C4A6F4E051E5FA455E5416A94D7 , and Serial Number: 064A2A95F738064E9FAB477278B02D0B
+[INFO]: 2025-07-08 15:11:53 - Pre-signing check successful. Certificate exists.
+[INFO]: 2025-07-08 15:11:53 - Using batch size:  1
+[INFO]: 2025-07-08 15:11:53 - Signing pass #1
+[INFO]: 2025-07-08 15:11:53 - Signing pass #1, batch #1
+[INFO]: 2025-07-08 15:11:53 - signtool verify failed with error: exit status 1, assuming no signature.
+[INFO]: 2025-07-08 15:11:54 - Signed and timestamped D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\LibTorpedo.dll
+[INFO]: 2025-07-08 15:12:02 - ================================New Run===========================================================
+[INFO]: 2025-07-08 15:12:02 - Calling command: [D:\jenkins\workspace\do_TorpedoEscherContainer_master\garasign.exe --cleanup]
+[INFO]: 2025-07-08 15:12:02 - Version: 1.8.2
+[INFO]: 2025-07-08 15:12:02 - Working directory:  D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release
+[INFO]: 2025-07-08 15:12:02 - Host name:  f5-win-p5755c3
+[INFO]: 2025-07-08 15:12:02 - Local IP address:  10.65.177.214
+[INFO]: 2025-07-08 15:12:02 - Public IP address:  20.3.11.234
+[INFO]: 2025-07-08 15:12:02 - Garasign relevent environment variables:
+[INFO]: 2025-07-08 15:12:02 - This version of the Garasign CLI is tested against Garasign KSP 1.35.0.0.
+[INFO]: 2025-07-08 15:12:02 - Command: taskkill.exe /IM pageantgrs.exe /F completed successfully
+[INFO]: 2025-07-08 15:12:02 - Command: taskkill /IM grsvcard.exe /F completed successfully
+[INFO]: 2025-07-08 15:12:02 - Command: taskkill /IM grsapiagent.exe /F completed successfully
+[INFO]: 2025-07-08 15:12:03 - ================================New Run===========================================================
+[INFO]: 2025-07-08 15:12:03 - Calling command: [D:\jenkins\workspace\do_TorpedoEscherContainer_master\garasign.exe --verify -productsign D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\LibTorpedo.dll]
+[INFO]: 2025-07-08 15:12:03 - Version: 1.8.2
+[INFO]: 2025-07-08 15:12:03 - Working directory:  D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release
+[INFO]: 2025-07-08 15:12:03 - Host name:  f5-win-p5755c3
+[INFO]: 2025-07-08 15:12:03 - Local IP address:  10.65.177.214
+[INFO]: 2025-07-08 15:12:03 - Public IP address:  20.3.11.234
+[INFO]: 2025-07-08 15:12:03 - Garasign relevent environment variables:
+[INFO]: 2025-07-08 15:12:03 - This version of the Garasign CLI is tested against Garasign KSP 1.35.0.0.
+[INFO]: 2025-07-08 15:12:03 - Adding file to processing list:  D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\LibTorpedo.dll
+[INFO]: 2025-07-08 15:12:12 - ================================New Run===========================================================
+[INFO]: 2025-07-08 15:12:12 - Version: 1.8.2
+[INFO]: 2025-07-08 15:12:12 - Working directory:  D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release
+[INFO]: 2025-07-08 15:12:12 - Host name:  f5-win-p5755c3
+[INFO]: 2025-07-08 15:12:12 - Local IP address:  10.65.177.214
+[INFO]: 2025-07-08 15:12:12 - Public IP address:  20.3.11.234
+[INFO]: 2025-07-08 15:12:12 - Garasign relevent environment variables:
+[INFO]: 2025-07-08 15:12:12 - GARASIGN_NO_DISABLE_LOG=false
+[INFO]: 2025-07-08 15:12:12 - This version of the Garasign CLI is tested against Garasign KSP 1.35.0.0.
+[INFO]: 2025-07-08 15:12:12 - Vendor log directory already exists: D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\GarasignLogs
+[INFO]: 2025-07-08 15:12:12 - Vendor log directory cleared: D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\GarasignLogs
+[INFO]: 2025-07-08 15:12:12 - Client App ID:  692d9cec-01ec-4f17-bd73-02072ac4f270
+[INFO]: 2025-07-08 15:12:12 - Client secret value: dd6xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+[INFO]: 2025-07-08 15:12:12 - Downloading https://art-toucan.autodesk.com/artifactory/team-security-generic/garasign/assets/windows/latestproduct_windows.ini into latestproduct.ini
+[INFO]: 2025-07-08 15:12:13 - Garasign Server: garasign.com
+[INFO]: 2025-07-08 15:12:13 - Garasign Port: 8443
+[INFO]: 2025-07-08 15:12:13 - Garasign config file save timestamp: 1751987533 (Tue, 08 Jul 2025 15:12:13 UTC)
+[INFO]: 2025-07-08 15:12:13 - Successfully modified config file C:\Users\jenkins\AppData\Roaming\Garantir\GRS\config.ini
+[INFO]: 2025-07-08 15:12:13 - Running certificateloader. Attempt 1
+[DEBUG]: 2025-07-08 15:12:13 - Garasign config file stats before running certificateloader
+[DEBUG]: 2025-07-08 15:12:13 - Config file last modification timestamp: 1751987533 (Tue, 08 Jul 2025 15:12:13 UTC)
+[DEBUG]: 2025-07-08 15:12:13 - Server full URL: https://garasign.com:8443/CodeSigningRestService
+[DEBUG]: 2025-07-08 15:12:13 - Authentication method: OpenID
+[DEBUG]: 2025-07-08 15:12:26 - Garasign config file stats after running certificateloader
+[DEBUG]: 2025-07-08 15:12:26 - Config file last modification timestamp: 1751987533 (Tue, 08 Jul 2025 15:12:13 UTC)
+[DEBUG]: 2025-07-08 15:12:26 - Server full URL: https://garasign.com:8443/CodeSigningRestService
+[DEBUG]: 2025-07-08 15:12:26 - Authentication method: OpenID
+[INFO]: 2025-07-08 15:12:26 - 
+No certificates were removed from the certificate store (SmartCard KSP).
+No certificates were removed from the certificate store (Base KSP).
+GrsAPIAgent could not load content.
+3 certificates were loaded to the certificate store (Base KSP).
+No SSH certificate has been loaded to the registry (Base KSP).
+Pageant is already running: sending refresh request...
+
+[INFO]: 2025-07-08 15:12:26 - Doing sanity check. please wait.
+[INFO]: 2025-07-08 15:12:26 - Certificate with thumbprint 65998E608571BF3A9135ABAFB6902999454D4D18 is present.
+[INFO]: 2025-07-08 15:12:27 - Check successful. Ready to sign.
+[INFO]: 2025-07-08 15:12:27 - Garasign configured.
+[INFO]: 2025-07-08 15:12:40 - ================================New Run===========================================================
+[INFO]: 2025-07-08 15:12:40 - Calling command: [D:\jenkins\workspace\do_TorpedoEscherContainer_master\garasign.exe --sign -productsign -sequential D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\StandardNodes.dll]
+[INFO]: 2025-07-08 15:12:40 - Version: 1.8.2
+[INFO]: 2025-07-08 15:12:40 - Working directory:  D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release
+[INFO]: 2025-07-08 15:12:40 - Host name:  f5-win-p5755c3
+[INFO]: 2025-07-08 15:12:40 - Local IP address:  10.65.177.214
+[INFO]: 2025-07-08 15:12:40 - Public IP address:  20.3.11.252
+[INFO]: 2025-07-08 15:12:40 - Garasign relevent environment variables:
+[INFO]: 2025-07-08 15:12:40 - GARASIGN_NO_DISABLE_LOG=false
+[INFO]: 2025-07-08 15:12:40 - This version of the Garasign CLI is tested against Garasign KSP 1.35.0.0.
+[INFO]: 2025-07-08 15:12:40 - Adding file to processing list:  D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\StandardNodes.dll
+[INFO]: 2025-07-08 15:12:41 - Looking up certificate with thumbprint 65998E608571BF3A9135ABAFB6902999454D4D18
+[INFO]: 2025-07-08 15:12:41 - Chosen certificate with SHA1 thumbprint: 65998E608571BF3A9135ABAFB6902999454D4D18 , SHA256 thumbprint: C140BDD9488693ADED25E5BC4B8E23AFDDF34C4A6F4E051E5FA455E5416A94D7 , and Serial Number: 064A2A95F738064E9FAB477278B02D0B
+[INFO]: 2025-07-08 15:12:42 - Pre-signing check successful. Certificate exists.
+[INFO]: 2025-07-08 15:12:42 - Using batch size:  1
+[INFO]: 2025-07-08 15:12:42 - Signing pass #1
+[INFO]: 2025-07-08 15:12:42 - Signing pass #1, batch #1
+[INFO]: 2025-07-08 15:12:42 - signtool verify failed with error: exit status 1, assuming no signature.
+[INFO]: 2025-07-08 15:12:42 - Signed and timestamped D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\StandardNodes.dll
+[INFO]: 2025-07-08 15:12:49 - ================================New Run===========================================================
+[INFO]: 2025-07-08 15:12:49 - Calling command: [D:\jenkins\workspace\do_TorpedoEscherContainer_master\garasign.exe --cleanup]
+[INFO]: 2025-07-08 15:12:49 - Version: 1.8.2
+[INFO]: 2025-07-08 15:12:49 - Working directory:  D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release
+[INFO]: 2025-07-08 15:12:49 - Host name:  f5-win-p5755c3
+[INFO]: 2025-07-08 15:12:49 - Local IP address:  10.65.177.214
+[INFO]: 2025-07-08 15:12:50 - Public IP address:  20.3.11.252
+[INFO]: 2025-07-08 15:12:50 - Garasign relevent environment variables:
+[INFO]: 2025-07-08 15:12:50 - This version of the Garasign CLI is tested against Garasign KSP 1.35.0.0.
+[INFO]: 2025-07-08 15:12:50 - Command: taskkill.exe /IM pageantgrs.exe /F completed successfully
+[INFO]: 2025-07-08 15:12:50 - Command: taskkill /IM grsvcard.exe /F completed successfully
+[INFO]: 2025-07-08 15:12:50 - Command: taskkill /IM grsapiagent.exe /F completed successfully
+[INFO]: 2025-07-08 15:12:51 - ================================New Run===========================================================
+[INFO]: 2025-07-08 15:12:51 - Calling command: [D:\jenkins\workspace\do_TorpedoEscherContainer_master\garasign.exe --verify -productsign D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\StandardNodes.dll]
+[INFO]: 2025-07-08 15:12:51 - Version: 1.8.2
+[INFO]: 2025-07-08 15:12:51 - Working directory:  D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release
+[INFO]: 2025-07-08 15:12:51 - Host name:  f5-win-p5755c3
+[INFO]: 2025-07-08 15:12:51 - Local IP address:  10.65.177.214
+[INFO]: 2025-07-08 15:12:52 - Public IP address:  20.3.11.234
+[INFO]: 2025-07-08 15:12:52 - Garasign relevent environment variables:
+[INFO]: 2025-07-08 15:12:52 - This version of the Garasign CLI is tested against Garasign KSP 1.35.0.0.
+[INFO]: 2025-07-08 15:12:52 - Adding file to processing list:  D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\StandardNodes.dll
+[INFO]: 2025-07-08 15:13:00 - ================================New Run===========================================================
+[INFO]: 2025-07-08 15:13:00 - Version: 1.8.2
+[INFO]: 2025-07-08 15:13:00 - Working directory:  D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release
+[INFO]: 2025-07-08 15:13:00 - Host name:  f5-win-p5755c3
+[INFO]: 2025-07-08 15:13:00 - Local IP address:  10.65.177.214
+[INFO]: 2025-07-08 15:13:00 - Public IP address:  20.3.11.252
+[INFO]: 2025-07-08 15:13:00 - Garasign relevent environment variables:
+[INFO]: 2025-07-08 15:13:00 - GARASIGN_NO_DISABLE_LOG=false
+[INFO]: 2025-07-08 15:13:00 - This version of the Garasign CLI is tested against Garasign KSP 1.35.0.0.
+[INFO]: 2025-07-08 15:13:00 - Vendor log directory already exists: D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\GarasignLogs
+[INFO]: 2025-07-08 15:13:00 - Vendor log directory cleared: D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\GarasignLogs
+[INFO]: 2025-07-08 15:13:00 - Client App ID:  692d9cec-01ec-4f17-bd73-02072ac4f270
+[INFO]: 2025-07-08 15:13:00 - Client secret value: dd6xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+[INFO]: 2025-07-08 15:13:01 - Downloading https://art-toucan.autodesk.com/artifactory/team-security-generic/garasign/assets/windows/latestproduct_windows.ini into latestproduct.ini
+[INFO]: 2025-07-08 15:13:01 - Garasign Server: garasign.com
+[INFO]: 2025-07-08 15:13:01 - Garasign Port: 8443
+[INFO]: 2025-07-08 15:13:01 - Garasign config file save timestamp: 1751987581 (Tue, 08 Jul 2025 15:13:01 UTC)
+[INFO]: 2025-07-08 15:13:01 - Successfully modified config file C:\Users\jenkins\AppData\Roaming\Garantir\GRS\config.ini
+[INFO]: 2025-07-08 15:13:01 - Running certificateloader. Attempt 1
+[DEBUG]: 2025-07-08 15:13:01 - Garasign config file stats before running certificateloader
+[DEBUG]: 2025-07-08 15:13:01 - Config file last modification timestamp: 1751987581 (Tue, 08 Jul 2025 15:13:01 UTC)
+[DEBUG]: 2025-07-08 15:13:01 - Server full URL: https://garasign.com:8443/CodeSigningRestService
+[DEBUG]: 2025-07-08 15:13:01 - Authentication method: OpenID
+[DEBUG]: 2025-07-08 15:13:14 - Garasign config file stats after running certificateloader
+[DEBUG]: 2025-07-08 15:13:14 - Config file last modification timestamp: 1751987581 (Tue, 08 Jul 2025 15:13:01 UTC)
+[DEBUG]: 2025-07-08 15:13:14 - Server full URL: https://garasign.com:8443/CodeSigningRestService
+[DEBUG]: 2025-07-08 15:13:14 - Authentication method: OpenID
+[INFO]: 2025-07-08 15:13:14 - 
+No certificates were removed from the certificate store (SmartCard KSP).
+No certificates were removed from the certificate store (Base KSP).
+GrsAPIAgent could not load content.
+3 certificates were loaded to the certificate store (Base KSP).
+No SSH certificate has been loaded to the registry (Base KSP).
+Pageant is already running: sending refresh request...
+
+[INFO]: 2025-07-08 15:13:14 - Doing sanity check. please wait.
+[INFO]: 2025-07-08 15:13:15 - Certificate with thumbprint 65998E608571BF3A9135ABAFB6902999454D4D18 is present.
+[INFO]: 2025-07-08 15:13:15 - Check successful. Ready to sign.
+[INFO]: 2025-07-08 15:13:15 - Garasign configured.
+[INFO]: 2025-07-08 15:13:29 - ================================New Run===========================================================
+[INFO]: 2025-07-08 15:13:29 - Calling command: [D:\jenkins\workspace\do_TorpedoEscherContainer_master\garasign.exe --sign -productsign -sequential D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\ToolpathPluginTypes.dll]
+[INFO]: 2025-07-08 15:13:29 - Version: 1.8.2
+[INFO]: 2025-07-08 15:13:29 - Working directory:  D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release
+[INFO]: 2025-07-08 15:13:29 - Host name:  f5-win-p5755c3
+[INFO]: 2025-07-08 15:13:29 - Local IP address:  10.65.177.214
+[INFO]: 2025-07-08 15:13:29 - Public IP address:  20.3.11.252
+[INFO]: 2025-07-08 15:13:29 - Garasign relevent environment variables:
+[INFO]: 2025-07-08 15:13:29 - GARASIGN_NO_DISABLE_LOG=false
+[INFO]: 2025-07-08 15:13:29 - This version of the Garasign CLI is tested against Garasign KSP 1.35.0.0.
+[INFO]: 2025-07-08 15:13:29 - Adding file to processing list:  D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\ToolpathPluginTypes.dll
+[INFO]: 2025-07-08 15:13:29 - Looking up certificate with thumbprint 65998E608571BF3A9135ABAFB6902999454D4D18
+[INFO]: 2025-07-08 15:13:30 - Chosen certificate with SHA1 thumbprint: 65998E608571BF3A9135ABAFB6902999454D4D18 , SHA256 thumbprint: C140BDD9488693ADED25E5BC4B8E23AFDDF34C4A6F4E051E5FA455E5416A94D7 , and Serial Number: 064A2A95F738064E9FAB477278B02D0B
+[INFO]: 2025-07-08 15:13:30 - Pre-signing check successful. Certificate exists.
+[INFO]: 2025-07-08 15:13:30 - Using batch size:  1
+[INFO]: 2025-07-08 15:13:30 - Signing pass #1
+[INFO]: 2025-07-08 15:13:30 - Signing pass #1, batch #1
+[INFO]: 2025-07-08 15:13:30 - signtool verify failed with error: exit status 1, assuming no signature.
+[INFO]: 2025-07-08 15:13:31 - Signed and timestamped D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\ToolpathPluginTypes.dll
+[INFO]: 2025-07-08 15:13:38 - ================================New Run===========================================================
+[INFO]: 2025-07-08 15:13:38 - Calling command: [D:\jenkins\workspace\do_TorpedoEscherContainer_master\garasign.exe --cleanup]
+[INFO]: 2025-07-08 15:13:38 - Version: 1.8.2
+[INFO]: 2025-07-08 15:13:38 - Working directory:  D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release
+[INFO]: 2025-07-08 15:13:38 - Host name:  f5-win-p5755c3
+[INFO]: 2025-07-08 15:13:38 - Local IP address:  10.65.177.214
+[INFO]: 2025-07-08 15:13:38 - Public IP address:  20.3.11.234
+[INFO]: 2025-07-08 15:13:38 - Garasign relevent environment variables:
+[INFO]: 2025-07-08 15:13:38 - This version of the Garasign CLI is tested against Garasign KSP 1.35.0.0.
+[INFO]: 2025-07-08 15:13:39 - Command: taskkill.exe /IM pageantgrs.exe /F completed successfully
+[INFO]: 2025-07-08 15:13:39 - Command: taskkill /IM grsvcard.exe /F completed successfully
+[INFO]: 2025-07-08 15:13:39 - Command: taskkill /IM grsapiagent.exe /F completed successfully
+[INFO]: 2025-07-08 15:13:40 - ================================New Run===========================================================
+[INFO]: 2025-07-08 15:13:40 - Calling command: [D:\jenkins\workspace\do_TorpedoEscherContainer_master\garasign.exe --verify -productsign D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\ToolpathPluginTypes.dll]
+[INFO]: 2025-07-08 15:13:40 - Version: 1.8.2
+[INFO]: 2025-07-08 15:13:40 - Working directory:  D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release
+[INFO]: 2025-07-08 15:13:40 - Host name:  f5-win-p5755c3
+[INFO]: 2025-07-08 15:13:40 - Local IP address:  10.65.177.214
+[INFO]: 2025-07-08 15:13:40 - Public IP address:  20.3.11.234
+[INFO]: 2025-07-08 15:13:40 - Garasign relevent environment variables:
+[INFO]: 2025-07-08 15:13:40 - This version of the Garasign CLI is tested against Garasign KSP 1.35.0.0.
+[INFO]: 2025-07-08 15:13:40 - Adding file to processing list:  D:\jenkins\workspace\do_TorpedoEscherContainer_master\Artifacts\Release\ToolpathPluginTypes.dll

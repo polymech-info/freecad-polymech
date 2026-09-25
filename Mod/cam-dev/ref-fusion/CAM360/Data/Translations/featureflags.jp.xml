@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><locale xmlns="http://www.hsmworks.com/xml/2008/locale">
+
+  <description>Japanese</description>
+  <country>jp</country>
+
+  <!--
+	The entries in this file are used for localized text for feature flags,
+	as exposed in the Fusion preferences dialog.
+
+	The formats used for the entries should be in the form shown here,
+	where in this case the feature flag name would be 'feature-flag'.
+	  <message name="feature-flag-name">English Feature Flag Name</message>
+	  <message name="feature-flag-desc">English Feature Flag Description</message>
+   	  <message name="feature-flag-contextid">English Feature Flag Info Link</message>
+	  OR
+	  <message name="feature-flag-contextid">CONTEXT_ID</message>
+
+	If a context id is specified, a URL will be constructed, along the lines of:
+	https://help.autodesk.com/view/fusion360/<LANG>/?contextId=<CONTEXT_ID>
+	with the language code filled in based on the active language.
+  -->
+  <message name="additive-angled-volume-support-name">積層角度付きボリューム サポート</message>
+  <message name="additive-angled-volume-support-desc">積層造形時に作成されたボリューム サポートは、ビルド プレートに向かうベクトルに従います。このプレビュー機能では、ベクトルを 2 つに分割するオプションが提供されています。2 つのベクトル間の角度を使用すると、パーツのアップスキン領域とダウンスキン領域を接続するサポートを作成しないようにできます。これにより、サーフェス品質が向上し、後処理の時間が短縮されます。</message>
+  <message name="additive-angled-volume-support-contextid">MFG-ADDITIVE-ANGLED-VOLUME-SUPPORTS-PREVIEW</message>
+
+  <message name="Additive-Lateral-Support-name">積層横方向サポート</message>
+  <message name="Additive-Lateral-Support-desc">複雑な形状や繊細なうす壁のパーツに対して、3D プリントされたソフト ジョーを生成します。横方向のサポートは、フライス加工などの機械加工プロセス中にこれらのパーツを保持するようにデザインされています。</message>
+
+  <message name="Additive-General-name">積層造形</message>
+  <message name="Additive-General-desc">プリント パラメータを選択し、ビルドが成功するように自動的にパーツの方向を設定し、サポート構造とツールパスを生成します。直接エクスポートしてパウダー ベッド マシンを選択するか、または 3MF ファイルをエクスポートします。</message>
+  <message name="Additive-General-contextid">EXT-MFG-ADDITIVE-START</message>
+
+  <message name="Additive-Tech-DED-name">複合軸積層造形</message>
+  <message name="Additive-Tech-DED-desc">複合軸積層造形テクノロジを使用して、フィーチャを作成するための積層ツールパスを作成します。たとえば、DED (指向性エネルギー堆積)です。</message>
+  <message name="Additive-Tech-DED-contextid">MFG-AM-FEATURE-CONSTRUCTION</message>
+
+  <message name="Additive-Tech-SLM-name">積層造形</message>
+  <message name="Additive-Tech-SLM-desc">金属粉末床溶融結合(MPBF)マシンの選択、プラットフォーム上でのパーツの配置と方向設定、完全に関連付けられたサポート構造の作成、モデルのスライスを実行できます。レーザー パラメータが含まれるネイティブ ビルド ファイルまたは 3MF ファイルを出力します。</message>
+  <message name="Additive-Tech-SLM-contextid">MFG-AM-WORKFLOW-PREPARE-PARTS-FOR-ADDITIVE-MANUFACTURE</message>
+
+  <message name="advanced-direct-selection-name">高度な直接選択</message>
+  <message name="advanced-direct-selection-desc">Enables the advanced direct selection mode for surface selections.</message>
+
+  <message name="configurable-tolerance-colors-name">許容差の色</message>
+  <message name="configurable-tolerance-colors-desc">検査結果とストック シミュレーションの許容差の色を、一致するように設定します。2 つの色の規則のいずれかを選択できる設定を[設定]に追加します。さらにキャンバスでは、プローブ形状、プローブ WCS、マニュアル検査の検査結果のうち許容範囲外のものをオレンジ色で表示し、マニュアル検査の公称値を黒で表示します。</message>
+  <message name="configurable-tolerance-colors-contextid">MFG-TOLERANCE-COLORS</message>
+
+  <message name="drilling-collision-avoidance-name">ドリル時に衝突を回避</message>
+  <message name="drilling-collision-avoidance-desc">軸とホルダーのクリアランスを指定することで、ドリル時の安全性を向上させます。切削時に、衝突の可能性がある穴をスキップすることができます。リンク時には、障害物を回避するために退避高さを自動的に調整することができます。</message>
+
+  <message name="drilling-through-hole-flipper-name">多軸ドリルでの貫通穴の方向コントロール</message>
+  <message name="drilling-through-hole-flipper-desc">多軸ドリルの場合、貫通穴の方向を設定すると、ツールパスは選択した方向を優先します。</message>
+
+  <message name="cutting-force-analysis-name">切削力の解析</message>
+  <message name="cutting-force-analysis-desc">シミュレーション中に切削力のデータを収集します。</message>
+
+  <message name="hig-styled-qt-name">スタイルの更新</message>
+  <message name="hig-styled-qt-desc">Fusion の製造ダイアログ向けに、進行中のスタイル更新のプレビューを取得します。</message>
+
+  <message name="import-macro-results-name">マクロのプリント結果をインポート</message>
+  <message name="import-macro-results-desc">[プローブ WCS]操作または[形状をプローブ]操作によってマシン コントローラ上に作成されたプリント結果をインポートします。</message>
+  <message name="import-macro-results-contextid">MFG-IMPORT-MACRO-RESULTS</message>
+
+  <message name="inspection-results-projection-name">サーフェス CAD 投影を検査</message>
+  <message name="inspection-results-projection-desc">パーツの形式または位置が CAD ファイルと異なるプローブ点を評価する際に、より正確な結果を提供します。サーフェス検査加工法の予期される点ではなく、CAD サーフェスを基準にして計測点の偏差を計算します。</message>
+  <message name="inspection-results-projection-contextid">MFG-PROBE-PROJECT-POINTS</message>
+
+  <message name="fusion-mfg-assistant-name">製造アシスタント</message>
+  <message name="fusion-mfg-assistant-desc">製造での Fusion の使用に関する質問をすることができます。回答は、オートデスクと Web ソースを使用した人工知能(AI)によって提供されます。</message>
+
+  <message name="invalid-parameter-error-name">無効なパラメータ エラー</message>
+  <message name="invalid-parameter-error-desc">ツールパス生成時にさらにパラメータ検証チェックを追加します。</message>
+
+  <message name="live-machine-connection-name">ライブ マシン データ接続</message>
+  <message name="live-machine-connection-desc">[サーフェスを検査]、[形状をプローブ]、および[プローブ WCS]の各加工法で、HAAS 社のコントローラからプローブ点のライブ データを取得することで、リアルタイムで結果を評価します。</message>
+  <message name="live-machine-connection-contextid">MFG-PROBE-LIVE-CONNECTION</message>
+
+  <message name="live-part-alignment-name">マシン パーツのライブ位置合わせ</message>
+  <message name="live-part-alignment-desc">マシン データのライブ接続でパーツの位置合わせの使用を有効にします。</message>
+  <message name="live-part-alignment-contextid">MFG-LIVE-PART-ALIGNMENT-PREVIEW</message>
+
+  <message name="simulation-disable-visualization-collisions-on-name">ビジュアル ストック シミュレーションの衝突検出をスキップ</message>
+  <message name="simulation-disable-visualization-collisions-on-desc">シミュレーション中にビジュアル ストックを計算する際、追加の衝突検出をスキップします。これにより、特に多くの操作をシミュレーションする場合やマシンを使用してシミュレーションする場合、またはその両方の場合に、キャンバス内のストックの表示シミュレーションを高速化できます。衝突検出は検証プロセスの一部として実行されます。</message>
+
+  <message name="simulation-mode-name">シミュレーション表示オプションと情報</message>
+  <message name="simulation-mode-desc">[シミュレーション]ダイアログを 2 つの新しいダイアログに置き換えます。これにより、キャンバスに表示される内容をコントロールする設定は、シミュレーションに関する主要な情報の概要とは別になります。表示オプションと情報の概要には、[シミュレーション]コンテキスト環境のツールバーからアクセスできま’す。</message>
+
+  <message name="geometry-simulator-use-GPU-name">高速 IPS 処理(GPU)</message>
+  <message name="geometry-simulator-use-GPU-desc">グラフィックス プロセッサ(GPU)を使用すると、処理が高速化されます。[基本設定]に[IPS と残りのストック] &gt; [処理モード]オプションを追加します。この新しいオプションでは、処理中のストックおよび残りの(取残し)ストックの生成に、[標準] (コンピューター プロセッサ)モードと[高速] (グラフィックス プロセッサ)モードのいずれかを選択できます。新しいオプションでは、処理速度はグラフィックス プロセッサの品質に依存します。</message>
+  <message name="geometry-simulator-use-GPU-contextid">MFG-SIMULATE-FASTER-GPU</message>
+  
+  <message name="gpu-machine-simulation-name">マシン シミュレーション中に高速(GPU)ストック シミュレーションを使用</message>
+  <message name="gpu-machine-simulation-desc">グラフィックス プロセッサ(GPU)を使用して、マシン シミュレーション中のストック シミュレーションを高速化します。[シミュレーション]コンテキスト環境に[モード] &gt; [高速シミュレーション(GPU)]オプションが追加され、コンピュータ プロセッサ(CPU)を使用する場合よりも高速に実行できます。GPU を使用する場合、マシン衝突検出を含むマシン検証は CPU 上で継続して実行されるため、処理に時間がかかる場合があります。マシンはモデルに対してチェックされますが、ストックは含まれません。処理速度はグラフィックス プロセッサの性能に依存します。</message>
+  <message name="gpu-machine-simulation-contextid">MFG-SIMULATE-MACHINE-GPU</message>
+
+  <message name="gpu-stock-per-pixel-refinement-name">ストック シミュレーション(GPU)のビジュアルをリファイン</message>
+  <message name="gpu-stock-per-pixel-refinement-desc">[高速シミュレーション(GPU)]オプションを使用した場合、特に一時停止中のシミュレーションにおいて、ストックの表示品質を向上させます。Fusion はストック メッシュをリファインし、表示されるすべてのピクセルのディテールを強化します。ビューを変更するたびに(回転、パン、ズームなど)、リファイン処理が再計算されるため、追加の時間がかかる場合があります。</message>
+
+  <message name="simulation-auto-machine-part-ghosting-name">マシンの自動半透明化を使用してシミュレーション</message>
+  <message name="simulation-auto-machine-part-ghosting-desc">マシン シミュレーション中に工具先端の視界を遮るマシンアイテムを自動的に半透明化します。これにより、画面移動やビューの変更時に工具先端がはっきりと見えるようになります。</message>
+
+  <message name="manual-inspect-measure-method-name">シミュレーションされたNCプログラム、セットアップ、または個々の操作のNCコードを表示し、現在シミュレーションされているコードの特定の行をハイライトします。</message>
+  <message name="manual-inspect-measure-method-desc">マニュアル検査で 2 つの穴またはボスの中心間の距離を計測する方法を選択できます。計測器が中心間の距離の計測をサポートしていない場合、Fusion は穴またはボスの直径、およびそれらの間の最大距離または最小距離を使用して距離を計算できます。</message>
+  <message name="manual-inspect-measure-method-contextid">MFG-MANUAL-INSPECTION-CENTERS-PREVIEW</message>
+
+  <message name="manual-measure-name">マニュアル検査</message>
+  <message name="manual-measure-desc">カリパス、マイクロメータ、高さゲージなどのマニュアル検査デバイスを使用して物理的に計測するフィーチャのリストを作成します。計測値を記録して、指定した許容差と比較し、必要に応じて結果を検査レポートとして保存します。</message>
+  <message name="manual-measure-contextid">MFG-CREATE-MANUAL-INSPECTION</message>
+
+  <message name="legacy-mesh-silhouette-name">従来のメッシュ シルエット</message>
+  <message name="legacy-mesh-silhouette-desc">メッシュ データに対して従来のシルエットを有効にします。</message>
+
+  <message name="legacy-chaining-name">従来のチェーン</message>
+  <message name="legacy-chaining-desc">[製造]作業スペースでエッジ選択に対して古い従来のチェーン エンジンを有効にします。</message>
+
+  <message name="legacy-drilling-name">従来のドリル加工</message>
+  <message name="legacy-drilling-desc">[製造]作業スペースで古い従来のドリル加工を有効にします。</message>
+
+  <message name="new_import_results-name">検査結果をインポート</message>
+  <message name="new_import_results-desc">検査結果をインポートする際にプローブ点が投影されるボディを選択します。</message>
+  <message name="new_import_results-contextid">MFG-PROBE-IMPORT-RESULTS</message>
+
+  <message name="old-turning-profile-strategy-name">古い輪郭旋盤</message>
+  <message name="old-turning-profile-strategy-desc">古い旋盤輪郭加工法を有効にします。これは期間限定で使用できます。</message>
+
+  <message name="old-pocket-detector-name">2D ポケットの従来の検出</message>
+  <message name="old-pocket-detector-desc">このフラグを設定すると、2D の開いたポケットの検出に従来のアルゴリズムが使用されます。</message>
+
+  <message name="probe-angle-measure-name">プローブ: 軸外角度計測</message>
+  <message name="probe-angle-measure-desc">[形状をプローブ]で垂直面の回転角度を計測できるようにします。</message>
+
+  <message name="probe-geometry-strategy-name">マクロベース検査</message>
+  <message name="probe-geometry-strategy-desc">マシン上でプローブ サイクルを使用して処理中のフィーチャを計測します。重要な形状フィーチャの寸法と位置を確認し、工具摩耗パラメータを更新し、プログラムを一時停止または停止して、許容範囲外のフィーチャに対処します。含まれる内容: 形状のプローブ、検査レポートなど。&lt;i&gt;&lt;/i&gt;</message>
+  <message name="probe-geometry-strategy-contextid">EXT-MANUFACTURING</message>
+
+  <message name="pmi-inspection-plan-name">PMI 検査プラン</message>
+  <message name="pmi-inspection-plan-desc">既存の PMI に基づいて検査プランを自動的に生成する機能を有効にします。</message>
+  <message name="pmi-inspection-plan-contextid">MFG-PMI-INSPECTION-PLAN-PREVIEW</message>
+
+  <message name="probe-on-pcd-name">PCD 上の穴とボスをプローブ</message>
+  <message name="probe-on-pcd-desc">PCD 上の穴とボスのプローブを可能にするため、[プローブ WCS]と[形状をプローブ]の追加オプションを使用できるようにします。</message>
+
+  <message name="hide-warnings-name">警告を非表示</message>
+  <message name="hide-warnings-desc">操作のプログラミング時に警告が表示された場合、個々の操作に対する警告を確認した後にそれ以上注意が必要ないと判断したらその警告を非表示にすることができます。警告は、操作を再生成するまで非表示のままになります。</message>
+
+  <message name="ignore-warnings-name">警告を無視</message>
+  <message name="ignore-warnings-desc">操作の警告を無視できます。警告はセッションでのみまたは常に無視できます。</message>
+
+  <message name="improved-form-mill-approximation-name">フォーム ミル近似の改善</message>
+  <message name="improved-form-mill-approximation-desc">フォーム ミルをエンド ミルではなくブルノーズとして近似します。</message>
+	
+  <message name="post-processing-with-legacy-dialog-off-name">従来のポスト処理ダイアログを使用して NC コードをポスト処理</message>
+  <message name="post-processing-with-legacy-dialog-off-desc">新しい NC プログラム ポスト処理インタフェースで問題が発生している場合、従来のスタイルのポスト処理ダイアログに戻します。</message>
+  <message name="post-processing-with-legacy-dialog-off-contextid">MFG-POST-PROCESS-OPERATIONS</message>
+
+  <message name="4-axis-machining-type-name">3D ツールパスの 4 軸加工</message>
+  <message name="4-axis-machining-type-desc">3D ツールパスに 4 軸加工オプションを追加します。4 軸および 5 軸モーションでの適切な早送りリンクのために、移動高さと退避高さを円柱、球、または傾斜面として設定できます。</message>
+
+  <message name="restrict-to-4-axis-name">4 軸に制限</message>
+  <message name="restrict-to-4-axis-desc">少なくとも 4 つの軸を持つマシンで使用する 4 軸ツールパスを 5 軸加工法から生成します。現在は、フロー加工法のみに使用します。</message>
+  <message name="restrict-to-4-axis-contextid">EXT-MANUFACTURING</message>
+
+  <message name="roughing-form-tools-name">Roughing Form Tools</message>
+  <message name="roughing-form-tools-desc">Enables calculation of 3D Pocket and 3D Adaptive operations to use actual Form Mill shape for toolpath calculation, instead of an approximated regular mill.</message>
+
+  <message name="moduleworks-three-plus-two-name">3+2 除去加工法(将来の拡張機能)</message>
+  <message name="moduleworks-three-plus-two-desc">複数の工具方向を使用して大量の材料を除去するために使用できる粗取り加工法です。より剛性の高い短い工具を使用して、アンダーカットなどの領域を加工できます。</message>
+  <message name="moduleworks-three-plus-two-contextid">EXT-MANUFACTURING</message>
+
+  <message name="setup-sheet-configurations-name">加工指示書のコンフィギュレーション</message>
+  <message name="setup-sheet-configurations-desc">カスタム加工指示書のコンフィギュレーションの作成を有効にします。</message>
+
+  <message name="spun-profile-dmk-name">回転輪郭</message>
+  <message name="spun-profile-dmk-desc">新しい回転輪郭アルゴリズムを使用して、回転輪郭フィーチャの安定性とパフォーマンスを向上させます。この機能を使用して、旋盤操作用に選択したモデルを回転させて輪郭曲線を作成することができます。</message>
+
+  <message name="stock-drag-handles-name">ストック ドラッグ ハンドル</message>
+  <message name="stock-drag-handles-desc">ストック サイズを調整するためのドラッグ ハンドルを有効にします。</message>
+
+  <message name="strategy-inspect-surface-name">サーフェス検査</message>
+  <message name="strategy-inspect-surface-desc">CAD ベースのプローブ機能を使用して、スピンドルに取り付けられたプローブで複雑なサーフェス形状の精度を計測します。インテリジェントなパーツ位置合わせを使用して、鍛造や鋳造などの非プリズマティック パーツの設定や加工を自動化します。含まれる内容: 表面の検査、検査レポート、自動部品位置合わせなど。&lt;i&gt;&lt;/i&gt;</message>
+  <message name="strategy-inspect-surface-contextid">EXT-MANUFACTURING</message>
+
+  <message name="customize-inspection-report-name">カスタマイズされた検査レポート</message>
+  <message name="customize-inspection-report-desc">検査レポートの作成時に、定義済みのテンプレートの選択を開始および編集できます。</message>
+
+  <message name="strategy-rotary-name">回転加工法</message>
+  <message name="strategy-rotary-desc">4 軸ミーリング向けの回転加工法を使用して、複雑な非幾何学形状を加工します。</message>
+  <message name="strategy-rotary-contextid">MFG-MULTI-AXIS-ROTARY</message>
+
+  <message name="extension-3-axis-name">自動化された 3 軸加工</message>
+  <message name="extension-3-axis-desc">パーツ全体に適用できる多様でインテリジェントな 3 軸加工法を使用して CAM プログラミングを高速化することによって、複雑で、機能が豊富なパーツのドリルとミルを簡略化します。含まれる内容: 3 軸の穴認識と 3 軸の急斜面と緩斜面。&lt;i&gt;&lt;/i&gt;</message>
+  <message name="extension-3-axis-contextid">EXT-MANUFACTURING</message>
+
+  <message name="extension-3-plus-2-name">自動化された 3+2 軸加工</message>
+  <message name="extension-3-plus-2-desc">CNC マシンの回転軸を使用して 3+2 軸(位置)加工でパーツ全体をドリル加工およびミル加工することができる、追加の加工法と工具軸コントロールにアクセスします。3+2 軸穴認識を含みます。&lt;i&gt;&lt;/i&gt;</message>
+  <message name="extension-3-plus-2-contextid">EXT-MANUFACTURING</message>
+
+  <message name="template-library-name">テンプレート ライブラリ</message>
+  <message name="template-library-desc">テンプレートの新しいインタフェース。新しいライブラリのテンプレートを保存、参照、再利用します。</message>
+
+  <message name="toolpath-modifications-name">ツールパスの修正</message>
+  <message name="toolpath-modifications-desc">完全な再計算を必要とせずにツールパスをグローバルまたはローカルに編集するための多様で強力な修正ツールにアクセスします。修正は柔軟に編集できます。含まれる内容: ツールパスのトリム、パスの削除、工具の置換など。&lt;i&gt;&lt;/i&gt;</message>
+  <message name="toolpath-modifications-contextid">EXT-MANUFACTURING</message>
+
+  <message name="tool-library-v4-dynamic-tool-preview-release-name">工具ライブラリ - 3D プレビュー</message>
+  <message name="tool-library-v4-dynamic-tool-preview-release-desc">工具ライブラリの 3D 工具プレビューを有効にします。</message>
+
+  <message name="tool-library-v4-fusionmake-parser-name">工具ライブラリ - Fusion パーサー</message>
+  <message name="tool-library-v4-fusionmake-parser-desc">ユーザ式の一貫性を向上させるために、工具ライブラリで Fusion パーサーを使用できるようにします。</message>
+
+  <message name="tool-library-v4-tool-orientation-name">工具ライブラリ: 工具方向</message>
+  <message name="tool-library-v4-tool-orientation-desc">旋盤の工具方向を設定するための、より直感的な操作を追加します。さらに工具方向とは無関係に主軸方向を制御する機能が追加されます。これにより手動でコードを編集する必要がなくなりますが、衝突のリスクが高まる可能性があります。このプレビュー機能を有効にし、設定を調整した場合、再度オフにすると、工具方向を調整しても、設定された主軸方向が保持され、操作は無効になりません。また、シミュレーション中に潜在的な衝突がハイライト表示されない可能性がある点に注意してください。&lt;br/&gt;&lt;i&gt;重要: CNC コードを実行する前に、必ずシミュレーション結果を目視で確認し、後処理出力で主軸の M コードをチェックしてください。&lt;/i&gt;</message>
+
+  <message name="tool-gtc-import-name">工具ライブラリ - GTC パッケージをインポート</message>
+  <message name="tool-gtc-import-desc">GTC(汎用ツール カタログ)パッケージから、1 つまたは複数の工具を工具ライブラリにインポートすることができます。GTC パッケージは、通常、工具のモデル(STEP ファイル)と工具のジオメトリを定義するためのプロパティ(P21 ファイル)の両方を含む ZIP ファイルです。GTC パッケージは、多くの場合、工具ベンダーや製造元からダウンロードできます。</message>
+
+  <message name="tool-p21-import-name">工具ライブラリ - P21 ファイルをインポート</message>
+  <message name="tool-p21-import-desc">P21 ファイルから工具を工具ライブラリにインポートします。P21 ファイルには、工具のジオメトリを定義するプロパティが含まれており、インポート時にこれらのプロパティが Fusion の工具パラメータにマッピングされます。P21 ファイルは多くの場合、工具ベンダーや製造元からダウンロードできます。</message>
+
+  <message name="extension-multi-axis-name">4 軸および 5 軸同時加工</message>
+  <message name="extension-multi-axis-desc">複合軸加工法と工具軸オプションをロック解除して、最も複雑な形状を安全かつ効率的に加工するために、CNC マシンの直線および回転軸を同時に駆動します。&lt;i&gt;含まれる内容: スワーフ、複合軸の急斜面と緩斜面、複合軸の輪郭など。&lt;/i&gt;</message>
+  <message name="extension-multi-axis-contextid">EXT-MANUFACTURING</message>
+
+  <message name="mfg-working-model-name">製造作業モデル</message>
+  <message name="mfg-working-model-desc">[製造]作業スペースで製造モデルを有効にします。ネストおよび整列の機能を使用する場合に必要です。</message>
+  <message name="mfg-working-model-contextid">MFG-MANUFACTURING-MODEL-OVERVIEW</message>
+
+  <message name="strategy-old-flow-name">フロー(旧)</message>
+  <message name="strategy-old-flow-desc">曲面を加工できます。フロー(旧)では、サーフェスを加工するときに必要な切削ピッチの数を指定する必要があります。3D ツールパス ドロップダウン メニューにある新しいフロー加工法では、必要な切削ピッチが自動的に計算されます。このプレビュー機能を有効にすると、新しいフロー加工法を使用する目的でワークフローを調整する前に、フロー(旧)にアクセスすることができます。</message>
+
+  <message name="skip-ruled-alignment-name">従来のサーフェス テッセレーション</message>
+  <message name="skip-ruled-alignment-desc">特定のフライス加工法を使用してツールパスを生成する場合は、サーフェスを分割する従来の方法を使用します。これは、新しい方法によってルールド サーフェス上でツールパスの問題が発生する場合に役立ちます。</message>
+
+  <message name="online-system-library-name">最新のポスト、マシン、プリント設定を自動的に取得</message>
+  <message name="online-system-library-desc">[ポスト ライブラリ]、[マシン ライブラリ]、および[プリント設定ライブラリ]の[Fusion ライブラリ]セクションは、ポスト、マシン、およびプリント設定の最新バージョンおよび追加項目が使用可能になると更新されます。Fusion を再起動するたびに更新のチェックが行われます。</message>
+
+  <message name="secondary-spindle-pull-name">バー プル</message>
+  <message name="secondary-spindle-pull-desc">バープル加工法を有効にします。</message>
+
+  <message name="import-pmi-name">ファイルのアップロード時に PMI データをインポート</message>
+  <message name="import-pmi-desc">データ パネルから開くときに、別の CAD アプリケーションで作成されたデザインから PMI (製品の製造情報)をインポートできるようにします。</message>
+  <message name="import-pmi-contextid">MFG-PMI-FOR-INSPECTION-PREVIEW</message>
+
+  <message name="un-cached-dependency-analyzer-name">従来の依存関係分析を有効にします</message>
+  <message name="un-cached-dependency-analyzer-desc">依存関係分析に従来のアルゴリズムを使用します。これはパフォーマンスの低下を引き起こすため、無効化の不安定性が発生した場合にのみ、最後の手段として有効にしてください。</message>
+
+  <message name="blend-entry-exit-passes-name">ブレンド: 進入パスと退出パス</message>
+  <message name="blend-entry-exit-passes-desc">開始ドライブ曲線と終了ドライブ曲線の前後にパスを追加して、加工領域を拡大し、パーツへの工具の移動とパーツからの工具の移動をそれぞれコントロールします。切削ピッチ計算が[工具の先端から]に設定されている場合にのみ適用されます。</message>
+
+  <message name="blend-intermediate-curves-name">ブレンド: 中間ドライブ曲線</message>
+  <message name="blend-intermediate-curves-desc">開始ドライブ曲線と終了ドライブ曲線の間にドライブ曲線を定義し、ブレンドの進行方法をコントロールします。ブレンドが明示的な曲線の選択肢からで、切削ピッチ計算が[工具の先端から]に設定されている場合にのみ適用されます。</message>
+
+  <message name="dmk-leadslinks-improvements-name">進入動作と退出動作の改善</message>
+  <message name="dmk-leadslinks-improvements-desc">切削パスの終端をトリムして調整することで、指定した進入と退出を追加できるようにします。オーバーハングしたサーフェスの下から進入動作と退出動作を延長することで、進入動作と退避動作の安全性を向上させます。急斜面と緩斜面、回転の加工法にのみ適用されます。</message>
+
+  <message name="modifications-areaclear-toolpaths-name">3D 負荷制御と 3D ポケット除去の修正</message>
+  <message name="modifications-areaclear-toolpaths-desc">不要な移動を削除したり、リードやリンクを調整したりして、ツールパスを最適化します。編集したすべてのツールパスを確認して、ストック内で予期せぬ動作がないか確認します。</message>
+
+  <message name="toolpath-trimming-turning-name">旋盤ツールパスのトリムおよび削除パスの修正(将来の機能拡張)</message>
+  <message name="toolpath-trimming-turning-desc">トリムおよびパスを削除の修正を適用して、ツールパスを最適化します。輪郭仕上げ、溝切り仕上げ、および旋盤トレースの各ツールパスで使用できます。</message>
+
+  <message name="polar-machining-ui-name">極座標加工</message>
+  <message name="polar-machining-ui-desc">ツールパスに沿って工具を移動するときに、回転と直線移動の組み合わせを使用するためのオプションをツールパス操作内に提供します。</message>
+
+  <message name="dmk-projection-finishing-name">投影加工法に関する追加オプション。</message>
+  <message name="dmk-projection-finishing-desc">指定されたポイントまたは曲線にパターンを投影し、アンダーカットを加工します。</message>
+
+  <message name="exclude-inclined-flats-name">傾斜した平坦サーフェスを除外(今後の拡張機能)</message>
+  <message name="exclude-inclined-flats-desc">傾斜した平坦サーフェスを自動的に除外して加工しないようにします。ボールエンド ミルで有機的なサーフェスのみをターゲットにする場合に便利です。急斜面および緩斜面の加工法で使用できます。</message>
+
+  <message name="use-machine-geometry-in-toolpath-generation-name">ツールパスの計算時にマシンのスピンドルとテーブルとの衝突をチェックする</message>
+  <message name="use-machine-geometry-in-toolpath-generation-desc">軸とホルダーとの衝突をチェックする場合は、必要に応じてマシンのスピンドルとテーブルとの衝突もチェックします。マシン ビルダーを使用して、使用する必要があるジオメトリを定義します。</message>
+
+  <message name="multi-axis-walls-name">壁加工法のための複合軸加工</message>
+  <message name="multi-axis-walls-desc">複合軸加工を使用して、1 回の操作でパーツのより多くの領域に到達することができます。</message>
+
+  <message name="inclined-wall-finishing-name">壁加工法</message>
+  <message name="inclined-wall-finishing-desc">垂直壁を自動的に検出して加工するために使用される仕上げ加工法です。</message>
+
+  <message name="in-control-radius-compensation-name">制御機の半径補正</message>
+  <message name="in-control-radius-compensation-desc">[補正]タイプが[制御機]に設定されているツールパスに対して、より新しく安定したアルゴリズムを使用します。この新しいアルゴリズムはすでにほとんどのケースで使用されており、このオプションを選択すると、すべてのケースで使用されます。</message>
+
+  <message name="dual-spindle-machines-enabled-name">旋盤と複合旋盤加工マシン</message>
+  <message name="dual-spindle-machines-enabled-desc">デュアルスピンドル旋盤と複合旋盤加工マシンのマシン定義を作成できます。マシン ライブラリに複数の複合旋盤加工オプションを追加して、ライブ ツーリングによる旋盤の一般的な構成をすばやく作成できるようにします。マシン定義の作成時には、キネマティクス ツリーでターレットとスピンドルを指定できます。</message>
+
+  <message name="stock-materials-name">ストック材料</message>
+  <message name="stock-materials-desc">製造現場にある材料と一致するように、ストック材料を入力できるライブラリを追加します。ストック材料をセットアップや工具の切削データ プリセットに割り当てることができます。操作用の工具を選択するときは、加工する材料に基づいてプリセットを選択します。</message>
+
+  <message name="cyclic-wrapped-name">ラップされたツールパスの周期的な輪郭</message>
+  <message name="cyclic-wrapped-desc">[ラップ]チェックボックスが有効な場合に、周期的な輪郭を許可します。これにより、HSM カーネルはラップされたツールパスのリンクを改善することができます。</message>
+
+  <message name="probe-geometry-surface-fitting-name">[形状をプローブ]でサーフェス形状を検査する</message>
+  <message name="probe-geometry-surface-fitting-desc">標準のプローブ サイクル（マクロ）ではサポートされていないプローブ ポイントを使用して、円や平面などの形状フィーチャをフィットおよび検査するための機能を[形状をプローブ]加工法に追加します。サーフェスの許容差を設定して、サーフェス許容差を設定して、サーフェス全体にわたる許容可能なばらつきや、選択したサーフェス タイプに固有のフィーチャ許容差を定義します。</message>
+
+  <message name="inspection-in-pim-name">検査データ ストレージ</message>
+  <message name="inspection-in-pim-desc">Fusion ドキュメントに加えて製造データ モデル(MFGDM)に検査データを保存し、ブラウザとキャンバスで完全なアクセスビリティと機能を維持します。</message>
+
+  <message name="shaft-and-holder-for-2d-chamfer-name">2D 面取りの軸とホルダー</message>
+  <message name="shaft-and-holder-for-2d-chamfer-desc">軸とホルダーのクリアランスを指定し、衝突の可能性を回避する方法を選択できるようにすることで、ツールパスの安全性を向上させます。</message>
+
+  <message name="even-stepdowns-in-2d-adaptive-name">2D 負荷制御での均等切込みピッチ</message>
+  <message name="even-stepdowns-in-2d-adaptive-desc">パス間の距離を等しくすることで、より一貫性のある切削条件を作成することができます。</message>
+
+  <message name="reusable-selections-name">選択範囲と工具方向を再利用</message>
+  <message name="reusable-selections-desc">工具方向に関係なく、他の操作で選択したジオメトリを再利用できます。工具方向を有効にすると、ブラウザの各操作の下に選択可能な工具方向ノードが追加され、複数の操作で再利用できるようになります。</message>
+
+  <message name="mill-auto-thread-name">フライス加工自動ねじ切り検出</message>
+  <message name="mill-auto-thread-desc">選択したジオメトリ上の Fusion で生成されたねじを検出し、フライス加工のねじ切り加工法のねじ定義を自動的に入力します。</message>
+
+  <message name="reusable-tool-orientations-name">工具方向を再使用</message>
+  <message name="reusable-tool-orientations-desc">操作の工具方向を設定する際に、ブラウザに選択可能な工具方向ノードを追加します。これにより、以降の操作で工具方向を再使用できるため、毎回方向を指定する必要がなくなり、複数の操作にわたって同時に調整できるようになります。</message>
+
+  <message name="machine-management-workflow-improvements-name">マシン管理の改善</message>
+  <message name="machine-management-workflow-improvements-desc">ブラウザに右クリック オプションを追加して、マシン定義を置き換えたり削除することで、マシン管理ワークフローを効率化できます。これらのオプションを使用すると、現在のセットアップ内または NC プログラムを含むすべてのセットアップでマシン定義を置き換えたり、同じ領域およびドキュメントからマシン定義を削除できます。</message>
+
+  <message name="machine-rotary-angles-settings-name">工具方向の加工角度</message>
+  <message name="machine-rotary-angles-settings-desc">2D 加工(3+2 加工)の加工角度を設定し、3D 加工(3 軸加工)の従来の回転と傾斜または加工角度のいずれかを選択できます。加工角度を指定すると、キャンバス上にマシン モデルが表示され、視覚化が向上します。マシン モデルにリンクされたマシン定義のセットアップが必要です。</message>
+
+  <message name="patterns-rotation-preference-name">パターンの回転の基本設定</message>
+  <message name="patterns-rotation-preference-desc">パターンの回転モーションの基本設定を設定できます。これにより、すべてのインスタンスで元の方向を維持したり、各インスタンスを回転させたり、3 軸動作を強制することができます。このオプションは、工具の方向が回転軸と位置合わせされている工程にのみ有効です。</message>
+
+  <message name="mill-standard-thread-name">フライス加工標準ねじ定義</message>
+  <message name="mill-standard-thread-desc">フライス加工操作で標準のねじ定義を許可します。</message>
+
+  <message name="Turn-and-tilt-tool-orientation-2D-name">2D 加工での工具方向の回転と傾斜</message>
+  <message name="Turn-and-tilt-tool-orientation-2D-desc">追加のコントロールを使用して 2D 加工用の工具方向を設定することにより、1 回の操作でパーツのより多くの領域に到達できます。回転と傾斜マニピュレータを使用して、ツールの向きを現在のビューに合わせたり、ツールの向きを任意のサーフェスに対して法線方向に設定したりすることがクリック 1 つでできます。</message>
+
+  <message name="disable-cadref-pruning-name">未使用の CAD 参照の破棄を無効化</message>
+  <message name="disable-cadref-pruning-desc">通常はドキュメントを開くときに行われる、参照されていない CAD ジオメトリ要素を破棄するステップを無効にします。このメカニズムによる問題が疑われる場合にのみオンにしてください。</message>
+
+  <message name="chain-face-compression-name">チェーンの圧縮を復元</message>
+  <message name="chain-face-compression-desc">チェーンの圧縮を復元します。これは、作業スペースの変更時やドキュメントのロード時にパフォーマンスを向上させるために実装されましたが、モデルの変更後に選択が正しく復元されないリスクが高まっていました。報告された問題に対処し、チェーンの圧縮が削除されましたが、この基本設定により、必要であれば復元することができます。</message>
+
+  <message name="machine-positioning-name">バー プルの表示設定</message>
+  <message name="machine-positioning-desc">マシンおよび固定具のコンポーネントを、実行済みのバー プルに対して正しく配置できるようにします</message>
+
+  <message name="turn-groove-roughing-cusp-cleanup-name">旋盤の段階的な削り残しクリーンアップ</message>
+  <message name="turn-groove-roughing-cusp-cleanup-desc">粗取りパスで残された削り残しを段階的に除去します。</message>
+
+  <message name="turn-profile-roughing-rest-area-undercuts-name">旋盤輪郭粗取り取残し領域アンダーカット</message>
+  <message name="turn-profile-roughing-rest-area-undercuts-desc">輪郭粗取りで取残し加工を使用する場合にアンダーカットにアクセスします。</message>
+
+  <message name="legacy-dxf-export-name">ネスト用の古い DXF エクスポート</message>
+  <message name="legacy-dxf-export-desc">ネストおよびファブリケーションで古い DXF エクスポート エンジンを有効にします。このオプションは、新しいエクスポート方法によって問題や不安定性が発生する場合にのみ使用してください。</message>
+
+  <message name="tool-call-strategy-name">工具呼び出し加工法</message>
+  <message name="tool-call-strategy-desc">サブスピンドルの移動、切落とし、または転送操作の前に、工具または空のステーションを呼び出して、事前に配置します。[工具呼び出し]を使用すると、工具選択を最適化し、操作間の時間を節約し、クラッシュのリスクを低減できます。</message>
+
+  <message name="relaxed-multiple-reference-matches-handling-name">あいまいな参照の従来の処理</message>
+  <message name="relaxed-multiple-reference-matches-handling-desc">通常、あいまいな選択(つまり、ドキュメントから確実にロードできない選択)は欠落としてマークされ、再選択する必要があります。このオプションを有効にすると、あいまいな選択は欠落としてマークされません。それらはロードされますが、正しく復元されない場合があります。</message>
+
+  <message name="toolpath-feedrate-edit-name">ツールパス送り速度の修正</message>
+  <message name="toolpath-feedrate-edit-desc">ツールパス送り速度の修正方法を有効にします。</message>
+
+  <message name="setup-groups-name">セットアップ グループ</message>
+  <message name="setup-groups-desc">セットアップ グループ加工法を有効にします。</message>
+  
+  <message name="subspindle-fixture-positioning-name">サブスピンドル固定具の位置決め</message>
+  <message name="subspindle-fixture-positioning-desc">現在のグラブ位置に対して、サブスピンドル固定具コンポーネントを正しく配置できるようにします。</message>
+
+  <message name="enable-optimized-flats-name">ポケット除去の改善</message>
+  <message name="enable-optimized-flats-desc">平坦領域のすぐ上にあるストックの加工を可能にします。</message>
+
+  <message name="add-produce-contact-normal-name">追加の 5 軸サポート</message>
+  <message name="add-produce-contact-normal-desc">球状以外の工具を使用する場合や、軸方向と径方向のオフセットに異なる値を使用する場合など、5 軸傾斜を追加のケースで使用できるようにします。
+  </message>
+
+  <message name="slice-containment-name">スライス制限境界</message>
+  <message name="slice-containment-desc">ポケットのスライス制限境界を有効にします。</message>
+
+  <message name="evenly-spaced-points-and-polar-links-hsm-name">均等間隔の点</message>
+  <message name="evenly-spaced-points-and-polar-links-hsm-desc">ツールパス内の切削移動に沿った点の分布を編集します。元の点を削除し、可能な限り均等間隔で新しい点を挿入します。これにより、動作が滑らかになり、マシンがプログラムされた送り速度により厳密に追従できるようになり、表面仕上げの品質向上やサイクル タイムの短縮が実現します。輪郭、平行、フロー、測地線、バリ取りなど、より多くの加工法で使用できるようになりました。</message>
+  
+</locale>

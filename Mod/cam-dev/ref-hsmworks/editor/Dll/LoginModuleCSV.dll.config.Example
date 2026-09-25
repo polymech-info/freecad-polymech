@@ -1,0 +1,19 @@
+{
+	"disabled" : true,
+	"columns" : 
+	{
+		"username"  : "username",
+		"password"  : "password",
+		"firstname" : "firstname",
+		"lastname"  : "lastname",
+		"comment"   : "comment",
+		"email"     : "email",
+		"serial"    : "serial",
+		"usergroups": "usergroups"
+	},
+	"deliminator" : ",",
+	"groupdelimiter" : ",",
+	"trimwhitespace" : true,
+	"csvPath": "O:\\Temp\\NCBaseLogin.csv",
+	"blockonauthfail" : true
+}

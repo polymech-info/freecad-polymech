@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><locale xmlns="http://www.hsmworks.com/xml/2008/locale">
+
+  <description>Polish</description>
+  <country>pl</country>
+
+  <!--
+	The entries in this file are used for localized text for feature flags,
+	as exposed in the Fusion preferences dialog.
+
+	The formats used for the entries should be in the form shown here,
+	where in this case the feature flag name would be 'feature-flag'.
+	  <message name="feature-flag-name">English Feature Flag Name</message>
+	  <message name="feature-flag-desc">English Feature Flag Description</message>
+   	  <message name="feature-flag-contextid">English Feature Flag Info Link</message>
+	  OR
+	  <message name="feature-flag-contextid">CONTEXT_ID</message>
+
+	If a context id is specified, a URL will be constructed, along the lines of:
+	https://help.autodesk.com/view/fusion360/<LANG>/?contextId=<CONTEXT_ID>
+	with the language code filled in based on the active language.
+  -->
+  <message name="additive-angled-volume-support-name">Obsługa objętości pod kątem wytwarzania przyrostowego</message>
+  <message name="additive-angled-volume-support-desc">Obsługa objętości utworzona podczas konfiguracji wytwarzania przyrostowego podąża za wektorem w kierunku płyty konstrukcyjnej. Ta funkcja podglądu umożliwia podzielenie tego wektora na dwa. Używając kąta między dwoma wektorami, można uniknąć tworzenia podpór łączących obszary Downskin z obszarami Upskin części. Spowoduje to poprawę jakości powierzchni i skrócenie czasu przetwarzania końcowego dla regionów Upskin.</message>
+  <message name="additive-angled-volume-support-contextid">MFG-ADDITIVE-ANGLED-VOLUME-SUPPORTS-PREVIEW</message>
+
+  <message name="Additive-Lateral-Support-name">Podpora boczna wytwarzania przyrostowego</message>
+  <message name="Additive-Lateral-Support-desc">Generuj miękkie szczęki do drukowania 3D dla części o złożonej geometrii lub delikatnych cienkich ścianach. Podpory boczne służą do przytrzymywania tych części podczas procesów obróbki, takich jak frezowanie.</message>
+
+  <message name="Additive-General-name">Wytwarzanie przyrostowe</message>
+  <message name="Additive-General-desc">Wybierz parametry drukowania, automatycznie ustaw orientację części, aby pomyślnie wykonać konstruowanie oraz generuj struktury pomocnicze i ścieżki narzędzi. Eksportuj bezpośrednio do maszyn do spiekania proszku lub pliku 3MF.</message>
+  <message name="Additive-General-contextid">EXT-MFG-ADDITIVE-START</message>
+
+  <message name="Additive-Tech-DED-name">Wieloosiowe napawanie addytywne</message>
+  <message name="Additive-Tech-DED-desc">Tworzy ścieżkę narzędzia wytwarzania przyrostowego do tworzenia cech, używając technologii napawania wieloosiowego. Na przykład technologii DED (Directed Energy Deposition).</message>
+  <message name="Additive-Tech-DED-contextid">MFG-AM-FEATURE-CONSTRUCTION</message>
+
+  <message name="Additive-Tech-SLM-name">Wytwarzanie przyrostowe</message>
+  <message name="Additive-Tech-SLM-desc">Umożliwia wybranie maszyny do spiekania proszku metalu (MPBF, Metal Powder Bed Fusion), rozmieszczenie i zorientowanie części na platformie, tworzenie w pełni skojarzonych struktur podpory i modeli płata. Generuje własny plik konstrukcji zawierający parametry lasera lub plik 3MF.</message>
+  <message name="Additive-Tech-SLM-contextid">MFG-AM-WORKFLOW-PREPARE-PARTS-FOR-ADDITIVE-MANUFACTURE</message>
+
+  <message name="advanced-direct-selection-name">Zaawansowany wybór bezpośredni</message>
+  <message name="advanced-direct-selection-desc">Enables the advanced direct selection mode for surface selections.</message>
+
+  <message name="configurable-tolerance-colors-name">Kolory tolerancji</message>
+  <message name="configurable-tolerance-colors-desc">Ustawia kolory tolerancji dla wyników kontroli i symulacji przygotówki, tak aby były zgodne. Dodaje w Preferencjach ustawienie, które umożliwia wybór między dwiema konwencjami kolorów. Ponadto w obszarze rysunku wyświetlane są wszystkie wyniki kontroli poza tolerancją z Geometrii sondy, RUW sondy i Kontroli ręcznej w kolorze pomarańczowym oraz wartości nominalne dla Kontroli ręcznej w kolorze czarnym.</message>
+  <message name="configurable-tolerance-colors-contextid">MFG-TOLERANCE-COLORS</message>
+
+  <message name="drilling-collision-avoidance-name">Unikaj kolizji podczas wiercenia</message>
+  <message name="drilling-collision-avoidance-desc">Zwiększa bezpieczeństwo operacji wiercenia dzięki określeniu prześwitów trzonów i uchwytów. Podczas skrawania można wybrać opcję pominięcia otworów, które mogą powodować kolizje. Podczas łączenia można wybrać opcję automatycznego dopasowania wysokości wycofania, aby uniknąć przeszkód.</message>
+
+  <message name="drilling-through-hole-flipper-name">Kontrola kierunku otworu przelotowego w wierceniu wieloosiowym</message>
+  <message name="drilling-through-hole-flipper-desc">W przypadku wiercenia wieloosiowego ustaw kierunek dowolnego otworu przelotowego, a ścieżka narzędzia będzie podążać za wybranym kierunkiem.</message>
+
+  <message name="cutting-force-analysis-name">Analiza sił skrawających</message>
+  <message name="cutting-force-analysis-desc">Zbieraj dane siły skrawającej podczas symulacji.</message>
+
+  <message name="hig-styled-qt-name">Zaktualizowano style</message>
+  <message name="hig-styled-qt-desc">Zapoznaj się z aktualizacją stylu w toku w oknach dialogowych w programie Fusion Manufacture.</message>
+
+  <message name="import-macro-results-name">Importuj wyniki drukowania makra</message>
+  <message name="import-macro-results-desc">Importuj „wyniki drukowania” utworzone w sterowniku obrabiarki za pomocą operacji Sonda RUW lub Geometria sondy.</message>
+  <message name="import-macro-results-contextid">MFG-IMPORT-MACRO-RESULTS</message>
+
+  <message name="inspection-results-projection-name">Kontrola powierzchni — rzutowanie CAD</message>
+  <message name="inspection-results-projection-desc">Zapewnia dokładniejsze wyniki podczas oceny zmierzonych punktów, w których kształt części lub położenie różnią się od pliku CAD. Oblicza odchylenie zmierzonego punktu względem powierzchni CAD, a nie względem oczekiwanego punktu dla strategii Kontrola powierzchni.</message>
+  <message name="inspection-results-projection-contextid">MFG-PROBE-PROJECT-POINTS</message>
+
+  <message name="fusion-mfg-assistant-name">Asystent produkcji</message>
+  <message name="fusion-mfg-assistant-desc">Umożliwia zadawanie pytań związanych z korzystaniem z programu Fusion do wytwarzania. Odpowiedzi są dostarczane przez sztuczną inteligencję (AI) z użyciem źródeł Autodesk i źródeł internetowych.</message>
+
+  <message name="invalid-parameter-error-name">Błąd nieprawidłowego parametru</message>
+  <message name="invalid-parameter-error-desc">Dodaje dodatkowe sprawdzenia poprawności parametrów w czasie generowania ścieżki narzędzia.</message>
+
+  <message name="live-machine-connection-name">Połączenie danych maszyny aktywnej</message>
+  <message name="live-machine-connection-desc">Oceniaj wyniki w czasie rzeczywistym, pobierając dane na żywo z mierzonych punktów ze sterowników Haas dla strategii Kontrola powierzchni, Geometria sondy i RUW sondy.</message>
+  <message name="live-machine-connection-contextid">MFG-PROBE-LIVE-CONNECTION</message>
+
+  <message name="live-part-alignment-name">Wyrównanie części maszyny na żywo</message>
+  <message name="live-part-alignment-desc">Włącz użycie wyrównania części za pomocą połączenia danych maszyny na żywo.</message>
+  <message name="live-part-alignment-contextid">MFG-LIVE-PART-ALIGNMENT-PREVIEW</message>
+
+  <message name="simulation-disable-visualization-collisions-on-name">Pomiń wykrywanie kolizji w symulacji wizualnej przygotówki</message>
+  <message name="simulation-disable-visualization-collisions-on-desc">Pomija dodatkowe wykrywanie kolizji podczas obliczania reprezentacji wizualnej przygotówki podczas symulacji. Pomaga to przyspieszyć wizualną symulację przygotówki w obszarze rysunku, szczególnie podczas symulacji wielu operacji, symulacji za pomocą maszyny lub obu. Wykrywanie kolizji jest nadal wykonywane w ramach procesu weryfikacji.</message>
+
+  <message name="simulation-mode-name">Opcje wyświetlania symulacji i informacje</message>
+  <message name="simulation-mode-desc">Zastąpiono okno dialogowe Symulacja dwoma nowymi oknami dialogowymi, dzięki czemu ustawienia sterujące wyświetlaniem w obszarze rysunku są niezależne od podsumowania kluczowych informacji o symulacji. Dostęp do opcji wyświetlania i podsumowania informacji można uzyskać z poziomu paska narzędzi środowiska kontekstowego Symulacja.</message>
+
+  <message name="geometry-simulator-use-GPU-name">Szybsze przetwarzanie IPS (GPU)</message>
+  <message name="geometry-simulator-use-GPU-desc">Zapewnia szybsze przetwarzanie przy użyciu procesora graficznego (GPU). Dodaje opcję IPS i Pozostała przygotówka &gt; Tryb przetwarzania w Preferencjach. Ta nowa opcja umożliwia wybór między trybami Standardowy (procesor komputera) i Szybszy (procesor graficzny) na potrzeby generowania przygotówki w trakcie procesu i pozostałej (resztki). W przypadku nowej opcji szybsze przetwarzanie zależy od jakości procesora graficznego.</message>
+  <message name="geometry-simulator-use-GPU-contextid">MFG-SIMULATE-FASTER-GPU</message>
+  
+  <message name="gpu-machine-simulation-name">Użyj szybszej symulacji przygotówki (GPU) podczas symulacji maszyny</message>
+  <message name="gpu-machine-simulation-desc">Umożliwia szybszą symulację przygotówki podczas symulacji maszyny przy użyciu procesora graficznego (GPU). Dodaje opcję Tryb &gt; Szybsza symulacja (GPU) do środowiska kontekstowej symulacji jako szybszą alternatywę do korzystania z procesora komputera (CPU). W przypadku używania procesora GPU weryfikacja maszyny, która obejmuje wykrywanie kolizji, jest kontynuowana za pomocą procesora komputera i może potrwać dłużej. Maszyna jest sprawdzana względem modelu, ale nie przygotówki. Szybsze przetwarzanie zależy od jakości procesora graficznego.</message>
+  <message name="gpu-machine-simulation-contextid">MFG-SIMULATE-MACHINE-GPU</message>
+
+  <message name="gpu-stock-per-pixel-refinement-name">Udoskonalone efekty wizualne na potrzeby symulacji przygotówki (GPU)</message>
+  <message name="gpu-stock-per-pixel-refinement-desc">Poprawia jakość wizualną symulowanej przygotówki podczas używania opcji Szybsza symulacja (GPU), szczególnie podczas wstrzymanej symulacji. W Fusion siatka przygotówki jest wygładzana, a następnie uwydatniana jest szczegółowość każdego widocznego piksela. Po każdej zmianie widoku (obracanie, przesuwanie, powiększanie) wygładzanie jest przeliczane, co może zająć dodatkowy czas.</message>
+
+  <message name="simulation-auto-machine-part-ghosting-name">Symulacja z automatyczną przezroczystością maszyny</message>
+  <message name="simulation-auto-machine-part-ghosting-desc">Automatycznie sprawia, że każdy element maszyny, który blokuje widok końcówki narzędzia podczas symulacji maszyny, staje się przezroczysty. Umożliwia to uzyskanie wyraźnego widoku końcówki narzędzia podczas przesuwania i zmiany widoków.</message>
+
+  <message name="manual-inspect-measure-method-name">Odległość od środka do środka w przypadku kontroli ręcznej</message>
+  <message name="manual-inspect-measure-method-desc">Umożliwia wybranie sposobu pomiaru odległości między środkami dwóch otworów lub kominków w kontroli ręcznej. Jeśli przyrząd pomiarowy nie obsługuje pomiarów odległości między środkami, program Fusion może obliczyć odległość za pomocą średnic otworów lub kominków oraz maksymalnej lub minimalnej odległości między nimi.</message>
+  <message name="manual-inspect-measure-method-contextid">MFG-MANUAL-INSPECTION-CENTERS-PREVIEW</message>
+
+  <message name="manual-measure-name">Kontrola ręczna</message>
+  <message name="manual-measure-desc">Utwórz listę cech, które mają być mierzone fizycznie za pomocą ręcznego urządzenia pomiarowego, takiego jak suwmiarka, mikrometr lub wysokościomierz. Rejestruj pomiary, aby porównać je z określonymi tolerancjami i opcjonalnie zapisz wyniki jako raport kontroli.</message>
+  <message name="manual-measure-contextid">MFG-CREATE-MANUAL-INSPECTION</message>
+
+  <message name="legacy-mesh-silhouette-name">Starsza funkcja obrysu siatki</message>
+  <message name="legacy-mesh-silhouette-desc">Włącz starszą funkcję obrysu danych siatki.</message>
+
+  <message name="legacy-chaining-name">Tworzenie łańcuchów starszego typu</message>
+  <message name="legacy-chaining-desc">Włącz starszy mechanizm tworzenia łańcuchów starszego typu dla wyboru krawędzi w obszarze roboczym Wytwarzanie.</message>
+
+  <message name="legacy-drilling-name">Poprzedni model wiercenia</message>
+  <message name="legacy-drilling-desc">Włącz poprzedni model wiercenia w obszarze roboczym Wytwarzanie.</message>
+
+  <message name="new_import_results-name">Importuj wyniki kontroli</message>
+  <message name="new_import_results-desc">Wybierz bryły, na które będą rzutowane zmierzone punkty podczas importowania wyników kontroli.</message>
+  <message name="new_import_results-contextid">MFG-PROBE-IMPORT-RESULTS</message>
+
+  <message name="old-turning-profile-strategy-name">Toczenie starego profilu</message>
+  <message name="old-turning-profile-strategy-desc">Umożliwia włączenie strategii toczenia starego profilu. Będzie ona dostępna przez ograniczony czas.</message>
+
+  <message name="old-pocket-detector-name">Starsze wykrywanie kieszeni 2D</message>
+  <message name="old-pocket-detector-desc">Jeśli ta flaga jest ustawiona, zostanie użyty starszy algorytm wykrywania otwartych kieszeni 2D.</message>
+
+  <message name="probe-angle-measure-name">Pomiar: Pomiar kąta poza osią</message>
+  <message name="probe-angle-measure-desc">Umożliwia zmierzenie przez geometrię sądy kąta obrotu pionowych powierzchni czołowych.</message>
+
+  <message name="probe-geometry-strategy-name">Kontrola w oparciu o makra</message>
+  <message name="probe-geometry-strategy-desc">Mierz cechy w trakcie procesu dzięki cyklom probingu na maszynie. Weryfikuj wymiary i położenia krytycznych cech geometrycznych, aktualizuj parametry zużycia narzędzia i wstrzymuj lub zatrzymuj programy, aby rozwiązać problemy związane z cechami poza tolerancją. &lt;i&gt;Zawiera: Geometrię sondy, Raporty kontroli i więcej.&lt;/i&gt;</message>
+  <message name="probe-geometry-strategy-contextid">EXT-MANUFACTURING</message>
+
+  <message name="pmi-inspection-plan-name">Plan kontroli PMI</message>
+  <message name="pmi-inspection-plan-desc">Umożliwia automatyczne generowanie planu kontroli na podstawie istniejących informacji PMI.</message>
+  <message name="pmi-inspection-plan-contextid">MFG-PMI-INSPECTION-PLAN-PREVIEW</message>
+
+  <message name="probe-on-pcd-name">Pomiar otworów i kominków na PCD</message>
+  <message name="probe-on-pcd-desc">Umożliwia korzystanie z dodatkowych opcji w strategiach RUW sondy i Geometria sondy, aby umożliwić pomiar otworów i kominków na PCD.</message>
+
+  <message name="hide-warnings-name">Ukryj ostrzeżenia</message>
+  <message name="hide-warnings-desc">Jeśli podczas programowania wystąpią ostrzeżenia, można ukryć ostrzeżenia dla poszczególnych operacji po ich przeczytaniu i zdecydować, że nie wymagają one dalszej uwagi. Ostrzeżenia pozostają ukryte do czasu ponownego wygenerowania operacji.</message>
+
+  <message name="ignore-warnings-name">Ignoruj ostrzeżenia</message>
+  <message name="ignore-warnings-desc">Umożliwia zignorowanie ostrzeżeń operacji. Ostrzeżenia mogą być ignorowane tylko w trakcie sesji lub zawsze.</message>
+
+  <message name="improved-form-mill-approximation-name">Ulepszona aproksymacja freza kształtowego</message>
+  <message name="improved-form-mill-approximation-desc">Aproksymuje frezy kształtowe jako frez promieniowy, a nie jako frez kulisty.</message>
+	
+  <message name="post-processing-with-legacy-dialog-off-name">Postprocesing kodu NC ze starszym oknem dialogowym postprocesingu</message>
+  <message name="post-processing-with-legacy-dialog-off-desc">Powróć do starszego okna dialogowego postprocesingu, jeśli występują problemy z nowym interfejsem postprocesingu programu NC.</message>
+  <message name="post-processing-with-legacy-dialog-off-contextid">MFG-POST-PROCESS-OPERATIONS</message>
+
+  <message name="4-axis-machining-type-name">Obróbka 4-osiowa ścieżek narzędzi 3D</message>
+  <message name="4-axis-machining-type-desc">Dodaje więcej opcji obróbki 4-osiowej do ścieżek narzędzi 3D. W przypadku odpowiednich szybkich połączeń w ruchu 4- i 5-osiowym, można ustawić wysokości Wyczyść i Wycofaj jako walce, kule lub płaszczyzny ukośne.</message>
+
+  <message name="restrict-to-4-axis-name">Ogranicz do 4-osiowej</message>
+  <message name="restrict-to-4-axis-desc">Generuje 4-osiową ścieżkę narzędzia ze strategii 5-osiowej do użycia na obrabiarce z co najmniej 4 osiami. Aktualnie tylko dla strategii Przepływ.</message>
+  <message name="restrict-to-4-axis-contextid">PRODUKCJA ZEWNĘTRZNA</message>
+
+  <message name="roughing-form-tools-name">Roughing Form Tools</message>
+  <message name="roughing-form-tools-desc">Enables calculation of 3D Pocket and 3D Adaptive operations to use actual Form Mill shape for toolpath calculation, instead of an approximated regular mill.</message>
+
+  <message name="moduleworks-three-plus-two-name">Strategia czyszczenia 3+2 (możliwość rozszerzania w przyszłości)</message>
+  <message name="moduleworks-three-plus-two-desc">Strategia obróbki zgrubnej, która może być używana do usunięcia dużych ilości materiału przy użyciu wielu orientacji narzędzia. Można użyć krótszych narzędzi, które są bardziej sztywne, do obróbki obszarów takich jak podcięcia.</message>
+  <message name="moduleworks-three-plus-two-contextid">PRODUKCJA ZEWNĘTRZNA</message>
+
+  <message name="setup-sheet-configurations-name">Konfiguracje arkuszy ustawień</message>
+  <message name="setup-sheet-configurations-desc">Umożliwia tworzenie niestandardowych konfiguracji arkuszy ustawień.</message>
+
+  <message name="spun-profile-dmk-name">Profil obrócony</message>
+  <message name="spun-profile-dmk-desc">Zwiększ stabilność i wydajność elementu Profil Obrotu, używając nowego algorytmu Profil obrotu. Ta funkcja umożliwia utworzenie krzywej profilu przez obrót wybranego modelu dla operacji toczenia.</message>
+
+  <message name="stock-drag-handles-name">Uchwyty przeciągania przygotówki</message>
+  <message name="stock-drag-handles-desc">Włącza uchwyty przeciągania w celu dopasowania rozmiaru przygotówki.</message>
+
+  <message name="strategy-inspect-surface-name">Kontrola powierzchni</message>
+  <message name="strategy-inspect-surface-desc">Użyj funkcji probingu w oparciu o model CAD, aby mierzyć dokładność złożonej geometrii powierzchni za pomocą sondy zamontowanej na wrzecionie. Użyj inteligentnego wyrównania części, aby zautomatyzować ustawienie i obróbkę części niepryzmatycznych, takich jak kucia i odlewy. &lt;i&gt;Zawiera: Kontrola powierzchni, Raporty kontroli, Automatyczne wyrównanie części i więcej.&lt;/i&gt;</message>
+  <message name="strategy-inspect-surface-contextid">EXT-MANUFACTURING</message>
+
+  <message name="customize-inspection-report-name">Niestandardowe raporty kontroli</message>
+  <message name="customize-inspection-report-desc">Umożliwia wybór i edycję wybranych wstępnie zdefiniowanych szablonów podczas tworzenia raportu kontroli.</message>
+
+  <message name="strategy-rotary-name">Strategia obrotowa</message>
+  <message name="strategy-rotary-desc">Obrabiaj złożone, niegeometryczne kształty, korzystając ze strategii obrotowej dla frezowania 4-osiowego.</message>
+  <message name="strategy-rotary-contextid">MFG-MULTI-AXIS-ROTARY</message>
+
+  <message name="extension-3-axis-name">Zautomatyzowana obróbka 3-osiowa</message>
+  <message name="extension-3-axis-desc">Uprość wiercenie i frezowanie złożonych, wieloelementowych części dzięki szerokiej gamie inteligentnych strategii 3-osiowych, które można zastosować do całej części w celu przyspieszenia programowania CAM. &lt;i&gt;Zawiera: 3-osiowe rozpoznawanie otworów i 3-osiowe strome i płytkie.&lt;/i&gt;</message>
+  <message name="extension-3-axis-contextid">EXT-MANUFACTURING</message>
+
+  <message name="extension-3-plus-2-name">Automatyczna obróbka 3+2</message>
+  <message name="extension-3-plus-2-desc">Uzyskaj dostęp do dodatkowych strategii i elementów sterujących osi narzędzia, które mogą używać osi obrotowych obrabiarki CNC do wiercenia i frezowania całych części z obróbką 3+2 (pozycyjną). &lt;i&gt;Zawiera: Rozpoznawanie otworów 3+2.&lt;/i&gt;</message>
+  <message name="extension-3-plus-2-contextid">EXT-MANUFACTURING</message>
+
+  <message name="template-library-name">Biblioteka szablonów</message>
+  <message name="template-library-desc">Nowy interfejs szablonów. Przechowuj, przeglądaj lub ponownie wykorzystuj szablony w nowej bibliotece.</message>
+
+  <message name="toolpath-modifications-name">Modyfikacje ścieżki</message>
+  <message name="toolpath-modifications-desc">Uzyskaj dostęp do szerokiej gamy zaawansowanych narzędzi do modyfikacji, aby wprowadzać globalne lub lokalne zmiany ścieżek narzędzi bez konieczności całkowitego ponownego obliczania. Zmiany mogą być edytowane w celu zapewnienia większej elastyczności. &lt;i&gt; Zawiera: Przycinanie ścieżki narzędzia, Usuwanie przejść, Zastąp narzędzie i inne.&lt;/i&gt;</message>
+  <message name="toolpath-modifications-contextid">EXT-MANUFACTURING</message>
+
+  <message name="tool-library-v4-dynamic-tool-preview-release-name">Biblioteka narzędzi — podgląd 3D</message>
+  <message name="tool-library-v4-dynamic-tool-preview-release-desc">Włącza podgląd narzędzia 3D w Bibliotece narzędzi.</message>
+
+  <message name="tool-library-v4-fusionmake-parser-name">Biblioteka narzędzi — analizator składni programu Fusion</message>
+  <message name="tool-library-v4-fusionmake-parser-desc">Umożliwia użycie analizatora składni Fusion w bibliotece narzędzi w celu zapewnienia lepszej spójności wyrażeń użytkownika.</message>
+
+  <message name="tool-library-v4-tool-orientation-name">Biblioteka narzędzi — orientacja narzędzia</message>
+  <message name="tool-library-v4-tool-orientation-desc">Dodaje bardziej intuicyjne interakcje ustawiania orientacji narzędzia tokarskiego. Dodaje również możliwość sterowania kierunkiem wrzeciona niezależnie od orientacji narzędzia, co eliminuje potrzebę ręcznej edycji kodu, ale może zwiększyć ryzyko kolizji. Jeżeli ta funkcja podglądu zostanie włączona i ustawienia, należy pamiętać, że ponowne jej wyłączenie spowoduje zachowanie ustawionego kierunku wrzeciona podczas dopasowywania orientacji narzędzia, bez unieważniania operacji. Należy również pamiętać, że potencjalne kolizje mogą nie być podświetlone podczas symulacji. &lt;br/&gt;&lt;i&gt;Ważne: Zawsze potwierdzaj wizualnie wyniki symulacji i sprawdzaj kody wrzeciona M w danych wyjściowych po przetworzeniu przed uruchomieniem kodu CNC.&lt;/i&gt;</message>
+
+  <message name="tool-gtc-import-name">Biblioteka narzędzi — importowanie pakietów GTC</message>
+  <message name="tool-gtc-import-desc">Umożliwia zaimportowanie przynajmniej jednego narzędzia do biblioteki narzędzi z pakietu GTC (katalogu narzędzi ogólnych). Pakiety GTC to pliki zip, które zazwyczaj zawierają zarówno model narzędzia (plik STEP), jak i właściwości definiowania geometrii narzędzia (plik P21). Pakiety GTC są często dostępne do pobrania od dostawców narzędzi lub producentów.</message>
+
+  <message name="tool-p21-import-name">Biblioteka narzędzi — importowanie plików P21</message>
+  <message name="tool-p21-import-desc">Umożliwia zaimportowanie narzędzia do biblioteki narzędzi z pliku P21. Plik P21 zawiera właściwości definiujące geometrię narzędzia i są one odwzorowywane na parametry narzędzia Fusion podczas procesu importu. Pliki P21 są często dostępne do pobrania od dostawców narzędzi lub producentów.</message>
+
+  <message name="extension-multi-axis-name">4-osiowa i 5-osiowa obróbka jednoczesna</message>
+  <message name="extension-multi-axis-desc">Odblokuj strategie wieloosiowe i opcje osi narzędzia, aby sterować liniową i obrotową osią obrabiarki CNC jednocześnie w celu zapewnienia bezpiecznej i wydajnej obróbki najbardziej złożonych kształtów. &lt;i&gt;Zawiera: Obróbka bokiem freza, Wieloosiową obróbkę obszarów o dużym i małym nachyleniu, Wieloosiowy kontur i nie tylko.&lt;/i&gt;</message>
+  <message name="extension-multi-axis-contextid">EXT-MANUFACTURING</message>
+
+  <message name="mfg-working-model-name">Model roboczy produkcji</message>
+  <message name="mfg-working-model-desc">Umożliwia włączenie modeli produkcyjnych w obszarze roboczym Wytwarzanie. Wymagane do korzystania z funkcji Zagnieżdżanie i Rozmieszczenie.</message>
+  <message name="mfg-working-model-contextid">MFG-MANUFACTURING-MODEL-OVERVIEW</message>
+
+  <message name="strategy-old-flow-name">Przepływ (stary)</message>
+  <message name="strategy-old-flow-desc">Umożliwia obróbkę zakrzywionych powierzchni. Strategia Przepływ (stary) wymaga określenia liczby szerokości skrawania potrzebnej podczas obróbki powierzchni. Nowsza strategia Przepływ, znajdująca się w menu rozwijanym ścieżek narzędzi 3D, automatycznie oblicza wymagane szerokości skrawania. Włączenie tej funkcji w wersji Preview daje dostęp do strategii Przepływ (stary), jeśli nadal jest wymagane jej użycie przed dopasowaniem procesów roboczych do użycia nowszej strategii Przepływ.</message>
+
+  <message name="skip-ruled-alignment-name">Starsza metoda mozaikowania powierzchni</message>
+  <message name="skip-ruled-alignment-desc">Użyj starszej metody podziału powierzchni podczas generowania ścieżek narzędzi przy użyciu niektórych strategii frezowania. Może to być przydatne, jeśli nowa metoda powoduje problemy ze ścieżką narzędzia na powierzchniach prostokreślnych.</message>
+
+  <message name="online-system-library-name">Automatycznie pobierz najnowsze postprocesory, maszyny i ustawienia wydruku</message>
+  <message name="online-system-library-desc">Sekcja bibliotek programu Fusion w bibliotece postbibliotek, bibliotece maszyn i bibliotece ustawień drukowania jest aktualizowana o najnowsze wersje i dodatkowe wiadomości, maszyny i ustawienia drukowania, gdy stają się dostępne. Sprawdzanie aktualizacji jest wykonywane przy każdym ponownym uruchomieniu programu Fusion.</message>
+
+  <message name="secondary-spindle-pull-name">Wyciągnięcie pręta</message>
+  <message name="secondary-spindle-pull-desc">Włącza strategię Wyciągnięcie pręta</message>
+
+  <message name="import-pmi-name">Importuj dane PMI podczas przesyłania pliku</message>
+  <message name="import-pmi-desc">Umożliwia importowanie PMI (informacji o wytwarzaniu produktu) z projektu utworzonego w innej aplikacji CAD po otwarciu z panelu danych.</message>
+  <message name="import-pmi-contextid">MFG-PMI-FOR-INSPECTION-PREVIEW</message>
+
+  <message name="un-cached-dependency-analyzer-name">Włącz starszą analizę zależności</message>
+  <message name="un-cached-dependency-analyzer-desc">Używa starszego algorytmu do analizy zależności. Spowoduje to obniżenie wydajności i powinno być włączone tylko w ostateczności, jeśli wystąpią niestabilności unieważnienia.</message>
+
+  <message name="blend-entry-exit-passes-name">Połączenie: przejścia wejściowe i wyjściowe</message>
+  <message name="blend-entry-exit-passes-desc">Dodaj przejścia przed i za początkową oraz końcową krzywą prowadzącą, aby rozszerzyć obrabiany obszar i sterować, odpowiednio, ruchem narzędzia w kierunku do i od części. Ma zastosowanie tylko wtedy, gdy Obliczanie szerokości skrawania jest ustawione na „Od końcówki narzędzia”.</message>
+
+  <message name="blend-intermediate-curves-name">Połączenie: pośrednie krzywe sterujące</message>
+  <message name="blend-intermediate-curves-desc">Zdefiniuj krzywe prowadzące między początkową i końcową krzywą prowadzącą, aby sterować postępem połączenia. Ma zastosowanie tylko wtedy, gdy stopienie profili odbywa się na podstawie określonych wyborów krzywych, a Obliczanie szerokości skrawania jest ustawione na 'Od końcówki narzędzia'.</message>
+
+  <message name="dmk-leadslinks-improvements-name">Ulepszone ruchy dobiegów i wybiegów</message>
+  <message name="dmk-leadslinks-improvements-desc">Umożliwia dodanie określonego dobiegu i wybiegu przez przycięcie końców przejść skrawających w celu ich dostosowania. Poprawia bezpieczeństwo ruchów podejścia i wycofania przez wydłużenie dobiegów i wybiegów z powierzchni poniżej nawisu. Dotyczy tylko strategii Obszar o dużym i małym nachyleniu oraz Obrotowe.</message>
+
+  <message name="modifications-areaclear-toolpaths-name">Modyfikacje opcji Adaptacyjne usuwanie materiału 3D i Obróbka kieszeniowa 3D</message>
+  <message name="modifications-areaclear-toolpaths-desc">Usuń niepotrzebne ruchy i dostosuj dobiegi i połączenia, aby zoptymalizować ścieżkę narzędzia. Sprawdź wszystkie edytowane ścieżki narzędzi pod kątem nieoczekiwanych ruchów przez przygotówkę.</message>
+
+  <message name="toolpath-trimming-turning-name">Modyfikacje funkcji Utnij i usuń przejścia w ścieżkach narzędzi toczenia (możliwość rozszerzania w przyszłości)</message>
+  <message name="toolpath-trimming-turning-desc">Zastosuj modyfikacje Utnij i usuń przejścia w celu optymalizacji ścieżek narzędzi. Dostępne w ścieżkach narzędzi Obróbka wykańczająca profilu, Obróbka wykańczająca rowków i toczenie śladu.</message>
+
+  <message name="polar-machining-ui-name">Obróbka biegunowa</message>
+  <message name="polar-machining-ui-desc">Udostępnia opcje w ramach operacji na ścieżce narzędzia do użycia kombinacji ruchów obrotowych i postępowych podczas przesuwania narzędzia wzdłuż ścieżki narzędzia.</message>
+
+  <message name="dmk-projection-finishing-name">Dodatkowe opcje strategii rzutowania.</message>
+  <message name="dmk-projection-finishing-desc">Obrabiaj podcięcia przez rzutowanie szyków do lub z określonego punktu lub krzywej.</message>
+
+  <message name="exclude-inclined-flats-name">Wyklucz nachylone powierzchnie płaskie (możliwość rozszerzania w przyszłości)</message>
+  <message name="exclude-inclined-flats-desc">Automatycznie wyklucz nachylone płaskie powierzchnie, aby uniknąć ich obróbki. Przydatne, gdy chcesz, aby były używane tylko powierzchnie organiczne z frezem walcowo-czołowym. Dostępne w strategii obszarów o dużym i małym nachyleniu.</message>
+
+  <message name="use-machine-geometry-in-toolpath-generation-name">Sprawdź kolizje z wrzecionem maszyny i stołem podczas obliczania ścieżek narzędzia</message>
+  <message name="use-machine-geometry-in-toolpath-generation-desc">Podczas sprawdzania kolizji z wałkiem i uchwytem opcjonalnie sprawdź również, czy nie występują kolizje z wrzecionem i stołem maszyny. Użyj Kreatora maszyny, aby zdefiniować geometrię, która ma być używana.</message>
+
+  <message name="multi-axis-walls-name">Obróbka wieloosiowa dla strategii ściany</message>
+  <message name="multi-axis-walls-desc">Umożliwia użycie obróbki wieloosiowej w celu dotarcia do większej liczby obszarów części w ramach pojedynczej operacji.</message>
+
+  <message name="inclined-wall-finishing-name">Strategia ściany</message>
+  <message name="inclined-wall-finishing-desc">Strategia obróbki wykańczającej, której można użyć do automatycznego wykrywania i obróbki ścian pionowych.</message>
+
+  <message name="in-control-radius-compensation-name">Kompensacja promienia w sterowniku</message>
+  <message name="in-control-radius-compensation-desc">Używa nowszego, bardziej stabilnego algorytmu dla ścieżek narzędzi, w przypadku których typ kompensacji jest ustawiony na W sterowniku. Ten nowszy algorytm jest już używany w większości przypadków, a po wybraniu tej opcji jest używany we wszystkich przypadkach.</message>
+
+  <message name="dual-spindle-machines-enabled-name">Tokarki i tokarko-frezarki</message>
+  <message name="dual-spindle-machines-enabled-desc">Umożliwia tworzenie definicji maszyny w przypadku tokarek dwuwrzecionowych i tokarko-frezarek. W bibliotece maszyn dodaje wiele opcji tokarko-frezarek, aby ułatwić szybkie tworzenie popularnych konfiguracji tokarko-frezarek z aktywnym oprzyrządowaniem. Podczas tworzenia definicji maszyny umożliwia określenie głowic rewolwerowych i wrzecion w drzewie kinematyki.</message>
+
+  <message name="stock-materials-name">Materiały przygotówki</message>
+  <message name="stock-materials-desc">Dodaje bibliotekę, którą można wypełnić materiałami przygotówki, aby dopasować ją do zawartości w warsztacie. Umożliwia przypisanie materiałów przygotówki do baz i do ustawień wstępnych danych skrawania dla narzędzi. Po wybraniu narzędzia dla operacji wybierz ustawienia wstępne na podstawie materiału do obróbki.</message>
+
+  <message name="cyclic-wrapped-name">Cykliczne kontury do ścieżek narzędzi zawijania</message>
+  <message name="cyclic-wrapped-desc">Umożliwia stosowanie cyklicznych konturów, gdy jest zaznaczone pole wyboru zawijania. Umożliwia to również ulepszenie łączenia od ścieżek narzędzi zawijania w jądrze HSM.</message>
+
+  <message name="probe-geometry-surface-fitting-name">Sprawdź geometrię powierzchni w strategii Geometria sondy</message>
+  <message name="probe-geometry-surface-fitting-desc">Dodaje funkcję do strategii Geometria sondy pozwalającą na dopasowanie i kontrolę elementów geometrycznych, takich jak okręgi i płaszczyzny, przy użyciu mierzonych punktów, które nie są obsługiwane przez standardowe cykle pomiaru (makra). Ustaw tolerancje powierzchni, aby zdefiniować dopuszczalne odchylenia na całej powierzchni, i tolerancje elementów charakterystyczne dla wybranego typu powierzchni.</message>
+
+  <message name="inspection-in-pim-name">Przechowywanie danych kontroli</message>
+  <message name="inspection-in-pim-desc">Przechowuje dane kontroli w modelu danych produkcyjnych (MFGDM) oprócz dokumentu Fusion, zachowując jednocześnie pełny dostęp i funkcjonalność w przeglądarce i obszarze rysunku.</message>
+
+  <message name="shaft-and-holder-for-2d-chamfer-name">Trzon i uchwyt w fazowaniu 2D</message>
+  <message name="shaft-and-holder-for-2d-chamfer-desc">Zwiększono bezpieczeństwo ścieżki narzędzia, umożliwiając określenie prześwitów trzonu i uchwytu oraz wybranie sposobu zapobiegania możliwym kolizjom.</message>
+
+  <message name="even-stepdowns-in-2d-adaptive-name">Równomierne głębokości skrawania podczas obróbki adaptacyjnej 2D</message>
+  <message name="even-stepdowns-in-2d-adaptive-desc">Pomaga stworzyć bardziej jednolite warunki skrawania dzięki równym odległościom między przejściami.</message>
+
+  <message name="reusable-selections-name">Użyj ponownie wyborów i orientacji narzędzia</message>
+  <message name="reusable-selections-desc">Umożliwia ponowne użycie wyborów geometrii z innych operacji, niezależnie od orientacji narzędzia. Dodaje węzeł Orientacja narzędzia do wyboru pod każdą operacją w przeglądarce, gdy orientacja narzędzia jest włączona, umożliwiając ponowne użycie w wielu operacjach.</message>
+
+  <message name="mill-auto-thread-name">Automatyczne wykrywanie gwintów podczas frezowania</message>
+  <message name="mill-auto-thread-desc">Wykrywa gwinty wygenerowane przez program Fusion na wybranej geometrii i automatycznie wprowadza definicję gwintu w strategii Frezowanie gwintu.</message>
+
+  <message name="reusable-tool-orientations-name">Użyj ponownie orientacji narzędzia</message>
+  <message name="reusable-tool-orientations-desc">Podczas ustawiania orientacji narzędzia dla operacji dodaje do operacji w przeglądarce możliwy do wybrania węzeł Orientacja narzędzia. Pozwala to na ponowne wykorzystanie orientacji narzędzia w przyszłych operacjach, eliminując potrzebę określania orientacji za każdym razem i umożliwiając jednoczesną korektę w wielu operacjach.</message>
+
+  <message name="machine-management-workflow-improvements-name">Ulepszenia w zakresie zarządzania maszynami</message>
+  <message name="machine-management-workflow-improvements-desc">Dodaje w przeglądarce opcje dostępne po kliknięciu prawym przyciskiem myszy, które umożliwiają zastępowanie lub usuwanie definicji maszyn, usprawniając procesy robocze zarządzania maszynami. Opcje te umożliwiają zastępowanie definicji maszyn w bieżących lub we wszystkich ustawieniach, łącznie z programami NC, oraz usuwanie definicji maszyn z tych samych obszarów, jak i z dokumentu.</message>
+
+  <message name="machine-rotary-angles-settings-name">Kąty maszyny do orientacji narzędzia</message>
+  <message name="machine-rotary-angles-settings-desc">Umożliwia ustawienie kątów maszyny dla strategii 2D (obróbka 3+2) i wybór między tradycyjnym toczeniem i pochylaniem lub kątami obróbki dla strategii 3D (obróbka 3-osiowa). Podczas określania kątów maszyny wyświetla model maszyny w obszarze rysunku, co pomaga poprawić wizualizację. Wymaga ustawień z definicją maszyny połączoną z modelem maszyny.</message>
+
+  <message name="patterns-rotation-preference-name">Preferencje dotyczące obrotu w przypadku wzorów</message>
+  <message name="patterns-rotation-preference-desc">Umożliwia ustawienie preferencji ruchu obrotowego we wzorach. Pozwala zachować oryginalną orientację we wszystkich wystąpieniach, obrócić każde wystąpienie lub wymusić ruchy 3-osiowe. Ta opcja działa tylko w przypadku operacji, gdy orientacja narzędzia jest wyrównana z osią obrotową.</message>
+
+  <message name="mill-standard-thread-name">Definicja gwintu standardowego — frezowanie</message>
+  <message name="mill-standard-thread-desc">Zezwalaj na definicję standardowego gwintu w operacjach frezowania.</message>
+
+  <message name="Turn-and-tilt-tool-orientation-2D-name">Orientacja narzędzia w osi obrotu i pochylenia w strategiach 2D</message>
+  <message name="Turn-and-tilt-tool-orientation-2D-desc">Uzyskaj dostęp do dodatkowych obszarów obróbki części w ramach jednej operacji, używając dodatkowych elementów sterujących w celu ustawienia orientacji narzędzia w strategii 2D. Użyj manipulatorów do obrotu i pochylenia, dopasuj orientację narzędzia do bieżącego widoku lub ustaw orientację narzędzia prostopadle do dowolnej powierzchni za pomocą jednego kliknięcia.</message>
+
+  <message name="disable-cadref-pruning-name">Wyłącz odrzucanie nieużywanych odniesień CAD</message>
+  <message name="disable-cadref-pruning-desc">Wyłącza etap odrzucania elementów geometrii CAD bez odniesień, co zwykle ma miejsce podczas otwierania dokumentu. Ta opcja powinna być włączona tylko wtedy, gdy istnieje podejrzenie problemów spowodowanych użyciem tego mechanizmu.</message>
+
+  <message name="chain-face-compression-name">Przywraca kompresję łańcuchów</message>
+  <message name="chain-face-compression-desc">Przywraca kompresję łańcuchów. Zostało to wdrożone w celu zwiększenia wydajności podczas zmiany obszaru roboczego i wczytywania dokumentu, ale przy zwiększonym ryzyku niepoprawnego przywrócenia wybranych elementów po zmianie modelu. Kompresja łańcuchów została usunięta w reakcji na zgłoszone problemy, ale ta preferencja umożliwia jej przywrócenie w razie potrzeby.</message>
+
+  <message name="machine-positioning-name">Widoczność wyciągnięcia pręta</message>
+  <message name="machine-positioning-desc">Umożliwia prawidłowe ustawienie komponentów maszyny i osprzętu względem wykonanych wyciągnięć prętów</message>
+
+  <message name="turn-groove-roughing-cusp-cleanup-name">Wygładzanie nierówności przyrostowych toczenia</message>
+  <message name="turn-groove-roughing-cusp-cleanup-desc">Usuwa nierówności pozostałe po przejściach obróbki zgrubnej.</message>
+
+  <message name="turn-profile-roughing-rest-area-undercuts-name">Obróbka zgrubna profilu toczeniem podcięć obszaru resztek</message>
+  <message name="turn-profile-roughing-rest-area-undercuts-desc">Umożliwia dostęp do podcięć podczas używania obróbki resztek w obróbce zgrubnej profilu.</message>
+
+  <message name="legacy-dxf-export-name">Stara metoda eksportu pliku DXF do zagnieżdżania</message>
+  <message name="legacy-dxf-export-desc">Włącz starą metodę eksportu plików DXF podczas zagnieżdżania i wytwarzania. Tej opcji należy używać tylko wówczas, gdy nowa metoda eksportu powoduje problemy lub niestabilność.</message>
+
+  <message name="tool-call-strategy-name">Strategia wywołania narzędzia</message>
+  <message name="tool-call-strategy-desc">Wywołuje narzędzie lub pustą stację w celu wstępnego ustalenia położenia przed ruchami przeciwwrzeciona, przycinaniem lub operacjami przeniesienia. Użyj wywołania narzędzia, aby zoptymalizować wybór narzędzia, oszczędzić czas między operacjami i zmniejszyć ryzyko awarii.</message>
+
+  <message name="relaxed-multiple-reference-matches-handling-name">Historyczna funkcja obsługi niejednoznacznych odniesień</message>
+  <message name="relaxed-multiple-reference-matches-handling-desc">Zazwyczaj niejednoznaczne wybory (tj. te, których nie można poprawnie wczytać z dokumentu) zostaną oznaczone jako brakujące i będą musiały zostać ponownie wybrane. Gdy ta opcja jest włączona, niejednoznaczne wybory nie będą oznaczane jako brakujące. Będą one wczytywane z ryzykiem nieprawidłowego przywrócenia.</message>
+
+  <message name="toolpath-feedrate-edit-name">Modyfikacja prędkości posuwu ścieżki narzędzia</message>
+  <message name="toolpath-feedrate-edit-desc">Włącz strategię modyfikacji prędkości posuwu ścieżki narzędzia.</message>
+
+  <message name="setup-groups-name">Grupy ustawień</message>
+  <message name="setup-groups-desc">Włącz strategię Grupy ustawień.</message>
+  
+  <message name="subspindle-fixture-positioning-name">Pozycjonowanie mocowania przeciwwrzeciona</message>
+  <message name="subspindle-fixture-positioning-desc">Umożliwia prawidłowe ustawienie komponentów mocowania przeciwwrzeciona względem bieżącej pozycji uchwytu.</message>
+
+  <message name="enable-optimized-flats-name">Ulepszona obóbka kieszeniowa</message>
+  <message name="enable-optimized-flats-desc">Umożliwia obróbkę przygotówki tuż nad płaskimi obszarami.</message>
+
+  <message name="add-produce-contact-normal-name">Dodatkowa obsługa obróbki 5-osiowej</message>
+  <message name="add-produce-contact-normal-desc">Umożliwia użycie przechylenia 5-osiowego w dodatkowych przypadkach, np. przy użyciu narzędzi niesferycznych lub innych wartości odsunięć osiowych i promieniowych.
+  </message>
+
+  <message name="slice-containment-name">Ograniczenie płatów</message>
+  <message name="slice-containment-desc">Włącza ograniczenie płatów w przypadku kieszeni.</message>
+
+  <message name="evenly-spaced-points-and-polar-links-hsm-name">Równomiernie rozmieszczone punkty</message>
+  <message name="evenly-spaced-points-and-polar-links-hsm-desc">Edytuje rozkład punktów wzdłuż ruchów skrawających w ścieżce narzędzia. Usuwa oryginalne punkty i wstawia nowe, w miarę możliwości w równych odstępach. Poprawia to płynność ruchu, pomaga maszynom ściślej podążać za zaprogramowanymi posuwami roboczymi, a także zapewnia lepsze wykończenie powierzchni i krótsze czasy cyklu. Teraz dostępne w większej liczbie strategii, w tym Kontur, Równoległe, Przepływ, Geodezyjne i Gratowanie.</message>
+  
+</locale>

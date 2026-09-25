@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<printsetting xmlns="http://www.autodesk.com/xml/2019/printsetting" id="-1">
+  <solution_uuid>a6b791f6-096a-4d30-a7c3-98c0392afc0b</solution_uuid>
+  <base_solution_uuid />
+  <workspace_uuid>64bfcf03-8288-471c-8f0b-d23caa5a2b1e</workspace_uuid>
+  <name>Generic SLS</name>
+  <description>Generic Print Setting for SLS Machines</description>
+  <machine_model>Generic SLS Machine</machine_model>
+  <vendor>Autodesk</vendor>
+  <technology>SLS</technology>
+  <is_original_config>1</is_original_config>
+  <solution_feature_list>9</solution_feature_list>
+  <layer_thickness>0.000000</layer_thickness>
+</printsetting>

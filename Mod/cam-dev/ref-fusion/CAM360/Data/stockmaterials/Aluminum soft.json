@@ -1,0 +1,16 @@
+{
+    "description": "Aluminum soft",
+    "category": "Metal",
+    "uuid": "7df4f20e-1574-4498-afc1-0ef7ffe50389",
+    "designators": [
+        "Aluminium soft"
+    ],
+    "physicalMaterials": [
+        "PrismMaterial-103",
+        "PrismMaterial-061",
+        "PrismMaterial-062",
+        "PrismMaterial-063",
+        "PrismMaterial-060"
+    ],
+    "version": 1.0
+}

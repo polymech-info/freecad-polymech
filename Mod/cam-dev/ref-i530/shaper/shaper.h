@@ -1,0 +1,44 @@
+0  BEGIN PGM shaper MM 
+1  Q1 = 0.236 ;            (key width - b)
+2  Q2 = 0.11 ;            (keyway depth - t2)
+3  Q3 = 0.748 ;            (shaft diameter - d)
+4  Q4 = 0.123 ;            (cutter width)
+5  Q5 = 0.406 ;            (cutter length +y from spindle center)
+6  Q6 = 0.1 ;            (top of stroke)
+7  Q7 = - 1.7 ;           (bottom of stroke)
+8  Q8 = 0.002 ;            (depth of cut - per stroke)
+9  Q9 = 0.001 ;            (x spring compensation)
+10 Q10 = 0.002 ;          (y spring compensation)
+11 Q11 = 75 ;             (plunge feedrate)
+12 ; [...] !
+13 ; calculated
+14 Q100 = Q3 / 2 ;                             (shaft radius)
+15 Q101 = Q1 / 2 ;                               (half of key width)
+16 Q102 = ( Q1 - Q4 ) / 2 ;                          (x offset - half of key~
+ width minus cutter width)
+17 Q103 = SQ ( ( Q100 * Q100 ) - ( Q101 * Q101 ) ) - Q5 ; (starting Y position~
+ - Pythagorus FTW)
+18 Q104 = Q100 + Q2 + Q10 - Q5 ;               (ending y position)
+19 Q105 = Q104 - Q103 ;                        (total y feed)
+20 Q106 = Q105 / Q8 ;                          (number of loops)
+21 ; [...] !
+22 ERROR = BLK FORM 0.1 z x+0 y+0 z-20;  Definition of workpiece blank
+23 ERROR = BLK FORM 0.2 x+100 y+100 z+0
+24 ; [...] !
+25 Q200 = Q103 ;             (y position)
+26 L  X+0  Y+Q200 FQ11 ;             (move to zero X and starting Y)
+27 L  Z+Q6 R0 FQ11 ;                  (move Z to top of stroke)
+28 CALL LBL 1 REPQ106 ;
+29 ; [...] !
+30 LBL 1
+31 ; [...] !
+32 L  Y+Q200 ;                (move to Y position)
+33 ERROR = L X[Q102 + Q9];         (move X to one side)
+34 L  Z+Q7 FQ11 ;             (plunge)
+35 L  Z+Q6 ;                  (retract)
+36 ERROR = L X[0 - Q102 - Q9];     (move X to other side)
+37 L  Z+Q7 FQ11 ;             (plunge)
+38 L  Z+Q6 ;                  (retract)
+39 ERROR = Q200 = [Q200 + Q8];      (increment Y position)
+40 ; [...] !
+41 END PGM shaper MM 

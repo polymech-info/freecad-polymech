@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<template-document xmlns="http://www.hsmworks.com/namespace/hsmworks/document/template" version="1.0">
+
+  <localizationNameID id="103"/>
+  <localizationDescriptionID id="103"/>
+
+  <user-notes></user-notes>
+
+  <iconID id="0"/>
+
+  <template description="Solid Bar Support" strategy="areabar_additive_fff_support" unit="millimeters" version="137">
+    <parameter expression="false" name="advancedMode"/>
+    <parameter expression="false" name="betaMode"/>
+    <parameter expression="false" name="alphaMode"/>
+    <parameter expression="false" name="isXpress"/>
+    <parameter expression="true" name="licenseMultiaxis"/>
+    <parameter expression="true" name="license3D"/>
+    <parameter expression="true" name="metric"/>
+    <parameter expression="true" name="isAssemblyDocument"/>
+    <parameter expression="'operation'" name="context"/>
+    <parameter expression="'areabar_additive_fff_support'" name="strategy"/>
+    <parameter expression="''" name="operation_description"/>
+    <parameter expression="'none'" name="featureOperationId"/>
+    <parameter expression="28.19339391014135" name="surfaceZHigh"/>
+    <parameter expression="21.81639391014135" name="surfaceZLow"/>
+    <parameter expression="102.989" name="surfaceXLow"/>
+    <parameter expression="147.01100000000002" name="surfaceXHigh"/>
+    <parameter expression="100." name="surfaceYLow"/>
+    <parameter expression="110." name="surfaceYHigh"/>
+    <parameter expression="210." name="stockZHigh"/>
+    <parameter expression="0.0" name="stockZLow"/>
+    <parameter expression="0.0" name="stockXLow"/>
+    <parameter expression="250." name="stockXHigh"/>
+    <parameter expression="0.0" name="stockYLow"/>
+    <parameter expression="210." name="stockYHigh"/>
+    <parameter expression="false" name="tab_supports_cluster"/>
+    <parameter expression="true" name="group_supports_cluster"/>
+    <parameter expression="true" name="supportTarget">
+      <CadMultiModelWithFaces name="cadobject">
+        <CadModel/>
+      </CadMultiModelWithFaces>
+    </parameter>
+    <parameter expression="40" name="supportCluster_cluster_critical_angle"/>
+    <parameter expression="false" name="group_avoid_cluster"/>
+    <parameter expression="false" name="noSupportTarget"/>
+    <parameter expression="false" name="group_supports_cluster_advanced"/>
+    <parameter expression="0.0" name="supportCluster_cluster_min_area"/>
+    <parameter expression="10000" name="supportCluster_cluster_max_area"/>
+    <parameter expression="'0'" name="supportCluster_cluster_type"/>
+    <parameter expression="'1'" name="supportCluster_cluster_duplicate"/>
+    <parameter expression="'0'" name="supportCluster_cluster_inner_outer"/>
+    <parameter expression="0.0" name="supportCluster_cluster_min_to_part"/>
+    <parameter expression="100.0" name="supportCluster_cluster_max_to_part"/>
+    <parameter expression="0.0" name="supportCluster_cluster_min_z_value"/>
+    <parameter expression="1000000.0" name="supportCluster_cluster_max_z_value"/>
+    <parameter expression="0" name="supportCluster_cluster_min_wall_distance"/>
+    <parameter expression="'1'" name="supportCluster_cluster_facegroup_aware"/>
+    <parameter expression="false" name="supportCluster_cluster_respect_next"/>
+    <parameter expression="1.0" name="supportCluster_cluster_next_distance"/>
+    <parameter expression="false" name="tab_supports_general"/>
+    <parameter expression="true" name="group_supports_general"/>
+    <parameter expression="'1'" name="supportGeneral_bar_area_macro_anchor_density"/>
+    <parameter expression="supportGeneral_bar_area_macro_anchor_density == '0'? 10 : supportGeneral_bar_area_macro_anchor_density == '1'? 5 : 2" name="supportGeneral_bar_area_anchor_distance"/>
+    <parameter expression="0.4" name="supportGeneral_bar_area_offset_concave"/>
+    <parameter expression="0.10" name="supportGeneral_bar_area_offset_convex"/>
+    <parameter expression="'1'" name="supportGeneral_bar_area_anchor_alignment"/>
+    <parameter expression="0" name="supportGeneral_bar_area_min_z_value"/>
+    <parameter expression="1000000" name="supportGeneral_bar_area_max_z_value"/>
+    <parameter expression="true" name="group_supports_bar_add_to"/>
+    <parameter expression="true" name="supports_bar_add_to_down_points"/>
+    <parameter expression="true" name="supports_bar_add_to_corners"/>
+    <parameter expression="false" name="supports_bar_add_to_skeleton"/>
+    <parameter expression="0.1mm" name="supportBarToSkeleton_contour_offset"/>
+    <parameter expression="true" name="supports_bar_add_to_borders"/>
+    <parameter expression="true" name="group_supports_bar_area_create_bouquet"/>
+    <parameter expression="'1'" name="supportBouquet_bar_area_macro_tree_structure"/>
+    <parameter expression="supportBouquet_bar_area_macro_tree_structure == '1'? 7 : supportBouquet_bar_area_macro_tree_structure == '2'? 15 : 25" name="supportBouquet_bar_area_bouquet_size"/>
+    <parameter expression="supportBouquet_bar_area_macro_tree_structure == '1'? 10 : supportBouquet_bar_area_macro_tree_structure == '2'? 15 : 20" name="supportBouquet_bar_area_bouquet_height"/>
+    <parameter expression="supportBouquet_bar_area_macro_tree_structure == '1'? 1 : supportBouquet_bar_area_macro_tree_structure == '2'? 2 : 3" name="supportBouquet_bar_area_bouquet_recursion"/>
+    <parameter expression="50 deg" name="supportBouquet_bar_area_max_bar_gradient"/>
+    <parameter expression="true" name="group_supports_bar_area_groups"/>
+    <parameter expression="4" name="supportPropertyBar_group_count"/>
+    <parameter expression="0" name="supportPropertyBar_group_taper"/>
+    <parameter expression="false" name="group_supports_bar_area_braces"/>
+    <parameter expression="'1'" name="group_supports_bar_area_braces_type"/>
+    <parameter expression="2" name="group_supports_bar_area_braces_links"/>
+    <parameter expression="50" name="group_supports_bar_area_braces_angle"/>
+    <parameter expression="'1'" name="group_supports_bar_area_braces_junction"/>
+    <parameter expression="true" name="group_supports_bar_area_project"/>
+    <parameter expression="30" name="supportProject_bar_area_project_angle"/>
+    <parameter expression="false" name="tab_supports_barsupportproperties"/>
+    <parameter expression="true" name="group_supports_supportproperties_bar_general"/>
+    <parameter expression="'2'" name="supportPropertyBar_macro_bar_size"/>
+    <parameter expression="supportPropertyBar_macro_bar_size == '0'? 0.6 : supportPropertyBar_macro_bar_size == '1'? 1.5 : 3" name="supportPropertyBar_bar_part_width"/>
+    <parameter expression="supportPropertyBar_bar_part_width" name="supportPropertyBar_bar_platform_width"/>
+    <parameter expression="true" name="group_supports_supportproperties_bar_contour"/>
+    <parameter expression="'1'" name="supportPropertyBar_bar_contur"/>
+    <parameter expression="0" name="supportPropertyBar_bar_hatch_angle"/>
+    <parameter expression="5" name="supportPropertyBar_bar_polygon_corners"/>
+    <parameter expression="0.0" name="supportPropertyBar_bar_cross_angle_top"/>
+    <parameter expression="supportPropertyBar_bar_part_width/2" name="supportPropertyBar_bar_solidcross_filling"/>
+    <parameter expression="'0'" name="supportPropertyBar_bar_radial_type"/>
+    <parameter expression="'0'" name="supportPropertyBar_bar_radial_direction"/>
+    <parameter expression="100.0" name="supportPropertyBar_bar_radial_factor"/>
+    <parameter expression="true" name="supportPropertyBar_bar_right_angle"/>
+    <parameter expression="1" name="supportPropertyBar_bar_distance_right_angle"/>
+    <parameter expression="1" name="supportPropertyBar_bar_smooth_distance"/>
+    <parameter expression="false" name="tab_supports_supportconnections"/>
+    <parameter expression="true" name="group_supports_supportproperties_bar_top_part_connection"/>
+    <parameter expression="0.15" name="supportPropertyBar_bar_distance_mesh"/>
+    <parameter expression="false" name="supportPropertyBar_macro_use_breakpoint"/>
+    <parameter expression="'1'" name="supportPropertyBar_macro_bar_breakpoint"/>
+    <parameter expression="supportPropertyBar_bar_part_width/4" name="supportPropertyBar_bar_breakpoint_width"/>
+    <parameter expression="supportPropertyBar_macro_bar_breakpoint == '2'? supportPropertyBar_bar_part_width : supportPropertyBar_bar_part_width/4" name="supportPropertyBar_bar_breakpoint_width_end"/>
+    <parameter expression="supportPropertyBar_bar_part_width/6" name="supportPropertyBar_bar_breakpoint_height"/>
+    <parameter expression="supportPropertyBar_bar_part_width/4" name="supportPropertyBar_bar_breakpoint_distance"/>
+    <parameter expression="supportPropertyBar_macro_bar_breakpoint == '1'? 0.01 : supportPropertyBar_bar_part_width/3" name="supportPropertyBar_bar_breakpoint_height_end"/>
+    <parameter expression="true" name="group_supports_bar_pad"/>
+    <parameter expression="12 mm" name="supportPropertyBar_bar_pad_width"/>
+    <parameter expression="0.5" name="supportPropertyBar_bar_pad_height"/>
+    <parameter expression="0" name="supportPropertyBar_bar_pad_slope"/>
+    <parameter expression="false" name="group_supports_bar_area_baseplate_group"/>
+    <parameter expression="'1'" name="group_supports_bar_area_baseplate_type"/>
+    <parameter expression="1.0mm" name="group_supports_bar_area_baseplate_height"/>
+    <parameter expression="1.0mm" name="group_supports_bar_area_baseplate_offset"/>
+    <parameter expression="-10" name="group_supports_bar_area_baseplate_taperangle"/>
+    <parameter expression="'0'" name="group_supports_bar_area_baseplate_pattern"/>
+    <parameter expression="5mm" name="group_supports_bar_area_baseplate_pattern_size"/>
+    <parameter expression="2mm" name="group_supports_bar_area_baseplate_pattern_wall"/>
+    <parameter expression="3" name="group_supports_bar_area_root_legs"/>
+    <parameter expression="3.0mm" name="group_supports_bar_area_root_height"/>
+    <parameter expression="3.0mm" name="group_supports_bar_area_root_diameter"/>
+    <parameter expression="false" name="associatedView"/>
+  </template>
+
+</template-document>
